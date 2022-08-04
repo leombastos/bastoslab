@@ -1,0 +1,29 @@
+/* css styles */
+
+:root {
+    --bs-green: #6EC2AE;
+}
+
+b, strong {
+    color: var(--bs-green);
+    font-weight: bolder;
+}
+
+h1.title {
+  text-align: center;
+  font-family: Comic Sans MS ;
+  font-size: 3em;
+}
+
+@media (min-width: 991.98px) {
+#quarto-header {
+  border-bottom: 1px solid #dee2e6;
+}
+}
+
+.navbar-brand > img {
+  max-height: 80px;
+}
+
+
+

@@ -1,0 +1,53 @@
+project:
+  type: website
+  preview:
+    browser: true
+    
+website:
+  title: "Bastos Lab"
+  page-footer: 
+    left: "<span> Blog made with [Quarto](https://quarto.org/), by Leo Bastos. License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/). </span>"
+    right: '<img src="/images/UGA-logo.png" style="float:right;height:60px">'
+    background: light
+  image: images/logo.png
+  twitter-card: true
+  open-graph: true
+  navbar:
+    logo: images/logo.png
+    title: false
+    collapse-below: lg
+    right:
+      - text: Home
+        href: index.qmd
+      - text: Team
+        href: team/team.qmd
+      - text: Projects 
+        href: projects/projects.qmd
+      - text: Lab manual  
+        href: culture/culture.qmd
+        
+    #right:
+      - icon: github
+        href: https://github.com/leombastos
+        aria-label: GitHub
+
+
+format:
+  html:
+    linkcolor: "#53BCCD"
+    theme: 
+      light: [minty, custom.scss]
+      dark: slate
+    css: styles.css
+    toc: true
+    toc-title: " "
+    toc-location: left
+    code-copy: true
+    code-overflow: wrap
+
+freeze: true
+    
+# themes I liked: lux, minty, spacelab, zephyr     
+
+
+

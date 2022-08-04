@@ -1,0 +1,17 @@
+---
+title: "Corn sensor-based variable rate N management"
+editor: visual
+image: "featured.jpg"
+date: 2022-08-04
+toc: true
+---
+
+# Background
+
+# Hypothesis and Objectives
+
+We hypothesize that
+
+The objective of this study is to
+
+# Timeline

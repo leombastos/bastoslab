@@ -1,0 +1,32 @@
+---
+#title: "Bastos Lab"
+#toc: false
+---
+
+![](images/logo2.png){fig-align="center" width="409"}
+
+## Hello there! 👋
+
+Welcome to the **Bastos Lab** home page.
+
+Bastos Lab is part of the [Integrative Precision Agriculture](https://precisionag.caes.uga.edu) cluster at the University of Georgia.
+
+Research areas we are currently tackling range from [within-field]{.underline} to [regional]{.underline} and include:
+
+-   Sensor-based variable rate management of nutrients and chemicals during the growing season in corn and cotton
+
+-   Cotton fiber quality regional envirotyping
+
+-   Cotton fiber quality pre-harvest prediction
+
+## Explore above 👆
+
+Check the tabs on top to learn more about:
+
+-   Our [team](team/team.qmd) members and lab openings
+
+-   Our current [projects](projects/projects.qmd)
+
+-   Our [lab manual](culture/culture.qmd) and resources
+
+## 

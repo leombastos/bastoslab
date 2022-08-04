@@ -1,0 +1,27 @@
+---
+title: "Cotton fiber quality envirotyping"
+editor: visual
+image: "featured.png"
+date: 2022-08-01
+toc: true
+---
+
+# Background
+
+Cotton profitability depends not only on lint yield but also on fiber quality, with price adjustments made based on quality parameters like length, strength, and micronaire. Cotton fiber quality varies both within a field and across years and is affected by genetics, environment, and management. Currently, studies reporting on the main drivers of cotton fiber quality are limited in space and/or time, and thus cannot be generalized. Therefore, there exists a gap in knowledge in dissecting the main and interacting effects of genetics, environment, and management in cotton fiber quality over multiple years and across multiple sites within a region.
+
+# Hypothesis and Objectives
+
+We hypothesize that
+
+-   Different cotton fiber quality variables are affected to different extents by genetics (choice of variety), environmental conditions (e.g., growing season rainfall volume and distribution, air and soil temperature, soil characteristics), management practices (seeding rate, fertilizer program, plant growth regulator and defoliant program, harvest date), and their interactions. 
+
+-   It is possible to dissect the main drivers of specific fiber quality parameters and overall loan rate.
+
+The objective of this study is to use multi-site-year small-plot trial data collected across the Southern U.S.A. region to dissect the effects of genetics, environment, and management on different cotton fiber quality parameters and overall loan rate.
+
+# Timeline
+
+A timeline for the proposed project is outlined in Figure 1. The project would officially start on July 2022 with data collection (field, environmental, and management) for the state of Georgia. The first report would be created by March of 2023 as a white paper for John Deere, with results potentially being presented at scientific conferences following non-disclosure agreement guidelines. After data and report for Georgia has been completed, efforts will shift to reach out to other cotton-producing states to broaden the scope of the database. The second and final report will be finished by June 2024, immediately shared with John Deere and potentially submitted for peer-reviewed journal publication following non-disclosure agreement guidelines.
+
+![Fig 1. Project proposed timeline](images/JD-MA-timeline.png)

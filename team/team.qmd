@@ -1,0 +1,88 @@
+---
+title: "Meet the team"
+editor: visual
+---
+
+## Leo Bastos
+
+::: columns
+::: {.column width="30%"}
+![](Bastos-round-BW.png)
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="60%"}
+-   `r fontawesome::fa("graduation-cap", width="1em")` Ph.D. in Soil Fertility/Precision Agriculture with minor in Statistics, University of Nebraska-Lincoln
+
+-   `r fontawesome::fa("graduation-cap", width="1em")` M.Sc. in Soil Microbiology, Kansas State University
+
+-   `r fontawesome::fa("graduation-cap", width="1em")` B.Sc. in Agronomy, Federal University of Santa Maria - Brazil
+
+<center>[`r fontawesome::fa("github", width="2em")`](https://github.com/leombastos) [`r fontawesome::fa("twitter", width="2em")`](https://twitter.com/leoNitrogen) [`r fontawesome::fa("linkedin", width="2em")`](https://www.linkedin.com/in/leonardo-m-bastos-b4b35510b/) [`r fontawesome::fa("google", width="2em")`](https://scholar.google.com/citations?hl=en&user=vFZqRRsAAAAJ)</center>
+:::
+:::
+
+# Openings
+
+### Visiting scholar
+
+::: columns
+::: {.column width="30%"}
+`r fontawesome::fa("user-plus", width="8em", fill_opacity = 0.7, fill="#6EC2AE")`
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="60%"}
+-   Start term: Spring 2023
+-   Duration: 1 year
+-   Duties: collect data
+:::
+:::
+
+### PhD student
+
+::: columns
+::: {.column width="30%"}
+`r fontawesome::fa("user-plus", width="8em", fill_opacity = 0.7, fill="#6EC2AE")`
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="60%"}
+-   Start term: Spring 2023
+-   Duration: 3 years
+-   Duties: lead [cotton quality envirotyping project](/projects/01-cottongem)
+-   Qualifications:
+    -   aaa
+    -   aaa
+    -   aaa
+:::
+:::
+
+### PhD student
+
+::: columns
+::: {.column width="30%"}
+`r fontawesome::fa("user-plus", width="8em", fill_opacity = 0.7, fill="#6EC2AE")`
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="60%"}
+-   Start term: Spring 2023
+-   Duration: 3 years
+-   Duties: lead [cotton quality prediction project](/projects/02-cottonqualpred)
+-   Qualifications:
+    -   aaa
+    -   aaa
+    -   aaa
+:::
+:::
+
+Our group will start advertising for positions on late August 2022, stay tuned!

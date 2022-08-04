@@ -1,0 +1,76 @@
+---
+title: "Lab manual"
+editor: visual
+---
+
+# Hello, again!
+
+This "lab manual" is intended to be a living resource of **Bastos Lab** identity and values.
+
+Here you will find:
+
+-   Our mission and vision 🌅
+
+-   What you can expect from the team 🤝
+
+-   What the team expects from each member 🤜🤛
+
+-   Skills you will (further) develop 🤓
+
+-   Our toolbox 🧰
+
+-   Resources 📖
+
+Explore all these topics from the left menu, and feel free to contribute to this manual by clicking on the GitHub link.
+
+Cheers!
+
+# Mission and vision
+
+# What you can expect
+
+# What we expect
+
+# Skills
+
+# Toolbox
+
+In our team, we advocate the learning and use of open-source free software whenever possible and available. Below is a list of common needs and our open-source recommendation:
+
+-   Statistical programming language: R and Python
+
+-   IDE: RStudio, Jupyter notebooks, Google Colab
+
+-   Literate programming: Quarto and Rmarkdown
+
+-   Reference management: Zotero
+
+-   Version control: Git
+
+-   Distributed version control/cloud storage: GitHub
+
+-   Geographical information system IDE: QGIS
+
+-   GIS big data: Google Earth Engine
+
+-   Website deployment: GitHub pages, Netlify
+
+-   Internal communication: Slack
+
+# Resources
+
+-   [Data science in a box](https://datasciencebox.org)
+
+-   [R for Excel users](https://rstudio-conf-2020.github.io/r-for-excel/)
+
+-   [Illustrated intro to GitHub](https://www.openscapes.org/blog/2022/05/27/github-illustrated-series/)
+
+-   [Fay Lab Manual](https://thefaylab.github.io/lab-manual/12-umassd-resources.html)
+
+-   [rstudioconf2022 GitHub repo](https://github.com/rstudio/rstudio-conf/tree/master/2022)
+
+-   [STA 210: regression analysis](https://sta210-s22.github.io/website/)
+
+-   [Happy git and GitHub for the useR](https://happygitwithr.com)
+
+-   [STAT 545: data wrangling, exploration, and analysis with R](https://stat545.com)
