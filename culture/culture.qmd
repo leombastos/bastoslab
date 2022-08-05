@@ -74,3 +74,5 @@ In our team, we advocate the learning and use of open-source free software whene
 -   [Happy git and GitHub for the useR](https://happygitwithr.com)
 
 -   [STAT 545: data wrangling, exploration, and analysis with R](https://stat545.com)
+
+-   [#barbarplots](https://www.cedricscherer.com/slides/USGS-2021-beyond-bar-and-box-plots.pdf)
