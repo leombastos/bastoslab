@@ -81,21 +81,21 @@
     "href": "extra/2022_pasture/2022_pasture.html#minimum",
     "title": "2022 Pasture project - Satellite data",
     "section": "Minimum",
-    "text": "Minimum\n\nlibrary(tidyverse)\nlibrary(sf)\nlibrary(stars)\nlibrary(viridis)\nlibrary(ggthemes)\n\nbound <- read_sf(\"data/WQPaoi.shp\") %>%\n    st_transform(crs = 4326) \n\nmin <- read_stars(\"data/gndvi_min2_2022_08_31_21_46_24.tif\") %>%\n  st_crop(bound)\n\nggplot()+\n  geom_stars(data = min)+\n  geom_sf(data = bound, fill=NA, color=\"black\")+\n  scale_fill_viridis_c(na.value = \"transparent\")+\n  theme_map()+\n  labs(fill=\"GNDVI\\nmin\")+\n  theme(legend.position = \"bottom\")"
+    "text": "Minimum"
   },
   {
     "objectID": "extra/2022_pasture/2022_pasture.html#median",
     "href": "extra/2022_pasture/2022_pasture.html#median",
     "title": "2022 Pasture project - Satellite data",
     "section": "Median",
-    "text": "Median\n\nmedian <- read_stars(\"data/gndvi_median_2022_08_31_21_47_37.tif\") %>%\n  st_crop(bound)\n\nggplot()+\n  geom_stars(data = median)+\n  geom_sf(data = bound, fill=NA, color=\"black\")+\n  scale_fill_viridis_c(na.value = \"transparent\")+\n  theme_map()+\n  labs(fill=\"GNDVI\\nmedian\")+\n  theme(legend.position = \"bottom\")"
+    "text": "Median"
   },
   {
     "objectID": "extra/2022_pasture/2022_pasture.html#maximum",
     "href": "extra/2022_pasture/2022_pasture.html#maximum",
     "title": "2022 Pasture project - Satellite data",
     "section": "Maximum",
-    "text": "Maximum\n\nmax <- read_stars(\"data/gndvi_max_2022_08_31_21_49_03.tif\") %>%\n  st_crop(bound)\n\n\nggplot()+\n  geom_stars(data = max)+\n  geom_sf(data = bound, fill=NA, color=\"black\")+\n  scale_fill_viridis_c(na.value = \"transparent\")+  \n  theme_map()+\n  labs(fill=\"GNDVI\\nmax\")+\n  theme(legend.position = \"bottom\")"
+    "text": "Maximum"
   },
   {
     "objectID": "culture/culture.html",
