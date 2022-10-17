@@ -70,6 +70,20 @@
     "text": "Openings\n\nVisiting scholar\n\n\n\n\n\n\n\nStart term: Spring 2023\nDuration: 6 months to 1 year\nQualifications/duties:\n\nbe excited about precision agriculture, sensors, and being part of a diverse team\nplan and collect crop and soils data\nworking in a growing team\nEnglish fluency\n\n\n\n\n\n\nPhD student\n\n\n\n\n\n\n\nStart term: Spring 2023\nDuration: 3 years\nDuties: lead the cotton quality envirotyping and cotton quality prediction projects\nQualifications: Experience with/highly motivated about\n\nbe excited about precision agriculture, sensors, and being part of a diverse team\ncotton field research\napplied statistical programming\ndata science concepts and tools\ndrone and satellite remote sensing\npredictive ag\nwriting and publishing manuscripts\nworking in a growing team\nEnglish fluency\n\n\n\n\n\n\nPhD student\n\n\n\n\n\n\n\nStart term: Spring 2023\nDuration: 3-4 years\nDuties: lead the cotton and corn variable rate nitrogen and plant-growth regulator projects\nQualifications:\n\nbe excited about precision agriculture, sensors, and being part of a diverse team\ncotton and corn field research\napplied statistical programming\ndata science concepts and tools\ndrone and satellite remote sensing\nwriting and publishing manuscripts\nworking in a growing team\nEnglish fluency\n\n\n\n\nTo apply for a position, send me:\n\nYour intended starting date (month/year)\nYour CV\nStatement of interest\nGRE score\nTOEFL score (required for non-US citizens without a US graduate degree)"
   },
   {
+    "objectID": "extra/2022_scout_fert/2022_scout_fert.html",
+    "href": "extra/2022_scout_fert/2022_scout_fert.html",
+    "title": "2022 Scouting for Fertility Issues - Satellite data",
+    "section": "",
+    "text": "GNDVI timelapse"
+  },
+  {
+    "objectID": "extra/2022_scout_nematode/2022_scout_nematode.html",
+    "href": "extra/2022_scout_nematode/2022_scout_nematode.html",
+    "title": "2022 Scouting for Nematode - Satellite data",
+    "section": "",
+    "text": "Imagery was retrieved from Sentinel-2 archive starting on 2022-04-01 through 2022-10-17. Only images with less than 40% cloud coverage were kept.\nImagery data were used to calculate green normalized difference index (GNDVI), from which was created an animated time lapse of GNDVI during the selected period.\n\nGNDVI timelapse"
+  },
+  {
     "objectID": "extra/2022_pasture/2022_pasture.html",
     "href": "extra/2022_pasture/2022_pasture.html",
     "title": "2022 Pasture project - Satellite data",
