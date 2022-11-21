@@ -4,35 +4,231 @@
     "href": "projects/04-cornvrn/index.html",
     "title": "Corn sensor-based variable rate N management",
     "section": "",
-    "text": "Hypothesis and Objectives\nWe hypothesize that\n\nthe use of proximal, UAV, and satellite sensors will produce similar in-season variable rate N rates in corn,\nsensor-based N management will yield at least similarly to a flat-rate approach,\nsensor-based N management will be more efficient in the use of N compared to a flat-rate approach.\n\nThe objectives of this study are to assess\n\nhow different are N rates when calculated using proximal, UAV, and satellite data,\nthe effect of sensor-based nutrient management in corn yield and N use efficiency\n\n\n\nTimeline\nThis study will start in the Spring of 2023. A more detailed timeline will be created in the future."
+    "text": "Background\nNitrogen (N) is the most common limiting nutrient to optimum corn yields. Within-field variability in soil characteristics and properties like elevation, slope, texture, bulk density, organic matter, nutrient concentration, and pH can create variable N availability, corn growth, and yield potential.\nThe detection of within-field corn growth variability and its proper management can be performed using crop canopy sensors. These sensors vary distance to the plants and in sensor-related resolutions (spatial, temporal, spectral, and radiometric). Commonly used crop canopy sensors include proximal (<1 m from plants) and remote (ranging from 50 m with UAVs to orbital distances with satellite). Proximal and remote sensors have their own advantages and disadvantages, with proximal sensors generally being more sensitive to crop growth differences but less scalable than remote sensors.\nThe use of in-season crop canopy sensors to variably apply N in corn has been intensively studied in the US Midwest, Brazil, Argentina, and Australia corn growing regions. However, limited studies have been conducted in the US Southeast region with its particular warmer climates and sandier soils.\nTherefore, more studies are needed to understand the potential of variable rate N management to maintain and improve corn yield, N use efficiency, and profitability in the challenging environments of the US Southeast region.\n\n\nHypothesis and Objectives\nWe hypothesize that\n\nthe use of proximal, UAV, and satellite sensors will produce similar in-season variable rate N rates in corn,\nsensor-based N management will yield at least similarly to a flat-rate approach,\nsensor-based N management will be more efficient in the use of N compared to a flat-rate approach.\n\nThe objectives of this study are to assess\n\nhow different are N rates when calculated using proximal, UAV, and satellite data,\nthe effect of sensor-based nutrient management in corn yield and N use efficiency\n\n\n\nTimeline\nThis study will start in the Spring of 2023. A more detailed timeline will be created in the future."
   },
   {
     "objectID": "projects/01-cottongem/index.html",
     "href": "projects/01-cottongem/index.html",
     "title": "Cotton fiber quality envirotyping",
     "section": "",
-    "text": "Hypothesis and Objectives\nWe hypothesize that\n\nDifferent cotton fiber quality variables are affected to different extents by genetics (choice of variety), environmental conditions (e.g., growing season rainfall volume and distribution, air and soil temperature, soil characteristics), management practices (seeding rate, fertilizer program, plant growth regulator and defoliant program, harvest date), and their interactions. \nIt is possible to dissect the main drivers of specific fiber quality parameters and overall loan rate.\n\nThe objective of this study is to use multi-site-year small-plot trial data collected across the Southern U.S.A. region to dissect the effects of genetics, environment, and management on different cotton fiber quality parameters and overall loan rate.\n\n\nTimeline\nA timeline for the proposed project is outlined in Figure 1. The project would officially start on July 2022 with data collection (field, environmental, and management) for the state of Georgia. The first report would be created by March of 2023 as a white paper for John Deere, with results potentially being presented at scientific conferences following non-disclosure agreement guidelines. After data and report for Georgia has been completed, efforts will shift to reach out to other cotton-producing states to broaden the scope of the database. The second and final report will be finished by June 2024, immediately shared with John Deere and potentially submitted for peer-reviewed journal publication following non-disclosure agreement guidelines.\n\n\n\nFig 1. Project proposed timeline"
+    "text": "Background\nCotton profitability depends not only on lint yield but also on fiber quality, with price adjustments made based on quality parameters like length, strength, and micronaire. Cotton fiber quality varies both within a field and across years and is affected by genetics, environment, and management. Currently, studies reporting on the main drivers of cotton fiber quality are limited in space and/or time, and thus cannot be generalized. Therefore, there exists a gap in knowledge in dissecting the main and interacting effects of genetics, environment, and management in cotton fiber quality over multiple years and across multiple sites within a region.\n\n\nHypothesis and Objectives\nWe hypothesize that\n\nDifferent cotton fiber quality variables are affected to different extents by genetics (choice of variety), environmental conditions (e.g., growing season rainfall volume and distribution, air and soil temperature, soil characteristics), management practices (seeding rate, fertilizer program, plant growth regulator and defoliant program, harvest date), and their interactions. \nIt is possible to dissect the main drivers of specific fiber quality parameters and overall loan rate.\n\nThe objective of this study is to use multi-site-year small-plot trial data collected across the Southern U.S.A. region to dissect the effects of genetics, environment, and management on different cotton fiber quality parameters and overall loan rate.\n\n\nTimeline\nA timeline for the proposed project is outlined in Figure 1. The project would officially start on July 2022 with data collection (field, environmental, and management) for the state of Georgia. The first report would be created by March of 2023 as a white paper for John Deere, with results potentially being presented at scientific conferences following non-disclosure agreement guidelines. After data and report for Georgia has been completed, efforts will shift to reach out to other cotton-producing states to broaden the scope of the database. The second and final report will be finished by June 2024, immediately shared with John Deere and potentially submitted for peer-reviewed journal publication following non-disclosure agreement guidelines.\n\n\n\nFig 1. Project proposed timeline"
   },
   {
     "objectID": "projects/projects.html",
     "href": "projects/projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Aug 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAug 2, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAug 3, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAug 4, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Cotton fiber quality envirotyping\n\n\n\n\n\n\nAug 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCotton fiber quality prediction\n\n\n\n\n\n\nAug 2, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCotton sensor-based variable rate N and PGR management\n\n\n\n\n\n\nAug 3, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCorn sensor-based variable rate N management\n\n\n\n\n\n\nAug 4, 2022\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/02-cottonqualpred/index.html",
     "href": "projects/02-cottonqualpred/index.html",
     "title": "Cotton fiber quality prediction",
     "section": "",
-    "text": "Methods\nFor that, cotton harvesters with Harvest Identification technology were used in 9 commercial cotton fields. The harvesters collected yield data and included radio frequency identification tags to each module as they were assembled.\nUsing the harvest identification technology, we were able to georeference cotton quality parameters to sub-field locations, and match them with soil topography and remote sensing data.\nDifferent quality parameters like color, leaf grade, and strength, were used to calculate loan rate, which is a unified cotton quality number related to the value of cotton based on its quality. Loan rate is expressed in cents/lb cotton, and the larger it is, the higher quality cotton is and more a grower gets paid.\n\n\n\n\n\nSoil topography data included elevation, slope, aspect, and flow direction. Here, we are only showing elevation for simplicity.\n\n\n\n\n\nRemote sensing data was retrieved from the period between May 1st and August 31st from Sentinel-2 through Google Earth Engine for a total of 49 dates. Satellite data was used to calculate the green normalized difference index, GNDVI. GNDVI was summarized by extracting minimum, median, and maximum values during the growing season for each pixel in the field. Here, we are only showing GNDVI maximum for simplicity.\n\n\n\n\n\nCheckout below a timelapse for all GNDVI images from which GNDVI max was extracted.\n\n\n\n\n\n\n\nPreliminary results and next steps\nWe found that greater loan rate values (>56 cents/lb cotton) were associated with lower elevation and lower growing-season maximum GNDVI for this field.\n\n\n\n\n\n\n\n\n\n\nTherefore, cotton quality can be spatially predicted using soil and remote sensing data.\nFuture work will include more fields with their associated weather data, more remote sensors, vegetation indices, and more complex machine learning algorithms to predict cotton quality.\nOnce validated, this project can be transformed into a tool that can impact different players in the cotton industry. For example, cotton growers will know what parts of their fields produce better quality cotton, and use this information for differential management and marketing purposes. On the other end, the textile industry will know what regions produce better-quality cotton. This information can be used to target the purchase of cotton from high-quality growing regions and ensure their yarn quality needs are met."
+    "text": "Background\nCotton quality is a very important aspect of cotton production because it directly influences how much a grower gets paid. Cotton is harvested and processed at a gin before samples can be taken for quality analysis, so learning about your cotton quality and final price can take a while.\nWhat if cotton growers could learn about cotton lint quality even before harvest? That is the task we set out to answer.\n\n\nMethods\nFor that, cotton harvesters with Harvest Identification technology were used in 9 commercial cotton fields. The harvesters collected yield data and included radio frequency identification tags to each module as they were assembled.\nUsing the harvest identification technology, we were able to georeference cotton quality parameters to sub-field locations, and match them with soil topography and remote sensing data.\nDifferent quality parameters like color, leaf grade, and strength, were used to calculate loan rate, which is a unified cotton quality number related to the value of cotton based on its quality. Loan rate is expressed in cents/lb cotton, and the larger it is, the higher quality cotton is and more a grower gets paid.\n\n\n\n\n\nSoil topography data included elevation, slope, aspect, and flow direction. Here, we are only showing elevation for simplicity.\n\n\n\n\n\nRemote sensing data was retrieved from the period between May 1st and August 31st from Sentinel-2 through Google Earth Engine for a total of 49 dates. Satellite data was used to calculate the green normalized difference index, GNDVI. GNDVI was summarized by extracting minimum, median, and maximum values during the growing season for each pixel in the field. Here, we are only showing GNDVI maximum for simplicity.\n\n\n\n\n\nCheckout below a timelapse for all GNDVI images from which GNDVI max was extracted.\n\n\n\n\n\n\n\nPreliminary results and next steps\nWe found that greater loan rate values (>56 cents/lb cotton) were associated with lower elevation and lower growing-season maximum GNDVI for this field.\n\n\n\n\n\n\n\n\n\n\nTherefore, cotton quality can be spatially predicted using soil and remote sensing data.\nFuture work will include more fields with their associated weather data, more remote sensors, vegetation indices, and more complex machine learning algorithms to predict cotton quality.\nOnce validated, this project can be transformed into a tool that can impact different players in the cotton industry. For example, cotton growers will know what parts of their fields produce better quality cotton, and use this information for differential management and marketing purposes. On the other end, the textile industry will know what regions produce better-quality cotton. This information can be used to target the purchase of cotton from high-quality growing regions and ensure their yarn quality needs are met."
   },
   {
     "objectID": "projects/03-cottonvr/index.html",
     "href": "projects/03-cottonvr/index.html",
     "title": "Cotton sensor-based variable rate N and PGR management",
     "section": "",
-    "text": "Hypothesis and Objectives\nWe hypothesize that\n\nthe use of proximal, UAV, and satellite sensors will produce similar in-season variable rate N and PGR rates in cotton,\nsensor-based N and PGR management will yield at least similarly to a flat-rate approach,\nsensor-based N and PGR management will be more efficient in the use of N and PGR compared to a flat-rate approach.\n\nThe objectives of this study are to assess\n\nhow different are N and PGR rates when calculated using proximal, UAV, and satellite data,\nthe effect of sensor-based nutrient management in cotton lint yield and N and PGR use efficiency\n\n\n\nTimeline\nThis study will start in the Spring of 2023. A more detailed timeline will be created in the future."
+    "text": "Background\nCotton is a perennial crop that we requires intensive management to be “annualized” (i.e., having a growing cycle that starts and ends within one growing season).\nBecause of its perennial nature, cotton growth needs to be modulated by i) providing both the proper amount of nutrients (where nitrogen-N is the one applied at greatest rates), and ii) ensuring its use of resources (like N) is properly partitioned between vegetative and reproductive growth. With that, optimum cotton lint yield is attained by providing enough (and not more than that) N while applying plant growth regulators (PGR) to curb excessive vegetative growth in lieu of reproductive.\nWithin-field variability in soil characteristics and properties like elevation, slope, texture, bulk density, organic matter, nutrient concentration, and pH can create variable cotton growth and yield potential. Cotton plants with variable growth will require different rates of N and PGR to attain proper vegetative/reproductive partitioning and achieve their yield potential. In-season variable rate N and PGR management can be used to better match input application rates with cotton growth requirements, increasing input use efficiency, optimizing yield, and increasing farm profitability.\nThe detection of within-field cotton growth variability and its proper management can be performed using crop canopy sensors. These sensors vary distance to the plants and in sensor-related resolutions (spatial, temporal, spectral, and radiometric). Commonly used crop canopy sensors include proximal (<1 m from plants) and remote (ranging from 50 m with UAVs to orbital distances with satellite). Proximal and remote sensors have their own advantages and disadvantages, with proximal sensors generally being more sensitive to crop growth differences but less scalable than remote sensors.\n\n\nHypothesis and Objectives\nWe hypothesize that\n\nthe use of proximal, UAV, and satellite sensors will produce similar in-season variable rate N and PGR rates in cotton,\nsensor-based N and PGR management will yield at least similarly to a flat-rate approach,\nsensor-based N and PGR management will be more efficient in the use of N and PGR compared to a flat-rate approach.\n\nThe objectives of this study are to assess\n\nhow different are N and PGR rates when calculated using proximal, UAV, and satellite data,\nthe effect of sensor-based nutrient management in cotton lint yield and N and PGR use efficiency\n\n\n\nTimeline\nThis study will start in the Spring of 2023. A more detailed timeline will be created in the future."
+  },
+  {
+    "objectID": "talks/2022_uga-plantpath/deck/index.html#from-zero-to-hero-a-researchers-path-through-data-science-tools-for-reproducibility",
+    "href": "talks/2022_uga-plantpath/deck/index.html#from-zero-to-hero-a-researchers-path-through-data-science-tools-for-reproducibility",
+    "title": "Bastos Lab",
+    "section": "From zero to hero: a researcher’s path through data science tools for reproducibility",
+    "text": "From zero to hero: a researcher’s path through data science tools for reproducibility"
+  },
+  {
+    "objectID": "talks/2022_uga-plantpath/deck/index.html#what-is-reproducibility",
+    "href": "talks/2022_uga-plantpath/deck/index.html#what-is-reproducibility",
+    "title": "Bastos Lab",
+    "section": "What is reproducibility?",
+    "text": "What is reproducibility?\n“Research is reproducible when others can reproduce the results of a scientific study given only the original data, code, and documentation”\n\nThis applies to:\n\nOther people reproducing your work\n\nYour future-self reproducing your past work"
+  },
+  {
+    "objectID": "talks/2022_uga-plantpath/deck/index.html#why-bother-with-reproducible-science",
+    "href": "talks/2022_uga-plantpath/deck/index.html#why-bother-with-reproducible-science",
+    "title": "Bastos Lab",
+    "section": "Why bother with reproducible science?",
+    "text": "Why bother with reproducible science?\n\nTracks how and why of specific decisions and analysis\n\nQuickly modify analysis and figures\n\nIncreased efficiency\n\nRigor and transparency\n\nIncreased citations (of paper, code, script)"
+  },
+  {
+    "objectID": "talks/2022_uga-plantpath/deck/index.html#but-is-it-really-that-important",
+    "href": "talks/2022_uga-plantpath/deck/index.html#but-is-it-really-that-important",
+    "title": "Bastos Lab",
+    "section": "But is it really THAT important?",
+    "text": "But is it really THAT important?\nA Nature survey with ~1,600 researchers found that\n\n+70% of researchers have tried and failed to reproduce another scientist’s experiments\n+50% have failed to reproduce their own experiments\nMain causes: selective reporting, weak stats, code/data unavailability, etc.\n2006 Duke University cancer research case"
+  },
+  {
+    "objectID": "talks/2022_uga-plantpath/deck/index.html#section",
+    "href": "talks/2022_uga-plantpath/deck/index.html#section",
+    "title": "Bastos Lab",
+    "section": "",
+    "text": "Starting my M.Sc., this is how my file management system looked like:\n\n\n\n\n\n\n\nData, code, figures all mixed in same folder\n\nFile names not very informative\n\nAnd this was just my first year! 😱\n\nLooks familiar?"
+  },
+  {
+    "objectID": "talks/2022_uga-plantpath/deck/index.html#three-principles-of-file-naming",
+    "href": "talks/2022_uga-plantpath/deck/index.html#three-principles-of-file-naming",
+    "title": "Bastos Lab",
+    "section": "Three principles of file naming",
+    "text": "Three principles of file naming\n1. Machine readable\n\ncontains key metadata, delimited with “-” and “_”\n\n\n\n❌ sas cumulative flux 2 years.xlsx\n✅ 2013-2014_N2O-cumulative.csv\n\n\neasy to search and filter\n\neasy to extract metadata"
+  },
+  {
+    "objectID": "talks/2022_uga-plantpath/deck/index.html#three-principles-of-file-naming-1",
+    "href": "talks/2022_uga-plantpath/deck/index.html#three-principles-of-file-naming-1",
+    "title": "Bastos Lab",
+    "section": "Three principles of file naming",
+    "text": "Three principles of file naming\n2. Human readable\n\nname provides info on content, slug concept\n\n\n\n\n\n❌\ndaily1.csv\nanalysisyear1.qmd\nfigure.png\ndata2.csv\nanova2.qmd\nfigure2test.png\n\n\n\n\n✅\n2013-N2O-daily.csv\n2013-N2O-daily-anova.qmd\n2013-N2O-daily-plot.png 2014-N2O-daily.csv\n2014-N2O-daily-anova.qmd\n2014-N2O-daily-plot.png\n\n\n\n\n\n\n\nWhich set of files do you want at 3 am before a deadline?"
+  },
+  {
+    "objectID": "talks/2022_uga-plantpath/deck/index.html#three-principles-of-file-naming-2",
+    "href": "talks/2022_uga-plantpath/deck/index.html#three-principles-of-file-naming-2",
+    "title": "Bastos Lab",
+    "section": "Three principles of file naming",
+    "text": "Three principles of file naming\n3. Plays well with default ordering\n\nStart name with something numerical (date, time, experiment number, etc.)\n\nFor dates, use YYYY-MM-DD format\n\nLeft pad numbers with zero\n\n\n\n\n\n❌\nN2O_daily_1-10-2013.csv\n10-23-2013_N2O_daily.csv\n2-15-2013_N2O_daily.csv\n\n\n\n\n✅\n2013-01-10_N2O_daily.csv\n2013-02-15_N2O_daily.csv\n2013-10-23_N2O_daily.csv"
+  },
+  {
+    "objectID": "talks/2022_uga-plantpath/deck/index.html#principles-of-project-management",
+    "href": "talks/2022_uga-plantpath/deck/index.html#principles-of-project-management",
+    "title": "Bastos Lab",
+    "section": "Principles of project management",
+    "text": "Principles of project management\n\n\nFrom this: \n\nTo this:"
+  },
+  {
+    "objectID": "talks/2022_uga-plantpath/deck/index.html#principles-of-project-management-1",
+    "href": "talks/2022_uga-plantpath/deck/index.html#principles-of-project-management-1",
+    "title": "Bastos Lab",
+    "section": "Principles of project management",
+    "text": "Principles of project management\n\n\n\n\n\nCreate a minimum of three sub-folders: data, code, output"
+  },
+  {
+    "objectID": "talks/2022_uga-plantpath/deck/index.html#principles-of-project-management-2",
+    "href": "talks/2022_uga-plantpath/deck/index.html#principles-of-project-management-2",
+    "title": "Bastos Lab",
+    "section": "Principles of project management",
+    "text": "Principles of project management\n\n\n\n\n\n\nCreate a minimum of three sub-folders: data, code, output\n\n\n\n\nKeep data files in data, script files in code, and tables and figures in output\nIn RStudio, use RStudio Projects!"
+  },
+  {
+    "objectID": "talks/2022_uga-plantpath/deck/index.html#section-1",
+    "href": "talks/2022_uga-plantpath/deck/index.html#section-1",
+    "title": "Bastos Lab",
+    "section": "",
+    "text": "Also during my M.Sc., I was using multiple point-and-click, proprietary software:\n\n\nExcel for data organization/manipulation\n\nSAS for stats\n\nSigmaPlot for plots\n\nArcGIS for maps\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\nProprietary software and file extensions hamper reproducibility by imposing a paywall."
+  },
+  {
+    "objectID": "talks/2022_uga-plantpath/deck/index.html#point-and-click-is-hard-to-document",
+    "href": "talks/2022_uga-plantpath/deck/index.html#point-and-click-is-hard-to-document",
+    "title": "Bastos Lab",
+    "section": "Point-and-click is hard to document",
+    "text": "Point-and-click is hard to document\n\nPoint-and-click software is prone to human error, and normally humans are not good at documenting each step we do.\nThink about the last time you organized data in Excel. Do you remember each step you took when filtering or deleting cells, or when creating new columns? What was your decision-making process?\nOr maybe each step you took to create a complicated figure. How easy would it be for you to replicate it?"
+  },
+  {
+    "objectID": "talks/2022_uga-plantpath/deck/index.html#free-and-open-source-software",
+    "href": "talks/2022_uga-plantpath/deck/index.html#free-and-open-source-software",
+    "title": "Bastos Lab",
+    "section": "Free and open-source software",
+    "text": "Free and open-source software\nWhenever possible and available, opt for free, open source software.\n\n\n\nInstead of this:\n\nExcel\n\nSAS\n\nSigmaPlot\n\nArcGIS\n\n\n\n\nUse this:\n\ncsv\n\nR/Python\n\nR/Python\n\nR/Python/QGIS"
+  },
+  {
+    "objectID": "talks/2022_uga-plantpath/deck/index.html#code-is-documentation",
+    "href": "talks/2022_uga-plantpath/deck/index.html#code-is-documentation",
+    "title": "Bastos Lab",
+    "section": "Code is documentation",
+    "text": "Code is documentation\n\n\n\n\ndf\n\n\n\n  plot   n2o_ppm\n1  101 0.7965260\n2  102 1.1163717\n3  103 1.7185601\n4  104 2.7246234\n5  105 0.6050458\n\n\n\n\ndf %>%\n  filter(n2o_ppm > 1) %>% # keeping only reasonable values\n  mutate(n2o_ppb = n2o_ppm*1000) %>% #transforming ppm to ppb\n  select(plot, n2o_ppb) # keeping only important columns\n\n\n\n  plot  n2o_ppb\n1  102 1116.372\n2  103 1718.560\n3  104 2724.623\n\n\n\n\n\n\n\n\n\n\nTip\n\n\nCode is in itself documentation of each step you do. Adding comments with # make it even more understandable."
+  },
+  {
+    "objectID": "talks/2022_uga-plantpath/deck/index.html#static-scripts-with-.txt-or-.r",
+    "href": "talks/2022_uga-plantpath/deck/index.html#static-scripts-with-.txt-or-.r",
+    "title": "Bastos Lab",
+    "section": "Static scripts with .txt or .R",
+    "text": "Static scripts with .txt or .R"
+  },
+  {
+    "objectID": "talks/2022_uga-plantpath/deck/index.html#improvement-using-an-ide",
+    "href": "talks/2022_uga-plantpath/deck/index.html#improvement-using-an-ide",
+    "title": "Bastos Lab",
+    "section": "Improvement: using an IDE",
+    "text": "Improvement: using an IDE"
+  },
+  {
+    "objectID": "talks/2022_uga-plantpath/deck/index.html#literate-progamming",
+    "href": "talks/2022_uga-plantpath/deck/index.html#literate-progamming",
+    "title": "Bastos Lab",
+    "section": "Literate progamming",
+    "text": "Literate progamming\n\nMixes code, output, and narrative on the same file\nExamples:"
+  },
+  {
+    "objectID": "talks/2022_uga-plantpath/deck/index.html#quarto-rstudio",
+    "href": "talks/2022_uga-plantpath/deck/index.html#quarto-rstudio",
+    "title": "Bastos Lab",
+    "section": "quarto + RStudio",
+    "text": "quarto + RStudio"
+  },
+  {
+    "objectID": "talks/2022_uga-plantpath/deck/index.html#can-i-go-back-in-time",
+    "href": "talks/2022_uga-plantpath/deck/index.html#can-i-go-back-in-time",
+    "title": "Bastos Lab",
+    "section": "Can I go back in time?",
+    "text": "Can I go back in time?\n\nSituation: you spent the whole week working on an analysis, only to find out it didn’t work as expected OR you got stuck with multiple bugs.\n\n\nSituation #2: at some point your script had an important piece of code, but at the time you thought you didn’t need it anymore and deleted those lines.\n\n\nWouldn’t it be nice/useful/graduate-school-life-saving if you could simply go back in time and start fresh from your latest working version?"
+  },
+  {
+    "objectID": "talks/2022_uga-plantpath/deck/index.html#welcome-in-version-control",
+    "href": "talks/2022_uga-plantpath/deck/index.html#welcome-in-version-control",
+    "title": "Bastos Lab",
+    "section": "Welcome in, version control",
+    "text": "Welcome in, version control\n\nThink of “track changes”, but on any file type\n\nEspecially useful for script files (.Rmd, .qmd)\n\nAs your code grows and develops, snapshots are saved allowing you to retrieve different versions\n\nThis connects your current-self with your past-self (what were I thinking when I decided on doing this step?)\nLocally (in your own machine), use"
+  },
+  {
+    "objectID": "talks/2022_uga-plantpath/deck/index.html#git-works-locally",
+    "href": "talks/2022_uga-plantpath/deck/index.html#git-works-locally",
+    "title": "Bastos Lab",
+    "section": "git works locally",
+    "text": "git works locally\n\ngit is powerful on its own, but it only acts locally\n\nIt becomes really powerful when we can have its features working online\n\nWorking with it online also happens to be perfect for collaboration and sharing 🤝"
+  },
+  {
+    "objectID": "talks/2022_uga-plantpath/deck/index.html#welcome-in-github",
+    "href": "talks/2022_uga-plantpath/deck/index.html#welcome-in-github",
+    "title": "Bastos Lab",
+    "section": "Welcome in, GitHub",
+    "text": "Welcome in, GitHub\n\nGitHub is an online centralized platform that combines git, collaborative tools, and cloud storage, all free 💸\nYou can choose if your projects hosted on GitHub (i.e., a repository) can be seen by everyone (public) or only by you and invited collaborators (private)"
+  },
+  {
+    "objectID": "talks/2022_uga-plantpath/deck/index.html#github-demo",
+    "href": "talks/2022_uga-plantpath/deck/index.html#github-demo",
+    "title": "Bastos Lab",
+    "section": "GitHub demo",
+    "text": "GitHub demo\n\nI’ll show you next one of my GitHub repositories\n\nThis repository was used to conduct the entire analytic flow of a manuscript among 2 collaborators\n\nBoth collaborators had local versions on their computers, and GitHub served as the “merging” point\n\n\n\nhttps://github.com/leombastos/BangPolder"
+  },
+  {
+    "objectID": "talks/2022_uga-plantpath/deck/index.html#things-change",
+    "href": "talks/2022_uga-plantpath/deck/index.html#things-change",
+    "title": "Bastos Lab",
+    "section": "Things change",
+    "text": "Things change\n\nComputer operating systems get updated\n\nR gets updated\n\nRStudio gets updated\n\nR packages get updated\n\n\n\nEven if we are working off of the same GitHub repository, our local software versions may differ, which can cause discrepancies and issues that may impact reproducibility."
+  },
+  {
+    "objectID": "talks/2022_uga-plantpath/deck/index.html#containerizing-projects",
+    "href": "talks/2022_uga-plantpath/deck/index.html#containerizing-projects",
+    "title": "Bastos Lab",
+    "section": "Containerizing projects",
+    "text": "Containerizing projects\n\nTo avoid discrepancies of software versions, we can use containers\n\nContainers keep track of all software versions in a project, and ship that project with those default versions\n\nThis ensures the project is reproducible not only for collaborators, but also your future self\n\nOne example of container software is"
+  },
+  {
+    "objectID": "talks/2022_uga-plantpath/deck/index.html#reproducible-science-is-about",
+    "href": "talks/2022_uga-plantpath/deck/index.html#reproducible-science-is-about",
+    "title": "Bastos Lab",
+    "section": "🚧 ⏩ 🦸 Reproducible science is about…",
+    "text": "🚧 ⏩ 🦸 Reproducible science is about…\n\nUsing sensible file names\n\nOrganizing files in sensible sub-folders\n\nUsing free programming language software\n\nUsing literate programming tools\n\nUsing version control locally\n\nUsing distributed version control to collaborate and share data and code\n\nUsing containers\n\nOthers (custom functions, iteration, code peer-review, etc.)"
+  },
+  {
+    "objectID": "talks/2022_uga-plantpath/deck/index.html#personal-marketing",
+    "href": "talks/2022_uga-plantpath/deck/index.html#personal-marketing",
+    "title": "Bastos Lab",
+    "section": "Personal marketing",
+    "text": "Personal marketing\n\n\n\nThis entire presentation was made with quarto, and its source code is available on my GitHub\nYou can find more info on my lab’s website (also made with quarto): Bastos Lab \n\n\n\n\nYou can find my data science teaching material on my blog: agRonomy\nWish to learn and apply these concepts to your own research?\nCRSS XXXX: Applications of data science in ag research, Spring 2024\nThanks! 🙏 💻"
   },
   {
     "objectID": "index.html#hello-there",
@@ -60,35 +256,35 @@
     "href": "presentations/2022-11-datascientists.html",
     "title": "2022-11-datascientists",
     "section": "",
-    "text": "Path: from data collection to presentation, with a version-controlled fully reproducible team-based project.\nAssessment Resource Tools for Improving Statistics Thinking"
+    "text": "My goal is to provide instruction with applied examples in data science to decrease friction and improve reproducibility practices in Crop and Soil sciences.\nPath: from data collection to presentation, with a version-controlled fully reproducible team-based project.\nAssessment Resource Tools for Improving Statistics Thinking"
   },
   {
     "objectID": "team/team.html",
     "href": "team/team.html",
     "title": "Meet the team",
     "section": "",
-    "text": "Openings\n\nVisiting scholar\n\n\n\n\n\n\n\nStart term: Spring 2023\nDuration: 6 months to 1 year\nQualifications/duties:\n\nbe excited about precision agriculture, sensors, and being part of a diverse team\nplan and collect crop and soils data\nworking in a growing team\nEnglish fluency\n\n\n\n\n\n\nPhD student\n\n\n\n\n\n\n\nStart term: Spring 2023\nDuration: 3 years\nDuties: lead the cotton quality envirotyping and cotton quality prediction projects\nQualifications: Experience with/highly motivated about\n\nbe excited about precision agriculture, sensors, and being part of a diverse team\ncotton field research\napplied statistical programming\ndata science concepts and tools\ndrone and satellite remote sensing\npredictive ag\nwriting and publishing manuscripts\nworking in a growing team\nEnglish fluency\n\n\n\n\n\n\nPhD student\n\n\n\n\n\n\n\nStart term: Spring 2023\nDuration: 3-4 years\nDuties: lead the cotton and corn variable rate nitrogen and plant-growth regulator projects\nQualifications:\n\nbe excited about precision agriculture, sensors, and being part of a diverse team\ncotton and corn field research\napplied statistical programming\ndata science concepts and tools\ndrone and satellite remote sensing\nwriting and publishing manuscripts\nworking in a growing team\nEnglish fluency\n\n\n\n\nTo apply for a position, send me:\n\nYour intended starting date (month/year)\nYour CV\nStatement of interest\nGRE score\nTOEFL score (required for non-US citizens without a US graduate degree)"
+    "text": "Ph.D. in Soil Fertility/Precision Agriculture with minor in Statistics, University of Nebraska-Lincoln\n M.Sc. in Soil Microbiology, Kansas State University\n B.Sc. in Agronomy, Federal University of Santa Maria - Brazil"
   },
   {
     "objectID": "extra/2019_scout_unknown/2019_scout_unknown.html",
     "href": "extra/2019_scout_unknown/2019_scout_unknown.html",
     "title": "2019 Scouting for Issues - Satellite data",
     "section": "",
-    "text": "GNDVI timelapse\n\n\n\nGNDVI - individual dates"
+    "text": "Background and methods\nThis page is intended to quickly share remote sensing data collected on a field reported with unknown issues grown with corn in 2019.\nImagery was retrieved from Sentinel-2 archive starting on 2019-04-01 through 2019-10-31. Only images with less than 40% cloud coverage were kept.\nImagery data were used to calculate green normalized difference index (GNDVI), from which was created an animated time lapse of GNDVI during the selected period.\n\n\nGNDVI timelapse\n\n\n\nGNDVI - individual dates"
   },
   {
     "objectID": "extra/2022_scout_fert/2022_scout_fert.html",
     "href": "extra/2022_scout_fert/2022_scout_fert.html",
     "title": "2022 Scouting for Fertility Issues - Satellite data",
     "section": "",
-    "text": "GNDVI timelapse\n\n\n\nGNDVI - individual dates"
+    "text": "Background and methods\nThis page is intended to quickly share remote sensing data collected on a field reported with fertility/pH issues grown with corn in 2022.\nImagery was retrieved from Sentinel-2 archive starting on 2022-04-01 through 2022-10-17. Only images with less than 40% cloud coverage were kept.\nImagery data were used to calculate green normalized difference index (GNDVI), from which was created an animated time lapse of GNDVI during the selected period.\n\n\nGNDVI timelapse\n\n\n\nGNDVI - individual dates"
   },
   {
     "objectID": "extra/2022_scout_nematode/2022_scout_nematode.html",
     "href": "extra/2022_scout_nematode/2022_scout_nematode.html",
     "title": "2022 Scouting for Nematode - Satellite data",
     "section": "",
-    "text": "GNDVI timelapse\n\n\n\nGNDVI - individual dates"
+    "text": "Background and methods\nThis page is intended to quickly share remote sensing data collected on a field reported with nematode issues grown with cotton in 2022.\nImagery was retrieved from Sentinel-2 archive starting on 2022-04-01 through 2022-10-17. Only images with less than 40% cloud coverage were kept.\nImagery data were used to calculate green normalized difference index (GNDVI), from which was created an animated time lapse of GNDVI during the selected period.\n\n\nGNDVI timelapse\n\n\n\nGNDVI - individual dates"
   },
   {
     "objectID": "extra/2022_pasture/2022_pasture.html",
@@ -123,6 +319,6 @@
     "href": "culture/culture.html",
     "title": "Lab manual",
     "section": "",
-    "text": "Mission\nOur lab mission is to advance scientific knowledge in the area of integrative precision agriculture to the benefit of producers in Georgia, the Southern USA, and the world through innovative ideas and tools while training the next generation of data-savy ag leaders.\n\n\nWhat you can expect\nLab members can expect from the team:\n\nRespectful, diverse, and inclusive environment to grow as a scientist and as person\nAll ideas and opinions are not only welcomed but appreciated\nBeing both a mentee and a mentor (“mentorship is not something you can pay back, only forward”)\nCollaborations! Among your lab members, across different research groups at UGA, with different universities, and government and industry partners\n\n\n\nWhat we expect\nWe expect that our lab members:\n\nRespect and appreciate different opinions and perspectives. We can all learn from each other\nSeek opportunities for professional and personal growth\nAppreciate working in teams and with other scientists\nBe curious, resourceful, and enjoy continuous learning\nBe excited about making an impact on science, agriculture, and people\nHave a balance. We need to take time to not think of work and refresh our minds.\n\n\n\nSkills\nOur lab members inherently and purposefully have different backgrounds and skill sets that make each of us unique. There are some underlying skill sets that we share. Those include:\n\nCuriosity, resourcefulness, learning mindset\nTeam member\nAgricultural research training with a focus on sensors, precision management, complex data\nStatistical programming\n\n\n\nToolbox\nIn our team, we advocate the learning and use of open-source free software whenever possible and available. Below is a list of common needs and our open-source recommendation:\n\nStatistical programming language: R and Python\nIDE: RStudio, Jupyter notebooks, Google Colab\nLiterate programming: Quarto, Rmarkdown\nReference management: Zotero\nVersion control: git\nDistributed version control/cloud storage: GitHub\nGeographical information system IDE: QGIS\nGIS big data: Google Earth Engine\nWebsite deployment: GitHub pages, Netlify\nInternal communication: Slack\n\n\n\nResources\nHere’s a list of some free resources, including courses, presentations, online books, and blog posts.\n\nData science in a box\nR for Excel users\nIllustrated intro to GitHub\nFay Lab Manual\nrstudioconf2022 GitHub repo\nSTA 210: regression analysis\nHappy git and GitHub for the useR\nSTAT 545: data wrangling, exploration, and analysis with R\n#barbarplots"
+    "text": "Hello, again!\nThis “lab manual” is intended to be a living resource of Bastos Lab information and guidelines for current and prospective lab members.\nHere you will find:\n\nOur mission 🌅\nWhat you can expect from the team 🤝\nWhat the team expects from each member 🤜🤛\nSkills you will (further) develop 🤓\nOur toolbox 🧰\nResources 📖\n\nExplore all these topics from the left menu.\nCheers!\n\n\nMission\nOur lab mission is to advance scientific knowledge in the area of integrative precision agriculture to the benefit of producers in Georgia, the Southern USA, and the world through innovative ideas and tools while training the next generation of data-savy ag leaders.\n\n\nWhat you can expect\nLab members can expect from the team:\n\nRespectful, diverse, and inclusive environment to grow as a scientist and as person\nAll ideas and opinions are not only welcomed but appreciated\nBeing both a mentee and a mentor (“mentorship is not something you can pay back, only forward”)\nCollaborations! Among your lab members, across different research groups at UGA, with different universities, and government and industry partners\n\n\n\nWhat we expect\nWe expect that our lab members:\n\nRespect and appreciate different opinions and perspectives. We can all learn from each other\nSeek opportunities for professional and personal growth\nAppreciate working in teams and with other scientists\nBe curious, resourceful, and enjoy continuous learning\nBe excited about making an impact on science, agriculture, and people\nHave a balance. We need to take time to not think of work and refresh our minds.\n\n\n\nSkills\nOur lab members inherently and purposefully have different backgrounds and skill sets that make each of us unique. There are some underlying skill sets that we share. Those include:\n\nCuriosity, resourcefulness, learning mindset\nTeam member\nAgricultural research training with a focus on sensors, precision management, complex data\nStatistical programming\n\n\n\nToolbox\nIn our team, we advocate the learning and use of open-source free software whenever possible and available. Below is a list of common needs and our open-source recommendation:\n\nStatistical programming language: R and Python\nIDE: RStudio, Jupyter notebooks, Google Colab\nLiterate programming: Quarto, Rmarkdown\nReference management: Zotero\nVersion control: git\nDistributed version control/cloud storage: GitHub\nGeographical information system IDE: QGIS\nGIS big data: Google Earth Engine\nWebsite deployment: GitHub pages, Netlify\nInternal communication: Slack\n\n\n\nResources\nHere’s a list of some free resources, including courses, presentations, online books, and blog posts.\n\nData science in a box\nR for Excel users\nIllustrated intro to GitHub\nFay Lab Manual\nrstudioconf2022 GitHub repo\nSTA 210: regression analysis\nHappy git and GitHub for the useR\nSTAT 545: data wrangling, exploration, and analysis with R\n#barbarplots"
   }
 ]
