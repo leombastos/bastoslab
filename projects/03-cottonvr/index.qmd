@@ -8,10 +8,29 @@ toc: true
 
 # Background
 
+Cotton is a perennial crop that we requires intensive management to be "annualized" (i.e., having a growing cycle that starts and ends within one growing season).
+
+Because of its perennial nature, cotton growth needs to be modulated by i) providing both the proper amount of nutrients (where nitrogen-N is the one applied at greatest rates), and ii) ensuring its use of resources (like N) is properly partitioned between vegetative and reproductive growth. With that, optimum cotton lint yield is attained by providing enough (and not more than that) N while applying plant growth regulators (PGR) to curb excessive vegetative growth in lieu of reproductive.
+
+Within-field variability in soil characteristics and properties like elevation, slope, texture, bulk density, organic matter, nutrient concentration, and pH can create variable cotton growth and yield potential. Cotton plants with variable growth will require different rates of N and PGR to attain proper vegetative/reproductive partitioning and achieve their yield potential. In-season variable rate N and PGR management can be used to better match input application rates with cotton growth requirements, increasing input use efficiency, optimizing yield, and increasing farm profitability.
+
+The detection of within-field cotton growth variability and its proper management can be performed using crop canopy sensors. These sensors vary distance to the plants and in sensor-related resolutions (spatial, temporal, spectral, and radiometric). Commonly used crop canopy sensors include proximal (\<1 m from plants) and remote (ranging from 50 m with UAVs to orbital distances with satellite). Proximal and remote sensors have their own advantages and disadvantages, with proximal sensors generally being more sensitive to crop growth differences but less scalable than remote sensors.
+
 # Hypothesis and Objectives
 
 We hypothesize that
 
-The objective of this study is to
+-   the use of proximal, UAV, and satellite sensors will produce similar in-season variable rate N and PGR rates in cotton,
+
+-   sensor-based N and PGR management will yield at least similarly to a flat-rate approach,
+
+-   sensor-based N and PGR management will be more efficient in the use of N and PGR compared to a flat-rate approach.
+
+The objectives of this study are to assess
+
+1.  how different are N and PGR rates when calculated using proximal, UAV, and satellite data,
+2.  the effect of sensor-based nutrient management in cotton lint yield and N and PGR use efficiency
 
 # Timeline
+
+This study will start in the Spring of 2023. A more detailed timeline will be created in the future.

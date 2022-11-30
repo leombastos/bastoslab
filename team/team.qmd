@@ -38,8 +38,12 @@ editor: visual
 
 ::: {.column width="60%"}
 -   Start term: Spring 2023
--   Duration: 1 year
--   Duties: collect data
+-   Duration: 6 months to 1 year
+-   Qualifications/duties:
+    -   be excited about precision agriculture, sensors, and being part of a diverse team
+    -   plan and collect crop and soils data
+    -   working in a growing team
+    -   English fluency
 :::
 :::
 
@@ -56,11 +60,17 @@ editor: visual
 ::: {.column width="60%"}
 -   Start term: Spring 2023
 -   Duration: 3 years
--   Duties: lead [cotton quality envirotyping project](/projects/01-cottongem)
--   Qualifications:
-    -   aaa
-    -   aaa
-    -   aaa
+-   Duties: lead the [cotton quality envirotyping](/projects/01-cottongem) and [cotton quality prediction](/projects/02-cottonqualpred) projects
+-   Qualifications: Experience with/highly motivated about
+    -   be excited about precision agriculture, sensors, and being part of a diverse team
+    -   cotton field research
+    -   applied statistical programming
+    -   data science concepts and tools
+    -   drone and satellite remote sensing
+    -   predictive ag
+    -   writing and publishing manuscripts
+    -   working in a growing team
+    -   English fluency
 :::
 :::
 
@@ -76,13 +86,24 @@ editor: visual
 
 ::: {.column width="60%"}
 -   Start term: Spring 2023
--   Duration: 3 years
--   Duties: lead [cotton quality prediction project](/projects/02-cottonqualpred)
+-   Duration: 3-4 years
+-   Duties: lead the [cotton](/projects/03-cottonvr) and [corn](/projects/04-cornvrn) variable rate nitrogen and plant-growth regulator projects
 -   Qualifications:
-    -   aaa
-    -   aaa
-    -   aaa
+    -   be excited about precision agriculture, sensors, and being part of a diverse team
+    -   cotton and corn field research
+    -   applied statistical programming
+    -   data science concepts and tools
+    -   drone and satellite remote sensing
+    -   writing and publishing manuscripts
+    -   working in a growing team
+    -   English fluency
 :::
 :::
 
-Our group will start advertising for positions on late August 2022, stay tuned!
+To apply for a position, [send me](mailto:lmbastos@uga.edu):
+
+-   Your intended starting date (month/year)
+-   Your CV
+-   Statement of interest
+-   GRE score
+-   TOEFL score (required for non-US citizens without a US graduate degree)

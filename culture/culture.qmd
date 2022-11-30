@@ -5,11 +5,11 @@ editor: visual
 
 # Hello, again!
 
-This "lab manual" is intended to be a living resource of **Bastos Lab** identity and values.
+This "lab manual" is intended to be a living resource of **Bastos Lab** information and guidelines for current and prospective lab members.
 
 Here you will find:
 
--   Our mission and vision 🌅
+-   Our mission 🌅
 
 -   What you can expect from the team 🤝
 
@@ -21,43 +21,81 @@ Here you will find:
 
 -   Resources 📖
 
-Explore all these topics from the left menu, and feel free to contribute to this manual by clicking on the GitHub link.
+Explore all these topics from the left menu.
 
 Cheers!
 
-# Mission and vision
+# Mission
+
+Our lab mission is to advance scientific knowledge in the area of integrative precision agriculture to the benefit of producers in Georgia, the Southern USA, and the world through innovative ideas and tools while training the next generation of data-savy ag leaders.
 
 # What you can expect
 
+Lab members can expect from the team:
+
+-   Respectful, diverse, and inclusive environment to grow as a scientist and as person
+
+-   All ideas and opinions are not only welcomed but appreciated
+
+-   Being both a mentee and a mentor ("mentorship is not something you can pay back, only forward")
+
+-   Collaborations! Among your lab members, across different research groups at UGA, with different universities, and government and industry partners
+
 # What we expect
 
+We expect that our lab members:
+
+-   Respect and appreciate different opinions and perspectives. We can all learn from each other
+
+-   Seek opportunities for professional and personal growth
+
+-   Appreciate working in teams and with other scientists
+
+-   Be curious, resourceful, and enjoy continuous learning
+
+-   Be excited about making an impact on science, agriculture, and people
+
+-   Have a balance. We need to take time to not think of work and refresh our minds.
+
 # Skills
+
+Our lab members inherently and purposefully have different backgrounds and skill sets that make each of us unique. There are some underlying skill sets that we share. Those include:
+
+-   Curiosity, resourcefulness, learning mindset
+
+-   Team member
+
+-   Agricultural research training with a focus on sensors, precision management, complex data
+
+-   Statistical programming
 
 # Toolbox
 
 In our team, we advocate the learning and use of open-source free software whenever possible and available. Below is a list of common needs and our open-source recommendation:
 
--   Statistical programming language: R and Python
+-   Statistical programming language: [R](https://www.r-project.org) and [Python](https://www.python.org)
 
--   IDE: RStudio, Jupyter notebooks, Google Colab
+-   IDE: [RStudio](https://www.rstudio.com/products/rstudio/download/), [Jupyter notebooks](https://jupyter.org), [Google Colab](https://colab.research.google.com)
 
--   Literate programming: Quarto and Rmarkdown
+-   Literate programming: [Quarto](https://quarto.org), [Rmarkdown](https://rmarkdown.rstudio.com)
 
--   Reference management: Zotero
+-   Reference management: [Zotero](https://www.zotero.org)
 
--   Version control: Git
+-   Version control: [git](https://git-scm.com)
 
--   Distributed version control/cloud storage: GitHub
+-   Distributed version control/cloud storage: [GitHub](https://github.com)
 
--   Geographical information system IDE: QGIS
+-   Geographical information system IDE: [QGIS](https://www.qgis.org/en/site/)
 
--   GIS big data: Google Earth Engine
+-   GIS big data: [Google Earth Engine](https://earthengine.google.com)
 
--   Website deployment: GitHub pages, Netlify
+-   Website deployment: [GitHub pages](https://pages.github.com), [Netlify](https://www.netlify.com)
 
--   Internal communication: Slack
+-   Internal communication: [Slack](https://slack.com)
 
 # Resources
+
+Here's a list of some free resources, including courses, presentations, online books, and blog posts.
 
 -   [Data science in a box](https://datasciencebox.org)
 

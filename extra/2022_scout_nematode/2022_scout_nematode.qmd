@@ -1,0 +1,20 @@
+---
+title: "2022 Scouting for Nematode - Satellite data"
+editor: visual
+---
+
+# Background and methods
+
+This page is intended to quickly share remote sensing data collected on a field reported with nematode issues grown with cotton in 2022.
+
+Imagery was retrieved from Sentinel-2 archive starting on 2022-04-01 through 2022-10-17. Only images with less than 40% cloud coverage were kept.
+
+Imagery data were used to calculate green normalized difference index (GNDVI), from which was created an animated time lapse of GNDVI during the selected period.
+
+# GNDVI timelapse
+
+![](images/2022_scout_nematode_gndvi_timelapse_gg.gif)
+
+# GNDVI - individual dates
+
+![](images/2022_scout_nematode_gndvi.png)

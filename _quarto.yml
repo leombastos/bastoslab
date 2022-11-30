@@ -40,6 +40,7 @@ format:
     toc: true
     toc-title: " "
     toc-location: left
+    toc-depth: 4
     code-copy: true
     code-overflow: wrap
 

@@ -1,0 +1,20 @@
+---
+title: "2019 Scouting for Issues - Satellite data"
+editor: visual
+---
+
+# Background and methods
+
+This page is intended to quickly share remote sensing data collected on a field reported with unknown issues grown with corn in 2019.
+
+Imagery was retrieved from Sentinel-2 archive starting on 2019-04-01 through 2019-10-31. Only images with less than 40% cloud coverage were kept.
+
+Imagery data were used to calculate green normalized difference index (GNDVI), from which was created an animated time lapse of GNDVI during the selected period.
+
+# GNDVI timelapse
+
+![](images/2019_scout_unknown_gndvi_timelapse_gg.gif)
+
+# GNDVI - individual dates
+
+![](images/2019_scout_unknown_gndvi.png)
