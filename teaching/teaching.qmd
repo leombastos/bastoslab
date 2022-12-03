@@ -1,0 +1,34 @@
+---
+title: "Teaching"
+editor: visual
+---
+
+Here I share links to my teaching material, including **workshops** and full **courses**. Materials normally include
+
+-   Recordings of the live sessions (on YouTube)
+
+-   Partial code to follow along with the videos (on GitHub)
+
+-   Complete code (on GitHub)
+
+Click the links below to explore them.
+
+::: columns
+::: {.column width="50%"}
+## Workshops
+
+[Regression for optimum and prediction](2022-reg.qmd)\
+[Data wrangling and iteration](2021-wrangit.qmd)\
+[Multivariate analysis](2021-multivar.qmd)\
+[Agronomy Society R beginner bootcamp](2021-asaboot.qmd)\
+[Experimental Design, ANOVA, and Regression](2020-designanovareg.qmd)\
+[Intro to R](2019-introtoR.qmd)
+:::
+
+::: {.column width="50%"}
+## Courses
+
+[2023 Programing Precision Ag](/2023-ppa/index.qmd)\
+[2022 Advanced Topics in Precision Ag](2022-apa.qmd)
+:::
+:::

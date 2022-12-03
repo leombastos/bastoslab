@@ -3,7 +3,7 @@ project:
   preview:
     browser: true
     
-website:
+website: 
   title: "Bastos Lab"
   page-footer: 
     left: "<span> Blog made with [Quarto](https://quarto.org/), by Leo Bastos. License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/). </span>"
@@ -23,6 +23,10 @@ website:
         href: team/team.qmd
       - text: Projects 
         href: projects/projects.qmd
+      - text: Talks 
+        href: talks/talks.qmd
+      - text: Teaching 
+        href: teaching/teaching.qmd
       - text: Lab manual  
         href: culture/culture.qmd
       - icon: github

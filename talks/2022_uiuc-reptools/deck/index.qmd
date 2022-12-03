@@ -441,7 +441,7 @@ Even if we are working off of the same GitHub repository, our local software ver
 ## Personal marketing   
 ::: columns  
 ::: {.column width="50%"}
-- This entire presentation was made with **quarto**, and its source code is available on [my GitHub](https://github.com/leombastos/2022_talk_reptools)  
+- This entire presentation was made with **quarto**, and its source code is available on [my GitHub](https://github.com/leombastos/bastoslab/blob/main/talks/2022_uiuc-reptools/deck/index.qmd)  
 
 - You can find more info on my lab's website (also made with **quarto**): [Bastos Lab](https://leombastos.github.io/bastoslab/) ![](logo.png){.absolute left=15% top=70% width=200 height=200}    
 :::

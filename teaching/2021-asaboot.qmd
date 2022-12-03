@@ -1,0 +1,260 @@
+---
+title: "ASA R beginner bootcamp workshop"
+editor: visual  
+toc: true
+---
+
+Hi there!
+
+This is the welcome page for the [**2021 ASA R beginner bootcamp workshop**](https://scisoc.confex.com/scisoc/2021am/prelim.cgi/Session/22016)!
+
+This page is intended as the main hub for the workshop, where I will share instructions, links, and resources.
+
+------------------------------------------------------------------------
+
+## Workshop details
+
+`r emo::ji("globe")` Salt Palace Convention Center - 250 AB\
+`r emo::ji("calendar")` Sunday, November $7^{th}$\
+`r emo::ji("clock")` 9 am to 5 pm
+
+-   Use the **East Entrance** to the Salt Palace Convention Center on Temple
+
+-   Conference registration opens at **8 am** on Sunday, however you do not need to pick up your badge before attending the workshop
+
+-   We will NOT offer beverages/snacks/lunch as part of the workshop
+
+-   There will be water fountain and restrooms nearby
+
+-   There will be multiple breaks throughout the day so you can stretch, grab a snack/coffee/water
+
+-   The coffee kiosk near the exhibit hall is open 8 am - 6 pm, serving breakfast until 10am on Sunday
+
+-   Attendee **Wi-Fi** network name is ACS2021, password is **SLC2021**
+
+------------------------------------------------------------------------
+
+Please browse the tabs below to explore
+
+-   Before the workshop: getting ready\
+-   During the workshop: help and agenda\
+-   After the workshop: resources and network
+
+## Before
+
+Before the workshop, you will need to:
+
+1.  Join our Slack workspace\
+2.  Install R\
+3.  Install RStudio\
+4.  Install packages\
+5.  Download workshop material from GitHub
+
+------------------------------------------------------------------------
+
+### 1. Join our Slack workspace `r icons::fontawesome("slack")`
+
+All communications about the workshop will happen in our **Slack** workspace.
+
+Slack is an application that is used for teams and projects communication, and can be used both on your **browser and phone**.
+
+For more information about Slack, check their [website](https://slack.com).
+
+If you have registered for the workshop, you will receive an invitation to join our Slack workspace by email.
+
+::: callout-warning
+In case you have not received the invitation, send me an email at **lmbastos\@ksu.edu** with your full name, and I will add you once I confirm you are registered.
+:::
+
+> Make sure to use our Slack workspace to meet fellow attendees, seek help, and exchange ideas!
+
+### 2. Install R `r icons::fontawesome("r-project")`
+
+Follow [this link](https://cran.r-project.org), and download it for your appropriate operating system (Linux, MacOS, or Windows).
+
+Once downloaded, install R on your laptop.
+
+### 3. Install RStudio `r icons::fontawesome("registered")`
+
+Once you have already installed R, follow [this link](https://www.rstudio.com/products/rstudio/download/#download), and download RStudio for your appropriate operating system.
+
+If multiple download options appear, select **"Free RStudio Desktop"**.
+
+Once downloaded, install RStudio on your laptop.
+
+::: callout-note
+You can run R without RStudio, but you **cannot** run RStudio without R.
+
+R is the main software, RStudio is an extra software that makes our lives easier when working with R by providing an integrated development environment.
+:::
+
+### 4. Install packages `r icons::fontawesome("box-open")`
+
+If you are not familiar with R lingo, you can think of a package as an app on your phone: a package will extend R functionality by making available to you extra software options that do not come pre-installed with R.
+
+We will be using multiple packages that need to be installed, and doing so before the workshop will ensure that no one gets behind.
+
+After installing R and RStudio, follow these steps:
+
+-   Download [this](http://agronomy.netlify.app/slides/04-workshoppackageinstall/before_installpackages.R) R script\
+-   Double-click the R script (this will open it in RStudio)\
+-   On the same RStudio window that just opened, install each package at a time by placing your cursor on the first script line and hitting `Ctrl + return` (Windows) or `Command + return` (Mac)\
+-   Some text will start appearing on the console as the packages get installed\
+-   Keep running each line as described above until you reach the last package installation (script line 14)
+
+To ensure that each package was installed, run the code starting with `library("ggplot2")`, line by line (from script lines 18 to 29).
+
+If after running the `library()` function you get an error message like
+
+::: callout-warning
+## 
+
+**Error in library("packagename") :**\
+**there is no package called \`packagename**
+:::
+
+This means the package was not properly installed and you may need help.
+
+### 5. Download material from GitHub `r icons::fontawesome("github")`
+
+This will be a live coding workshop, meaning that we will develop the scripts together.
+
+To download the initial partially-filled scripts and the data set, click [here](https://github.com/leombastos/2021_ASA_RBC) and follow the instructions.
+
+At the end of the workshop, I will provide the completed scripts for your reference.
+
+------------------------------------------------------------------------
+
+Once you have
+
+-   Joined the Slack workspace\
+-   Downloaded and installed R\
+-   Downloaded and installed RStudio\
+-   Installed needed R packages\
+-   Downloaded material from GitHub
+
+Then you are ready for the workshop!
+
+::: callout-warning
+If you run into issues at any of the steps above, let us know, preferably **before Sunday**, via Slack.
+
+We need to make sure everyone is ready to go at 9 am, we will have very limited time for troubleshooting technical issues during the workshop!
+:::
+
+I'm excited to be seeing you all soon!
+
+Leo.
+
+------------------------------------------------------------------------
+
+## During
+
+In this page, we are covering:
+
+1.  Seeking help prior to Sunday - Slack\
+2.  Seeking help during workshop - TAs\
+3.  Agenda
+
+------------------------------------------------------------------------
+
+### 1. Seeking help prior to Sunday - Slack `r icons::fontawesome("question-circle")`
+
+The workshop will start at 9 am.
+
+I will arrive at the room 30 min earlier to help with any last minute issues.
+
+During the workshop, we will not have much time to troubleshoot technical issues like software and package installation.
+
+::: callout-warning
+Please use the Slack workspace **prior to Sunday** to seek help and address any issues you may have.
+:::
+
+------------------------------------------------------------------------
+
+### 2. Seeking help during workshop - TAs `r icons::fontawesome("hands-helping")`
+
+During the workshop, we will have 3 to 4 teaching assistants (TAs) that volunteered to help (much appreciated!).
+
+::: callout-note
+TA team:
+
+-   Adrian Correndo\
+-   Dwarika Bhattarai\
+-   Pawan Basnet\
+-   Pratishtha Poudel\
+:::
+
+The TA team will assist with individual-specific questions like software not working properly, packages not loading, code not running, etc.
+
+------------------------------------------------------------------------
+
+### 3. Agenda `r icons::fontawesome("calendar-check")`
+
+During the day, we have scheduled **5 content sessions** intertwined with **4 break sessions** including lunch.
+
+Here's the agenda with times and activities:
+
+```{r echo=FALSE}
+library(pander)
+library(dplyr, warn.conflicts = F)
+agenda <- tribble(~Time, ~Activity,
+                  "9 to 10:20\\\n(Session 1)", "Welcome\\\nAgenda & housekeeping\\\nR & Rstudio intro\\\nRstudio projects\\\nRmarkdown",
+                  "10:20 to 10:30", "Break",
+                  "10:30 to noon\\\n(Session 2)", "Data wrangling",
+                  "noon to 1", "Lunch break",
+                  "1 to 2:20\\\n(Session 3)", "EDA\\\nRCBD ANOVA\\\nModel assumptions\\\nModel means",
+                  "2:20 to 2:30", "Break",
+                  "2:30 to 3:50\\\n(Session 4)", "Pairwise comparison\\\nPub-ready plot",
+                  "3:50 to 4", "Break (tentative)",
+                  "4 to 5 pm\\\n(Session 5)", "Iteration (tentative)\\\nResources\\\nSurvey"
+                  )
+
+#panderOptions('keep.line.breaks', TRUE)
+
+agenda %>%
+  pander(keep.line.breaks=T,
+         justify="left")
+  #knitr::kable(format="html")
+```
+
+## After
+
+In this page, we are covering:
+
+1.  Post-completion survey\
+2.  Resources\
+3.  Slack network
+
+------------------------------------------------------------------------
+
+### 1. Post-completion survey `r icons::fontawesome("list")`
+
+Once the workshop is finalized, I will share a post-completion Google Forms survey, and ask for your feedback on it.
+
+This will be a quick, anonymous survey, and your answers will be very important to guide improvements in my future R teaching endeavors.
+
+The survey can be found [here](https://forms.gle/psVobpqQJNGh8WLR6), thank you for helping me to improve!
+
+------------------------------------------------------------------------
+
+### 2. Resources `r icons::fontawesome("info")`
+
+-   Google\
+-   [`ggplot2` cheatsheet](https://github.com/rstudio/cheatsheets/blob/main/data-visualization-2.1.pdf)\
+-   [`dplyr` data transformation cheatsheet](https://github.com/rstudio/cheatsheets/blob/main/data-transformation.pdf)\
+-   [`tidyr` data tidying](https://github.com/rstudio/cheatsheets/blob/main/tidyr.pdf)\
+-   Stack overflow
+
+------------------------------------------------------------------------
+
+### 3. Slack network `r icons::fontawesome("user-plus")`
+
+Our Slack workspace has over 40 people, all interested in agronomic statistics programming. What a great network!
+
+Feel free to use our workspace after the workshop to continue communication and collaboration!
+
+-   Have an R question that you just can't figure out?\
+-   Have an exciting programming project and are looking for collaborators?\
+-   Have a position you're trying to fill that requires agronomic statistical programming knowledge?
+
+**Feel free to share any of those and anything else in our workspace!**

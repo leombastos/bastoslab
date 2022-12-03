@@ -1,8 +1,8 @@
 ---
 #title: "Bastos Lab"
 #toc: false
+page-layout: full
 ---
-
 ![](images/logo2.png){fig-align="center" width="409"}
 
 ## 👋 Hello there!

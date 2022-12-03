@@ -1,6 +1,7 @@
 ---
 title: "Lab manual"
 editor: visual
+page-layout: full
 ---
 
 # Hello, again!
