@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2022-08-03">
 
-<title>Bastos Lab - Cotton sensor-based variable rate N and PGR management</title>
+<title>Bastos Lab - Talks</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,24 +23,26 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -61,16 +62,48 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-talks .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
-<link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Bastos Lab - Cotton sensor-based variable rate N and PGR management">
-<meta property="og:description" content="Cotton is a perennial crop that we requires intensive management to be “annualized” (i.e., having a growing cycle that starts and ends within one growing season).">
-<meta property="og:image" content="https://leombastos.github.io/bastoslab/projects/03-cottonvr/featured.jpg">
+    const options = {
+      valueNames: ['listing-image','listing-date','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-talks'] = new List('listing-talks', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="Bastos Lab - Talks">
+<meta property="og:image" content="https://leombastos.github.io/bastoslab/talks/2022_uga-plantpath/featured.png">
 <meta property="og:site-name" content="Bastos Lab">
-<meta name="twitter:title" content="Bastos Lab - Cotton sensor-based variable rate N and PGR management">
-<meta name="twitter:description" content="Cotton is a perennial crop that we requires intensive management to be “annualized” (i.e., having a growing cycle that starts and ends within one growing season).">
-<meta name="twitter:image" content="https://leombastos.github.io/bastoslab/projects/03-cottonvr/featured.jpg">
+<meta property="og:image:height" content="1654">
+<meta property="og:image:width" content="2672">
+<meta name="twitter:title" content="Bastos Lab - Talks">
+<meta name="twitter:image" content="https://leombastos.github.io/bastoslab/talks/2022_uga-plantpath/featured.png">
+<meta name="twitter:image-height" content="1654">
+<meta name="twitter:image-width" content="2672">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -81,8 +114,8 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../images/logo.png" alt="" class="navbar-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../images/logo.png" alt="" class="navbar-logo">
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -91,27 +124,27 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html">
+    <a class="nav-link" href="../index.html">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../team/team.html">
+    <a class="nav-link" href="../team/team.html">
  <span class="menu-text">Team</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../projects/projects.html">
+    <a class="nav-link" href="../projects/projects.html">
  <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../talks/talks.html">
+    <a class="nav-link active" href="../talks/talks.html" aria-current="page">
  <span class="menu-text">Talks</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../teaching/teaching.html">
+    <a class="nav-link" href="../teaching/teaching.html">
  <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../culture/culture.html">
+    <a class="nav-link" href="../culture/culture.html">
  <span class="menu-text">Lab manual</span></a>
   </li>  
   <li class="nav-item compact">
@@ -132,14 +165,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
-   
-  <ul>
-  <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background">Background</a></li>
-  <li><a href="#hypothesis-and-objectives" id="toc-hypothesis-and-objectives" class="nav-link" data-scroll-target="#hypothesis-and-objectives">Hypothesis and Objectives</a></li>
-  <li><a href="#timeline" id="toc-timeline" class="nav-link" data-scroll-target="#timeline">Timeline</a></li>
-  </ul>
-</nav>
+    
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -149,7 +175,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Cotton sensor-based variable rate N and PGR management</h1>
+<h1 class="title">Talks</h1>
 </div>
 
 
@@ -157,12 +183,6 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">August 3, 2022</p>
-    </div>
-  </div>
   
     
   </div>
@@ -170,33 +190,73 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="background" class="level1">
-<h1>Background</h1>
-<p>Cotton is a perennial crop that we requires intensive management to be “annualized” (i.e., having a growing cycle that starts and ends within one growing season).</p>
-<p>Because of its perennial nature, cotton growth needs to be modulated by i) providing both the proper amount of nutrients (where nitrogen-N is the one applied at greatest rates), and ii) ensuring its use of resources (like N) is properly partitioned between vegetative and reproductive growth. With that, optimum cotton lint yield is attained by providing enough (and not more than that) N while applying plant growth regulators (PGR) to curb excessive vegetative growth in lieu of reproductive.</p>
-<p>Within-field variability in soil characteristics and properties like elevation, slope, texture, bulk density, organic matter, nutrient concentration, and pH can create variable cotton growth and yield potential. Cotton plants with variable growth will require different rates of N and PGR to attain proper vegetative/reproductive partitioning and achieve their yield potential. In-season variable rate N and PGR management can be used to better match input application rates with cotton growth requirements, increasing input use efficiency, optimizing yield, and increasing farm profitability.</p>
-<p>The detection of within-field cotton growth variability and its proper management can be performed using crop canopy sensors. These sensors vary distance to the plants and in sensor-related resolutions (spatial, temporal, spectral, and radiometric). Commonly used crop canopy sensors include proximal (&lt;1 m from plants) and remote (ranging from 50 m with UAVs to orbital distances with satellite). Proximal and remote sensors have their own advantages and disadvantages, with proximal sensors generally being more sensitive to crop growth differences but less scalable than remote sensors.</p>
-</section>
-<section id="hypothesis-and-objectives" class="level1">
-<h1>Hypothesis and Objectives</h1>
-<p>We hypothesize that</p>
-<ul>
-<li><p>the use of proximal, UAV, and satellite sensors will produce similar in-season variable rate N and PGR rates in cotton,</p></li>
-<li><p>sensor-based N and PGR management will yield at least similarly to a flat-rate approach,</p></li>
-<li><p>sensor-based N and PGR management will be more efficient in the use of N and PGR compared to a flat-rate approach.</p></li>
-</ul>
-<p>The objectives of this study are to assess</p>
-<ol type="1">
-<li>how different are N and PGR rates when calculated using proximal, UAV, and satellite data,</li>
-<li>the effect of sensor-based nutrient management in cotton lint yield and N and PGR use efficiency</li>
-</ol>
-</section>
-<section id="timeline" class="level1">
-<h1>Timeline</h1>
-<p>This study will start in the Spring of 2023. A more detailed timeline will be created in the future.</p>
+<div id="listing-talks" class="quarto-listing quarto-listing-container-grid">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-talks-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-talks'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option>
+     </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<div class="list grid quarto-listing-cols-2">
+<div class="g-col-1" data-index="0" data-listing-date-sort="1669006800000" data-listing-file-modified-sort="1672836802810" data-listing-reading-time-sort="0.185">
+<a href="../talks/2022_uga-plantpath/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../talks/2022_uga-plantpath/featured.png" class="thumbnail-image card-img" style="height: 10em;">
+</p>
+<div class="card-body post-contents">
+<div class="card-subtitle listing-subtitle">
+Plant Pathology Seminar Series, University of Georgia
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Nov 21, 2022
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-listing-date-sort="1669784400000" data-listing-file-modified-sort="1672841824694" data-listing-reading-time-sort="0.18">
+<a href="../talks/2022_uiuc-reptools/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../talks/2022_uiuc-reptools/featured.png" class="thumbnail-image card-img" style="height: 10em;">
+</p>
+<div class="card-body post-contents">
+<div class="card-subtitle listing-subtitle">
+Crop Sciences Seminar Series, University of Illinois at Urbana-Champaign
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Nov 30, 2022
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
 
 
-</section>
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -451,7 +511,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left"><span> Blog made with <a href="https://quarto.org/">Quarto</a>, by Leo Bastos. License: <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a>. </span></div>   
-    <div class="nav-footer-right"><img src="../../images/UGA-logo.png" style="float:right;height:60px"></div>
+    <div class="nav-footer-right"><img src="../images/UGA-logo.png" style="float:right;height:60px"></div>
   </div>
 </footer>
 

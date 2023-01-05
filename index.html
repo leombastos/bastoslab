@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -60,15 +62,76 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-projects .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      page: 3,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-projects'] = new List('listing-projects', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-talks .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-subtitle','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-talks'] = new List('listing-talks', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="">
 <meta property="og:description" content="Welcome to the Bastos Lab home page.">
+<meta property="og:image" content="https://leombastos.github.io/bastoslab/projects/04-cornvrn/featured.jpg">
 <meta property="og:site-name" content="Bastos Lab">
 <meta name="twitter:title" content="">
 <meta name="twitter:description" content="Welcome to the Bastos Lab home page.">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://leombastos.github.io/bastoslab/projects/04-cornvrn/featured.jpg">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="floating nav-fixed">
@@ -100,6 +163,14 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./talks/talks.html">
+ <span class="menu-text">Talks</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./teaching/teaching.html">
+ <span class="menu-text">Teaching</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./culture/culture.html">
  <span class="menu-text">Lab manual</span></a>
   </li>  
@@ -118,39 +189,13 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
-   
-  <ul>
-  <li><a href="#hello-there" id="toc-hello-there" class="nav-link active" data-scroll-target="#hello-there">👋 Hello there!</a></li>
-  <li><a href="#upcoming" id="toc-upcoming" class="nav-link" data-scroll-target="#upcoming">🗓️ Upcoming</a>
-  <ul>
-  <li><a href="#courses" id="toc-courses" class="nav-link" data-scroll-target="#courses">Courses 👨‍🏫</a>
-  <ul class="collapse">
-  <li><a href="#advanced-topics-in-precision-agriculture" id="toc-advanced-topics-in-precision-agriculture" class="nav-link" data-scroll-target="#advanced-topics-in-precision-agriculture">🌎 <strong>Advanced Topics in Precision Agriculture</strong></a></li>
-  <li><a href="#data-science-applied-to-agriculture-and-natural-resources" id="toc-data-science-applied-to-agriculture-and-natural-resources" class="nav-link" data-scroll-target="#data-science-applied-to-agriculture-and-natural-resources">👩‍💻 <strong>Data science applied to agriculture and natural resources</strong></a></li>
-  </ul></li>
-  <li><a href="#workshops" id="toc-workshops" class="nav-link" data-scroll-target="#workshops">Workshops 💻</a>
-  <ul class="collapse">
-  <li><a href="#anova-vs.-regression" id="toc-anova-vs.-regression" class="nav-link" data-scroll-target="#anova-vs.-regression">📈 <strong>ANOVA</strong> <strong>vs.&nbsp;Regression</strong></a></li>
-  </ul></li>
-  <li><a href="#invited-talks" id="toc-invited-talks" class="nav-link" data-scroll-target="#invited-talks">Invited Talks 🗣️</a>
-  <ul class="collapse">
-  <li><a href="#from-zero-to-hero-a-researchers-path-through-data-science-tools-for-reproducibility" id="toc-from-zero-to-hero-a-researchers-path-through-data-science-tools-for-reproducibility" class="nav-link" data-scroll-target="#from-zero-to-hero-a-researchers-path-through-data-science-tools-for-reproducibility">🛤️ <strong>“From zero to hero: a researcher’s path through data science tools for reproducibility”</strong></a></li>
-  <li><a href="#state-wide-weather-data-interpolation-for-use-in-digital-agriculture" id="toc-state-wide-weather-data-interpolation-for-use-in-digital-agriculture" class="nav-link" data-scroll-target="#state-wide-weather-data-interpolation-for-use-in-digital-agriculture">🌦️ <strong>“State-wide weather data interpolation for use in digital agriculture”</strong></a></li>
-  </ul></li>
-  </ul></li>
-  <li><a href="#explore-above" id="toc-explore-above" class="nav-link" data-scroll-target="#explore-above">👆 Explore above</a></li>
-  </ul>
-</nav>
-</nav>
+  
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    </div>
+    
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 
 
@@ -163,80 +208,134 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="hello-there">👋 Hello there!</h2>
 <p>Welcome to the <strong>Bastos Lab</strong> home page.</p>
 <p>Bastos Lab is part of the <a href="https://precisionag.caes.uga.edu">Integrative Precision Agriculture</a> cluster at the University of Georgia.</p>
+</section>
+<section id="projects-upcoming-and-recent" class="level2">
+<h2 class="anchored" data-anchor-id="projects-upcoming-and-recent"><strong>Projects</strong>, Upcoming and Recent</h2>
 <p>Research areas we are currently tackling range from <u>within-field</u> to <u>regional</u> and include:</p>
 <ul>
 <li><p>Sensor-based variable rate management of nutrients and chemicals during the growing season in corn and cotton</p></li>
 <li><p>Cotton fiber quality regional envirotyping</p></li>
-<li><p>Cotton fiber quality pre-harvest prediction</p></li>
+<li><p>Cotton fiber quality pre-harvest prediction.</p></li>
 </ul>
+<div id="listing-projects" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-listing-date-sort="1659585600000" data-listing-file-modified-sort="1661518142271" data-listing-reading-time-sort="1.58">
+<a href="./projects/04-cornvrn/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./projects/04-cornvrn/featured.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Corn sensor-based variable rate N management
+</h5>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-listing-date-sort="1659499200000" data-listing-file-modified-sort="1661518144083" data-listing-reading-time-sort="1.955">
+<a href="./projects/03-cottonvr/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./projects/03-cottonvr/featured.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Cotton sensor-based variable rate N and PGR management
+</h5>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="2" data-listing-date-sort="1659412800000" data-listing-file-modified-sort="1660082496140" data-listing-reading-time-sort="2.13">
+<a href="./projects/02-cottonqualpred/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./projects/02-cottonqualpred/featured.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Cotton fiber quality prediction
+</h5>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="3" data-listing-date-sort="1659326400000" data-listing-file-modified-sort="1672841829354" data-listing-reading-time-sort="1.63">
+<a href="./projects/01-cottongem/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img data-src="./projects/01-cottongem/featured.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Cotton fiber quality envirotyping
+</h5>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+<nav id="projects-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
+</div>
+<p><a href="../projects/projects.html"> <button type="button" class="btn btn-primary float-end btn-sm">See all</button></a></p>
+<p><br></p>
 </section>
-<section id="upcoming" class="level2">
-<h2 class="anchored" data-anchor-id="upcoming">🗓️ Upcoming</h2>
-<p>Here’s a list of upcoming courses, workshops, and invited talks.</p>
-<section id="courses" class="level3">
-<h3 class="anchored" data-anchor-id="courses">Courses 👨‍🏫</h3>
-<section id="advanced-topics-in-precision-agriculture" class="level4">
-<h4 class="anchored" data-anchor-id="advanced-topics-in-precision-agriculture">🌎 <strong>Advanced Topics in Precision Agriculture</strong></h4>
-<ul>
-<li><p>Will be offered at UGA in the Spring Semester of 2023</p></li>
-<li><p>3 credit hours, meet 3x a week</p></li>
-<li><p>Undergraduate/Graduate student level course</p></li>
-<li><p>Explore the entire cycle of gathering, cleaning, processing and interpolating important precision ag data layers like yield monitor and soil electrical conductivity with the goal of creating zones for variable rate input recommendation and profitability.</p></li>
-<li><p>All analysis conducted in R/RStudio with a focus in automation and reproducibility.</p></li>
-<li><p>Interested in the class but not a student at UGA? Check out the class website <a href="https://agronomy.netlify.app/teaching/2022_crss_4060-6060/">here</a> to find the class agenda with links for recorded lectures on YouTube and partial and complete code on GitHub.</p></li>
-</ul>
-</section>
-<section id="data-science-applied-to-agriculture-and-natural-resources" class="level4">
-<h4 class="anchored" data-anchor-id="data-science-applied-to-agriculture-and-natural-resources">👩‍💻 <strong>Data science applied to agriculture and natural resources</strong></h4>
-<ul>
-<li><p>Will be offered at UGA in the Fall Semester of 2023</p></li>
-<li><p>3 credit hours, meet 3x a week</p></li>
-<li><p>Undergraduate/Graduate student level course</p></li>
-<li><p>Topics covered include statistical programming in R, RStudio projects, literate programming with Quarto, version control with git and GitHub, analysis workflow development (data import, EDA, modeling, model checking, extracting means and pairwise comparison letters, and creating publication-ready plots), and data analysis deliverable presentation in the form of dashboards and websites.</p></li>
-</ul>
-</section>
-</section>
-<section id="workshops" class="level3">
-<h3 class="anchored" data-anchor-id="workshops">Workshops 💻</h3>
-<p>Leo Bastos will be teaching the following workshops:</p>
-<section id="anova-vs.-regression" class="level4">
-<h4 class="anchored" data-anchor-id="anova-vs.-regression">📈 <strong>ANOVA</strong> <strong>vs.&nbsp;Regression</strong></h4>
-<ul>
-<li><p><u>When</u>: September 12th 2022</p></li>
-<li><p><u>Who</u>: University of Georgia and Kansas State University graduate students, staff, and faculty</p></li>
-<li><p><u>Where</u>: via zoom (link to be shared with registrants)</p></li>
-<li><p><u>What</u>: the workshop will explore the difference between ANOVA and regression analysis and some cool applications of regression like prediction and finding an optimum input rate that maximizes yield.</p></li>
-</ul>
-</section>
-</section>
-<section id="invited-talks" class="level3">
-<h3 class="anchored" data-anchor-id="invited-talks">Invited Talks 🗣️</h3>
-<section id="from-zero-to-hero-a-researchers-path-through-data-science-tools-for-reproducibility" class="level4">
-<h4 class="anchored" data-anchor-id="from-zero-to-hero-a-researchers-path-through-data-science-tools-for-reproducibility">🛤️ <strong>“From zero to hero: a researcher’s path through data science tools for reproducibility”</strong></h4>
-<ul>
-<li><p><u>When</u>: November 21st 2022, 3 to 4 pm</p></li>
-<li><p><u>Where</u>: Miller Hall, Athens GA</p></li>
-<li><p><u>Hosts</u>: Plant Pathology Seminar Series, Department of Plant Pathology, University of Georgia</p></li>
-</ul>
-</section>
-<section id="state-wide-weather-data-interpolation-for-use-in-digital-agriculture" class="level4">
-<h4 class="anchored" data-anchor-id="state-wide-weather-data-interpolation-for-use-in-digital-agriculture">🌦️ <strong>“State-wide weather data interpolation for use in digital agriculture”</strong></h4>
-<ul>
-<li><p><u>When</u>: November 30th 2022, noon to 1 pm</p></li>
-<li><p><u>Where</u>: TBD</p></li>
-<li><p><u>Hosts</u>: Crop Sciences Seminar Series, Department of Agronomy, University of Illinois at Urbana-Champaign</p></li>
-</ul>
-</section>
-</section>
-</section>
-<section id="explore-above" class="level2">
-<h2 class="anchored" data-anchor-id="explore-above">👆 Explore above</h2>
-<p>Check the tabs on top to learn more about:</p>
-<ul>
-<li><p>Our <a href="./team/team.html">team</a> members and lab openings</p></li>
-<li><p>Our current <a href="./projects/projects.html">projects</a></p></li>
-<li><p>Our <a href="./culture/culture.html">lab manual</a> and resources</p></li>
-</ul>
+<section id="talks-upcoming-and-recent" class="level2">
+<h2 class="anchored" data-anchor-id="talks-upcoming-and-recent"><strong>Talks</strong>, Upcoming and Recent</h2>
+<div id="listing-talks" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-listing-date-sort="1669784400000" data-listing-file-modified-sort="1672841824694" data-listing-reading-time-sort="0.18">
+<a href="./talks/2022_uiuc-reptools/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./talks/2022_uiuc-reptools/featured.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<div class="card-subtitle listing-subtitle">
+Crop Sciences Seminar Series, University of Illinois at Urbana-Champaign
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Nov 30, 2022
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-listing-date-sort="1669006800000" data-listing-file-modified-sort="1672836802810" data-listing-reading-time-sort="0.185">
+<a href="./talks/2022_uga-plantpath/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./talks/2022_uga-plantpath/featured.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<div class="card-subtitle listing-subtitle">
+Plant Pathology Seminar Series, University of Georgia
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Nov 21, 2022
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+<p><a href="../talks/talks.html"> <button type="button" class="btn btn-primary float-end btn-sm">See all</button></a></p>
+<p><br></p>
+
 
 
 </section>

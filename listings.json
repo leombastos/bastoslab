@@ -7,5 +7,23 @@
       "/projects/03-cottonvr/index.html",
       "/projects/04-cornvrn/index.html"
     ]
+  },
+  {
+    "listing": "/talks/talks.html",
+    "items": [
+      "/talks/2022_uga-plantpath/index.html",
+      "/talks/2022_uiuc-reptools/index.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/projects/04-cornvrn/index.html",
+      "/projects/03-cottonvr/index.html",
+      "/projects/02-cottonqualpred/index.html",
+      "/projects/01-cottongem/index.html",
+      "/talks/2022_uiuc-reptools/index.html",
+      "/talks/2022_uga-plantpath/index.html"
+    ]
   }
 ]

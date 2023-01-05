@@ -18,7 +18,7 @@
     "href": "projects/projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Cotton fiber quality envirotyping\n\n\n\n\n\n\nAug 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCotton fiber quality prediction\n\n\n\n\n\n\nAug 2, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCotton sensor-based variable rate N and PGR management\n\n\n\n\n\n\nAug 3, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCorn sensor-based variable rate N management\n\n\n\n\n\n\nAug 4, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nCotton fiber quality envirotyping\n\n\n\nAug 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCotton fiber quality prediction\n\n\n\nAug 2, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCotton sensor-based variable rate N and PGR management\n\n\n\nAug 3, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCorn sensor-based variable rate N management\n\n\n\nAug 4, 2022\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/02-cottonqualpred/index.html",
@@ -33,6 +33,13 @@
     "title": "Cotton sensor-based variable rate N and PGR management",
     "section": "",
     "text": "Background\nCotton is a perennial crop that we requires intensive management to be “annualized” (i.e., having a growing cycle that starts and ends within one growing season).\nBecause of its perennial nature, cotton growth needs to be modulated by i) providing both the proper amount of nutrients (where nitrogen-N is the one applied at greatest rates), and ii) ensuring its use of resources (like N) is properly partitioned between vegetative and reproductive growth. With that, optimum cotton lint yield is attained by providing enough (and not more than that) N while applying plant growth regulators (PGR) to curb excessive vegetative growth in lieu of reproductive.\nWithin-field variability in soil characteristics and properties like elevation, slope, texture, bulk density, organic matter, nutrient concentration, and pH can create variable cotton growth and yield potential. Cotton plants with variable growth will require different rates of N and PGR to attain proper vegetative/reproductive partitioning and achieve their yield potential. In-season variable rate N and PGR management can be used to better match input application rates with cotton growth requirements, increasing input use efficiency, optimizing yield, and increasing farm profitability.\nThe detection of within-field cotton growth variability and its proper management can be performed using crop canopy sensors. These sensors vary distance to the plants and in sensor-related resolutions (spatial, temporal, spectral, and radiometric). Commonly used crop canopy sensors include proximal (<1 m from plants) and remote (ranging from 50 m with UAVs to orbital distances with satellite). Proximal and remote sensors have their own advantages and disadvantages, with proximal sensors generally being more sensitive to crop growth differences but less scalable than remote sensors.\n\n\nHypothesis and Objectives\nWe hypothesize that\n\nthe use of proximal, UAV, and satellite sensors will produce similar in-season variable rate N and PGR rates in cotton,\nsensor-based N and PGR management will yield at least similarly to a flat-rate approach,\nsensor-based N and PGR management will be more efficient in the use of N and PGR compared to a flat-rate approach.\n\nThe objectives of this study are to assess\n\nhow different are N and PGR rates when calculated using proximal, UAV, and satellite data,\nthe effect of sensor-based nutrient management in cotton lint yield and N and PGR use efficiency\n\n\n\nTimeline\nThis study will start in the Spring of 2023. A more detailed timeline will be created in the future."
+  },
+  {
+    "objectID": "talks/2022_uiuc-reptools/index.html",
+    "href": "talks/2022_uiuc-reptools/index.html",
+    "title": "From zero to hero: a researcher’s path through data science tools for reproducibility",
+    "section": "",
+    "text": "When: November 30th 2022, noon to 1 pm\nWhere: Via zoom\nHosts: Crop Sciences Seminar Series, Department of Agronomy, University of Illinois at Urbana-Champaign\nSlides"
   },
   {
     "objectID": "talks/2022_uiuc-reptools/deck/index.html#from-zero-to-hero-a-researchers-path-through-data-science-tools-for-reproducibility",
@@ -229,6 +236,20 @@
     "title": "Bastos Lab",
     "section": "Personal marketing",
     "text": "Personal marketing\n\n\n\nThis entire presentation was made with quarto, and its source code is available on my GitHub\nYou can find more info on my lab’s website (also made with quarto): Bastos Lab \n\n\n\n\nYou can find my data science teaching material on my blog: agRonomy\nWish to learn and apply these concepts to your own research?\nApplications of data science in ag research, Spring 2024\nThanks! 🙏 💻"
+  },
+  {
+    "objectID": "talks/talks.html",
+    "href": "talks/talks.html",
+    "title": "Talks",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nPlant Pathology Seminar Series, University of Georgia\n\n\n\nNov 21, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCrop Sciences Seminar Series, University of Illinois at Urbana-Champaign\n\n\n\nNov 30, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "talks/2022_uga-plantpath/index.html",
+    "href": "talks/2022_uga-plantpath/index.html",
+    "title": "From zero to hero: a researcher’s path through data science tools for reproducibility",
+    "section": "",
+    "text": "When: November 21st 2022, 3 to 4 pm\nWhere: Miller Hall, Athens GA\nHosts: Plant Pathology Seminar Series, Department of Plant Pathology, University of Georgia\nSlides"
   },
   {
     "objectID": "talks/2022_uga-plantpath/deck/index.html#from-zero-to-hero-a-researchers-path-through-data-science-tools-for-reproducibility",
@@ -431,28 +452,21 @@
     "href": "index.html#hello-there",
     "title": "Bastos Lab",
     "section": "👋 Hello there!",
-    "text": "👋 Hello there!\nWelcome to the Bastos Lab home page.\nBastos Lab is part of the Integrative Precision Agriculture cluster at the University of Georgia.\nResearch areas we are currently tackling range from within-field to regional and include:\n\nSensor-based variable rate management of nutrients and chemicals during the growing season in corn and cotton\nCotton fiber quality regional envirotyping\nCotton fiber quality pre-harvest prediction"
+    "text": "👋 Hello there!\nWelcome to the Bastos Lab home page.\nBastos Lab is part of the Integrative Precision Agriculture cluster at the University of Georgia."
   },
   {
-    "objectID": "index.html#upcoming",
-    "href": "index.html#upcoming",
+    "objectID": "index.html#projects-upcoming-and-recent",
+    "href": "index.html#projects-upcoming-and-recent",
     "title": "Bastos Lab",
-    "section": "🗓️ Upcoming",
-    "text": "🗓️ Upcoming\nHere’s a list of upcoming courses, workshops, and invited talks.\n\nCourses 👨‍🏫\n\n🌎 Advanced Topics in Precision Agriculture\n\nWill be offered at UGA in the Spring Semester of 2023\n3 credit hours, meet 3x a week\nUndergraduate/Graduate student level course\nExplore the entire cycle of gathering, cleaning, processing and interpolating important precision ag data layers like yield monitor and soil electrical conductivity with the goal of creating zones for variable rate input recommendation and profitability.\nAll analysis conducted in R/RStudio with a focus in automation and reproducibility.\nInterested in the class but not a student at UGA? Check out the class website here to find the class agenda with links for recorded lectures on YouTube and partial and complete code on GitHub.\n\n\n\n👩‍💻 Data science applied to agriculture and natural resources\n\nWill be offered at UGA in the Fall Semester of 2023\n3 credit hours, meet 3x a week\nUndergraduate/Graduate student level course\nTopics covered include statistical programming in R, RStudio projects, literate programming with Quarto, version control with git and GitHub, analysis workflow development (data import, EDA, modeling, model checking, extracting means and pairwise comparison letters, and creating publication-ready plots), and data analysis deliverable presentation in the form of dashboards and websites.\n\n\n\n\nWorkshops 💻\nLeo Bastos will be teaching the following workshops:\n\n📈 ANOVA vs. Regression\n\nWhen: September 12th 2022\nWho: University of Georgia and Kansas State University graduate students, staff, and faculty\nWhere: via zoom (link to be shared with registrants)\nWhat: the workshop will explore the difference between ANOVA and regression analysis and some cool applications of regression like prediction and finding an optimum input rate that maximizes yield.\n\n\n\n\nInvited Talks 🗣️\n\n🛤️ “From zero to hero: a researcher’s path through data science tools for reproducibility”\n\nWhen: November 21st 2022, 3 to 4 pm\nWhere: Miller Hall, Athens GA\nHosts: Plant Pathology Seminar Series, Department of Plant Pathology, University of Georgia\n\n\n\n🌦️ “State-wide weather data interpolation for use in digital agriculture”\n\nWhen: November 30th 2022, noon to 1 pm\nWhere: TBD\nHosts: Crop Sciences Seminar Series, Department of Agronomy, University of Illinois at Urbana-Champaign"
+    "section": "Projects, Upcoming and Recent",
+    "text": "Projects, Upcoming and Recent\nResearch areas we are currently tackling range from within-field to regional and include:\n\nSensor-based variable rate management of nutrients and chemicals during the growing season in corn and cotton\nCotton fiber quality regional envirotyping\nCotton fiber quality pre-harvest prediction.\n\n\n\n\n\n\n\n\n\n\n\nCorn sensor-based variable rate N management\n\n\n\n\n\n\n\n\n\n\n\n\n\nCotton sensor-based variable rate N and PGR management\n\n\n\n\n\n\n\n\n\n\n\n\n\nCotton fiber quality prediction\n\n\n\n\n\n\n\n\n\n\n\n\n\nCotton fiber quality envirotyping\n\n\n\n\n\n\n\nNo matching items\n\n\n  \n\n\n See all"
   },
   {
-    "objectID": "index.html#explore-above",
-    "href": "index.html#explore-above",
+    "objectID": "index.html#talks-upcoming-and-recent",
+    "href": "index.html#talks-upcoming-and-recent",
     "title": "Bastos Lab",
-    "section": "👆 Explore above",
-    "text": "👆 Explore above\nCheck the tabs on top to learn more about:\n\nOur team members and lab openings\nOur current projects\nOur lab manual and resources"
-  },
-  {
-    "objectID": "presentations/2022-11-datascientists.html",
-    "href": "presentations/2022-11-datascientists.html",
-    "title": "2022-11-datascientists",
-    "section": "",
-    "text": "My goal is to provide instruction with applied examples in data science to decrease friction and improve reproducibility practices in Crop and Soil sciences.\nPath: from data collection to presentation, with a version-controlled fully reproducible team-based project.\nAssessment Resource Tools for Improving Statistics Thinking"
+    "section": "Talks, Upcoming and Recent",
+    "text": "Talks, Upcoming and Recent\n\n\n\n\n\n\n\n\n\n\nCrop Sciences Seminar Series, University of Illinois at Urbana-Champaign\n\n\n\nNov 30, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPlant Pathology Seminar Series, University of Georgia\n\n\n\nNov 21, 2022\n\n\n\n\n\n\n\n\nNo matching items\n\n\n See all"
   },
   {
     "objectID": "team/team.html",
@@ -509,6 +523,293 @@
     "title": "2022 Pasture project - Satellite data",
     "section": "Maximum",
     "text": "Maximum"
+  },
+  {
+    "objectID": "teaching/teaching.html",
+    "href": "teaching/teaching.html",
+    "title": "Teaching",
+    "section": "",
+    "text": "Here I share links to my teaching material, including workshops and full courses. Materials normally include\nClick the links below to explore them."
+  },
+  {
+    "objectID": "teaching/teaching.html#workshops",
+    "href": "teaching/teaching.html#workshops",
+    "title": "Teaching",
+    "section": "Workshops 💻",
+    "text": "Workshops 💻\nRegression for optimum and prediction\nData wrangling and iteration\nMultivariate analysis\nAgronomy Society R beginner bootcamp\nExperimental Design, ANOVA, and Regression\nIntro to R"
+  },
+  {
+    "objectID": "teaching/teaching.html#courses",
+    "href": "teaching/teaching.html#courses",
+    "title": "Teaching",
+    "section": "Courses 👨‍🏫",
+    "text": "Courses 👨‍🏫\n2023 Advanced Topics in Precision Ag\n2022 Advanced Topics in Precision Ag"
+  },
+  {
+    "objectID": "teaching/2022-apa.html",
+    "href": "teaching/2022-apa.html",
+    "title": "CRSS 4060/6060\nAdvc. Topics in Precision Ag.\nBastos Material\n(UGA Spring 2022)",
+    "section": "",
+    "text": "Hi there!\nThis is the welcome page for the 2022 CRSS 4060/6060 Advanced Topics in Precision Agriculture portion taught by Dr. Leo Bastos.\n\n\n1. Overall Learning Objectives  \nThe overall learning objectives of my part are:\n\nLearn about concepts of spatial data quality control, project management, and reproducibility applied to precision agriculture.\nUnderstand the difference between vector and raster data.\nUnderstand the difference between different vector data types.\nLearn about the importance and how to clean and process geospatial data.\nLearn about interpolation methods, why they are useful and when they should be used.\nExplore the concept of spatial and temporal stability of zones, and how to incorporate them into a recommendation.\nLearn about different clustering analysis for management zone creation.\nCreate zone-based variable rate recommendation.\nUnderstand differences and value of spatial layers used in PA, including yield monitor, soils, and satellite remote sensing data.\n\n\n\n\n\n\n\nWarning\n\n\n\nAll the objectives above will be explored in a hands-on approach through the use of the R programming language with students coding along live with the instructor.\n\n\n\n\n\n2. Agenda and Topics  \nThis is a tentative agenda.\nThis can be changed/adapted to fit the speed that material is being covered.\nMore details will be provided as the classes progress.\n\n\n\n\n\n\n  \n  \n    \n      Time\n      Activity\n      Video\n      Partial Code\n    \n  \n  \n    Mon, Feb 07\n(9:10-10:00)\n\nWebsite\n\nR & RStudio intro pt.1\n\n\n\n\n\n    Wed, Feb 09\n(9:10-11:10)\n\nR & RStudio intro pt.2\n\nRStudio projects\n\nRmarkdown\n\nAssignment #1 - Paper\n\n \n\n\n\n\n\n    Fri, Feb 11\n(9:10-10:00)\n\n(spatial) EDA\n\n\n\n\n    Mon, Feb 14\n(9:10-10:00)\n\nAssignment #1 DUE\n\nYield data wrangling\n\n\n\n\n    Wed, Feb 16\n(9:10-11:10)\n\nYield monitor data cleaning\n\nAssignment #2 - Cleaning\n\n\n\n\n\n    Fri, Feb 18\n(9:10-10:00)\n\nAssignment #2 DUE\n\nYield interpolation\n\nGrid extraction\n\n\n\n\n\n    Fri, Mar 04\n(9:10-10:00)\n\nYield interpolation\n\nGrid extraction\n\nAssignment #3\n\n\n\n\n    Wed, Mar 16\n(9:10-11:10)\n\nAssignment #3 DUE\n\nYield spatial stability\n\nYield spatial-temporal stability\n\n\n\n\n\n\n    Fri, Mar 25\n(9:10-10:00)\n\nTerrain processing pt.1\n\n\n\n\n\n    Mon, Mar 28\n(9:10-10:00)\n\nTerrain processing pt.2\n\n\n\n\n    Wed, Mar 30\n(9:10-11:10)\n\nTerrain processing pt.3\n\nSoil ECa\n\n\n\n\n\n\n\n    Fri, April 1\n(9:10-10:00)\n\nClustering for zone creation\n\nDefining number of zones\n\n\n\n\n\n    Fri, Apr 22\n(9:10-10:00)\n\nSmoothing zones\n\n\n\n\n    Mon, Apr 25\n(9:10-10:00)\n\nValidating zones with soils data\n\n\n\n\n    Wed, Apr 27\n(9:10-11:10)\n\nValidating zones with yield data\n\nVariable rate N prescription\n\n\n\n\n\n\n\n    Fri, Apr 29\n(9:10-10:00)\n\nValidating zones with yield data\n\nFinal project instructions\n\n\n\n\n  \n  \n  \n\n\n\n\n\n\n\n3. Resources  \nIf you need assistance, you can reach me at lmbastos@uga.edu.\nIf you are in Athens, my office is at 4115B Miller Plant Sciences Hall, feel free to drop by anytime.\nAfter you start getting familiarized with R, here are some online resources:\n- Geocomputation with R book\n- Introduction to Spatial Data Programming with R book\n- ggplot2 cheatsheet\n- dplyr data transformation cheatsheet\n- tidyr data tidying cheatsheet\n- sf cheatsheet\n- Colorblind-friendly palettes in R\n- Violin/density plot vs. boxplots\n- File naming conventions\n- Workflow maintenance"
+  },
+  {
+    "objectID": "teaching/2019-introtoR.html",
+    "href": "teaching/2019-introtoR.html",
+    "title": "Intro to R Workshop",
+    "section": "",
+    "text": "Hey there!\nThis is the welcome page for the Kansas State University 2019 AGSA R Workshop - Introduction to R, taught by leombastos.\nThe workshop was divided into 2 days, 2 hours per day:"
+  },
+  {
+    "objectID": "teaching/2019-introtoR.html#interested-in-attending-the-workshop",
+    "href": "teaching/2019-introtoR.html#interested-in-attending-the-workshop",
+    "title": "Intro to R Workshop",
+    "section": "Interested in “attending” the workshop?",
+    "text": "Interested in “attending” the workshop?\n\nGo to this GitHub repository and download it to your computer (click on the green “Code” button above and select “Download ZIP”).\nUnzip the repository, launch the RStudio project (by clicking on the “2019_rworkshop_introtoR.Rproj” file).\nOn RStudio, go to the “Files” tab (lower right), click on folder “markdown”, and open file\n\n“Basic1_partial.R” for day 1, basics\n“Intermediate1_partial.Rmd” for day 1, intermediate\n\n“Intermediate2_partial.Rmd” for day 2, intermediate\n\nYou can code along with us by watching the following YouTube videos:\n\nday 1\n\n\n\n\n\nday 2"
+  },
+  {
+    "objectID": "teaching/2024-dsa/notes.html",
+    "href": "teaching/2024-dsa/notes.html",
+    "title": "notes",
+    "section": "",
+    "text": "👩‍💻 **Data science applied to agriculture and natural resources**\n\nWill be offered at UGA in the Fall Semester of 2023\n3 credit hours, meet 3x a week\nUndergraduate/Graduate student level course\nTopics covered include statistical programming in R, RStudio projects, literate programming with Quarto, version control with git and GitHub, analysis workflow development (data import, EDA, modeling, model checking, extracting means and pairwise comparison letters, and creating publication-ready plots), and data analysis deliverable presentation in the form of dashboards and websites."
+  },
+  {
+    "objectID": "teaching/2021-asaboot.html",
+    "href": "teaching/2021-asaboot.html",
+    "title": "ASA R beginner bootcamp workshop",
+    "section": "",
+    "text": "Hi there!\nThis is the welcome page for the 2021 ASA R beginner bootcamp workshop!\nThis page is intended as the main hub for the workshop, where I will share instructions, links, and resources."
+  },
+  {
+    "objectID": "teaching/2021-asaboot.html#workshop-details",
+    "href": "teaching/2021-asaboot.html#workshop-details",
+    "title": "ASA R beginner bootcamp workshop",
+    "section": "Workshop details",
+    "text": "Workshop details\n🌎 Salt Palace Convention Center - 250 AB\n📆 Sunday, November \\(7^{th}\\)\n🕚 9 am to 5 pm\n\nUse the East Entrance to the Salt Palace Convention Center on Temple\nConference registration opens at 8 am on Sunday, however you do not need to pick up your badge before attending the workshop\nWe will NOT offer beverages/snacks/lunch as part of the workshop\nThere will be water fountain and restrooms nearby\nThere will be multiple breaks throughout the day so you can stretch, grab a snack/coffee/water\nThe coffee kiosk near the exhibit hall is open 8 am - 6 pm, serving breakfast until 10am on Sunday\nAttendee Wi-Fi network name is ACS2021, password is SLC2021\n\n\nPlease browse the tabs below to explore\n\nBefore the workshop: getting ready\n\nDuring the workshop: help and agenda\n\nAfter the workshop: resources and network"
+  },
+  {
+    "objectID": "teaching/2021-asaboot.html#before",
+    "href": "teaching/2021-asaboot.html#before",
+    "title": "ASA R beginner bootcamp workshop",
+    "section": "Before",
+    "text": "Before\nBefore the workshop, you will need to:\n\nJoin our Slack workspace\n\nInstall R\n\nInstall RStudio\n\nInstall packages\n\nDownload workshop material from GitHub\n\n\n\n1. Join our Slack workspace  \nAll communications about the workshop will happen in our Slack workspace.\nSlack is an application that is used for teams and projects communication, and can be used both on your browser and phone.\nFor more information about Slack, check their website.\nIf you have registered for the workshop, you will receive an invitation to join our Slack workspace by email.\n\n\n\n\n\n\nWarning\n\n\n\nIn case you have not received the invitation, send me an email at lmbastos@ksu.edu with your full name, and I will add you once I confirm you are registered.\n\n\n\nMake sure to use our Slack workspace to meet fellow attendees, seek help, and exchange ideas!\n\n\n\n2. Install R  \nFollow this link, and download it for your appropriate operating system (Linux, MacOS, or Windows).\nOnce downloaded, install R on your laptop.\n\n\n3. Install RStudio  \nOnce you have already installed R, follow this link, and download RStudio for your appropriate operating system.\nIf multiple download options appear, select “Free RStudio Desktop”.\nOnce downloaded, install RStudio on your laptop.\n\n\n\n\n\n\nNote\n\n\n\nYou can run R without RStudio, but you cannot run RStudio without R.\nR is the main software, RStudio is an extra software that makes our lives easier when working with R by providing an integrated development environment.\n\n\n\n\n4. Install packages  \nIf you are not familiar with R lingo, you can think of a package as an app on your phone: a package will extend R functionality by making available to you extra software options that do not come pre-installed with R.\nWe will be using multiple packages that need to be installed, and doing so before the workshop will ensure that no one gets behind.\nAfter installing R and RStudio, follow these steps:\n\nDownload this R script\n\nDouble-click the R script (this will open it in RStudio)\n\nOn the same RStudio window that just opened, install each package at a time by placing your cursor on the first script line and hitting Ctrl + return (Windows) or Command + return (Mac)\n\nSome text will start appearing on the console as the packages get installed\n\nKeep running each line as described above until you reach the last package installation (script line 14)\n\nTo ensure that each package was installed, run the code starting with library(\"ggplot2\"), line by line (from script lines 18 to 29).\nIf after running the library() function you get an error message like\n\n\n\n\n\n\n\n\n\n\nError in library(“packagename”) :\nthere is no package called `packagename\n\n\nThis means the package was not properly installed and you may need help.\n\n\n5. Download material from GitHub  \nThis will be a live coding workshop, meaning that we will develop the scripts together.\nTo download the initial partially-filled scripts and the data set, click here and follow the instructions.\nAt the end of the workshop, I will provide the completed scripts for your reference.\n\nOnce you have\n\nJoined the Slack workspace\n\nDownloaded and installed R\n\nDownloaded and installed RStudio\n\nInstalled needed R packages\n\nDownloaded material from GitHub\n\nThen you are ready for the workshop!\n\n\n\n\n\n\nWarning\n\n\n\nIf you run into issues at any of the steps above, let us know, preferably before Sunday, via Slack.\nWe need to make sure everyone is ready to go at 9 am, we will have very limited time for troubleshooting technical issues during the workshop!\n\n\nI’m excited to be seeing you all soon!\nLeo."
+  },
+  {
+    "objectID": "teaching/2021-asaboot.html#during",
+    "href": "teaching/2021-asaboot.html#during",
+    "title": "ASA R beginner bootcamp workshop",
+    "section": "During",
+    "text": "During\nIn this page, we are covering:\n\nSeeking help prior to Sunday - Slack\n\nSeeking help during workshop - TAs\n\nAgenda\n\n\n\n1. Seeking help prior to Sunday - Slack  \nThe workshop will start at 9 am.\nI will arrive at the room 30 min earlier to help with any last minute issues.\nDuring the workshop, we will not have much time to troubleshoot technical issues like software and package installation.\n\n\n\n\n\n\nWarning\n\n\n\nPlease use the Slack workspace prior to Sunday to seek help and address any issues you may have.\n\n\n\n\n\n2. Seeking help during workshop - TAs  \nDuring the workshop, we will have 3 to 4 teaching assistants (TAs) that volunteered to help (much appreciated!).\n\n\n\n\n\n\nNote\n\n\n\nTA team:\n\nAdrian Correndo\n\nDwarika Bhattarai\n\nPawan Basnet\n\nPratishtha Poudel\n\n\n\n\nThe TA team will assist with individual-specific questions like software not working properly, packages not loading, code not running, etc.\n\n\n\n3. Agenda  \nDuring the day, we have scheduled 5 content sessions intertwined with 4 break sessions including lunch.\nHere’s the agenda with times and activities:\n\n\n\n\n\n\n\n\n\nTime\nActivity\n\n\n\n\n9 to 10:20\n(Session 1)\nWelcome\nAgenda & housekeeping\nR & Rstudio intro\nRstudio projects\nRmarkdown\n\n\n10:20 to 10:30\nBreak\n\n\n10:30 to noon\n(Session 2)\nData wrangling\n\n\nnoon to 1\nLunch break\n\n\n1 to 2:20\n(Session 3)\nEDA\nRCBD ANOVA\nModel assumptions\nModel means\n\n\n2:20 to 2:30\nBreak\n\n\n2:30 to 3:50\n(Session 4)\nPairwise comparison\nPub-ready plot\n\n\n3:50 to 4\nBreak (tentative)\n\n\n4 to 5 pm\n(Session 5)\nIteration (tentative)\nResources\nSurvey"
+  },
+  {
+    "objectID": "teaching/2021-asaboot.html#after",
+    "href": "teaching/2021-asaboot.html#after",
+    "title": "ASA R beginner bootcamp workshop",
+    "section": "After",
+    "text": "After\nIn this page, we are covering:\n\nPost-completion survey\n\nResources\n\nSlack network\n\n\n\n1. Post-completion survey  \nOnce the workshop is finalized, I will share a post-completion Google Forms survey, and ask for your feedback on it.\nThis will be a quick, anonymous survey, and your answers will be very important to guide improvements in my future R teaching endeavors.\nThe survey can be found here, thank you for helping me to improve!\n\n\n\n2. Resources  \n\nGoogle\n\nggplot2 cheatsheet\n\ndplyr data transformation cheatsheet\n\ntidyr data tidying\n\nStack overflow\n\n\n\n\n3. Slack network  \nOur Slack workspace has over 40 people, all interested in agronomic statistics programming. What a great network!\nFeel free to use our workspace after the workshop to continue communication and collaboration!\n\nHave an R question that you just can’t figure out?\n\nHave an exciting programming project and are looking for collaborators?\n\nHave a position you’re trying to fill that requires agronomic statistical programming knowledge?\n\nFeel free to share any of those and anything else in our workspace!"
+  },
+  {
+    "objectID": "teaching/2021-multivar.html",
+    "href": "teaching/2021-multivar.html",
+    "title": "Multivariate Analysis Workshop",
+    "section": "",
+    "text": "Hey there!\nThis is the welcome page for the Kansas State University 2021 AGSA R Workshop - Multivariate analysis, taught on April 7th and 8th 2021 by leombastos and adriancorrendo.\nThe workshop was divided into 2 days:"
+  },
+  {
+    "objectID": "teaching/2021-multivar.html#interested-in-attending-the-workshop",
+    "href": "teaching/2021-multivar.html#interested-in-attending-the-workshop",
+    "title": "Multivariate Analysis Workshop",
+    "section": "Interested in “attending” the workshop?",
+    "text": "Interested in “attending” the workshop?\n\nGo to this GitHub repository and download it to your computer (click on the green “Code” button above and select “Download ZIP”).\nUnzip the repository, launch the RStudio project (by clicking on the “2021_rworkshop_multivariate.Rproj” file).\nOn RStudio, go to the “Files” tab (lower right), click on folder “markdown”, and open file\n\n“day1_partial.Rmd” for day 1\n\n“day2_partial.Rmd” for day 2\n\nYou can code along with us by watching the following YouTube videos:\n\nday 1\n\n\n\n\n\nday 2"
+  },
+  {
+    "objectID": "teaching/2021-wrangit.html",
+    "href": "teaching/2021-wrangit.html",
+    "title": "Data Wrangling and Iteration Workshop",
+    "section": "",
+    "text": "Hey there!\nThis is the welcome page for the Kansas State University 2021 AGSA R Workshop - Data wrangling and iteration, taught on November 16th by leombastos.\nThe workshop is divided into 2 main sessions (1h/session):"
+  },
+  {
+    "objectID": "teaching/2021-wrangit.html#interested-in-attending-the-workshop",
+    "href": "teaching/2021-wrangit.html#interested-in-attending-the-workshop",
+    "title": "Data Wrangling and Iteration Workshop",
+    "section": "Interested in “attending” the workshop?",
+    "text": "Interested in “attending” the workshop?\n\nGo to this GitHub repository and download it to your computer (click on the green “Code” button above and select “Download ZIP”).\nUnzip the repository, launch the RStudio project (by clicking on the “2021_rworkshop_wrangling.Rproj” file).\nOn RStudio, go to the “Files” tab (lower right), click on folder “markdown”, and open file\n\n“session1_partial.Rmd” for data wrangling\n\n“session2_partial.Rmd” for iteration\n\nYou can code along with us by watching the following YouTube videos:\n\nwrangling\n\n\n\n\n\niteration"
+  },
+  {
+    "objectID": "teaching/2023-ppa/slides/lec01.html#meet-the-professors",
+    "href": "teaching/2023-ppa/slides/lec01.html#meet-the-professors",
+    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "section": "Meet the professors",
+    "text": "Meet the professors\n\n\n\n\n\nDr. Leonardo M. Bastos\n\n\n\nAssistant Professor\n4101 Miller Plant Sciences Building\nUGA-Athens Campus\nEmail: lmbastos@uga.edu\n\n\n\n\n\n\n\nDr. Lorena Lacerda\n\n\n\nAssistant Professor\n4103 Miller Plant Sciences Building UGA-Athens Campus\nEmail: llacerda@uga.edu"
+  },
+  {
+    "objectID": "teaching/2023-ppa/slides/lec01.html#meeting-times-and-locations",
+    "href": "teaching/2023-ppa/slides/lec01.html#meeting-times-and-locations",
+    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "section": "Meeting times and locations",
+    "text": "Meeting times and locations\n\nTime:\n\nLectures: Monday and Friday at 09:10-10:00\nLabs: Wednesday at 09:10-11:10\n\nLocation:\n\nAthens campus: in person at 1203 Miller\n\nTifton campus: in person at 601 NESPAL South OR remote\n\nGriffin campus: remote\n\n\n\nZoom credentials shared via email."
+  },
+  {
+    "objectID": "teaching/2023-ppa/slides/lec01.html#course-objectives",
+    "href": "teaching/2023-ppa/slides/lec01.html#course-objectives",
+    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "section": "Course objectives",
+    "text": "Course objectives\n\nObtain, process, and use various agricultural geospatial data layers for decision making related to precision agriculture."
+  },
+  {
+    "objectID": "teaching/2023-ppa/slides/lec01.html#course-objectives-1",
+    "href": "teaching/2023-ppa/slides/lec01.html#course-objectives-1",
+    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "section": "Course objectives",
+    "text": "Course objectives\n\nData types include publicly available (weather, soils, and satellite remote sensing), and private data like yield monitor, soil, and UAV remote sensing)."
+  },
+  {
+    "objectID": "teaching/2023-ppa/slides/lec01.html#course-objectives-2",
+    "href": "teaching/2023-ppa/slides/lec01.html#course-objectives-2",
+    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "section": "Course objectives",
+    "text": "Course objectives\n\nAnalytical techniques include creation of management zones, zone-based and imagery-based variable rate prescription, profitability maps, and use of satellite remote sensing for crop scouting.\n\n\nAll steps will be conducted utilizing the R statistical language to create well documented and reproducible precision agriculture analytical workflows. No previous knowledge in R is required."
+  },
+  {
+    "objectID": "teaching/2023-ppa/slides/lec01.html#course-objectives-3",
+    "href": "teaching/2023-ppa/slides/lec01.html#course-objectives-3",
+    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "section": "Course objectives",
+    "text": "Course objectives"
+  },
+  {
+    "objectID": "teaching/2023-ppa/slides/lec01.html#course-topics",
+    "href": "teaching/2023-ppa/slides/lec01.html#course-topics",
+    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "section": "Course topics",
+    "text": "Course topics"
+  },
+  {
+    "objectID": "teaching/2023-ppa/slides/lec01.html#assessment-and-grading",
+    "href": "teaching/2023-ppa/slides/lec01.html#assessment-and-grading",
+    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "section": "Assessment and Grading",
+    "text": "Assessment and Grading\n\n\n\n\n\n\n  \n  \n    \n      Activity\n      Grade\n    \n  \n  \n    Mini-project: USDA NASS data\n\n10%\n\n    Mid-term exam\n\n10%\n\n    Homework assignments\n\n35%\n\n    In-class quizzes\n\n15%\n\n    Final project:\nfrom raw data to zone-based variable rate\n\n20%\n\n    Class participation\n\n10%"
+  },
+  {
+    "objectID": "teaching/2023-ppa/slides/lec01.html#course-website",
+    "href": "teaching/2023-ppa/slides/lec01.html#course-website",
+    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "section": "Course website",
+    "text": "Course website\nImportant links related to this course:\n\nCourse website\n\nCourse GitHub repository\n\nCourse YouTube channel"
+  },
+  {
+    "objectID": "teaching/2023-ppa/slides/lec01.html#attendance-policy",
+    "href": "teaching/2023-ppa/slides/lec01.html#attendance-policy",
+    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "section": "Attendance policy",
+    "text": "Attendance policy\nStudents are expected to attend every class period.\n\nStudents on the Athens campus must attend class in-person. If a special circumstance arise (illness, travel, etc.), student absence or remote attendance must be informed to instructors prior to that class period.\n\n\nStudents on the Tifton and Griffin campuses may attend class in-person on their campuses or remote using the zoom link information. Student absence must be informed to instructors prior to that class period.\n\n\nPer Board of Regents policy, I reserve the right to drop students from the class roll who miss more than 5 class periods. Such students will be given a WF grade."
+  },
+  {
+    "objectID": "teaching/2023-ppa/slides/lec01.html#technology-and-software-requirements",
+    "href": "teaching/2023-ppa/slides/lec01.html#technology-and-software-requirements",
+    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "section": "Technology and software requirements",
+    "text": "Technology and software requirements\nStudents will need to have access to:\n\nA computer 💻 (to install software, code along with instructors)\n\nA second screen 📺 (main screen to code along, second screen to watch class if not in person)\n\n\nIf a student does not have access to these resources (personal laptop/desktop and a second screen), please let instructors know to ensure proper accommodations can be made."
+  },
+  {
+    "objectID": "teaching/2023-ppa/slides/lec01.html#survey",
+    "href": "teaching/2023-ppa/slides/lec01.html#survey",
+    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "section": "Survey",
+    "text": "Survey"
+  },
+  {
+    "objectID": "teaching/2023-ppa/slides/lec01.html#getting-ready-for-first-lab",
+    "href": "teaching/2023-ppa/slides/lec01.html#getting-ready-for-first-lab",
+    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "section": "Getting ready for first lab",
+    "text": "Getting ready for first lab\n\n\nsta210-s22.github.io/website"
+  },
+  {
+    "objectID": "teaching/2023-ppa/2023-ppa.html",
+    "href": "teaching/2023-ppa/2023-ppa.html",
+    "title": "CRSS 4060/6060\nAdvc. Topics in Precision Ag.\nBastos Material\n(UGA Spring 2023)",
+    "section": "",
+    "text": "Hi there!\nThis is the welcome page for the 2023 CRSS 4060/6060 Advanced Topics in Precision Agriculture portion taught by Dr. Leo Bastos.\nBelow you will find:"
+  },
+  {
+    "objectID": "teaching/2023-ppa/2023-ppa.html#course-information",
+    "href": "teaching/2023-ppa/2023-ppa.html#course-information",
+    "title": "CRSS 4060/6060\nAdvc. Topics in Precision Ag.\nBastos Material\n(UGA Spring 2023)",
+    "section": "Course information",
+    "text": "Course information\n\nGeneral information\n\nCRSS 4060/6060 - Advanced Topics in Precision Agriculture\n\nSpring Semester 2023\n\n3 credit hours\n\n\n\nMeeting times and locations\n\nLectures: Monday and Friday at 09:10-10:00\nLabs: Wednesday at 09:10-11:10\nLocation:\n\nAthens campus: in person at 1203 Miller Plant Sciences\n\nTifton campus: in person at 601 NESPAL South OR remote\n\nGriffin campus: in person at XXXX OR remote\n\n\n\n\nPrerequisites\nCRSS 3030 – Principles of Precision Agriculture\n\n\nCo-requisites\nCRSS 4050 / 6050 – Improving Nutrient and Energy Efficiency with Geographic Information Systems or equivalent GIS course."
+  },
+  {
+    "objectID": "teaching/2023-ppa/2023-ppa.html#instructors-information",
+    "href": "teaching/2023-ppa/2023-ppa.html#instructors-information",
+    "title": "CRSS 4060/6060\nAdvc. Topics in Precision Ag.\nBastos Material\n(UGA Spring 2023)",
+    "section": "Instructors information",
+    "text": "Instructors information\n\nGeneral information\nDr. Leonardo M. Bastos, Assistant Professor\nCrop & Soil Sciences Dept.\n4101 Miller Plant Sciences Building, Athens Campus\nUniversity of Georgia\nEmail: lmbastos@uga.edu\nURL: leombastos.github.io/bastoslab/\nDr. Lorena Lacerda, Assistant Professor\nCrop & Soil Sciences Dept.\n4103 Miller Plant Sciences Building, Athens Campus\nUniversity of Georgia\nEmail: llacerda@uga.edu\nURL: https://cropsoil.uga.edu/people/faculty/lorena-lacerda.html\n\n\nOffice hours\nBecause of social distancing requirements, please make an appointment if you would like a face-to-face meeting with one of the instructors. Otherwise, we are always available by email."
+  },
+  {
+    "objectID": "teaching/2023-ppa/2023-ppa.html#course-description-and-details",
+    "href": "teaching/2023-ppa/2023-ppa.html#course-description-and-details",
+    "title": "CRSS 4060/6060\nAdvc. Topics in Precision Ag.\nBastos Material\n(UGA Spring 2023)",
+    "section": "Course description and details",
+    "text": "Course description and details\n\nDescription\nThe course will emphasize sampling plan, obtaining and processing, and using various agricultural geospatial data layers for decision making related to precision agriculture. Data types used in the course include publicly available like weather, soils, and satellite remote sensing, and private data like yield monitor, Veris-derived soil electrical conductivity and elevation, and UAV remote sensing. Data processing steps include cleaning, removal of outliers, normalization, interpolation, and UAV imagery processing. Analytical techniques include clustering for creation of management zones, zone-based and imagery-based variable rate prescription, profitability maps, and use of satellite remote sensing for crop scouting. All steps will be conducted utilizing the R statistical language to create well documented and reproducible precision agriculture analytical workflows. No previous knowledge in R is required.\n\n\nCourse learning outcomes\nProvide students with a good understanding of the emerging areas in precision agriculture, the ability to find, analyze and evaluate spatially distributed data sets, and the experience to use key precision agriculture tools and technologies. Additional goals are to:\n\nextend critical thinking and problem solving abilities\n\nimprove written and oral communication skills\n\nlearn how to create, present, and interpret maps\n\ncreate reproducible analytical workflows using R\n\n\n\nTopical Outline\n\nIntro to R\n\nUsing R as a geographic information system (GIS)\n\nAccessing publicly available geospatial data through R\n\nCrop statistics from USDA NASS\n\nSoils data from SSURGO\n\nWeather and satellite remote sensing from Google Earth Engine\n\nState and county boundaries\n\n\nCreating grids for soil sampling\n\nGeostatistics for point-data interpolation with\n\nInverse distance weighting\n\nKriging\n\n\nYield monitor data processing\n\nUnderstand the sources of error\n\nCleaning and removal of erroneous data points\n\nSpatial and temporal yield variability analysis\n\n\nTerrain data processing\n\nElevation\n\nAspect\n\nSlope\n\n\nManagement zones\n\nCombining yield and soils data\n\nCreating management zones with cluster analysis\n\nValidating management zones\n\n\nUAV remote sensing\n\nData collection planning\n\nImagery processing\n\n\nVariable rate prescription\n\nZone-based variable rate prescription\n\nImagery-based variable rate prescription\n\n\nProfitability maps\n\nSatellite remote sensing for crop scouting\n\nCourse project\n\nUndergraduate students: optional\n\nGraduate students: mandatory\n\n\nThe topical outline is a general plan for the course; deviations announced to the class by the instructor may be necessary."
+  },
+  {
+    "objectID": "teaching/2023-ppa/2023-ppa.html#course-materials",
+    "href": "teaching/2023-ppa/2023-ppa.html#course-materials",
+    "title": "CRSS 4060/6060\nAdvc. Topics in Precision Ag.\nBastos Material\n(UGA Spring 2023)",
+    "section": "Course materials",
+    "text": "Course materials\n\nTextbook\nA textbook is not required. Reading materials will be supplied by instructor and will include benchmark research articles, manuals, and other materials.\n\n\nTechnology and software requirements\nStudents will need to have access to:\n\nA computer (to install software, code along with instructors)\n\nA second screen (main screen to code along, second screen to watch class if not in person)\n\nIf a student does not have access to these resources (personal laptop/deskop and a second screen), please let instructors know to ensure proper accommodations can be made.\n\n\nCourse website\nImportant links related to this course:\n\nCourse website\n\nCourse GitHub repository\n\nCourse YouTube channel"
+  },
+  {
+    "objectID": "teaching/2023-ppa/2023-ppa.html#assessment-and-grading",
+    "href": "teaching/2023-ppa/2023-ppa.html#assessment-and-grading",
+    "title": "CRSS 4060/6060\nAdvc. Topics in Precision Ag.\nBastos Material\n(UGA Spring 2023)",
+    "section": "Assessment and Grading",
+    "text": "Assessment and Grading\n\nGrading categories\nThe grade you receive in this course will be determined from your performance on a mini-project, one mid-term exam, periodic quizzes, homework assignments and lab reports, a team design project, a comprehensive final exam, and class participation. These factors will be weighted as follows:\n\n\n\n\n\n\n  \n  \n    \n      Activity\n      Grade\n    \n  \n  \n    Mini-project: USDA NASS data\n\n10%\n\n    Mid-term exam\n\n10%\n\n    Homework assignments\n\n35%\n\n    In-class quizzes\n\n15%\n\n    Final project:\nfrom raw data to zone-based variable rate\n\n20%\n\n    Class participation\n\n10%\n\n  \n  \n  \n\n\n\n\n\n\nWritten assignment quality\nUp to thirty percent of the grade on written assignments (mini-project, homework, final project) will be based on quality of communication.\nSpelling, grammar, punctuation, and clarity of writing are evidence of written communication quality.\n\n\nClass participation\nActive class participation is important for you to achieve the learning goals of the class. To receive maximum credit for class participation you must\n\nattend every class period (lecture or laboratory)\n\narrive on time and remain for the entire class period\n\nyou are actively engaged and attentive throughout the class period\n\nparticipate in the class discussion and ask and answer questions\n\n\n\nGrading scale\nFinal grades will be assigned as follows:\n\n\n\n\n\n\n  \n  \n    \n      Letter\n      Grade\n    \n  \n  \n    A\n\n93 and above\n\n    A-\n\n90-92\n\n    B+\n\n87-89\n\n    B\n\n83-86\n\n    B-\n\n80-82\n\n    C+\n\n77-79\n\n    C\n\n73-76\n\n    C-\n\n70-72\n\n    D+\n\n67-69\n\n    D\n\n63-66\n\n    D-\n\n60-62\n\n    F\n\n59 and below\n\n  \n  \n  \n\n\n\n\n\n\nExtra credit opportunities\nExtra credit opportunities may be made available during projects, homework assignments, and exams, at the descrition of the instructors."
+  },
+  {
+    "objectID": "teaching/2023-ppa/2023-ppa.html#course-statements-and-policies",
+    "href": "teaching/2023-ppa/2023-ppa.html#course-statements-and-policies",
+    "title": "CRSS 4060/6060\nAdvc. Topics in Precision Ag.\nBastos Material\n(UGA Spring 2023)",
+    "section": "Course statements and policies",
+    "text": "Course statements and policies\n\nAcademic honesty\nUGA Student Honor Code: “I will be academically honest in all of my academic work and will not tolerate academic dishonesty of others.” A Culture of Honesty, the University’s policy and procedures for handling cases of suspected dishonesty, can be found at www.uga.edu/ovpi.\nFor this course, all lab reports, projects, and other assignments can be discussed with your classmates but any work you turn in must be your own.\nStudents can work together through coding exercises, but direct copying and pasting from a colleague will be considered plagiarism.\nIf using code from an online source, it is ok to copy and paste IF proper credit is given (e.g., showing the website source from where the code was obtained).\n\n\nAttendance policy\nStudents are expected to attend every class period.\nStudents on the Athens campus must attend class in-person. If a special circumstance arise (illness, travel, etc.), student absence or remote attendance must be informed to instructors prior to that class period.\nStudents on the Tifton and Griggin campuses may attend class in-person on their campuses or remote using the zoom link information. Student absence must be informed to instructors prior to that class period.\nPer Board of Regents policy, I reserve the right to drop students from the class roll who miss more than 5 class periods. Such students will be given a WF grade.\n\n\nDisclaimer\nThe course syllabus is a general plan for the course; deviations announced to the class by the instructor may be necessary.\n\n\nMake-up procedures\n\nThere will be no make-ups for missed quizzes. Any missed quiz will be recorded as a zero\n\nExams can be made up only with a note from a doctor or if you can document extenuating circumstances. Any unexcused missed exam will be recorded as a zero\n\nHomework assignments will be accepted up to one week beyond the due date. The penalty for submitting a late assignment is one letter grade\n\nHomework assignments may be submitted late without penalty in case of illness, extenuating circumstances, or if prior arrangements are made with the instructors. All late assignments are due within a week of the original due date or within a week of when a student returns from an illness\n\n\n\nMental Health and Wellness Resources\n\nIf you or someone you know needs assistance, you are encouraged to contact Student Care and Outreach in the Division of Student Affairs at 706-542-7774 or visit https://sco.uga.edu/. They will help you navigate any difficult circumstances you may be facing by connecting you with the appropriate resources or services.\n\nUGA has several resources for a student seeking mental health services (https://www.uhs.uga.edu/bewelluga/bewelluga) or crisis support (https://www.uhs.uga.edu/info/emergencies).\n\nIf you need help managing stress anxiety, relationships, etc., please visit BeWellUGA (https://www.uhs.uga.edu/bewelluga/bewelluga) for a list of FREE workshops, classes, mentoring, and health coaching led by licensed clinicians and health educators in the University Health Center.\n\nAdditional resources can be accessed through the UGA App.\n\n\n\nDisability statement\nIf you plan to request accommodations for a disability, please register with the Disability Resource Center. They can be reached by visiting Clark Howell Hall, calling 706-542-8719 (voice) or 706-542-8778 (TTY), or by visiting https://sitedrc.uga.edu"
+  },
+  {
+    "objectID": "teaching/2023-ppa/schedule.html",
+    "href": "teaching/2023-ppa/schedule.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "Setup.\n\nlibrary(lubridate)\nlibrary(tidyverse)\n\n\nbegin <- as.Date(\"2023-01-09\")\nend <- as.Date(\"2023-05-09\")\n\n\ndates <- seq.Date(from = begin, \n                  to = end, \n                  by = 1)\n\ndates\n\n  [1] \"2023-01-09\" \"2023-01-10\" \"2023-01-11\" \"2023-01-12\" \"2023-01-13\"\n  [6] \"2023-01-14\" \"2023-01-15\" \"2023-01-16\" \"2023-01-17\" \"2023-01-18\"\n [11] \"2023-01-19\" \"2023-01-20\" \"2023-01-21\" \"2023-01-22\" \"2023-01-23\"\n [16] \"2023-01-24\" \"2023-01-25\" \"2023-01-26\" \"2023-01-27\" \"2023-01-28\"\n [21] \"2023-01-29\" \"2023-01-30\" \"2023-01-31\" \"2023-02-01\" \"2023-02-02\"\n [26] \"2023-02-03\" \"2023-02-04\" \"2023-02-05\" \"2023-02-06\" \"2023-02-07\"\n [31] \"2023-02-08\" \"2023-02-09\" \"2023-02-10\" \"2023-02-11\" \"2023-02-12\"\n [36] \"2023-02-13\" \"2023-02-14\" \"2023-02-15\" \"2023-02-16\" \"2023-02-17\"\n [41] \"2023-02-18\" \"2023-02-19\" \"2023-02-20\" \"2023-02-21\" \"2023-02-22\"\n [46] \"2023-02-23\" \"2023-02-24\" \"2023-02-25\" \"2023-02-26\" \"2023-02-27\"\n [51] \"2023-02-28\" \"2023-03-01\" \"2023-03-02\" \"2023-03-03\" \"2023-03-04\"\n [56] \"2023-03-05\" \"2023-03-06\" \"2023-03-07\" \"2023-03-08\" \"2023-03-09\"\n [61] \"2023-03-10\" \"2023-03-11\" \"2023-03-12\" \"2023-03-13\" \"2023-03-14\"\n [66] \"2023-03-15\" \"2023-03-16\" \"2023-03-17\" \"2023-03-18\" \"2023-03-19\"\n [71] \"2023-03-20\" \"2023-03-21\" \"2023-03-22\" \"2023-03-23\" \"2023-03-24\"\n [76] \"2023-03-25\" \"2023-03-26\" \"2023-03-27\" \"2023-03-28\" \"2023-03-29\"\n [81] \"2023-03-30\" \"2023-03-31\" \"2023-04-01\" \"2023-04-02\" \"2023-04-03\"\n [86] \"2023-04-04\" \"2023-04-05\" \"2023-04-06\" \"2023-04-07\" \"2023-04-08\"\n [91] \"2023-04-09\" \"2023-04-10\" \"2023-04-11\" \"2023-04-12\" \"2023-04-13\"\n [96] \"2023-04-14\" \"2023-04-15\" \"2023-04-16\" \"2023-04-17\" \"2023-04-18\"\n[101] \"2023-04-19\" \"2023-04-20\" \"2023-04-21\" \"2023-04-22\" \"2023-04-23\"\n[106] \"2023-04-24\" \"2023-04-25\" \"2023-04-26\" \"2023-04-27\" \"2023-04-28\"\n[111] \"2023-04-29\" \"2023-04-30\" \"2023-05-01\" \"2023-05-02\" \"2023-05-03\"\n[116] \"2023-05-04\" \"2023-05-05\" \"2023-05-06\" \"2023-05-07\" \"2023-05-08\"\n[121] \"2023-05-09\"\n\n\n\nhd <- seq.Date(from = as.Date(\"2023-03-06\"), \n                  to = as.Date(\"2023-03-10\"), \n                  by = 1) %>%\n  as.data.frame() %>%\n  rename(date=\".\") %>%\n  mutate(holiday=\"Spring Break\") %>%\n  bind_rows(data.frame(date=as.Date(\"2023-01-16\"),\n                       holiday=\"MLK\"\n                       ))\n\nhd\n\n        date      holiday\n1 2023-03-06 Spring Break\n2 2023-03-07 Spring Break\n3 2023-03-08 Spring Break\n4 2023-03-09 Spring Break\n5 2023-03-10 Spring Break\n6 2023-01-16          MLK\n\n\n\n\nWrangling\n\ndates_w <- data.frame(date=dates) %>%\n  mutate(dow=wday(date, label = T)) %>%\n  filter(dow %in% c(\"Mon\", \"Wed\", \"Fri\")) %>%\n  mutate(time=case_when(\n    dow %in% c(\"Mon\",\"Fri\") ~ \"9:10 to 10:00\",\n    T ~ \"9:10 to 11:10\"\n  )) %>%\n  left_join(hd) \n\nJoining, by = \"date\"\n\ndates_w\n\n         date dow          time      holiday\n1  2023-01-09 Mon 9:10 to 10:00         <NA>\n2  2023-01-11 Wed 9:10 to 11:10         <NA>\n3  2023-01-13 Fri 9:10 to 10:00         <NA>\n4  2023-01-16 Mon 9:10 to 10:00          MLK\n5  2023-01-18 Wed 9:10 to 11:10         <NA>\n6  2023-01-20 Fri 9:10 to 10:00         <NA>\n7  2023-01-23 Mon 9:10 to 10:00         <NA>\n8  2023-01-25 Wed 9:10 to 11:10         <NA>\n9  2023-01-27 Fri 9:10 to 10:00         <NA>\n10 2023-01-30 Mon 9:10 to 10:00         <NA>\n11 2023-02-01 Wed 9:10 to 11:10         <NA>\n12 2023-02-03 Fri 9:10 to 10:00         <NA>\n13 2023-02-06 Mon 9:10 to 10:00         <NA>\n14 2023-02-08 Wed 9:10 to 11:10         <NA>\n15 2023-02-10 Fri 9:10 to 10:00         <NA>\n16 2023-02-13 Mon 9:10 to 10:00         <NA>\n17 2023-02-15 Wed 9:10 to 11:10         <NA>\n18 2023-02-17 Fri 9:10 to 10:00         <NA>\n19 2023-02-20 Mon 9:10 to 10:00         <NA>\n20 2023-02-22 Wed 9:10 to 11:10         <NA>\n21 2023-02-24 Fri 9:10 to 10:00         <NA>\n22 2023-02-27 Mon 9:10 to 10:00         <NA>\n23 2023-03-01 Wed 9:10 to 11:10         <NA>\n24 2023-03-03 Fri 9:10 to 10:00         <NA>\n25 2023-03-06 Mon 9:10 to 10:00 Spring Break\n26 2023-03-08 Wed 9:10 to 11:10 Spring Break\n27 2023-03-10 Fri 9:10 to 10:00 Spring Break\n28 2023-03-13 Mon 9:10 to 10:00         <NA>\n29 2023-03-15 Wed 9:10 to 11:10         <NA>\n30 2023-03-17 Fri 9:10 to 10:00         <NA>\n31 2023-03-20 Mon 9:10 to 10:00         <NA>\n32 2023-03-22 Wed 9:10 to 11:10         <NA>\n33 2023-03-24 Fri 9:10 to 10:00         <NA>\n34 2023-03-27 Mon 9:10 to 10:00         <NA>\n35 2023-03-29 Wed 9:10 to 11:10         <NA>\n36 2023-03-31 Fri 9:10 to 10:00         <NA>\n37 2023-04-03 Mon 9:10 to 10:00         <NA>\n38 2023-04-05 Wed 9:10 to 11:10         <NA>\n39 2023-04-07 Fri 9:10 to 10:00         <NA>\n40 2023-04-10 Mon 9:10 to 10:00         <NA>\n41 2023-04-12 Wed 9:10 to 11:10         <NA>\n42 2023-04-14 Fri 9:10 to 10:00         <NA>\n43 2023-04-17 Mon 9:10 to 10:00         <NA>\n44 2023-04-19 Wed 9:10 to 11:10         <NA>\n45 2023-04-21 Fri 9:10 to 10:00         <NA>\n46 2023-04-24 Mon 9:10 to 10:00         <NA>\n47 2023-04-26 Wed 9:10 to 11:10         <NA>\n48 2023-04-28 Fri 9:10 to 10:00         <NA>\n49 2023-05-01 Mon 9:10 to 10:00         <NA>\n50 2023-05-03 Wed 9:10 to 11:10         <NA>\n51 2023-05-05 Fri 9:10 to 10:00         <NA>\n52 2023-05-08 Mon 9:10 to 10:00         <NA>\n\n\n\n\nExporting\n\nwrite_csv(dates_w, \"dates.csv\")"
+  },
+  {
+    "objectID": "teaching/2020-designanovareg.html",
+    "href": "teaching/2020-designanovareg.html",
+    "title": "Experimental Design, ANOVA, and Regression Workshop",
+    "section": "",
+    "text": "Hey there!\nThis is the welcome page for the Kansas State University 2020 AGSA R Workshop - Experimental Design, ANOVA, and Regression, taught by leombastos.\nThe workshop was divided into 2 days, 2 hours per day:"
+  },
+  {
+    "objectID": "teaching/2020-designanovareg.html#interested-in-attending-the-workshop",
+    "href": "teaching/2020-designanovareg.html#interested-in-attending-the-workshop",
+    "title": "Experimental Design, ANOVA, and Regression Workshop",
+    "section": "Interested in “attending” the workshop?",
+    "text": "Interested in “attending” the workshop?\n\nGo to this GitHub repository and download it to your computer (click on the green “Code” button above and select “Download ZIP”).\nUnzip the repository, launch the RStudio project (by clicking on the “2020_rworkshop_designanovareg.Rproj” file).\nOn RStudio, go to the “Files” tab (lower right), click on folder “markdown”, and open file\n\n“Day1_blank.Rmd” for day 1\n“Day2_blank.Rmd” for day 2\n\nYou can code along with us by watching the following YouTube videos:\n\nday 1\n\n\n\n\n\nday 2, incomplete due to technical issues."
+  },
+  {
+    "objectID": "teaching/2022-reg.html",
+    "href": "teaching/2022-reg.html",
+    "title": "Regression Workshop",
+    "section": "",
+    "text": "Hey there!\nThis is the welcome page for the Kansas State University/University of Georgia 2022 AGSA R Workshop - Regression for optimum rate and prediction R Workshop, taught by @leombastos.\nThe workshop was presented in one day for 2 hours where we covered:"
+  },
+  {
+    "objectID": "teaching/2022-reg.html#interested-in-attending-the-workshop",
+    "href": "teaching/2022-reg.html#interested-in-attending-the-workshop",
+    "title": "Regression Workshop",
+    "section": "Interested in “attending” the workshop?",
+    "text": "Interested in “attending” the workshop?\n\nGo to this GitHub repository and download it to your computer (click on the green “Code” button above and select “Download ZIP”).\nUnzip the repository, launch the RStudio project (by clicking on the “2022_rworkshop_regression.Rproj” file).\nOn RStudio, go to the “Files” tab (lower right), click on folder “markdown”, and open file “package_prep.R”. Run each line of this script to install the packages we need for the workshop.\nOn RStudio, go to the “Files” tab (lower right), click on folder “markdown”, and open file\n\n“reg_partial.Rmd”\n\nYou can code along with us by watching this YouTube video"
   },
   {
     "objectID": "culture/culture.html",

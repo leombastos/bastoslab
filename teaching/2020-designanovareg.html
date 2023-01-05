@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2022-08-03">
 
-<title>Bastos Lab - Cotton sensor-based variable rate N and PGR management</title>
+<title>Bastos Lab - Experimental Design, ANOVA, and Regression Workshop</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,24 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -63,26 +62,24 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Bastos Lab - Cotton sensor-based variable rate N and PGR management">
-<meta property="og:description" content="Cotton is a perennial crop that we requires intensive management to be “annualized” (i.e., having a growing cycle that starts and ends within one growing season).">
-<meta property="og:image" content="https://leombastos.github.io/bastoslab/projects/03-cottonvr/featured.jpg">
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="Bastos Lab - Experimental Design, ANOVA, and Regression Workshop">
+<meta property="og:description" content="Hey there!">
 <meta property="og:site-name" content="Bastos Lab">
-<meta name="twitter:title" content="Bastos Lab - Cotton sensor-based variable rate N and PGR management">
-<meta name="twitter:description" content="Cotton is a perennial crop that we requires intensive management to be “annualized” (i.e., having a growing cycle that starts and ends within one growing season).">
-<meta name="twitter:image" content="https://leombastos.github.io/bastoslab/projects/03-cottonvr/featured.jpg">
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bastos Lab - Experimental Design, ANOVA, and Regression Workshop">
+<meta name="twitter:description" content="Hey there!">
+<meta name="twitter:card" content="summary">
 </head>
 
-<body class="floating nav-fixed">
+<body class="floating nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../images/logo.png" alt="" class="navbar-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../images/logo.png" alt="" class="navbar-logo">
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -91,27 +88,27 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html">
+    <a class="nav-link" href="../index.html">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../team/team.html">
+    <a class="nav-link" href="../team/team.html">
  <span class="menu-text">Team</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../projects/projects.html">
+    <a class="nav-link" href="../projects/projects.html">
  <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../talks/talks.html">
+    <a class="nav-link" href="../talks/talks.html">
  <span class="menu-text">Talks</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../teaching/teaching.html">
+    <a class="nav-link" href="../teaching/teaching.html">
  <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../culture/culture.html">
+    <a class="nav-link" href="../culture/culture.html">
  <span class="menu-text">Lab manual</span></a>
   </li>  
   <li class="nav-item compact">
@@ -132,24 +129,16 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
-   
-  <ul>
-  <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background">Background</a></li>
-  <li><a href="#hypothesis-and-objectives" id="toc-hypothesis-and-objectives" class="nav-link" data-scroll-target="#hypothesis-and-objectives">Hypothesis and Objectives</a></li>
-  <li><a href="#timeline" id="toc-timeline" class="nav-link" data-scroll-target="#timeline">Timeline</a></li>
-  </ul>
-</nav>
+    
 </nav>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Cotton sensor-based variable rate N and PGR management</h1>
+<h1 class="title">Experimental Design, ANOVA, and Regression Workshop</h1>
 </div>
 
 
@@ -157,12 +146,6 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">August 3, 2022</p>
-    </div>
-  </div>
   
     
   </div>
@@ -170,30 +153,53 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="background" class="level1">
-<h1>Background</h1>
-<p>Cotton is a perennial crop that we requires intensive management to be “annualized” (i.e., having a growing cycle that starts and ends within one growing season).</p>
-<p>Because of its perennial nature, cotton growth needs to be modulated by i) providing both the proper amount of nutrients (where nitrogen-N is the one applied at greatest rates), and ii) ensuring its use of resources (like N) is properly partitioned between vegetative and reproductive growth. With that, optimum cotton lint yield is attained by providing enough (and not more than that) N while applying plant growth regulators (PGR) to curb excessive vegetative growth in lieu of reproductive.</p>
-<p>Within-field variability in soil characteristics and properties like elevation, slope, texture, bulk density, organic matter, nutrient concentration, and pH can create variable cotton growth and yield potential. Cotton plants with variable growth will require different rates of N and PGR to attain proper vegetative/reproductive partitioning and achieve their yield potential. In-season variable rate N and PGR management can be used to better match input application rates with cotton growth requirements, increasing input use efficiency, optimizing yield, and increasing farm profitability.</p>
-<p>The detection of within-field cotton growth variability and its proper management can be performed using crop canopy sensors. These sensors vary distance to the plants and in sensor-related resolutions (spatial, temporal, spectral, and radiometric). Commonly used crop canopy sensors include proximal (&lt;1 m from plants) and remote (ranging from 50 m with UAVs to orbital distances with satellite). Proximal and remote sensors have their own advantages and disadvantages, with proximal sensors generally being more sensitive to crop growth differences but less scalable than remote sensors.</p>
-</section>
-<section id="hypothesis-and-objectives" class="level1">
-<h1>Hypothesis and Objectives</h1>
-<p>We hypothesize that</p>
+<p>Hey there!</p>
+<p>This is the welcome page for the <strong>Kansas State University 2020 AGSA R Workshop - Experimental Design, ANOVA, and Regression</strong>, taught by <a href="https://github.com/leombastos">leombastos</a>.</p>
+<p>The workshop was divided into 2 days, 2 hours per day:</p>
 <ul>
-<li><p>the use of proximal, UAV, and satellite sensors will produce similar in-season variable rate N and PGR rates in cotton,</p></li>
-<li><p>sensor-based N and PGR management will yield at least similarly to a flat-rate approach,</p></li>
-<li><p>sensor-based N and PGR management will be more efficient in the use of N and PGR compared to a flat-rate approach.</p></li>
+<li><strong>day 1</strong>:
+<ul>
+<li>Intro to completly randomized design (CRD) and randomized complete block design (RCBD)</li>
+<li>Differences between CRD and RCBD</li>
+<li>What happens if you run the wrong design ANOVA</li>
+<li>Should you treat your blocks as fixed or random?</li>
+</ul></li>
+<li><strong>day 2</strong>:
+<ul>
+<li>Difference between ANOVA and regression</li>
+<li>Explore some cool applications of regression like
+<ul>
+<li>prediction</li>
+<li>finding an optimum input rate that maximizes yield</li>
+</ul></li>
+</ul></li>
 </ul>
-<p>The objectives of this study are to assess</p>
+<section id="interested-in-attending-the-workshop" class="level2">
+<h2 class="anchored" data-anchor-id="interested-in-attending-the-workshop"><strong>Interested in “attending” the workshop?</strong></h2>
 <ol type="1">
-<li>how different are N and PGR rates when calculated using proximal, UAV, and satellite data,</li>
-<li>the effect of sensor-based nutrient management in cotton lint yield and N and PGR use efficiency</li>
+<li><p>Go to <a href="https://github.com/leombastos/2020_rworkshop_designanovareg">this GitHub repository</a> and download it to your computer (click on the green “Code” button above and select “<em>Download ZIP</em>”).</p></li>
+<li><p>Unzip the repository, launch the RStudio project (by clicking on the “<em>2020_rworkshop_designanovareg.Rproj</em>” file).</p></li>
+<li><p>On RStudio, go to the “<em>Files</em>” tab (lower right), click on folder “<em>markdown</em>”, and open file</p>
+<ul>
+<li>“<em>Day1_blank.Rmd</em>” for day 1</li>
+<li>“<em>Day2_blank.Rmd</em>” for day 2</li>
+</ul></li>
+<li><p>You can code along with us by watching the following YouTube videos:</p>
+<ul>
+<li><a href="https://youtu.be/dcPv5fx0QWM">day 1</a><br>
+
+<div class="youtube-responsive-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dcPv5fx0QWM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
+</div></li>
+<li><a href="https://youtu.be/w7tK6I-acEs">day 2</a>, incomplete due to technical issues.<br>
+
+<div class="youtube-responsive-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/w7tK6I-acEs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
+</div></li>
+</ul></li>
 </ol>
-</section>
-<section id="timeline" class="level1">
-<h1>Timeline</h1>
-<p>This study will start in the Spring of 2023. A more detailed timeline will be created in the future.</p>
 
 
 </section>
@@ -451,7 +457,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left"><span> Blog made with <a href="https://quarto.org/">Quarto</a>, by Leo Bastos. License: <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a>. </span></div>   
-    <div class="nav-footer-right"><img src="../../images/UGA-logo.png" style="float:right;height:60px"></div>
+    <div class="nav-footer-right"><img src="../images/UGA-logo.png" style="float:right;height:60px"></div>
   </div>
 </footer>
 
