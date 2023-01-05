@@ -1,0 +1,2571 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Bastos Lab - CRSS 4060/6060
+Advc. Topics in Precision Ag.
+Bastos Material
+(UGA Spring 2023)</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="Bastos Lab - CRSS 4060/6060
+Advc. Topics in Precision Ag.
+Bastos Material
+(UGA Spring 2023)">
+<meta property="og:description" content="Hi there!">
+<meta property="og:site-name" content="Bastos Lab">
+<meta name="twitter:title" content="Bastos Lab - CRSS 4060/6060
+Advc. Topics in Precision Ag.
+Bastos Material
+(UGA Spring 2023)">
+<meta name="twitter:description" content="Hi there!">
+<meta name="twitter:card" content="summary">
+</head>
+
+<body class="floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/logo.png" alt="" class="navbar-logo">
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../team/team.html">
+ <span class="menu-text">Team</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../projects/projects.html">
+ <span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../talks/talks.html">
+ <span class="menu-text">Talks</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../teaching/teaching.html">
+ <span class="menu-text">Teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../culture/culture.html">
+ <span class="menu-text">Lab manual</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/leombastos"><i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+   
+  <ul>
+  <li><a href="#schedule" id="toc-schedule" class="nav-link active" data-scroll-target="#schedule">Schedule <svg viewbox="0 0 448 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"> <path d="M400 64h-48V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H160V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H48C21.49 64 0 85.49 0 112v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm-6 400H54a6 6 0 0 1-6-6V160h352v298a6 6 0 0 1-6 6zm-52.849-200.65L198.842 404.519c-4.705 4.667-12.303 4.637-16.971-.068l-75.091-75.699c-4.667-4.705-4.637-12.303.068-16.971l22.719-22.536c4.705-4.667 12.303-4.637 16.97.069l44.104 44.461 111.072-110.181c4.705-4.667 12.303-4.637 16.971.068l22.536 22.718c4.667 4.705 4.636 12.303-.069 16.97z"></path></svg></a></li>
+  <li><a href="#course-syllabus" id="toc-course-syllabus" class="nav-link" data-scroll-target="#course-syllabus">Course Syllabus <svg viewbox="0 0 192 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"> <path d="M20 424.229h20V279.771H20c-11.046 0-20-8.954-20-20V212c0-11.046 8.954-20 20-20h112c11.046 0 20 8.954 20 20v212.229h20c11.046 0 20 8.954 20 20V492c0 11.046-8.954 20-20 20H20c-11.046 0-20-8.954-20-20v-47.771c0-11.046 8.954-20 20-20zM96 0C56.235 0 24 32.235 24 72s32.235 72 72 72 72-32.235 72-72S135.764 0 96 0z"></path></svg></a>
+  <ul>
+  <li><a href="#course-information" id="toc-course-information" class="nav-link" data-scroll-target="#course-information">Course information</a>
+  <ul class="collapse">
+  <li><a href="#general-information" id="toc-general-information" class="nav-link" data-scroll-target="#general-information">General information</a></li>
+  <li><a href="#meeting-times-and-locations" id="toc-meeting-times-and-locations" class="nav-link" data-scroll-target="#meeting-times-and-locations">Meeting times and locations</a></li>
+  <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link" data-scroll-target="#prerequisites">Prerequisites</a></li>
+  <li><a href="#co-requisites" id="toc-co-requisites" class="nav-link" data-scroll-target="#co-requisites">Co-requisites</a></li>
+  </ul></li>
+  <li><a href="#instructors-information" id="toc-instructors-information" class="nav-link" data-scroll-target="#instructors-information">Instructors information</a>
+  <ul class="collapse">
+  <li><a href="#general-information-1" id="toc-general-information-1" class="nav-link" data-scroll-target="#general-information-1">General information</a></li>
+  <li><a href="#office-hours" id="toc-office-hours" class="nav-link" data-scroll-target="#office-hours">Office hours</a></li>
+  </ul></li>
+  <li><a href="#course-description-and-details" id="toc-course-description-and-details" class="nav-link" data-scroll-target="#course-description-and-details">Course description and details</a>
+  <ul class="collapse">
+  <li><a href="#description" id="toc-description" class="nav-link" data-scroll-target="#description">Description</a></li>
+  <li><a href="#course-learning-outcomes" id="toc-course-learning-outcomes" class="nav-link" data-scroll-target="#course-learning-outcomes">Course learning outcomes</a></li>
+  <li><a href="#topical-outline" id="toc-topical-outline" class="nav-link" data-scroll-target="#topical-outline">Topical Outline</a></li>
+  </ul></li>
+  <li><a href="#course-materials" id="toc-course-materials" class="nav-link" data-scroll-target="#course-materials">Course materials</a>
+  <ul class="collapse">
+  <li><a href="#textbook" id="toc-textbook" class="nav-link" data-scroll-target="#textbook">Textbook</a></li>
+  <li><a href="#technology-and-software-requirements" id="toc-technology-and-software-requirements" class="nav-link" data-scroll-target="#technology-and-software-requirements">Technology and software requirements</a></li>
+  <li><a href="#course-website" id="toc-course-website" class="nav-link" data-scroll-target="#course-website">Course website</a></li>
+  </ul></li>
+  <li><a href="#assessment-and-grading" id="toc-assessment-and-grading" class="nav-link" data-scroll-target="#assessment-and-grading">Assessment and Grading</a>
+  <ul class="collapse">
+  <li><a href="#grading-categories" id="toc-grading-categories" class="nav-link" data-scroll-target="#grading-categories">Grading categories</a></li>
+  <li><a href="#written-assignment-quality" id="toc-written-assignment-quality" class="nav-link" data-scroll-target="#written-assignment-quality">Written assignment quality</a></li>
+  <li><a href="#class-participation" id="toc-class-participation" class="nav-link" data-scroll-target="#class-participation">Class participation</a></li>
+  <li><a href="#grading-scale" id="toc-grading-scale" class="nav-link" data-scroll-target="#grading-scale">Grading scale</a></li>
+  <li><a href="#extra-credit-opportunities" id="toc-extra-credit-opportunities" class="nav-link" data-scroll-target="#extra-credit-opportunities">Extra credit opportunities</a></li>
+  </ul></li>
+  <li><a href="#course-statements-and-policies" id="toc-course-statements-and-policies" class="nav-link" data-scroll-target="#course-statements-and-policies">Course statements and policies</a>
+  <ul class="collapse">
+  <li><a href="#academic-honesty" id="toc-academic-honesty" class="nav-link" data-scroll-target="#academic-honesty">Academic honesty</a></li>
+  <li><a href="#attendance-policy" id="toc-attendance-policy" class="nav-link" data-scroll-target="#attendance-policy">Attendance policy</a></li>
+  <li><a href="#disclaimer" id="toc-disclaimer" class="nav-link" data-scroll-target="#disclaimer">Disclaimer</a></li>
+  <li><a href="#make-up-procedures" id="toc-make-up-procedures" class="nav-link" data-scroll-target="#make-up-procedures">Make-up procedures</a></li>
+  <li><a href="#mental-health-and-wellness-resources" id="toc-mental-health-and-wellness-resources" class="nav-link" data-scroll-target="#mental-health-and-wellness-resources">Mental Health and Wellness Resources</a></li>
+  <li><a href="#disability-statement" id="toc-disability-statement" class="nav-link" data-scroll-target="#disability-statement">Disability statement</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    </div>
+<!-- main -->
+<main class="content page-columns page-full" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">CRSS 4060/6060<br>
+Advc. Topics in Precision Ag.<br>
+Bastos Material<br>
+(UGA Spring 2023)</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>Hi there!</p>
+<p>This is the welcome page for the <strong>2023 CRSS 4060/6060 Advanced Topics in Precision Agriculture</strong> portion taught by Dr.&nbsp;Leo Bastos.</p>
+<p>Below you will find:</p>
+<ul>
+<li>Schedule with links for slides, code, and recordings<br>
+</li>
+<li>Course syllabus</li>
+</ul>
+<hr>
+<section id="schedule" class="level1 page-columns page-full">
+<h1>Schedule <svg viewbox="0 0 448 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"> <path d="M400 64h-48V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H160V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H48C21.49 64 0 85.49 0 112v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm-6 400H54a6 6 0 0 1-6-6V160h352v298a6 6 0 0 1-6 6zm-52.849-200.65L198.842 404.519c-4.705 4.667-12.303 4.637-16.971-.068l-75.091-75.699c-4.667-4.705-4.637-12.303.068-16.971l22.719-22.536c4.705-4.667 12.303-4.637 16.97.069l44.104 44.461 111.072-110.181c4.705-4.667 12.303-4.637 16.971.068l22.536 22.718c4.667 4.705 4.636 12.303-.069 16.97z"></path></svg></h1>
+<div class="cell">
+
+</div>
+<div class="cell">
+
+</div>
+<div class="cell">
+
+</div>
+<div class="cell">
+
+</div>
+<div class="column-screen-inset-right">
+<div class="cell">
+<div class="cell-output-display">
+
+<div id="oqsbflbser" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+:where(#oqsbflbser) .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+:where(#oqsbflbser) .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+:where(#oqsbflbser) .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+:where(#oqsbflbser) .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+:where(#oqsbflbser) .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+:where(#oqsbflbser) .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+:where(#oqsbflbser) .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+:where(#oqsbflbser) .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+:where(#oqsbflbser) .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+:where(#oqsbflbser) .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+:where(#oqsbflbser) .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+:where(#oqsbflbser) .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+:where(#oqsbflbser) .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+:where(#oqsbflbser) .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+:where(#oqsbflbser) .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+:where(#oqsbflbser) .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+:where(#oqsbflbser) .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+:where(#oqsbflbser) .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#oqsbflbser) .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+:where(#oqsbflbser) .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+:where(#oqsbflbser) .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#oqsbflbser) .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+:where(#oqsbflbser) .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+:where(#oqsbflbser) .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+:where(#oqsbflbser) .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#oqsbflbser) .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+:where(#oqsbflbser) .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+:where(#oqsbflbser) .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+:where(#oqsbflbser) .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+:where(#oqsbflbser) .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#oqsbflbser) .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+:where(#oqsbflbser) .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#oqsbflbser) .gt_left {
+  text-align: left;
+}
+
+:where(#oqsbflbser) .gt_center {
+  text-align: center;
+}
+
+:where(#oqsbflbser) .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+:where(#oqsbflbser) .gt_font_normal {
+  font-weight: normal;
+}
+
+:where(#oqsbflbser) .gt_font_bold {
+  font-weight: bold;
+}
+
+:where(#oqsbflbser) .gt_font_italic {
+  font-style: italic;
+}
+
+:where(#oqsbflbser) .gt_super {
+  font-size: 65%;
+}
+
+:where(#oqsbflbser) .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 75%;
+  vertical-align: 0.4em;
+}
+
+:where(#oqsbflbser) .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+:where(#oqsbflbser) .gt_indent_1 {
+  text-indent: 5px;
+}
+
+:where(#oqsbflbser) .gt_indent_2 {
+  text-indent: 10px;
+}
+
+:where(#oqsbflbser) .gt_indent_3 {
+  text-indent: 15px;
+}
+
+:where(#oqsbflbser) .gt_indent_4 {
+  text-indent: 20px;
+}
+
+:where(#oqsbflbser) .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+<table class="gt_table">
+  
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="date">date</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="time">time</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="topic">topic</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="slides">slides</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="code">code</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="recording">recording</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Mon, Jan 09</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 10:00</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"><p>Welcome and Intro</p>
+</div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"><p><a href="slides/lec01.html"><svg aria-hidden="true" role="img" viewbox="0 0 640 512" style="height:1.6em;width:2em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M144 48C144 21.49 165.5 0 192 0C218.5 0 240 21.49 240 48C240 74.51 218.5 96 192 96C165.5 96 144 74.51 144 48zM152 512C134.3 512 120 497.7 120 480V256.9L91.43 304.5C82.33 319.6 62.67 324.5 47.52 315.4C32.37 306.3 27.47 286.7 36.58 271.5L94.85 174.6C112.2 145.7 143.4 128 177.1 128H320V48C320 21.49 341.5 .0003 368 .0003H592C618.5 .0003 640 21.49 640 48V272C640 298.5 618.5 320 592 320H368C341.5 320 320 298.5 320 272V224H384V256H576V64H384V128H400C417.7 128 432 142.3 432 160C432 177.7 417.7 192 400 192H264V480C264 497.7 249.7 512 232 512C214.3 512 200 497.7 200 480V352H184V480C184 497.7 169.7 512 152 512L152 512z"></path></svg></a></p>
+</div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Wed, Jan 11</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 11:10</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"><p>R &amp; RStudio intro<br>
+RStudio projects<br>
+Rmarkdown<br>
+Assignment #1 - Paper</p>
+</div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Fri, Jan 13</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 10:00</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Mon, Jan 16</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 10:00</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"><p>No class - MLK</p>
+</div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Wed, Jan 18</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 11:10</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Fri, Jan 20</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 10:00</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Mon, Jan 23</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 10:00</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Wed, Jan 25</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 11:10</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Fri, Jan 27</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 10:00</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Mon, Jan 30</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 10:00</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Wed, Feb 01</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 11:10</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Fri, Feb 03</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 10:00</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Mon, Feb 06</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 10:00</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Wed, Feb 08</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 11:10</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Fri, Feb 10</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 10:00</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Mon, Feb 13</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 10:00</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Wed, Feb 15</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 11:10</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Fri, Feb 17</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 10:00</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Mon, Feb 20</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 10:00</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Wed, Feb 22</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 11:10</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Fri, Feb 24</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 10:00</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Mon, Feb 27</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 10:00</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Wed, Mar 01</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 11:10</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Fri, Mar 03</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 10:00</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Mon, Mar 06</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 10:00</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"><p>No class - Spring Break</p>
+</div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Wed, Mar 08</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 11:10</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"><p>No class - Spring Break</p>
+</div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Fri, Mar 10</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 10:00</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"><p>No class - Spring Break</p>
+</div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Mon, Mar 13</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 10:00</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Wed, Mar 15</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 11:10</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Fri, Mar 17</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 10:00</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Mon, Mar 20</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 10:00</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Wed, Mar 22</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 11:10</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Fri, Mar 24</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 10:00</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Mon, Mar 27</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 10:00</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Wed, Mar 29</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 11:10</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Fri, Mar 31</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 10:00</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Mon, Apr 03</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 10:00</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Wed, Apr 05</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 11:10</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Fri, Apr 07</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 10:00</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Mon, Apr 10</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 10:00</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Wed, Apr 12</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 11:10</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Fri, Apr 14</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 10:00</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Mon, Apr 17</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 10:00</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Wed, Apr 19</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 11:10</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Fri, Apr 21</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 10:00</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Mon, Apr 24</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 10:00</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Wed, Apr 26</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 11:10</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Fri, Apr 28</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 10:00</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Mon, May 01</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 10:00</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Wed, May 03</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 11:10</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Fri, May 05</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 10:00</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+    <tr><td headers="date" class="gt_row gt_left"><div class="gt_from_md"><p>Mon, May 08</p>
+</div></td>
+<td headers="time" class="gt_row gt_left"><div class="gt_from_md"><p>9:10 to 10:00</p>
+</div></td>
+<td headers="topic" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="slides" class="gt_row gt_left"><div class="gt_from_md"></div></td>
+<td headers="code" class="gt_row gt_right"><div class="gt_from_md"></div></td>
+<td headers="recording" class="gt_row gt_right"><div class="gt_from_md"></div></td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="course-syllabus" class="level1">
+<h1>Course Syllabus <svg viewbox="0 0 192 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"> <path d="M20 424.229h20V279.771H20c-11.046 0-20-8.954-20-20V212c0-11.046 8.954-20 20-20h112c11.046 0 20 8.954 20 20v212.229h20c11.046 0 20 8.954 20 20V492c0 11.046-8.954 20-20 20H20c-11.046 0-20-8.954-20-20v-47.771c0-11.046 8.954-20 20-20zM96 0C56.235 0 24 32.235 24 72s32.235 72 72 72 72-32.235 72-72S135.764 0 96 0z"></path></svg></h1>
+<section id="course-information" class="level2">
+<h2 class="anchored" data-anchor-id="course-information">Course information</h2>
+<section id="general-information" class="level3">
+<h3 class="anchored" data-anchor-id="general-information">General information</h3>
+<ul>
+<li>CRSS 4060/6060 - Advanced Topics in Precision Agriculture<br>
+</li>
+<li>Spring Semester 2023<br>
+</li>
+<li>3 credit hours</li>
+</ul>
+</section>
+<section id="meeting-times-and-locations" class="level3">
+<h3 class="anchored" data-anchor-id="meeting-times-and-locations">Meeting times and locations</h3>
+<ul>
+<li><strong>Lectures</strong>: Monday and Friday at 09:10-10:00</li>
+<li><strong>Labs</strong>: Wednesday at 09:10-11:10</li>
+<li>Location:
+<ul>
+<li>Athens campus: in person at 1203 Miller Plant Sciences<br>
+</li>
+<li>Tifton campus: in person at 601 NESPAL South OR remote<br>
+</li>
+<li>Griffin campus: in person at SLC UGA Computer lab OR remote</li>
+</ul></li>
+</ul>
+</section>
+<section id="prerequisites" class="level3">
+<h3 class="anchored" data-anchor-id="prerequisites">Prerequisites</h3>
+<p>CRSS 3030 – Principles of Precision Agriculture</p>
+</section>
+<section id="co-requisites" class="level3">
+<h3 class="anchored" data-anchor-id="co-requisites">Co-requisites</h3>
+<p>CRSS 4050 / 6050 – Improving Nutrient and Energy Efficiency with Geographic Information Systems or equivalent GIS course.</p>
+</section>
+</section>
+<section id="instructors-information" class="level2">
+<h2 class="anchored" data-anchor-id="instructors-information">Instructors information</h2>
+<section id="general-information-1" class="level3">
+<h3 class="anchored" data-anchor-id="general-information-1">General information</h3>
+<p><strong>Dr.&nbsp;Leonardo M. Bastos</strong>, Assistant Professor<br>
+Crop &amp; Soil Sciences Dept.<br>
+4101 Miller Plant Sciences Building, Athens Campus<br>
+University of Georgia<br>
+Email: lmbastos@uga.edu<br>
+URL: leombastos.github.io/bastoslab/</p>
+<p><strong>Dr.&nbsp;Lorena Lacerda</strong>, Assistant Professor<br>
+Crop &amp; Soil Sciences Dept.<br>
+4103 Miller Plant Sciences Building, Athens Campus<br>
+University of Georgia<br>
+Email: llacerda@uga.edu<br>
+URL: https://cropsoil.uga.edu/people/faculty/lorena-lacerda.html</p>
+</section>
+<section id="office-hours" class="level3">
+<h3 class="anchored" data-anchor-id="office-hours">Office hours</h3>
+<p>Because of social distancing requirements, please make an appointment if you would like a face-to-face meeting with one of the instructors. Otherwise, we are always available by email.</p>
+</section>
+</section>
+<section id="course-description-and-details" class="level2">
+<h2 class="anchored" data-anchor-id="course-description-and-details">Course description and details</h2>
+<section id="description" class="level3">
+<h3 class="anchored" data-anchor-id="description">Description</h3>
+<p>The course will emphasize sampling plan, obtaining and processing, and using various agricultural geospatial data layers for decision making related to precision agriculture. Data types used in the course include publicly available like weather, soils, and satellite remote sensing, and private data like yield monitor, Veris-derived soil electrical conductivity and elevation, and UAV remote sensing. Data processing steps include cleaning, removal of outliers, normalization, interpolation, and UAV imagery processing. Analytical techniques include clustering for creation of management zones, zone-based and imagery-based variable rate prescription, profitability maps, and use of satellite remote sensing for crop scouting. All steps will be conducted utilizing the R statistical language to create well documented and reproducible precision agriculture analytical workflows. No previous knowledge in R is required.</p>
+</section>
+<section id="course-learning-outcomes" class="level3">
+<h3 class="anchored" data-anchor-id="course-learning-outcomes">Course learning outcomes</h3>
+<p>Provide students with a good understanding of the emerging areas in precision agriculture, the ability to find, analyze and evaluate spatially distributed data sets, and the experience to use key precision agriculture tools and technologies. Additional goals are to:</p>
+<ul>
+<li>extend critical thinking and problem solving abilities<br>
+</li>
+<li>improve written and oral communication skills<br>
+</li>
+<li>learn how to create, present, and interpret maps<br>
+</li>
+<li>create reproducible analytical workflows using R</li>
+</ul>
+</section>
+<section id="topical-outline" class="level3">
+<h3 class="anchored" data-anchor-id="topical-outline">Topical Outline</h3>
+<ol type="1">
+<li>Intro to R<br>
+</li>
+<li>Using R as a geographic information system (GIS)<br>
+</li>
+<li>Accessing publicly available geospatial data through R
+<ol type="a">
+<li>Crop statistics from USDA NASS<br>
+</li>
+<li>Soils data from SSURGO<br>
+</li>
+<li>Weather and satellite remote sensing from Google Earth Engine<br>
+</li>
+<li>State and county boundaries<br>
+</li>
+</ol></li>
+<li>Creating grids for soil sampling<br>
+</li>
+<li>Geostatistics for point-data interpolation with
+<ol type="a">
+<li>Inverse distance weighting<br>
+</li>
+<li>Kriging<br>
+</li>
+</ol></li>
+<li>Yield monitor data processing
+<ol type="a">
+<li>Understand the sources of error<br>
+</li>
+<li>Cleaning and removal of erroneous data points<br>
+</li>
+<li>Spatial and temporal yield variability analysis<br>
+</li>
+</ol></li>
+<li>Terrain data processing
+<ol type="a">
+<li>Elevation<br>
+</li>
+<li>Aspect<br>
+</li>
+<li>Slope<br>
+</li>
+</ol></li>
+<li>Management zones
+<ol type="a">
+<li>Combining yield and soils data<br>
+</li>
+<li>Creating management zones with cluster analysis<br>
+</li>
+<li>Validating management zones<br>
+</li>
+</ol></li>
+<li>UAV remote sensing
+<ol type="a">
+<li>Data collection planning<br>
+</li>
+<li>Imagery processing<br>
+</li>
+</ol></li>
+<li>Variable rate prescription
+<ol type="a">
+<li>Zone-based variable rate prescription<br>
+</li>
+<li>Imagery-based variable rate prescription<br>
+</li>
+</ol></li>
+<li>Profitability maps<br>
+</li>
+<li>Satellite remote sensing for crop scouting<br>
+</li>
+<li>Course project
+<ol type="a">
+<li>Undergraduate students: optional<br>
+</li>
+<li>Graduate students: mandatory</li>
+</ol></li>
+</ol>
+<p>The topical outline is a general plan for the course; deviations announced to the class by the instructor may be necessary.</p>
+</section>
+</section>
+<section id="course-materials" class="level2">
+<h2 class="anchored" data-anchor-id="course-materials">Course materials</h2>
+<section id="textbook" class="level3">
+<h3 class="anchored" data-anchor-id="textbook">Textbook</h3>
+<p>A textbook is not required. Reading materials will be supplied by instructor and will include benchmark research articles, manuals, and other materials.</p>
+</section>
+<section id="technology-and-software-requirements" class="level3">
+<h3 class="anchored" data-anchor-id="technology-and-software-requirements">Technology and software requirements</h3>
+<p>Students will need to have access to:</p>
+<ul>
+<li>A computer (to install software, code along with instructors)<br>
+</li>
+<li>A second screen (main screen to code along, second screen to watch class if not in person)</li>
+</ul>
+<p>If a student does not have access to these resources (personal laptop/desktop and a second screen), please let instructors know to ensure proper accommodations can be made.</p>
+</section>
+<section id="course-website" class="level3">
+<h3 class="anchored" data-anchor-id="course-website">Course website</h3>
+<p>Important links related to this course:</p>
+<ul>
+<li><a href="">Course website</a><br>
+</li>
+<li><a href="">Course GitHub repository</a><br>
+</li>
+<li><a href="">Course YouTube channel</a></li>
+</ul>
+</section>
+</section>
+<section id="assessment-and-grading" class="level2">
+<h2 class="anchored" data-anchor-id="assessment-and-grading">Assessment and Grading</h2>
+<section id="grading-categories" class="level3">
+<h3 class="anchored" data-anchor-id="grading-categories">Grading categories</h3>
+<p>The grade you receive in this course will be determined from your performance on a mini-project, one mid-term exam, periodic quizzes, homework assignments and lab reports, a team design project, a comprehensive final exam, and class participation. These factors will be weighted as follows:</p>
+<div class="cell">
+<div class="cell-output-display">
+
+<div id="eroodbavsl" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+:where(#eroodbavsl) .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+:where(#eroodbavsl) .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+:where(#eroodbavsl) .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+:where(#eroodbavsl) .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+:where(#eroodbavsl) .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+:where(#eroodbavsl) .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+:where(#eroodbavsl) .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+:where(#eroodbavsl) .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+:where(#eroodbavsl) .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+:where(#eroodbavsl) .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+:where(#eroodbavsl) .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+:where(#eroodbavsl) .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+:where(#eroodbavsl) .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+:where(#eroodbavsl) .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+:where(#eroodbavsl) .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+:where(#eroodbavsl) .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+:where(#eroodbavsl) .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+:where(#eroodbavsl) .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#eroodbavsl) .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+:where(#eroodbavsl) .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+:where(#eroodbavsl) .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#eroodbavsl) .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+:where(#eroodbavsl) .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+:where(#eroodbavsl) .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+:where(#eroodbavsl) .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#eroodbavsl) .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+:where(#eroodbavsl) .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+:where(#eroodbavsl) .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+:where(#eroodbavsl) .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+:where(#eroodbavsl) .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#eroodbavsl) .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+:where(#eroodbavsl) .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#eroodbavsl) .gt_left {
+  text-align: left;
+}
+
+:where(#eroodbavsl) .gt_center {
+  text-align: center;
+}
+
+:where(#eroodbavsl) .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+:where(#eroodbavsl) .gt_font_normal {
+  font-weight: normal;
+}
+
+:where(#eroodbavsl) .gt_font_bold {
+  font-weight: bold;
+}
+
+:where(#eroodbavsl) .gt_font_italic {
+  font-style: italic;
+}
+
+:where(#eroodbavsl) .gt_super {
+  font-size: 65%;
+}
+
+:where(#eroodbavsl) .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 75%;
+  vertical-align: 0.4em;
+}
+
+:where(#eroodbavsl) .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+:where(#eroodbavsl) .gt_indent_1 {
+  text-indent: 5px;
+}
+
+:where(#eroodbavsl) .gt_indent_2 {
+  text-indent: 10px;
+}
+
+:where(#eroodbavsl) .gt_indent_3 {
+  text-indent: 15px;
+}
+
+:where(#eroodbavsl) .gt_indent_4 {
+  text-indent: 20px;
+}
+
+:where(#eroodbavsl) .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+<table class="gt_table">
+  
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="Activity">Activity</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="Grade">Grade</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td headers="Activity" class="gt_row gt_left"><div class="gt_from_md"><p>Mini-project: USDA NASS data</p>
+</div></td>
+<td headers="Grade" class="gt_row gt_right"><div class="gt_from_md"><p>10%</p>
+</div></td></tr>
+    <tr><td headers="Activity" class="gt_row gt_left"><div class="gt_from_md"><p>Mid-term exam</p>
+</div></td>
+<td headers="Grade" class="gt_row gt_right"><div class="gt_from_md"><p>10%</p>
+</div></td></tr>
+    <tr><td headers="Activity" class="gt_row gt_left"><div class="gt_from_md"><p>Homework assignments</p>
+</div></td>
+<td headers="Grade" class="gt_row gt_right"><div class="gt_from_md"><p>35%</p>
+</div></td></tr>
+    <tr><td headers="Activity" class="gt_row gt_left"><div class="gt_from_md"><p>In-class quizzes</p>
+</div></td>
+<td headers="Grade" class="gt_row gt_right"><div class="gt_from_md"><p>15%</p>
+</div></td></tr>
+    <tr><td headers="Activity" class="gt_row gt_left"><div class="gt_from_md"><p>Final project:<br>
+from raw data to zone-based variable rate</p>
+</div></td>
+<td headers="Grade" class="gt_row gt_right"><div class="gt_from_md"><p>20%</p>
+</div></td></tr>
+    <tr><td headers="Activity" class="gt_row gt_left"><div class="gt_from_md"><p>Class participation</p>
+</div></td>
+<td headers="Grade" class="gt_row gt_right"><div class="gt_from_md"><p>10%</p>
+</div></td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="written-assignment-quality" class="level3">
+<h3 class="anchored" data-anchor-id="written-assignment-quality">Written assignment quality</h3>
+<p>Up to <strong>thirty percent of the grade</strong> on written assignments (mini-project, homework, final project) will be based on quality of communication.</p>
+<p>Spelling, grammar, punctuation, and clarity of writing are evidence of written communication quality.</p>
+</section>
+<section id="class-participation" class="level3">
+<h3 class="anchored" data-anchor-id="class-participation">Class participation</h3>
+<p>Active class participation is important for you to achieve the learning goals of the class. To receive maximum credit for class participation you must</p>
+<ul>
+<li>attend every class period (lecture or laboratory)<br>
+</li>
+<li>arrive on time and remain for the entire class period<br>
+</li>
+<li>you are actively engaged and attentive throughout the class period<br>
+</li>
+<li>participate in the class discussion and ask and answer questions</li>
+</ul>
+</section>
+<section id="grading-scale" class="level3">
+<h3 class="anchored" data-anchor-id="grading-scale">Grading scale</h3>
+<p>Final grades will be assigned as follows:</p>
+<div class="cell">
+<div class="cell-output-display">
+
+<div id="dcsoaxingk" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+:where(#dcsoaxingk) .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+:where(#dcsoaxingk) .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+:where(#dcsoaxingk) .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+:where(#dcsoaxingk) .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+:where(#dcsoaxingk) .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+:where(#dcsoaxingk) .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+:where(#dcsoaxingk) .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+:where(#dcsoaxingk) .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+:where(#dcsoaxingk) .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+:where(#dcsoaxingk) .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+:where(#dcsoaxingk) .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+:where(#dcsoaxingk) .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+:where(#dcsoaxingk) .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+:where(#dcsoaxingk) .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+:where(#dcsoaxingk) .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+:where(#dcsoaxingk) .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+:where(#dcsoaxingk) .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+:where(#dcsoaxingk) .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#dcsoaxingk) .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+:where(#dcsoaxingk) .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+:where(#dcsoaxingk) .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#dcsoaxingk) .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+:where(#dcsoaxingk) .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+:where(#dcsoaxingk) .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+:where(#dcsoaxingk) .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#dcsoaxingk) .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+:where(#dcsoaxingk) .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+:where(#dcsoaxingk) .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+:where(#dcsoaxingk) .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+:where(#dcsoaxingk) .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#dcsoaxingk) .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+:where(#dcsoaxingk) .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#dcsoaxingk) .gt_left {
+  text-align: left;
+}
+
+:where(#dcsoaxingk) .gt_center {
+  text-align: center;
+}
+
+:where(#dcsoaxingk) .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+:where(#dcsoaxingk) .gt_font_normal {
+  font-weight: normal;
+}
+
+:where(#dcsoaxingk) .gt_font_bold {
+  font-weight: bold;
+}
+
+:where(#dcsoaxingk) .gt_font_italic {
+  font-style: italic;
+}
+
+:where(#dcsoaxingk) .gt_super {
+  font-size: 65%;
+}
+
+:where(#dcsoaxingk) .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 75%;
+  vertical-align: 0.4em;
+}
+
+:where(#dcsoaxingk) .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+:where(#dcsoaxingk) .gt_indent_1 {
+  text-indent: 5px;
+}
+
+:where(#dcsoaxingk) .gt_indent_2 {
+  text-indent: 10px;
+}
+
+:where(#dcsoaxingk) .gt_indent_3 {
+  text-indent: 15px;
+}
+
+:where(#dcsoaxingk) .gt_indent_4 {
+  text-indent: 20px;
+}
+
+:where(#dcsoaxingk) .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+<table class="gt_table">
+  
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="Letter">Letter</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="Grade">Grade</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td headers="Letter" class="gt_row gt_left"><div class="gt_from_md"><p>A</p>
+</div></td>
+<td headers="Grade" class="gt_row gt_left"><div class="gt_from_md"><p>93 and above</p>
+</div></td></tr>
+    <tr><td headers="Letter" class="gt_row gt_left"><div class="gt_from_md"><p>A-</p>
+</div></td>
+<td headers="Grade" class="gt_row gt_left"><div class="gt_from_md"><p>90-92</p>
+</div></td></tr>
+    <tr><td headers="Letter" class="gt_row gt_left"><div class="gt_from_md"><p>B+</p>
+</div></td>
+<td headers="Grade" class="gt_row gt_left"><div class="gt_from_md"><p>87-89</p>
+</div></td></tr>
+    <tr><td headers="Letter" class="gt_row gt_left"><div class="gt_from_md"><p>B</p>
+</div></td>
+<td headers="Grade" class="gt_row gt_left"><div class="gt_from_md"><p>83-86</p>
+</div></td></tr>
+    <tr><td headers="Letter" class="gt_row gt_left"><div class="gt_from_md"><p>B-</p>
+</div></td>
+<td headers="Grade" class="gt_row gt_left"><div class="gt_from_md"><p>80-82</p>
+</div></td></tr>
+    <tr><td headers="Letter" class="gt_row gt_left"><div class="gt_from_md"><p>C+</p>
+</div></td>
+<td headers="Grade" class="gt_row gt_left"><div class="gt_from_md"><p>77-79</p>
+</div></td></tr>
+    <tr><td headers="Letter" class="gt_row gt_left"><div class="gt_from_md"><p>C</p>
+</div></td>
+<td headers="Grade" class="gt_row gt_left"><div class="gt_from_md"><p>73-76</p>
+</div></td></tr>
+    <tr><td headers="Letter" class="gt_row gt_left"><div class="gt_from_md"><p>C-</p>
+</div></td>
+<td headers="Grade" class="gt_row gt_left"><div class="gt_from_md"><p>70-72</p>
+</div></td></tr>
+    <tr><td headers="Letter" class="gt_row gt_left"><div class="gt_from_md"><p>D+</p>
+</div></td>
+<td headers="Grade" class="gt_row gt_left"><div class="gt_from_md"><p>67-69</p>
+</div></td></tr>
+    <tr><td headers="Letter" class="gt_row gt_left"><div class="gt_from_md"><p>D</p>
+</div></td>
+<td headers="Grade" class="gt_row gt_left"><div class="gt_from_md"><p>63-66</p>
+</div></td></tr>
+    <tr><td headers="Letter" class="gt_row gt_left"><div class="gt_from_md"><p>D-</p>
+</div></td>
+<td headers="Grade" class="gt_row gt_left"><div class="gt_from_md"><p>60-62</p>
+</div></td></tr>
+    <tr><td headers="Letter" class="gt_row gt_left"><div class="gt_from_md"><p>F</p>
+</div></td>
+<td headers="Grade" class="gt_row gt_left"><div class="gt_from_md"><p>59 and below</p>
+</div></td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="extra-credit-opportunities" class="level3">
+<h3 class="anchored" data-anchor-id="extra-credit-opportunities">Extra credit opportunities</h3>
+<p>Extra credit opportunities may be made available during projects, homework assignments, and exams, at the descrition of the instructors.</p>
+</section>
+</section>
+<section id="course-statements-and-policies" class="level2">
+<h2 class="anchored" data-anchor-id="course-statements-and-policies">Course statements and policies</h2>
+<section id="academic-honesty" class="level3">
+<h3 class="anchored" data-anchor-id="academic-honesty">Academic honesty</h3>
+<p>UGA Student Honor Code: “I will be academically honest in all of my academic work and will not tolerate academic dishonesty of others.” A Culture of Honesty, the University’s policy and procedures for handling cases of suspected dishonesty, can be found at www.uga.edu/ovpi.</p>
+<p>For this course, all lab reports, projects, and other assignments can be discussed with your classmates but any work you turn in must be your own.</p>
+<p>Students can work together through coding exercises, but direct copying and pasting from a colleague will be considered plagiarism.</p>
+<p>If using code from an online source, it is ok to copy and paste IF proper credit is given (e.g., showing the website source from where the code was obtained).</p>
+</section>
+<section id="attendance-policy" class="level3">
+<h3 class="anchored" data-anchor-id="attendance-policy">Attendance policy</h3>
+<p>Students are expected to attend every class period.</p>
+<p>Students on the <strong>Athens campus</strong> must attend class in-person. If a special circumstance arise (illness, travel, etc.), student absence or remote attendance <strong>must be informed to instructors prior to that class period</strong>.</p>
+<p>Students on the <strong>Tifton and Griffin campuses</strong> may attend class in-person on their campuses or remote using the zoom link information. Student absence <strong>must be informed to instructors prior to that class period</strong>.</p>
+<p>Per Board of Regents policy, I reserve the right to drop students from the class roll who <strong>miss more than 5 class periods</strong>. Such students will be given a WF grade.</p>
+</section>
+<section id="disclaimer" class="level3">
+<h3 class="anchored" data-anchor-id="disclaimer">Disclaimer</h3>
+<p>The course syllabus is a general plan for the course; deviations announced to the class by the instructor may be necessary.</p>
+</section>
+<section id="make-up-procedures" class="level3">
+<h3 class="anchored" data-anchor-id="make-up-procedures">Make-up procedures</h3>
+<ul>
+<li>There will be no make-ups for missed quizzes. Any missed quiz will be recorded as a zero<br>
+</li>
+<li>Exams can be made up only with a note from a doctor or if you can document extenuating circumstances. Any unexcused missed exam will be recorded as a zero<br>
+</li>
+<li>Homework assignments will be accepted up to one week beyond the due date. The penalty for submitting a late assignment is one letter grade<br>
+</li>
+<li>Homework assignments may be submitted late without penalty in case of illness, extenuating circumstances, or if prior arrangements are made with the instructors. All late assignments are due within a week of the original due date or within a week of when a student returns from an illness</li>
+</ul>
+</section>
+<section id="mental-health-and-wellness-resources" class="level3">
+<h3 class="anchored" data-anchor-id="mental-health-and-wellness-resources">Mental Health and Wellness Resources</h3>
+<ul>
+<li>If you or someone you know needs assistance, you are encouraged to contact Student Care and Outreach in the Division of Student Affairs at 706-542-7774 or visit https://sco.uga.edu/. They will help you navigate any difficult circumstances you may be facing by connecting you with the appropriate resources or services.<br>
+</li>
+<li>UGA has several resources for a student seeking mental health services (https://www.uhs.uga.edu/bewelluga/bewelluga) or crisis support (https://www.uhs.uga.edu/info/emergencies).<br>
+</li>
+<li>If you need help managing stress anxiety, relationships, etc., please visit BeWellUGA (https://www.uhs.uga.edu/bewelluga/bewelluga) for a list of FREE workshops, classes, mentoring, and health coaching led by licensed clinicians and health educators in the University Health Center.<br>
+</li>
+<li>Additional resources can be accessed through the UGA App.</li>
+</ul>
+</section>
+<section id="disability-statement" class="level3">
+<h3 class="anchored" data-anchor-id="disability-statement">Disability statement</h3>
+<p>If you plan to request accommodations for a disability, please register with the Disability Resource Center. They can be reached by visiting Clark Howell Hall, calling 706-542-8719 (voice) or 706-542-8778 (TTY), or by visiting https://sitedrc.uga.edu</p>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left"><span> Blog made with <a href="https://quarto.org/">Quarto</a>, by Leo Bastos. License: <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a>. </span></div>   
+    <div class="nav-footer-right"><img src="../../images/UGA-logo.png" style="float:right;height:60px"></div>
+  </div>
+</footer>
+
+
+
+</body></html>
