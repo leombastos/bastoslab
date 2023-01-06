@@ -448,13 +448,6 @@
     "text": "Personal marketing\n\n\n\nThis entire presentation was made with quarto, and its source code is available on my GitHub\nYou can find more info on my lab’s website (also made with quarto): Bastos Lab \n\n\n\n\nYou can find my data science teaching material on my blog: agRonomy\nWish to learn and apply these concepts to your own research?\nCRSS XXXX: Applications of data science in ag research, Spring 2024\nThanks! 🙏 💻"
   },
   {
-    "objectID": "index.html#hello-there",
-    "href": "index.html#hello-there",
-    "title": "Bastos Lab",
-    "section": "👋 Hello there!",
-    "text": "👋 Hello there!\nWelcome to the Bastos Lab home page.\nBastos Lab is part of the Integrative Precision Agriculture cluster at the University of Georgia."
-  },
-  {
     "objectID": "index.html#projects-upcoming-and-recent",
     "href": "index.html#projects-upcoming-and-recent",
     "title": "Bastos Lab",
@@ -676,14 +669,14 @@
     "href": "teaching/2023-apa/slides/lec01.html#meet-the-professors",
     "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
     "section": "Meet the professors",
-    "text": "Meet the professors\n\n\n\n\n\nDr. Leonardo M. Bastos\n\n\n\nAssistant Professor\n4101 Miller Plant Sciences Building\nUGA-Athens Campus\nEmail: lmbastos@uga.edu\n\n\n\n\n\n\n\nDr. Lorena Lacerda\n\n\n\nAssistant Professor\n4103 Miller Plant Sciences Building UGA-Athens Campus\nEmail: llacerda@uga.edu"
+    "text": "Meet the professors\n\n\n\n\n\n\n\n\nDr. Leonardo M. Bastos\n\n\n\nAssistant Professor\n4101 Miller Plant Sciences Building\nUGA-Athens Campus\nEmail: lmbastos@uga.edu\n\n\n\n\n\n\n\nDr. Lorena Lacerda\n\n\n\nAssistant Professor\n4103 Miller Plant Sciences Building UGA-Athens Campus\nEmail: llacerda@uga.edu"
   },
   {
     "objectID": "teaching/2023-apa/slides/lec01.html#meeting-times-and-locations",
     "href": "teaching/2023-apa/slides/lec01.html#meeting-times-and-locations",
     "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
     "section": "Meeting times and locations",
-    "text": "Meeting times and locations\n\nTime:\n\nLectures: Monday and Friday at 09:10-10:00\nLabs: Wednesday at 09:10-11:10\n\nLocation:\n\nAthens campus: in person at 1203 Miller\n\nTifton campus: in person at 601 NESPAL South OR remote\n\nGriffin campus: in person at SLC UGA Computer lab OR remote\n\n\n\nZoom credentials shared via email."
+    "text": "Meeting times and locations\n\n\nTime:\n\nLectures: Monday and Friday at 09:10-10:00\nLabs: Wednesday at 09:10-11:10\n\n\nLocation:\n\nAthens campus: in person at 1203 Miller\n\nTifton campus: in person at 601 NESPAL South OR remote\n\nGriffin campus: in person at SLC UGA Computer lab OR remote\n\n\n\n\nZoom credentials shared via email."
   },
   {
     "objectID": "teaching/2023-apa/slides/lec01.html#course-objectives",
@@ -704,21 +697,35 @@
     "href": "teaching/2023-apa/slides/lec01.html#course-objectives-2",
     "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
     "section": "Course objectives",
-    "text": "Course objectives\n\nAnalytical techniques include creation of management zones, zone-based and imagery-based variable rate prescription, profitability maps, and use of satellite remote sensing for crop scouting.\n\n\nAll steps will be conducted utilizing the R statistical language to create well documented and reproducible precision agriculture analytical workflows. No previous knowledge in R is required."
+    "text": "Course objectives\n\nAnalytical techniques include creation of management zones, zone-based and imagery-based variable rate prescription, profitability maps, and use of satellite remote sensing for crop scouting."
   },
   {
     "objectID": "teaching/2023-apa/slides/lec01.html#course-objectives-3",
     "href": "teaching/2023-apa/slides/lec01.html#course-objectives-3",
     "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
     "section": "Course objectives",
-    "text": "Course objectives"
+    "text": "Course objectives\n\nAll steps will be conducted utilizing the R statistical language to create modern, well documented and reproducible precision agriculture analytical workflows. No previous knowledge in R is required."
+  },
+  {
+    "objectID": "teaching/2023-apa/slides/lec01.html#course-objectives-4",
+    "href": "teaching/2023-apa/slides/lec01.html#course-objectives-4",
+    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "section": "Course objectives",
+    "text": "Course objectives\nFor example, from raw yield data to management zone creation"
   },
   {
     "objectID": "teaching/2023-apa/slides/lec01.html#course-topics",
     "href": "teaching/2023-apa/slides/lec01.html#course-topics",
     "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
     "section": "Course topics",
-    "text": "Course topics"
+    "text": "Course topics\n\n\n\nIntro to R\n\nUsing R as a GIS\n\nAccessing publicly available geospatial data through R\n\nCreating grids for soil sampling\n\nInterpolation\n\n\n\n\nYield monitor data processing\n\nTerrain data processing\n\nManagement zones\n\nUAV remote sensing\n\nVariable rate prescription\n\nProfitability maps\n\nSatellite remote sensing for crop scouting"
+  },
+  {
+    "objectID": "teaching/2023-apa/slides/lec01.html#section",
+    "href": "teaching/2023-apa/slides/lec01.html#section",
+    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "section": "",
+    "text": "All classes will be recorded and further posted on the class YouTube channel.\n\nThis should be used as a supporting study tool and make-up for content from missed classes. Recordings do not replace in-person/remote attendance."
   },
   {
     "objectID": "teaching/2023-apa/slides/lec01.html#assessment-and-grading",
@@ -739,7 +746,28 @@
     "href": "teaching/2023-apa/slides/lec01.html#attendance-policy",
     "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
     "section": "Attendance policy",
-    "text": "Attendance policy\nStudents are expected to attend every class period.\n\nStudents on the Athens campus must attend class in-person. If a special circumstance arise (illness, travel, etc.), student absence or remote attendance must be informed to instructors prior to that class period.\n\n\nStudents on the Tifton and Griffin campuses may attend class in-person on their campuses or remote using the zoom link information. Student absence must be informed to instructors prior to that class period.\n\n\nPer Board of Regents policy, I reserve the right to drop students from the class roll who miss more than 5 class periods. Such students will be given a WF grade."
+    "text": "Attendance policy\nStudents are expected to attend every class period.\n\nStudents on the Athens campus must attend class in-person.\n\nIf a special circumstance arise (illness, travel, etc.), student absence or remote attendance must be informed to instructors prior to that class period."
+  },
+  {
+    "objectID": "teaching/2023-apa/slides/lec01.html#attendance-policy-1",
+    "href": "teaching/2023-apa/slides/lec01.html#attendance-policy-1",
+    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "section": "Attendance policy",
+    "text": "Attendance policy\nStudents are expected to attend every class period.\n\nStudents on the Tifton and Griffin campuses may attend class in-person on their campuses or remote using the zoom link information.\n\nStudent absence must be informed to instructors prior to that class period."
+  },
+  {
+    "objectID": "teaching/2023-apa/slides/lec01.html#attendance-policy-2",
+    "href": "teaching/2023-apa/slides/lec01.html#attendance-policy-2",
+    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "section": "Attendance policy",
+    "text": "Attendance policy\nStudents are expected to attend every class period.\n\nPer Board of Regents policy, I reserve the right to drop students from the class roll who miss more than 5 class periods. Such students will be given a WF grade."
+  },
+  {
+    "objectID": "teaching/2023-apa/slides/lec01.html#attendance-policy-3",
+    "href": "teaching/2023-apa/slides/lec01.html#attendance-policy-3",
+    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "section": "Attendance policy",
+    "text": "Attendance policy\n\n\n\n\n\n\n\n\n\nWhen attending a class remotely via zoom, students are expected to have cameras on at all times."
   },
   {
     "objectID": "teaching/2023-apa/slides/lec01.html#technology-and-software-requirements",
@@ -753,14 +781,49 @@
     "href": "teaching/2023-apa/slides/lec01.html#survey",
     "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
     "section": "Survey",
-    "text": "Survey"
+    "text": "Survey\nPlease go to the link below and fill this survey:\nhttps://forms.gle/M78MDXLrtXBVUHyt7\n\n\n\n−+\n05:00"
   },
   {
-    "objectID": "teaching/2023-apa/slides/lec01.html#getting-ready-for-first-lab",
-    "href": "teaching/2023-apa/slides/lec01.html#getting-ready-for-first-lab",
+    "objectID": "teaching/2023-apa/slides/lec01.html#getting-ready-for-next-class",
+    "href": "teaching/2023-apa/slides/lec01.html#getting-ready-for-next-class",
     "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
-    "section": "Getting ready for first lab",
-    "text": "Getting ready for first lab"
+    "section": "Getting ready for next class",
+    "text": "Getting ready for next class\nTo be ready for next class (Intro to R), please follow the link below and complete all tasks:\nLab 01 prep\n\nIf you have questions or issues, email me before class.\nWe will have limited time to troubleshoot technical problems during next period."
+  },
+  {
+    "objectID": "teaching/2023-apa/slides/lab01-prep.html",
+    "href": "teaching/2023-apa/slides/lab01-prep.html",
+    "title": "Intro to R prep - Software requirements",
+    "section": "",
+    "text": "Before our first lab (Wed, Jan 11), you will need to:"
+  },
+  {
+    "objectID": "teaching/2023-apa/slides/lab01-prep.html#install-r",
+    "href": "teaching/2023-apa/slides/lab01-prep.html#install-r",
+    "title": "Intro to R prep - Software requirements",
+    "section": "1. Install R  ",
+    "text": "1. Install R  \nFollow this link, and download it for your appropriate operating system (Linux, MacOS, or Windows).\nOnce downloaded, install R on your laptop."
+  },
+  {
+    "objectID": "teaching/2023-apa/slides/lab01-prep.html#install-rstudio",
+    "href": "teaching/2023-apa/slides/lab01-prep.html#install-rstudio",
+    "title": "Intro to R prep - Software requirements",
+    "section": "2. Install RStudio  ",
+    "text": "2. Install RStudio  \nOnce you have already installed R, follow this link, and download RStudio for your appropriate operating system.\nIf multiple download options appear, select “Free RStudio Desktop”.\nOnce downloaded, install RStudio on your laptop.\n\n\n\n\n\n\nNote\n\n\n\nYou can run R without RStudio, but you cannot run RStudio without R.\nR is the main software, RStudio is an extra software that makes our lives easier when working with R by providing an integrated development environment."
+  },
+  {
+    "objectID": "teaching/2023-apa/slides/lab01-prep.html#download-material-from-github",
+    "href": "teaching/2023-apa/slides/lab01-prep.html#download-material-from-github",
+    "title": "Intro to R prep - Software requirements",
+    "section": "3. Download material from GitHub  ",
+    "text": "3. Download material from GitHub  \nWe will use live coding for our meetings, meaning that we will develop the scripts together.\nAll materials, including\n\npackage installation script\n\ninitial partially-filled scripts (to use during a class period)\n\ndata sets\n\ncompletely-filled scripts (only after a class period)\n\nwill be hosted on this GitHub repository.\nTo download the materials, click on the link above and follow the instructions."
+  },
+  {
+    "objectID": "teaching/2023-apa/slides/lab01-prep.html#install-packages",
+    "href": "teaching/2023-apa/slides/lab01-prep.html#install-packages",
+    "title": "Intro to R prep - Software requirements",
+    "section": "4. Install packages  ",
+    "text": "4. Install packages  \nIf you are not familiar with R lingo, you can think of a package as an app on your phone: a package will extend R functionality by making available to you extra software options that do not come pre-installed with R.\nWe will be using multiple packages that need to be installed, and doing so before the first lab period (Jan 11) will ensure that no one gets behind.\nAfter installing R and RStudio, and downloading the material from GitHub, follow these steps:\n\nUnzip the file downloaded from GitHub, move the unzipped folder to your desktop.\nOpen the main folder “2023_AdPA”, and then open the sub-folder “01-packages”.\nDouble-click the R script file “before_installpackages.R” (this will open it in RStudio).\nOn the same RStudio window that just opened, install each package at a time by placing your cursor on the first script line and hitting Ctrl + return (Windows) or Command + return (Mac)\nSome text will start appearing on the console as the packages get installed. If successfully installed, you should see a message similar to this:\n\n\n“The downloaded binary packages are in /var/folders/88/ldswt2_n3lj26hwzphp9fmj00000gn/T//RtmpeRvdJ7/downloaded_packages”.\n\n\nKeep running each line as described above until you reach the last package installation (script line 13)\n\nTo ensure that each package was installed, run the code starting with library(\"ggplot2\"), line by line (from script lines 17 to 27).\nIf after running the library() function you get an error message like\n\n\n\n\n\n\nWarning\n\n\n\nError in library(“packagename”) :**\n**there is no package called packagename\n\n\nThis means the package was not properly installed and you may need help.\n\nOnce you have\n\nDownloaded and installed R\n\nDownloaded and installed RStudio\n\nDownloaded material from GitHub\n\nInstalled needed R packages\n\nThen you are ready for the class!\n\n\n\n\n\n\nWarning\n\n\n\nIf you run into issues at any of the steps above, let me know, preferably before our class period.\nWe need to make sure everyone is ready to go at 9 am, we will have very limited time for troubleshooting technical issues during the class!"
   },
   {
     "objectID": "teaching/2023-apa/schedule.html",
