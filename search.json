@@ -242,7 +242,14 @@
     "href": "talks/talks.html",
     "title": "Talks",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nPlant Pathology Seminar Series, University of Georgia\n\n\n\nNov 21, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCrop Sciences Seminar Series, University of Illinois at Urbana-Champaign\n\n\n\nNov 30, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nPlant Pathology Seminar Series, University of Georgia\n\n\n\nNov 21, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCrop Sciences Seminar Series, University of Illinois at Urbana-Champaign\n\n\n\nNov 30, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2023 Southeast Regional Fruit and Vegetable Conference\n\n\n\nJan 7, 2023\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "talks/2023_serfvc-imagery/index.html",
+    "href": "talks/2023_serfvc-imagery/index.html",
+    "title": "Applications of in-season imagery for crop management",
+    "section": "",
+    "text": "When: January 07th 2023, 9:50 to 10:10 am\nWhere: Savannah Convention Center, Savannah GA\nHosts: Precision Ag Educational Sessions\nSlides"
   },
   {
     "objectID": "talks/2022_uga-plantpath/index.html",
@@ -448,18 +455,18 @@
     "text": "Personal marketing\n\n\n\nThis entire presentation was made with quarto, and its source code is available on my GitHub\nYou can find more info on my lab’s website (also made with quarto): Bastos Lab \n\n\n\n\nYou can find my data science teaching material on my blog: agRonomy\nWish to learn and apply these concepts to your own research?\nCRSS XXXX: Applications of data science in ag research, Spring 2024\n\n\n\n\n\nThanks! 🙏 💻"
   },
   {
-    "objectID": "index.html#projects-upcoming-and-recent",
-    "href": "index.html#projects-upcoming-and-recent",
+    "objectID": "index.html#projects",
+    "href": "index.html#projects",
     "title": "Bastos Lab",
-    "section": "Projects, Upcoming and Recent",
-    "text": "Projects, Upcoming and Recent\nResearch areas we are currently tackling range from within-field to regional and include:\n\nSensor-based variable rate management of nutrients and chemicals during the growing season in corn and cotton\nCotton fiber quality regional envirotyping\nCotton fiber quality pre-harvest prediction.\n\n\n\n\n\n\n\n\n\n\n\nCorn sensor-based variable rate N management\n\n\n\n\n\n\n\n\n\n\n\n\n\nCotton sensor-based variable rate N and PGR management\n\n\n\n\n\n\n\n\n\n\n\n\n\nCotton fiber quality prediction\n\n\n\n\n\n\n\n\n\n\n\n\n\nCotton fiber quality envirotyping\n\n\n\n\n\n\n\nNo matching items\n\n\n  \n\n\n See all"
+    "section": "Projects",
+    "text": "Projects\nResearch areas we are currently tackling range from within-field to regional and include:\n\nSensor-based variable rate management of nutrients and chemicals during the growing season in corn and cotton\nCotton fiber quality regional envirotyping\nCotton fiber quality pre-harvest prediction.\n\n\n\n\n\n\n\n\n\n\n\nCorn sensor-based variable rate N management\n\n\n\n\n\n\n\n\n\n\n\n\n\nCotton sensor-based variable rate N and PGR management\n\n\n\n\n\n\n\n\n\n\n\n\n\nCotton fiber quality prediction\n\n\n\n\n\n\n\n\n\n\n\n\n\nCotton fiber quality envirotyping\n\n\n\n\n\n\n\nNo matching items\n\n\n  \n\n\n See all"
   },
   {
     "objectID": "index.html#talks-upcoming-and-recent",
     "href": "index.html#talks-upcoming-and-recent",
     "title": "Bastos Lab",
     "section": "Talks, Upcoming and Recent",
-    "text": "Talks, Upcoming and Recent\n\n\n\n\n\n\n\n\n\n\nCrop Sciences Seminar Series, University of Illinois at Urbana-Champaign\n\n\n\nNov 30, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPlant Pathology Seminar Series, University of Georgia\n\n\n\nNov 21, 2022\n\n\n\n\n\n\n\n\nNo matching items\n\n\n See all"
+    "text": "Talks, Upcoming and Recent\n\n\n\n\n\n\n\n\n\n\n2023 Southeast Regional Fruit and Vegetable Conference\n\n\n\nJan 7, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCrop Sciences Seminar Series, University of Illinois at Urbana-Champaign\n\n\n\nNov 30, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPlant Pathology Seminar Series, University of Georgia\n\n\n\nNov 21, 2022\n\n\n\n\n\n\n\n\nNo matching items\n\n\n See all"
   },
   {
     "objectID": "team/team.html",

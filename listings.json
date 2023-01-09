@@ -12,7 +12,8 @@
     "listing": "/talks/talks.html",
     "items": [
       "/talks/2022_uga-plantpath/index.html",
-      "/talks/2022_uiuc-reptools/index.html"
+      "/talks/2022_uiuc-reptools/index.html",
+      "/talks/2023_serfvc-imagery/index.html"
     ]
   },
   {
@@ -22,6 +23,7 @@
       "/projects/03-cottonvr/index.html",
       "/projects/02-cottonqualpred/index.html",
       "/projects/01-cottongem/index.html",
+      "/talks/2023_serfvc-imagery/index.html",
       "/talks/2022_uiuc-reptools/index.html",
       "/talks/2022_uga-plantpath/index.html"
     ]
