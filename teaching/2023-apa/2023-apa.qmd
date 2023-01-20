@@ -1,0 +1,398 @@
+---
+title: "CRSS 4060/6060\\\nAdvc. Topics in Precision Ag.\\\nBastos Material\\\n(UGA Spring 2023)"
+execute:
+  echo: false
+  warning: false
+  output: false
+  freeze: auto
+---
+
+Hi there!
+
+This is the welcome page for the **2023 CRSS 4060/6060 Advanced Topics in Precision Agriculture** portion taught by Dr. Leo Bastos.
+
+Below you will find:
+
+- Prep material before first lab  
+-   Schedule with links for slides, code, and recordings\
+-   Course syllabus
+
+------------------------------------------------------------------------
+
+# Prep material before first lab  
+
+To be ready for next class (**Intro to R**), please follow the link below and complete all tasks:
+
+[Lab 01 prep](slides/lab01-prep.qmd)
+
+If you have questions or issues, email me **before class**.  
+
+# Schedule `r icons::fontawesome("calendar-check")`  
+
+[Chalkboard](whiteboard.html)
+
+```{r}
+#| message: false
+library(tidyverse)
+library(kableExtra)
+library(formattable)
+library(knitr)
+library(gt)
+```
+
+```{r}
+dates <- read_csv("dates.csv") %>%
+  # Creating day of class
+  mutate(doc=1:nrow(.)) %>%
+  mutate(date2=format(date, "%b %d")) %>%
+  mutate(newdate=paste0(dow, ", ", date2)) %>%
+  dplyr::select(date=newdate,
+                time, holiday, doc)
+
+dates
+```
+
+```{r}
+# Defining function
+addlink <- function(link, type=1) {
+  logo <- case_when(type == 1 ~ 'person-chalkboard',
+                    type == 2 ~ 'github',
+                    type == 3 ~ 'youtube'
+                 )
+  paste0("<a href=\"", link, "\">", as.character(fontawesome::fa(logo, width = "2em")), "</a>")
+}
+```
+
+```{r @ updating as go}
+# 17 total weeks
+# 17*.3 = 5 weeks
+
+class <- tribble(~doc, ~topic, ~slides, ~code, ~recording,
+                 1, 
+                 "Welcome and Intro",
+                 addlink("slides/lec01.html",1),
+                 "-",
+                 addlink("https://youtu.be/WM2mmc99-Lk",3),
+                 
+                 2,
+                 "R & RStudio intro  
+                 Assignment #1 - data viz
+                 ",
+                 addlink("slides/lab01-prep.qmd",1),
+                 addlink("https://github.com/leombastos/2023_AdvPA/blob/main/05-classcode_completed/01-11_IntrotoR_completed.R", 2),
+                 addlink("https://youtu.be/I0ZjQ7v0oLE",3),
+                 
+                 3,
+                 "RStudio Projects  
+                 Rmarkdown  
+                 Data wrangling pt 1  
+                 Assignment #2 - data wrangling",
+                 "-",
+                 "",
+                 addlink("https://youtu.be/TfNG-erh17M",3),                 
+                 
+                 5,
+                 "Coordinate reference system",
+                 addlink("slides/lec04-crs.pdf",1),
+                 "-",
+                 addlink("https://youtu.be/GAgnhATFqqo",3),
+                 
+                 6,
+                 "Coordinate reference system",
+                 "",
+                 "",
+                 "",
+                 
+                 7,
+                 "Data wrangling pt 2  
+                 Assignment #2  
+                 USDA NASS",
+                 "",
+                 "",
+                 "",
+                 
+                 8,
+                 "USDA NASS  
+                 Vector data  
+                 State and county boundaries  
+                 USDA NASS spatial data",
+                 "",
+                 "",
+                 "",
+                 
+                 9,
+                 "USDA NASS spatial data  
+                 Mini-project",
+                 "",
+                 "",
+                 ""
+
+                 
+                 )
+
+
+```
+
+::: column-screen-inset-right
+```{r schedule}
+#| output: true
+dates %>%
+  left_join(class, by="doc") %>%
+  mutate(topic = case_when(
+    is.na(holiday) ~ topic,
+    T ~ paste0("No class - ", holiday)
+  )) %>%
+  dplyr::select(-holiday, -doc) %>%
+  mutate(topic = ifelse(is.na(topic), 
+                        "", 
+                        topic)) %>%
+  mutate(slides = ifelse(is.na(slides), 
+                         "", 
+                         slides)) %>%
+  mutate(code = ifelse(is.na(code), 
+                       "", 
+                       code)) %>%
+  mutate(recording = ifelse(is.na(recording), 
+                            "", 
+                            recording)) %>%
+  
+  gt() %>%
+  fmt_markdown(columns = everything())
+
+```
+:::
+
+# Course Syllabus `r icons::fontawesome("info")`
+
+## Course information
+
+### General information
+
+-   CRSS 4060/6060 - Advanced Topics in Precision Agriculture\
+-   Spring Semester 2023\
+-   3 credit hours
+
+### Meeting times and locations
+
+-   **Lectures**: Monday and Friday at 09:10-10:00
+-   **Labs**: Wednesday at 09:10-11:10
+-   Location:
+    -   Athens campus: in person at 3203 Miller Plant Sciences\
+    -   Tifton campus: in person at 601 NESPAL South OR remote\
+    -   Griffin campus: M/F 217 SLC in person, W at 107 SLC in person OR remote
+
+### Prerequisites
+
+CRSS 3030 -- Principles of Precision Agriculture
+
+### Co-requisites
+
+CRSS 4050 / 6050 -- Improving Nutrient and Energy Efficiency with Geographic Information Systems or equivalent GIS course.
+
+## Instructors information
+
+### General information
+
+**Dr. Leonardo M. Bastos**, Assistant Professor\
+Crop & Soil Sciences Dept.\
+4101 Miller Plant Sciences Building, Athens Campus\
+University of Georgia\
+Email: lmbastos\@uga.edu\
+URL: leombastos.github.io/bastoslab/
+
+**Dr. Lorena Lacerda**, Assistant Professor\
+Crop & Soil Sciences Dept.\
+4103 Miller Plant Sciences Building, Athens Campus\
+University of Georgia\
+Email: llacerda\@uga.edu\
+URL: https://cropsoil.uga.edu/people/faculty/lorena-lacerda.html
+
+### Office hours
+
+Because of social distancing requirements, please make an appointment if you would like a face-to-face meeting with one of the instructors. Otherwise, we are always available by email.
+
+## Course description and details
+
+### Description
+
+The course will emphasize sampling plan, obtaining and processing, and using various agricultural geospatial data layers for decision making related to precision agriculture. Data types used in the course include publicly available like weather, soils, and satellite remote sensing, and private data like yield monitor, Veris-derived soil electrical conductivity and elevation, and UAV remote sensing. Data processing steps include cleaning, removal of outliers, normalization, interpolation, and UAV imagery processing. Analytical techniques include clustering for creation of management zones, zone-based and imagery-based variable rate prescription, profitability maps, and use of satellite remote sensing for crop scouting. All steps will be conducted utilizing the R statistical language to create well documented and reproducible precision agriculture analytical workflows. No previous knowledge in R is required.
+
+### Course learning outcomes
+
+Provide students with a good understanding of the emerging areas in precision agriculture, the ability to find, analyze and evaluate spatially distributed data sets, and the experience to use key precision agriculture tools and technologies. Additional goals are to:
+
+-   extend critical thinking and problem solving abilities\
+-   improve written and oral communication skills\
+-   learn how to create, present, and interpret maps\
+-   create reproducible analytical workflows using R
+
+### Topical Outline
+
+1.  Intro to R\
+2.  Using R as a geographic information system (GIS)\
+3.  Accessing publicly available geospatial data through R
+    a.  Crop statistics from USDA NASS\
+    b.  Soils data from SSURGO\
+    c.  Weather and satellite remote sensing from Google Earth Engine\
+    d.  State and county boundaries\
+4.  Creating grids for soil sampling\
+5.  Geostatistics for point-data interpolation with
+    a.  Inverse distance weighting\
+    b.  Kriging\
+6.  Yield monitor data processing
+    a.  Understand the sources of error\
+    b.  Cleaning and removal of erroneous data points\
+    c.  Spatial and temporal yield variability analysis\
+7.  Terrain data processing
+    a.  Elevation\
+    b.  Aspect\
+    c.  Slope\
+8.  Management zones
+    a.  Combining yield and soils data\
+    b.  Creating management zones with cluster analysis\
+    c.  Validating management zones\
+9.  UAV remote sensing
+    a.  Data collection planning\
+    b.  Imagery processing\
+10. Variable rate prescription
+    a.  Zone-based variable rate prescription\
+    b.  Imagery-based variable rate prescription\
+11. Profitability maps\
+12. Satellite remote sensing for crop scouting\
+13. Course project
+    a.  Undergraduate students: optional\
+    b.  Graduate students: mandatory
+
+The topical outline is a general plan for the course; deviations announced to the class by the instructor may be necessary.
+
+## Course materials
+
+### Textbook
+
+A textbook is not required. Reading materials will be supplied by instructor and will include benchmark research articles, manuals, and other materials.
+
+### Technology and software requirements
+
+Students will need to have access to:
+
+-   A computer (to install software, code along with instructors)\
+-   A second screen (main screen to code along, second screen to watch class if not in person)
+
+If a student does not have access to these resources (personal laptop/desktop and a second screen), please let instructors know to ensure proper accommodations can be made.
+
+### Course website
+
+Important links related to this course:
+
+-   [Course website](https://leombastos.github.io/bastoslab/teaching/2023-apa/2023-apa.html)\
+-   [Course GitHub repository](https://github.com/leombastos/2023_AdvPA)\
+-   [Course YouTube channel](https://youtube.com/playlist?list=PLcdv9xoF_6TFzITEruQ1JnP54FdNO4PtI)
+
+## Assessment and Grading
+
+### Grading categories
+
+The grade you receive in this course will be determined from your performance on a mini-project, one mid-term exam, periodic quizzes, homework assignments and lab reports, a team design project, a comprehensive final exam, and class participation. These factors will be weighted as follows:
+
+```{r}
+#| output: true  
+tribble(~Activity, ~Grade,
+        "Mini-project: USDA NASS data", "10%",
+        "Mid-term exam", "10%",
+        "Homework assignments", "35%",
+        "In-class quizzes", "15%",
+        "Final project:\\\nfrom raw data to zone-based variable rate", "20%",
+        "Class participation", "10%"
+        ) %>%
+  gt() %>%
+  fmt_markdown(columns = everything())
+```
+
+### Written assignment quality
+
+Up to **thirty percent of the grade** on written assignments (mini-project, homework, final project) will be based on quality of communication.
+
+Spelling, grammar, punctuation, and clarity of writing are evidence of written communication quality.
+
+### Class participation
+
+Active class participation is important for you to achieve the learning goals of the class. To receive maximum credit for class participation you must
+
+-   attend every class period (lecture or laboratory)\
+-   arrive on time and remain for the entire class period\
+-   you are actively engaged and attentive throughout the class period\
+-   participate in the class discussion and ask and answer questions
+
+### Grading scale
+
+Final grades will be assigned as follows:
+
+```{r}
+#| output: true
+tribble(~Letter, ~Grade,
+        "A", "93 and above",
+        "A-", "90-92",
+        "B+", "87-89",
+        "B", "83-86",
+        "B-", "80-82",
+        "C+", "77-79",
+        "C", "73-76",
+        "C-", "70-72",
+        "D+", "67-69",
+        "D", "63-66",
+        "D-", "60-62",
+        "F", "59 and below"
+        ) %>%
+  gt() %>%
+  fmt_markdown(columns = everything())
+```
+
+### Extra credit opportunities
+
+Extra credit opportunities may be made available during projects, homework assignments, and exams, at the descrition of the instructors.
+
+## Course statements and policies
+
+### Academic honesty
+
+UGA Student Honor Code: "I will be academically honest in all of my academic work and will not tolerate academic dishonesty of others." A Culture of Honesty, the University's policy and procedures for handling cases of suspected dishonesty, can be found at www.uga.edu/ovpi.
+
+For this course, all lab reports, projects, and other assignments can be discussed with your classmates but any work you turn in must be your own.
+
+Students can work together through coding exercises, but direct copying and pasting from a colleague will be considered plagiarism.
+
+If using code from an online source, it is ok to copy and paste IF proper credit is given (e.g., showing the website source from where the code was obtained).  
+
+Unless explicitly stated, artificial intelligence-based technologies, such as ChatGPT, must not be used to generate responses for student assignments.  
+
+### Attendance policy
+
+Students are expected to attend every class period.
+
+Students on the **Athens campus** must attend class in-person. If a special circumstance arise (illness, travel, etc.), student absence or remote attendance **must be informed to instructors prior to that class period**.
+
+Students on the **Tifton and Griffin campuses** may attend class in-person on their campuses or remote using the zoom link information. Student absence **must be informed to instructors prior to that class period**.
+
+Per Board of Regents policy, I reserve the right to drop students from the class roll who **miss more than 5 class periods**. Such students will be given a WF grade.
+
+### Disclaimer
+
+The course syllabus is a general plan for the course; deviations announced to the class by the instructor may be necessary.
+
+### Make-up procedures
+
+-   There will be no make-ups for missed quizzes. Any missed quiz will be recorded as a zero\
+-   Exams can be made up only with a note from a doctor or if you can document extenuating circumstances. Any unexcused missed exam will be recorded as a zero\
+-   Homework assignments will be accepted up to one week beyond the due date. The penalty for submitting a late assignment is one letter grade\
+-   Homework assignments may be submitted late without penalty in case of illness, extenuating circumstances, or if prior arrangements are made with the instructors. All late assignments are due within a week of the original due date or within a week of when a student returns from an illness
+
+### Mental Health and Wellness Resources
+
+-   If you or someone you know needs assistance, you are encouraged to contact Student Care and Outreach in the Division of Student Affairs at 706-542-7774 or visit https://sco.uga.edu/. They will help you navigate any difficult circumstances you may be facing by connecting you with the appropriate resources or services.\
+-   UGA has several resources for a student seeking mental health services (https://www.uhs.uga.edu/bewelluga/bewelluga) or crisis support (https://www.uhs.uga.edu/info/emergencies).\
+-   If you need help managing stress anxiety, relationships, etc., please visit BeWellUGA (https://www.uhs.uga.edu/bewelluga/bewelluga) for a list of FREE workshops, classes, mentoring, and health coaching led by licensed clinicians and health educators in the University Health Center.\
+-   Additional resources can be accessed through the UGA App.
+
+### Disability statement
+
+If you plan to request accommodations for a disability, please register with the Disability Resource Center. They can be reached by visiting Clark Howell Hall, calling 706-542-8719 (voice) or 706-542-8778 (TTY), or by visiting https://sitedrc.uga.edu

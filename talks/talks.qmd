@@ -1,4 +1,24 @@
 ---
-title: "talks"
-editor: visual
+title: "Talks"
+listing:
+  - id: talks
+    contents: "/*/index.qmd"
+    type: grid
+    fields: [image, date, subtitle]
+    sort: "date"
+    sort-ui: true
+    filter-ui: true
+    page-size: 10
+    image-height: 17em
+    grid-columns: 2     
+title-block-banner: false
+comments: false
+include-in-header: meta.html  
+toc: true
+execute: 
+  freeze: auto
 ---
+
+
+::: {#talks}
+:::

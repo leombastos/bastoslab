@@ -1,42 +1,52 @@
 ---
 title: "Experimental Design, ANOVA, and Regression Workshop"
-editor: visual
 toc: false
+execute: 
+  freeze: auto
 ---
 
-Hey there!  
+Hey there!
 
-This is the welcome page for the **Kansas State University 2020 AGSA R Workshop - Experimental Design, ANOVA, and Regression**, taught by [leombastos](https://github.com/leombastos).    
+This is the welcome page for the **Kansas State University 2020 AGSA R Workshop - Experimental Design, ANOVA, and Regression**, taught by [leombastos](https://github.com/leombastos).
 
-The workshop was divided into 2 days, 2 hours per day:   
+The workshop was divided into 2 days, 2 hours per day:
 
-- **day 1**:  
-    - Intro to completly randomized design (CRD) and randomized complete block design (RCBD) 
-    -  Differences between CRD and RCBD 
-    - What happens if you run the wrong design ANOVA
-    - Should you treat your blocks as fixed or random?    
+-   **day 1**:
+    -   Intro to completly randomized design (CRD) and randomized complete block design (RCBD)
+    -   Differences between CRD and RCBD
+    -   What happens if you run the wrong design ANOVA
+    -   Should you treat your blocks as fixed or random?
+-   **day 2**:
+    -   Difference between ANOVA and regression
+    -   Explore some cool applications of regression like
+        -   prediction
+        -   finding an optimum input rate that maximizes yield
 
-- **day 2**:  
-    - Difference between ANOVA and regression
-    - Explore some cool applications of regression like 
-        - prediction
-        - finding an optimum input rate that maximizes yield 
+## **Interested in "attending" the workshop?**
 
+1.  Go to [this GitHub repository](https://github.com/leombastos/2020_rworkshop_designanovareg) and download it to your computer (click on the green "Code" button above and select "*Download ZIP*").
 
-## **Interested in "attending" the workshop?**  
+2.  Unzip the repository, launch the RStudio project (by clicking on the "*2020_rworkshop_designanovareg.Rproj*" file).
 
-1. Go to [this GitHub repository](https://github.com/leombastos/2020_rworkshop_designanovareg) and download it to your computer (click on the green "Code" button above and select "*Download ZIP*").  
+3.  On RStudio, go to the "*Files*" tab (lower right), click on folder "*markdown*", and open file
 
-2. Unzip the repository, launch the RStudio project (by clicking on the "*2020_rworkshop_designanovareg.Rproj*" file).  
+    -   "*Day1_blank.Rmd*" for day 1
+    -   "*Day2_blank.Rmd*" for day 2
 
-3. On RStudio, go to the "*Files*" tab (lower right), click on folder "*markdown*", and open file 
-    - "*Day1_blank.Rmd*" for day 1
-    - "*Day2_blank.Rmd*" for day 2   
+4.  You can code along with us by watching the following YouTube videos:
 
-4. You can code along with us by watching the following YouTube videos:  
-   - [day 1](https://youtu.be/dcPv5fx0QWM)  
-      <div class="youtube-responsive-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/dcPv5fx0QWM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    -   [day 1](https://youtu.be/dcPv5fx0QWM)\
 
+        ::: youtube-responsive-container
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dcPv5fx0QWM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 
-   - [day 2](https://youtu.be/w7tK6I-acEs), incomplete due to technical issues.   
-      <div class="youtube-responsive-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/w7tK6I-acEs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </iframe>
+        :::
+
+    -   [day 2](https://youtu.be/w7tK6I-acEs), incomplete due to technical issues.\
+
+        ::: youtube-responsive-container
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/w7tK6I-acEs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+        </iframe>
+        :::

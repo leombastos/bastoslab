@@ -1,0 +1,483 @@
+---
+from: markdown+emoji
+format:
+  revealjs: 
+    incremental: true 
+    theme: [simple, custom.scss]
+    slide-number: true
+    show-slide-number: all
+    embed-resources: true
+highlight-style: oblivion    
+image: featured.png
+execute: 
+  freeze: auto
+---
+```{r setup}
+#| warning: false
+#| echo: false
+library(tidyverse)
+library(flipbookr)
+```
+
+::: columns
+::: {.column width="40%"}
+::: {.absolute top="-3%" left="-15%" right="40%"}
+::: {style="text-align: center"}
+![](path.png)
+:::
+:::
+:::
+
+::: {.column width="60%"}
+::: {style="text-align: right"}
+## [From zero to hero: a researcher's path through data science tools for reproducibility]{style="color:#BA0C2F"}
+:::
+
+&nbsp;&nbsp;&nbsp;&nbsp;  
+
+::: {style="text-align: right; font-size: 0.75em"}
+Leonardo M. Bastos\
+Assistant Professor\
+Integrative Precision Agriculture
+
+
+:::
+:::
+:::
+
+![](uga.png){.absolute left=62% top=72% width=450 height=200}
+
+# Reproducibility poll  
+
+[https://forms.gle/5izjdTKtprfo5vFy5](https://forms.gle/5izjdTKtprfo5vFy5)  
+
+If you're attending **online**, link shared on chat.  
+If you're attending in person, scan below:  
+
+::: {.fragment }  
+![](qrcode-survey.png){.absolute top=91% left=50% width=200 height=200}  
+:::
+
+
+
+## What is [reproducibility]{style="color:#BA0C2F"}?
+
+"Research is reproducible when others can reproduce the results of a scientific study given only the **original data, code, and documentation**"   
+
+. . .  
+
+This applies to:  
+
+- Other people reproducing your work  
+- Your future-self reproducing your past work  
+
+## Why bother with [reproducible science]{style="color:#BA0C2F"}?
+
+- Tracks how and why of specific decisions and analysis  
+- Quickly modify analysis and figures  
+- Increased efficiency  
+- Rigor and transparency  
+- Increased citations (of paper, data, code)  
+
+## But is it really THAT important?  
+A [Nature survey](https://www.nature.com/articles/533452a) with ~1,600 researchers found that   
+
+- +70% of researchers have tried and failed to reproduce another scientist's experiments  
+
+- +50% have failed to reproduce their own experiments  
+
+- Main causes: selective reporting, weak stats, code/data unavailability, etc.   
+
+- [2006 Duke University cancer research case](https://rss.onlinelibrary.wiley.com/doi/full/10.1111/j.1740-9713.2011.00505.x)  
+
+
+# My own path on reproducible science: barriers and solutions  
+
+# :construction: Barrier #1: File naming and management  
+
+## 
+Starting my M.Sc., this is how my file management system looked like:  
+
+::: columns  
+::: {.column width="60%"}
+::: {style="text-align: center"}
+![](msfiles.png){width=85%}  
+
+:::
+:::
+
+::: {.column width="40%"}
+- Data, code, figures all mixed in same folder  
+- File names not very informative  
+- And this was just my first year! :scream:  
+- Looks familiar?  
+:::
+
+:::
+
+# :superhero: Solution #1: principled file naming and project management  
+
+## Three principles of file naming   
+[1. Machine readable]{style="color:#BA0C2F; font-size: 1.5em"}  
+
+- contains key metadata, delimited with "-" and "_"   
+
+. . .  
+
+::: {style="text-align: center;"} 
+:x: [sas cumulative flux 2 years.xlsx]{style="color: red"}  
+
+:white_check_mark: [2013-2014_N2O-cumulative.csv]{style="color: green"}  
+
+:::
+
+- easy to search and filter  
+- easy to extract metadata   
+
+
+
+## Three principles of file naming   
+[2. Human readable]{style="color:#BA0C2F; font-size: 1.5em"}  
+
+- name provides info on content, slug concept  
+
+. . .  
+
+::: columns
+::: {.column width="50%"}
+::: {style="color: red"}  
+:x:  
+daily1.csv  
+analysisyear1.qmd  
+figure.png  
+data2.csv  
+anova2.qmd  
+figure2test.png
+:::
+:::  
+
+::: {.column width="50%"}
+::: {.fragment}
+::: {style="color: green"}  
+:white_check_mark:  
+2013-N2O-daily.csv  
+2013-N2O-daily-anova.qmd  
+2013-N2O-daily-plot.png
+2014-N2O-daily.csv  
+2014-N2O-daily-anova.qmd  
+2014-N2O-daily-plot.png
+:::
+:::
+:::
+:::
+. . .  
+
+::: {style="text-align: center; color:black"}  
+Which set of files do you want at 3 am before a deadline?  
+:::  
+
+
+## Three principles of file naming   
+[3. Plays well with default ordering]{style="color:#BA0C2F; font-size: 1.5em"}  
+
+- Start name with something numerical (date, time, experiment number, etc.)  
+- For dates, use **YYYY-MM-DD** format  
+- Left pad numbers with zero  
+
+. . .  
+
+::: columns
+::: {.column width="50%"}
+::: {style="color: red"} 
+:x:  
+N2O_daily_1-10-2013.csv  
+10-23-2013_N2O_daily.csv  
+2-15-2013_N2O_daily.csv  
+:::
+:::
+
+::: {.column width="50%"}
+::: {.fragment}
+::: {style="color: green"}
+:white_check_mark:  
+2013-01-10_N2O_daily.csv  
+2013-02-15_N2O_daily.csv  
+2013-10-23_N2O_daily.csv  
+:::
+:::
+:::
+:::
+
+## Principles of project management  
+::: columns
+::: {.column width="46%"}
+From this:
+![](seeds-mixed.jpg)
+:::
+
+::: {.column width="54%"}
+To this:  
+![](seeds-organized.png)
+:::
+:::
+
+## Principles of project management  
+
+::: columns
+::: {.column width="60%"}
+![](folders.png)
+:::
+
+::: {.column width="40%"}
+- Create a minimum of three sub-folders: data, code, output  
+:::
+:::
+
+## Principles of project management  
+
+::: columns
+::: {.column width="60%"}
+![](tree.png)
+:::
+
+::: {.column width="40%"}
+::: {.nonincremental}
+- Create a minimum of three sub-folders: data, code, output  
+:::
+- Keep data files in `data`, script files in `code`, and tables and figures in `output`  
+
+- In RStudio, use [**RStudio Projects**]{style="color:#BA0C2F"}!  
+:::
+:::
+
+# :construction: Barrier #2: Proprietary, point-and-click software  
+
+##
+Also during my M.Sc., I was using multiple [**point-and-click**, **proprietary**]{style="color:#BA0C2F"} software:
+
+::: {.nonincremental}
+-   [Excel]{style="color: green"} for data organization/manipulation  
+-   [SAS]{style="color: blue"} for stats  
+-   [SigmaPlot]{style="color: purple"} for plots  
+-   [ArcGIS]{style="color: orange"} for maps  
+:::
+. . .
+
+::: {.callout-warning}
+[**Proprietary**]{style="color:#BA0C2F"} software and file extensions hamper reproducibility by imposing a paywall.
+:::  
+
+## Point-and-click is hard to document  
+
+- Point-and-click software is prone to [human error]{style="color:#BA0C2F"}, and normally humans are not good at **documenting** each step we do.  
+
+- Think about the last time you [organized data in Excel]{style="color:#BA0C2F"}. Do you remember each step you took when filtering or deleting cells, or when creating new columns? What was your decision-making process? 
+
+- Or maybe each step you took to create a [complicated figure]{style="color:#BA0C2F"}. How easy would it be for you to replicate it?  
+
+# :superhero: Solution #2: free programing languages  
+
+## Free and open-source software  
+Whenever possible and available, opt for [**free, open source**]{style="color:green"} software.  
+
+::: columns
+::: {.column width="50%"}
+::: {.nonincremental}
+Instead of this:  
+
+-   [Excel]{style="color: green"}  
+-   [SAS]{style="color: blue"}   
+-   [SigmaPlot]{style="color: purple"}  
+-   [ArcGIS]{style="color: orange"}  
+:::
+:::
+
+::: {.column width="50%"}
+Use this:  
+
+-   [csv]{style="color: green"}  
+-   [R/Python]{style="color: blue"}   
+-   [R/Python]{style="color: purple"}  
+-   [R/Python/QGIS]{style="color: orange"}  
+:::
+:::
+## Code is documentation  
+```{r}
+#| echo: false
+
+set.seed(1)
+df <- data.frame(plot = 101:105,
+                 n2o_ppm = runif(5, 0, 3))
+```
+
+```{r}
+#| echo: true
+#| output-location: fragment
+
+df
+```
+
+. . .  
+  
+
+```{r }
+#| label: wrangle
+#| echo: true
+#| output-location: fragment
+#| code-line-numbers: "1|2|3|4"
+
+df %>%
+  filter(n2o_ppm > 1) %>% # keeping only reasonable values
+  mutate(n2o_ppb = n2o_ppm*1000) %>% #transforming ppm to ppb
+  select(plot, n2o_ppb) # keeping only important columns
+```
+
+. . .  
+
+::: {.callout-tip}  
+Code is in itself documentation of each step you do. Adding comments with `#` make it even more understandable.  
+:::
+
+# :construction: Barrier #3: Static programming and environment  
+
+## Static scripts with `.txt` or `.R`  
+::: {style="text-align: center"}
+![](static.png){.absolute height="600"}
+:::
+
+## Improvement: using an IDE  
+::: {style="text-align: center"}
+![](ide2.png)
+:::
+
+# :superhero: Solution #3: Literate programming (and IDEs)  
+
+## Literate progamming  
+- Mixes code, output, and narrative on the same file  
+
+- Examples:  
+![](literate-opts.png){width=90%}  
+
+## quarto + RStudio  
+::: {style="text-align: center"}  
+{{< video quarto+ide2.mp4 height="630" width="1100" >}}  
+:::  
+
+
+# :construction: Barrier #4: Keeping track of changes  
+
+## Can I go back in time?  
+::: {.fragment .fade-in-then-semi-out}  
+**Situation**: you spent the whole week working on an analysis, only to find out it didn't work as expected OR you got stuck with multiple bugs.  
+:::
+  
+::: {.fragment .fade-in-then-semi-out}  
+**Situation #2**: at some point your script had an important piece of code, but at the time you thought you didn't need it anymore and deleted those lines.  
+:::
+
+. . . 
+
+[Wouldn't it be nice/useful/graduate-school-life-saving if you could simply go back in time and start fresh from your latest working version?]{style="color:#BA0C2F"} 
+
+# :superhero: Solution #4: Version control  
+
+## Welcome in, [version control]{style="color:#BA0C2F"}  
+
+- Think of "track changes", but on any file type  
+- Especially useful for **script files** (.Rmd, .qmd)  
+- As your code grows and develops, snapshots are saved allowing you to retrieve different versions  
+- This connects your current-self with your past-self (what were I thinking when I decided on doing this step?)  
+
+- Locally (in your own machine), use  
+![](git2.png){.absolute left=62% top=65% width=300 height=100} 
+
+
+# :construction: Barrier #5: Reproducibility requires sharing  
+
+## git works locally  
+- **git** is powerful on its own, but it only acts locally  
+- It becomes really powerful when we can have its features working online  
+- Working with it online also happens to be perfect for **collaboration and sharing**  :handshake:
+
+# :superhero: Solution #5: Open data and code  
+
+## Welcome in, [GitHub]{style="color:#BA0C2F"}  
+- **GitHub** is an online centralized platform that combines **git**, **collaborative tools**, and **cloud storage**, all free :money_with_wings:  
+
+- You can choose if your projects hosted on GitHub (i.e., a repository) can be seen by **everyone (public)** or only by **you and invited collaborators (private)**  
+
+![](github.png){.absolute left=25% top=60% width=600 height=200}  
+  
+## GitHub demo  
+- I'll show you next one of my GitHub repositories  
+- This repository was used to conduct the entire analytic flow of a manuscript among 2 collaborators  
+- Both collaborators had local versions on their computers, and GitHub served as the "merging" point  
+
+. . .
+
+::: {style="text-align: center"}
+<https://github.com/leombastos/BangPolder>
+:::
+
+# :construction: Barrier #6: What if software versions change?  
+
+## Things change  
+- Computer operating systems get updated  
+- R gets updated  
+- RStudio gets updated  
+- R packages get updated  
+
+. . . 
+
+::: {style="text-align: center; color: #BA0C2F"}  
+Even if we are working off of the same GitHub repository, our local software versions may differ, which can cause discrepancies and issues that may **impact reproducibility**.    
+:::  
+
+# :superhero: Solution #6: Containerization  
+
+## Containerizing projects  
+- To avoid discrepancies of software versions, we can use **containers**  
+- **Containers** keep track of all software versions in a project, and ship that project with those default versions  
+- This ensures the project is reproducible not only for **collaborators**, but also **your future self**   
+- One example of container software is ![](docker.png){.absolute left=65% top=60% width=300 height=200}   
+
+# In a nutshell  
+
+## :construction: :fast_forward: :superhero: Reproducible science is about...  {background-image="path.png" background-opacity="0.2"}
+- Using sensible **file names**  
+- Organizing files in sensible **sub-folders**  
+- Using **free programming language software**  
+- Using **literate programming** tools  
+- Using **version control locally**  
+- Using **distributed version control** to collaborate and share data and code  
+- Using **containers**    
+- Others (custom functions, iteration, code peer-review, etc.)  
+
+## Personal marketing   
+::: columns  
+::: {.column width="50%"}
+- This entire presentation was made with **quarto**, and its source code is available on [my GitHub](https://github.com/leombastos/bastoslab/blob/main/talks/2022_uiuc-reptools/deck/index.qmd)  
+
+- You can find more info on my lab's website (also made with **quarto**): [Bastos Lab](https://leombastos.github.io/bastoslab/) ![](logo.png){.absolute left=15% top=70% width=200 height=200}    
+:::
+
+::: {.column width="50%"}
+- You can also find stats programing teaching material (video+code) on my [website](https://leombastos.github.io/bastoslab/teaching/teaching.html)  
+
+- Wish to learn and apply these concepts to your own research?  
+
+- [**Applications of data science in ag research**, Spring 2024]{style="color:#BA0C2F"}
+
+- **Thanks!** :pray: :computer:
+:::  
+:::  
+
+::: {.fragment }  
+![](qrcode.png){.absolute top=71% left=95% width=200 height=200}  
+:::
+
+
+
+
+
+

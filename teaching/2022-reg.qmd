@@ -1,40 +1,42 @@
 ---
 title: "Regression Workshop"
-editor: visual
 toc: false
+execute: 
+  freeze: auto
 ---
 
-Hey there!  
+Hey there!
 
-This is the welcome page for the **Kansas State University/University of Georgia 2022 AGSA R Workshop - Regression for optimum rate and prediction R Workshop**, taught by [@leombastos](https://github.com/leombastos).    
+This is the welcome page for the **Kansas State University/University of Georgia 2022 AGSA R Workshop - Regression for optimum rate and prediction R Workshop**, taught by [\@leombastos](https://github.com/leombastos).
 
-The workshop was presented in one day for 2 hours where we covered:  
-    
- - Linear, quadratic, and linear-plateau regression
- - Regression analysis workflow including  
-   - data import
-   - data wrangling
-   - exploratory data analysis
-   - formal statistical analysis
-   - model assumption checking with residual diagnostics
-   - model summary
-   - final plot
- - Difference between ANOVA and regression
- - Model selection
- - Explore some cool applications of regression like 
-     - finding an optimum input rate that maximizes yield
-     - prediction  
+The workshop was presented in one day for 2 hours where we covered:
 
-## **Interested in "attending" the workshop?**  
+-   Linear, quadratic, and linear-plateau regression
+-   Regression analysis workflow including
+    -   data import
+    -   data wrangling
+    -   exploratory data analysis
+    -   formal statistical analysis
+    -   model assumption checking with residual diagnostics
+    -   model summary
+    -   final plot
+-   Difference between ANOVA and regression
+-   Model selection
+-   Explore some cool applications of regression like
+    -   finding an optimum input rate that maximizes yield
+    -   prediction
 
-1. Go to [this GitHub repository](https://github.com/leombastos/2022_rworkshop_regression) and download it to your computer (click on the green "Code" button above and select "*Download ZIP*").  
+## **Interested in "attending" the workshop?**
 
-2. Unzip the repository, launch the RStudio project (by clicking on the "*2022_rworkshop_regression.Rproj*" file).  
+1.  Go to [this GitHub repository](https://github.com/leombastos/2022_rworkshop_regression) and download it to your computer (click on the green "Code" button above and select "*Download ZIP*").
 
-3. On RStudio, go to the "*Files*" tab (lower right), click on folder "*markdown*", and open file "package_prep.R". Run each line of this script to install the packages we need for the workshop.   
+2.  Unzip the repository, launch the RStudio project (by clicking on the "*2022_rworkshop_regression.Rproj*" file).
 
-4. On RStudio, go to the "*Files*" tab (lower right), click on folder "*markdown*", and open file 
-    - "*reg_partial.Rmd*"    
+3.  On RStudio, go to the "*Files*" tab (lower right), click on folder "*markdown*", and open file "package_prep.R". Run each line of this script to install the packages we need for the workshop.
 
-5. You can code along with us by watching [this YouTube video](https://youtu.be/LXfCrV5qwZM)  
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/LXfCrV5qwZM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+4.  On RStudio, go to the "*Files*" tab (lower right), click on folder "*markdown*", and open file
+
+    -   "*reg_partial.Rmd*"
+
+5.  You can code along with us by watching [this YouTube video](https://youtu.be/LXfCrV5qwZM)\
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LXfCrV5qwZM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

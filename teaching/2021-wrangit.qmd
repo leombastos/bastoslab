@@ -1,7 +1,8 @@
 ---
 title: "Data Wrangling and Iteration Workshop"
-editor: visual
 toc: false
+execute: 
+  freeze: auto
 ---
 
 Hey there!

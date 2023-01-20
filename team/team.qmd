@@ -2,6 +2,8 @@
 title: "Meet the team"
 editor: visual
 page-layout: full
+execute: 
+  freeze: auto
 ---
 
 ## Leo Bastos
@@ -25,6 +27,28 @@ page-layout: full
 :::
 :::
 
+# Current members  
+## Amrinder Jakhar  
+::: columns
+::: {.column width="30%"}
+![](Amrinder-round.png)
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="60%"}
+-   Ph.D. student in Agronomy/Precision Agriculture, University of Georgia, 2022-Current
+
+-   `r fontawesome::fa("graduation-cap", width="1em")` M.Sc. in Agronomy, Mississippi State University
+
+-   `r fontawesome::fa("graduation-cap", width="1em")` B.Sc. in Agriculture, Punjab Agricultural University - India
+
+<center>[`r fontawesome::fa("github", width="2em")`](https://github.com/AmrinderJakhar98) [`r fontawesome::fa("twitter", width="2em")`](https://twitter.com/jakhar_amrinder) [`r fontawesome::fa("linkedin", width="2em")`](https://www.linkedin.com/in/amrinder-jakhar-272b331a4/) [`r fontawesome::fa("google", width="2em")`](https://scholar.google.com/citations?view_op=list_works&hl=en&user=-YphPCoAAAAJ&gmla=AJsN-F7P2d87FE4u7ehnU23kXoxKveLRQbo3-UulJI9ERs_rTFObaVskZfxXB6WABATUI7VG4FoaT-DmvlRmQsImdgSHUPVaeGB1rjAk0zhdrLOfiDxz_BY)</center>
+:::
+:::
+
+
 # Openings
 
 ### Visiting scholar
@@ -43,59 +67,6 @@ page-layout: full
 -   Qualifications/duties:
     -   be excited about precision agriculture, sensors, and being part of a diverse team
     -   plan and collect crop and soils data
-    -   working in a growing team
-    -   English fluency
-:::
-:::
-
-### PhD student
-
-::: columns
-::: {.column width="30%"}
-`r fontawesome::fa("user-plus", width="8em", fill_opacity = 0.7, fill="#6EC2AE")`
-:::
-
-::: {.column width="10%"}
-:::
-
-::: {.column width="60%"}
--   Start term: Spring 2023
--   Duration: 3 years
--   Duties: lead the [cotton quality envirotyping](/projects/01-cottongem) and [cotton quality prediction](/projects/02-cottonqualpred) projects
--   Qualifications: Experience with/highly motivated about
-    -   be excited about precision agriculture, sensors, and being part of a diverse team
-    -   cotton field research
-    -   applied statistical programming
-    -   data science concepts and tools
-    -   drone and satellite remote sensing
-    -   predictive ag
-    -   writing and publishing manuscripts
-    -   working in a growing team
-    -   English fluency
-:::
-:::
-
-### PhD student
-
-::: columns
-::: {.column width="30%"}
-`r fontawesome::fa("user-plus", width="8em", fill_opacity = 0.7, fill="#6EC2AE")`
-:::
-
-::: {.column width="10%"}
-:::
-
-::: {.column width="60%"}
--   Start term: Spring 2023
--   Duration: 3-4 years
--   Duties: lead the [cotton](/projects/03-cottonvr) and [corn](/projects/04-cornvrn) variable rate nitrogen and plant-growth regulator projects
--   Qualifications:
-    -   be excited about precision agriculture, sensors, and being part of a diverse team
-    -   cotton and corn field research
-    -   applied statistical programming
-    -   data science concepts and tools
-    -   drone and satellite remote sensing
-    -   writing and publishing manuscripts
     -   working in a growing team
     -   English fluency
 :::

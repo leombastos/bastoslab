@@ -1,0 +1,63 @@
+---
+title: "Schedule"
+editor: visual
+execute: 
+  freeze: auto
+---
+
+# Setup.
+
+```{r}
+#| message: false
+library(lubridate)
+library(tidyverse)
+```
+
+```{r creating filters}
+begin <- as.Date("2023-01-09")
+end <- as.Date("2023-05-09")
+```
+
+```{r creating dates}
+dates <- seq.Date(from = begin, 
+                  to = end, 
+                  by = 1)
+
+dates
+```
+
+```{r creating holidays list}
+hd <- seq.Date(from = as.Date("2023-03-06"), 
+                  to = as.Date("2023-03-10"), 
+                  by = 1) %>%
+  as.data.frame() %>%
+  rename(date=".") %>%
+  mutate(holiday="Spring Break") %>%
+  bind_rows(data.frame(date=as.Date("2023-01-16"),
+                       holiday="MLK"
+                       ))
+
+hd
+
+```
+
+# Wrangling
+
+```{r wrangling dates}
+dates_w <- data.frame(date=dates) %>%
+  mutate(dow=wday(date, label = T)) %>%
+  filter(dow %in% c("Mon", "Wed", "Fri")) %>%
+  mutate(time=case_when(
+    dow %in% c("Mon","Fri") ~ "9:10 to 10:00",
+    T ~ "9:10 to 11:10"
+  )) %>%
+  left_join(hd) 
+
+dates_w
+```
+
+# Exporting
+
+```{r}
+write_csv(dates_w, "dates.csv")
+```

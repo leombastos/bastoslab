@@ -1,55 +1,53 @@
 ---
 title: "Progress Report - Cotton Fiber Quality Meta-analysis"
 format: html
-editor: visual
+execute: 
+  freeze: auto
 ---
 
-# 1. Background  
+# 1. Background
 
-Starting on August 2022, John Deere and the University of Georgia joined efforts to study the main drivers of cotton lint quality through a meta-analysis approach.  
+Starting on August 2022, John Deere and the University of Georgia joined efforts to study the main drivers of cotton lint quality through a meta-analysis approach.
 
-## 1.1. Sites location and field data  
-Since then, cotton fiber quality data from **24 site studies**  conducted in Georgia in 2020 were gathered.  
+## 1.1. Sites location and field data
+
+Since then, cotton fiber quality data from **24 site studies** conducted in Georgia in 2020 were gathered.\
 ![](map.png)
 
-From each site, harvested cotton seed was ginned and analyzed for lint quality. Quality variables included:  
+From each site, harvested cotton seed was ginned and analyzed for lint quality. Quality variables included:
 
-- Fiber length  
-- Fiber length uniformity  
-- Micronaire  
-- Strength  
-- Reflectance (Rd)   
-- Yellowness (+b)  
-- Leaf percentage  
+-   Fiber length\
+-   Fiber length uniformity\
+-   Micronaire\
+-   Strength\
+-   Reflectance (Rd)\
+-   Yellowness (+b)\
+-   Leaf percentage
 
-## 1.2. Environmental variables  
-The centroid coordinates of each of the sites were used to retrieve and extract publicly available data sets for **daily weather** (PRISM, 4.6-km spatial resolution) and **soil properties** (POLARIS, 30-m spatial resolution).  
+## 1.2. Environmental variables
 
-**Daily weather** variables of precipitation, air temperature (min, mean, max), and vapor pressure deficit were summarized (summed or averaged) on a monthly basis for the months between April and November. A total of **48 summarized weather variables** were created.  
+The centroid coordinates of each of the sites were used to retrieve and extract publicly available data sets for **daily weather** (PRISM, 4.6-km spatial resolution) and **soil properties** (POLARIS, 30-m spatial resolution).
 
-**Soil properties** of bulk density, sand, clay, silt, organic matter, and pH for the layers 0-5, 5-15, and 15-30 cm depth were summarized by averaging within a site. A total of **19 summarized soil variables** were created.    
+**Daily weather** variables of precipitation, air temperature (min, mean, max), and vapor pressure deficit were summarized (summed or averaged) on a monthly basis for the months between April and November. A total of **48 summarized weather variables** were created.
 
-Each of the 7 lint quality variables were regressed against each of the summarized environmental variables, for a total of **469 models evaluated**. For each lint quality variable, the environmental variable model with the greatest correlation was selected.  
+**Soil properties** of bulk density, sand, clay, silt, organic matter, and pH for the layers 0-5, 5-15, and 15-30 cm depth were summarized by averaging within a site. A total of **19 summarized soil variables** were created.
 
-# 2. Results  
-All cotton lint quality variables were significantly affected by environmental variables, with cumulative precipitation affecting 4 quality variables, temperature affecting 2 quality variables, and soil silt concentration affecting 1 quality variable. The **R2** of these models ranged from **0.28 to 0.45**.    
+Each of the 7 lint quality variables were regressed against each of the summarized environmental variables, for a total of **469 models evaluated**. For each lint quality variable, the environmental variable model with the greatest correlation was selected.
 
-![](qualityplots.png)  
+# 2. Results
 
-Only 2 of 7 quality variables were negatively impacted by environmental variables. Fiber strength (the greater the better) decreased 0.02 grams/tex for each additional mm of precipitation in November, and reflectance (the greater the better) decreased 0.03% for each additional mm of precipitation in June.   
+All cotton lint quality variables were significantly affected by environmental variables, with cumulative precipitation affecting 4 quality variables, temperature affecting 2 quality variables, and soil silt concentration affecting 1 quality variable. The **R2** of these models ranged from **0.28 to 0.45**.
 
-# 3. Next steps  
-- Gather data from Georgia for 2021 and 2022 growing seasons.  
-- Gather data **across the cotton belt** from the period between **1993 and 2019** through the [USDA Cotton Variety Trial data base](https://www.ars.usda.gov/southeast-area/stoneville-ms/crop-genetics-research/docs/national-cotton-variety-test/).  
+![](qualityplots.png)
 
-- Conduct **field studies** starting in 2023 to assess the specific effects of **nitrogen fertilizer** management (Dr. Bastos' program) and **insecticide** management (Dr. Roberts' program) on cotton lint quality.  
+Only 2 of 7 quality variables were negatively impacted by environmental variables. Fiber strength (the greater the better) decreased 0.02 grams/tex for each additional mm of precipitation in November, and reflectance (the greater the better) decreased 0.03% for each additional mm of precipitation in June.
 
-- A visiting scholar **student** has been identified and is being hired to continue leading the analytic workflow of this project.  
+# 3. Next steps
 
+-   Gather data from Georgia for 2021 and 2022 growing seasons.\
 
+-   Gather data **across the cotton belt** from the period between **1993 and 2019** through the [USDA Cotton Variety Trial data base](https://www.ars.usda.gov/southeast-area/stoneville-ms/crop-genetics-research/docs/national-cotton-variety-test/).
 
+-   Conduct **field studies** starting in 2023 to assess the specific effects of **nitrogen fertilizer** management (Dr. Bastos' program) and **insecticide** management (Dr. Roberts' program) on cotton lint quality.
 
-
-
-
-
+-   A visiting scholar **student** has been identified and is being hired to continue leading the analytic workflow of this project.

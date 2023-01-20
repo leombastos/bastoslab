@@ -1,0 +1,16 @@
+---
+title: "notes"
+editor: visual
+execute: 
+  freeze: auto
+---
+
+👩‍💻 \*\*Data science applied to agriculture and natural resources\*\*
+
+-   Will be offered at UGA in the Fall Semester of 2023
+
+-   3 credit hours, meet 3x a week
+
+-   Undergraduate/Graduate student level course
+
+-   Topics covered include statistical programming in R, RStudio projects, literate programming with Quarto, version control with git and GitHub, analysis workflow development (data import, EDA, modeling, model checking, extracting means and pairwise comparison letters, and creating publication-ready plots), and data analysis deliverable presentation in the form of dashboards and websites.

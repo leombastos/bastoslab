@@ -1,0 +1,19 @@
+---
+title: "From zero to hero: a researcher's path through data science tools for reproducibility"
+subtitle: "Plant Pathology Seminar Series, University of Georgia"
+date: "2022-11-21"
+image: "featured.png"
+execute: 
+  freeze: auto
+---
+
+![](featured.png){fig-align="center"}  
+
+
+-   [When]{.underline}: November 21st 2022, 3 to 4 pm
+
+-   [Where]{.underline}: Miller Hall, Athens GA
+
+-   [Hosts]{.underline}: Plant Pathology Seminar Series, Department of Plant Pathology, University of Georgia
+
+-   [Slides](https://leombastos.github.io/bastoslab/talks/2022_uga-plantpath/deck/index.html#/from-zero-to-hero-a-researchers-path-through-data-science-tools-for-reproducibility)

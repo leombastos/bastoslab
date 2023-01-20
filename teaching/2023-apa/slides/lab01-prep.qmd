@@ -1,0 +1,126 @@
+---
+title: "Intro to R prep - Software requirements"
+execute:
+  echo: false
+  warning: false
+  output: false
+  freeze: auto
+---
+
+Before our first lab **(Wed, Jan 11)**, you will need to:  
+
+1. Install R  
+2. Install RStudio  
+3. Download class material from GitHub  
+4. Install packages  
+5. Sign-up for a free GitHub account  
+
+::: {.callout-note}  
+All instructions below are demonstrated on this video.  
+
+The video is from last term, so some differences in website exist, but the main content of installing software remains the same.  
+:::
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vjDYUY6CE6s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## 1. Install R `r icons::fontawesome("r-project")`  
+
+Follow [this link](https://cran.r-project.org), and download it for your appropriate operating system (Linux, MacOS, or Windows).  
+
+Once downloaded, install R on your laptop.  
+
+---
+
+## 2. Install RStudio `r icons::fontawesome("registered")`  
+
+Once you have already installed R, follow [this link](https://www.rstudio.com/products/rstudio/download/#download), and download RStudio for your appropriate operating system.  
+
+If multiple download options appear, select **"Free RStudio Desktop"**.
+
+Once downloaded, install RStudio on your laptop.  
+
+::: {.callout-note}  
+You can run R without RStudio, but you **cannot** run RStudio without R.  
+
+R is the main software, RStudio is an extra software that makes our lives easier when working with R by providing an integrated development environment.  
+:::
+
+---
+
+## 3. Download material from GitHub `r icons::fontawesome("github")`  
+We will use live coding for our meetings, meaning that we will develop the scripts together.  
+
+All materials, including  
+
+- package installation script  
+- initial partially-filled scripts (to use during a class period)  
+- data sets  
+- completely-filled scripts (only after a class period)  
+
+will be hosted on [this GitHub repository](https://github.com/leombastos/2023_AdvPA).  
+
+To download the materials, click on the link above and follow the instructions.   
+
+---  
+
+## 4. Install packages `r icons::fontawesome("box-open")`  
+If you are not familiar with R lingo, you can think of a package as an app on your phone: a package will extend R functionality by making available to you extra software options that do not come pre-installed with R.  
+
+We will be using multiple packages that need to be installed, and doing so **before the first lab period (Jan 11)** will ensure that no one gets behind.  
+
+After installing R and RStudio, and downloading the material from GitHub, follow these steps:  
+
+  - Unzip the file downloaded from GitHub, move the unzipped folder to your desktop.  
+
+  - Open the main folder **"2023_AdPA"**, and then open the sub-folder **"01-packages"**. 
+ 
+  - Double-click the R script file **"before_installpackages.R"** (this will open it in RStudio).  
+  
+  - On the same RStudio window that just opened, install each package at a time by placing your cursor on the first script line and hitting `Ctrl + return` (Windows) or `Command + return` (Mac)  
+  
+  - Some text will start appearing on the console as the packages get installed. If successfully installed, you should see a message similar to this:  
+  
+>  "The downloaded binary packages are in
+	/var/folders/88/ldswt2_n3lj26hwzphp9fmj00000gn/T//RtmpeRvdJ7/downloaded_packages".  
+	
+  - Keep running each line as described above until you reach the last package installation (script line 13)  
+
+
+To ensure that each package was installed, run the code starting with `library("ggplot2")`, line by line (from script lines 17 to 27).      
+
+If after running the `library()` function you get an error message like  
+
+::: {.callout-warning}
+Error in library("packagename") :**  
+   **there is no package called `packagename`  
+:::
+
+This means the package was not properly installed and you may need help.  
+
+---  
+
+## 5. Sign-up for a free GitHub account `r icons::fontawesome("github")`  
+
+If you haven't yet, please go to [GitHub](www.github.com) and sign-up for an account.  
+
+
+---
+
+
+Once you have  
+
+- Downloaded and installed R  
+- Downloaded and installed RStudio  
+- Downloaded material from GitHub  
+- Installed needed R packages  
+- Signed up for a GitHub account  
+
+Then you are ready for the class!  
+
+::: {.callout-warning}  
+If you run into issues at any of the steps above, let me know, preferably **before our class period**.    
+
+We need to make sure everyone is ready to go at 9 am, we will have very limited time for troubleshooting technical issues during the class!  
+:::
+
+

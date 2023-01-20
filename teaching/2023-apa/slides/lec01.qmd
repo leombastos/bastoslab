@@ -1,0 +1,327 @@
+---
+title: "Welcome to CRSS 4060/6060\\\nAdvanced Topics in Precision Ag!"
+subtitle: "Spring 2023"
+author: "Dr. Leo Bastos"
+format: 
+  revealjs: 
+    theme: slides.scss
+    transition: fade
+    slide-number: true
+    incremental: true
+    embed-resources: true
+execute:
+  freeze: auto
+  echo: false
+  warning: false
+  output: false
+from: markdown+emoji
+self-contained: true
+---
+
+## Meet the professors
+```{r}
+library(tidyverse)
+library(kableExtra)
+library(formattable)
+library(knitr)
+library(gt)
+library(countdown)
+
+```
+::: columns
+::: {.column width="30%"}
+![Dr. Leonardo M. Bastos](images/lec01-bastos.png){fig-align="center" width="200"}
+:::
+
+::: {.column width="70%"}
+Assistant Professor\
+4101 Miller Plant Sciences Building\
+UGA-Athens Campus\
+Email: lmbastos\@uga.edu
+:::
+:::
+
+::: columns
+::: {.column width="30%"}
+![Dr. Lorena Lacerda](images/lec01-lacerda.jpg){fig-align="center" width="200"}
+:::
+
+::: {.column width="70%"}
+Assistant Professor\
+4103 Miller Plant Sciences Building UGA-Athens Campus\
+Email: llacerda\@uga.edu
+:::
+:::
+
+# Syllabus rundown
+
+Full syllabus can be found [here](https://leombastos.github.io/bastoslab/teaching/2023-ppa/2023-ppa.html#course-syllabus)
+
+## Meeting times and locations
+::: columns
+::: {.column width="50%"}
+Time:  
+
+  -   **Lectures**: Monday and Friday at 09:10-10:00
+  -   **Labs**: Wednesday at 09:10-11:10
+:::
+
+::: {.column width="50%"}
+Location:  
+
+  -   **Athens** campus: in person at ~~1203~~ 3203 Miller\
+  -   **Tifton** campus: in person at 601 NESPAL South OR remote\
+  -   **Griffin** campus: in person at SLC UGA Computer lab OR remote
+:::
+:::
+. . .
+
+Zoom credentials shared via email.
+
+## Course objectives
+
+1.  Obtain, process, and use various agricultural geospatial data layers for decision making related to precision agriculture.
+
+. . .  
+
+::: columns
+::: {.column width="15%"}
+:::
+
+::: {.column width="35%"}
+::: {style="text-align: center"}
+![](images/lec01-2019_yield_1raw.png){.absolute height="300"}
+:::
+:::
+
+::: {.column width="35%"}
+::: {style="text-align: center"}
+![](images/lec01-elevation.png){.absolute height="300"}
+:::
+:::
+
+::: {.column width="15%"}
+:::
+:::
+
+## Course objectives
+
+2.  Data types include publicly available (weather, soils, and **satellite remote sensing**), and private data like **yield monitor**, **soil**, and UAV remote sensing).  
+
+. . .  
+
+::: {.column width="5%"}
+:::
+
+::: columns  
+::: {.column width="30%"}
+![](images/lec01-gndvi_max_map.png){.absolute height="300"}
+:::
+
+::: {.column width="30%"}
+![](images/2019_yield_3interpolated.png){.absolute height="300"}
+:::
+
+::: {.column width="30%"}
+![](images/lec01-soil_ec.png){.absolute height="300"}
+:::
+
+::: {.column width="5%"}
+:::
+:::
+
+## Course objectives
+
+3.  Analytical techniques include creation of management zones, **zone-based and imagery-based variable rate prescription**, **profitability maps**, and use of **satellite remote sensing for crop scouting**.  
+
+. . . 
+
+::: columns  
+::: {.column width="5%"}
+:::
+
+::: {.column width="30%"}  
+![](images/lec01-vrn.png){.absolute height="300"}
+:::
+
+::: {.column width="30%"}
+![](images/lec01-profit.png){.absolute height="300"}
+:::
+
+::: {.column width="30%"}
+![](images/lec01-2022_scout_nematode_gndvi_timelapse_gg.gif){.absolute height="300"}
+:::
+
+::: {.column width="5%"}
+:::
+:::
+
+
+## Course objectives
+
+4. All steps will be conducted utilizing the **R statistical language** to create modern, well documented and reproducible precision agriculture analytical workflows. No previous knowledge in R is required.  
+
+. . .  
+
+![](images/lec01-logos.png){fig-align="center" height=360}
+
+## Course objectives  
+For example, from raw yield data to management zone creation  
+
+![](images/lec01-projectworkflow.png){fig-align="center"}  
+  
+## Course topics  
+::: columns 
+::: {.column width="50%"}
+1.  Intro to R  
+2.  Using R as a GIS  
+3.  Accessing publicly available geospatial data through R  
+4.  Creating grids for soil sampling  
+5.  Interpolation  
+:::
+
+::: {.column width="50%"}
+6.  Yield monitor data processing  
+7.  Terrain data processing  
+8.  Management zones  
+9.  UAV remote sensing  
+10. Variable rate prescription  
+11. Profitability maps  
+12. Satellite remote sensing for crop scouting  
+:::
+:::
+
+##
+
+<br/><br/>
+
+All classes will be recorded and further posted on the class YouTube channel.  
+
+<br/><br/>
+
+This should be used as a supporting study tool and make-up for content from missed classes. **Recordings do not replace in-person/remote attendance**.  
+
+
+## Assessment and Grading
+
+```{r}
+#| output: true  
+tribble(~Activity, ~Grade,
+        "Mini-project: USDA NASS data", "10%",
+        "Mid-term exam", "10%",
+        "Homework assignments", "35%",
+        "In-class quizzes", "15%",
+        "Final project:\\\nfrom raw data to zone-based variable rate", "20%",
+        "Class participation", "10%"
+        ) %>%
+  gt() %>%
+  fmt_markdown(columns = everything())
+```
+
+## Course website
+
+Important links related to this course:
+
+-   [Course website](https://leombastos.github.io/bastoslab/teaching/2023-apa/2023-apa.html)\
+-   [Course GitHub repository](https://github.com/leombastos/2023_AdvPA)\
+-   [Course YouTube channel](https://youtube.com/playlist?list=PLcdv9xoF_6TFzITEruQ1JnP54FdNO4PtI)  
+
+## Course website - downloading slides  
+1. With the slides page open on your browser, push `e` on your keyboard.  
+
+2. On your browser, go to `File > Print`.  
+
+3. Adjust orientation and pages per sheet if desired.  
+
+4. Save as PDF.  
+
+
+## Course website - asking questions  
+- If your question is related to **difficulties with material/code/assignments**, then post it on our class GitHub page on the `Issues` tab.  
+
+- Go to the class [GitHub repository](https://github.com/leombastos/2023_AdvPA) > Click on `Issues` (near top left) > Click on `New issue` (green button) > Give it a descriptive title, leave your comment > Click on `Submit new issue`.
+
+- Let's try it out: introductions (may need to sign up to GitHub)  
+
+## Course website - asking questions  
+::: {.callout-note}  
+##
+By asking questions on GitHub, other students may be able to help you besides only instructor.  
+
+**Helping others on GitHub will count as participation!**
+:::
+
+
+## Attendance policy
+
+Students are expected to attend every class period.  
+
+<br/><br/>
+
+Students on the **Athens campus** must attend class in-person.  
+
+<br/><br/>
+
+If a special circumstance arise (illness, travel, etc.), student absence or remote attendance **must be informed to instructors prior to that class period**.  
+
+## Attendance policy
+
+Students are expected to attend every class period.  
+
+<br/><br/>
+
+Students on the **Tifton and Griffin campuses** may attend class in-person on their campuses or remote using the zoom link information.  
+
+<br/><br/>
+
+Student absence **must be informed to instructors prior to that class period**.  
+
+
+## Attendance policy
+
+Students are expected to attend every class period.  
+
+<br/><br/>
+
+Per Board of Regents policy, I reserve the right to drop students from the class roll who **miss more than 5 class periods**. Such students will be given a WF grade.
+
+## Attendance policy
+
+::: {.callout-note}  
+##  
+
+When attending a class remotely via zoom, students are expected to have **cameras on at all times**.
+:::
+
+## Technology and software requirements
+
+Students will need to have access to:
+
+-   A computer :computer: (to install software, code along with instructors)\
+-   A second screen :tv: (main screen to code along, second screen to watch class if not in person)  
+
+. . . 
+
+If a student does not have access to these resources (personal laptop/desktop and a second screen), please let instructors know to ensure proper accommodations can be made.
+
+## Survey  
+
+Please go to the link below and fill this survey:
+
+[https://forms.gle/M78MDXLrtXBVUHyt7](https://forms.gle/M78MDXLrtXBVUHyt7)  
+
+Take 5 minutes to answer it.  
+
+## Getting ready for next class  
+
+To be ready for next class (**Intro to R**), please go to the course main page and follow the link to the `Lab 01 prep` page.  
+
+<br/><br/>
+
+If you have questions or issues, email me **before class**.
+
+We will have limited time to troubleshoot technical problems during next period.
+
+# Thanks, and see you on Wednesday!  
+
+

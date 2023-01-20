@@ -1,0 +1,18 @@
+---
+title: "From zero to hero: a researcher's path through data science tools for reproducibility"
+subtitle: "Seminar in Agricultural Data Science, UGA"
+date: "2023-01-20"
+image: "featured.png"
+execute: 
+  freeze: auto
+---
+
+![](featured.png){fig-align="center"}  
+
+-   [When]{.underline}: January 20th 2023, 12:40 to 1:30 pm
+
+-   [Where]{.underline}: 2107 Miller Plant Sciences and remote
+
+-   [Hosts]{.underline}: Seminar in Agricultural Data Science, UGA  
+
+-   [Slides](https://leombastos.github.io/bastoslab/talks/2023_dssem-reptools/deck/index.html#/from-zero-to-hero-a-researchers-path-through-data-science-tools-for-reproducibility)

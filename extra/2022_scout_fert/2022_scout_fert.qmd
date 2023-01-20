@@ -1,6 +1,7 @@
 ---
 title: "2022 Scouting for Fertility Issues - Satellite data"
-editor: visual
+execute: 
+  freeze: auto
 ---
 
 # Background and methods

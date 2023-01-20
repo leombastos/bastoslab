@@ -1,6 +1,7 @@
 ---
 title: "2019 Scouting for Issues - Satellite data"
-editor: visual
+execute: 
+  freeze: auto
 ---
 
 # Background and methods

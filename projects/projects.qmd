@@ -1,15 +1,24 @@
 ---
 title: "Projects"
-editor: visual
 listing:
-  type: grid
-  fields: [image, date, title, subtitle, categories, author]
-  sort: "date"
-  #sort: "date desc"
-  sort-ui: false
-  filter-ui: false
-  page-size: 10
-  image-height: 20em
-  grid-columns: 2
+  - id: projects
+    contents: "**/index.qmd"
+    type: grid
+    fields: [image, date, title, subtitle]
+    sort: "date"
+    sort-ui: true
+    filter-ui: true
+    page-size: 10
+    image-height: 20em
+    grid-columns: 2     
+title-block-banner: false
 comments: false
+include-in-header: meta.html  
+toc: true
+execute: 
+  freeze: auto
 ---
+
+
+::: {#projects}
+:::

@@ -4,6 +4,8 @@ editor: visual
 image: "featured.jpg"
 date: 2022-08-03
 toc: true
+execute: 
+  freeze: auto
 ---
 
 # Background

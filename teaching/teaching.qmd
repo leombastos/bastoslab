@@ -1,6 +1,7 @@
 ---
 title: "Teaching"
-editor: visual
+execute: 
+  freeze: auto
 ---
 
 Here I share links to my teaching material, including **workshops** and full **courses**. Materials normally include
@@ -15,7 +16,7 @@ Click the links below to explore them.
 
 ::: columns
 ::: {.column width="50%"}
-## Workshops
+## Workshops 💻
 
 [Regression for optimum and prediction](2022-reg.qmd)\
 [Data wrangling and iteration](2021-wrangit.qmd)\
@@ -26,9 +27,9 @@ Click the links below to explore them.
 :::
 
 ::: {.column width="50%"}
-## Courses
+## Courses 👨‍🏫
 
-[2023 Programing Precision Ag](/2023-ppa/index.qmd)\
+[2023 Advanced Topics in Precision Ag](2023-apa/2023-apa.qmd)\
 [2022 Advanced Topics in Precision Ag](2022-apa.qmd)
 :::
 :::

@@ -1,7 +1,8 @@
 ---
 title: "ASA R beginner bootcamp workshop"
-editor: visual  
 toc: true
+execute: 
+  freeze: auto
 ---
 
 Hi there!

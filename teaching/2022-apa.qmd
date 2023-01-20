@@ -1,49 +1,48 @@
 ---
 title: "CRSS 4060/6060\\\nAdvc. Topics in Precision Ag.\\\nBastos Material\\\n(UGA Spring 2022)"
-editor: visual
+execute: 
+  freeze: auto
 ---
 
-Hi there!  
+Hi there!
 
-This is the welcome page for the **2022 CRSS 4060/6060 Advanced Topics in Precision Agriculture** portion taught by Dr. Leo Bastos.  
+This is the welcome page for the **2022 CRSS 4060/6060 Advanced Topics in Precision Agriculture** portion taught by Dr. Leo Bastos.
 
----
+------------------------------------------------------------------------
 
-# 1. Overall Learning Objectives `r icons::fontawesome("bullseye")`  
+# 1. Overall Learning Objectives `r icons::fontawesome("bullseye")`
 
-The overall learning objectives of my part are:  
+The overall learning objectives of my part are:
 
-- Learn about concepts of spatial data quality control, project management, and reproducibility applied to precision agriculture.  
+-   Learn about concepts of spatial data quality control, project management, and reproducibility applied to precision agriculture.
 
-- Understand the difference between **vector** and **raster** data.  
+-   Understand the difference between **vector** and **raster** data.
 
-- Understand the difference between different **vector data types**.  
+-   Understand the difference between different **vector data types**.
 
-- Learn about the importance and how to **clean and process** geospatial data.  
+-   Learn about the importance and how to **clean and process** geospatial data.
 
-- Learn about **interpolation** methods, why they are useful and when they should be used.  
+-   Learn about **interpolation** methods, why they are useful and when they should be used.
 
-- Explore the concept of spatial and temporal **stability of zones**, and how to incorporate them into a recommendation.  
+-   Explore the concept of spatial and temporal **stability of zones**, and how to incorporate them into a recommendation.
 
+-   Learn about different **clustering analysis** for management zone creation.
 
-- Learn about different **clustering analysis** for management zone creation.  
+-   Create zone-based **variable rate recommendation**.
 
-- Create zone-based **variable rate recommendation**.  
+-   Understand differences and value of spatial layers used in PA, including **yield monitor**, **soils**, and **satellite remote sensing** data.
 
-- Understand differences and value of spatial layers used in PA, including **yield monitor**, **soils**, and **satellite remote sensing** data.  
+::: callout-warning
+All the objectives above will be explored in a hands-on approach through the use of the **R programming language** with students coding along live with the instructor.
+:::
 
+------------------------------------------------------------------------
 
-:::{.callout-warning}  
-All the objectives above will be explored in a hands-on approach through the use of the **R programming language** with students coding along live with the instructor.    
-:::  
+# 2. Agenda and Topics `r icons::fontawesome("calendar-check")`
 
----
-
-# 2. Agenda and Topics `r icons::fontawesome("calendar-check")`  
-This is a tentative agenda.  
-This can be changed/adapted to fit the speed that material is being covered.  
-More details will be provided as the classes progress. 
-
+This is a tentative agenda.\
+This can be changed/adapted to fit the speed that material is being covered.\
+More details will be provided as the classes progress.
 
 ```{r echo=FALSE, message=F}
 # Defining function
@@ -239,23 +238,22 @@ agenda %>%
 
 ```
 
+------------------------------------------------------------------------
 
----
+# 3. Resources `r icons::fontawesome("question")`
 
-# 3. Resources `r icons::fontawesome("question")`   
-If you need assistance, you can reach me at **lmbastos@uga.edu**.  
+If you need assistance, you can reach me at **lmbastos\@uga.edu**.
 
-If you are in Athens, my office is at **4115B Miller Plant Sciences Hall**, feel free to drop by anytime.  
+If you are in Athens, my office is at **4115B Miller Plant Sciences Hall**, feel free to drop by anytime.
 
-After you start getting familiarized with R, here are some online resources:  
-- [Geocomputation with R book](https://geocompr.robinlovelace.net/index.html)  
-- [Introduction to Spatial Data Programming with R book](http://132.72.155.230:3838/r/index.html)  
-- [`ggplot2` cheatsheet](https://github.com/rstudio/cheatsheets/blob/main/data-visualization-2.1.pdf)  
-- [`dplyr` data transformation cheatsheet](https://github.com/rstudio/cheatsheets/blob/main/data-transformation.pdf)  
-- [`tidyr` data tidying cheatsheet](https://github.com/rstudio/cheatsheets/blob/main/tidyr.pdf)  
-- [`sf` cheatsheet](https://github.com/rstudio/cheatsheets/blob/main/sf.pdf)    
-- [Colorblind-friendly palettes in R](https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html)  
-- [Violin/density plot vs. boxplots](https://blog.bioturing.com/2018/05/16/5-reasons-you-should-use-a-violin-graph/)  
-- [File naming conventions](https://speakerdeck.com/jennybc/how-to-name-files?slide=1)  
+After you start getting familiarized with R, here are some online resources:\
+- [Geocomputation with R book](https://geocompr.robinlovelace.net/index.html)\
+- [Introduction to Spatial Data Programming with R book](http://132.72.155.230:3838/r/index.html)\
+- [`ggplot2` cheatsheet](https://github.com/rstudio/cheatsheets/blob/main/data-visualization-2.1.pdf)\
+- [`dplyr` data transformation cheatsheet](https://github.com/rstudio/cheatsheets/blob/main/data-transformation.pdf)\
+- [`tidyr` data tidying cheatsheet](https://github.com/rstudio/cheatsheets/blob/main/tidyr.pdf)\
+- [`sf` cheatsheet](https://github.com/rstudio/cheatsheets/blob/main/sf.pdf)\
+- [Colorblind-friendly palettes in R](https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html)\
+- [Violin/density plot vs. boxplots](https://blog.bioturing.com/2018/05/16/5-reasons-you-should-use-a-violin-graph/)\
+- [File naming conventions](https://speakerdeck.com/jennybc/how-to-name-files?slide=1)\
 - [Workflow maintenance](https://speakerdeck.com/jennybc/zen-and-the-art-of-workflow-maintenance)
-

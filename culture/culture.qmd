@@ -2,6 +2,8 @@
 title: "Lab manual"
 editor: visual
 page-layout: full
+execute: 
+  freeze: auto
 ---
 
 # Hello, again!
