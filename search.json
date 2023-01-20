@@ -242,7 +242,7 @@
     "href": "talks/talks.html",
     "title": "Talks",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nPlant Pathology Seminar Series, University of Georgia\n\n\n\nNov 21, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCrop Sciences Seminar Series, University of Illinois at Urbana-Champaign\n\n\n\nNov 30, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2023 Southeast Regional Fruit and Vegetable Conference\n\n\n\nJan 7, 2023\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nPlant Pathology Seminar Series, University of Georgia\n\n\n\nNov 21, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCrop Sciences Seminar Series, University of Illinois at Urbana-Champaign\n\n\n\nNov 30, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2023 Southeast Regional Fruit and Vegetable Conference\n\n\n\nJan 7, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCrop Sciences Seminar Series, University of Illinois at Urbana-Champaign\n\n\n\nJan 20, 2023\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "talks/2023_serfvc-imagery/index.html",
@@ -250,6 +250,209 @@
     "title": "Applications of in-season imagery for crop management",
     "section": "",
     "text": "When: January 07th 2023, 9:50 to 10:10 am\nWhere: Savannah Convention Center, Savannah GA\nHosts: Precision Ag Educational Sessions\nSlides"
+  },
+  {
+    "objectID": "talks/2023_dssem-reptools/index.html",
+    "href": "talks/2023_dssem-reptools/index.html",
+    "title": "From zero to hero: a researcher’s path through data science tools for reproducibility",
+    "section": "",
+    "text": "When: January 20th 2023, 12:40 to 1:30 pm\nWhere: 2107 Miller Plant Sciences and remote\nHosts: Seminar in Agricultural Data Science, UGA\nSlides"
+  },
+  {
+    "objectID": "talks/2023_dssem-reptools/deck/index.html#from-zero-to-hero-a-researchers-path-through-data-science-tools-for-reproducibility",
+    "href": "talks/2023_dssem-reptools/deck/index.html#from-zero-to-hero-a-researchers-path-through-data-science-tools-for-reproducibility",
+    "title": "Bastos Lab",
+    "section": "From zero to hero: a researcher’s path through data science tools for reproducibility",
+    "text": "From zero to hero: a researcher’s path through data science tools for reproducibility"
+  },
+  {
+    "objectID": "talks/2023_dssem-reptools/deck/index.html#what-is-reproducibility",
+    "href": "talks/2023_dssem-reptools/deck/index.html#what-is-reproducibility",
+    "title": "Bastos Lab",
+    "section": "What is reproducibility?",
+    "text": "What is reproducibility?\n“Research is reproducible when others can reproduce the results of a scientific study given only the original data, code, and documentation”\n\nThis applies to:\n\nOther people reproducing your work\n\nYour future-self reproducing your past work"
+  },
+  {
+    "objectID": "talks/2023_dssem-reptools/deck/index.html#why-bother-with-reproducible-science",
+    "href": "talks/2023_dssem-reptools/deck/index.html#why-bother-with-reproducible-science",
+    "title": "Bastos Lab",
+    "section": "Why bother with reproducible science?",
+    "text": "Why bother with reproducible science?\n\nTracks how and why of specific decisions and analysis\n\nQuickly modify analysis and figures\n\nIncreased efficiency\n\nRigor and transparency\n\nIncreased citations (of paper, data, code)"
+  },
+  {
+    "objectID": "talks/2023_dssem-reptools/deck/index.html#but-is-it-really-that-important",
+    "href": "talks/2023_dssem-reptools/deck/index.html#but-is-it-really-that-important",
+    "title": "Bastos Lab",
+    "section": "But is it really THAT important?",
+    "text": "But is it really THAT important?\nA Nature survey with ~1,600 researchers found that\n\n+70% of researchers have tried and failed to reproduce another scientist’s experiments\n+50% have failed to reproduce their own experiments\nMain causes: selective reporting, weak stats, code/data unavailability, etc.\n2006 Duke University cancer research case"
+  },
+  {
+    "objectID": "talks/2023_dssem-reptools/deck/index.html#section",
+    "href": "talks/2023_dssem-reptools/deck/index.html#section",
+    "title": "Bastos Lab",
+    "section": "",
+    "text": "Starting my M.Sc., this is how my file management system looked like:\n\n\n\n\n\n\n\nData, code, figures all mixed in same folder\n\nFile names not very informative\n\nAnd this was just my first year! 😱\n\nLooks familiar?"
+  },
+  {
+    "objectID": "talks/2023_dssem-reptools/deck/index.html#three-principles-of-file-naming",
+    "href": "talks/2023_dssem-reptools/deck/index.html#three-principles-of-file-naming",
+    "title": "Bastos Lab",
+    "section": "Three principles of file naming",
+    "text": "Three principles of file naming\n1. Machine readable\n\ncontains key metadata, delimited with “-” and “_”\n\n\n\n❌ sas cumulative flux 2 years.xlsx\n✅ 2013-2014_N2O-cumulative.csv\n\n\neasy to search and filter\n\neasy to extract metadata"
+  },
+  {
+    "objectID": "talks/2023_dssem-reptools/deck/index.html#three-principles-of-file-naming-1",
+    "href": "talks/2023_dssem-reptools/deck/index.html#three-principles-of-file-naming-1",
+    "title": "Bastos Lab",
+    "section": "Three principles of file naming",
+    "text": "Three principles of file naming\n2. Human readable\n\nname provides info on content, slug concept\n\n\n\n\n\n❌\ndaily1.csv\nanalysisyear1.qmd\nfigure.png\ndata2.csv\nanova2.qmd\nfigure2test.png\n\n\n\n\n✅\n2013-N2O-daily.csv\n2013-N2O-daily-anova.qmd\n2013-N2O-daily-plot.png 2014-N2O-daily.csv\n2014-N2O-daily-anova.qmd\n2014-N2O-daily-plot.png\n\n\n\n\n\n\n\nWhich set of files do you want at 3 am before a deadline?"
+  },
+  {
+    "objectID": "talks/2023_dssem-reptools/deck/index.html#three-principles-of-file-naming-2",
+    "href": "talks/2023_dssem-reptools/deck/index.html#three-principles-of-file-naming-2",
+    "title": "Bastos Lab",
+    "section": "Three principles of file naming",
+    "text": "Three principles of file naming\n3. Plays well with default ordering\n\nStart name with something numerical (date, time, experiment number, etc.)\n\nFor dates, use YYYY-MM-DD format\n\nLeft pad numbers with zero\n\n\n\n\n\n❌\nN2O_daily_1-10-2013.csv\n10-23-2013_N2O_daily.csv\n2-15-2013_N2O_daily.csv\n\n\n\n\n✅\n2013-01-10_N2O_daily.csv\n2013-02-15_N2O_daily.csv\n2013-10-23_N2O_daily.csv"
+  },
+  {
+    "objectID": "talks/2023_dssem-reptools/deck/index.html#principles-of-project-management",
+    "href": "talks/2023_dssem-reptools/deck/index.html#principles-of-project-management",
+    "title": "Bastos Lab",
+    "section": "Principles of project management",
+    "text": "Principles of project management\n\n\nFrom this: \n\nTo this:"
+  },
+  {
+    "objectID": "talks/2023_dssem-reptools/deck/index.html#principles-of-project-management-1",
+    "href": "talks/2023_dssem-reptools/deck/index.html#principles-of-project-management-1",
+    "title": "Bastos Lab",
+    "section": "Principles of project management",
+    "text": "Principles of project management\n\n\n\n\n\nCreate a minimum of three sub-folders: data, code, output"
+  },
+  {
+    "objectID": "talks/2023_dssem-reptools/deck/index.html#principles-of-project-management-2",
+    "href": "talks/2023_dssem-reptools/deck/index.html#principles-of-project-management-2",
+    "title": "Bastos Lab",
+    "section": "Principles of project management",
+    "text": "Principles of project management\n\n\n\n\n\n\nCreate a minimum of three sub-folders: data, code, output\n\n\n\n\nKeep data files in data, script files in code, and tables and figures in output\nIn RStudio, use RStudio Projects!"
+  },
+  {
+    "objectID": "talks/2023_dssem-reptools/deck/index.html#section-1",
+    "href": "talks/2023_dssem-reptools/deck/index.html#section-1",
+    "title": "Bastos Lab",
+    "section": "",
+    "text": "Also during my M.Sc., I was using multiple point-and-click, proprietary software:\n\n\nExcel for data organization/manipulation\n\nSAS for stats\n\nSigmaPlot for plots\n\nArcGIS for maps\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\nProprietary software and file extensions hamper reproducibility by imposing a paywall."
+  },
+  {
+    "objectID": "talks/2023_dssem-reptools/deck/index.html#point-and-click-is-hard-to-document",
+    "href": "talks/2023_dssem-reptools/deck/index.html#point-and-click-is-hard-to-document",
+    "title": "Bastos Lab",
+    "section": "Point-and-click is hard to document",
+    "text": "Point-and-click is hard to document\n\nPoint-and-click software is prone to human error, and normally humans are not good at documenting each step we do.\nThink about the last time you organized data in Excel. Do you remember each step you took when filtering or deleting cells, or when creating new columns? What was your decision-making process?\nOr maybe each step you took to create a complicated figure. How easy would it be for you to replicate it?"
+  },
+  {
+    "objectID": "talks/2023_dssem-reptools/deck/index.html#free-and-open-source-software",
+    "href": "talks/2023_dssem-reptools/deck/index.html#free-and-open-source-software",
+    "title": "Bastos Lab",
+    "section": "Free and open-source software",
+    "text": "Free and open-source software\nWhenever possible and available, opt for free, open source software.\n\n\n\nInstead of this:\n\nExcel\n\nSAS\n\nSigmaPlot\n\nArcGIS\n\n\n\n\nUse this:\n\ncsv\n\nR/Python\n\nR/Python\n\nR/Python/QGIS"
+  },
+  {
+    "objectID": "talks/2023_dssem-reptools/deck/index.html#code-is-documentation",
+    "href": "talks/2023_dssem-reptools/deck/index.html#code-is-documentation",
+    "title": "Bastos Lab",
+    "section": "Code is documentation",
+    "text": "Code is documentation\n\n\n\n\ndf\n\n\n\n  plot   n2o_ppm\n1  101 0.7965260\n2  102 1.1163717\n3  103 1.7185601\n4  104 2.7246234\n5  105 0.6050458\n\n\n\n\ndf %>%\n  filter(n2o_ppm > 1) %>% # keeping only reasonable values\n  mutate(n2o_ppb = n2o_ppm*1000) %>% #transforming ppm to ppb\n  select(plot, n2o_ppb) # keeping only important columns\n\n\n\n  plot  n2o_ppb\n1  102 1116.372\n2  103 1718.560\n3  104 2724.623\n\n\n\n\n\n\n\n\n\n\nTip\n\n\nCode is in itself documentation of each step you do. Adding comments with # make it even more understandable."
+  },
+  {
+    "objectID": "talks/2023_dssem-reptools/deck/index.html#static-scripts-with-.txt-or-.r",
+    "href": "talks/2023_dssem-reptools/deck/index.html#static-scripts-with-.txt-or-.r",
+    "title": "Bastos Lab",
+    "section": "Static scripts with .txt or .R",
+    "text": "Static scripts with .txt or .R"
+  },
+  {
+    "objectID": "talks/2023_dssem-reptools/deck/index.html#improvement-using-an-ide",
+    "href": "talks/2023_dssem-reptools/deck/index.html#improvement-using-an-ide",
+    "title": "Bastos Lab",
+    "section": "Improvement: using an IDE",
+    "text": "Improvement: using an IDE"
+  },
+  {
+    "objectID": "talks/2023_dssem-reptools/deck/index.html#literate-progamming",
+    "href": "talks/2023_dssem-reptools/deck/index.html#literate-progamming",
+    "title": "Bastos Lab",
+    "section": "Literate progamming",
+    "text": "Literate progamming\n\nMixes code, output, and narrative on the same file\nExamples:"
+  },
+  {
+    "objectID": "talks/2023_dssem-reptools/deck/index.html#quarto-rstudio",
+    "href": "talks/2023_dssem-reptools/deck/index.html#quarto-rstudio",
+    "title": "Bastos Lab",
+    "section": "quarto + RStudio",
+    "text": "quarto + RStudio"
+  },
+  {
+    "objectID": "talks/2023_dssem-reptools/deck/index.html#can-i-go-back-in-time",
+    "href": "talks/2023_dssem-reptools/deck/index.html#can-i-go-back-in-time",
+    "title": "Bastos Lab",
+    "section": "Can I go back in time?",
+    "text": "Can I go back in time?\n\nSituation: you spent the whole week working on an analysis, only to find out it didn’t work as expected OR you got stuck with multiple bugs.\n\n\nSituation #2: at some point your script had an important piece of code, but at the time you thought you didn’t need it anymore and deleted those lines.\n\n\nWouldn’t it be nice/useful/graduate-school-life-saving if you could simply go back in time and start fresh from your latest working version?"
+  },
+  {
+    "objectID": "talks/2023_dssem-reptools/deck/index.html#welcome-in-version-control",
+    "href": "talks/2023_dssem-reptools/deck/index.html#welcome-in-version-control",
+    "title": "Bastos Lab",
+    "section": "Welcome in, version control",
+    "text": "Welcome in, version control\n\nThink of “track changes”, but on any file type\n\nEspecially useful for script files (.Rmd, .qmd)\n\nAs your code grows and develops, snapshots are saved allowing you to retrieve different versions\n\nThis connects your current-self with your past-self (what were I thinking when I decided on doing this step?)\nLocally (in your own machine), use"
+  },
+  {
+    "objectID": "talks/2023_dssem-reptools/deck/index.html#git-works-locally",
+    "href": "talks/2023_dssem-reptools/deck/index.html#git-works-locally",
+    "title": "Bastos Lab",
+    "section": "git works locally",
+    "text": "git works locally\n\ngit is powerful on its own, but it only acts locally\n\nIt becomes really powerful when we can have its features working online\n\nWorking with it online also happens to be perfect for collaboration and sharing 🤝"
+  },
+  {
+    "objectID": "talks/2023_dssem-reptools/deck/index.html#welcome-in-github",
+    "href": "talks/2023_dssem-reptools/deck/index.html#welcome-in-github",
+    "title": "Bastos Lab",
+    "section": "Welcome in, GitHub",
+    "text": "Welcome in, GitHub\n\nGitHub is an online centralized platform that combines git, collaborative tools, and cloud storage, all free 💸\nYou can choose if your projects hosted on GitHub (i.e., a repository) can be seen by everyone (public) or only by you and invited collaborators (private)"
+  },
+  {
+    "objectID": "talks/2023_dssem-reptools/deck/index.html#github-demo",
+    "href": "talks/2023_dssem-reptools/deck/index.html#github-demo",
+    "title": "Bastos Lab",
+    "section": "GitHub demo",
+    "text": "GitHub demo\n\nI’ll show you next one of my GitHub repositories\n\nThis repository was used to conduct the entire analytic flow of a manuscript among 2 collaborators\n\nBoth collaborators had local versions on their computers, and GitHub served as the “merging” point\n\n\n\nhttps://github.com/leombastos/BangPolder"
+  },
+  {
+    "objectID": "talks/2023_dssem-reptools/deck/index.html#things-change",
+    "href": "talks/2023_dssem-reptools/deck/index.html#things-change",
+    "title": "Bastos Lab",
+    "section": "Things change",
+    "text": "Things change\n\nComputer operating systems get updated\n\nR gets updated\n\nRStudio gets updated\n\nR packages get updated\n\n\n\nEven if we are working off of the same GitHub repository, our local software versions may differ, which can cause discrepancies and issues that may impact reproducibility."
+  },
+  {
+    "objectID": "talks/2023_dssem-reptools/deck/index.html#containerizing-projects",
+    "href": "talks/2023_dssem-reptools/deck/index.html#containerizing-projects",
+    "title": "Bastos Lab",
+    "section": "Containerizing projects",
+    "text": "Containerizing projects\n\nTo avoid discrepancies of software versions, we can use containers\n\nContainers keep track of all software versions in a project, and ship that project with those default versions\n\nThis ensures the project is reproducible not only for collaborators, but also your future self\n\nOne example of container software is"
+  },
+  {
+    "objectID": "talks/2023_dssem-reptools/deck/index.html#reproducible-science-is-about",
+    "href": "talks/2023_dssem-reptools/deck/index.html#reproducible-science-is-about",
+    "title": "Bastos Lab",
+    "section": "🚧 ⏩ 🦸 Reproducible science is about…",
+    "text": "🚧 ⏩ 🦸 Reproducible science is about…\n\nUsing sensible file names\n\nOrganizing files in sensible sub-folders\n\nUsing free programming language software\n\nUsing literate programming tools\n\nUsing version control locally\n\nUsing distributed version control to collaborate and share data and code\n\nUsing containers\n\nOthers (custom functions, iteration, code peer-review, etc.)"
+  },
+  {
+    "objectID": "talks/2023_dssem-reptools/deck/index.html#personal-marketing",
+    "href": "talks/2023_dssem-reptools/deck/index.html#personal-marketing",
+    "title": "Bastos Lab",
+    "section": "Personal marketing",
+    "text": "Personal marketing\n\n\n\nThis entire presentation was made with quarto, and its source code is available on my GitHub\nYou can find more info on my lab’s website (also made with quarto): Bastos Lab \n\n\n\n\nYou can also find stats programing teaching material (video+code) on my website\nWish to learn and apply these concepts to your own research?\nApplications of data science in ag research, Spring 2024\nThanks! 🙏 💻"
   },
   {
     "objectID": "talks/2022_uga-plantpath/index.html",
@@ -466,7 +669,7 @@
     "href": "index.html#talks-upcoming-and-recent",
     "title": "Bastos Lab",
     "section": "Talks, Upcoming and Recent",
-    "text": "Talks, Upcoming and Recent\n\n\n\n\n\n\n\n\n\n\n2023 Southeast Regional Fruit and Vegetable Conference\n\n\n\nJan 7, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCrop Sciences Seminar Series, University of Illinois at Urbana-Champaign\n\n\n\nNov 30, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPlant Pathology Seminar Series, University of Georgia\n\n\n\nNov 21, 2022\n\n\n\n\n\n\n\n\nNo matching items\n\n\n See all"
+    "text": "Talks, Upcoming and Recent\n\n\n\n\n\n\n\n\n\n\nCrop Sciences Seminar Series, University of Illinois at Urbana-Champaign\n\n\n\nJan 20, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2023 Southeast Regional Fruit and Vegetable Conference\n\n\n\nJan 7, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCrop Sciences Seminar Series, University of Illinois at Urbana-Champaign\n\n\n\nNov 30, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPlant Pathology Seminar Series, University of Georgia\n\n\n\nNov 21, 2022\n\n\n\n\n\n\n\n\nNo matching items\n\n\n  \n\n\n See all"
   },
   {
     "objectID": "team/team.html",

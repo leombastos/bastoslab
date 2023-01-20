@@ -102,7 +102,8 @@ ul.task-list li input[type="checkbox"] {
 
     const options = {
       valueNames: ['listing-image','listing-subtitle','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
+      page: 3,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
       searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
     };
 
@@ -288,7 +289,26 @@ No matching items
 <h2 class="anchored" data-anchor-id="talks-upcoming-and-recent"><strong>Talks</strong>, Upcoming and Recent</h2>
 <div id="listing-talks" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-date-sort="1673067600000" data-listing-file-modified-sort="1673226031076" data-listing-reading-time-sort="0.155">
+<div class="g-col-1" data-index="0" data-listing-date-sort="1674190800000" data-listing-file-modified-sort="1674232494814" data-listing-reading-time-sort="0.18">
+<a href="./talks/2023_dssem-reptools/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./talks/2023_dssem-reptools/featured.png" class="thumbnail-image card-img" style="height: 15em;">
+</p>
+<div class="card-body post-contents">
+<div class="card-subtitle listing-subtitle">
+Crop Sciences Seminar Series, University of Illinois at Urbana-Champaign
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Jan 20, 2023
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-listing-date-sort="1673067600000" data-listing-file-modified-sort="1673226031076" data-listing-reading-time-sort="0.155">
 <a href="./talks/2023_serfvc-imagery/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -307,7 +327,7 @@ Jan 7, 2023
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-date-sort="1669784400000" data-listing-file-modified-sort="1673013715187" data-listing-reading-time-sort="0.18">
+<div class="g-col-1" data-index="2" data-listing-date-sort="1669784400000" data-listing-file-modified-sort="1673013715187" data-listing-reading-time-sort="0.18">
 <a href="./talks/2022_uiuc-reptools/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -326,11 +346,11 @@ Nov 30, 2022
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-listing-date-sort="1669006800000" data-listing-file-modified-sort="1673013689954" data-listing-reading-time-sort="0.185">
+<div class="g-col-1" data-index="3" data-listing-date-sort="1669006800000" data-listing-file-modified-sort="1673013689954" data-listing-reading-time-sort="0.185">
 <a href="./talks/2022_uga-plantpath/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img src="./talks/2022_uga-plantpath/featured.png" class="thumbnail-image card-img" style="height: 15em;">
+<img data-src="./talks/2022_uga-plantpath/featured.png" class="thumbnail-image card-img" style="height: 15em;">
 </p>
 <div class="card-body post-contents">
 <div class="card-subtitle listing-subtitle">
@@ -349,6 +369,9 @@ Nov 21, 2022
 <div class="listing-no-matching d-none">
 No matching items
 </div>
+<nav id="talks-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
 </div>
 <p><a href="../talks/talks.html"> <button type="button" class="btn btn-primary float-end btn-sm">See all</button></a></p>
 <p><br></p>
