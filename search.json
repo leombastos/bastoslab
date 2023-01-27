@@ -833,6 +833,13 @@
     "text": "Interested in “attending” the workshop?\n\nGo to this GitHub repository and download it to your computer (click on the green “Code” button above and select “Download ZIP”).\nUnzip the repository, launch the RStudio project (by clicking on the “2021_rworkshop_multivariate.Rproj” file).\nOn RStudio, go to the “Files” tab (lower right), click on folder “markdown”, and open file\n\n“day1_partial.Rmd” for day 1\n\n“day2_partial.Rmd” for day 2\n\nYou can code along with us by watching the following YouTube videos:\n\nday 1\n\n\n\n\n\nday 2"
   },
   {
+    "objectID": "teaching/2023-apa/notes.html",
+    "href": "teaching/2023-apa/notes.html",
+    "title": "Notes",
+    "section": "",
+    "text": "1 - Assignment #2 submission\nWhat: assignment #2 where students need to do data wrangling and submit.\nHow it was: asking them to just copy and paste the table (which is difficult because it is printed as tibble with only 10 rows.)\nHow it could be next time: ask them to send a screen shot of code, export output, and send output csv."
+  },
+  {
     "objectID": "teaching/2023-apa/2023-apa.html",
     "href": "teaching/2023-apa/2023-apa.html",
     "title": "CRSS 4060/6060\nAdvc. Topics in Precision Ag.\nBastos Material\n(UGA Spring 2023)",
@@ -1027,6 +1034,132 @@
     "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
     "section": "Getting ready for next class",
     "text": "Getting ready for next class\nTo be ready for next class (Intro to R), please go to the course main page and follow the link to the Lab 01 prep page.\n\nIf you have questions or issues, email me before class.\nWe will have limited time to troubleshoot technical problems during next period."
+  },
+  {
+    "objectID": "teaching/2023-apa/slides/lec08-nass.html#main-geospatial-data-types",
+    "href": "teaching/2023-apa/slides/lec08-nass.html#main-geospatial-data-types",
+    "title": "Geospatial data types,\nCRS, and\nNASS",
+    "section": "2 main geospatial data types",
+    "text": "2 main geospatial data types\n\nVector\nRaster"
+  },
+  {
+    "objectID": "teaching/2023-apa/slides/lec08-nass.html#vector-formats",
+    "href": "teaching/2023-apa/slides/lec08-nass.html#vector-formats",
+    "title": "Geospatial data types,\nCRS, and\nNASS",
+    "section": "Vector formats",
+    "text": "Vector formats\nCommonly known as shapefiles (ESRI nomenclature)\n\n\n\n\n\n\n\n  \n  \n    \n      Format\n      Extension\n    \n  \n  \n    ESRI shapefile\n\n.shp, .shx, .dbf., .prj\n\n    GeoJSON\n\n.json, .geojson\n\n    KML\n\n.kml, .kmz"
+  },
+  {
+    "objectID": "teaching/2023-apa/slides/lec08-nass.html#vector-types",
+    "href": "teaching/2023-apa/slides/lec08-nass.html#vector-types",
+    "title": "Geospatial data types,\nCRS, and\nNASS",
+    "section": "Vector types",
+    "text": "Vector types\nVector data comprises points, lines, polygons, and their combinations."
+  },
+  {
+    "objectID": "teaching/2023-apa/slides/lec08-nass.html#vector-data-in-r",
+    "href": "teaching/2023-apa/slides/lec08-nass.html#vector-data-in-r",
+    "title": "Geospatial data types,\nCRS, and\nNASS",
+    "section": "Vector data in R",
+    "text": "Vector data in R\n\n\n\npackage sp:\n\nfirst to be created\ncomplicated file structure (data + spatial info)\n\ndifficult to manipulate data frame\n\nnot pipeable\n\n\n\n\n\npackage sf:\n\nnewer than sp\n\naddresses sp shortcomings\n\nthis is what we will use"
+  },
+  {
+    "objectID": "teaching/2023-apa/slides/lec08-nass.html#raster-formats",
+    "href": "teaching/2023-apa/slides/lec08-nass.html#raster-formats",
+    "title": "Geospatial data types,\nCRS, and\nNASS",
+    "section": "Raster formats",
+    "text": "Raster formats\nMost common in ag is .tif.\n\n\n\n\n\n\n\n  \n  \n    \n      Format\n      Extension\n    \n  \n  \n    TIFF/COG\n\n.tiff, .tif, .tff\n\n    ASCII Grid\n\n.asc\n\n    Bitmap\n\n.bmp\n\n  \n  \n  \n\n\n\n\nFull list here"
+  },
+  {
+    "objectID": "teaching/2023-apa/slides/lec08-nass.html#raster-types",
+    "href": "teaching/2023-apa/slides/lec08-nass.html#raster-types",
+    "title": "Geospatial data types,\nCRS, and\nNASS",
+    "section": "Raster types",
+    "text": "Raster types\nRaster data is normally originated from an imagery source OR point-based interpolated map/grid (continuous coverage)."
+  },
+  {
+    "objectID": "teaching/2023-apa/slides/lec08-nass.html#raster-data-in-r",
+    "href": "teaching/2023-apa/slides/lec08-nass.html#raster-data-in-r",
+    "title": "Geospatial data types,\nCRS, and\nNASS",
+    "section": "Raster data in R",
+    "text": "Raster data in R\n\n\n\npackages raster and terra:\n\nraster was first in R\n\nterra newer, faster, not pipeable\n\n\n\n\n\npackage stars:\n\nnewer than raster\n\npipeable\n\nshares concepts with sf\n\nthis is what we will use (for the most part)"
+  },
+  {
+    "objectID": "teaching/2023-apa/slides/lec08-nass.html#vector-vs.-raster",
+    "href": "teaching/2023-apa/slides/lec08-nass.html#vector-vs.-raster",
+    "title": "Geospatial data types,\nCRS, and\nNASS",
+    "section": "Vector vs. Raster",
+    "text": "Vector vs. Raster"
+  },
+  {
+    "objectID": "teaching/2023-apa/slides/lec08-nass.html#geographic-coordinate-systems",
+    "href": "teaching/2023-apa/slides/lec08-nass.html#geographic-coordinate-systems",
+    "title": "Geospatial data types,\nCRS, and\nNASS",
+    "section": "Geographic coordinate systems",
+    "text": "Geographic coordinate systems\n\nLat/Long (WGS84) most common"
+  },
+  {
+    "objectID": "teaching/2023-apa/slides/lec08-nass.html#projected-coordinate-system",
+    "href": "teaching/2023-apa/slides/lec08-nass.html#projected-coordinate-system",
+    "title": "Geospatial data types,\nCRS, and\nNASS",
+    "section": "Projected coordinate system",
+    "text": "Projected coordinate system\n\nUniversal Transverse Mercator (UTM) most common\n\nUTM has zones\n\nIn GA, 2 zones (16N, 17N)"
+  },
+  {
+    "objectID": "teaching/2023-apa/slides/lec08-nass.html#geographic-vs.-projected-m",
+    "href": "teaching/2023-apa/slides/lec08-nass.html#geographic-vs.-projected-m",
+    "title": "Geospatial data types,\nCRS, and\nNASS",
+    "section": "Geographic (°) vs. Projected (m)",
+    "text": "Geographic (°) vs. Projected (m)"
+  },
+  {
+    "objectID": "teaching/2023-apa/slides/lec08-nass.html#quick-reference-for-different-crss",
+    "href": "teaching/2023-apa/slides/lec08-nass.html#quick-reference-for-different-crss",
+    "title": "Geospatial data types,\nCRS, and\nNASS",
+    "section": "Quick reference for different CRSs",
+    "text": "Quick reference for different CRSs\n\nEPSG code\n\nWGS84: EPSG = 4326\nUTM NAD83 Zone 17N: EPSG = 6346"
+  },
+  {
+    "objectID": "teaching/2023-apa/slides/lec08-nass.html#geospatial-data-types-quiz",
+    "href": "teaching/2023-apa/slides/lec08-nass.html#geospatial-data-types-quiz",
+    "title": "Geospatial data types,\nCRS, and\nNASS",
+    "section": "Geospatial data types quiz",
+    "text": "Geospatial data types quiz\nList each geospatial data layer in the map below (give a descriptive name), and tell me if it is vector or raster. Tip: look closely, there are more than 2.\n\nSend me your answer by email to lmbastos@uga.edu. You have 5 min (this will count for your attendance too)."
+  },
+  {
+    "objectID": "teaching/2023-apa/slides/lec08-nass.html#usda-nass",
+    "href": "teaching/2023-apa/slides/lec08-nass.html#usda-nass",
+    "title": "Geospatial data types,\nCRS, and\nNASS",
+    "section": "USDA NASS",
+    "text": "USDA NASS\n\nLOTS of information about US agriculture\n\nSome examples:\n\nplanted and harvested area time series\nyield time series\n\nproduction time series\n\nFor lots of different crops, and different geographic levels (from county to nation)"
+  },
+  {
+    "objectID": "teaching/2023-apa/slides/lec08-nass.html#usda-nass-quickstats-portal",
+    "href": "teaching/2023-apa/slides/lec08-nass.html#usda-nass-quickstats-portal",
+    "title": "Geospatial data types,\nCRS, and\nNASS",
+    "section": "USDA NASS QuickStats portal",
+    "text": "USDA NASS QuickStats portal\n\nUSDA portal to query and download NASS data\n\nFree, open source data\n\nFeel free to explore following this link"
+  },
+  {
+    "objectID": "teaching/2023-apa/slides/lec08-nass.html#advanced-pa-and-nass",
+    "href": "teaching/2023-apa/slides/lec08-nass.html#advanced-pa-and-nass",
+    "title": "Geospatial data types,\nCRS, and\nNASS",
+    "section": "Advanced PA and NASS",
+    "text": "Advanced PA and NASS\nLet’s download some data and bring into R\n\nGo to the portal\n\nLet’s query and download data for soybeans production in bushels in GA at the county level for all years available\n\nwent to browser…"
+  },
+  {
+    "objectID": "teaching/2023-apa/slides/lec08-nass.html#query-selections",
+    "href": "teaching/2023-apa/slides/lec08-nass.html#query-selections",
+    "title": "Geospatial data types,\nCRS, and\nNASS",
+    "section": "Query selections",
+    "text": "Query selections\nSector: CROPS\nGroup: FIELD CROPS\nCommodity: SOYBEANS\nCategory: PRODUCTION\nData item: PRODUCTION MEASURED IN BU\nGeographic level: COUNTY\nState: GEORGIA\nYear: select all\nClick “Get data”\nClick “Spreadsheet”"
+  },
+  {
+    "objectID": "teaching/2023-apa/slides/lec08-nass.html#after-downloading",
+    "href": "teaching/2023-apa/slides/lec08-nass.html#after-downloading",
+    "title": "Geospatial data types,\nCRS, and\nNASS",
+    "section": "After downloading…",
+    "text": "After downloading…\nRename file to soybeans_nass.csv\nIn your course folder, create “02 NASS” folder\nInside it, create data, code, output\nMove soybeans_nass.csv into data\nLaunch RStudio, create a new project at the 02 NASS folder level\nCreate a new script file (quarto)\nLet’s explore this data set"
   },
   {
     "objectID": "teaching/2023-apa/slides/lab01-prep.html",
