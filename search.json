@@ -1036,6 +1036,13 @@
     "text": "Getting ready for next class\nTo be ready for next class (Intro to R), please go to the course main page and follow the link to the Lab 01 prep page.\n\nIf you have questions or issues, email me before class.\nWe will have limited time to troubleshoot technical problems during next period."
   },
   {
+    "objectID": "teaching/2023-apa/slides/lec11-miniproject.html",
+    "href": "teaching/2023-apa/slides/lec11-miniproject.html",
+    "title": "Mini-project assignments",
+    "section": "",
+    "text": "Here is the table with the mini-project commodity and category assignment:\n\n\n\n\n\n\n  \n  \n    \n      name\n      commodity\n      category\n    \n  \n  \n    Herring\nCotton\nYield\n    Jakhar\nCorn\nHarvested Area\n    Bhattarai\nPecan\nYield\n    Williams\nCotton\nProduction\n    Smith\nPeanuts\nHarvested Area\n    Singletary\nPeanuts\nPlanted Area\n    Kiobia\nPecan\nArea Bearing\n    Harper\nSoybeans\nPlanted Area\n    Collins\nCorn\nProduction\n    Hester\nSoybeans\nHarvested Area\n    Winkler\nCorn\nYield\n    K. Poudel\nPecan\nProduction\n    Tucker\nPeanuts\nYield\n    Hayes\nCorn\nPlanted Area\n    Ngimbwa\nCotton\nPlanted Area\n    S. Poudel\nSoybeans\nYield\n    Maktabi\nWheat\nProduction\n    Thapa\nCotton\nHarvested Area\n    Kilgore\nPeanuts\nProduction\n    Munir\nWheat\nYield"
+  },
+  {
     "objectID": "teaching/2023-apa/slides/lec08-nass.html#main-geospatial-data-types",
     "href": "teaching/2023-apa/slides/lec08-nass.html#main-geospatial-data-types",
     "title": "Geospatial data types,\nCRS, and\nNASS",
