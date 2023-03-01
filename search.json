@@ -1036,6 +1036,97 @@
     "text": "Getting ready for next class\nTo be ready for next class (Intro to R), please go to the course main page and follow the link to the Lab 01 prep page.\n\nIf you have questions or issues, email me before class.\nWe will have limited time to troubleshoot technical problems during next period."
   },
   {
+    "objectID": "teaching/2023-apa/slides/lec22-soileca.html#what-is-electrical-conductivity-ec",
+    "href": "teaching/2023-apa/slides/lec22-soileca.html#what-is-electrical-conductivity-ec",
+    "title": "Soil apparent electrical conductivity (ECa)",
+    "section": "What is electrical conductivity (EC)?",
+    "text": "What is electrical conductivity (EC)?\n\nMeasure of how much electrical current is conducted through a medium, measured in Siemens or milliSiemens/meter (S or mS/m)\nRelates to level of ionic charges able to conduct electrical current\nInitially developed to measure salt concentration in soil water and relate it back to crop growing suitability (saline/sodic soils)"
+  },
+  {
+    "objectID": "teaching/2023-apa/slides/lec22-soileca.html#how-has-it-been-traditionally-measured-in-soils",
+    "href": "teaching/2023-apa/slides/lec22-soileca.html#how-has-it-been-traditionally-measured-in-soils",
+    "title": "Soil apparent electrical conductivity (ECa)",
+    "section": "How has it been traditionally measured in soils?",
+    "text": "How has it been traditionally measured in soils?\n\nSoil sample is collected on the field, brought to a laboratory, saturated with water, and its extractant measured for electrical conductivity (ECe) between two electrodes.\nTime-consuming and labor-intensive, not feasible for PA applications."
+  },
+  {
+    "objectID": "teaching/2023-apa/slides/lec22-soileca.html#what-is-bulk-soil-apparent-electrical-conductivity-eca",
+    "href": "teaching/2023-apa/slides/lec22-soileca.html#what-is-bulk-soil-apparent-electrical-conductivity-eca",
+    "title": "Soil apparent electrical conductivity (ECa)",
+    "section": "What is bulk soil apparent electrical conductivity (ECa)?",
+    "text": "What is bulk soil apparent electrical conductivity (ECa)?\nBulk soil apparent electrical conductivity measures EC of bulk soil (liquid and solid phases)."
+  },
+  {
+    "objectID": "teaching/2023-apa/slides/lec22-soileca.html#how-can-soil-eca-be-measured-in-situ",
+    "href": "teaching/2023-apa/slides/lec22-soileca.html#how-can-soil-eca-be-measured-in-situ",
+    "title": "Soil apparent electrical conductivity (ECa)",
+    "section": "How can soil ECa be measured in-situ?",
+    "text": "How can soil ECa be measured in-situ?\nThree methods exist to measure in-situ bulk soil ECa:\n\nElectrical resistivity\n\nElectromagnetic induction\n\nTime-domain reflectometry (TDR)"
+  },
+  {
+    "objectID": "teaching/2023-apa/slides/lec22-soileca.html#electrical-resistivity",
+    "href": "teaching/2023-apa/slides/lec22-soileca.html#electrical-resistivity",
+    "title": "Soil apparent electrical conductivity (ECa)",
+    "section": "1. Electrical resistivity",
+    "text": "1. Electrical resistivity\n\nCommercial example: Veris 3100\n\n\n\n\n\n\n\n\n\nDifferent disk distances relate to different soil depths."
+  },
+  {
+    "objectID": "teaching/2023-apa/slides/lec22-soileca.html#electromagnetic-induction",
+    "href": "teaching/2023-apa/slides/lec22-soileca.html#electromagnetic-induction",
+    "title": "Soil apparent electrical conductivity (ECa)",
+    "section": "2. Electromagnetic induction",
+    "text": "2. Electromagnetic induction\n\nCommercial example: Geonics EM38\n\n\n\n\n\n\n\n\n\nFixed depth, no flexibility to change it."
+  },
+  {
+    "objectID": "teaching/2023-apa/slides/lec22-soileca.html#time-domain-reflectometry-tdr",
+    "href": "teaching/2023-apa/slides/lec22-soileca.html#time-domain-reflectometry-tdr",
+    "title": "Soil apparent electrical conductivity (ECa)",
+    "section": "3. Time-domain reflectometry (TDR)",
+    "text": "3. Time-domain reflectometry (TDR)\n\n\n\n\n\n\n\n\nLeast scalable among the in-situ methods."
+  },
+  {
+    "objectID": "teaching/2023-apa/slides/lec22-soileca.html#what-affects-soil-eca",
+    "href": "teaching/2023-apa/slides/lec22-soileca.html#what-affects-soil-eca",
+    "title": "Soil apparent electrical conductivity (ECa)",
+    "section": "What affects soil ECa?",
+    "text": "What affects soil ECa?\n\nSoil salinity\n\nSoil water content\nSoil texture\n\nSoil temperature\n\nSoil organic matter content\n\nSoil bulk density/porosity\n\n\n\n\n\n\n\n\n\n\n\nBecause it is affected by so many factors, soil ECa data can only be interpreted within the context of a given field, and not used to compare across fields."
+  },
+  {
+    "objectID": "teaching/2023-apa/slides/lec22-soileca.html#soil-salinity-vs.-soil-eca",
+    "href": "teaching/2023-apa/slides/lec22-soileca.html#soil-salinity-vs.-soil-eca",
+    "title": "Soil apparent electrical conductivity (ECa)",
+    "section": "soil salinity vs. soil ECa",
+    "text": "soil salinity vs. soil ECa\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAs solution salinity (ECe) increases, bulk soil conductivity (ECa) also increases\nDifferent lines are different soils"
+  },
+  {
+    "objectID": "teaching/2023-apa/slides/lec22-soileca.html#soil-water-content-vs.-soil-eca",
+    "href": "teaching/2023-apa/slides/lec22-soileca.html#soil-water-content-vs.-soil-eca",
+    "title": "Soil apparent electrical conductivity (ECa)",
+    "section": "soil water content vs. soil ECa",
+    "text": "soil water content vs. soil ECa\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAs soil volumetric content (\\(\\theta\\)) increases, bulk soil conductivity (ECa = \\(\\sigma_a\\)) increases, modulated by solution salinity (ECe = \\(\\sigma_w\\))\nImportant when taking EC data, need similar levels of soil moisture across a field for quality EC data"
+  },
+  {
+    "objectID": "teaching/2023-apa/slides/lec22-soileca.html#soil-texture-vs.-soil-eca",
+    "href": "teaching/2023-apa/slides/lec22-soileca.html#soil-texture-vs.-soil-eca",
+    "title": "Soil apparent electrical conductivity (ECa)",
+    "section": "soil texture vs. soil ECa",
+    "text": "soil texture vs. soil ECa"
+  },
+  {
+    "objectID": "teaching/2023-apa/slides/lec22-soileca.html#why-is-soil-eca-important-in-pa",
+    "href": "teaching/2023-apa/slides/lec22-soileca.html#why-is-soil-eca-important-in-pa",
+    "title": "Soil apparent electrical conductivity (ECa)",
+    "section": "Why is soil ECa important in PA?",
+    "text": "Why is soil ECa important in PA?\n\n\n\nWhen soil ECa is mostly controlled by texture, it can be used to create texture-based zones.\n\n\n\nImportant in PA as texture can be correlated with yield limiting factors like water/nutrient availability and CEC."
+  },
+  {
+    "objectID": "teaching/2023-apa/slides/lec22-soileca.html#quiz",
+    "href": "teaching/2023-apa/slides/lec22-soileca.html#quiz",
+    "title": "Soil apparent electrical conductivity (ECa)",
+    "section": "Quiz",
+    "text": "Quiz\n\nOverall, is lower or higher ECa better for crop yield?\n\nWhy?\n\nCan you think of and describe a case where it may be the opposite relationship as what you answered first?"
+  },
+  {
     "objectID": "teaching/2023-apa/slides/lec11-miniproject.html",
     "href": "teaching/2023-apa/slides/lec11-miniproject.html",
     "title": "Mini-project assignments",
