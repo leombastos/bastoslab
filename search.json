@@ -774,7 +774,7 @@
     "href": "teaching/teaching.html#workshops",
     "title": "Teaching",
     "section": "Workshops 💻",
-    "text": "Workshops 💻\nRegression for optimum and prediction\nData wrangling and iteration\nMultivariate analysis\nAgronomy Society R beginner bootcamp\nExperimental Design, ANOVA, and Regression\nIntro to R"
+    "text": "Workshops 💻\nASA AgHackathon: SMAP soil VWC data Regression for optimum and prediction\nData wrangling and iteration\nMultivariate analysis\nAgronomy Society R beginner bootcamp\nExperimental Design, ANOVA, and Regression\nIntro to R"
   },
   {
     "objectID": "teaching/teaching.html#courses",
@@ -803,6 +803,48 @@
     "title": "Intro to R Workshop",
     "section": "Interested in “attending” the workshop?",
     "text": "Interested in “attending” the workshop?\n\nGo to this GitHub repository and download it to your computer (click on the green “Code” button above and select “Download ZIP”).\nUnzip the repository, launch the RStudio project (by clicking on the “2019_rworkshop_introtoR.Rproj” file).\nOn RStudio, go to the “Files” tab (lower right), click on folder “markdown”, and open file\n\n“Basic1_partial.R” for day 1, basics\n“Intermediate1_partial.Rmd” for day 1, intermediate\n\n“Intermediate2_partial.Rmd” for day 2, intermediate\n\nYou can code along with us by watching the following YouTube videos:\n\nday 1\n\n\n\n\n\nday 2"
+  },
+  {
+    "objectID": "teaching/2023-aghack-vwc/2023-aghack-vwc.html",
+    "href": "teaching/2023-aghack-vwc/2023-aghack-vwc.html",
+    "title": "2023 ASA AgHackathon - Soil Volumetric Water Content",
+    "section": "",
+    "text": "Hey there!\nThis is a public GitHub repository to share the files needed for the 2023 ASA AgHackathon - Soil Volumetric Water Content Workshop, taught by @leombastos.\nThe workshop was presented on September 5th 2023 for ~2 hours where we covered:\n\nUSDA/NASA Crop-CASMA\n\nSMAP open data on soil volumetric water content\n\nRetrieving and downloading SMAP data\n\nProcessing, extracting, and plotting SMAP data for study sites\n\nThe slides for this workshop can be found here."
+  },
+  {
+    "objectID": "teaching/2023-aghack-vwc/2023-aghack-vwc-pres.html#smap-products",
+    "href": "teaching/2023-aghack-vwc/2023-aghack-vwc-pres.html#smap-products",
+    "title": "ASA Ag Hackathon Workshop Series:\nVolumetric Water Content",
+    "section": "SMAP products",
+    "text": "SMAP products\nThere are 7 data product levels depending on processing stage:\n\n\n\n\n\n\n\nNote\n\n\nWe will focus on Level 4 data only."
+  },
+  {
+    "objectID": "teaching/2023-aghack-vwc/2023-aghack-vwc-pres.html#smap-level-4-products",
+    "href": "teaching/2023-aghack-vwc/2023-aghack-vwc-pres.html#smap-level-4-products",
+    "title": "ASA Ag Hackathon Workshop Series:\nVolumetric Water Content",
+    "section": "SMAP Level 4 products",
+    "text": "SMAP Level 4 products\nEven just within level 4 products, there are lots of variables!\nThey vary based on:\n\n\n\nVariable of interest:\n\nVolumetric water content\n\nSoil moisture anomaly\n\nSoil moisture condition (categorical)\n\n\n\n\nSpatial resolution:\n\n1 km\n\n9 km"
+  },
+  {
+    "objectID": "teaching/2023-aghack-vwc/2023-aghack-vwc-pres.html#smap-level-4-products-1",
+    "href": "teaching/2023-aghack-vwc/2023-aghack-vwc-pres.html#smap-level-4-products-1",
+    "title": "ASA Ag Hackathon Workshop Series:\nVolumetric Water Content",
+    "section": "SMAP Level 4 products",
+    "text": "SMAP Level 4 products\nEven just within level 4 products, there are lots of variables!\nThey vary based on:\n\n\n\nSpatial extent (soil depth):\n\ntop soil (top 5 cm)\n\nsub soil (top 100 cm)\n\n\n\n\nTemporal resolution:\n\nEvery 3 hours\n\nDaily\n\nEvery 3 days\n\nWeekly\n\nMulti-year average\n\n\n\n\n\nFor a list of all level 4 products, check this resource."
+  },
+  {
+    "objectID": "teaching/2023-aghack-vwc/2023-aghack-vwc-pres.html#smap-level-4-products-2",
+    "href": "teaching/2023-aghack-vwc/2023-aghack-vwc-pres.html#smap-level-4-products-2",
+    "title": "ASA Ag Hackathon Workshop Series:\nVolumetric Water Content",
+    "section": "SMAP Level 4 products",
+    "text": "SMAP Level 4 products"
+  },
+  {
+    "objectID": "teaching/2023-aghack-vwc/2023-aghack-vwc-pres.html#smap-validation",
+    "href": "teaching/2023-aghack-vwc/2023-aghack-vwc-pres.html#smap-validation",
+    "title": "ASA Ag Hackathon Workshop Series:\nVolumetric Water Content",
+    "section": "SMAP validation",
+    "text": "SMAP validation\nSMAP-derived data is validated through a network of soil moisture sensing stations across the USA.\n\n\nFor more information on how SMAP products are derived and how they are validated, check the full paper here."
   },
   {
     "objectID": "teaching/2024-dsa/notes.html",
