@@ -809,7 +809,14 @@
     "href": "teaching/2023-aghack-vwc/2023-aghack-vwc.html",
     "title": "2023 ASA AgHackathon - Soil Volumetric Water Content",
     "section": "",
-    "text": "Hey there!\nThis is a public GitHub repository to share the files needed for the 2023 ASA AgHackathon - Soil Volumetric Water Content Workshop, taught by @leombastos.\nThe workshop was presented on September 5th 2023 for ~2 hours where we covered:\n\nUSDA/NASA Crop-CASMA\n\nSMAP open data on soil volumetric water content\n\nRetrieving and downloading SMAP data\n\nProcessing, extracting, and plotting SMAP data for study sites\n\nThe slides for this workshop can be found here."
+    "text": "Hey there!\nThis is a public GitHub repository to share the files needed for the 2023 ASA AgHackathon - Soil Volumetric Water Content Workshop, taught by @leombastos.\nThe workshop was presented on September 5th 2023 for ~2 hours where we covered:"
+  },
+  {
+    "objectID": "teaching/2023-aghack-vwc/2023-aghack-vwc.html#interested-in-attending-the-workshop",
+    "href": "teaching/2023-aghack-vwc/2023-aghack-vwc.html#interested-in-attending-the-workshop",
+    "title": "2023 ASA AgHackathon - Soil Volumetric Water Content",
+    "section": "Interested in “attending” the workshop?",
+    "text": "Interested in “attending” the workshop?\n\nFollow the slide deck here\nGo to this GitHub repository and download it to your computer (click on the green “Code” button above and select “Download ZIP”).\nUnzip the repository, launch the RStudio project (by clicking on the “2023_aghack_vwc.Rproj” file).\nOn RStudio, go to the “Files” tab (lower right), click on folder “code”, and open file\n\n“01 download.qmd” for retrieving and downloading SMAP data\n“02 visualization” for wrangling and visualizing the dowloaded data"
   },
   {
     "objectID": "teaching/2023-aghack-vwc/2023-aghack-vwc-pres.html#smap-products",
