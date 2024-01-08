@@ -2450,6 +2450,13 @@
     "text": "Technology and software requirements\nStudents will need to have access to:\n\nA computer 💻 (to install software, code along with instructors)\n\nA second screen 📺 (main screen to code along, second screen to watch class if not in person)\n\n\nIf a student does not have access to these resources (personal laptop/desktop and a second screen), please let instructors know to ensure proper accommodations can be made."
   },
   {
+    "objectID": "teaching/2024-ppa/slides/lec01.html#ai-llms-and-plagiarism",
+    "href": "teaching/2024-ppa/slides/lec01.html#ai-llms-and-plagiarism",
+    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "section": "AI, LLMs, and plagiarism",
+    "text": "AI, LLMs, and plagiarism\nYou are allowed to use LLMs like ChatGPT on your coding assignments, as long as\n\nyou use it to learn, not to simply copy/paste\n\nyou give appropriate credit\n\n\nPlagiarism, both from your classmates AND LLMs, is a serious violation of code of conduct and will be reported to university officials"
+  },
+  {
     "objectID": "teaching/2024-ppa/slides/lec01.html#survey",
     "href": "teaching/2024-ppa/slides/lec01.html#survey",
     "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
@@ -2475,7 +2482,7 @@
     "href": "teaching/2024-ppa/slides/lab01-prep.html",
     "title": "Intro to R prep - Software requirements",
     "section": "",
-    "text": "Before our first lab (Wed, Jan 11), you will need to:"
+    "text": "Before our first lab (Wed, Jan 10), you will need to:"
   },
   {
     "objectID": "teaching/2024-ppa/slides/lab01-prep.html#install-r",
@@ -2503,7 +2510,7 @@
     "href": "teaching/2024-ppa/slides/lab01-prep.html#install-packages",
     "title": "Intro to R prep - Software requirements",
     "section": "4. Install packages  ",
-    "text": "4. Install packages  \nIf you are not familiar with R lingo, you can think of a package as an app on your phone: a package will extend R functionality by making available to you extra software options that do not come pre-installed with R.\nWe will be using multiple packages that need to be installed, and doing so before the first lab period (Jan 11) will ensure that no one gets behind.\nAfter installing R and RStudio, and downloading the material from GitHub, follow these steps:\n\nUnzip the file downloaded from GitHub, move the unzipped folder to your desktop.\nOpen the main folder “2023_AdPA”, and then open the sub-folder “01-packages”.\nDouble-click the R script file “before_installpackages.R” (this will open it in RStudio).\nOn the same RStudio window that just opened, install each package at a time by placing your cursor on the first script line and hitting Ctrl + return (Windows) or Command + return (Mac)\nSome text will start appearing on the console as the packages get installed. If successfully installed, you should see a message similar to this:\n\n\n“The downloaded binary packages are in /var/folders/88/ldswt2_n3lj26hwzphp9fmj00000gn/T//RtmpeRvdJ7/downloaded_packages”.\n\n\nKeep running each line as described above until you reach the last package installation (script line 13)\n\nTo ensure that each package was installed, run the code starting with library(\"ggplot2\"), line by line (from script lines 17 to 27).\nIf after running the library() function you get an error message like\n\n\n\n\n\n\nWarning\n\n\n\nError in library(“packagename”) :**\n**there is no package called packagename\n\n\nThis means the package was not properly installed and you may need help."
+    "text": "4. Install packages  \nIf you are not familiar with R lingo, you can think of a package as an app on your phone: a package will extend R functionality by making available to you extra software options that do not come pre-installed with R.\nWe will be using multiple packages that need to be installed, and doing so before the first lab period (Jan 10) will ensure that no one gets behind.\nAfter installing R and RStudio, and downloading the material from GitHub, follow these steps:\n\nUnzip the file downloaded from GitHub, move the unzipped folder to your desktop.\nOpen the main folder “2024_ppa”, and then open the sub-folder “01-packages”.\nDouble-click the R script file “before_installpackages.R” (this will open it in RStudio).\nOn the same RStudio window that just opened, install each package at a time by placing your cursor on the first script line and hitting Ctrl + return (Windows) or Command + return (Mac)\nSome text will start appearing on the console as the packages get installed. If successfully installed, you should see a message similar to this:\n\n\n“The downloaded binary packages are in /var/folders/88/ldswt2_n3lj26hwzphp9fmj00000gn/T//RtmpeRvdJ7/downloaded_packages”.\n\n\nKeep running each line as described above until you reach the last package installation (script line 13)\n\nTo ensure that each package was installed, run the code starting with library(\"ggplot2\"), line by line (from script lines 17 to 27).\nIf after running the library() function you get an error message like\n\n\n\n\n\n\nWarning\n\n\n\nError in library(“packagename”) :**\n**there is no package called packagename\n\n\nThis means the package was not properly installed and you may need help."
   },
   {
     "objectID": "teaching/2024-ppa/slides/lab01-prep.html#sign-up-for-a-free-github-account",
