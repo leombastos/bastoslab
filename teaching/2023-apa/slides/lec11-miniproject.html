@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.269">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,7 +17,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
@@ -57,17 +57,18 @@ ul.task-list li input[type="checkbox"] {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
 
 <link rel="stylesheet" href="../../../styles.css">
 <meta property="og:title" content="Bastos Lab - Mini-project assignments">
-<meta property="og:description" content="Here is the table with the mini-project commodity and category assignment:">
+<meta property="og:description" content="">
 <meta property="og:site-name" content="Bastos Lab">
 <meta name="twitter:title" content="Bastos Lab - Mini-project assignments">
-<meta name="twitter:description" content="Here is the table with the mini-project commodity and category assignment:">
+<meta name="twitter:description" content="">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -82,49 +83,49 @@ ul.task-list li input[type="checkbox"] {
     <img src="../../../images/logo.png" alt="" class="navbar-logo">
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../index.html">
+    <a class="nav-link" href="../../../index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../team/team.html">
+    <a class="nav-link" href="../../../team/team.html" rel="" target="">
  <span class="menu-text">Team</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../projects/projects.html">
+    <a class="nav-link" href="../../../projects/projects.html" rel="" target="">
  <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../talks/talks.html">
+    <a class="nav-link" href="../../../talks/talks.html" rel="" target="">
  <span class="menu-text">Talks</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../teaching/teaching.html">
+    <a class="nav-link" href="../../../teaching/teaching.html" rel="" target="">
  <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../culture/culture.html">
+    <a class="nav-link" href="../../../culture/culture.html" rel="" target="">
  <span class="menu-text">Lab manual</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../protocols/protocols.html">
+    <a class="nav-link" href="../../../protocols/protocols.html" rel="" target="">
  <span class="menu-text">Protocols</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/leombastos"><i class="bi bi-github" role="img" aria-label="GitHub">
+    <a class="nav-link" href="https://github.com/leombastos" rel="" target=""><i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
 </ul>
-              <div class="quarto-toggle-container">
-                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-              </div>
-              <div id="quarto-search" class="" title="Search"></div>
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -132,9 +133,10 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     
 </nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
     </div>
@@ -167,7 +169,7 @@ ul.task-list li input[type="checkbox"] {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-:where(#vbqgkbkkrz) .gt_table {
+#vbqgkbkkrz .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -192,7 +194,7 @@ ul.task-list li input[type="checkbox"] {
   border-left-color: #D3D3D3;
 }
 
-:where(#vbqgkbkkrz) .gt_heading {
+#vbqgkbkkrz .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -204,12 +206,12 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-:where(#vbqgkbkkrz) .gt_caption {
+#vbqgkbkkrz .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-:where(#vbqgkbkkrz) .gt_title {
+#vbqgkbkkrz .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -221,7 +223,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-width: 0;
 }
 
-:where(#vbqgkbkkrz) .gt_subtitle {
+#vbqgkbkkrz .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -233,13 +235,13 @@ ul.task-list li input[type="checkbox"] {
   border-top-width: 0;
 }
 
-:where(#vbqgkbkkrz) .gt_bottom_border {
+#vbqgkbkkrz .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-:where(#vbqgkbkkrz) .gt_col_headings {
+#vbqgkbkkrz .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -254,7 +256,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-:where(#vbqgkbkkrz) .gt_col_heading {
+#vbqgkbkkrz .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -274,7 +276,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-:where(#vbqgkbkkrz) .gt_column_spanner_outer {
+#vbqgkbkkrz .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -286,15 +288,15 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 4px;
 }
 
-:where(#vbqgkbkkrz) .gt_column_spanner_outer:first-child {
+#vbqgkbkkrz .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-:where(#vbqgkbkkrz) .gt_column_spanner_outer:last-child {
+#vbqgkbkkrz .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-:where(#vbqgkbkkrz) .gt_column_spanner {
+#vbqgkbkkrz .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -306,7 +308,7 @@ ul.task-list li input[type="checkbox"] {
   width: 100%;
 }
 
-:where(#vbqgkbkkrz) .gt_group_heading {
+#vbqgkbkkrz .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -332,7 +334,7 @@ ul.task-list li input[type="checkbox"] {
   text-align: left;
 }
 
-:where(#vbqgkbkkrz) .gt_empty_group_heading {
+#vbqgkbkkrz .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -347,15 +349,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 
-:where(#vbqgkbkkrz) .gt_from_md > :first-child {
+#vbqgkbkkrz .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-:where(#vbqgkbkkrz) .gt_from_md > :last-child {
+#vbqgkbkkrz .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-:where(#vbqgkbkkrz) .gt_row {
+#vbqgkbkkrz .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -374,7 +376,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-:where(#vbqgkbkkrz) .gt_stub {
+#vbqgkbkkrz .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -387,7 +389,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-:where(#vbqgkbkkrz) .gt_stub_row_group {
+#vbqgkbkkrz .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -401,11 +403,11 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: top;
 }
 
-:where(#vbqgkbkkrz) .gt_row_group_first td {
+#vbqgkbkkrz .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-:where(#vbqgkbkkrz) .gt_summary_row {
+#vbqgkbkkrz .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -415,16 +417,16 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-:where(#vbqgkbkkrz) .gt_first_summary_row {
+#vbqgkbkkrz .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-:where(#vbqgkbkkrz) .gt_first_summary_row.thick {
+#vbqgkbkkrz .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-:where(#vbqgkbkkrz) .gt_last_summary_row {
+#vbqgkbkkrz .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -434,7 +436,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-:where(#vbqgkbkkrz) .gt_grand_summary_row {
+#vbqgkbkkrz .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -444,7 +446,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-:where(#vbqgkbkkrz) .gt_first_grand_summary_row {
+#vbqgkbkkrz .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -454,11 +456,11 @@ ul.task-list li input[type="checkbox"] {
   border-top-color: #D3D3D3;
 }
 
-:where(#vbqgkbkkrz) .gt_striped {
+#vbqgkbkkrz .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-:where(#vbqgkbkkrz) .gt_table_body {
+#vbqgkbkkrz .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -467,7 +469,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-:where(#vbqgkbkkrz) .gt_footnotes {
+#vbqgkbkkrz .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -481,7 +483,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-:where(#vbqgkbkkrz) .gt_footnote {
+#vbqgkbkkrz .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -490,7 +492,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-:where(#vbqgkbkkrz) .gt_sourcenotes {
+#vbqgkbkkrz .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -504,7 +506,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-:where(#vbqgkbkkrz) .gt_sourcenote {
+#vbqgkbkkrz .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -512,141 +514,180 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-:where(#vbqgkbkkrz) .gt_left {
+#vbqgkbkkrz .gt_left {
   text-align: left;
 }
 
-:where(#vbqgkbkkrz) .gt_center {
+#vbqgkbkkrz .gt_center {
   text-align: center;
 }
 
-:where(#vbqgkbkkrz) .gt_right {
+#vbqgkbkkrz .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-:where(#vbqgkbkkrz) .gt_font_normal {
+#vbqgkbkkrz .gt_font_normal {
   font-weight: normal;
 }
 
-:where(#vbqgkbkkrz) .gt_font_bold {
+#vbqgkbkkrz .gt_font_bold {
   font-weight: bold;
 }
 
-:where(#vbqgkbkkrz) .gt_font_italic {
+#vbqgkbkkrz .gt_font_italic {
   font-style: italic;
 }
 
-:where(#vbqgkbkkrz) .gt_super {
+#vbqgkbkkrz .gt_super {
   font-size: 65%;
 }
 
-:where(#vbqgkbkkrz) .gt_footnote_marks {
+#vbqgkbkkrz .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-:where(#vbqgkbkkrz) .gt_asterisk {
+#vbqgkbkkrz .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-:where(#vbqgkbkkrz) .gt_indent_1 {
+#vbqgkbkkrz .gt_indent_1 {
   text-indent: 5px;
 }
 
-:where(#vbqgkbkkrz) .gt_indent_2 {
+#vbqgkbkkrz .gt_indent_2 {
   text-indent: 10px;
 }
 
-:where(#vbqgkbkkrz) .gt_indent_3 {
+#vbqgkbkkrz .gt_indent_3 {
   text-indent: 15px;
 }
 
-:where(#vbqgkbkkrz) .gt_indent_4 {
+#vbqgkbkkrz .gt_indent_4 {
   text-indent: 20px;
 }
 
-:where(#vbqgkbkkrz) .gt_indent_5 {
+#vbqgkbkkrz .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
-<table class="gt_table">
-  
-  <thead class="gt_col_headings">
-    <tr>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="name">name</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="commodity">commodity</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="category">category</th>
-    </tr>
-  </thead>
-  <tbody class="gt_table_body">
-    <tr><td headers="name" class="gt_row gt_left">Herring</td>
-<td headers="commodity" class="gt_row gt_left">Cotton</td>
-<td headers="category" class="gt_row gt_left">Yield</td></tr>
-    <tr><td headers="name" class="gt_row gt_left">Jakhar</td>
-<td headers="commodity" class="gt_row gt_left">Corn</td>
-<td headers="category" class="gt_row gt_left">Harvested Area</td></tr>
-    <tr><td headers="name" class="gt_row gt_left">Bhattarai</td>
-<td headers="commodity" class="gt_row gt_left">Pecan</td>
-<td headers="category" class="gt_row gt_left">Area bearing - operations</td></tr>
-    <tr><td headers="name" class="gt_row gt_left">Williams</td>
-<td headers="commodity" class="gt_row gt_left">Cotton</td>
-<td headers="category" class="gt_row gt_left">Production</td></tr>
-    <tr><td headers="name" class="gt_row gt_left">Smith</td>
-<td headers="commodity" class="gt_row gt_left">Peanuts</td>
-<td headers="category" class="gt_row gt_left">Harvested Area</td></tr>
-    <tr><td headers="name" class="gt_row gt_left">Singletary</td>
-<td headers="commodity" class="gt_row gt_left">Peanuts</td>
-<td headers="category" class="gt_row gt_left">Planted Area</td></tr>
-    <tr><td headers="name" class="gt_row gt_left">Kiobia</td>
-<td headers="commodity" class="gt_row gt_left">Pecan</td>
-<td headers="category" class="gt_row gt_left">Area bearing - acres</td></tr>
-    <tr><td headers="name" class="gt_row gt_left">Harper</td>
-<td headers="commodity" class="gt_row gt_left">Soybeans</td>
-<td headers="category" class="gt_row gt_left">Planted Area</td></tr>
-    <tr><td headers="name" class="gt_row gt_left">Collins</td>
-<td headers="commodity" class="gt_row gt_left">Corn</td>
-<td headers="category" class="gt_row gt_left">Production</td></tr>
-    <tr><td headers="name" class="gt_row gt_left">Hester</td>
-<td headers="commodity" class="gt_row gt_left">Soybeans</td>
-<td headers="category" class="gt_row gt_left">Harvested Area</td></tr>
-    <tr><td headers="name" class="gt_row gt_left">Winkler</td>
-<td headers="commodity" class="gt_row gt_left">Corn</td>
-<td headers="category" class="gt_row gt_left">Yield</td></tr>
-    <tr><td headers="name" class="gt_row gt_left">K. Poudel</td>
-<td headers="commodity" class="gt_row gt_left">Pecan</td>
-<td headers="category" class="gt_row gt_left">Area bearing - improved acres</td></tr>
-    <tr><td headers="name" class="gt_row gt_left">Tucker</td>
-<td headers="commodity" class="gt_row gt_left">Peanuts</td>
-<td headers="category" class="gt_row gt_left">Yield</td></tr>
-    <tr><td headers="name" class="gt_row gt_left">Hayes</td>
-<td headers="commodity" class="gt_row gt_left">Corn</td>
-<td headers="category" class="gt_row gt_left">Planted Area</td></tr>
-    <tr><td headers="name" class="gt_row gt_left">Ngimbwa</td>
-<td headers="commodity" class="gt_row gt_left">Cotton</td>
-<td headers="category" class="gt_row gt_left">Planted Area</td></tr>
-    <tr><td headers="name" class="gt_row gt_left">S. Poudel</td>
-<td headers="commodity" class="gt_row gt_left">Soybeans</td>
-<td headers="category" class="gt_row gt_left">Yield</td></tr>
-    <tr><td headers="name" class="gt_row gt_left">Maktabi</td>
-<td headers="commodity" class="gt_row gt_left">Wheat</td>
-<td headers="category" class="gt_row gt_left">Production</td></tr>
-    <tr><td headers="name" class="gt_row gt_left">Thapa</td>
-<td headers="commodity" class="gt_row gt_left">Cotton</td>
-<td headers="category" class="gt_row gt_left">Harvested Area</td></tr>
-    <tr><td headers="name" class="gt_row gt_left">Kilgore</td>
-<td headers="commodity" class="gt_row gt_left">Peanuts</td>
-<td headers="category" class="gt_row gt_left">Production</td></tr>
-    <tr><td headers="name" class="gt_row gt_left">Munir</td>
-<td headers="commodity" class="gt_row gt_left">Wheat</td>
-<td headers="category" class="gt_row gt_left">Yield</td></tr>
-  </tbody>
-  
-  
+
+<table class="gt_table table table-sm table-striped small" data-quarto-postprocess="true">
+<thead class="gt_col_headings">
+<tr class="header">
+<th id="name" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">name</th>
+<th id="commodity" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">commodity</th>
+<th id="category" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">category</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_left" headers="name">Herring</td>
+<td class="gt_row gt_left" headers="commodity">Cotton</td>
+<td class="gt_row gt_left" headers="category">Yield</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="name">Jakhar</td>
+<td class="gt_row gt_left" headers="commodity">Corn</td>
+<td class="gt_row gt_left" headers="category">Harvested Area</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="name">Bhattarai</td>
+<td class="gt_row gt_left" headers="commodity">Pecan</td>
+<td class="gt_row gt_left" headers="category">Area bearing - operations</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="name">Williams</td>
+<td class="gt_row gt_left" headers="commodity">Cotton</td>
+<td class="gt_row gt_left" headers="category">Production</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="name">Smith</td>
+<td class="gt_row gt_left" headers="commodity">Peanuts</td>
+<td class="gt_row gt_left" headers="category">Harvested Area</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="name">Singletary</td>
+<td class="gt_row gt_left" headers="commodity">Peanuts</td>
+<td class="gt_row gt_left" headers="category">Planted Area</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="name">Kiobia</td>
+<td class="gt_row gt_left" headers="commodity">Pecan</td>
+<td class="gt_row gt_left" headers="category">Area bearing - acres</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="name">Harper</td>
+<td class="gt_row gt_left" headers="commodity">Soybeans</td>
+<td class="gt_row gt_left" headers="category">Planted Area</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="name">Collins</td>
+<td class="gt_row gt_left" headers="commodity">Corn</td>
+<td class="gt_row gt_left" headers="category">Production</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="name">Hester</td>
+<td class="gt_row gt_left" headers="commodity">Soybeans</td>
+<td class="gt_row gt_left" headers="category">Harvested Area</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="name">Winkler</td>
+<td class="gt_row gt_left" headers="commodity">Corn</td>
+<td class="gt_row gt_left" headers="category">Yield</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="name">K. Poudel</td>
+<td class="gt_row gt_left" headers="commodity">Pecan</td>
+<td class="gt_row gt_left" headers="category">Area bearing - improved acres</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="name">Tucker</td>
+<td class="gt_row gt_left" headers="commodity">Peanuts</td>
+<td class="gt_row gt_left" headers="category">Yield</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="name">Hayes</td>
+<td class="gt_row gt_left" headers="commodity">Corn</td>
+<td class="gt_row gt_left" headers="category">Planted Area</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="name">Ngimbwa</td>
+<td class="gt_row gt_left" headers="commodity">Cotton</td>
+<td class="gt_row gt_left" headers="category">Planted Area</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="name">S. Poudel</td>
+<td class="gt_row gt_left" headers="commodity">Soybeans</td>
+<td class="gt_row gt_left" headers="category">Yield</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="name">Maktabi</td>
+<td class="gt_row gt_left" headers="commodity">Wheat</td>
+<td class="gt_row gt_left" headers="category">Production</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="name">Thapa</td>
+<td class="gt_row gt_left" headers="commodity">Cotton</td>
+<td class="gt_row gt_left" headers="category">Harvested Area</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="name">Kilgore</td>
+<td class="gt_row gt_left" headers="commodity">Peanuts</td>
+<td class="gt_row gt_left" headers="category">Production</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="name">Munir</td>
+<td class="gt_row gt_left" headers="commodity">Wheat</td>
+<td class="gt_row gt_left" headers="category">Yield</td>
+</tr>
+</tbody>
 </table>
+
 </div>
 </div>
 </div>
@@ -796,9 +837,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -863,6 +918,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -906,6 +1047,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left"><span> Blog made with <a href="https://quarto.org/">Quarto</a>, by Leo Bastos. License: <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a>. </span></div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
     <div class="nav-footer-right"><img src="../../../images/UGA-logo.png" style="float:right;height:60px"></div>
   </div>
 </footer>

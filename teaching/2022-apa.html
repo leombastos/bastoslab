@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.269">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -20,7 +20,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
@@ -60,7 +60,8 @@ ul.task-list li input[type="checkbox"] {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
@@ -70,14 +71,16 @@ ul.task-list li input[type="checkbox"] {
 Advc. Topics in Precision Ag.
 Bastos Material
 (UGA Spring 2022)">
-<meta property="og:description" content="Hi there!">
+<meta property="og:description" content="">
+<meta property="og:image" content="https://leombastos.github.io/bastoslab/teaching/data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgcm9sZT0iaW1nIiB2aWV3Ym94PSIwIDAgNTc2IDUxMiIgc3R5bGU9ImhlaWdodDoxLjc4ZW07d2lkdGg6MmVtO3ZlcnRpY2FsLWFsaWduOi0wLjEyNWVtO21hcmdpbi1sZWZ0OmF1dG87bWFyZ2luLXJpZ2h0OmF1dG87Zm9udC1zaXplOmluaGVyaXQ7ZmlsbDpjdXJyZW50Q29sb3I7b3ZlcmZsb3c6dmlzaWJsZTtwb3NpdGlvbjpyZWxhdGl2ZTsiPjxwYXRoIGQ9Ik01NDkuNyAxMjQuMWMtNi4yODEtMjMuNjUtMjQuNzktNDIuMjgtNDguMjgtNDguNkM0NTguOCA2NCAyODggNjQgMjg4IDY0UzExNy4yIDY0IDc0LjYzIDc1LjQ5Yy0yMy41IDYuMzIyLTQyIDI0Ljk1LTQ4LjI4IDQ4LjYtMTEuNDEgNDIuODctMTEuNDEgMTMyLjMtMTEuNDEgMTMyLjNzMCA4OS40NCAxMS40MSAxMzIuM2M2LjI4MSAyMy42NSAyNC43OSA0MS41IDQ4LjI4IDQ3LjgyQzExNy4yIDQ0OCAyODggNDQ4IDI4OCA0NDhzMTcwLjggMCAyMTMuNC0xMS40OWMyMy41LTYuMzIxIDQyLTI0LjE3IDQ4LjI4LTQ3LjgyIDExLjQxLTQyLjg3IDExLjQxLTEzMi4zIDExLjQxLTEzMi4zczAtODkuNDQtMTEuNDEtMTMyLjN6bS0zMTcuNSAyMTMuNVYxNzUuMmwxNDIuNyA4MS4yMS0xNDIuNyA4MS4yeiI+PC9wYXRoPjwvc3ZnPg==">
 <meta property="og:site-name" content="Bastos Lab">
 <meta name="twitter:title" content="Bastos Lab - CRSS 4060/6060
 Advc. Topics in Precision Ag.
 Bastos Material
 (UGA Spring 2022)">
-<meta name="twitter:description" content="Hi there!">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="https://leombastos.github.io/bastoslab/teaching/data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgcm9sZT0iaW1nIiB2aWV3Ym94PSIwIDAgNTc2IDUxMiIgc3R5bGU9ImhlaWdodDoxLjc4ZW07d2lkdGg6MmVtO3ZlcnRpY2FsLWFsaWduOi0wLjEyNWVtO21hcmdpbi1sZWZ0OmF1dG87bWFyZ2luLXJpZ2h0OmF1dG87Zm9udC1zaXplOmluaGVyaXQ7ZmlsbDpjdXJyZW50Q29sb3I7b3ZlcmZsb3c6dmlzaWJsZTtwb3NpdGlvbjpyZWxhdGl2ZTsiPjxwYXRoIGQ9Ik01NDkuNyAxMjQuMWMtNi4yODEtMjMuNjUtMjQuNzktNDIuMjgtNDguMjgtNDguNkM0NTguOCA2NCAyODggNjQgMjg4IDY0UzExNy4yIDY0IDc0LjYzIDc1LjQ5Yy0yMy41IDYuMzIyLTQyIDI0Ljk1LTQ4LjI4IDQ4LjYtMTEuNDEgNDIuODctMTEuNDEgMTMyLjMtMTEuNDEgMTMyLjNzMCA4OS40NCAxMS40MSAxMzIuM2M2LjI4MSAyMy42NSAyNC43OSA0MS41IDQ4LjI4IDQ3LjgyQzExNy4yIDQ0OCAyODggNDQ4IDI4OCA0NDhzMTcwLjggMCAyMTMuNC0xMS40OWMyMy41LTYuMzIxIDQyLTI0LjE3IDQ4LjI4LTQ3LjgyIDExLjQxLTQyLjg3IDExLjQxLTEzMi4zIDExLjQxLTEzMi4zczAtODkuNDQtMTEuNDEtMTMyLjN6bS0zMTcuNSAyMTMuNVYxNzUuMmwxNDIuNyA4MS4yMS0xNDIuNyA4MS4yeiI+PC9wYXRoPjwvc3ZnPg==">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="floating nav-fixed">
@@ -91,49 +94,49 @@ Bastos Material
     <img src="../images/logo.png" alt="" class="navbar-logo">
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html">
+    <a class="nav-link" href="../index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../team/team.html">
+    <a class="nav-link" href="../team/team.html" rel="" target="">
  <span class="menu-text">Team</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../projects/projects.html">
+    <a class="nav-link" href="../projects/projects.html" rel="" target="">
  <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../talks/talks.html">
+    <a class="nav-link" href="../talks/talks.html" rel="" target="">
  <span class="menu-text">Talks</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../teaching/teaching.html">
+    <a class="nav-link" href="../teaching/teaching.html" rel="" target="">
  <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../culture/culture.html">
+    <a class="nav-link" href="../culture/culture.html" rel="" target="">
  <span class="menu-text">Lab manual</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../protocols/protocols.html">
+    <a class="nav-link" href="../protocols/protocols.html" rel="" target="">
  <span class="menu-text">Protocols</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/leombastos"><i class="bi bi-github" role="img" aria-label="GitHub">
+    <a class="nav-link" href="https://github.com/leombastos" rel="" target=""><i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
 </ul>
-              <div class="quarto-toggle-container">
-                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-              </div>
-              <div id="quarto-search" class="" title="Search"></div>
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -141,7 +144,7 @@ Bastos Material
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <nav id="TOC" role="doc-toc" class="toc-active">
    
   <ul>
@@ -151,6 +154,7 @@ Bastos Material
   </ul>
 </nav>
 </nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
     </div>
@@ -194,12 +198,12 @@ Bastos Material<br>
 <li><p>Create zone-based <strong>variable rate recommendation</strong>.</p></li>
 <li><p>Understand differences and value of spatial layers used in PA, including <strong>yield monitor</strong>, <strong>soils</strong>, and <strong>satellite remote sensing</strong> data.</p></li>
 </ul>
-<div class="callout-warning callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Warning
 </div>
 </div>
@@ -222,7 +226,7 @@ More details will be provided as the classes progress.</p>
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-:where(#holacjwqyi) .gt_table {
+#holacjwqyi .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -247,7 +251,7 @@ More details will be provided as the classes progress.</p>
   border-left-color: #D3D3D3;
 }
 
-:where(#holacjwqyi) .gt_heading {
+#holacjwqyi .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -259,12 +263,12 @@ More details will be provided as the classes progress.</p>
   border-right-color: #D3D3D3;
 }
 
-:where(#holacjwqyi) .gt_caption {
+#holacjwqyi .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-:where(#holacjwqyi) .gt_title {
+#holacjwqyi .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -276,7 +280,7 @@ More details will be provided as the classes progress.</p>
   border-bottom-width: 0;
 }
 
-:where(#holacjwqyi) .gt_subtitle {
+#holacjwqyi .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -288,13 +292,13 @@ More details will be provided as the classes progress.</p>
   border-top-width: 0;
 }
 
-:where(#holacjwqyi) .gt_bottom_border {
+#holacjwqyi .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-:where(#holacjwqyi) .gt_col_headings {
+#holacjwqyi .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -309,7 +313,7 @@ More details will be provided as the classes progress.</p>
   border-right-color: #D3D3D3;
 }
 
-:where(#holacjwqyi) .gt_col_heading {
+#holacjwqyi .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -329,7 +333,7 @@ More details will be provided as the classes progress.</p>
   overflow-x: hidden;
 }
 
-:where(#holacjwqyi) .gt_column_spanner_outer {
+#holacjwqyi .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -341,15 +345,15 @@ More details will be provided as the classes progress.</p>
   padding-right: 4px;
 }
 
-:where(#holacjwqyi) .gt_column_spanner_outer:first-child {
+#holacjwqyi .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-:where(#holacjwqyi) .gt_column_spanner_outer:last-child {
+#holacjwqyi .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-:where(#holacjwqyi) .gt_column_spanner {
+#holacjwqyi .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -361,7 +365,7 @@ More details will be provided as the classes progress.</p>
   width: 100%;
 }
 
-:where(#holacjwqyi) .gt_group_heading {
+#holacjwqyi .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -387,7 +391,7 @@ More details will be provided as the classes progress.</p>
   text-align: left;
 }
 
-:where(#holacjwqyi) .gt_empty_group_heading {
+#holacjwqyi .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -402,15 +406,15 @@ More details will be provided as the classes progress.</p>
   vertical-align: middle;
 }
 
-:where(#holacjwqyi) .gt_from_md > :first-child {
+#holacjwqyi .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-:where(#holacjwqyi) .gt_from_md > :last-child {
+#holacjwqyi .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-:where(#holacjwqyi) .gt_row {
+#holacjwqyi .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -429,7 +433,7 @@ More details will be provided as the classes progress.</p>
   overflow-x: hidden;
 }
 
-:where(#holacjwqyi) .gt_stub {
+#holacjwqyi .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -442,7 +446,7 @@ More details will be provided as the classes progress.</p>
   padding-right: 5px;
 }
 
-:where(#holacjwqyi) .gt_stub_row_group {
+#holacjwqyi .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -456,11 +460,11 @@ More details will be provided as the classes progress.</p>
   vertical-align: top;
 }
 
-:where(#holacjwqyi) .gt_row_group_first td {
+#holacjwqyi .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-:where(#holacjwqyi) .gt_summary_row {
+#holacjwqyi .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -470,16 +474,16 @@ More details will be provided as the classes progress.</p>
   padding-right: 5px;
 }
 
-:where(#holacjwqyi) .gt_first_summary_row {
+#holacjwqyi .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-:where(#holacjwqyi) .gt_first_summary_row.thick {
+#holacjwqyi .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-:where(#holacjwqyi) .gt_last_summary_row {
+#holacjwqyi .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -489,7 +493,7 @@ More details will be provided as the classes progress.</p>
   border-bottom-color: #D3D3D3;
 }
 
-:where(#holacjwqyi) .gt_grand_summary_row {
+#holacjwqyi .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -499,7 +503,7 @@ More details will be provided as the classes progress.</p>
   padding-right: 5px;
 }
 
-:where(#holacjwqyi) .gt_first_grand_summary_row {
+#holacjwqyi .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -509,11 +513,11 @@ More details will be provided as the classes progress.</p>
   border-top-color: #D3D3D3;
 }
 
-:where(#holacjwqyi) .gt_striped {
+#holacjwqyi .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-:where(#holacjwqyi) .gt_table_body {
+#holacjwqyi .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -522,7 +526,7 @@ More details will be provided as the classes progress.</p>
   border-bottom-color: #D3D3D3;
 }
 
-:where(#holacjwqyi) .gt_footnotes {
+#holacjwqyi .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -536,7 +540,7 @@ More details will be provided as the classes progress.</p>
   border-right-color: #D3D3D3;
 }
 
-:where(#holacjwqyi) .gt_footnote {
+#holacjwqyi .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -545,7 +549,7 @@ More details will be provided as the classes progress.</p>
   padding-right: 5px;
 }
 
-:where(#holacjwqyi) .gt_sourcenotes {
+#holacjwqyi .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -559,7 +563,7 @@ More details will be provided as the classes progress.</p>
   border-right-color: #D3D3D3;
 }
 
-:where(#holacjwqyi) .gt_sourcenote {
+#holacjwqyi .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -567,258 +571,415 @@ More details will be provided as the classes progress.</p>
   padding-right: 5px;
 }
 
-:where(#holacjwqyi) .gt_left {
+#holacjwqyi .gt_left {
   text-align: left;
 }
 
-:where(#holacjwqyi) .gt_center {
+#holacjwqyi .gt_center {
   text-align: center;
 }
 
-:where(#holacjwqyi) .gt_right {
+#holacjwqyi .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-:where(#holacjwqyi) .gt_font_normal {
+#holacjwqyi .gt_font_normal {
   font-weight: normal;
 }
 
-:where(#holacjwqyi) .gt_font_bold {
+#holacjwqyi .gt_font_bold {
   font-weight: bold;
 }
 
-:where(#holacjwqyi) .gt_font_italic {
+#holacjwqyi .gt_font_italic {
   font-style: italic;
 }
 
-:where(#holacjwqyi) .gt_super {
+#holacjwqyi .gt_super {
   font-size: 65%;
 }
 
-:where(#holacjwqyi) .gt_footnote_marks {
+#holacjwqyi .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-:where(#holacjwqyi) .gt_asterisk {
+#holacjwqyi .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-:where(#holacjwqyi) .gt_indent_1 {
+#holacjwqyi .gt_indent_1 {
   text-indent: 5px;
 }
 
-:where(#holacjwqyi) .gt_indent_2 {
+#holacjwqyi .gt_indent_2 {
   text-indent: 10px;
 }
 
-:where(#holacjwqyi) .gt_indent_3 {
+#holacjwqyi .gt_indent_3 {
   text-indent: 15px;
 }
 
-:where(#holacjwqyi) .gt_indent_4 {
+#holacjwqyi .gt_indent_4 {
   text-indent: 20px;
 }
 
-:where(#holacjwqyi) .gt_indent_5 {
+#holacjwqyi .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
-<table class="gt_table">
-  
-  <thead class="gt_col_headings">
-    <tr>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="Time">Time</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="Activity">Activity</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="Video">Video</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="Partial Code">Partial Code</th>
-    </tr>
-  </thead>
-  <tbody class="gt_table_body">
-    <tr><td headers="Time" class="gt_row gt_left"><div class="gt_from_md"><p>Mon, Feb 07<br>
+
+<table class="gt_table table table-sm table-striped small" data-quarto-postprocess="true">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead class="gt_col_headings">
+<tr class="header">
+<th id="Time" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Time</th>
+<th id="Activity" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Activity</th>
+<th id="Video" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Video</th>
+<th id="Partial Code" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Partial Code</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_left" headers="Time"><div class="gt_from_md">
+<p>Mon, Feb 07<br>
 (9:10-10:00)</p>
 </div></td>
-<td headers="Activity" class="gt_row gt_left"><div class="gt_from_md"><p>Website
-<br>
+<td class="gt_row gt_left" headers="Activity"><div class="gt_from_md">
+<p>Website<br>
 R &amp; RStudio intro pt.1</p>
 </div></td>
-<td headers="Video" class="gt_row gt_left"><div class="gt_from_md"><p><a href="https://tinyurl.com/58tmy923"><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1.78em;width:2em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M549.7 124.1c-6.281-23.65-24.79-42.28-48.28-48.6C458.8 64 288 64 288 64S117.2 64 74.63 75.49c-23.5 6.322-42 24.95-48.28 48.6-11.41 42.87-11.41 132.3-11.41 132.3s0 89.44 11.41 132.3c6.281 23.65 24.79 41.5 48.28 47.82C117.2 448 288 448 288 448s170.8 0 213.4-11.49c23.5-6.321 42-24.17 48.28-47.82 11.41-42.87 11.41-132.3 11.41-132.3s0-89.44-11.41-132.3zm-317.5 213.5V175.2l142.7 81.21-142.7 81.2z"></path></svg></a></p>
+<td class="gt_row gt_left" headers="Video"><div class="gt_from_md">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://tinyurl.com/58tmy923"><img src="data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgcm9sZT0iaW1nIiB2aWV3Ym94PSIwIDAgNTc2IDUxMiIgc3R5bGU9ImhlaWdodDoxLjc4ZW07d2lkdGg6MmVtO3ZlcnRpY2FsLWFsaWduOi0wLjEyNWVtO21hcmdpbi1sZWZ0OmF1dG87bWFyZ2luLXJpZ2h0OmF1dG87Zm9udC1zaXplOmluaGVyaXQ7ZmlsbDpjdXJyZW50Q29sb3I7b3ZlcmZsb3c6dmlzaWJsZTtwb3NpdGlvbjpyZWxhdGl2ZTsiPjxwYXRoIGQ9Ik01NDkuNyAxMjQuMWMtNi4yODEtMjMuNjUtMjQuNzktNDIuMjgtNDguMjgtNDguNkM0NTguOCA2NCAyODggNjQgMjg4IDY0UzExNy4yIDY0IDc0LjYzIDc1LjQ5Yy0yMy41IDYuMzIyLTQyIDI0Ljk1LTQ4LjI4IDQ4LjYtMTEuNDEgNDIuODctMTEuNDEgMTMyLjMtMTEuNDEgMTMyLjNzMCA4OS40NCAxMS40MSAxMzIuM2M2LjI4MSAyMy42NSAyNC43OSA0MS41IDQ4LjI4IDQ3LjgyQzExNy4yIDQ0OCAyODggNDQ4IDI4OCA0NDhzMTcwLjggMCAyMTMuNC0xMS40OWMyMy41LTYuMzIxIDQyLTI0LjE3IDQ4LjI4LTQ3LjgyIDExLjQxLTQyLjg3IDExLjQxLTEzMi4zIDExLjQxLTEzMi4zczAtODkuNDQtMTEuNDEtMTMyLjN6bS0zMTcuNSAyMTMuNVYxNzUuMmwxNDIuNyA4MS4yMS0xNDIuNyA4MS4yeiI+PC9wYXRoPjwvc3ZnPg==" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
 </div></td>
-<td headers="Partial Code" class="gt_row gt_left"><div class="gt_from_md"><p><a href="https://tinyurl.com/43s2bbbp"><svg aria-hidden="true" role="img" viewbox="0 0 496 512" style="height:2.06em;width:2em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg></a></p>
-</div></td></tr>
-    <tr><td headers="Time" class="gt_row gt_left"><div class="gt_from_md"><p>Wed, Feb 09<br>
+<td class="gt_row gt_left" headers="Partial Code"><div class="gt_from_md">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://tinyurl.com/43s2bbbp"><img src="data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgcm9sZT0iaW1nIiB2aWV3Ym94PSIwIDAgNDk2IDUxMiIgc3R5bGU9ImhlaWdodDoyLjA2ZW07d2lkdGg6MmVtO3ZlcnRpY2FsLWFsaWduOi0wLjEyNWVtO21hcmdpbi1sZWZ0OmF1dG87bWFyZ2luLXJpZ2h0OmF1dG87Zm9udC1zaXplOmluaGVyaXQ7ZmlsbDpjdXJyZW50Q29sb3I7b3ZlcmZsb3c6dmlzaWJsZTtwb3NpdGlvbjpyZWxhdGl2ZTsiPjxwYXRoIGQ9Ik0xNjUuOSAzOTcuNGMwIDItMi4zIDMuNi01LjIgMy42LTMuMyAuMy01LjYtMS4zLTUuNi0zLjYgMC0yIDIuMy0zLjYgNS4yLTMuNiAzLS4zIDUuNiAxLjMgNS42IDMuNnptLTMxLjEtNC41Yy0uNyAyIDEuMyA0LjMgNC4zIDQuOSAyLjYgMSA1LjYgMCA2LjItMnMtMS4zLTQuMy00LjMtNS4yYy0yLjYtLjctNS41IC4zLTYuMiAyLjN6bTQ0LjItMS43Yy0yLjkgLjctNC45IDIuNi00LjYgNC45IC4zIDIgMi45IDMuMyA1LjkgMi42IDIuOS0uNyA0LjktMi42IDQuNi00LjYtLjMtMS45LTMtMy4yLTUuOS0yLjl6TTI0NC44IDhDMTA2LjEgOCAwIDExMy4zIDAgMjUyYzAgMTEwLjkgNjkuOCAyMDUuOCAxNjkuNSAyMzkuMiAxMi44IDIuMyAxNy4zLTUuNiAxNy4zLTEyLjEgMC02LjItLjMtNDAuNC0uMy02MS40IDAgMC03MCAxNS04NC43LTI5LjggMCAwLTExLjQtMjkuMS0yNy44LTM2LjYgMCAwLTIyLjktMTUuNyAxLjYtMTUuNCAwIDAgMjQuOSAyIDM4LjYgMjUuOCAyMS45IDM4LjYgNTguNiAyNy41IDcyLjkgMjAuOSAyLjMtMTYgOC44LTI3LjEgMTYtMzMuNy01NS45LTYuMi0xMTIuMy0xNC4zLTExMi4zLTExMC41IDAtMjcuNSA3LjYtNDEuMyAyMy42LTU4LjktMi42LTYuNS0xMS4xLTMzLjMgMi42LTY3LjkgMjAuOS02LjUgNjkgMjcgNjkgMjcgMjAtNS42IDQxLjUtOC41IDYyLjgtOC41czQyLjggMi45IDYyLjggOC41YzAgMCA0OC4xLTMzLjYgNjktMjcgMTMuNyAzNC43IDUuMiA2MS40IDIuNiA2Ny45IDE2IDE3LjcgMjUuOCAzMS41IDI1LjggNTguOSAwIDk2LjUtNTguOSAxMDQuMi0xMTQuOCAxMTAuNSA5LjIgNy45IDE3IDIyLjkgMTcgNDYuNCAwIDMzLjctLjMgNzUuNC0uMyA4My42IDAgNi41IDQuNiAxNC40IDE3LjMgMTIuMUM0MjguMiA0NTcuOCA0OTYgMzYyLjkgNDk2IDI1MiA0OTYgMTEzLjMgMzgzLjUgOCAyNDQuOCA4ek05Ny4yIDM1Mi45Yy0xLjMgMS0xIDMuMyAuNyA1LjIgMS42IDEuNiAzLjkgMi4zIDUuMiAxIDEuMy0xIDEtMy4zLS43LTUuMi0xLjYtMS42LTMuOS0yLjMtNS4yLTF6bS0xMC44LTguMWMtLjcgMS4zIC4zIDIuOSAyLjMgMy45IDEuNiAxIDMuNiAuNyA0LjMtLjcgLjctMS4zLS4zLTIuOS0yLjMtMy45LTItLjYtMy42LS4zLTQuMyAuN3ptMzIuNCAzNS42Yy0xLjYgMS4zLTEgNC4zIDEuMyA2LjIgMi4zIDIuMyA1LjIgMi42IDYuNSAxIDEuMy0xLjMgLjctNC4zLTEuMy02LjItMi4yLTIuMy01LjItMi42LTYuNS0xem0tMTEuNC0xNC43Yy0xLjYgMS0xLjYgMy42IDAgNS45IDEuNiAyLjMgNC4zIDMuMyA1LjYgMi4zIDEuNi0xLjMgMS42LTMuOSAwLTYuMi0xLjQtMi4zLTQtMy4zLTUuNi0yeiI+PC9wYXRoPjwvc3ZnPg==" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div></td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Time"><div class="gt_from_md">
+<p>Wed, Feb 09<br>
 (9:10-11:10)</p>
 </div></td>
-<td headers="Activity" class="gt_row gt_left"><div class="gt_from_md"><p>R &amp; RStudio intro pt.2
-<br>
-RStudio projects
-<br>
-Rmarkdown
-<br>
+<td class="gt_row gt_left" headers="Activity"><div class="gt_from_md">
+<p>R &amp; RStudio intro pt.2<br>
+RStudio projects<br>
+Rmarkdown<br>
 Assignment #1 - Paper</p>
 </div></td>
-<td headers="Video" class="gt_row gt_left"><div class="gt_from_md"><p><a href="https://tinyurl.com/2ebw3a2m"><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1.78em;width:2em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M549.7 124.1c-6.281-23.65-24.79-42.28-48.28-48.6C458.8 64 288 64 288 64S117.2 64 74.63 75.49c-23.5 6.322-42 24.95-48.28 48.6-11.41 42.87-11.41 132.3-11.41 132.3s0 89.44 11.41 132.3c6.281 23.65 24.79 41.5 48.28 47.82C117.2 448 288 448 288 448s170.8 0 213.4-11.49c23.5-6.321 42-24.17 48.28-47.82 11.41-42.87 11.41-132.3 11.41-132.3s0-89.44-11.41-132.3zm-317.5 213.5V175.2l142.7 81.21-142.7 81.2z"></path></svg></a> <br>
-<a href="https://tinyurl.com/4z7tp4en"><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1.78em;width:2em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M549.7 124.1c-6.281-23.65-24.79-42.28-48.28-48.6C458.8 64 288 64 288 64S117.2 64 74.63 75.49c-23.5 6.322-42 24.95-48.28 48.6-11.41 42.87-11.41 132.3-11.41 132.3s0 89.44 11.41 132.3c6.281 23.65 24.79 41.5 48.28 47.82C117.2 448 288 448 288 448s170.8 0 213.4-11.49c23.5-6.321 42-24.17 48.28-47.82 11.41-42.87 11.41-132.3 11.41-132.3s0-89.44-11.41-132.3zm-317.5 213.5V175.2l142.7 81.21-142.7 81.2z"></path></svg></a></p>
+<td class="gt_row gt_left" headers="Video"><div class="gt_from_md">
+<p><a href="https://tinyurl.com/2ebw3a2m"><img src="data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgcm9sZT0iaW1nIiB2aWV3Ym94PSIwIDAgNTc2IDUxMiIgc3R5bGU9ImhlaWdodDoxLjc4ZW07d2lkdGg6MmVtO3ZlcnRpY2FsLWFsaWduOi0wLjEyNWVtO21hcmdpbi1sZWZ0OmF1dG87bWFyZ2luLXJpZ2h0OmF1dG87Zm9udC1zaXplOmluaGVyaXQ7ZmlsbDpjdXJyZW50Q29sb3I7b3ZlcmZsb3c6dmlzaWJsZTtwb3NpdGlvbjpyZWxhdGl2ZTsiPjxwYXRoIGQ9Ik01NDkuNyAxMjQuMWMtNi4yODEtMjMuNjUtMjQuNzktNDIuMjgtNDguMjgtNDguNkM0NTguOCA2NCAyODggNjQgMjg4IDY0UzExNy4yIDY0IDc0LjYzIDc1LjQ5Yy0yMy41IDYuMzIyLTQyIDI0Ljk1LTQ4LjI4IDQ4LjYtMTEuNDEgNDIuODctMTEuNDEgMTMyLjMtMTEuNDEgMTMyLjNzMCA4OS40NCAxMS40MSAxMzIuM2M2LjI4MSAyMy42NSAyNC43OSA0MS41IDQ4LjI4IDQ3LjgyQzExNy4yIDQ0OCAyODggNDQ4IDI4OCA0NDhzMTcwLjggMCAyMTMuNC0xMS40OWMyMy41LTYuMzIxIDQyLTI0LjE3IDQ4LjI4LTQ3LjgyIDExLjQxLTQyLjg3IDExLjQxLTEzMi4zIDExLjQxLTEzMi4zczAtODkuNDQtMTEuNDEtMTMyLjN6bS0zMTcuNSAyMTMuNVYxNzUuMmwxNDIuNyA4MS4yMS0xNDIuNyA4MS4yeiI+PC9wYXRoPjwvc3ZnPg==" class="img-fluid"></a><br>
+<a href="https://tinyurl.com/4z7tp4en"><img src="data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgcm9sZT0iaW1nIiB2aWV3Ym94PSIwIDAgNTc2IDUxMiIgc3R5bGU9ImhlaWdodDoxLjc4ZW07d2lkdGg6MmVtO3ZlcnRpY2FsLWFsaWduOi0wLjEyNWVtO21hcmdpbi1sZWZ0OmF1dG87bWFyZ2luLXJpZ2h0OmF1dG87Zm9udC1zaXplOmluaGVyaXQ7ZmlsbDpjdXJyZW50Q29sb3I7b3ZlcmZsb3c6dmlzaWJsZTtwb3NpdGlvbjpyZWxhdGl2ZTsiPjxwYXRoIGQ9Ik01NDkuNyAxMjQuMWMtNi4yODEtMjMuNjUtMjQuNzktNDIuMjgtNDguMjgtNDguNkM0NTguOCA2NCAyODggNjQgMjg4IDY0UzExNy4yIDY0IDc0LjYzIDc1LjQ5Yy0yMy41IDYuMzIyLTQyIDI0Ljk1LTQ4LjI4IDQ4LjYtMTEuNDEgNDIuODctMTEuNDEgMTMyLjMtMTEuNDEgMTMyLjNzMCA4OS40NCAxMS40MSAxMzIuM2M2LjI4MSAyMy42NSAyNC43OSA0MS41IDQ4LjI4IDQ3LjgyQzExNy4yIDQ0OCAyODggNDQ4IDI4OCA0NDhzMTcwLjggMCAyMTMuNC0xMS40OWMyMy41LTYuMzIxIDQyLTI0LjE3IDQ4LjI4LTQ3LjgyIDExLjQxLTQyLjg3IDExLjQxLTEzMi4zIDExLjQxLTEzMi4zczAtODkuNDQtMTEuNDEtMTMyLjN6bS0zMTcuNSAyMTMuNVYxNzUuMmwxNDIuNyA4MS4yMS0xNDIuNyA4MS4yeiI+PC9wYXRoPjwvc3ZnPg==" class="img-fluid"></a></p>
 </div></td>
-<td headers="Partial Code" class="gt_row gt_left"><div class="gt_from_md"><p><br>
-<a href="https://tinyurl.com/4jxw48hw"><svg aria-hidden="true" role="img" viewbox="0 0 496 512" style="height:2.06em;width:2em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg></a></p>
-</div></td></tr>
-    <tr><td headers="Time" class="gt_row gt_left"><div class="gt_from_md"><p>Fri, Feb 11<br>
+<td class="gt_row gt_left" headers="Partial Code"><div class="gt_from_md">
+<p><br>
+<a href="https://tinyurl.com/4jxw48hw"><img src="data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgcm9sZT0iaW1nIiB2aWV3Ym94PSIwIDAgNDk2IDUxMiIgc3R5bGU9ImhlaWdodDoyLjA2ZW07d2lkdGg6MmVtO3ZlcnRpY2FsLWFsaWduOi0wLjEyNWVtO21hcmdpbi1sZWZ0OmF1dG87bWFyZ2luLXJpZ2h0OmF1dG87Zm9udC1zaXplOmluaGVyaXQ7ZmlsbDpjdXJyZW50Q29sb3I7b3ZlcmZsb3c6dmlzaWJsZTtwb3NpdGlvbjpyZWxhdGl2ZTsiPjxwYXRoIGQ9Ik0xNjUuOSAzOTcuNGMwIDItMi4zIDMuNi01LjIgMy42LTMuMyAuMy01LjYtMS4zLTUuNi0zLjYgMC0yIDIuMy0zLjYgNS4yLTMuNiAzLS4zIDUuNiAxLjMgNS42IDMuNnptLTMxLjEtNC41Yy0uNyAyIDEuMyA0LjMgNC4zIDQuOSAyLjYgMSA1LjYgMCA2LjItMnMtMS4zLTQuMy00LjMtNS4yYy0yLjYtLjctNS41IC4zLTYuMiAyLjN6bTQ0LjItMS43Yy0yLjkgLjctNC45IDIuNi00LjYgNC45IC4zIDIgMi45IDMuMyA1LjkgMi42IDIuOS0uNyA0LjktMi42IDQuNi00LjYtLjMtMS45LTMtMy4yLTUuOS0yLjl6TTI0NC44IDhDMTA2LjEgOCAwIDExMy4zIDAgMjUyYzAgMTEwLjkgNjkuOCAyMDUuOCAxNjkuNSAyMzkuMiAxMi44IDIuMyAxNy4zLTUuNiAxNy4zLTEyLjEgMC02LjItLjMtNDAuNC0uMy02MS40IDAgMC03MCAxNS04NC43LTI5LjggMCAwLTExLjQtMjkuMS0yNy44LTM2LjYgMCAwLTIyLjktMTUuNyAxLjYtMTUuNCAwIDAgMjQuOSAyIDM4LjYgMjUuOCAyMS45IDM4LjYgNTguNiAyNy41IDcyLjkgMjAuOSAyLjMtMTYgOC44LTI3LjEgMTYtMzMuNy01NS45LTYuMi0xMTIuMy0xNC4zLTExMi4zLTExMC41IDAtMjcuNSA3LjYtNDEuMyAyMy42LTU4LjktMi42LTYuNS0xMS4xLTMzLjMgMi42LTY3LjkgMjAuOS02LjUgNjkgMjcgNjkgMjcgMjAtNS42IDQxLjUtOC41IDYyLjgtOC41czQyLjggMi45IDYyLjggOC41YzAgMCA0OC4xLTMzLjYgNjktMjcgMTMuNyAzNC43IDUuMiA2MS40IDIuNiA2Ny45IDE2IDE3LjcgMjUuOCAzMS41IDI1LjggNTguOSAwIDk2LjUtNTguOSAxMDQuMi0xMTQuOCAxMTAuNSA5LjIgNy45IDE3IDIyLjkgMTcgNDYuNCAwIDMzLjctLjMgNzUuNC0uMyA4My42IDAgNi41IDQuNiAxNC40IDE3LjMgMTIuMUM0MjguMiA0NTcuOCA0OTYgMzYyLjkgNDk2IDI1MiA0OTYgMTEzLjMgMzgzLjUgOCAyNDQuOCA4ek05Ny4yIDM1Mi45Yy0xLjMgMS0xIDMuMyAuNyA1LjIgMS42IDEuNiAzLjkgMi4zIDUuMiAxIDEuMy0xIDEtMy4zLS43LTUuMi0xLjYtMS42LTMuOS0yLjMtNS4yLTF6bS0xMC44LTguMWMtLjcgMS4zIC4zIDIuOSAyLjMgMy45IDEuNiAxIDMuNiAuNyA0LjMtLjcgLjctMS4zLS4zLTIuOS0yLjMtMy45LTItLjYtMy42LS4zLTQuMyAuN3ptMzIuNCAzNS42Yy0xLjYgMS4zLTEgNC4zIDEuMyA2LjIgMi4zIDIuMyA1LjIgMi42IDYuNSAxIDEuMy0xLjMgLjctNC4zLTEuMy02LjItMi4yLTIuMy01LjItMi42LTYuNS0xem0tMTEuNC0xNC43Yy0xLjYgMS0xLjYgMy42IDAgNS45IDEuNiAyLjMgNC4zIDMuMyA1LjYgMi4zIDEuNi0xLjMgMS42LTMuOSAwLTYuMi0xLjQtMi4zLTQtMy4zLTUuNi0yeiI+PC9wYXRoPjwvc3ZnPg==" class="img-fluid"></a></p>
+</div></td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Time"><div class="gt_from_md">
+<p>Fri, Feb 11<br>
 (9:10-10:00)</p>
 </div></td>
-<td headers="Activity" class="gt_row gt_left"><div class="gt_from_md"><p>(spatial) EDA</p>
+<td class="gt_row gt_left" headers="Activity"><div class="gt_from_md">
+<p>(spatial) EDA</p>
 </div></td>
-<td headers="Video" class="gt_row gt_left"><div class="gt_from_md"><p><a href="https://youtu.be/BE8dqiS53SQ"><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1.78em;width:2em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M549.7 124.1c-6.281-23.65-24.79-42.28-48.28-48.6C458.8 64 288 64 288 64S117.2 64 74.63 75.49c-23.5 6.322-42 24.95-48.28 48.6-11.41 42.87-11.41 132.3-11.41 132.3s0 89.44 11.41 132.3c6.281 23.65 24.79 41.5 48.28 47.82C117.2 448 288 448 288 448s170.8 0 213.4-11.49c23.5-6.321 42-24.17 48.28-47.82 11.41-42.87 11.41-132.3 11.41-132.3s0-89.44-11.41-132.3zm-317.5 213.5V175.2l142.7 81.21-142.7 81.2z"></path></svg></a></p>
+<td class="gt_row gt_left" headers="Video"><div class="gt_from_md">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://youtu.be/BE8dqiS53SQ"><img src="data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgcm9sZT0iaW1nIiB2aWV3Ym94PSIwIDAgNTc2IDUxMiIgc3R5bGU9ImhlaWdodDoxLjc4ZW07d2lkdGg6MmVtO3ZlcnRpY2FsLWFsaWduOi0wLjEyNWVtO21hcmdpbi1sZWZ0OmF1dG87bWFyZ2luLXJpZ2h0OmF1dG87Zm9udC1zaXplOmluaGVyaXQ7ZmlsbDpjdXJyZW50Q29sb3I7b3ZlcmZsb3c6dmlzaWJsZTtwb3NpdGlvbjpyZWxhdGl2ZTsiPjxwYXRoIGQ9Ik01NDkuNyAxMjQuMWMtNi4yODEtMjMuNjUtMjQuNzktNDIuMjgtNDguMjgtNDguNkM0NTguOCA2NCAyODggNjQgMjg4IDY0UzExNy4yIDY0IDc0LjYzIDc1LjQ5Yy0yMy41IDYuMzIyLTQyIDI0Ljk1LTQ4LjI4IDQ4LjYtMTEuNDEgNDIuODctMTEuNDEgMTMyLjMtMTEuNDEgMTMyLjNzMCA4OS40NCAxMS40MSAxMzIuM2M2LjI4MSAyMy42NSAyNC43OSA0MS41IDQ4LjI4IDQ3LjgyQzExNy4yIDQ0OCAyODggNDQ4IDI4OCA0NDhzMTcwLjggMCAyMTMuNC0xMS40OWMyMy41LTYuMzIxIDQyLTI0LjE3IDQ4LjI4LTQ3LjgyIDExLjQxLTQyLjg3IDExLjQxLTEzMi4zIDExLjQxLTEzMi4zczAtODkuNDQtMTEuNDEtMTMyLjN6bS0zMTcuNSAyMTMuNVYxNzUuMmwxNDIuNyA4MS4yMS0xNDIuNyA4MS4yeiI+PC9wYXRoPjwvc3ZnPg==" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
 </div></td>
-<td headers="Partial Code" class="gt_row gt_left"><div class="gt_from_md"></div></td></tr>
-    <tr><td headers="Time" class="gt_row gt_left"><div class="gt_from_md"><p>Mon, Feb 14<br>
+<td class="gt_row gt_left" headers="Partial Code"><div class="gt_from_md">
+
+</div></td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Time"><div class="gt_from_md">
+<p>Mon, Feb 14<br>
 (9:10-10:00)</p>
 </div></td>
-<td headers="Activity" class="gt_row gt_left"><div class="gt_from_md"><p>Assignment #1 DUE
-<br>
+<td class="gt_row gt_left" headers="Activity"><div class="gt_from_md">
+<p>Assignment #1 DUE<br>
 Yield data wrangling</p>
 </div></td>
-<td headers="Video" class="gt_row gt_left"><div class="gt_from_md"><p><a href="https://youtu.be/0PikvQ_Eyqg"><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1.78em;width:2em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M549.7 124.1c-6.281-23.65-24.79-42.28-48.28-48.6C458.8 64 288 64 288 64S117.2 64 74.63 75.49c-23.5 6.322-42 24.95-48.28 48.6-11.41 42.87-11.41 132.3-11.41 132.3s0 89.44 11.41 132.3c6.281 23.65 24.79 41.5 48.28 47.82C117.2 448 288 448 288 448s170.8 0 213.4-11.49c23.5-6.321 42-24.17 48.28-47.82 11.41-42.87 11.41-132.3 11.41-132.3s0-89.44-11.41-132.3zm-317.5 213.5V175.2l142.7 81.21-142.7 81.2z"></path></svg></a></p>
+<td class="gt_row gt_left" headers="Video"><div class="gt_from_md">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://youtu.be/0PikvQ_Eyqg"><img src="data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgcm9sZT0iaW1nIiB2aWV3Ym94PSIwIDAgNTc2IDUxMiIgc3R5bGU9ImhlaWdodDoxLjc4ZW07d2lkdGg6MmVtO3ZlcnRpY2FsLWFsaWduOi0wLjEyNWVtO21hcmdpbi1sZWZ0OmF1dG87bWFyZ2luLXJpZ2h0OmF1dG87Zm9udC1zaXplOmluaGVyaXQ7ZmlsbDpjdXJyZW50Q29sb3I7b3ZlcmZsb3c6dmlzaWJsZTtwb3NpdGlvbjpyZWxhdGl2ZTsiPjxwYXRoIGQ9Ik01NDkuNyAxMjQuMWMtNi4yODEtMjMuNjUtMjQuNzktNDIuMjgtNDguMjgtNDguNkM0NTguOCA2NCAyODggNjQgMjg4IDY0UzExNy4yIDY0IDc0LjYzIDc1LjQ5Yy0yMy41IDYuMzIyLTQyIDI0Ljk1LTQ4LjI4IDQ4LjYtMTEuNDEgNDIuODctMTEuNDEgMTMyLjMtMTEuNDEgMTMyLjNzMCA4OS40NCAxMS40MSAxMzIuM2M2LjI4MSAyMy42NSAyNC43OSA0MS41IDQ4LjI4IDQ3LjgyQzExNy4yIDQ0OCAyODggNDQ4IDI4OCA0NDhzMTcwLjggMCAyMTMuNC0xMS40OWMyMy41LTYuMzIxIDQyLTI0LjE3IDQ4LjI4LTQ3LjgyIDExLjQxLTQyLjg3IDExLjQxLTEzMi4zIDExLjQxLTEzMi4zczAtODkuNDQtMTEuNDEtMTMyLjN6bS0zMTcuNSAyMTMuNVYxNzUuMmwxNDIuNyA4MS4yMS0xNDIuNyA4MS4yeiI+PC9wYXRoPjwvc3ZnPg==" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
 </div></td>
-<td headers="Partial Code" class="gt_row gt_left"><div class="gt_from_md"></div></td></tr>
-    <tr><td headers="Time" class="gt_row gt_left"><div class="gt_from_md"><p>Wed, Feb 16<br>
+<td class="gt_row gt_left" headers="Partial Code"><div class="gt_from_md">
+
+</div></td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Time"><div class="gt_from_md">
+<p>Wed, Feb 16<br>
 (9:10-11:10)</p>
 </div></td>
-<td headers="Activity" class="gt_row gt_left"><div class="gt_from_md"><p>Yield monitor data cleaning
-<br>
+<td class="gt_row gt_left" headers="Activity"><div class="gt_from_md">
+<p>Yield monitor data cleaning<br>
 Assignment #2 - Cleaning</p>
 </div></td>
-<td headers="Video" class="gt_row gt_left"><div class="gt_from_md"><p><a href="https://youtu.be/8tiKO0wRkMs"><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1.78em;width:2em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M549.7 124.1c-6.281-23.65-24.79-42.28-48.28-48.6C458.8 64 288 64 288 64S117.2 64 74.63 75.49c-23.5 6.322-42 24.95-48.28 48.6-11.41 42.87-11.41 132.3-11.41 132.3s0 89.44 11.41 132.3c6.281 23.65 24.79 41.5 48.28 47.82C117.2 448 288 448 288 448s170.8 0 213.4-11.49c23.5-6.321 42-24.17 48.28-47.82 11.41-42.87 11.41-132.3 11.41-132.3s0-89.44-11.41-132.3zm-317.5 213.5V175.2l142.7 81.21-142.7 81.2z"></path></svg></a><br>
-<a href="https://youtu.be/fOl3s6FfwuA"><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1.78em;width:2em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M549.7 124.1c-6.281-23.65-24.79-42.28-48.28-48.6C458.8 64 288 64 288 64S117.2 64 74.63 75.49c-23.5 6.322-42 24.95-48.28 48.6-11.41 42.87-11.41 132.3-11.41 132.3s0 89.44 11.41 132.3c6.281 23.65 24.79 41.5 48.28 47.82C117.2 448 288 448 288 448s170.8 0 213.4-11.49c23.5-6.321 42-24.17 48.28-47.82 11.41-42.87 11.41-132.3 11.41-132.3s0-89.44-11.41-132.3zm-317.5 213.5V175.2l142.7 81.21-142.7 81.2z"></path></svg></a></p>
+<td class="gt_row gt_left" headers="Video"><div class="gt_from_md">
+<p><a href="https://youtu.be/8tiKO0wRkMs"><img src="data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgcm9sZT0iaW1nIiB2aWV3Ym94PSIwIDAgNTc2IDUxMiIgc3R5bGU9ImhlaWdodDoxLjc4ZW07d2lkdGg6MmVtO3ZlcnRpY2FsLWFsaWduOi0wLjEyNWVtO21hcmdpbi1sZWZ0OmF1dG87bWFyZ2luLXJpZ2h0OmF1dG87Zm9udC1zaXplOmluaGVyaXQ7ZmlsbDpjdXJyZW50Q29sb3I7b3ZlcmZsb3c6dmlzaWJsZTtwb3NpdGlvbjpyZWxhdGl2ZTsiPjxwYXRoIGQ9Ik01NDkuNyAxMjQuMWMtNi4yODEtMjMuNjUtMjQuNzktNDIuMjgtNDguMjgtNDguNkM0NTguOCA2NCAyODggNjQgMjg4IDY0UzExNy4yIDY0IDc0LjYzIDc1LjQ5Yy0yMy41IDYuMzIyLTQyIDI0Ljk1LTQ4LjI4IDQ4LjYtMTEuNDEgNDIuODctMTEuNDEgMTMyLjMtMTEuNDEgMTMyLjNzMCA4OS40NCAxMS40MSAxMzIuM2M2LjI4MSAyMy42NSAyNC43OSA0MS41IDQ4LjI4IDQ3LjgyQzExNy4yIDQ0OCAyODggNDQ4IDI4OCA0NDhzMTcwLjggMCAyMTMuNC0xMS40OWMyMy41LTYuMzIxIDQyLTI0LjE3IDQ4LjI4LTQ3LjgyIDExLjQxLTQyLjg3IDExLjQxLTEzMi4zIDExLjQxLTEzMi4zczAtODkuNDQtMTEuNDEtMTMyLjN6bS0zMTcuNSAyMTMuNVYxNzUuMmwxNDIuNyA4MS4yMS0xNDIuNyA4MS4yeiI+PC9wYXRoPjwvc3ZnPg==" class="img-fluid"></a><br>
+<a href="https://youtu.be/fOl3s6FfwuA"><img src="data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgcm9sZT0iaW1nIiB2aWV3Ym94PSIwIDAgNTc2IDUxMiIgc3R5bGU9ImhlaWdodDoxLjc4ZW07d2lkdGg6MmVtO3ZlcnRpY2FsLWFsaWduOi0wLjEyNWVtO21hcmdpbi1sZWZ0OmF1dG87bWFyZ2luLXJpZ2h0OmF1dG87Zm9udC1zaXplOmluaGVyaXQ7ZmlsbDpjdXJyZW50Q29sb3I7b3ZlcmZsb3c6dmlzaWJsZTtwb3NpdGlvbjpyZWxhdGl2ZTsiPjxwYXRoIGQ9Ik01NDkuNyAxMjQuMWMtNi4yODEtMjMuNjUtMjQuNzktNDIuMjgtNDguMjgtNDguNkM0NTguOCA2NCAyODggNjQgMjg4IDY0UzExNy4yIDY0IDc0LjYzIDc1LjQ5Yy0yMy41IDYuMzIyLTQyIDI0Ljk1LTQ4LjI4IDQ4LjYtMTEuNDEgNDIuODctMTEuNDEgMTMyLjMtMTEuNDEgMTMyLjNzMCA4OS40NCAxMS40MSAxMzIuM2M2LjI4MSAyMy42NSAyNC43OSA0MS41IDQ4LjI4IDQ3LjgyQzExNy4yIDQ0OCAyODggNDQ4IDI4OCA0NDhzMTcwLjggMCAyMTMuNC0xMS40OWMyMy41LTYuMzIxIDQyLTI0LjE3IDQ4LjI4LTQ3LjgyIDExLjQxLTQyLjg3IDExLjQxLTEzMi4zIDExLjQxLTEzMi4zczAtODkuNDQtMTEuNDEtMTMyLjN6bS0zMTcuNSAyMTMuNVYxNzUuMmwxNDIuNyA4MS4yMS0xNDIuNyA4MS4yeiI+PC9wYXRoPjwvc3ZnPg==" class="img-fluid"></a></p>
 </div></td>
-<td headers="Partial Code" class="gt_row gt_left"><div class="gt_from_md"></div></td></tr>
-    <tr><td headers="Time" class="gt_row gt_left"><div class="gt_from_md"><p>Fri, Feb 18<br>
+<td class="gt_row gt_left" headers="Partial Code"><div class="gt_from_md">
+
+</div></td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Time"><div class="gt_from_md">
+<p>Fri, Feb 18<br>
 (9:10-10:00)</p>
 </div></td>
-<td headers="Activity" class="gt_row gt_left"><div class="gt_from_md"><p>Assignment #2 DUE
-<br>
-Yield interpolation
-<br>
+<td class="gt_row gt_left" headers="Activity"><div class="gt_from_md">
+<p>Assignment #2 DUE<br>
+Yield interpolation<br>
 Grid extraction</p>
 </div></td>
-<td headers="Video" class="gt_row gt_left"><div class="gt_from_md"><p><a href="https://youtu.be/beg7lD63OeI"><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1.78em;width:2em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M549.7 124.1c-6.281-23.65-24.79-42.28-48.28-48.6C458.8 64 288 64 288 64S117.2 64 74.63 75.49c-23.5 6.322-42 24.95-48.28 48.6-11.41 42.87-11.41 132.3-11.41 132.3s0 89.44 11.41 132.3c6.281 23.65 24.79 41.5 48.28 47.82C117.2 448 288 448 288 448s170.8 0 213.4-11.49c23.5-6.321 42-24.17 48.28-47.82 11.41-42.87 11.41-132.3 11.41-132.3s0-89.44-11.41-132.3zm-317.5 213.5V175.2l142.7 81.21-142.7 81.2z"></path></svg></a></p>
+<td class="gt_row gt_left" headers="Video"><div class="gt_from_md">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://youtu.be/beg7lD63OeI"><img src="data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgcm9sZT0iaW1nIiB2aWV3Ym94PSIwIDAgNTc2IDUxMiIgc3R5bGU9ImhlaWdodDoxLjc4ZW07d2lkdGg6MmVtO3ZlcnRpY2FsLWFsaWduOi0wLjEyNWVtO21hcmdpbi1sZWZ0OmF1dG87bWFyZ2luLXJpZ2h0OmF1dG87Zm9udC1zaXplOmluaGVyaXQ7ZmlsbDpjdXJyZW50Q29sb3I7b3ZlcmZsb3c6dmlzaWJsZTtwb3NpdGlvbjpyZWxhdGl2ZTsiPjxwYXRoIGQ9Ik01NDkuNyAxMjQuMWMtNi4yODEtMjMuNjUtMjQuNzktNDIuMjgtNDguMjgtNDguNkM0NTguOCA2NCAyODggNjQgMjg4IDY0UzExNy4yIDY0IDc0LjYzIDc1LjQ5Yy0yMy41IDYuMzIyLTQyIDI0Ljk1LTQ4LjI4IDQ4LjYtMTEuNDEgNDIuODctMTEuNDEgMTMyLjMtMTEuNDEgMTMyLjNzMCA4OS40NCAxMS40MSAxMzIuM2M2LjI4MSAyMy42NSAyNC43OSA0MS41IDQ4LjI4IDQ3LjgyQzExNy4yIDQ0OCAyODggNDQ4IDI4OCA0NDhzMTcwLjggMCAyMTMuNC0xMS40OWMyMy41LTYuMzIxIDQyLTI0LjE3IDQ4LjI4LTQ3LjgyIDExLjQxLTQyLjg3IDExLjQxLTEzMi4zIDExLjQxLTEzMi4zczAtODkuNDQtMTEuNDEtMTMyLjN6bS0zMTcuNSAyMTMuNVYxNzUuMmwxNDIuNyA4MS4yMS0xNDIuNyA4MS4yeiI+PC9wYXRoPjwvc3ZnPg==" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
 </div></td>
-<td headers="Partial Code" class="gt_row gt_left"><div class="gt_from_md"><p><a href="https://tinyurl.com/52sa473j"><svg aria-hidden="true" role="img" viewbox="0 0 496 512" style="height:2.06em;width:2em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg></a></p>
-</div></td></tr>
-    <tr><td headers="Time" class="gt_row gt_left"><div class="gt_from_md"><p>Fri, Mar 04<br>
+<td class="gt_row gt_left" headers="Partial Code"><div class="gt_from_md">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://tinyurl.com/52sa473j"><img src="data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgcm9sZT0iaW1nIiB2aWV3Ym94PSIwIDAgNDk2IDUxMiIgc3R5bGU9ImhlaWdodDoyLjA2ZW07d2lkdGg6MmVtO3ZlcnRpY2FsLWFsaWduOi0wLjEyNWVtO21hcmdpbi1sZWZ0OmF1dG87bWFyZ2luLXJpZ2h0OmF1dG87Zm9udC1zaXplOmluaGVyaXQ7ZmlsbDpjdXJyZW50Q29sb3I7b3ZlcmZsb3c6dmlzaWJsZTtwb3NpdGlvbjpyZWxhdGl2ZTsiPjxwYXRoIGQ9Ik0xNjUuOSAzOTcuNGMwIDItMi4zIDMuNi01LjIgMy42LTMuMyAuMy01LjYtMS4zLTUuNi0zLjYgMC0yIDIuMy0zLjYgNS4yLTMuNiAzLS4zIDUuNiAxLjMgNS42IDMuNnptLTMxLjEtNC41Yy0uNyAyIDEuMyA0LjMgNC4zIDQuOSAyLjYgMSA1LjYgMCA2LjItMnMtMS4zLTQuMy00LjMtNS4yYy0yLjYtLjctNS41IC4zLTYuMiAyLjN6bTQ0LjItMS43Yy0yLjkgLjctNC45IDIuNi00LjYgNC45IC4zIDIgMi45IDMuMyA1LjkgMi42IDIuOS0uNyA0LjktMi42IDQuNi00LjYtLjMtMS45LTMtMy4yLTUuOS0yLjl6TTI0NC44IDhDMTA2LjEgOCAwIDExMy4zIDAgMjUyYzAgMTEwLjkgNjkuOCAyMDUuOCAxNjkuNSAyMzkuMiAxMi44IDIuMyAxNy4zLTUuNiAxNy4zLTEyLjEgMC02LjItLjMtNDAuNC0uMy02MS40IDAgMC03MCAxNS04NC43LTI5LjggMCAwLTExLjQtMjkuMS0yNy44LTM2LjYgMCAwLTIyLjktMTUuNyAxLjYtMTUuNCAwIDAgMjQuOSAyIDM4LjYgMjUuOCAyMS45IDM4LjYgNTguNiAyNy41IDcyLjkgMjAuOSAyLjMtMTYgOC44LTI3LjEgMTYtMzMuNy01NS45LTYuMi0xMTIuMy0xNC4zLTExMi4zLTExMC41IDAtMjcuNSA3LjYtNDEuMyAyMy42LTU4LjktMi42LTYuNS0xMS4xLTMzLjMgMi42LTY3LjkgMjAuOS02LjUgNjkgMjcgNjkgMjcgMjAtNS42IDQxLjUtOC41IDYyLjgtOC41czQyLjggMi45IDYyLjggOC41YzAgMCA0OC4xLTMzLjYgNjktMjcgMTMuNyAzNC43IDUuMiA2MS40IDIuNiA2Ny45IDE2IDE3LjcgMjUuOCAzMS41IDI1LjggNTguOSAwIDk2LjUtNTguOSAxMDQuMi0xMTQuOCAxMTAuNSA5LjIgNy45IDE3IDIyLjkgMTcgNDYuNCAwIDMzLjctLjMgNzUuNC0uMyA4My42IDAgNi41IDQuNiAxNC40IDE3LjMgMTIuMUM0MjguMiA0NTcuOCA0OTYgMzYyLjkgNDk2IDI1MiA0OTYgMTEzLjMgMzgzLjUgOCAyNDQuOCA4ek05Ny4yIDM1Mi45Yy0xLjMgMS0xIDMuMyAuNyA1LjIgMS42IDEuNiAzLjkgMi4zIDUuMiAxIDEuMy0xIDEtMy4zLS43LTUuMi0xLjYtMS42LTMuOS0yLjMtNS4yLTF6bS0xMC44LTguMWMtLjcgMS4zIC4zIDIuOSAyLjMgMy45IDEuNiAxIDMuNiAuNyA0LjMtLjcgLjctMS4zLS4zLTIuOS0yLjMtMy45LTItLjYtMy42LS4zLTQuMyAuN3ptMzIuNCAzNS42Yy0xLjYgMS4zLTEgNC4zIDEuMyA2LjIgMi4zIDIuMyA1LjIgMi42IDYuNSAxIDEuMy0xLjMgLjctNC4zLTEuMy02LjItMi4yLTIuMy01LjItMi42LTYuNS0xem0tMTEuNC0xNC43Yy0xLjYgMS0xLjYgMy42IDAgNS45IDEuNiAyLjMgNC4zIDMuMyA1LjYgMi4zIDEuNi0xLjMgMS42LTMuOSAwLTYuMi0xLjQtMi4zLTQtMy4zLTUuNi0yeiI+PC9wYXRoPjwvc3ZnPg==" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div></td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Time"><div class="gt_from_md">
+<p>Fri, Mar 04<br>
 (9:10-10:00)</p>
 </div></td>
-<td headers="Activity" class="gt_row gt_left"><div class="gt_from_md"><p>Yield interpolation
-<br>
-Grid extraction
-<br>
+<td class="gt_row gt_left" headers="Activity"><div class="gt_from_md">
+<p>Yield interpolation<br>
+Grid extraction<br>
 Assignment #3</p>
 </div></td>
-<td headers="Video" class="gt_row gt_left"><div class="gt_from_md"><p><a href="https://youtu.be/xxcvFeVYe7Y"><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1.78em;width:2em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M549.7 124.1c-6.281-23.65-24.79-42.28-48.28-48.6C458.8 64 288 64 288 64S117.2 64 74.63 75.49c-23.5 6.322-42 24.95-48.28 48.6-11.41 42.87-11.41 132.3-11.41 132.3s0 89.44 11.41 132.3c6.281 23.65 24.79 41.5 48.28 47.82C117.2 448 288 448 288 448s170.8 0 213.4-11.49c23.5-6.321 42-24.17 48.28-47.82 11.41-42.87 11.41-132.3 11.41-132.3s0-89.44-11.41-132.3zm-317.5 213.5V175.2l142.7 81.21-142.7 81.2z"></path></svg></a></p>
+<td class="gt_row gt_left" headers="Video"><div class="gt_from_md">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://youtu.be/xxcvFeVYe7Y"><img src="data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgcm9sZT0iaW1nIiB2aWV3Ym94PSIwIDAgNTc2IDUxMiIgc3R5bGU9ImhlaWdodDoxLjc4ZW07d2lkdGg6MmVtO3ZlcnRpY2FsLWFsaWduOi0wLjEyNWVtO21hcmdpbi1sZWZ0OmF1dG87bWFyZ2luLXJpZ2h0OmF1dG87Zm9udC1zaXplOmluaGVyaXQ7ZmlsbDpjdXJyZW50Q29sb3I7b3ZlcmZsb3c6dmlzaWJsZTtwb3NpdGlvbjpyZWxhdGl2ZTsiPjxwYXRoIGQ9Ik01NDkuNyAxMjQuMWMtNi4yODEtMjMuNjUtMjQuNzktNDIuMjgtNDguMjgtNDguNkM0NTguOCA2NCAyODggNjQgMjg4IDY0UzExNy4yIDY0IDc0LjYzIDc1LjQ5Yy0yMy41IDYuMzIyLTQyIDI0Ljk1LTQ4LjI4IDQ4LjYtMTEuNDEgNDIuODctMTEuNDEgMTMyLjMtMTEuNDEgMTMyLjNzMCA4OS40NCAxMS40MSAxMzIuM2M2LjI4MSAyMy42NSAyNC43OSA0MS41IDQ4LjI4IDQ3LjgyQzExNy4yIDQ0OCAyODggNDQ4IDI4OCA0NDhzMTcwLjggMCAyMTMuNC0xMS40OWMyMy41LTYuMzIxIDQyLTI0LjE3IDQ4LjI4LTQ3LjgyIDExLjQxLTQyLjg3IDExLjQxLTEzMi4zIDExLjQxLTEzMi4zczAtODkuNDQtMTEuNDEtMTMyLjN6bS0zMTcuNSAyMTMuNVYxNzUuMmwxNDIuNyA4MS4yMS0xNDIuNyA4MS4yeiI+PC9wYXRoPjwvc3ZnPg==" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
 </div></td>
-<td headers="Partial Code" class="gt_row gt_left"><div class="gt_from_md"></div></td></tr>
-    <tr><td headers="Time" class="gt_row gt_left"><div class="gt_from_md"><p>Wed, Mar 16<br>
+<td class="gt_row gt_left" headers="Partial Code"><div class="gt_from_md">
+
+</div></td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Time"><div class="gt_from_md">
+<p>Wed, Mar 16<br>
 (9:10-11:10)</p>
 </div></td>
-<td headers="Activity" class="gt_row gt_left"><div class="gt_from_md"><p>Assignment #3 DUE
-<br>
-Yield spatial stability
-<br>
+<td class="gt_row gt_left" headers="Activity"><div class="gt_from_md">
+<p>Assignment #3 DUE<br>
+Yield spatial stability<br>
 Yield spatial-temporal stability</p>
 </div></td>
-<td headers="Video" class="gt_row gt_left"><div class="gt_from_md"><p><a href="https://youtu.be/En57xMa3acM"><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1.78em;width:2em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M549.7 124.1c-6.281-23.65-24.79-42.28-48.28-48.6C458.8 64 288 64 288 64S117.2 64 74.63 75.49c-23.5 6.322-42 24.95-48.28 48.6-11.41 42.87-11.41 132.3-11.41 132.3s0 89.44 11.41 132.3c6.281 23.65 24.79 41.5 48.28 47.82C117.2 448 288 448 288 448s170.8 0 213.4-11.49c23.5-6.321 42-24.17 48.28-47.82 11.41-42.87 11.41-132.3 11.41-132.3s0-89.44-11.41-132.3zm-317.5 213.5V175.2l142.7 81.21-142.7 81.2z"></path></svg></a><br>
-<a href="https://youtu.be/dGQA0AexPL4"><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1.78em;width:2em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M549.7 124.1c-6.281-23.65-24.79-42.28-48.28-48.6C458.8 64 288 64 288 64S117.2 64 74.63 75.49c-23.5 6.322-42 24.95-48.28 48.6-11.41 42.87-11.41 132.3-11.41 132.3s0 89.44 11.41 132.3c6.281 23.65 24.79 41.5 48.28 47.82C117.2 448 288 448 288 448s170.8 0 213.4-11.49c23.5-6.321 42-24.17 48.28-47.82 11.41-42.87 11.41-132.3 11.41-132.3s0-89.44-11.41-132.3zm-317.5 213.5V175.2l142.7 81.21-142.7 81.2z"></path></svg></a></p>
+<td class="gt_row gt_left" headers="Video"><div class="gt_from_md">
+<p><a href="https://youtu.be/En57xMa3acM"><img src="data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgcm9sZT0iaW1nIiB2aWV3Ym94PSIwIDAgNTc2IDUxMiIgc3R5bGU9ImhlaWdodDoxLjc4ZW07d2lkdGg6MmVtO3ZlcnRpY2FsLWFsaWduOi0wLjEyNWVtO21hcmdpbi1sZWZ0OmF1dG87bWFyZ2luLXJpZ2h0OmF1dG87Zm9udC1zaXplOmluaGVyaXQ7ZmlsbDpjdXJyZW50Q29sb3I7b3ZlcmZsb3c6dmlzaWJsZTtwb3NpdGlvbjpyZWxhdGl2ZTsiPjxwYXRoIGQ9Ik01NDkuNyAxMjQuMWMtNi4yODEtMjMuNjUtMjQuNzktNDIuMjgtNDguMjgtNDguNkM0NTguOCA2NCAyODggNjQgMjg4IDY0UzExNy4yIDY0IDc0LjYzIDc1LjQ5Yy0yMy41IDYuMzIyLTQyIDI0Ljk1LTQ4LjI4IDQ4LjYtMTEuNDEgNDIuODctMTEuNDEgMTMyLjMtMTEuNDEgMTMyLjNzMCA4OS40NCAxMS40MSAxMzIuM2M2LjI4MSAyMy42NSAyNC43OSA0MS41IDQ4LjI4IDQ3LjgyQzExNy4yIDQ0OCAyODggNDQ4IDI4OCA0NDhzMTcwLjggMCAyMTMuNC0xMS40OWMyMy41LTYuMzIxIDQyLTI0LjE3IDQ4LjI4LTQ3LjgyIDExLjQxLTQyLjg3IDExLjQxLTEzMi4zIDExLjQxLTEzMi4zczAtODkuNDQtMTEuNDEtMTMyLjN6bS0zMTcuNSAyMTMuNVYxNzUuMmwxNDIuNyA4MS4yMS0xNDIuNyA4MS4yeiI+PC9wYXRoPjwvc3ZnPg==" class="img-fluid"></a><br>
+<a href="https://youtu.be/dGQA0AexPL4"><img src="data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgcm9sZT0iaW1nIiB2aWV3Ym94PSIwIDAgNTc2IDUxMiIgc3R5bGU9ImhlaWdodDoxLjc4ZW07d2lkdGg6MmVtO3ZlcnRpY2FsLWFsaWduOi0wLjEyNWVtO21hcmdpbi1sZWZ0OmF1dG87bWFyZ2luLXJpZ2h0OmF1dG87Zm9udC1zaXplOmluaGVyaXQ7ZmlsbDpjdXJyZW50Q29sb3I7b3ZlcmZsb3c6dmlzaWJsZTtwb3NpdGlvbjpyZWxhdGl2ZTsiPjxwYXRoIGQ9Ik01NDkuNyAxMjQuMWMtNi4yODEtMjMuNjUtMjQuNzktNDIuMjgtNDguMjgtNDguNkM0NTguOCA2NCAyODggNjQgMjg4IDY0UzExNy4yIDY0IDc0LjYzIDc1LjQ5Yy0yMy41IDYuMzIyLTQyIDI0Ljk1LTQ4LjI4IDQ4LjYtMTEuNDEgNDIuODctMTEuNDEgMTMyLjMtMTEuNDEgMTMyLjNzMCA4OS40NCAxMS40MSAxMzIuM2M2LjI4MSAyMy42NSAyNC43OSA0MS41IDQ4LjI4IDQ3LjgyQzExNy4yIDQ0OCAyODggNDQ4IDI4OCA0NDhzMTcwLjggMCAyMTMuNC0xMS40OWMyMy41LTYuMzIxIDQyLTI0LjE3IDQ4LjI4LTQ3LjgyIDExLjQxLTQyLjg3IDExLjQxLTEzMi4zIDExLjQxLTEzMi4zczAtODkuNDQtMTEuNDEtMTMyLjN6bS0zMTcuNSAyMTMuNVYxNzUuMmwxNDIuNyA4MS4yMS0xNDIuNyA4MS4yeiI+PC9wYXRoPjwvc3ZnPg==" class="img-fluid"></a></p>
 </div></td>
-<td headers="Partial Code" class="gt_row gt_left"><div class="gt_from_md"><p><a href="https://tinyurl.com/34uen9nw"><svg aria-hidden="true" role="img" viewbox="0 0 496 512" style="height:2.06em;width:2em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg></a></p>
-</div></td></tr>
-    <tr><td headers="Time" class="gt_row gt_left"><div class="gt_from_md"><p>Fri, Mar 25<br>
+<td class="gt_row gt_left" headers="Partial Code"><div class="gt_from_md">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://tinyurl.com/34uen9nw"><img src="data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgcm9sZT0iaW1nIiB2aWV3Ym94PSIwIDAgNDk2IDUxMiIgc3R5bGU9ImhlaWdodDoyLjA2ZW07d2lkdGg6MmVtO3ZlcnRpY2FsLWFsaWduOi0wLjEyNWVtO21hcmdpbi1sZWZ0OmF1dG87bWFyZ2luLXJpZ2h0OmF1dG87Zm9udC1zaXplOmluaGVyaXQ7ZmlsbDpjdXJyZW50Q29sb3I7b3ZlcmZsb3c6dmlzaWJsZTtwb3NpdGlvbjpyZWxhdGl2ZTsiPjxwYXRoIGQ9Ik0xNjUuOSAzOTcuNGMwIDItMi4zIDMuNi01LjIgMy42LTMuMyAuMy01LjYtMS4zLTUuNi0zLjYgMC0yIDIuMy0zLjYgNS4yLTMuNiAzLS4zIDUuNiAxLjMgNS42IDMuNnptLTMxLjEtNC41Yy0uNyAyIDEuMyA0LjMgNC4zIDQuOSAyLjYgMSA1LjYgMCA2LjItMnMtMS4zLTQuMy00LjMtNS4yYy0yLjYtLjctNS41IC4zLTYuMiAyLjN6bTQ0LjItMS43Yy0yLjkgLjctNC45IDIuNi00LjYgNC45IC4zIDIgMi45IDMuMyA1LjkgMi42IDIuOS0uNyA0LjktMi42IDQuNi00LjYtLjMtMS45LTMtMy4yLTUuOS0yLjl6TTI0NC44IDhDMTA2LjEgOCAwIDExMy4zIDAgMjUyYzAgMTEwLjkgNjkuOCAyMDUuOCAxNjkuNSAyMzkuMiAxMi44IDIuMyAxNy4zLTUuNiAxNy4zLTEyLjEgMC02LjItLjMtNDAuNC0uMy02MS40IDAgMC03MCAxNS04NC43LTI5LjggMCAwLTExLjQtMjkuMS0yNy44LTM2LjYgMCAwLTIyLjktMTUuNyAxLjYtMTUuNCAwIDAgMjQuOSAyIDM4LjYgMjUuOCAyMS45IDM4LjYgNTguNiAyNy41IDcyLjkgMjAuOSAyLjMtMTYgOC44LTI3LjEgMTYtMzMuNy01NS45LTYuMi0xMTIuMy0xNC4zLTExMi4zLTExMC41IDAtMjcuNSA3LjYtNDEuMyAyMy42LTU4LjktMi42LTYuNS0xMS4xLTMzLjMgMi42LTY3LjkgMjAuOS02LjUgNjkgMjcgNjkgMjcgMjAtNS42IDQxLjUtOC41IDYyLjgtOC41czQyLjggMi45IDYyLjggOC41YzAgMCA0OC4xLTMzLjYgNjktMjcgMTMuNyAzNC43IDUuMiA2MS40IDIuNiA2Ny45IDE2IDE3LjcgMjUuOCAzMS41IDI1LjggNTguOSAwIDk2LjUtNTguOSAxMDQuMi0xMTQuOCAxMTAuNSA5LjIgNy45IDE3IDIyLjkgMTcgNDYuNCAwIDMzLjctLjMgNzUuNC0uMyA4My42IDAgNi41IDQuNiAxNC40IDE3LjMgMTIuMUM0MjguMiA0NTcuOCA0OTYgMzYyLjkgNDk2IDI1MiA0OTYgMTEzLjMgMzgzLjUgOCAyNDQuOCA4ek05Ny4yIDM1Mi45Yy0xLjMgMS0xIDMuMyAuNyA1LjIgMS42IDEuNiAzLjkgMi4zIDUuMiAxIDEuMy0xIDEtMy4zLS43LTUuMi0xLjYtMS42LTMuOS0yLjMtNS4yLTF6bS0xMC44LTguMWMtLjcgMS4zIC4zIDIuOSAyLjMgMy45IDEuNiAxIDMuNiAuNyA0LjMtLjcgLjctMS4zLS4zLTIuOS0yLjMtMy45LTItLjYtMy42LS4zLTQuMyAuN3ptMzIuNCAzNS42Yy0xLjYgMS4zLTEgNC4zIDEuMyA2LjIgMi4zIDIuMyA1LjIgMi42IDYuNSAxIDEuMy0xLjMgLjctNC4zLTEuMy02LjItMi4yLTIuMy01LjItMi42LTYuNS0xem0tMTEuNC0xNC43Yy0xLjYgMS0xLjYgMy42IDAgNS45IDEuNiAyLjMgNC4zIDMuMyA1LjYgMi4zIDEuNi0xLjMgMS42LTMuOSAwLTYuMi0xLjQtMi4zLTQtMy4zLTUuNi0yeiI+PC9wYXRoPjwvc3ZnPg==" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div></td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Time"><div class="gt_from_md">
+<p>Fri, Mar 25<br>
 (9:10-10:00)</p>
 </div></td>
-<td headers="Activity" class="gt_row gt_left"><div class="gt_from_md"><p>Terrain processing pt.1</p>
+<td class="gt_row gt_left" headers="Activity"><div class="gt_from_md">
+<p>Terrain processing pt.1</p>
 </div></td>
-<td headers="Video" class="gt_row gt_left"><div class="gt_from_md"><p><a href="https://youtu.be/Whirsl3rSY8"><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1.78em;width:2em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M549.7 124.1c-6.281-23.65-24.79-42.28-48.28-48.6C458.8 64 288 64 288 64S117.2 64 74.63 75.49c-23.5 6.322-42 24.95-48.28 48.6-11.41 42.87-11.41 132.3-11.41 132.3s0 89.44 11.41 132.3c6.281 23.65 24.79 41.5 48.28 47.82C117.2 448 288 448 288 448s170.8 0 213.4-11.49c23.5-6.321 42-24.17 48.28-47.82 11.41-42.87 11.41-132.3 11.41-132.3s0-89.44-11.41-132.3zm-317.5 213.5V175.2l142.7 81.21-142.7 81.2z"></path></svg></a></p>
+<td class="gt_row gt_left" headers="Video"><div class="gt_from_md">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://youtu.be/Whirsl3rSY8"><img src="data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgcm9sZT0iaW1nIiB2aWV3Ym94PSIwIDAgNTc2IDUxMiIgc3R5bGU9ImhlaWdodDoxLjc4ZW07d2lkdGg6MmVtO3ZlcnRpY2FsLWFsaWduOi0wLjEyNWVtO21hcmdpbi1sZWZ0OmF1dG87bWFyZ2luLXJpZ2h0OmF1dG87Zm9udC1zaXplOmluaGVyaXQ7ZmlsbDpjdXJyZW50Q29sb3I7b3ZlcmZsb3c6dmlzaWJsZTtwb3NpdGlvbjpyZWxhdGl2ZTsiPjxwYXRoIGQ9Ik01NDkuNyAxMjQuMWMtNi4yODEtMjMuNjUtMjQuNzktNDIuMjgtNDguMjgtNDguNkM0NTguOCA2NCAyODggNjQgMjg4IDY0UzExNy4yIDY0IDc0LjYzIDc1LjQ5Yy0yMy41IDYuMzIyLTQyIDI0Ljk1LTQ4LjI4IDQ4LjYtMTEuNDEgNDIuODctMTEuNDEgMTMyLjMtMTEuNDEgMTMyLjNzMCA4OS40NCAxMS40MSAxMzIuM2M2LjI4MSAyMy42NSAyNC43OSA0MS41IDQ4LjI4IDQ3LjgyQzExNy4yIDQ0OCAyODggNDQ4IDI4OCA0NDhzMTcwLjggMCAyMTMuNC0xMS40OWMyMy41LTYuMzIxIDQyLTI0LjE3IDQ4LjI4LTQ3LjgyIDExLjQxLTQyLjg3IDExLjQxLTEzMi4zIDExLjQxLTEzMi4zczAtODkuNDQtMTEuNDEtMTMyLjN6bS0zMTcuNSAyMTMuNVYxNzUuMmwxNDIuNyA4MS4yMS0xNDIuNyA4MS4yeiI+PC9wYXRoPjwvc3ZnPg==" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
 </div></td>
-<td headers="Partial Code" class="gt_row gt_left"><div class="gt_from_md"><p><a href="https://tinyurl.com/3b468m8x"><svg aria-hidden="true" role="img" viewbox="0 0 496 512" style="height:2.06em;width:2em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg></a></p>
-</div></td></tr>
-    <tr><td headers="Time" class="gt_row gt_left"><div class="gt_from_md"><p>Mon, Mar 28<br>
+<td class="gt_row gt_left" headers="Partial Code"><div class="gt_from_md">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://tinyurl.com/3b468m8x"><img src="data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgcm9sZT0iaW1nIiB2aWV3Ym94PSIwIDAgNDk2IDUxMiIgc3R5bGU9ImhlaWdodDoyLjA2ZW07d2lkdGg6MmVtO3ZlcnRpY2FsLWFsaWduOi0wLjEyNWVtO21hcmdpbi1sZWZ0OmF1dG87bWFyZ2luLXJpZ2h0OmF1dG87Zm9udC1zaXplOmluaGVyaXQ7ZmlsbDpjdXJyZW50Q29sb3I7b3ZlcmZsb3c6dmlzaWJsZTtwb3NpdGlvbjpyZWxhdGl2ZTsiPjxwYXRoIGQ9Ik0xNjUuOSAzOTcuNGMwIDItMi4zIDMuNi01LjIgMy42LTMuMyAuMy01LjYtMS4zLTUuNi0zLjYgMC0yIDIuMy0zLjYgNS4yLTMuNiAzLS4zIDUuNiAxLjMgNS42IDMuNnptLTMxLjEtNC41Yy0uNyAyIDEuMyA0LjMgNC4zIDQuOSAyLjYgMSA1LjYgMCA2LjItMnMtMS4zLTQuMy00LjMtNS4yYy0yLjYtLjctNS41IC4zLTYuMiAyLjN6bTQ0LjItMS43Yy0yLjkgLjctNC45IDIuNi00LjYgNC45IC4zIDIgMi45IDMuMyA1LjkgMi42IDIuOS0uNyA0LjktMi42IDQuNi00LjYtLjMtMS45LTMtMy4yLTUuOS0yLjl6TTI0NC44IDhDMTA2LjEgOCAwIDExMy4zIDAgMjUyYzAgMTEwLjkgNjkuOCAyMDUuOCAxNjkuNSAyMzkuMiAxMi44IDIuMyAxNy4zLTUuNiAxNy4zLTEyLjEgMC02LjItLjMtNDAuNC0uMy02MS40IDAgMC03MCAxNS04NC43LTI5LjggMCAwLTExLjQtMjkuMS0yNy44LTM2LjYgMCAwLTIyLjktMTUuNyAxLjYtMTUuNCAwIDAgMjQuOSAyIDM4LjYgMjUuOCAyMS45IDM4LjYgNTguNiAyNy41IDcyLjkgMjAuOSAyLjMtMTYgOC44LTI3LjEgMTYtMzMuNy01NS45LTYuMi0xMTIuMy0xNC4zLTExMi4zLTExMC41IDAtMjcuNSA3LjYtNDEuMyAyMy42LTU4LjktMi42LTYuNS0xMS4xLTMzLjMgMi42LTY3LjkgMjAuOS02LjUgNjkgMjcgNjkgMjcgMjAtNS42IDQxLjUtOC41IDYyLjgtOC41czQyLjggMi45IDYyLjggOC41YzAgMCA0OC4xLTMzLjYgNjktMjcgMTMuNyAzNC43IDUuMiA2MS40IDIuNiA2Ny45IDE2IDE3LjcgMjUuOCAzMS41IDI1LjggNTguOSAwIDk2LjUtNTguOSAxMDQuMi0xMTQuOCAxMTAuNSA5LjIgNy45IDE3IDIyLjkgMTcgNDYuNCAwIDMzLjctLjMgNzUuNC0uMyA4My42IDAgNi41IDQuNiAxNC40IDE3LjMgMTIuMUM0MjguMiA0NTcuOCA0OTYgMzYyLjkgNDk2IDI1MiA0OTYgMTEzLjMgMzgzLjUgOCAyNDQuOCA4ek05Ny4yIDM1Mi45Yy0xLjMgMS0xIDMuMyAuNyA1LjIgMS42IDEuNiAzLjkgMi4zIDUuMiAxIDEuMy0xIDEtMy4zLS43LTUuMi0xLjYtMS42LTMuOS0yLjMtNS4yLTF6bS0xMC44LTguMWMtLjcgMS4zIC4zIDIuOSAyLjMgMy45IDEuNiAxIDMuNiAuNyA0LjMtLjcgLjctMS4zLS4zLTIuOS0yLjMtMy45LTItLjYtMy42LS4zLTQuMyAuN3ptMzIuNCAzNS42Yy0xLjYgMS4zLTEgNC4zIDEuMyA2LjIgMi4zIDIuMyA1LjIgMi42IDYuNSAxIDEuMy0xLjMgLjctNC4zLTEuMy02LjItMi4yLTIuMy01LjItMi42LTYuNS0xem0tMTEuNC0xNC43Yy0xLjYgMS0xLjYgMy42IDAgNS45IDEuNiAyLjMgNC4zIDMuMyA1LjYgMi4zIDEuNi0xLjMgMS42LTMuOSAwLTYuMi0xLjQtMi4zLTQtMy4zLTUuNi0yeiI+PC9wYXRoPjwvc3ZnPg==" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div></td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Time"><div class="gt_from_md">
+<p>Mon, Mar 28<br>
 (9:10-10:00)</p>
 </div></td>
-<td headers="Activity" class="gt_row gt_left"><div class="gt_from_md"><p>Terrain processing pt.2</p>
+<td class="gt_row gt_left" headers="Activity"><div class="gt_from_md">
+<p>Terrain processing pt.2</p>
 </div></td>
-<td headers="Video" class="gt_row gt_left"><div class="gt_from_md"><p><a href="https://youtu.be/HBA32F3jS9k"><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1.78em;width:2em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M549.7 124.1c-6.281-23.65-24.79-42.28-48.28-48.6C458.8 64 288 64 288 64S117.2 64 74.63 75.49c-23.5 6.322-42 24.95-48.28 48.6-11.41 42.87-11.41 132.3-11.41 132.3s0 89.44 11.41 132.3c6.281 23.65 24.79 41.5 48.28 47.82C117.2 448 288 448 288 448s170.8 0 213.4-11.49c23.5-6.321 42-24.17 48.28-47.82 11.41-42.87 11.41-132.3 11.41-132.3s0-89.44-11.41-132.3zm-317.5 213.5V175.2l142.7 81.21-142.7 81.2z"></path></svg></a></p>
+<td class="gt_row gt_left" headers="Video"><div class="gt_from_md">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://youtu.be/HBA32F3jS9k"><img src="data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgcm9sZT0iaW1nIiB2aWV3Ym94PSIwIDAgNTc2IDUxMiIgc3R5bGU9ImhlaWdodDoxLjc4ZW07d2lkdGg6MmVtO3ZlcnRpY2FsLWFsaWduOi0wLjEyNWVtO21hcmdpbi1sZWZ0OmF1dG87bWFyZ2luLXJpZ2h0OmF1dG87Zm9udC1zaXplOmluaGVyaXQ7ZmlsbDpjdXJyZW50Q29sb3I7b3ZlcmZsb3c6dmlzaWJsZTtwb3NpdGlvbjpyZWxhdGl2ZTsiPjxwYXRoIGQ9Ik01NDkuNyAxMjQuMWMtNi4yODEtMjMuNjUtMjQuNzktNDIuMjgtNDguMjgtNDguNkM0NTguOCA2NCAyODggNjQgMjg4IDY0UzExNy4yIDY0IDc0LjYzIDc1LjQ5Yy0yMy41IDYuMzIyLTQyIDI0Ljk1LTQ4LjI4IDQ4LjYtMTEuNDEgNDIuODctMTEuNDEgMTMyLjMtMTEuNDEgMTMyLjNzMCA4OS40NCAxMS40MSAxMzIuM2M2LjI4MSAyMy42NSAyNC43OSA0MS41IDQ4LjI4IDQ3LjgyQzExNy4yIDQ0OCAyODggNDQ4IDI4OCA0NDhzMTcwLjggMCAyMTMuNC0xMS40OWMyMy41LTYuMzIxIDQyLTI0LjE3IDQ4LjI4LTQ3LjgyIDExLjQxLTQyLjg3IDExLjQxLTEzMi4zIDExLjQxLTEzMi4zczAtODkuNDQtMTEuNDEtMTMyLjN6bS0zMTcuNSAyMTMuNVYxNzUuMmwxNDIuNyA4MS4yMS0xNDIuNyA4MS4yeiI+PC9wYXRoPjwvc3ZnPg==" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
 </div></td>
-<td headers="Partial Code" class="gt_row gt_left"><div class="gt_from_md"></div></td></tr>
-    <tr><td headers="Time" class="gt_row gt_left"><div class="gt_from_md"><p>Wed, Mar 30<br>
+<td class="gt_row gt_left" headers="Partial Code"><div class="gt_from_md">
+
+</div></td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Time"><div class="gt_from_md">
+<p>Wed, Mar 30<br>
 (9:10-11:10)</p>
 </div></td>
-<td headers="Activity" class="gt_row gt_left"><div class="gt_from_md"><p>Terrain processing pt.3
-<br>
+<td class="gt_row gt_left" headers="Activity"><div class="gt_from_md">
+<p>Terrain processing pt.3<br>
 Soil ECa</p>
 </div></td>
-<td headers="Video" class="gt_row gt_left"><div class="gt_from_md"><p><a href="https://youtu.be/S9cebjDp9w0"><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1.78em;width:2em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M549.7 124.1c-6.281-23.65-24.79-42.28-48.28-48.6C458.8 64 288 64 288 64S117.2 64 74.63 75.49c-23.5 6.322-42 24.95-48.28 48.6-11.41 42.87-11.41 132.3-11.41 132.3s0 89.44 11.41 132.3c6.281 23.65 24.79 41.5 48.28 47.82C117.2 448 288 448 288 448s170.8 0 213.4-11.49c23.5-6.321 42-24.17 48.28-47.82 11.41-42.87 11.41-132.3 11.41-132.3s0-89.44-11.41-132.3zm-317.5 213.5V175.2l142.7 81.21-142.7 81.2z"></path></svg></a><br>
-<a href="https://youtu.be/PhKEUW5PoLg"><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1.78em;width:2em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M549.7 124.1c-6.281-23.65-24.79-42.28-48.28-48.6C458.8 64 288 64 288 64S117.2 64 74.63 75.49c-23.5 6.322-42 24.95-48.28 48.6-11.41 42.87-11.41 132.3-11.41 132.3s0 89.44 11.41 132.3c6.281 23.65 24.79 41.5 48.28 47.82C117.2 448 288 448 288 448s170.8 0 213.4-11.49c23.5-6.321 42-24.17 48.28-47.82 11.41-42.87 11.41-132.3 11.41-132.3s0-89.44-11.41-132.3zm-317.5 213.5V175.2l142.7 81.21-142.7 81.2z"></path></svg></a></p>
+<td class="gt_row gt_left" headers="Video"><div class="gt_from_md">
+<p><a href="https://youtu.be/S9cebjDp9w0"><img src="data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgcm9sZT0iaW1nIiB2aWV3Ym94PSIwIDAgNTc2IDUxMiIgc3R5bGU9ImhlaWdodDoxLjc4ZW07d2lkdGg6MmVtO3ZlcnRpY2FsLWFsaWduOi0wLjEyNWVtO21hcmdpbi1sZWZ0OmF1dG87bWFyZ2luLXJpZ2h0OmF1dG87Zm9udC1zaXplOmluaGVyaXQ7ZmlsbDpjdXJyZW50Q29sb3I7b3ZlcmZsb3c6dmlzaWJsZTtwb3NpdGlvbjpyZWxhdGl2ZTsiPjxwYXRoIGQ9Ik01NDkuNyAxMjQuMWMtNi4yODEtMjMuNjUtMjQuNzktNDIuMjgtNDguMjgtNDguNkM0NTguOCA2NCAyODggNjQgMjg4IDY0UzExNy4yIDY0IDc0LjYzIDc1LjQ5Yy0yMy41IDYuMzIyLTQyIDI0Ljk1LTQ4LjI4IDQ4LjYtMTEuNDEgNDIuODctMTEuNDEgMTMyLjMtMTEuNDEgMTMyLjNzMCA4OS40NCAxMS40MSAxMzIuM2M2LjI4MSAyMy42NSAyNC43OSA0MS41IDQ4LjI4IDQ3LjgyQzExNy4yIDQ0OCAyODggNDQ4IDI4OCA0NDhzMTcwLjggMCAyMTMuNC0xMS40OWMyMy41LTYuMzIxIDQyLTI0LjE3IDQ4LjI4LTQ3LjgyIDExLjQxLTQyLjg3IDExLjQxLTEzMi4zIDExLjQxLTEzMi4zczAtODkuNDQtMTEuNDEtMTMyLjN6bS0zMTcuNSAyMTMuNVYxNzUuMmwxNDIuNyA4MS4yMS0xNDIuNyA4MS4yeiI+PC9wYXRoPjwvc3ZnPg==" class="img-fluid"></a><br>
+<a href="https://youtu.be/PhKEUW5PoLg"><img src="data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgcm9sZT0iaW1nIiB2aWV3Ym94PSIwIDAgNTc2IDUxMiIgc3R5bGU9ImhlaWdodDoxLjc4ZW07d2lkdGg6MmVtO3ZlcnRpY2FsLWFsaWduOi0wLjEyNWVtO21hcmdpbi1sZWZ0OmF1dG87bWFyZ2luLXJpZ2h0OmF1dG87Zm9udC1zaXplOmluaGVyaXQ7ZmlsbDpjdXJyZW50Q29sb3I7b3ZlcmZsb3c6dmlzaWJsZTtwb3NpdGlvbjpyZWxhdGl2ZTsiPjxwYXRoIGQ9Ik01NDkuNyAxMjQuMWMtNi4yODEtMjMuNjUtMjQuNzktNDIuMjgtNDguMjgtNDguNkM0NTguOCA2NCAyODggNjQgMjg4IDY0UzExNy4yIDY0IDc0LjYzIDc1LjQ5Yy0yMy41IDYuMzIyLTQyIDI0Ljk1LTQ4LjI4IDQ4LjYtMTEuNDEgNDIuODctMTEuNDEgMTMyLjMtMTEuNDEgMTMyLjNzMCA4OS40NCAxMS40MSAxMzIuM2M2LjI4MSAyMy42NSAyNC43OSA0MS41IDQ4LjI4IDQ3LjgyQzExNy4yIDQ0OCAyODggNDQ4IDI4OCA0NDhzMTcwLjggMCAyMTMuNC0xMS40OWMyMy41LTYuMzIxIDQyLTI0LjE3IDQ4LjI4LTQ3LjgyIDExLjQxLTQyLjg3IDExLjQxLTEzMi4zIDExLjQxLTEzMi4zczAtODkuNDQtMTEuNDEtMTMyLjN6bS0zMTcuNSAyMTMuNVYxNzUuMmwxNDIuNyA4MS4yMS0xNDIuNyA4MS4yeiI+PC9wYXRoPjwvc3ZnPg==" class="img-fluid"></a></p>
 </div></td>
-<td headers="Partial Code" class="gt_row gt_left"><div class="gt_from_md"><p><br>
-<a href="https://tinyurl.com/2mee6arp"><svg aria-hidden="true" role="img" viewbox="0 0 496 512" style="height:2.06em;width:2em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg></a></p>
-</div></td></tr>
-    <tr><td headers="Time" class="gt_row gt_left"><div class="gt_from_md"><p>Fri, April 1<br>
+<td class="gt_row gt_left" headers="Partial Code"><div class="gt_from_md">
+<p><br>
+<a href="https://tinyurl.com/2mee6arp"><img src="data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgcm9sZT0iaW1nIiB2aWV3Ym94PSIwIDAgNDk2IDUxMiIgc3R5bGU9ImhlaWdodDoyLjA2ZW07d2lkdGg6MmVtO3ZlcnRpY2FsLWFsaWduOi0wLjEyNWVtO21hcmdpbi1sZWZ0OmF1dG87bWFyZ2luLXJpZ2h0OmF1dG87Zm9udC1zaXplOmluaGVyaXQ7ZmlsbDpjdXJyZW50Q29sb3I7b3ZlcmZsb3c6dmlzaWJsZTtwb3NpdGlvbjpyZWxhdGl2ZTsiPjxwYXRoIGQ9Ik0xNjUuOSAzOTcuNGMwIDItMi4zIDMuNi01LjIgMy42LTMuMyAuMy01LjYtMS4zLTUuNi0zLjYgMC0yIDIuMy0zLjYgNS4yLTMuNiAzLS4zIDUuNiAxLjMgNS42IDMuNnptLTMxLjEtNC41Yy0uNyAyIDEuMyA0LjMgNC4zIDQuOSAyLjYgMSA1LjYgMCA2LjItMnMtMS4zLTQuMy00LjMtNS4yYy0yLjYtLjctNS41IC4zLTYuMiAyLjN6bTQ0LjItMS43Yy0yLjkgLjctNC45IDIuNi00LjYgNC45IC4zIDIgMi45IDMuMyA1LjkgMi42IDIuOS0uNyA0LjktMi42IDQuNi00LjYtLjMtMS45LTMtMy4yLTUuOS0yLjl6TTI0NC44IDhDMTA2LjEgOCAwIDExMy4zIDAgMjUyYzAgMTEwLjkgNjkuOCAyMDUuOCAxNjkuNSAyMzkuMiAxMi44IDIuMyAxNy4zLTUuNiAxNy4zLTEyLjEgMC02LjItLjMtNDAuNC0uMy02MS40IDAgMC03MCAxNS04NC43LTI5LjggMCAwLTExLjQtMjkuMS0yNy44LTM2LjYgMCAwLTIyLjktMTUuNyAxLjYtMTUuNCAwIDAgMjQuOSAyIDM4LjYgMjUuOCAyMS45IDM4LjYgNTguNiAyNy41IDcyLjkgMjAuOSAyLjMtMTYgOC44LTI3LjEgMTYtMzMuNy01NS45LTYuMi0xMTIuMy0xNC4zLTExMi4zLTExMC41IDAtMjcuNSA3LjYtNDEuMyAyMy42LTU4LjktMi42LTYuNS0xMS4xLTMzLjMgMi42LTY3LjkgMjAuOS02LjUgNjkgMjcgNjkgMjcgMjAtNS42IDQxLjUtOC41IDYyLjgtOC41czQyLjggMi45IDYyLjggOC41YzAgMCA0OC4xLTMzLjYgNjktMjcgMTMuNyAzNC43IDUuMiA2MS40IDIuNiA2Ny45IDE2IDE3LjcgMjUuOCAzMS41IDI1LjggNTguOSAwIDk2LjUtNTguOSAxMDQuMi0xMTQuOCAxMTAuNSA5LjIgNy45IDE3IDIyLjkgMTcgNDYuNCAwIDMzLjctLjMgNzUuNC0uMyA4My42IDAgNi41IDQuNiAxNC40IDE3LjMgMTIuMUM0MjguMiA0NTcuOCA0OTYgMzYyLjkgNDk2IDI1MiA0OTYgMTEzLjMgMzgzLjUgOCAyNDQuOCA4ek05Ny4yIDM1Mi45Yy0xLjMgMS0xIDMuMyAuNyA1LjIgMS42IDEuNiAzLjkgMi4zIDUuMiAxIDEuMy0xIDEtMy4zLS43LTUuMi0xLjYtMS42LTMuOS0yLjMtNS4yLTF6bS0xMC44LTguMWMtLjcgMS4zIC4zIDIuOSAyLjMgMy45IDEuNiAxIDMuNiAuNyA0LjMtLjcgLjctMS4zLS4zLTIuOS0yLjMtMy45LTItLjYtMy42LS4zLTQuMyAuN3ptMzIuNCAzNS42Yy0xLjYgMS4zLTEgNC4zIDEuMyA2LjIgMi4zIDIuMyA1LjIgMi42IDYuNSAxIDEuMy0xLjMgLjctNC4zLTEuMy02LjItMi4yLTIuMy01LjItMi42LTYuNS0xem0tMTEuNC0xNC43Yy0xLjYgMS0xLjYgMy42IDAgNS45IDEuNiAyLjMgNC4zIDMuMyA1LjYgMi4zIDEuNi0xLjMgMS42LTMuOSAwLTYuMi0xLjQtMi4zLTQtMy4zLTUuNi0yeiI+PC9wYXRoPjwvc3ZnPg==" class="img-fluid"></a></p>
+</div></td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Time"><div class="gt_from_md">
+<p>Fri, April 1<br>
 (9:10-10:00)</p>
 </div></td>
-<td headers="Activity" class="gt_row gt_left"><div class="gt_from_md"><p>Clustering for zone creation
-<br>
+<td class="gt_row gt_left" headers="Activity"><div class="gt_from_md">
+<p>Clustering for zone creation<br>
 Defining number of zones</p>
 </div></td>
-<td headers="Video" class="gt_row gt_left"><div class="gt_from_md"><p><a href="https://youtu.be/mXXHn9diipg"><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1.78em;width:2em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M549.7 124.1c-6.281-23.65-24.79-42.28-48.28-48.6C458.8 64 288 64 288 64S117.2 64 74.63 75.49c-23.5 6.322-42 24.95-48.28 48.6-11.41 42.87-11.41 132.3-11.41 132.3s0 89.44 11.41 132.3c6.281 23.65 24.79 41.5 48.28 47.82C117.2 448 288 448 288 448s170.8 0 213.4-11.49c23.5-6.321 42-24.17 48.28-47.82 11.41-42.87 11.41-132.3 11.41-132.3s0-89.44-11.41-132.3zm-317.5 213.5V175.2l142.7 81.21-142.7 81.2z"></path></svg></a></p>
+<td class="gt_row gt_left" headers="Video"><div class="gt_from_md">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://youtu.be/mXXHn9diipg"><img src="data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgcm9sZT0iaW1nIiB2aWV3Ym94PSIwIDAgNTc2IDUxMiIgc3R5bGU9ImhlaWdodDoxLjc4ZW07d2lkdGg6MmVtO3ZlcnRpY2FsLWFsaWduOi0wLjEyNWVtO21hcmdpbi1sZWZ0OmF1dG87bWFyZ2luLXJpZ2h0OmF1dG87Zm9udC1zaXplOmluaGVyaXQ7ZmlsbDpjdXJyZW50Q29sb3I7b3ZlcmZsb3c6dmlzaWJsZTtwb3NpdGlvbjpyZWxhdGl2ZTsiPjxwYXRoIGQ9Ik01NDkuNyAxMjQuMWMtNi4yODEtMjMuNjUtMjQuNzktNDIuMjgtNDguMjgtNDguNkM0NTguOCA2NCAyODggNjQgMjg4IDY0UzExNy4yIDY0IDc0LjYzIDc1LjQ5Yy0yMy41IDYuMzIyLTQyIDI0Ljk1LTQ4LjI4IDQ4LjYtMTEuNDEgNDIuODctMTEuNDEgMTMyLjMtMTEuNDEgMTMyLjNzMCA4OS40NCAxMS40MSAxMzIuM2M2LjI4MSAyMy42NSAyNC43OSA0MS41IDQ4LjI4IDQ3LjgyQzExNy4yIDQ0OCAyODggNDQ4IDI4OCA0NDhzMTcwLjggMCAyMTMuNC0xMS40OWMyMy41LTYuMzIxIDQyLTI0LjE3IDQ4LjI4LTQ3LjgyIDExLjQxLTQyLjg3IDExLjQxLTEzMi4zIDExLjQxLTEzMi4zczAtODkuNDQtMTEuNDEtMTMyLjN6bS0zMTcuNSAyMTMuNVYxNzUuMmwxNDIuNyA4MS4yMS0xNDIuNyA4MS4yeiI+PC9wYXRoPjwvc3ZnPg==" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
 </div></td>
-<td headers="Partial Code" class="gt_row gt_left"><div class="gt_from_md"><p><a href="https://tinyurl.com/2mrah8mf"><svg aria-hidden="true" role="img" viewbox="0 0 496 512" style="height:2.06em;width:2em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg></a></p>
-</div></td></tr>
-    <tr><td headers="Time" class="gt_row gt_left"><div class="gt_from_md"><p>Fri, Apr 22<br>
+<td class="gt_row gt_left" headers="Partial Code"><div class="gt_from_md">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://tinyurl.com/2mrah8mf"><img src="data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgcm9sZT0iaW1nIiB2aWV3Ym94PSIwIDAgNDk2IDUxMiIgc3R5bGU9ImhlaWdodDoyLjA2ZW07d2lkdGg6MmVtO3ZlcnRpY2FsLWFsaWduOi0wLjEyNWVtO21hcmdpbi1sZWZ0OmF1dG87bWFyZ2luLXJpZ2h0OmF1dG87Zm9udC1zaXplOmluaGVyaXQ7ZmlsbDpjdXJyZW50Q29sb3I7b3ZlcmZsb3c6dmlzaWJsZTtwb3NpdGlvbjpyZWxhdGl2ZTsiPjxwYXRoIGQ9Ik0xNjUuOSAzOTcuNGMwIDItMi4zIDMuNi01LjIgMy42LTMuMyAuMy01LjYtMS4zLTUuNi0zLjYgMC0yIDIuMy0zLjYgNS4yLTMuNiAzLS4zIDUuNiAxLjMgNS42IDMuNnptLTMxLjEtNC41Yy0uNyAyIDEuMyA0LjMgNC4zIDQuOSAyLjYgMSA1LjYgMCA2LjItMnMtMS4zLTQuMy00LjMtNS4yYy0yLjYtLjctNS41IC4zLTYuMiAyLjN6bTQ0LjItMS43Yy0yLjkgLjctNC45IDIuNi00LjYgNC45IC4zIDIgMi45IDMuMyA1LjkgMi42IDIuOS0uNyA0LjktMi42IDQuNi00LjYtLjMtMS45LTMtMy4yLTUuOS0yLjl6TTI0NC44IDhDMTA2LjEgOCAwIDExMy4zIDAgMjUyYzAgMTEwLjkgNjkuOCAyMDUuOCAxNjkuNSAyMzkuMiAxMi44IDIuMyAxNy4zLTUuNiAxNy4zLTEyLjEgMC02LjItLjMtNDAuNC0uMy02MS40IDAgMC03MCAxNS04NC43LTI5LjggMCAwLTExLjQtMjkuMS0yNy44LTM2LjYgMCAwLTIyLjktMTUuNyAxLjYtMTUuNCAwIDAgMjQuOSAyIDM4LjYgMjUuOCAyMS45IDM4LjYgNTguNiAyNy41IDcyLjkgMjAuOSAyLjMtMTYgOC44LTI3LjEgMTYtMzMuNy01NS45LTYuMi0xMTIuMy0xNC4zLTExMi4zLTExMC41IDAtMjcuNSA3LjYtNDEuMyAyMy42LTU4LjktMi42LTYuNS0xMS4xLTMzLjMgMi42LTY3LjkgMjAuOS02LjUgNjkgMjcgNjkgMjcgMjAtNS42IDQxLjUtOC41IDYyLjgtOC41czQyLjggMi45IDYyLjggOC41YzAgMCA0OC4xLTMzLjYgNjktMjcgMTMuNyAzNC43IDUuMiA2MS40IDIuNiA2Ny45IDE2IDE3LjcgMjUuOCAzMS41IDI1LjggNTguOSAwIDk2LjUtNTguOSAxMDQuMi0xMTQuOCAxMTAuNSA5LjIgNy45IDE3IDIyLjkgMTcgNDYuNCAwIDMzLjctLjMgNzUuNC0uMyA4My42IDAgNi41IDQuNiAxNC40IDE3LjMgMTIuMUM0MjguMiA0NTcuOCA0OTYgMzYyLjkgNDk2IDI1MiA0OTYgMTEzLjMgMzgzLjUgOCAyNDQuOCA4ek05Ny4yIDM1Mi45Yy0xLjMgMS0xIDMuMyAuNyA1LjIgMS42IDEuNiAzLjkgMi4zIDUuMiAxIDEuMy0xIDEtMy4zLS43LTUuMi0xLjYtMS42LTMuOS0yLjMtNS4yLTF6bS0xMC44LTguMWMtLjcgMS4zIC4zIDIuOSAyLjMgMy45IDEuNiAxIDMuNiAuNyA0LjMtLjcgLjctMS4zLS4zLTIuOS0yLjMtMy45LTItLjYtMy42LS4zLTQuMyAuN3ptMzIuNCAzNS42Yy0xLjYgMS4zLTEgNC4zIDEuMyA2LjIgMi4zIDIuMyA1LjIgMi42IDYuNSAxIDEuMy0xLjMgLjctNC4zLTEuMy02LjItMi4yLTIuMy01LjItMi42LTYuNS0xem0tMTEuNC0xNC43Yy0xLjYgMS0xLjYgMy42IDAgNS45IDEuNiAyLjMgNC4zIDMuMyA1LjYgMi4zIDEuNi0xLjMgMS42LTMuOSAwLTYuMi0xLjQtMi4zLTQtMy4zLTUuNi0yeiI+PC9wYXRoPjwvc3ZnPg==" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div></td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Time"><div class="gt_from_md">
+<p>Fri, Apr 22<br>
 (9:10-10:00)</p>
 </div></td>
-<td headers="Activity" class="gt_row gt_left"><div class="gt_from_md"><p>Smoothing zones</p>
+<td class="gt_row gt_left" headers="Activity"><div class="gt_from_md">
+<p>Smoothing zones</p>
 </div></td>
-<td headers="Video" class="gt_row gt_left"><div class="gt_from_md"><p><a href="https://youtu.be/4g67DemrS6I"><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1.78em;width:2em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M549.7 124.1c-6.281-23.65-24.79-42.28-48.28-48.6C458.8 64 288 64 288 64S117.2 64 74.63 75.49c-23.5 6.322-42 24.95-48.28 48.6-11.41 42.87-11.41 132.3-11.41 132.3s0 89.44 11.41 132.3c6.281 23.65 24.79 41.5 48.28 47.82C117.2 448 288 448 288 448s170.8 0 213.4-11.49c23.5-6.321 42-24.17 48.28-47.82 11.41-42.87 11.41-132.3 11.41-132.3s0-89.44-11.41-132.3zm-317.5 213.5V175.2l142.7 81.21-142.7 81.2z"></path></svg></a></p>
+<td class="gt_row gt_left" headers="Video"><div class="gt_from_md">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://youtu.be/4g67DemrS6I"><img src="data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgcm9sZT0iaW1nIiB2aWV3Ym94PSIwIDAgNTc2IDUxMiIgc3R5bGU9ImhlaWdodDoxLjc4ZW07d2lkdGg6MmVtO3ZlcnRpY2FsLWFsaWduOi0wLjEyNWVtO21hcmdpbi1sZWZ0OmF1dG87bWFyZ2luLXJpZ2h0OmF1dG87Zm9udC1zaXplOmluaGVyaXQ7ZmlsbDpjdXJyZW50Q29sb3I7b3ZlcmZsb3c6dmlzaWJsZTtwb3NpdGlvbjpyZWxhdGl2ZTsiPjxwYXRoIGQ9Ik01NDkuNyAxMjQuMWMtNi4yODEtMjMuNjUtMjQuNzktNDIuMjgtNDguMjgtNDguNkM0NTguOCA2NCAyODggNjQgMjg4IDY0UzExNy4yIDY0IDc0LjYzIDc1LjQ5Yy0yMy41IDYuMzIyLTQyIDI0Ljk1LTQ4LjI4IDQ4LjYtMTEuNDEgNDIuODctMTEuNDEgMTMyLjMtMTEuNDEgMTMyLjNzMCA4OS40NCAxMS40MSAxMzIuM2M2LjI4MSAyMy42NSAyNC43OSA0MS41IDQ4LjI4IDQ3LjgyQzExNy4yIDQ0OCAyODggNDQ4IDI4OCA0NDhzMTcwLjggMCAyMTMuNC0xMS40OWMyMy41LTYuMzIxIDQyLTI0LjE3IDQ4LjI4LTQ3LjgyIDExLjQxLTQyLjg3IDExLjQxLTEzMi4zIDExLjQxLTEzMi4zczAtODkuNDQtMTEuNDEtMTMyLjN6bS0zMTcuNSAyMTMuNVYxNzUuMmwxNDIuNyA4MS4yMS0xNDIuNyA4MS4yeiI+PC9wYXRoPjwvc3ZnPg==" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
 </div></td>
-<td headers="Partial Code" class="gt_row gt_left"><div class="gt_from_md"></div></td></tr>
-    <tr><td headers="Time" class="gt_row gt_left"><div class="gt_from_md"><p>Mon, Apr 25<br>
+<td class="gt_row gt_left" headers="Partial Code"><div class="gt_from_md">
+
+</div></td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Time"><div class="gt_from_md">
+<p>Mon, Apr 25<br>
 (9:10-10:00)</p>
 </div></td>
-<td headers="Activity" class="gt_row gt_left"><div class="gt_from_md"><p>Validating zones with soils data</p>
+<td class="gt_row gt_left" headers="Activity"><div class="gt_from_md">
+<p>Validating zones with soils data</p>
 </div></td>
-<td headers="Video" class="gt_row gt_left"><div class="gt_from_md"><p><a href="https://youtu.be/R_kjvQkgNjM"><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1.78em;width:2em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M549.7 124.1c-6.281-23.65-24.79-42.28-48.28-48.6C458.8 64 288 64 288 64S117.2 64 74.63 75.49c-23.5 6.322-42 24.95-48.28 48.6-11.41 42.87-11.41 132.3-11.41 132.3s0 89.44 11.41 132.3c6.281 23.65 24.79 41.5 48.28 47.82C117.2 448 288 448 288 448s170.8 0 213.4-11.49c23.5-6.321 42-24.17 48.28-47.82 11.41-42.87 11.41-132.3 11.41-132.3s0-89.44-11.41-132.3zm-317.5 213.5V175.2l142.7 81.21-142.7 81.2z"></path></svg></a></p>
+<td class="gt_row gt_left" headers="Video"><div class="gt_from_md">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://youtu.be/R_kjvQkgNjM"><img src="data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgcm9sZT0iaW1nIiB2aWV3Ym94PSIwIDAgNTc2IDUxMiIgc3R5bGU9ImhlaWdodDoxLjc4ZW07d2lkdGg6MmVtO3ZlcnRpY2FsLWFsaWduOi0wLjEyNWVtO21hcmdpbi1sZWZ0OmF1dG87bWFyZ2luLXJpZ2h0OmF1dG87Zm9udC1zaXplOmluaGVyaXQ7ZmlsbDpjdXJyZW50Q29sb3I7b3ZlcmZsb3c6dmlzaWJsZTtwb3NpdGlvbjpyZWxhdGl2ZTsiPjxwYXRoIGQ9Ik01NDkuNyAxMjQuMWMtNi4yODEtMjMuNjUtMjQuNzktNDIuMjgtNDguMjgtNDguNkM0NTguOCA2NCAyODggNjQgMjg4IDY0UzExNy4yIDY0IDc0LjYzIDc1LjQ5Yy0yMy41IDYuMzIyLTQyIDI0Ljk1LTQ4LjI4IDQ4LjYtMTEuNDEgNDIuODctMTEuNDEgMTMyLjMtMTEuNDEgMTMyLjNzMCA4OS40NCAxMS40MSAxMzIuM2M2LjI4MSAyMy42NSAyNC43OSA0MS41IDQ4LjI4IDQ3LjgyQzExNy4yIDQ0OCAyODggNDQ4IDI4OCA0NDhzMTcwLjggMCAyMTMuNC0xMS40OWMyMy41LTYuMzIxIDQyLTI0LjE3IDQ4LjI4LTQ3LjgyIDExLjQxLTQyLjg3IDExLjQxLTEzMi4zIDExLjQxLTEzMi4zczAtODkuNDQtMTEuNDEtMTMyLjN6bS0zMTcuNSAyMTMuNVYxNzUuMmwxNDIuNyA4MS4yMS0xNDIuNyA4MS4yeiI+PC9wYXRoPjwvc3ZnPg==" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
 </div></td>
-<td headers="Partial Code" class="gt_row gt_left"><div class="gt_from_md"></div></td></tr>
-    <tr><td headers="Time" class="gt_row gt_left"><div class="gt_from_md"><p>Wed, Apr 27<br>
+<td class="gt_row gt_left" headers="Partial Code"><div class="gt_from_md">
+
+</div></td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Time"><div class="gt_from_md">
+<p>Wed, Apr 27<br>
 (9:10-11:10)</p>
 </div></td>
-<td headers="Activity" class="gt_row gt_left"><div class="gt_from_md"><p>Validating zones with yield data
-<br>
+<td class="gt_row gt_left" headers="Activity"><div class="gt_from_md">
+<p>Validating zones with yield data<br>
 Variable rate N prescription</p>
 </div></td>
-<td headers="Video" class="gt_row gt_left"><div class="gt_from_md"><p><a href="https://youtu.be/CNHEbq4DGP0"><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1.78em;width:2em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M549.7 124.1c-6.281-23.65-24.79-42.28-48.28-48.6C458.8 64 288 64 288 64S117.2 64 74.63 75.49c-23.5 6.322-42 24.95-48.28 48.6-11.41 42.87-11.41 132.3-11.41 132.3s0 89.44 11.41 132.3c6.281 23.65 24.79 41.5 48.28 47.82C117.2 448 288 448 288 448s170.8 0 213.4-11.49c23.5-6.321 42-24.17 48.28-47.82 11.41-42.87 11.41-132.3 11.41-132.3s0-89.44-11.41-132.3zm-317.5 213.5V175.2l142.7 81.21-142.7 81.2z"></path></svg></a><br>
-<a href="https://youtu.be/TZh-bMrEtfg"><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1.78em;width:2em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M549.7 124.1c-6.281-23.65-24.79-42.28-48.28-48.6C458.8 64 288 64 288 64S117.2 64 74.63 75.49c-23.5 6.322-42 24.95-48.28 48.6-11.41 42.87-11.41 132.3-11.41 132.3s0 89.44 11.41 132.3c6.281 23.65 24.79 41.5 48.28 47.82C117.2 448 288 448 288 448s170.8 0 213.4-11.49c23.5-6.321 42-24.17 48.28-47.82 11.41-42.87 11.41-132.3 11.41-132.3s0-89.44-11.41-132.3zm-317.5 213.5V175.2l142.7 81.21-142.7 81.2z"></path></svg></a></p>
+<td class="gt_row gt_left" headers="Video"><div class="gt_from_md">
+<p><a href="https://youtu.be/CNHEbq4DGP0"><img src="data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgcm9sZT0iaW1nIiB2aWV3Ym94PSIwIDAgNTc2IDUxMiIgc3R5bGU9ImhlaWdodDoxLjc4ZW07d2lkdGg6MmVtO3ZlcnRpY2FsLWFsaWduOi0wLjEyNWVtO21hcmdpbi1sZWZ0OmF1dG87bWFyZ2luLXJpZ2h0OmF1dG87Zm9udC1zaXplOmluaGVyaXQ7ZmlsbDpjdXJyZW50Q29sb3I7b3ZlcmZsb3c6dmlzaWJsZTtwb3NpdGlvbjpyZWxhdGl2ZTsiPjxwYXRoIGQ9Ik01NDkuNyAxMjQuMWMtNi4yODEtMjMuNjUtMjQuNzktNDIuMjgtNDguMjgtNDguNkM0NTguOCA2NCAyODggNjQgMjg4IDY0UzExNy4yIDY0IDc0LjYzIDc1LjQ5Yy0yMy41IDYuMzIyLTQyIDI0Ljk1LTQ4LjI4IDQ4LjYtMTEuNDEgNDIuODctMTEuNDEgMTMyLjMtMTEuNDEgMTMyLjNzMCA4OS40NCAxMS40MSAxMzIuM2M2LjI4MSAyMy42NSAyNC43OSA0MS41IDQ4LjI4IDQ3LjgyQzExNy4yIDQ0OCAyODggNDQ4IDI4OCA0NDhzMTcwLjggMCAyMTMuNC0xMS40OWMyMy41LTYuMzIxIDQyLTI0LjE3IDQ4LjI4LTQ3LjgyIDExLjQxLTQyLjg3IDExLjQxLTEzMi4zIDExLjQxLTEzMi4zczAtODkuNDQtMTEuNDEtMTMyLjN6bS0zMTcuNSAyMTMuNVYxNzUuMmwxNDIuNyA4MS4yMS0xNDIuNyA4MS4yeiI+PC9wYXRoPjwvc3ZnPg==" class="img-fluid"></a><br>
+<a href="https://youtu.be/TZh-bMrEtfg"><img src="data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgcm9sZT0iaW1nIiB2aWV3Ym94PSIwIDAgNTc2IDUxMiIgc3R5bGU9ImhlaWdodDoxLjc4ZW07d2lkdGg6MmVtO3ZlcnRpY2FsLWFsaWduOi0wLjEyNWVtO21hcmdpbi1sZWZ0OmF1dG87bWFyZ2luLXJpZ2h0OmF1dG87Zm9udC1zaXplOmluaGVyaXQ7ZmlsbDpjdXJyZW50Q29sb3I7b3ZlcmZsb3c6dmlzaWJsZTtwb3NpdGlvbjpyZWxhdGl2ZTsiPjxwYXRoIGQ9Ik01NDkuNyAxMjQuMWMtNi4yODEtMjMuNjUtMjQuNzktNDIuMjgtNDguMjgtNDguNkM0NTguOCA2NCAyODggNjQgMjg4IDY0UzExNy4yIDY0IDc0LjYzIDc1LjQ5Yy0yMy41IDYuMzIyLTQyIDI0Ljk1LTQ4LjI4IDQ4LjYtMTEuNDEgNDIuODctMTEuNDEgMTMyLjMtMTEuNDEgMTMyLjNzMCA4OS40NCAxMS40MSAxMzIuM2M2LjI4MSAyMy42NSAyNC43OSA0MS41IDQ4LjI4IDQ3LjgyQzExNy4yIDQ0OCAyODggNDQ4IDI4OCA0NDhzMTcwLjggMCAyMTMuNC0xMS40OWMyMy41LTYuMzIxIDQyLTI0LjE3IDQ4LjI4LTQ3LjgyIDExLjQxLTQyLjg3IDExLjQxLTEzMi4zIDExLjQxLTEzMi4zczAtODkuNDQtMTEuNDEtMTMyLjN6bS0zMTcuNSAyMTMuNVYxNzUuMmwxNDIuNyA4MS4yMS0xNDIuNyA4MS4yeiI+PC9wYXRoPjwvc3ZnPg==" class="img-fluid"></a></p>
 </div></td>
-<td headers="Partial Code" class="gt_row gt_left"><div class="gt_from_md"><p><br>
-<a href="https://tinyurl.com/22turreb"><svg aria-hidden="true" role="img" viewbox="0 0 496 512" style="height:2.06em;width:2em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg></a></p>
-</div></td></tr>
-    <tr><td headers="Time" class="gt_row gt_left"><div class="gt_from_md"><p>Fri, Apr 29<br>
+<td class="gt_row gt_left" headers="Partial Code"><div class="gt_from_md">
+<p><br>
+<a href="https://tinyurl.com/22turreb"><img src="data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgcm9sZT0iaW1nIiB2aWV3Ym94PSIwIDAgNDk2IDUxMiIgc3R5bGU9ImhlaWdodDoyLjA2ZW07d2lkdGg6MmVtO3ZlcnRpY2FsLWFsaWduOi0wLjEyNWVtO21hcmdpbi1sZWZ0OmF1dG87bWFyZ2luLXJpZ2h0OmF1dG87Zm9udC1zaXplOmluaGVyaXQ7ZmlsbDpjdXJyZW50Q29sb3I7b3ZlcmZsb3c6dmlzaWJsZTtwb3NpdGlvbjpyZWxhdGl2ZTsiPjxwYXRoIGQ9Ik0xNjUuOSAzOTcuNGMwIDItMi4zIDMuNi01LjIgMy42LTMuMyAuMy01LjYtMS4zLTUuNi0zLjYgMC0yIDIuMy0zLjYgNS4yLTMuNiAzLS4zIDUuNiAxLjMgNS42IDMuNnptLTMxLjEtNC41Yy0uNyAyIDEuMyA0LjMgNC4zIDQuOSAyLjYgMSA1LjYgMCA2LjItMnMtMS4zLTQuMy00LjMtNS4yYy0yLjYtLjctNS41IC4zLTYuMiAyLjN6bTQ0LjItMS43Yy0yLjkgLjctNC45IDIuNi00LjYgNC45IC4zIDIgMi45IDMuMyA1LjkgMi42IDIuOS0uNyA0LjktMi42IDQuNi00LjYtLjMtMS45LTMtMy4yLTUuOS0yLjl6TTI0NC44IDhDMTA2LjEgOCAwIDExMy4zIDAgMjUyYzAgMTEwLjkgNjkuOCAyMDUuOCAxNjkuNSAyMzkuMiAxMi44IDIuMyAxNy4zLTUuNiAxNy4zLTEyLjEgMC02LjItLjMtNDAuNC0uMy02MS40IDAgMC03MCAxNS04NC43LTI5LjggMCAwLTExLjQtMjkuMS0yNy44LTM2LjYgMCAwLTIyLjktMTUuNyAxLjYtMTUuNCAwIDAgMjQuOSAyIDM4LjYgMjUuOCAyMS45IDM4LjYgNTguNiAyNy41IDcyLjkgMjAuOSAyLjMtMTYgOC44LTI3LjEgMTYtMzMuNy01NS45LTYuMi0xMTIuMy0xNC4zLTExMi4zLTExMC41IDAtMjcuNSA3LjYtNDEuMyAyMy42LTU4LjktMi42LTYuNS0xMS4xLTMzLjMgMi42LTY3LjkgMjAuOS02LjUgNjkgMjcgNjkgMjcgMjAtNS42IDQxLjUtOC41IDYyLjgtOC41czQyLjggMi45IDYyLjggOC41YzAgMCA0OC4xLTMzLjYgNjktMjcgMTMuNyAzNC43IDUuMiA2MS40IDIuNiA2Ny45IDE2IDE3LjcgMjUuOCAzMS41IDI1LjggNTguOSAwIDk2LjUtNTguOSAxMDQuMi0xMTQuOCAxMTAuNSA5LjIgNy45IDE3IDIyLjkgMTcgNDYuNCAwIDMzLjctLjMgNzUuNC0uMyA4My42IDAgNi41IDQuNiAxNC40IDE3LjMgMTIuMUM0MjguMiA0NTcuOCA0OTYgMzYyLjkgNDk2IDI1MiA0OTYgMTEzLjMgMzgzLjUgOCAyNDQuOCA4ek05Ny4yIDM1Mi45Yy0xLjMgMS0xIDMuMyAuNyA1LjIgMS42IDEuNiAzLjkgMi4zIDUuMiAxIDEuMy0xIDEtMy4zLS43LTUuMi0xLjYtMS42LTMuOS0yLjMtNS4yLTF6bS0xMC44LTguMWMtLjcgMS4zIC4zIDIuOSAyLjMgMy45IDEuNiAxIDMuNiAuNyA0LjMtLjcgLjctMS4zLS4zLTIuOS0yLjMtMy45LTItLjYtMy42LS4zLTQuMyAuN3ptMzIuNCAzNS42Yy0xLjYgMS4zLTEgNC4zIDEuMyA2LjIgMi4zIDIuMyA1LjIgMi42IDYuNSAxIDEuMy0xLjMgLjctNC4zLTEuMy02LjItMi4yLTIuMy01LjItMi42LTYuNS0xem0tMTEuNC0xNC43Yy0xLjYgMS0xLjYgMy42IDAgNS45IDEuNiAyLjMgNC4zIDMuMyA1LjYgMi4zIDEuNi0xLjMgMS42LTMuOSAwLTYuMi0xLjQtMi4zLTQtMy4zLTUuNi0yeiI+PC9wYXRoPjwvc3ZnPg==" class="img-fluid"></a></p>
+</div></td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Time"><div class="gt_from_md">
+<p>Fri, Apr 29<br>
 (9:10-10:00)</p>
 </div></td>
-<td headers="Activity" class="gt_row gt_left"><div class="gt_from_md"><p>Validating zones with yield data
-<br>
+<td class="gt_row gt_left" headers="Activity"><div class="gt_from_md">
+<p>Validating zones with yield data<br>
 Final project instructions</p>
 </div></td>
-<td headers="Video" class="gt_row gt_left"><div class="gt_from_md"><p><a href="https://youtu.be/yqzoM2uQGho"><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1.78em;width:2em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M549.7 124.1c-6.281-23.65-24.79-42.28-48.28-48.6C458.8 64 288 64 288 64S117.2 64 74.63 75.49c-23.5 6.322-42 24.95-48.28 48.6-11.41 42.87-11.41 132.3-11.41 132.3s0 89.44 11.41 132.3c6.281 23.65 24.79 41.5 48.28 47.82C117.2 448 288 448 288 448s170.8 0 213.4-11.49c23.5-6.321 42-24.17 48.28-47.82 11.41-42.87 11.41-132.3 11.41-132.3s0-89.44-11.41-132.3zm-317.5 213.5V175.2l142.7 81.21-142.7 81.2z"></path></svg></a></p>
+<td class="gt_row gt_left" headers="Video"><div class="gt_from_md">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://youtu.be/yqzoM2uQGho"><img src="data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgcm9sZT0iaW1nIiB2aWV3Ym94PSIwIDAgNTc2IDUxMiIgc3R5bGU9ImhlaWdodDoxLjc4ZW07d2lkdGg6MmVtO3ZlcnRpY2FsLWFsaWduOi0wLjEyNWVtO21hcmdpbi1sZWZ0OmF1dG87bWFyZ2luLXJpZ2h0OmF1dG87Zm9udC1zaXplOmluaGVyaXQ7ZmlsbDpjdXJyZW50Q29sb3I7b3ZlcmZsb3c6dmlzaWJsZTtwb3NpdGlvbjpyZWxhdGl2ZTsiPjxwYXRoIGQ9Ik01NDkuNyAxMjQuMWMtNi4yODEtMjMuNjUtMjQuNzktNDIuMjgtNDguMjgtNDguNkM0NTguOCA2NCAyODggNjQgMjg4IDY0UzExNy4yIDY0IDc0LjYzIDc1LjQ5Yy0yMy41IDYuMzIyLTQyIDI0Ljk1LTQ4LjI4IDQ4LjYtMTEuNDEgNDIuODctMTEuNDEgMTMyLjMtMTEuNDEgMTMyLjNzMCA4OS40NCAxMS40MSAxMzIuM2M2LjI4MSAyMy42NSAyNC43OSA0MS41IDQ4LjI4IDQ3LjgyQzExNy4yIDQ0OCAyODggNDQ4IDI4OCA0NDhzMTcwLjggMCAyMTMuNC0xMS40OWMyMy41LTYuMzIxIDQyLTI0LjE3IDQ4LjI4LTQ3LjgyIDExLjQxLTQyLjg3IDExLjQxLTEzMi4zIDExLjQxLTEzMi4zczAtODkuNDQtMTEuNDEtMTMyLjN6bS0zMTcuNSAyMTMuNVYxNzUuMmwxNDIuNyA4MS4yMS0xNDIuNyA4MS4yeiI+PC9wYXRoPjwvc3ZnPg==" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
 </div></td>
-<td headers="Partial Code" class="gt_row gt_left"><div class="gt_from_md"></div></td></tr>
-  </tbody>
-  
-  
+<td class="gt_row gt_left" headers="Partial Code"><div class="gt_from_md">
+
+</div></td>
+</tr>
+</tbody>
 </table>
+
 </div>
 </div>
 </div>
@@ -986,9 +1147,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -1053,6 +1228,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -1096,6 +1357,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left"><span> Blog made with <a href="https://quarto.org/">Quarto</a>, by Leo Bastos. License: <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a>. </span></div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
     <div class="nav-footer-right"><img src="../images/UGA-logo.png" style="float:right;height:60px"></div>
   </div>
 </footer>
