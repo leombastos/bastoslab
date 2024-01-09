@@ -557,7 +557,7 @@
     "href": "teaching/2024-dsa/schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Setup.\n\nlibrary(lubridate)\nlibrary(tidyverse)\n\n\nbegin &lt;- as.Date(\"2024-01-08\")\nend &lt;- as.Date(\"2024-05-07\")\n\n\ndates &lt;- seq.Date(from = begin, \n                  to = end, \n                  by = 1)\n\ndates\n\n  [1] \"2024-01-08\" \"2024-01-09\" \"2024-01-10\" \"2024-01-11\" \"2024-01-12\"\n  [6] \"2024-01-13\" \"2024-01-14\" \"2024-01-15\" \"2024-01-16\" \"2024-01-17\"\n [11] \"2024-01-18\" \"2024-01-19\" \"2024-01-20\" \"2024-01-21\" \"2024-01-22\"\n [16] \"2024-01-23\" \"2024-01-24\" \"2024-01-25\" \"2024-01-26\" \"2024-01-27\"\n [21] \"2024-01-28\" \"2024-01-29\" \"2024-01-30\" \"2024-01-31\" \"2024-02-01\"\n [26] \"2024-02-02\" \"2024-02-03\" \"2024-02-04\" \"2024-02-05\" \"2024-02-06\"\n [31] \"2024-02-07\" \"2024-02-08\" \"2024-02-09\" \"2024-02-10\" \"2024-02-11\"\n [36] \"2024-02-12\" \"2024-02-13\" \"2024-02-14\" \"2024-02-15\" \"2024-02-16\"\n [41] \"2024-02-17\" \"2024-02-18\" \"2024-02-19\" \"2024-02-20\" \"2024-02-21\"\n [46] \"2024-02-22\" \"2024-02-23\" \"2024-02-24\" \"2024-02-25\" \"2024-02-26\"\n [51] \"2024-02-27\" \"2024-02-28\" \"2024-02-29\" \"2024-03-01\" \"2024-03-02\"\n [56] \"2024-03-03\" \"2024-03-04\" \"2024-03-05\" \"2024-03-06\" \"2024-03-07\"\n [61] \"2024-03-08\" \"2024-03-09\" \"2024-03-10\" \"2024-03-11\" \"2024-03-12\"\n [66] \"2024-03-13\" \"2024-03-14\" \"2024-03-15\" \"2024-03-16\" \"2024-03-17\"\n [71] \"2024-03-18\" \"2024-03-19\" \"2024-03-20\" \"2024-03-21\" \"2024-03-22\"\n [76] \"2024-03-23\" \"2024-03-24\" \"2024-03-25\" \"2024-03-26\" \"2024-03-27\"\n [81] \"2024-03-28\" \"2024-03-29\" \"2024-03-30\" \"2024-03-31\" \"2024-04-01\"\n [86] \"2024-04-02\" \"2024-04-03\" \"2024-04-04\" \"2024-04-05\" \"2024-04-06\"\n [91] \"2024-04-07\" \"2024-04-08\" \"2024-04-09\" \"2024-04-10\" \"2024-04-11\"\n [96] \"2024-04-12\" \"2024-04-13\" \"2024-04-14\" \"2024-04-15\" \"2024-04-16\"\n[101] \"2024-04-17\" \"2024-04-18\" \"2024-04-19\" \"2024-04-20\" \"2024-04-21\"\n[106] \"2024-04-22\" \"2024-04-23\" \"2024-04-24\" \"2024-04-25\" \"2024-04-26\"\n[111] \"2024-04-27\" \"2024-04-28\" \"2024-04-29\" \"2024-04-30\" \"2024-05-01\"\n[116] \"2024-05-02\" \"2024-05-03\" \"2024-05-04\" \"2024-05-05\" \"2024-05-06\"\n[121] \"2024-05-07\"\n\n\n\nhd &lt;- seq.Date(from = as.Date(\"2024-03-04\"), \n                  to = as.Date(\"2024-03-08\"), \n                  by = 1) %&gt;%\n  as.data.frame() %&gt;%\n  rename(date=\".\") %&gt;%\n  mutate(holiday=\"Spring Break\") %&gt;%\n  bind_rows(data.frame(date=as.Date(\"2024-01-15\"),\n                       holiday=\"MLK\"\n                       ))\n\nhd\n\n        date      holiday\n1 2024-03-04 Spring Break\n2 2024-03-05 Spring Break\n3 2024-03-06 Spring Break\n4 2024-03-07 Spring Break\n5 2024-03-08 Spring Break\n6 2024-01-15          MLK\n\n\n\n\nWrangling\n\ndates_w &lt;- data.frame(date=dates) %&gt;%\n  mutate(dow=wday(date, label = T)) %&gt;%\n  filter(dow %in% c(\"Mon\", \"Wed\", \"Fri\")) %&gt;%\n  mutate(time=case_when(\n    dow %in% c(\"Mon\",\"Fri\") ~ \"9:10 to 10:00\",\n    T ~ \"9:10 to 11:10\"\n  )) %&gt;%\n  left_join(hd) \n\nJoining with `by = join_by(date)`\n\ndates_w\n\n         date dow          time      holiday\n1  2024-01-08 Mon 9:10 to 10:00         &lt;NA&gt;\n2  2024-01-10 Wed 9:10 to 11:10         &lt;NA&gt;\n3  2024-01-12 Fri 9:10 to 10:00         &lt;NA&gt;\n4  2024-01-15 Mon 9:10 to 10:00          MLK\n5  2024-01-17 Wed 9:10 to 11:10         &lt;NA&gt;\n6  2024-01-19 Fri 9:10 to 10:00         &lt;NA&gt;\n7  2024-01-22 Mon 9:10 to 10:00         &lt;NA&gt;\n8  2024-01-24 Wed 9:10 to 11:10         &lt;NA&gt;\n9  2024-01-26 Fri 9:10 to 10:00         &lt;NA&gt;\n10 2024-01-29 Mon 9:10 to 10:00         &lt;NA&gt;\n11 2024-01-31 Wed 9:10 to 11:10         &lt;NA&gt;\n12 2024-02-02 Fri 9:10 to 10:00         &lt;NA&gt;\n13 2024-02-05 Mon 9:10 to 10:00         &lt;NA&gt;\n14 2024-02-07 Wed 9:10 to 11:10         &lt;NA&gt;\n15 2024-02-09 Fri 9:10 to 10:00         &lt;NA&gt;\n16 2024-02-12 Mon 9:10 to 10:00         &lt;NA&gt;\n17 2024-02-14 Wed 9:10 to 11:10         &lt;NA&gt;\n18 2024-02-16 Fri 9:10 to 10:00         &lt;NA&gt;\n19 2024-02-19 Mon 9:10 to 10:00         &lt;NA&gt;\n20 2024-02-21 Wed 9:10 to 11:10         &lt;NA&gt;\n21 2024-02-23 Fri 9:10 to 10:00         &lt;NA&gt;\n22 2024-02-26 Mon 9:10 to 10:00         &lt;NA&gt;\n23 2024-02-28 Wed 9:10 to 11:10         &lt;NA&gt;\n24 2024-03-01 Fri 9:10 to 10:00         &lt;NA&gt;\n25 2024-03-04 Mon 9:10 to 10:00 Spring Break\n26 2024-03-06 Wed 9:10 to 11:10 Spring Break\n27 2024-03-08 Fri 9:10 to 10:00 Spring Break\n28 2024-03-11 Mon 9:10 to 10:00         &lt;NA&gt;\n29 2024-03-13 Wed 9:10 to 11:10         &lt;NA&gt;\n30 2024-03-15 Fri 9:10 to 10:00         &lt;NA&gt;\n31 2024-03-18 Mon 9:10 to 10:00         &lt;NA&gt;\n32 2024-03-20 Wed 9:10 to 11:10         &lt;NA&gt;\n33 2024-03-22 Fri 9:10 to 10:00         &lt;NA&gt;\n34 2024-03-25 Mon 9:10 to 10:00         &lt;NA&gt;\n35 2024-03-27 Wed 9:10 to 11:10         &lt;NA&gt;\n36 2024-03-29 Fri 9:10 to 10:00         &lt;NA&gt;\n37 2024-04-01 Mon 9:10 to 10:00         &lt;NA&gt;\n38 2024-04-03 Wed 9:10 to 11:10         &lt;NA&gt;\n39 2024-04-05 Fri 9:10 to 10:00         &lt;NA&gt;\n40 2024-04-08 Mon 9:10 to 10:00         &lt;NA&gt;\n41 2024-04-10 Wed 9:10 to 11:10         &lt;NA&gt;\n42 2024-04-12 Fri 9:10 to 10:00         &lt;NA&gt;\n43 2024-04-15 Mon 9:10 to 10:00         &lt;NA&gt;\n44 2024-04-17 Wed 9:10 to 11:10         &lt;NA&gt;\n45 2024-04-19 Fri 9:10 to 10:00         &lt;NA&gt;\n46 2024-04-22 Mon 9:10 to 10:00         &lt;NA&gt;\n47 2024-04-24 Wed 9:10 to 11:10         &lt;NA&gt;\n48 2024-04-26 Fri 9:10 to 10:00         &lt;NA&gt;\n49 2024-04-29 Mon 9:10 to 10:00         &lt;NA&gt;\n50 2024-05-01 Wed 9:10 to 11:10         &lt;NA&gt;\n51 2024-05-03 Fri 9:10 to 10:00         &lt;NA&gt;\n52 2024-05-06 Mon 9:10 to 10:00         &lt;NA&gt;\n\n\n\n\nExporting\n\nwrite_csv(dates_w, \"dates.csv\")"
+    "text": "Setup.\n\nlibrary(lubridate)\nlibrary(tidyverse)\n\n\nbegin &lt;- as.Date(\"2024-01-08\")\nend &lt;- as.Date(\"2024-05-07\")\n\n\ndates &lt;- seq.Date(from = begin, \n                  to = end, \n                  by = 1)\n\ndates\n\n  [1] \"2024-01-08\" \"2024-01-09\" \"2024-01-10\" \"2024-01-11\" \"2024-01-12\"\n  [6] \"2024-01-13\" \"2024-01-14\" \"2024-01-15\" \"2024-01-16\" \"2024-01-17\"\n [11] \"2024-01-18\" \"2024-01-19\" \"2024-01-20\" \"2024-01-21\" \"2024-01-22\"\n [16] \"2024-01-23\" \"2024-01-24\" \"2024-01-25\" \"2024-01-26\" \"2024-01-27\"\n [21] \"2024-01-28\" \"2024-01-29\" \"2024-01-30\" \"2024-01-31\" \"2024-02-01\"\n [26] \"2024-02-02\" \"2024-02-03\" \"2024-02-04\" \"2024-02-05\" \"2024-02-06\"\n [31] \"2024-02-07\" \"2024-02-08\" \"2024-02-09\" \"2024-02-10\" \"2024-02-11\"\n [36] \"2024-02-12\" \"2024-02-13\" \"2024-02-14\" \"2024-02-15\" \"2024-02-16\"\n [41] \"2024-02-17\" \"2024-02-18\" \"2024-02-19\" \"2024-02-20\" \"2024-02-21\"\n [46] \"2024-02-22\" \"2024-02-23\" \"2024-02-24\" \"2024-02-25\" \"2024-02-26\"\n [51] \"2024-02-27\" \"2024-02-28\" \"2024-02-29\" \"2024-03-01\" \"2024-03-02\"\n [56] \"2024-03-03\" \"2024-03-04\" \"2024-03-05\" \"2024-03-06\" \"2024-03-07\"\n [61] \"2024-03-08\" \"2024-03-09\" \"2024-03-10\" \"2024-03-11\" \"2024-03-12\"\n [66] \"2024-03-13\" \"2024-03-14\" \"2024-03-15\" \"2024-03-16\" \"2024-03-17\"\n [71] \"2024-03-18\" \"2024-03-19\" \"2024-03-20\" \"2024-03-21\" \"2024-03-22\"\n [76] \"2024-03-23\" \"2024-03-24\" \"2024-03-25\" \"2024-03-26\" \"2024-03-27\"\n [81] \"2024-03-28\" \"2024-03-29\" \"2024-03-30\" \"2024-03-31\" \"2024-04-01\"\n [86] \"2024-04-02\" \"2024-04-03\" \"2024-04-04\" \"2024-04-05\" \"2024-04-06\"\n [91] \"2024-04-07\" \"2024-04-08\" \"2024-04-09\" \"2024-04-10\" \"2024-04-11\"\n [96] \"2024-04-12\" \"2024-04-13\" \"2024-04-14\" \"2024-04-15\" \"2024-04-16\"\n[101] \"2024-04-17\" \"2024-04-18\" \"2024-04-19\" \"2024-04-20\" \"2024-04-21\"\n[106] \"2024-04-22\" \"2024-04-23\" \"2024-04-24\" \"2024-04-25\" \"2024-04-26\"\n[111] \"2024-04-27\" \"2024-04-28\" \"2024-04-29\" \"2024-04-30\" \"2024-05-01\"\n[116] \"2024-05-02\" \"2024-05-03\" \"2024-05-04\" \"2024-05-05\" \"2024-05-06\"\n[121] \"2024-05-07\"\n\n\n\nhd &lt;- seq.Date(from = as.Date(\"2024-03-04\"), \n                  to = as.Date(\"2024-03-08\"), \n                  by = 1) %&gt;%\n  as.data.frame() %&gt;%\n  rename(date=\".\") %&gt;%\n  mutate(holiday=\"Spring Break\") %&gt;%\n  bind_rows(data.frame(date=as.Date(\"2024-01-15\"),\n                       holiday=\"MLK\"\n                       ))\n\nhd\n\n        date      holiday\n1 2024-03-04 Spring Break\n2 2024-03-05 Spring Break\n3 2024-03-06 Spring Break\n4 2024-03-07 Spring Break\n5 2024-03-08 Spring Break\n6 2024-01-15          MLK\n\n\n\n\nWrangling\n\ndates_w &lt;- data.frame(date=dates) %&gt;%\n  mutate(dow=wday(date, label = T)) %&gt;%\n  filter(dow %in% c(\"Tue\", \"Thu\")) %&gt;%\n  mutate(time=case_when(\n    dow == \"Tue\" ~ \"9:30 to 11:10\",\n    T ~ \"9:30 to 11:30\"\n  )) %&gt;%\n  left_join(hd) \n\nJoining with `by = join_by(date)`\n\ndates_w\n\n         date dow          time      holiday\n1  2024-01-09 Tue 9:30 to 11:10         &lt;NA&gt;\n2  2024-01-11 Thu 9:30 to 11:30         &lt;NA&gt;\n3  2024-01-16 Tue 9:30 to 11:10         &lt;NA&gt;\n4  2024-01-18 Thu 9:30 to 11:30         &lt;NA&gt;\n5  2024-01-23 Tue 9:30 to 11:10         &lt;NA&gt;\n6  2024-01-25 Thu 9:30 to 11:30         &lt;NA&gt;\n7  2024-01-30 Tue 9:30 to 11:10         &lt;NA&gt;\n8  2024-02-01 Thu 9:30 to 11:30         &lt;NA&gt;\n9  2024-02-06 Tue 9:30 to 11:10         &lt;NA&gt;\n10 2024-02-08 Thu 9:30 to 11:30         &lt;NA&gt;\n11 2024-02-13 Tue 9:30 to 11:10         &lt;NA&gt;\n12 2024-02-15 Thu 9:30 to 11:30         &lt;NA&gt;\n13 2024-02-20 Tue 9:30 to 11:10         &lt;NA&gt;\n14 2024-02-22 Thu 9:30 to 11:30         &lt;NA&gt;\n15 2024-02-27 Tue 9:30 to 11:10         &lt;NA&gt;\n16 2024-02-29 Thu 9:30 to 11:30         &lt;NA&gt;\n17 2024-03-05 Tue 9:30 to 11:10 Spring Break\n18 2024-03-07 Thu 9:30 to 11:30 Spring Break\n19 2024-03-12 Tue 9:30 to 11:10         &lt;NA&gt;\n20 2024-03-14 Thu 9:30 to 11:30         &lt;NA&gt;\n21 2024-03-19 Tue 9:30 to 11:10         &lt;NA&gt;\n22 2024-03-21 Thu 9:30 to 11:30         &lt;NA&gt;\n23 2024-03-26 Tue 9:30 to 11:10         &lt;NA&gt;\n24 2024-03-28 Thu 9:30 to 11:30         &lt;NA&gt;\n25 2024-04-02 Tue 9:30 to 11:10         &lt;NA&gt;\n26 2024-04-04 Thu 9:30 to 11:30         &lt;NA&gt;\n27 2024-04-09 Tue 9:30 to 11:10         &lt;NA&gt;\n28 2024-04-11 Thu 9:30 to 11:30         &lt;NA&gt;\n29 2024-04-16 Tue 9:30 to 11:10         &lt;NA&gt;\n30 2024-04-18 Thu 9:30 to 11:30         &lt;NA&gt;\n31 2024-04-23 Tue 9:30 to 11:10         &lt;NA&gt;\n32 2024-04-25 Thu 9:30 to 11:30         &lt;NA&gt;\n33 2024-04-30 Tue 9:30 to 11:10         &lt;NA&gt;\n34 2024-05-02 Thu 9:30 to 11:30         &lt;NA&gt;\n35 2024-05-07 Tue 9:30 to 11:10         &lt;NA&gt;\n\n\n\n\nExporting\n\nwrite_csv(dates_w, \"dates.csv\")"
   },
   {
     "objectID": "teaching/2024-dsa/slides/lec08-nass.html#main-geospatial-data-types",
@@ -1806,149 +1806,191 @@
     "text": "SMAP validation\nSMAP-derived data is validated through a network of soil moisture sensing stations across the USA.\n\n\nFor more information on how SMAP products are derived and how they are validated, check the full paper here."
   },
   {
-    "objectID": "teaching/2024-dsa/slides/lec01.html#meet-the-professors",
-    "href": "teaching/2024-dsa/slides/lec01.html#meet-the-professors",
-    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
-    "section": "Meet the professors",
-    "text": "Meet the professors\n\n\n\n\n\nDr. Leonardo M. Bastos\n\n\n\nAssistant Professor\n4101 Miller Plant Sciences Building\nUGA-Athens Campus\nEmail: lmbastos@uga.edu\n\n\n\n\n\n\n\nDr. Lorena Lacerda\n\n\n\nAssistant Professor\n4103 Miller Plant Sciences Building UGA-Athens Campus\nEmail: llacerda@uga.edu"
+    "objectID": "teaching/2024-dsa/slides/lec01.html#meet-the-professor",
+    "href": "teaching/2024-dsa/slides/lec01.html#meet-the-professor",
+    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
+    "section": "Meet the professor",
+    "text": "Meet the professor\n\n\n\n\n\nDr. Leonardo M. Bastos\n\n\n\nAssistant Professor\n4101 Miller Plant Sciences Building\nUGA-Athens Campus\nEmail: lmbastos@uga.edu"
   },
   {
     "objectID": "teaching/2024-dsa/slides/lec01.html#meeting-times-and-locations",
     "href": "teaching/2024-dsa/slides/lec01.html#meeting-times-and-locations",
-    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
     "section": "Meeting times and locations",
-    "text": "Meeting times and locations\n\n\nTime:\n\nLectures: Monday and Friday at 09:10-10:00\nLabs: Wednesday at 09:10-11:10\n\n\nLocation:\n\nAthens campus: in person at 1203 3203 Miller\n\nTifton campus: in person at 601 NESPAL South OR remote\n\nGriffin campus: in person at SLC UGA Computer lab OR remote\n\n\n\n\nZoom credentials shared via email."
+    "text": "Meeting times and locations\n\n\nTime:\n\nLectures: Tuesdays at 09:30-11:10\nLabs: Thursdays at 09:30-11:30\n\n\nLocation:\n\nAthens campus: in person at 1203 Miller\n\nTifton campus: in person at 601 NESPAL South OR remote\n\nGriffin campus: in person at SLC UGA Computer lab OR remote\n\n\n\n\nZoom credentials shared via email."
   },
   {
     "objectID": "teaching/2024-dsa/slides/lec01.html#course-objectives",
     "href": "teaching/2024-dsa/slides/lec01.html#course-objectives",
-    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
     "section": "Course objectives",
-    "text": "Course objectives\n\nObtain, process, and use various agricultural geospatial data layers for decision making related to precision agriculture."
+    "text": "Course objectives\n\nLearning and applying analytical workflows that involve importing data, processing, analyzing, assessing model fit, extracting model information and producing publication-ready figures for different analysis including ANOVAs and regression"
   },
   {
     "objectID": "teaching/2024-dsa/slides/lec01.html#course-objectives-1",
     "href": "teaching/2024-dsa/slides/lec01.html#course-objectives-1",
-    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
     "section": "Course objectives",
-    "text": "Course objectives\n\nData types include publicly available (weather, soils, and satellite remote sensing), and private data like yield monitor, soil, and UAV remote sensing)."
+    "text": "Course objectives\n\nConducting analysis of variance workflows for the most commonly used agricultural designed studies (completely randomized design, randomized complete block design, split-plot design)"
   },
   {
     "objectID": "teaching/2024-dsa/slides/lec01.html#course-objectives-2",
     "href": "teaching/2024-dsa/slides/lec01.html#course-objectives-2",
-    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
     "section": "Course objectives",
-    "text": "Course objectives\n\nAnalytical techniques include creation of management zones, zone-based and imagery-based variable rate prescription, profitability maps, and use of satellite remote sensing for crop scouting."
+    "text": "Course objectives\n\nConducting linear and non-linear regression workflows"
   },
   {
     "objectID": "teaching/2024-dsa/slides/lec01.html#course-objectives-3",
     "href": "teaching/2024-dsa/slides/lec01.html#course-objectives-3",
-    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
     "section": "Course objectives",
-    "text": "Course objectives\n\nAll steps will be conducted utilizing the R statistical language to create modern, well documented and reproducible precision agriculture analytical workflows. No previous knowledge in R is required."
+    "text": "Course objectives\n\nLearning and applying machine learning concepts (bias-variance trade-off, data split, hyper-parameter optimization, predictive metrics) and algorithms to agricultural observational data (soils, weather, yield)"
   },
   {
     "objectID": "teaching/2024-dsa/slides/lec01.html#course-objectives-4",
     "href": "teaching/2024-dsa/slides/lec01.html#course-objectives-4",
-    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
     "section": "Course objectives",
-    "text": "Course objectives\nFor example, from raw yield data to management zone creation"
+    "text": "Course objectives\n\nLearning and applying machine learning concepts (bias-variance trade-off, data split, hyper-parameter optimization, predictive metrics) and algorithms to agricultural observational data (soils, weather, yield)"
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec01.html#course-objectives-5",
+    "href": "teaching/2024-dsa/slides/lec01.html#course-objectives-5",
+    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
+    "section": "Course objectives",
+    "text": "Course objectives\n\nDoing all the above while learning and using data science tools for reproducibility like version control, statistical programming, APIs to publicly available data sets, task automation, and creating online interactive dashboards."
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec01.html#course-objectives-6",
+    "href": "teaching/2024-dsa/slides/lec01.html#course-objectives-6",
+    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
+    "section": "Course objectives",
+    "text": "Course objectives\n\nAll steps will be conducted utilizing the R statistical language to create modern, well documented and reproducible analytical workflows. No previous knowledge in R is required."
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec01.html#course-objectives-7",
+    "href": "teaching/2024-dsa/slides/lec01.html#course-objectives-7",
+    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
+    "section": "Course objectives",
+    "text": "Course objectives\nFor example, predicting cotton yield across the cotton belt using open-source weather data"
   },
   {
     "objectID": "teaching/2024-dsa/slides/lec01.html#course-topics",
     "href": "teaching/2024-dsa/slides/lec01.html#course-topics",
-    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
     "section": "Course topics",
-    "text": "Course topics\n\n\n\nIntro to R\n\nUsing R as a GIS\n\nAccessing publicly available geospatial data through R\n\nCreating grids for soil sampling\n\nInterpolation\n\n\n\n\nYield monitor data processing\n\nTerrain data processing\n\nManagement zones\n\nUAV remote sensing\n\nVariable rate prescription\n\nProfitability maps\n\nSatellite remote sensing for crop scouting"
+    "text": "Course topics\nThis course will be split into two main parts:\n\nPlaning, designing, and analysis of experimental designs\n\nData scraping and feature engineering for machine learning\n\n\nAll intertwined with data science concepts with a focus on agricultural case studies"
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec01.html#course-topics---experimental-design",
+    "href": "teaching/2024-dsa/slides/lec01.html#course-topics---experimental-design",
+    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
+    "section": "Course topics - Experimental design",
+    "text": "Course topics - Experimental design\n\n\n\nIntro to R and RStudio\ngit and GitHub\n\nR APIs to open data (USDA NASS, weather, soil)\n\nData wrangling with dplyr, tidyr, pipe operator\n\nData visualization with ggplot2, gganimate\n\n\n\n\nExperimental unit, randomization, and replication\n\nExp. and trt. designs and ANOVAs\nFixed vs. Random effects\nRepeated measures\nAutomating repetitive tasks through iteration with purrr"
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec01.html#course-topics---machine-learning",
+    "href": "teaching/2024-dsa/slides/lec01.html#course-topics---machine-learning",
+    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
+    "section": "Course topics - Machine learning",
+    "text": "Course topics - Machine learning\n\n\n\nLinear regression\nNon-linear regression\nRegression for finding optimum\nDimensionality reduction\n\nMachine learning concepts\n\nBias-variance trade-off\nData split\nHyperparameter opt.\nPredictive assessment\n\n\n\n\nMachine learning models\n\nK-means (unsupervised)\nTree models (RF, CIT)\nXGboost\n\nDashboards\n\nCreating a simple dashboard with shiny apps\nPublishing a dashboard online"
   },
   {
     "objectID": "teaching/2024-dsa/slides/lec01.html#section",
     "href": "teaching/2024-dsa/slides/lec01.html#section",
-    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
     "section": "",
     "text": "All classes will be recorded and further posted on the class YouTube channel.\n\nThis should be used as a supporting study tool and make-up for content from missed classes. Recordings do not replace in-person/remote attendance."
   },
   {
     "objectID": "teaching/2024-dsa/slides/lec01.html#assessment-and-grading",
     "href": "teaching/2024-dsa/slides/lec01.html#assessment-and-grading",
-    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
     "section": "Assessment and Grading",
-    "text": "Assessment and Grading\n\n\n\n\n\n\n\n\n\n\n\n\n\nActivity\nGrade\n\n\n\n\n\nMini-project: USDA NASS data\n\n\n10%\n\n\n\n\nMid-term exam\n\n\n10%\n\n\n\n\nHomework assignments\n\n\n35%\n\n\n\n\nIn-class quizzes\n\n\n15%\n\n\n\n\nFinal project:\nfrom raw data to zone-based variable rate\n\n\n20%\n\n\n\n\nClass participation\n\n\n10%"
+    "text": "Assessment and Grading\n\n\n\n\n\n\n  \n    \n    \n      Activity\n      Grade\n    \n  \n  \n    Mid-term project: Experimental data analysis\n\n10%\n\n    Mid-term exam\n\n10%\n\n    Homework assignments\n\n35%\n\n    In-class quizzes\n\n15%\n\n    Final project:\nMachine learning\n\n20%\n\n    Class participation\n\n10%"
   },
   {
     "objectID": "teaching/2024-dsa/slides/lec01.html#course-website",
     "href": "teaching/2024-dsa/slides/lec01.html#course-website",
-    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
     "section": "Course website",
     "text": "Course website\nImportant links related to this course:\n\nCourse website\n\nCourse GitHub repository\n\nCourse YouTube channel"
   },
   {
     "objectID": "teaching/2024-dsa/slides/lec01.html#course-website---downloading-slides",
     "href": "teaching/2024-dsa/slides/lec01.html#course-website---downloading-slides",
-    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
     "section": "Course website - downloading slides",
     "text": "Course website - downloading slides\n\nWith the slides page open on your browser, push e on your keyboard.\nOn your browser, go to File &gt; Print.\nAdjust orientation and pages per sheet if desired.\nSave as PDF."
   },
   {
     "objectID": "teaching/2024-dsa/slides/lec01.html#course-website---asking-questions",
     "href": "teaching/2024-dsa/slides/lec01.html#course-website---asking-questions",
-    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
     "section": "Course website - asking questions",
     "text": "Course website - asking questions\n\nIf your question is related to difficulties with material/code/assignments, then post it on our class GitHub page on the Issues tab.\nGo to the class GitHub repository &gt; Click on Issues (near top left) &gt; Click on New issue (green button) &gt; Give it a descriptive title, leave your comment &gt; Click on Submit new issue.\nLet’s try it out: introductions (may need to sign up to GitHub)"
   },
   {
     "objectID": "teaching/2024-dsa/slides/lec01.html#course-website---asking-questions-1",
     "href": "teaching/2024-dsa/slides/lec01.html#course-website---asking-questions-1",
-    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
     "section": "Course website - asking questions",
     "text": "Course website - asking questions\n\n\n\n\n\n\n\n\n\nBy asking questions on GitHub, other students may be able to help you besides only instructor.\nHelping others on GitHub will count as participation!"
   },
   {
     "objectID": "teaching/2024-dsa/slides/lec01.html#attendance-policy",
     "href": "teaching/2024-dsa/slides/lec01.html#attendance-policy",
-    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
     "section": "Attendance policy",
     "text": "Attendance policy\nStudents are expected to attend every class period.\n\nStudents on the Athens campus must attend class in-person.\n\nIf a special circumstance arise (illness, travel, etc.), student absence or remote attendance must be informed to instructors prior to that class period."
   },
   {
     "objectID": "teaching/2024-dsa/slides/lec01.html#attendance-policy-1",
     "href": "teaching/2024-dsa/slides/lec01.html#attendance-policy-1",
-    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
     "section": "Attendance policy",
-    "text": "Attendance policy\nStudents are expected to attend every class period.\n\nStudents on the Tifton and Griffin campuses may attend class in-person on their campuses or remote using the zoom link information.\n\nStudent absence must be informed to instructors prior to that class period."
+    "text": "Attendance policy\nStudents are expected to attend every class period.\n\nStudents on the Tifton and Griffin campuses may attend class in-person on their campuses or remote using the zoom link information.\n\nStudent absence must be informed to instructors prior to that class period to be excused."
   },
   {
     "objectID": "teaching/2024-dsa/slides/lec01.html#attendance-policy-2",
     "href": "teaching/2024-dsa/slides/lec01.html#attendance-policy-2",
-    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
     "section": "Attendance policy",
     "text": "Attendance policy\nStudents are expected to attend every class period.\n\nPer Board of Regents policy, I reserve the right to drop students from the class roll who miss more than 5 class periods. Such students will be given a WF grade."
   },
   {
     "objectID": "teaching/2024-dsa/slides/lec01.html#attendance-policy-3",
     "href": "teaching/2024-dsa/slides/lec01.html#attendance-policy-3",
-    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
     "section": "Attendance policy",
     "text": "Attendance policy\n\n\n\n\n\n\n\n\n\nWhen attending a class remotely via zoom, students are expected to have cameras on at all times."
   },
   {
     "objectID": "teaching/2024-dsa/slides/lec01.html#technology-and-software-requirements",
     "href": "teaching/2024-dsa/slides/lec01.html#technology-and-software-requirements",
-    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
     "section": "Technology and software requirements",
     "text": "Technology and software requirements\nStudents will need to have access to:\n\nA computer 💻 (to install software, code along with instructors)\n\nA second screen 📺 (main screen to code along, second screen to watch class if not in person)\n\n\nIf a student does not have access to these resources (personal laptop/desktop and a second screen), please let instructors know to ensure proper accommodations can be made."
   },
   {
+    "objectID": "teaching/2024-dsa/slides/lec01.html#ai-llms-and-plagiarism",
+    "href": "teaching/2024-dsa/slides/lec01.html#ai-llms-and-plagiarism",
+    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
+    "section": "AI, LLMs, and plagiarism",
+    "text": "AI, LLMs, and plagiarism\nYou are allowed to use LLMs like ChatGPT on your coding assignments, as long as\n\nyou use it to learn, not to simply copy/paste\n\nyou give appropriate credit\n\n\nPlagiarism, both from your classmates AND LLMs, is a serious violation of code of conduct and will be reported to university officials"
+  },
+  {
     "objectID": "teaching/2024-dsa/slides/lec01.html#survey",
     "href": "teaching/2024-dsa/slides/lec01.html#survey",
-    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
     "section": "Survey",
-    "text": "Survey\nPlease go to the link below and fill this survey:\nhttps://forms.gle/M78MDXLrtXBVUHyt7\nTake 5 minutes to answer it."
+    "text": "Survey\nPlease go to the link below and fill this survey:\nhttps://forms.gle/qHCHdQd2ZmAVT2Eb9\nTake 5 minutes to answer it."
   },
   {
     "objectID": "teaching/2024-dsa/slides/lec01.html#getting-ready-for-next-class",
     "href": "teaching/2024-dsa/slides/lec01.html#getting-ready-for-next-class",
-    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
     "section": "Getting ready for next class",
     "text": "Getting ready for next class\nTo be ready for next class (Intro to R), please go to the course main page and follow the link to the Lab 01 prep page.\n\nIf you have questions or issues, email me before class.\nWe will have limited time to troubleshoot technical problems during next period."
   },

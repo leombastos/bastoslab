@@ -271,10 +271,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>dates_w <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">date=</span>dates) <span class="sc">%&gt;%</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">dow=</span><span class="fu">wday</span>(date, <span class="at">label =</span> T)) <span class="sc">%&gt;%</span></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(dow <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Mon"</span>, <span class="st">"Wed"</span>, <span class="st">"Fri"</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(dow <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Tue"</span>, <span class="st">"Thu"</span>)) <span class="sc">%&gt;%</span></span>
 <span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">time=</span><span class="fu">case_when</span>(</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    dow <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Mon"</span>,<span class="st">"Fri"</span>) <span class="sc">~</span> <span class="st">"9:10 to 10:00"</span>,</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    T <span class="sc">~</span> <span class="st">"9:10 to 11:10"</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    dow <span class="sc">==</span> <span class="st">"Tue"</span> <span class="sc">~</span> <span class="st">"9:30 to 11:10"</span>,</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    T <span class="sc">~</span> <span class="st">"9:30 to 11:30"</span></span>
 <span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>  )) <span class="sc">%&gt;%</span></span>
 <span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(hd) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
@@ -283,58 +283,41 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>dates_w</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>         date dow          time      holiday
-1  2024-01-08 Mon 9:10 to 10:00         &lt;NA&gt;
-2  2024-01-10 Wed 9:10 to 11:10         &lt;NA&gt;
-3  2024-01-12 Fri 9:10 to 10:00         &lt;NA&gt;
-4  2024-01-15 Mon 9:10 to 10:00          MLK
-5  2024-01-17 Wed 9:10 to 11:10         &lt;NA&gt;
-6  2024-01-19 Fri 9:10 to 10:00         &lt;NA&gt;
-7  2024-01-22 Mon 9:10 to 10:00         &lt;NA&gt;
-8  2024-01-24 Wed 9:10 to 11:10         &lt;NA&gt;
-9  2024-01-26 Fri 9:10 to 10:00         &lt;NA&gt;
-10 2024-01-29 Mon 9:10 to 10:00         &lt;NA&gt;
-11 2024-01-31 Wed 9:10 to 11:10         &lt;NA&gt;
-12 2024-02-02 Fri 9:10 to 10:00         &lt;NA&gt;
-13 2024-02-05 Mon 9:10 to 10:00         &lt;NA&gt;
-14 2024-02-07 Wed 9:10 to 11:10         &lt;NA&gt;
-15 2024-02-09 Fri 9:10 to 10:00         &lt;NA&gt;
-16 2024-02-12 Mon 9:10 to 10:00         &lt;NA&gt;
-17 2024-02-14 Wed 9:10 to 11:10         &lt;NA&gt;
-18 2024-02-16 Fri 9:10 to 10:00         &lt;NA&gt;
-19 2024-02-19 Mon 9:10 to 10:00         &lt;NA&gt;
-20 2024-02-21 Wed 9:10 to 11:10         &lt;NA&gt;
-21 2024-02-23 Fri 9:10 to 10:00         &lt;NA&gt;
-22 2024-02-26 Mon 9:10 to 10:00         &lt;NA&gt;
-23 2024-02-28 Wed 9:10 to 11:10         &lt;NA&gt;
-24 2024-03-01 Fri 9:10 to 10:00         &lt;NA&gt;
-25 2024-03-04 Mon 9:10 to 10:00 Spring Break
-26 2024-03-06 Wed 9:10 to 11:10 Spring Break
-27 2024-03-08 Fri 9:10 to 10:00 Spring Break
-28 2024-03-11 Mon 9:10 to 10:00         &lt;NA&gt;
-29 2024-03-13 Wed 9:10 to 11:10         &lt;NA&gt;
-30 2024-03-15 Fri 9:10 to 10:00         &lt;NA&gt;
-31 2024-03-18 Mon 9:10 to 10:00         &lt;NA&gt;
-32 2024-03-20 Wed 9:10 to 11:10         &lt;NA&gt;
-33 2024-03-22 Fri 9:10 to 10:00         &lt;NA&gt;
-34 2024-03-25 Mon 9:10 to 10:00         &lt;NA&gt;
-35 2024-03-27 Wed 9:10 to 11:10         &lt;NA&gt;
-36 2024-03-29 Fri 9:10 to 10:00         &lt;NA&gt;
-37 2024-04-01 Mon 9:10 to 10:00         &lt;NA&gt;
-38 2024-04-03 Wed 9:10 to 11:10         &lt;NA&gt;
-39 2024-04-05 Fri 9:10 to 10:00         &lt;NA&gt;
-40 2024-04-08 Mon 9:10 to 10:00         &lt;NA&gt;
-41 2024-04-10 Wed 9:10 to 11:10         &lt;NA&gt;
-42 2024-04-12 Fri 9:10 to 10:00         &lt;NA&gt;
-43 2024-04-15 Mon 9:10 to 10:00         &lt;NA&gt;
-44 2024-04-17 Wed 9:10 to 11:10         &lt;NA&gt;
-45 2024-04-19 Fri 9:10 to 10:00         &lt;NA&gt;
-46 2024-04-22 Mon 9:10 to 10:00         &lt;NA&gt;
-47 2024-04-24 Wed 9:10 to 11:10         &lt;NA&gt;
-48 2024-04-26 Fri 9:10 to 10:00         &lt;NA&gt;
-49 2024-04-29 Mon 9:10 to 10:00         &lt;NA&gt;
-50 2024-05-01 Wed 9:10 to 11:10         &lt;NA&gt;
-51 2024-05-03 Fri 9:10 to 10:00         &lt;NA&gt;
-52 2024-05-06 Mon 9:10 to 10:00         &lt;NA&gt;</code></pre>
+1  2024-01-09 Tue 9:30 to 11:10         &lt;NA&gt;
+2  2024-01-11 Thu 9:30 to 11:30         &lt;NA&gt;
+3  2024-01-16 Tue 9:30 to 11:10         &lt;NA&gt;
+4  2024-01-18 Thu 9:30 to 11:30         &lt;NA&gt;
+5  2024-01-23 Tue 9:30 to 11:10         &lt;NA&gt;
+6  2024-01-25 Thu 9:30 to 11:30         &lt;NA&gt;
+7  2024-01-30 Tue 9:30 to 11:10         &lt;NA&gt;
+8  2024-02-01 Thu 9:30 to 11:30         &lt;NA&gt;
+9  2024-02-06 Tue 9:30 to 11:10         &lt;NA&gt;
+10 2024-02-08 Thu 9:30 to 11:30         &lt;NA&gt;
+11 2024-02-13 Tue 9:30 to 11:10         &lt;NA&gt;
+12 2024-02-15 Thu 9:30 to 11:30         &lt;NA&gt;
+13 2024-02-20 Tue 9:30 to 11:10         &lt;NA&gt;
+14 2024-02-22 Thu 9:30 to 11:30         &lt;NA&gt;
+15 2024-02-27 Tue 9:30 to 11:10         &lt;NA&gt;
+16 2024-02-29 Thu 9:30 to 11:30         &lt;NA&gt;
+17 2024-03-05 Tue 9:30 to 11:10 Spring Break
+18 2024-03-07 Thu 9:30 to 11:30 Spring Break
+19 2024-03-12 Tue 9:30 to 11:10         &lt;NA&gt;
+20 2024-03-14 Thu 9:30 to 11:30         &lt;NA&gt;
+21 2024-03-19 Tue 9:30 to 11:10         &lt;NA&gt;
+22 2024-03-21 Thu 9:30 to 11:30         &lt;NA&gt;
+23 2024-03-26 Tue 9:30 to 11:10         &lt;NA&gt;
+24 2024-03-28 Thu 9:30 to 11:30         &lt;NA&gt;
+25 2024-04-02 Tue 9:30 to 11:10         &lt;NA&gt;
+26 2024-04-04 Thu 9:30 to 11:30         &lt;NA&gt;
+27 2024-04-09 Tue 9:30 to 11:10         &lt;NA&gt;
+28 2024-04-11 Thu 9:30 to 11:30         &lt;NA&gt;
+29 2024-04-16 Tue 9:30 to 11:10         &lt;NA&gt;
+30 2024-04-18 Thu 9:30 to 11:30         &lt;NA&gt;
+31 2024-04-23 Tue 9:30 to 11:10         &lt;NA&gt;
+32 2024-04-25 Thu 9:30 to 11:30         &lt;NA&gt;
+33 2024-04-30 Tue 9:30 to 11:10         &lt;NA&gt;
+34 2024-05-02 Thu 9:30 to 11:30         &lt;NA&gt;
+35 2024-05-07 Tue 9:30 to 11:10         &lt;NA&gt;</code></pre>
 </div>
 </div>
 </section>
