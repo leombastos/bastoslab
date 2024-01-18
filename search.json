@@ -1820,74 +1820,130 @@
     "text": "SMAP validation\nSMAP-derived data is validated through a network of soil moisture sensing stations across the USA.\n\n\nFor more information on how SMAP products are derived and how they are validated, check the full paper here."
   },
   {
-    "objectID": "teaching/2024-dsa/slides/lec03-git/index.html#acknowledgements",
-    "href": "teaching/2024-dsa/slides/lec03-git/index.html#acknowledgements",
+    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#acknowledgements",
+    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#acknowledgements",
     "title": "Bastos Lab",
     "section": "Acknowledgements",
     "text": "Acknowledgements\nParts of this presentation are based on these slides by Dr. Mine Çetinkaya-Rundel."
   },
   {
-    "objectID": "teaching/2024-dsa/slides/lec03-git/index.html#what-is-git",
-    "href": "teaching/2024-dsa/slides/lec03-git/index.html#what-is-git",
+    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#todays-goals",
+    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#todays-goals",
+    "title": "Bastos Lab",
+    "section": "Today’s goals",
+    "text": "Today’s goals\n\nWhat is git?\n\nWhat is versioning?\n\nLocal workflow of git\n\nWhat is GitHub?\n\nLocal/remote workflow of git + GitHub\nSetting up git + GitHub workflows in RStudio\n\nTips and resources"
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#what-is-git",
+    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#what-is-git",
     "title": "Bastos Lab",
     "section": "What is git?",
     "text": "What is git?\n\n\n\n\n\n\n\n\n\nGit is a version control system – like “Track Changes” features from Microsoft Word, on steroids\nIt’s not the only version control system, but it’s a very popular one"
   },
   {
-    "objectID": "teaching/2024-dsa/slides/lec03-git/index.html#versioning",
-    "href": "teaching/2024-dsa/slides/lec03-git/index.html#versioning",
+    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#versioning",
+    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#versioning",
     "title": "Bastos Lab",
     "section": "Versioning",
     "text": "Versioning"
   },
   {
-    "objectID": "teaching/2024-dsa/slides/lec03-git/index.html#versioning-1",
-    "href": "teaching/2024-dsa/slides/lec03-git/index.html#versioning-1",
+    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#versioning-1",
+    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#versioning-1",
     "title": "Bastos Lab",
     "section": "Versioning",
     "text": "Versioning\nwith human readable messages"
   },
   {
-    "objectID": "teaching/2024-dsa/slides/lec03-git/index.html#how-does-a-git-worflow-look-like-in-your-local-computer",
-    "href": "teaching/2024-dsa/slides/lec03-git/index.html#how-does-a-git-worflow-look-like-in-your-local-computer",
+    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#how-does-a-git-worflow-look-like-in-your-local-computer",
+    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#how-does-a-git-worflow-look-like-in-your-local-computer",
+    "title": "Bastos Lab",
+    "section": "How does a git worflow look like in your local computer?",
+    "text": "How does a git worflow look like in your local computer?\n\nStart a new git project typing in the terminal git init\nCreate/modify folders and files inside of that git project directory\n\nStage these changes typing in the terminal git stage -A\n\nCommit these staged changes typing in the terminal git commit -m \"short yet informative message of changes made in this commit\"\n\nMake more changes, repeat steps 3 and 4."
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#how-does-a-git-worflow-look-like-in-your-local-computer-1",
+    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#how-does-a-git-worflow-look-like-in-your-local-computer-1",
     "title": "Bastos Lab",
     "section": "How does a git worflow look like in your local computer?",
     "text": "How does a git worflow look like in your local computer?"
   },
   {
-    "objectID": "teaching/2024-dsa/slides/lec03-git/index.html#how-to-install-git",
-    "href": "teaching/2024-dsa/slides/lec03-git/index.html#how-to-install-git",
-    "title": "Bastos Lab",
-    "section": "How to install git?",
-    "text": "How to install git?"
-  },
-  {
-    "objectID": "teaching/2024-dsa/slides/lec03-git/index.html#what-is-github",
-    "href": "teaching/2024-dsa/slides/lec03-git/index.html#what-is-github",
+    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#what-is-github",
+    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#what-is-github",
     "title": "Bastos Lab",
     "section": "What is GitHub?",
     "text": "What is GitHub?\n\n\n\n\n\n\n\n\n\nGitHub is the home for your Git-based projects on the internet – like DropBox but much, much better\nWe will use GitHub as a platform for web hosting and collaboration (and as our course management system!)"
   },
   {
-    "objectID": "teaching/2024-dsa/slides/lec03-git/index.html#how-to-connect-your-local-git-with-github",
-    "href": "teaching/2024-dsa/slides/lec03-git/index.html#how-to-connect-your-local-git-with-github",
+    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#localremote-workflows-of-git-github",
+    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#localremote-workflows-of-git-github",
     "title": "Bastos Lab",
-    "section": "How to connect your local git with GitHub?",
-    "text": "How to connect your local git with GitHub?"
+    "section": "Local/remote workflows of git + GitHub",
+    "text": "Local/remote workflows of git + GitHub\n\n\n\n\n\n\n1. No GitHub\n\n\n\n\n\n\n\n2. GitHub clone (you own it)\n\n\n\n\n\n\n\n\n\n3. GitHub clone (someone else owns, you are collaborator)\n\n\n\n\n\n\n\n4. GitHub fork and clone (someone else owns, you are not collaborator)"
   },
   {
-    "objectID": "teaching/2024-dsa/slides/lec03-git/index.html#git-and-github-tips",
-    "href": "teaching/2024-dsa/slides/lec03-git/index.html#git-and-github-tips",
+    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#localremote-workflows-of-git-github-in-this-class",
+    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#localremote-workflows-of-git-github-in-this-class",
     "title": "Bastos Lab",
-    "section": "Git and GitHub tips",
-    "text": "Git and GitHub tips\n\nThere are many git commands, and very few people know them all.\n99% of the time you will use git to add, commit, push, and pull.\nWe will be doing Git things and interfacing with GitHub through RStudio, but if you google for help you might come across methods for doing these things in the command line – skip that and move on to the next resource unless you feel comfortable trying it out."
+    "section": "Local/remote workflows of git + GitHub in this class",
+    "text": "Local/remote workflows of git + GitHub in this class\nIn this class, you will, for the most part, be working alone in GitHub repos that you own (option 2 from previous slide)."
   },
   {
-    "objectID": "teaching/2024-dsa/slides/lec03-git/index.html#git-and-github-tips-1",
-    "href": "teaching/2024-dsa/slides/lec03-git/index.html#git-and-github-tips-1",
+    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#localremote-workflow-of-git-github-we-will-use",
+    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#localremote-workflow-of-git-github-we-will-use",
     "title": "Bastos Lab",
-    "section": "Git and GitHub tips",
-    "text": "Git and GitHub tips\n\nThere is a great resource for working with git and R: happygitwithr.com.\nWe’ll make extensive use of this resource, please get acquainted."
+    "section": "Local/remote workflow of git + GitHub we will use",
+    "text": "Local/remote workflow of git + GitHub we will use\nAfter making sure your local git is connected to a GitHub repository through git clone:\n\nFollow same steps as for local workflow\n\nAfter committing changes, “upload” them to the GitHub repo typing in the terminal git push\n\nIf there were any changes in the GitHub repo you did not have locally, “download” them to your local copy typing in the terminal git pull"
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#setting-up-git-github-workflows-in-rstudio",
+    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#setting-up-git-github-workflows-in-rstudio",
+    "title": "Bastos Lab",
+    "section": "Setting up git + GitHub workflows in RStudio",
+    "text": "Setting up git + GitHub workflows in RStudio\nFor that, we will follow the New project, GitHub first workflow (see link above for detailed instructions).\n\nMake a repo on GitHub\nNew RStudio Project via git clone\n\nMake local changes, save, commit\n\nPush your local changes to GitHub"
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#setting-up-git-github-workflows-in-rstudio-1",
+    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#setting-up-git-github-workflows-in-rstudio-1",
+    "title": "Bastos Lab",
+    "section": "Setting up git + GitHub workflows in RStudio",
+    "text": "Setting up git + GitHub workflows in RStudio\nEvery single new coding exercise will follow the above workflow, in a way that you will have one git/GitHub repo in your own GitHub for each exercise."
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#git-and-github-tips",
+    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#git-and-github-tips",
+    "title": "Bastos Lab",
+    "section": "git and GitHub tips",
+    "text": "git and GitHub tips\n\nThe workflows delineated above that include stage, commit, push, and pull are very simple.\ngit/GitHub can handle a lot more complex workflows including branching, forking, pull requests, etc.\nFor now, we will focus on the simple workflow above, and will explore more complex workflows as needed."
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#wisdom-notes",
+    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#wisdom-notes",
+    "title": "Bastos Lab",
+    "section": "Wisdom notes",
+    "text": "Wisdom notes\n\nCommit often (multiple times a day), push less often (few times a day)\nBefore pushing, always pull first!"
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#git-and-github-resources",
+    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#git-and-github-resources",
+    "title": "Bastos Lab",
+    "section": "git and GitHub resources",
+    "text": "git and GitHub resources\n\nThere is a great resource for working with git and R: happygitwithr.com.\nWe’ll make extensive use of this resource, please get acquainted.\ngit/GitHub cheatsheet"
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#useful-gitgithub-terminal-commands",
+    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#useful-gitgithub-terminal-commands",
+    "title": "Bastos Lab",
+    "section": "Useful Git/Github terminal commands",
+    "text": "Useful Git/Github terminal commands\ngit pull to start your work fresh with most recent version from remote\ngit status to check the status of git\ngit stage -A to stage changes\ngit commit -m \"commitMessage\" to make a commit\ngit push to send changes from local to remote\ngit log --oneline to see summarized list of commits (push q to quit console when done)"
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#now-lets-get-all-this-going-on-your-own-laptops",
+    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#now-lets-get-all-this-going-on-your-own-laptops",
+    "title": "Bastos Lab",
+    "section": "Now, let’s get all this going on your own laptops",
+    "text": "Now, let’s get all this going on your own laptops"
   },
   {
     "objectID": "teaching/2024-dsa/slides/lec02-repsci/index.html#from-zero-to-hero-a-researchers-path-through-data-science-tools-for-reproducibility",
