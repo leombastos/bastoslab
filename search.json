@@ -67,7 +67,7 @@
     "href": "teaching/2024-ppa/slides/lec08-nass.html#vector-formats",
     "title": "Geospatial data types,\nCRS, and\nNASS",
     "section": "Vector formats",
-    "text": "Vector formats\nCommonly known as shapefiles (ESRI nomenclature)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFormat\nExtension\n\n\n\n\n\nESRI shapefile\n\n\n.shp, .shx, .dbf., .prj\n\n\n\n\nGeoJSON\n\n\n.json, .geojson\n\n\n\n\nKML\n\n\n.kml, .kmz"
+    "text": "Vector formats\nCommonly known as shapefiles (ESRI nomenclature)\n\n\n\n\n\n\n\n  \n    \n    \n      Format\n      Extension\n    \n  \n  \n    ESRI shapefile\n\n.shp, .shx, .dbf., .prj\n\n    GeoJSON\n\n.json, .geojson\n\n    KML\n\n.kml, .kmz"
   },
   {
     "objectID": "teaching/2024-ppa/slides/lec08-nass.html#vector-types",
@@ -88,7 +88,7 @@
     "href": "teaching/2024-ppa/slides/lec08-nass.html#raster-formats",
     "title": "Geospatial data types,\nCRS, and\nNASS",
     "section": "Raster formats",
-    "text": "Raster formats\nMost common in ag is .tif.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFormat\nExtension\n\n\n\n\n\nTIFF/COG\n\n\n.tiff, .tif, .tff\n\n\n\n\nASCII Grid\n\n\n.asc\n\n\n\n\nBitmap\n\n\n.bmp\n\n\n\n\n\n\n\n\nFull list here"
+    "text": "Raster formats\nMost common in ag is .tif.\n\n\n\n\n\n\n\n  \n    \n    \n      Format\n      Extension\n    \n  \n  \n    TIFF/COG\n\n.tiff, .tif, .tff\n\n    ASCII Grid\n\n.asc\n\n    Bitmap\n\n.bmp\n\n  \n  \n  \n\n\n\n\nFull list here"
   },
   {
     "objectID": "teaching/2024-ppa/slides/lec08-nass.html#raster-types",
