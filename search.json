@@ -3000,7 +3000,7 @@
     "href": "teaching/2024-dsa/slides/lec06-crd/lec06-crd.html#summary",
     "title": "Bastos Lab",
     "section": "Summary",
-    "text": "Summary\n\nCRD is randomized without restrictions\n\nEach term of the effects model has a row in the ANOVA table\n\nRaw vs. Studentized residuals\n\nIf model assumptions are not met, inference is meaningless\n\nModel residual assumptions: iidN(0,\\(\\sigma^2\\))\n\n\nBamyan main effects significant Treatments included 4 levels of P2O5 (0, 50, 70, 90 kg/ha) and 4 levels of nitrogen (0, 65, 95, 120 kg/ha), with three replications. Total plots = 4 x 4 x 3 = 48; the size of the harvested plot was 4 m2. An RCB design was used\nBalkh The protocol document for this trial indicates that the treatments included 4 levels of P2O5 (0, 50, 70, 90 kg/ha) and 4 levels of nitrogen (0, 65, 95,120 kg/ha), with three replications. Total plots = 4 x 4 x 3 = 48;"
+    "text": "Summary\n\nCRD is randomized without restrictions\n\nEach term of the effects model has a row in the ANOVA table\n\nRaw vs. Studentized residuals\n\nIf model assumptions are not met, inference is meaningless\n\nModel residual assumptions: iidN(0,\\(\\sigma^2\\))\n\n\nhttps://catalog.data.gov/dataset/?collection_package_id=51f2e40a-1702-43af-9a7b-ff868cab0b16\nBamyan main effects significant Treatments included 4 levels of P2O5 (0, 50, 70, 90 kg/ha) and 4 levels of nitrogen (0, 65, 95, 120 kg/ha), with three replications. Total plots = 4 x 4 x 3 = 48; the size of the harvested plot was 4 m2. An RCB design was used\nBalkh The protocol document for this trial indicates that the treatments included 4 levels of P2O5 (0, 50, 70, 90 kg/ha) and 4 levels of nitrogen (0, 65, 95,120 kg/ha), with three replications. Total plots = 4 x 4 x 3 = 48;"
   },
   {
     "objectID": "teaching/2024-dsa/schedule.html",
@@ -3448,7 +3448,7 @@
     "href": "teaching/2024-ppa/slides/lec11-miniproject.html",
     "title": "Mini-project assignments",
     "section": "",
-    "text": "Here is the table with the mini-project commodity and category assignment:\n\n\n\n\n\n\n\n\n\nname\ncommodity\ncategory\n\n\n\n\nHerring\nCotton\nYield\n\n\nJakhar\nCorn\nHarvested Area\n\n\nBhattarai\nPecan\nArea bearing - operations\n\n\nWilliams\nCotton\nProduction\n\n\nSmith\nPeanuts\nHarvested Area\n\n\nSingletary\nPeanuts\nPlanted Area\n\n\nKiobia\nPecan\nArea bearing - acres\n\n\nHarper\nSoybeans\nPlanted Area\n\n\nCollins\nCorn\nProduction\n\n\nHester\nSoybeans\nHarvested Area\n\n\nWinkler\nCorn\nYield\n\n\nK. Poudel\nPecan\nArea bearing - improved acres\n\n\nTucker\nPeanuts\nYield\n\n\nHayes\nCorn\nPlanted Area\n\n\nNgimbwa\nCotton\nPlanted Area\n\n\nS. Poudel\nSoybeans\nYield\n\n\nMaktabi\nWheat\nProduction\n\n\nThapa\nCotton\nHarvested Area\n\n\nKilgore\nPeanuts\nProduction\n\n\nMunir\nWheat\nYield"
+    "text": "Here is the table with the mini-project commodity and category assignment:\n\n\n\n\n\n\n  \n    \n    \n      name\n      commodity\n      category\n    \n  \n  \n    Beasley\nCorn\nHarvested Area\n    Curles\nCotton\nHarvested Area\n    Herndon\nCorn\nYield\n    Vaibhav\nCotton\nProduction\n    Niva\nPeanuts\nHarvested Area\n    Santos\nSoybeans\nYield\n    Cejalvo\nPeanuts\nYield\n    Orellana\nSoybeans\nHarvested Area\n    Shrestha\nPeanuts\nProduction\n    Sigdel\nCorn\nProduction\n    Trevisan\nCotton\nYield"
   },
   {
     "objectID": "teaching/2024-ppa/slides/lab01-prep.html",
