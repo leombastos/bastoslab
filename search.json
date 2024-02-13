@@ -1435,130 +1435,207 @@
     "text": "Getting ready for next class\nTo be ready for next class (Intro to R), please go to the course main page and follow the link to the Lab 01 prep page.\n\nIf you have questions or issues, email me before class.\nWe will have limited time to troubleshoot technical problems during next period."
   },
   {
-    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#acknowledgements",
-    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#acknowledgements",
-    "title": "Bastos Lab",
-    "section": "Acknowledgements",
-    "text": "Acknowledgements\nParts of this presentation are based on these slides by Dr. Mine Çetinkaya-Rundel."
-  },
-  {
-    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#todays-goals",
-    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#todays-goals",
+    "objectID": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#todays-goals",
+    "href": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#todays-goals",
     "title": "Bastos Lab",
     "section": "Today’s goals",
-    "text": "Today’s goals\n\nWhat is git?\n\nWhat is versioning?\n\nLocal workflow of git\n\nWhat is GitHub?\n\nLocal/remote workflow of git + GitHub\nSetting up git + GitHub workflows in RStudio\n\nTips and resources"
+    "text": "Today’s goals\nExplore key concepts in RCBD:\n\nHeterogeneous experimental material\n\nTreatment randomization\nThe effects model\nThe ANOVA table"
   },
   {
-    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#what-is-git",
-    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#what-is-git",
+    "objectID": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#motivational-example---treatment-design",
+    "href": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#motivational-example---treatment-design",
     "title": "Bastos Lab",
-    "section": "What is git?",
-    "text": "What is git?\n\n\n\n\n\n\n\n\n\nGit is a version control system – like “Track Changes” features from Microsoft Word, on steroids\nIt’s not the only version control system, but it’s a very popular one"
+    "section": "Motivational example - Treatment design",
+    "text": "Motivational example - Treatment design\n\n2-way factorial\n\nN fertilizer rates: 0, 100, 200 kg N/ha\n\nK fertilizer rates: 0, 30, 60 kg K/ha\n\n3 x 3 = 9 treatment combinations"
   },
   {
-    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#versioning",
-    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#versioning",
+    "objectID": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#experimental-design",
+    "href": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#experimental-design",
     "title": "Bastos Lab",
-    "section": "Versioning",
-    "text": "Versioning"
+    "section": "Experimental design",
+    "text": "Experimental design\nAssuming we have heterogeneous experimental material (e.g., different soil type, topography, etc.)\n\nThus, we should use a randomized complete block design (RCBD)"
   },
   {
-    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#versioning-1",
-    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#versioning-1",
+    "objectID": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#treatment-randomization---rcbd",
+    "href": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#treatment-randomization---rcbd",
     "title": "Bastos Lab",
-    "section": "Versioning",
-    "text": "Versioning\nwith human readable messages"
+    "section": "Treatment randomization - RCBD",
+    "text": "Treatment randomization - RCBD\n\nRandomization of a treatment to a EU is restricted.\nIn an RCBD, each treatment appears once in each block.\nBecause of that, randomization needs to be performed for each block individually.\n\n\nIn our motivational example:\n\n4 replicates\nTotal observations: 9 x 4 = 36 EUs"
   },
   {
-    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#how-does-a-git-worflow-look-like-in-your-local-computer",
-    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#how-does-a-git-worflow-look-like-in-your-local-computer",
+    "objectID": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#heterogeneous-experimental-material---rcbd",
+    "href": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#heterogeneous-experimental-material---rcbd",
     "title": "Bastos Lab",
-    "section": "How does a git worflow look like in your local computer?",
-    "text": "How does a git worflow look like in your local computer?\n\nStart a new git project typing in the terminal git init\nCreate/modify folders and files inside of that git project directory\n\nStage these changes typing in the terminal git stage -A\n\nCommit these staged changes typing in the terminal git commit -m \"short yet informative message of changes made in this commit\"\n\nMake more changes, repeat steps 3 and 4."
+    "section": "Heterogeneous Experimental Material - RCBD ✅",
+    "text": "Heterogeneous Experimental Material - RCBD ✅\n\n\n\n\n\n\n\n\nIn the plot layout here, all treatments (1 through 9) were randomly assigned to any experimental unit (plot) within each block."
   },
   {
-    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#how-does-a-git-worflow-look-like-in-your-local-computer-1",
-    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#how-does-a-git-worflow-look-like-in-your-local-computer-1",
+    "objectID": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#heterogeneous-experimental-material---rcbd-1",
+    "href": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#heterogeneous-experimental-material---rcbd-1",
     "title": "Bastos Lab",
-    "section": "How does a git worflow look like in your local computer?",
-    "text": "How does a git worflow look like in your local computer?"
+    "section": "Heterogeneous Experimental Material - RCBD ✅",
+    "text": "Heterogeneous Experimental Material - RCBD ✅\n\n\n\n\n\n\n\n\n\nTreatment 1 and its replicates are highlighted.\nNote how, due to the restricted randomization, treatment 1 appears only once in every block."
   },
   {
-    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#what-is-github",
-    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#what-is-github",
+    "objectID": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#heterogeneous-experimental-material---rcbd-2",
+    "href": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#heterogeneous-experimental-material---rcbd-2",
     "title": "Bastos Lab",
-    "section": "What is GitHub?",
-    "text": "What is GitHub?\n\n\n\n\n\n\n\n\n\nGitHub is the home for your Git-based projects on the internet – like DropBox but much, much better\nWe will use GitHub as a platform for web hosting and collaboration (and as our course management system!)"
+    "section": "Heterogeneous Experimental Material - RCBD ✅",
+    "text": "Heterogeneous Experimental Material - RCBD ✅\n\n\n\n\n\n\n\n\nSince the experimental material is heterogeneous (e.g., different soil texture class), we are safeguarding statistical power when estimating treatment means and performing comparisons. 👍"
   },
   {
-    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#localremote-workflows-of-git-github",
-    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#localremote-workflows-of-git-github",
+    "objectID": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#the-effects-model",
+    "href": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#the-effects-model",
     "title": "Bastos Lab",
-    "section": "Local/remote workflows of git + GitHub",
-    "text": "Local/remote workflows of git + GitHub\n\n\n\n\n\n\n1. No GitHub\n\n\n\n\n\n\n\n2. GitHub clone (you own it)\n\n\n\n\n\n\n\n\n\n3. GitHub clone (someone else owns, you are collaborator)\n\n\n\n\n\n\n\n4. GitHub fork and clone (someone else owns, you are not collaborator)"
+    "section": "The effects model",
+    "text": "The effects model\n\\[\ny_{ijk} = \\mu + \\rho_{k} + \\alpha_{i} + \\beta_{j} + \\alpha\\beta_{ij} + e_{ijk}\n\\]\n\n\n\\(y_{ijk}\\) is the observation on the kth block from ith N rate and jth K rate\n\n\\(\\mu\\) is the overall mean \n\\(\\rho_{k}\\) is the differential effect of kth block\n\n\\(\\alpha_{i}\\) is the differential effect of ith N rate\n\n\\(\\beta_{j}\\) is the differential effect of jth K rate\n\n\\(\\alpha\\beta_{ij}\\) is the differential effect of the combination of the ith N rate and ith K rate\n\n\\(e_{ijk}\\) is the residual corresponding to the block k of N rate i and K rate j."
   },
   {
-    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#localremote-workflows-of-git-github-in-this-class",
-    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#localremote-workflows-of-git-github-in-this-class",
+    "objectID": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#the-anova-table",
+    "href": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#the-anova-table",
     "title": "Bastos Lab",
-    "section": "Local/remote workflows of git + GitHub in this class",
-    "text": "Local/remote workflows of git + GitHub in this class\nIn this class, you will, for the most part, be working alone in GitHub repos that you own (option 2 from previous slide)."
+    "section": "The ANOVA table",
+    "text": "The ANOVA table\nIn the following ANOVA table…\n\nn is number of levels in N rate = 3\n\nk is number of levels in K rate = 3\n\nr is number of blocks = 4\n\nN is total number of obserevations or EUs = 3 x 3 x 4 = 36"
   },
   {
-    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#localremote-workflow-of-git-github-we-will-use",
-    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#localremote-workflow-of-git-github-we-will-use",
+    "objectID": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#the-anova-table-1",
+    "href": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#the-anova-table-1",
     "title": "Bastos Lab",
-    "section": "Local/remote workflow of git + GitHub we will use",
-    "text": "Local/remote workflow of git + GitHub we will use\nAfter making sure your local git is connected to a GitHub repository through git clone:\n\nFollow same steps as for local workflow\n\nAfter committing changes, “upload” them to the GitHub repo typing in the terminal git push\n\nIf there were any changes in the GitHub repo you did not have locally, “download” them to your local copy typing in the terminal git pull"
+    "section": "The ANOVA table",
+    "text": "The ANOVA table\n\n\n\nSource of variationdfSSMSF ratioBlockdfb =r - 1 =4 - 1 = 3SSbN ratedfn =n - 1 =3 - 1 = 2SSnMSn =SSn / dfn MSn / MSeK ratedfk =k - 1 =3 - 1 = 2SSkMSk =SSk / dfkMSk / MSeN x Kdfnk =(n - 1) x (k - 1) =(3-1) x (3-1) = 4SSnkMSnk =SSnk / dfnkMSnk / MSeErrordfe =(ab - 1) x (r - 1) =(9 - 1) x (4 - 1) =8 x 3 = 24SSeMSe =SSe / dfeTOTALdft =N -1 = 35SSt\n\n\n\n\nNotice how now we consumed extra 3 dfs to calculate the block effect.\n\nWith that, we have 3 fewer dfs in the error df."
   },
   {
-    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#setting-up-git-github-workflows-in-rstudio",
-    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#setting-up-git-github-workflows-in-rstudio",
+    "objectID": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#anova-table---motivational-example",
+    "href": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#anova-table---motivational-example",
     "title": "Bastos Lab",
-    "section": "Setting up git + GitHub workflows in RStudio",
-    "text": "Setting up git + GitHub workflows in RStudio\nFor that, we will follow the New project, GitHub first workflow (see link above for detailed instructions).\n\nMake a repo on GitHub\nNew RStudio Project via git clone\n\nMake local changes, save, commit\n\nPush your local changes to GitHub"
+    "section": "ANOVA table - motivational example",
+    "text": "ANOVA table - motivational example\n\n\n\nSource of variationSum SqDfF valuePr(&gt;F)(Intercept)836,829,184.012,223.1503963&lt;0.001rep2,747,393.132.43294100.09nrate_kgha1,491,078.221.98062580.16krate_kgha470,445.520.62490120.544nrate_kgha:krate_kgha11,107,585.347.3772023&lt;0.001Residuals9,033,981.924\n\n\n\nWhat is significant here (say at \\(\\alpha = 0.05\\))?\nWhat can we say about the rep/block effect?"
   },
   {
-    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#setting-up-git-github-workflows-in-rstudio-1",
-    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#setting-up-git-github-workflows-in-rstudio-1",
+    "objectID": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#summary",
+    "href": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#summary",
     "title": "Bastos Lab",
-    "section": "Setting up git + GitHub workflows in RStudio",
-    "text": "Setting up git + GitHub workflows in RStudio\nEvery single new coding exercise will follow the above workflow, in a way that you will have one git/GitHub repo in your own GitHub for each exercise."
+    "section": "Summary",
+    "text": "Summary\n\nRCBD is randomized with one restriction (each block separately)\n\nEach term of the effects model has a row in the ANOVA table\n\nBy including the block in the model, it consumed dfs from error\n\nIn a properly conducted RCBD, we would hope that the amount of SS explained by block is relatively greater than the consequence of consuming 3 df from the error to calculate the block effect.\n\n\nhttps://catalog.data.gov/dataset/?collection_package_id=51f2e40a-1702-43af-9a7b-ff868cab0b16\nBamyan main effects significant Treatments included 4 levels of P2O5 (0, 50, 70, 90 kg/ha) and 4 levels of nitrogen (0, 65, 95, 120 kg/ha), with three replications. Total plots = 4 x 4 x 3 = 48; the size of the harvested plot was 4 m2. An RCB design was used\nBalkh The protocol document for this trial indicates that the treatments included 4 levels of P2O5 (0, 50, 70, 90 kg/ha) and 4 levels of nitrogen (0, 65, 95,120 kg/ha), with three replications. Total plots = 4 x 4 x 3 = 48;"
   },
   {
-    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#git-and-github-tips",
-    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#git-and-github-tips",
+    "objectID": "teaching/2024-dsa/slides/lec08-fixedrand/lec08-fixedrand.html#todays-goals",
+    "href": "teaching/2024-dsa/slides/lec08-fixedrand/lec08-fixedrand.html#todays-goals",
     "title": "Bastos Lab",
-    "section": "git and GitHub tips",
-    "text": "git and GitHub tips\n\nThe workflows delineated above that include stage, commit, push, and pull are very simple.\ngit/GitHub can handle a lot more complex workflows including branching, forking, pull requests, etc.\nFor now, we will focus on the simple workflow above, and will explore more complex workflows as needed."
+    "section": "Today’s goals",
+    "text": "Today’s goals\nExplore the concepts of:\n\nFixed effects and models\n\nRandom effects and models\nMixed-effect models"
   },
   {
-    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#wisdom-notes",
-    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#wisdom-notes",
+    "objectID": "teaching/2024-dsa/slides/lec08-fixedrand/lec08-fixedrand.html#fixed-effects",
+    "href": "teaching/2024-dsa/slides/lec08-fixedrand/lec08-fixedrand.html#fixed-effects",
     "title": "Bastos Lab",
-    "section": "Wisdom notes",
-    "text": "Wisdom notes\n\nCommit often (multiple times a day), push less often (few times a day)\nBefore pushing, always pull first!"
+    "section": "Fixed effects",
+    "text": "Fixed effects\nUp until now, our models only included fixed effects.\n\nFactors with systematic levels\n\nInference on those specific levels\n\nFactor levels can be recreated in other studies\n\nWe are interested in their effect on the population mean\n\nExample: effect of specific rates of K or N on yield"
   },
   {
-    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#git-and-github-resources",
-    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#git-and-github-resources",
+    "objectID": "teaching/2024-dsa/slides/lec08-fixedrand/lec08-fixedrand.html#fixed-effect-models",
+    "href": "teaching/2024-dsa/slides/lec08-fixedrand/lec08-fixedrand.html#fixed-effect-models",
     "title": "Bastos Lab",
-    "section": "git and GitHub resources",
-    "text": "git and GitHub resources\n\nThere is a great resource for working with git and R: happygitwithr.com.\nWe’ll make extensive use of this resource, please get acquainted.\ngit/GitHub cheatsheet"
+    "section": "Fixed-effect models",
+    "text": "Fixed-effect models\n\nOnly contain fixed effects\n\nOnly have one source of variation/error (only one \\(\\sigma^2\\))\n\nCan be analyzed with lm() (only handles one error)"
   },
   {
-    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#useful-gitgithub-terminal-commands",
-    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#useful-gitgithub-terminal-commands",
+    "objectID": "teaching/2024-dsa/slides/lec08-fixedrand/lec08-fixedrand.html#fixed-effect-models-1",
+    "href": "teaching/2024-dsa/slides/lec08-fixedrand/lec08-fixedrand.html#fixed-effect-models-1",
     "title": "Bastos Lab",
-    "section": "Useful Git/Github terminal commands",
-    "text": "Useful Git/Github terminal commands\ngit pull to start your work fresh with most recent version from remote\ngit status to check the status of git\ngit stage -A to stage changes\ngit commit -m \"commitMessage\" to make a commit\ngit push to send changes from local to remote\ngit log --oneline to see summarized list of commits (push q to quit console when done)"
+    "section": "Fixed-effect models",
+    "text": "Fixed-effect models\n\\[\ny_{ij} = \\mu + \\alpha_{i} + e_{ij}\n\\]\n\n\n\\(y_{ij}\\) is the observation on the jth rep. from ith N rate\n\\(\\mu\\) is the overall mean\n\n\\(\\alpha_{i}\\) is the differential effect of ith N rate\n\n\\(e_{ij}\\) is the residual corresponding to the jth replicate of N rate i\n\n\n\nSources of error\n\\[\ne_{ijk} \\sim iidN(0, \\sigma^2_{e})\n\\]"
   },
   {
-    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#now-lets-get-all-this-going-on-your-own-laptops",
-    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#now-lets-get-all-this-going-on-your-own-laptops",
+    "objectID": "teaching/2024-dsa/slides/lec08-fixedrand/lec08-fixedrand.html#random-effects",
+    "href": "teaching/2024-dsa/slides/lec08-fixedrand/lec08-fixedrand.html#random-effects",
     "title": "Bastos Lab",
-    "section": "Now, let’s get all this going on your own laptops",
-    "text": "Now, let’s get all this going on your own laptops"
+    "section": "Random effects",
+    "text": "Random effects\n\nFactors with non-systematic levels (e.g., levels are a random sample from population of potential levels)\n\nInference on population of levels\n\nMay not be able to recreate same levels in other studies\n\nWe are interested in their effect on the population variance\n\nExample: years, sites, blocks"
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec08-fixedrand/lec08-fixedrand.html#random-effect-models",
+    "href": "teaching/2024-dsa/slides/lec08-fixedrand/lec08-fixedrand.html#random-effect-models",
+    "title": "Bastos Lab",
+    "section": "Random-effect models",
+    "text": "Random-effect models\n\nOnly contain random effects\n\nHave &gt; one source of variation/error ( \\(\\sigma^2\\))\n\nCan be analyzed with lme4::lmer() (can handle multiple crossed and nested error error terms)"
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec08-fixedrand/lec08-fixedrand.html#random-effect-models-1",
+    "href": "teaching/2024-dsa/slides/lec08-fixedrand/lec08-fixedrand.html#random-effect-models-1",
+    "title": "Bastos Lab",
+    "section": "Random-effect models",
+    "text": "Random-effect models\n\\[\ny_{ij} = \\mu + \\alpha_{i} + e_{ij}\n\\]\n\n\n\\(y_{ij}\\) is the observation on the jth rep. from ith N rate\n\\(\\mu\\) is the overall mean\n\n\\(\\alpha_{i}\\) is the random effect of ith N rate\n\n\\(e_{ij}\\) is the residual corresponding to the jth replicate within N rate i\n\n\n\n\nSources of error\n\n\n\\[\n\\alpha_{i} \\sim iidN(0, \\sigma^2_{\\alpha}) \\]\n\n\n\\[\ne_{ijk} \\sim iidN(0, \\sigma^2_{e})  \n\\]"
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec08-fixedrand/lec08-fixedrand.html#random-effects---variance-components",
+    "href": "teaching/2024-dsa/slides/lec08-fixedrand/lec08-fixedrand.html#random-effects---variance-components",
+    "title": "Bastos Lab",
+    "section": "Random effects - variance components",
+    "text": "Random effects - variance components\nThe variance of an observation is expressed as:\n\\[ \\sigma^2_{y} = \\sigma^2_{a} + \\sigma^2_{e} \\]\n\n\\[\\sigma^2_{a}\\] group variance: attributed to variability between N rates\n\\[\\sigma^2_{e}\\] residual variance: attributed to variability within N rates"
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec08-fixedrand/lec08-fixedrand.html#methods-to-estimate-variance-components",
+    "href": "teaching/2024-dsa/slides/lec08-fixedrand/lec08-fixedrand.html#methods-to-estimate-variance-components",
+    "title": "Bastos Lab",
+    "section": "Methods to estimate variance components",
+    "text": "Methods to estimate variance components\n\n\n\n\nANOVA (type 3 SS) or methods of moments\n\nBased on MS\n\nCan yield negative estimates\n\n\nMaximum likelihood (ML)\n\nMaximizes the likelihood function\n\nUnderestimates variance (bias!)\n\n\n\n\n\n\nRestricted maximum likelihood (REML)\n\nMaximizes the residual likelihood function after removing fixed effects from the model\n\nUnbiased estimates\n\nPreferred method especially if unbalanced data!"
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec08-fixedrand/lec08-fixedrand.html#should-i-treat-it-as-fixed-or-random-effect",
+    "href": "teaching/2024-dsa/slides/lec08-fixedrand/lec08-fixedrand.html#should-i-treat-it-as-fixed-or-random-effect",
+    "title": "Bastos Lab",
+    "section": "Should I treat it as fixed or random effect?",
+    "text": "Should I treat it as fixed or random effect?"
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec08-fixedrand/lec08-fixedrand.html#should-i-treat-it-as-fixed-or-random-effect-1",
+    "href": "teaching/2024-dsa/slides/lec08-fixedrand/lec08-fixedrand.html#should-i-treat-it-as-fixed-or-random-effect-1",
+    "title": "Bastos Lab",
+    "section": "Should I treat it as fixed or random effect?",
+    "text": "Should I treat it as fixed or random effect?\n\nAre you interested in specific levels of a factor? Fixed\nAre you interested in using levels as a sample of levels from the population, with the goal of assessing variability (and not mean effect) at the population level? AND\nWere your levels randomly selected from a population of potential levels? AND\nYou have sufficient number of levels (&gt;5-8)? Random"
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec08-fixedrand/lec08-fixedrand.html#should-i-treat-it-as-fixed-or-random-effect-2",
+    "href": "teaching/2024-dsa/slides/lec08-fixedrand/lec08-fixedrand.html#should-i-treat-it-as-fixed-or-random-effect-2",
+    "title": "Bastos Lab",
+    "section": "Should I treat it as fixed or random effect?",
+    "text": "Should I treat it as fixed or random effect?\n\nReliably estimating variance components require more data than reliably estimating means\nIf has &lt; 5-8 levels, then variance estimates would not be accurate, may be best to treat as fixed.\nClassic example: blocks in an RCBD."
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec08-fixedrand/lec08-fixedrand.html#mixed-effect-models",
+    "href": "teaching/2024-dsa/slides/lec08-fixedrand/lec08-fixedrand.html#mixed-effect-models",
+    "title": "Bastos Lab",
+    "section": "Mixed-effect models",
+    "text": "Mixed-effect models\n\nContain both fixed and random effects\n\nHave &gt; one source of variation/error ( \\(\\sigma^2\\))\n\nCan be analyzed with lme4::lmer() (can handle multiple crossed and nested error error terms)"
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec08-fixedrand/lec08-fixedrand.html#mixed-effect-models-1",
+    "href": "teaching/2024-dsa/slides/lec08-fixedrand/lec08-fixedrand.html#mixed-effect-models-1",
+    "title": "Bastos Lab",
+    "section": "Mixed-effect models",
+    "text": "Mixed-effect models\n\\[\ny_{ij} = \\mu + \\rho_{j} + \\alpha_{i} + e_{ijk}\n\\]\n\n\n\\(y_{ij}\\) is the observation on the jth block from ith N rate\n\n\\(\\mu\\) is the overall mean \n\\(\\rho_{j}\\) is the random effect of kth block\n\n\\(\\alpha_{i}\\) is the differential effect of ith N rate\n\n\\(e_{ij}\\) is the residual corresponding to the block k of N rate i."
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec08-fixedrand/lec08-fixedrand.html#mixed-models-sources-of-error",
+    "href": "teaching/2024-dsa/slides/lec08-fixedrand/lec08-fixedrand.html#mixed-models-sources-of-error",
+    "title": "Bastos Lab",
+    "section": "Mixed models sources of error",
+    "text": "Mixed models sources of error\n\\[\n\\alpha_{i} \\sim iidN(0, \\sigma^2_{\\alpha}) \\]\n\n\\[\ne_{ijk} \\sim iidN(0, \\sigma^2_{e})  \n\\]\nSimilarly to random-effect models, the variance of an observation is expressed as:\n\\[ \\sigma^2_{y} = \\sigma^2_{a} + \\sigma^2_{e} \\]"
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec08-fixedrand/lec08-fixedrand.html#motivational-example---treatment-design",
+    "href": "teaching/2024-dsa/slides/lec08-fixedrand/lec08-fixedrand.html#motivational-example---treatment-design",
+    "title": "Bastos Lab",
+    "section": "Motivational example - Treatment design",
+    "text": "Motivational example - Treatment design\n\n2-way factorial\n\nN fertilizer rates: 0, 100, 200 kg N/ha\n\nK fertilizer rates: 0, 30, 60 kg K/ha\n\n3 x 3 = 9 treatment combinations"
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec08-fixedrand/lec08-fixedrand.html#motivational-example---experimental-design",
+    "href": "teaching/2024-dsa/slides/lec08-fixedrand/lec08-fixedrand.html#motivational-example---experimental-design",
+    "title": "Bastos Lab",
+    "section": "Motivational example - Experimental design",
+    "text": "Motivational example - Experimental design\nIn our previous RCBD exercise, we analyzed RCBD with blocks as fixed effects, which made our model be a fixed-effect ANOVA model.\n\nNow, let’s treat blocks as random and have a mixed-effect ANOVA model instead (N and K rates are still treated as fixed)."
   },
   {
     "objectID": "teaching/2023-aghack-vwc/2023-aghack-vwc-pres.html#smap-products",
@@ -2590,85 +2667,225 @@
     "text": "Disability statement\nIf you plan to request accommodations for a disability, please register with the Disability Resource Center. They can be reached by visiting Clark Howell Hall, calling 706-542-8719 (voice) or 706-542-8778 (TTY), or by visiting https://sitedrc.uga.edu"
   },
   {
-    "objectID": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#todays-goals",
-    "href": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#todays-goals",
+    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#acknowledgements",
+    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#acknowledgements",
+    "title": "Bastos Lab",
+    "section": "Acknowledgements",
+    "text": "Acknowledgements\nParts of this presentation are based on these slides by Dr. Mine Çetinkaya-Rundel."
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#todays-goals",
+    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#todays-goals",
     "title": "Bastos Lab",
     "section": "Today’s goals",
-    "text": "Today’s goals\nExplore key concepts in RCBD:\n\nHeterogeneous experimental material\n\nTreatment randomization\nThe effects model\nThe ANOVA table"
+    "text": "Today’s goals\n\nWhat is git?\n\nWhat is versioning?\n\nLocal workflow of git\n\nWhat is GitHub?\n\nLocal/remote workflow of git + GitHub\nSetting up git + GitHub workflows in RStudio\n\nTips and resources"
   },
   {
-    "objectID": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#motivational-example---treatment-design",
-    "href": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#motivational-example---treatment-design",
+    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#what-is-git",
+    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#what-is-git",
     "title": "Bastos Lab",
-    "section": "Motivational example - Treatment design",
-    "text": "Motivational example - Treatment design\n\n2-way factorial\n\nN fertilizer rates: 0, 100, 200 kg N/ha\n\nK fertilizer rates: 0, 30, 60 kg K/ha\n\n3 x 3 = 9 treatment combinations"
+    "section": "What is git?",
+    "text": "What is git?\n\n\n\n\n\n\n\n\n\nGit is a version control system – like “Track Changes” features from Microsoft Word, on steroids\nIt’s not the only version control system, but it’s a very popular one"
   },
   {
-    "objectID": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#experimental-design",
-    "href": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#experimental-design",
+    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#versioning",
+    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#versioning",
+    "title": "Bastos Lab",
+    "section": "Versioning",
+    "text": "Versioning"
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#versioning-1",
+    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#versioning-1",
+    "title": "Bastos Lab",
+    "section": "Versioning",
+    "text": "Versioning\nwith human readable messages"
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#how-does-a-git-worflow-look-like-in-your-local-computer",
+    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#how-does-a-git-worflow-look-like-in-your-local-computer",
+    "title": "Bastos Lab",
+    "section": "How does a git worflow look like in your local computer?",
+    "text": "How does a git worflow look like in your local computer?\n\nStart a new git project typing in the terminal git init\nCreate/modify folders and files inside of that git project directory\n\nStage these changes typing in the terminal git stage -A\n\nCommit these staged changes typing in the terminal git commit -m \"short yet informative message of changes made in this commit\"\n\nMake more changes, repeat steps 3 and 4."
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#how-does-a-git-worflow-look-like-in-your-local-computer-1",
+    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#how-does-a-git-worflow-look-like-in-your-local-computer-1",
+    "title": "Bastos Lab",
+    "section": "How does a git worflow look like in your local computer?",
+    "text": "How does a git worflow look like in your local computer?"
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#what-is-github",
+    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#what-is-github",
+    "title": "Bastos Lab",
+    "section": "What is GitHub?",
+    "text": "What is GitHub?\n\n\n\n\n\n\n\n\n\nGitHub is the home for your Git-based projects on the internet – like DropBox but much, much better\nWe will use GitHub as a platform for web hosting and collaboration (and as our course management system!)"
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#localremote-workflows-of-git-github",
+    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#localremote-workflows-of-git-github",
+    "title": "Bastos Lab",
+    "section": "Local/remote workflows of git + GitHub",
+    "text": "Local/remote workflows of git + GitHub\n\n\n\n\n\n\n1. No GitHub\n\n\n\n\n\n\n\n2. GitHub clone (you own it)\n\n\n\n\n\n\n\n\n\n3. GitHub clone (someone else owns, you are collaborator)\n\n\n\n\n\n\n\n4. GitHub fork and clone (someone else owns, you are not collaborator)"
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#localremote-workflows-of-git-github-in-this-class",
+    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#localremote-workflows-of-git-github-in-this-class",
+    "title": "Bastos Lab",
+    "section": "Local/remote workflows of git + GitHub in this class",
+    "text": "Local/remote workflows of git + GitHub in this class\nIn this class, you will, for the most part, be working alone in GitHub repos that you own (option 2 from previous slide)."
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#localremote-workflow-of-git-github-we-will-use",
+    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#localremote-workflow-of-git-github-we-will-use",
+    "title": "Bastos Lab",
+    "section": "Local/remote workflow of git + GitHub we will use",
+    "text": "Local/remote workflow of git + GitHub we will use\nAfter making sure your local git is connected to a GitHub repository through git clone:\n\nFollow same steps as for local workflow\n\nAfter committing changes, “upload” them to the GitHub repo typing in the terminal git push\n\nIf there were any changes in the GitHub repo you did not have locally, “download” them to your local copy typing in the terminal git pull"
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#setting-up-git-github-workflows-in-rstudio",
+    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#setting-up-git-github-workflows-in-rstudio",
+    "title": "Bastos Lab",
+    "section": "Setting up git + GitHub workflows in RStudio",
+    "text": "Setting up git + GitHub workflows in RStudio\nFor that, we will follow the New project, GitHub first workflow (see link above for detailed instructions).\n\nMake a repo on GitHub\nNew RStudio Project via git clone\n\nMake local changes, save, commit\n\nPush your local changes to GitHub"
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#setting-up-git-github-workflows-in-rstudio-1",
+    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#setting-up-git-github-workflows-in-rstudio-1",
+    "title": "Bastos Lab",
+    "section": "Setting up git + GitHub workflows in RStudio",
+    "text": "Setting up git + GitHub workflows in RStudio\nEvery single new coding exercise will follow the above workflow, in a way that you will have one git/GitHub repo in your own GitHub for each exercise."
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#git-and-github-tips",
+    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#git-and-github-tips",
+    "title": "Bastos Lab",
+    "section": "git and GitHub tips",
+    "text": "git and GitHub tips\n\nThe workflows delineated above that include stage, commit, push, and pull are very simple.\ngit/GitHub can handle a lot more complex workflows including branching, forking, pull requests, etc.\nFor now, we will focus on the simple workflow above, and will explore more complex workflows as needed."
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#wisdom-notes",
+    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#wisdom-notes",
+    "title": "Bastos Lab",
+    "section": "Wisdom notes",
+    "text": "Wisdom notes\n\nCommit often (multiple times a day), push less often (few times a day)\nBefore pushing, always pull first!"
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#git-and-github-resources",
+    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#git-and-github-resources",
+    "title": "Bastos Lab",
+    "section": "git and GitHub resources",
+    "text": "git and GitHub resources\n\nThere is a great resource for working with git and R: happygitwithr.com.\nWe’ll make extensive use of this resource, please get acquainted.\ngit/GitHub cheatsheet"
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#useful-gitgithub-terminal-commands",
+    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#useful-gitgithub-terminal-commands",
+    "title": "Bastos Lab",
+    "section": "Useful Git/Github terminal commands",
+    "text": "Useful Git/Github terminal commands\ngit pull to start your work fresh with most recent version from remote\ngit status to check the status of git\ngit stage -A to stage changes\ngit commit -m \"commitMessage\" to make a commit\ngit push to send changes from local to remote\ngit log --oneline to see summarized list of commits (push q to quit console when done)"
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#now-lets-get-all-this-going-on-your-own-laptops",
+    "href": "teaching/2024-dsa/slides/lec03-git/lec03-git.html#now-lets-get-all-this-going-on-your-own-laptops",
+    "title": "Bastos Lab",
+    "section": "Now, let’s get all this going on your own laptops",
+    "text": "Now, let’s get all this going on your own laptops"
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#todays-goals",
+    "href": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#todays-goals",
+    "title": "Bastos Lab",
+    "section": "Today’s goals",
+    "text": "Today’s goals\nExplore key concepts in split-plot:\n\nDifferent sizes of EU\n\nTreatment randomization\n\nThe effects model\n\nThe ANOVA table"
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#motivational-example---treatment-design-in-a-split-plot",
+    "href": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#motivational-example---treatment-design-in-a-split-plot",
+    "title": "Bastos Lab",
+    "section": "Motivational example - Treatment design in a split-plot",
+    "text": "Motivational example - Treatment design in a split-plot\n\n2-way factorial in a split-plot\n\nN fertilizer rates: 0, 100, 200 kg N/ha\n\nK fertilizer rates: 0, 30, 60 kg K/ha\n\n3 x 3 = 9 treatment combinations"
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#experimental-design",
+    "href": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#experimental-design",
     "title": "Bastos Lab",
     "section": "Experimental design",
-    "text": "Experimental design\nAssuming we have heterogeneous experimental material (e.g., different soil type, topography, etc.)\n\nThus, we should use a randomized complete block design (RCBD)"
+    "text": "Experimental design\nA split-plot can be used with both a CRD or RCBD\nAssuming we have heterogeneous experimental material (e.g., different soil type, topography, etc.)\n\nThus, we should use a randomized complete block design (RCBD)"
   },
   {
-    "objectID": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#treatment-randomization---rcbd",
-    "href": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#treatment-randomization---rcbd",
+    "objectID": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#treatment-randomization---split-plot",
+    "href": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#treatment-randomization---split-plot",
+    "title": "Bastos Lab",
+    "section": "Treatment randomization - Split-plot",
+    "text": "Treatment randomization - Split-plot"
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#treatment-randomization---rcbd",
+    "href": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#treatment-randomization---rcbd",
     "title": "Bastos Lab",
     "section": "Treatment randomization - RCBD",
     "text": "Treatment randomization - RCBD\n\nRandomization of a treatment to a EU is restricted.\nIn an RCBD, each treatment appears once in each block.\nBecause of that, randomization needs to be performed for each block individually.\n\n\nIn our motivational example:\n\n4 replicates\nTotal observations: 9 x 4 = 36 EUs"
   },
   {
-    "objectID": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#heterogeneous-experimental-material---rcbd",
-    "href": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#heterogeneous-experimental-material---rcbd",
+    "objectID": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#treatment-randomization---split-plot-rcbd",
+    "href": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#treatment-randomization---split-plot-rcbd",
+    "title": "Bastos Lab",
+    "section": "Treatment randomization - Split-plot + RCBD",
+    "text": "Treatment randomization - Split-plot + RCBD"
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#heterogeneous-experimental-material---rcbd",
+    "href": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#heterogeneous-experimental-material---rcbd",
     "title": "Bastos Lab",
     "section": "Heterogeneous Experimental Material - RCBD ✅",
     "text": "Heterogeneous Experimental Material - RCBD ✅\n\n\n\n\n\n\n\n\nIn the plot layout here, all treatments (1 through 9) were randomly assigned to any experimental unit (plot) within each block."
   },
   {
-    "objectID": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#heterogeneous-experimental-material---rcbd-1",
-    "href": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#heterogeneous-experimental-material---rcbd-1",
+    "objectID": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#heterogeneous-experimental-material---rcbd-1",
+    "href": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#heterogeneous-experimental-material---rcbd-1",
     "title": "Bastos Lab",
     "section": "Heterogeneous Experimental Material - RCBD ✅",
     "text": "Heterogeneous Experimental Material - RCBD ✅\n\n\n\n\n\n\n\n\n\nTreatment 1 and its replicates are highlighted.\nNote how, due to the restricted randomization, treatment 1 appears only once in every block."
   },
   {
-    "objectID": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#heterogeneous-experimental-material---rcbd-2",
-    "href": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#heterogeneous-experimental-material---rcbd-2",
+    "objectID": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#heterogeneous-experimental-material---rcbd-2",
+    "href": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#heterogeneous-experimental-material---rcbd-2",
     "title": "Bastos Lab",
     "section": "Heterogeneous Experimental Material - RCBD ✅",
     "text": "Heterogeneous Experimental Material - RCBD ✅\n\n\n\n\n\n\n\n\nSince the experimental material is heterogeneous (e.g., different soil texture class), we are safeguarding statistical power when estimating treatment means and performing comparisons. 👍"
   },
   {
-    "objectID": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#the-effects-model",
-    "href": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#the-effects-model",
+    "objectID": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#the-effects-model",
+    "href": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#the-effects-model",
     "title": "Bastos Lab",
     "section": "The effects model",
     "text": "The effects model\n\\[\ny_{ijk} = \\mu + \\rho_{k} + \\alpha_{i} + \\beta_{j} + \\alpha\\beta_{ij} + e_{ijk}\n\\]\n\n\n\\(y_{ijk}\\) is the observation on the kth block from ith N rate and jth K rate\n\n\\(\\mu\\) is the overall mean \n\\(\\rho_{k}\\) is the differential effect of kth block\n\n\\(\\alpha_{i}\\) is the differential effect of ith N rate\n\n\\(\\beta_{j}\\) is the differential effect of jth K rate\n\n\\(\\alpha\\beta_{ij}\\) is the differential effect of the combination of the ith N rate and ith K rate\n\n\\(e_{ijk}\\) is the residual corresponding to the block k of N rate i and K rate j."
   },
   {
-    "objectID": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#the-anova-table",
-    "href": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#the-anova-table",
+    "objectID": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#the-anova-table",
+    "href": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#the-anova-table",
     "title": "Bastos Lab",
     "section": "The ANOVA table",
     "text": "The ANOVA table\nIn the following ANOVA table…\n\nn is number of levels in N rate = 3\n\nk is number of levels in K rate = 3\n\nr is number of blocks = 4\n\nN is total number of obserevations or EUs = 3 x 3 x 4 = 36"
   },
   {
-    "objectID": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#the-anova-table-1",
-    "href": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#the-anova-table-1",
+    "objectID": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#the-anova-table-1",
+    "href": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#the-anova-table-1",
     "title": "Bastos Lab",
     "section": "The ANOVA table",
     "text": "The ANOVA table\n\n\n\nSource of variationdfSSMSF ratioBlockdfb =r - 1 =4 - 1 = 3SSbN ratedfn =n - 1 =3 - 1 = 2SSnMSn =SSn / dfn MSn / MSeK ratedfk =k - 1 =3 - 1 = 2SSkMSk =SSk / dfkMSk / MSeN x Kdfnk =(n - 1) x (k - 1) =(3-1) x (3-1) = 4SSnkMSnk =SSnk / dfnkMSnk / MSeErrordfe =(ab - 1) x (r - 1) =(9 - 1) x (4 - 1) =8 x 3 = 24SSeMSe =SSe / dfeTOTALdft =N -1 = 35SSt\n\n\n\n\nNotice how now we consumed extra 3 dfs to calculate the block effect.\n\nWith that, we have 3 fewer dfs in the error df."
   },
   {
-    "objectID": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#anova-table---motivational-example",
-    "href": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#anova-table---motivational-example",
+    "objectID": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#anova-table---motivational-example",
+    "href": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#anova-table---motivational-example",
     "title": "Bastos Lab",
     "section": "ANOVA table - motivational example",
     "text": "ANOVA table - motivational example\n\n\n\nSource of variationSum SqDfF valuePr(&gt;F)(Intercept)836,829,184.012,223.1503963&lt;0.001rep2,747,393.132.43294100.09nrate_kgha1,491,078.221.98062580.16krate_kgha470,445.520.62490120.544nrate_kgha:krate_kgha11,107,585.347.3772023&lt;0.001Residuals9,033,981.924\n\n\n\nWhat is significant here (say at \\(\\alpha = 0.05\\))?\nWhat can we say about the rep/block effect?"
   },
   {
-    "objectID": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#summary",
-    "href": "teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html#summary",
+    "objectID": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#summary",
+    "href": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#summary",
     "title": "Bastos Lab",
     "section": "Summary",
     "text": "Summary\n\nRCBD is randomized with one restriction (each block separately)\n\nEach term of the effects model has a row in the ANOVA table\n\nBy including the block in the model, it consumed dfs from error\n\nIn a properly conducted RCBD, we would hope that the amount of SS explained by block is relatively greater than the consequence of consuming 3 df from the error to calculate the block effect.\n\n\nhttps://catalog.data.gov/dataset/?collection_package_id=51f2e40a-1702-43af-9a7b-ff868cab0b16\nBamyan main effects significant Treatments included 4 levels of P2O5 (0, 50, 70, 90 kg/ha) and 4 levels of nitrogen (0, 65, 95, 120 kg/ha), with three replications. Total plots = 4 x 4 x 3 = 48; the size of the harvested plot was 4 m2. An RCB design was used\nBalkh The protocol document for this trial indicates that the treatments included 4 levels of P2O5 (0, 50, 70, 90 kg/ha) and 4 levels of nitrogen (0, 65, 95,120 kg/ha), with three replications. Total plots = 4 x 4 x 3 = 48;"
