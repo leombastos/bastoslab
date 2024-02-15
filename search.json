@@ -1614,14 +1614,14 @@
     "href": "teaching/2024-dsa/slides/lec08-fixedrand/lec08-fixedrand.html#mixed-effect-models-1",
     "title": "Bastos Lab",
     "section": "Mixed-effect models",
-    "text": "Mixed-effect models\n\\[\ny_{ij} = \\mu + \\rho_{j} + \\alpha_{i} + e_{ijk}\n\\]\n\n\n\\(y_{ij}\\) is the observation on the jth block from ith N rate\n\n\\(\\mu\\) is the overall mean \n\\(\\rho_{j}\\) is the random effect of kth block\n\n\\(\\alpha_{i}\\) is the differential effect of ith N rate\n\n\\(e_{ij}\\) is the residual corresponding to the block k of N rate i."
+    "text": "Mixed-effect models\n\\[\ny_{ij} = \\mu + \\rho_{j} + \\alpha_{i} + e_{ij}\n\\]\n\n\n\\(y_{ij}\\) is the observation on the jth block from ith N rate\n\n\\(\\mu\\) is the overall mean \n\\(\\rho_{j}\\) is the random effect of kth block\n\n\\(\\alpha_{i}\\) is the differential effect of ith N rate\n\n\\(e_{ij}\\) is the residual corresponding to the block k of N rate i."
   },
   {
     "objectID": "teaching/2024-dsa/slides/lec08-fixedrand/lec08-fixedrand.html#mixed-models-sources-of-error",
     "href": "teaching/2024-dsa/slides/lec08-fixedrand/lec08-fixedrand.html#mixed-models-sources-of-error",
     "title": "Bastos Lab",
     "section": "Mixed models sources of error",
-    "text": "Mixed models sources of error\n\\[\n\\alpha_{i} \\sim iidN(0, \\sigma^2_{\\alpha}) \\]\n\n\\[\ne_{ijk} \\sim iidN(0, \\sigma^2_{e})  \n\\]\nSimilarly to random-effect models, the variance of an observation is expressed as:\n\\[ \\sigma^2_{y} = \\sigma^2_{a} + \\sigma^2_{e} \\]"
+    "text": "Mixed models sources of error\n\\[\n\\alpha_{i} \\sim iidN(0, \\sigma^2_{\\alpha}) \\]\n\n\\[\ne_{ij} \\sim iidN(0, \\sigma^2_{e})  \n\\]\nSimilarly to random-effect models, the variance of an observation is expressed as:\n\\[ \\sigma^2_{y} = \\sigma^2_{a} + \\sigma^2_{e} \\]"
   },
   {
     "objectID": "teaching/2024-dsa/slides/lec08-fixedrand/lec08-fixedrand.html#motivational-example---treatment-design",
@@ -1636,6 +1636,13 @@
     "title": "Bastos Lab",
     "section": "Motivational example - Experimental design",
     "text": "Motivational example - Experimental design\nIn our previous RCBD exercise, we analyzed RCBD with blocks as fixed effects, which made our model be a fixed-effect ANOVA model.\n\nNow, let’s treat blocks as random and have a mixed-effect ANOVA model instead (N and K rates are still treated as fixed)."
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec08-fixedrand/lec08-fixedrand.html#reading",
+    "href": "teaching/2024-dsa/slides/lec08-fixedrand/lec08-fixedrand.html#reading",
+    "title": "Bastos Lab",
+    "section": "Reading",
+    "text": "Reading\nMake sure to read the paper “2016 Dixon - Should blocks be fixed or random?” posted on today’s class reading material.\nQuestions about this paper may come up in an upcoming quiz."
   },
   {
     "objectID": "teaching/2023-aghack-vwc/2023-aghack-vwc-pres.html#smap-products",
@@ -2800,67 +2807,74 @@
     "text": "Today’s goals\nExplore key concepts in split-plot:\n\nDifferent sizes of EU\n\nTreatment randomization\n\nThe effects model\n\nThe ANOVA table"
   },
   {
+    "objectID": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#motivational-example---treatment-design",
+    "href": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#motivational-example---treatment-design",
+    "title": "Bastos Lab",
+    "section": "Motivational example - Treatment design",
+    "text": "Motivational example - Treatment design\n\n2-way factorial\nN fertilizer rates: 0, 100, 200 kg N/ha\n\nK fertilizer rates: 0, 30, 60 kg K/ha\n\n3 x 3 = 9 treatment combinations"
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#when-is-split-plot-needed",
+    "href": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#when-is-split-plot-needed",
+    "title": "Bastos Lab",
+    "section": "When is split-plot needed?",
+    "text": "When is split-plot needed?\n\nWhen levels of one treatment factor need more/less experimental material than the levels of other treatment factors\n\n\nFor ex., K treatments are applied with a 12-row spreader, and N rates are applied with a 4-row coulter."
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#when-is-split-plot-needed-1",
+    "href": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#when-is-split-plot-needed-1",
+    "title": "Bastos Lab",
+    "section": "When is split-plot needed?",
+    "text": "When is split-plot needed?\n\nDon’t have enough experimental material to have all plots be the size of the requirements of treatment factor needing more resources\n\n\nIn the example above, we could, potentially, decide to have all plots of size 12 rows, where a given K treatment is applied with one pass on the plot, and a given N treatment is applied with 3 passes on the plot.\nIn that, we would need 36 plots x 12 rows/plot = 432 rows total"
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#when-is-split-plot-needed-2",
+    "href": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#when-is-split-plot-needed-2",
+    "title": "Bastos Lab",
+    "section": "When is split-plot needed?",
+    "text": "When is split-plot needed?\n\nDon’t have enough experimental material to have all plots be the size of the requirements of treatment factor needing more resources\n\n\nHowever, that requires more land than we anticipated (we planed for 4-row plots), and we only have space for 36 plots x 4 rows = 144 rows total"
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#when-is-split-plot-needed-3",
+    "href": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#when-is-split-plot-needed-3",
+    "title": "Bastos Lab",
+    "section": "When is split-plot needed?",
+    "text": "When is split-plot needed?"
+  },
+  {
     "objectID": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#motivational-example---treatment-design-in-a-split-plot",
     "href": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#motivational-example---treatment-design-in-a-split-plot",
     "title": "Bastos Lab",
     "section": "Motivational example - Treatment design in a split-plot",
-    "text": "Motivational example - Treatment design in a split-plot\n\n2-way factorial in a split-plot\n\nN fertilizer rates: 0, 100, 200 kg N/ha\n\nK fertilizer rates: 0, 30, 60 kg K/ha\n\n3 x 3 = 9 treatment combinations"
+    "text": "Motivational example - Treatment design in a split-plot\n\n2-way factorial in a split-plot\n\nWhole-plot treatment factor: K fertilizer rates: 0, 30, 60 kg K/ha\n\nSplit-plot treatment factor: N fertilizer rates: 0, 100, 200 kg N/ha\n\n3 x 3 = 9 treatment combinations that will be assigned to different sizes of experimental units!"
   },
   {
     "objectID": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#experimental-design",
     "href": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#experimental-design",
     "title": "Bastos Lab",
     "section": "Experimental design",
-    "text": "Experimental design\nA split-plot can be used with both a CRD or RCBD\nAssuming we have heterogeneous experimental material (e.g., different soil type, topography, etc.)\n\nThus, we should use a randomized complete block design (RCBD)"
+    "text": "Experimental design\nA split-plot can be used with different experimental designs like CRD or RCBD\nAssuming we have heterogeneous experimental material (e.g., different soil type, topography, etc.)\n\nThus, we should use a randomized complete block design (RCBD)"
   },
   {
-    "objectID": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#treatment-randomization---split-plot",
-    "href": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#treatment-randomization---split-plot",
+    "objectID": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#treatment-randomization---split-plot-in-rcbd",
+    "href": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#treatment-randomization---split-plot-in-rcbd",
     "title": "Bastos Lab",
-    "section": "Treatment randomization - Split-plot",
-    "text": "Treatment randomization - Split-plot"
+    "section": "Treatment randomization - Split-plot in RCBD",
+    "text": "Treatment randomization - Split-plot in RCBD\n\nWe first randomize the levels of the whole-plot treatment factor within each of our blocks."
   },
   {
-    "objectID": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#treatment-randomization---rcbd",
-    "href": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#treatment-randomization---rcbd",
+    "objectID": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#treatment-randomization---split-plot-in-rcbd-1",
+    "href": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#treatment-randomization---split-plot-in-rcbd-1",
     "title": "Bastos Lab",
-    "section": "Treatment randomization - RCBD",
-    "text": "Treatment randomization - RCBD\n\nRandomization of a treatment to a EU is restricted.\nIn an RCBD, each treatment appears once in each block.\nBecause of that, randomization needs to be performed for each block individually.\n\n\nIn our motivational example:\n\n4 replicates\nTotal observations: 9 x 4 = 36 EUs"
-  },
-  {
-    "objectID": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#treatment-randomization---split-plot-rcbd",
-    "href": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#treatment-randomization---split-plot-rcbd",
-    "title": "Bastos Lab",
-    "section": "Treatment randomization - Split-plot + RCBD",
-    "text": "Treatment randomization - Split-plot + RCBD"
-  },
-  {
-    "objectID": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#heterogeneous-experimental-material---rcbd",
-    "href": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#heterogeneous-experimental-material---rcbd",
-    "title": "Bastos Lab",
-    "section": "Heterogeneous Experimental Material - RCBD ✅",
-    "text": "Heterogeneous Experimental Material - RCBD ✅\n\n\n\n\n\n\n\n\nIn the plot layout here, all treatments (1 through 9) were randomly assigned to any experimental unit (plot) within each block."
-  },
-  {
-    "objectID": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#heterogeneous-experimental-material---rcbd-1",
-    "href": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#heterogeneous-experimental-material---rcbd-1",
-    "title": "Bastos Lab",
-    "section": "Heterogeneous Experimental Material - RCBD ✅",
-    "text": "Heterogeneous Experimental Material - RCBD ✅\n\n\n\n\n\n\n\n\n\nTreatment 1 and its replicates are highlighted.\nNote how, due to the restricted randomization, treatment 1 appears only once in every block."
-  },
-  {
-    "objectID": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#heterogeneous-experimental-material---rcbd-2",
-    "href": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#heterogeneous-experimental-material---rcbd-2",
-    "title": "Bastos Lab",
-    "section": "Heterogeneous Experimental Material - RCBD ✅",
-    "text": "Heterogeneous Experimental Material - RCBD ✅\n\n\n\n\n\n\n\n\nSince the experimental material is heterogeneous (e.g., different soil texture class), we are safeguarding statistical power when estimating treatment means and performing comparisons. 👍"
+    "section": "Treatment randomization - Split-plot in RCBD",
+    "text": "Treatment randomization - Split-plot in RCBD\n\nThen we randomize the levels of the split-plot treatment factor within each of our whole-plot treatment factor plots."
   },
   {
     "objectID": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#the-effects-model",
     "href": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#the-effects-model",
     "title": "Bastos Lab",
     "section": "The effects model",
-    "text": "The effects model\n\\[\ny_{ijk} = \\mu + \\rho_{k} + \\alpha_{i} + \\beta_{j} + \\alpha\\beta_{ij} + e_{ijk}\n\\]\n\n\n\\(y_{ijk}\\) is the observation on the kth block from ith N rate and jth K rate\n\n\\(\\mu\\) is the overall mean \n\\(\\rho_{k}\\) is the differential effect of kth block\n\n\\(\\alpha_{i}\\) is the differential effect of ith N rate\n\n\\(\\beta_{j}\\) is the differential effect of jth K rate\n\n\\(\\alpha\\beta_{ij}\\) is the differential effect of the combination of the ith N rate and ith K rate\n\n\\(e_{ijk}\\) is the residual corresponding to the block k of N rate i and K rate j."
+    "text": "The effects model\n\\[\ny_{ijk} = \\mu + \\rho_{k} + \\alpha_{i} + (\\alpha\\rho)_{ik} + \\beta_{j} + (\\alpha\\beta)_{ij} + e_{ijk}\n\\]\n\n\n\\(y_{ijk}\\) is the observation on the kth block from ith K rate and jth N rate\n\n\\(\\mu\\) is the overall mean \n\\(\\rho_{k}\\) is the random effect of kth block\n\n\\(\\alpha_{i}\\) is the differential effect of ith K rate\n\n\\((\\alpha\\rho)_{ik}\\) is the whole-plot random error\n\n\\(\\beta_{j}\\) is the differential effect of jth N rate\n\n\\((\\alpha\\beta)_{ij}\\) is the differential effect of the combination of the ith N rate and ith K rate\n\n\\(e_{ijk}\\) is the residual corresponding to the block k of K rate i and N rate j."
   },
   {
     "objectID": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#the-anova-table",
@@ -2874,21 +2888,35 @@
     "href": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#the-anova-table-1",
     "title": "Bastos Lab",
     "section": "The ANOVA table",
-    "text": "The ANOVA table\n\n\n\nSource of variationdfSSMSF ratioBlockdfb =r - 1 =4 - 1 = 3SSbN ratedfn =n - 1 =3 - 1 = 2SSnMSn =SSn / dfn MSn / MSeK ratedfk =k - 1 =3 - 1 = 2SSkMSk =SSk / dfkMSk / MSeN x Kdfnk =(n - 1) x (k - 1) =(3-1) x (3-1) = 4SSnkMSnk =SSnk / dfnkMSnk / MSeErrordfe =(ab - 1) x (r - 1) =(9 - 1) x (4 - 1) =8 x 3 = 24SSeMSe =SSe / dfeTOTALdft =N -1 = 35SSt\n\n\n\n\nNotice how now we consumed extra 3 dfs to calculate the block effect.\n\nWith that, we have 3 fewer dfs in the error df."
+    "text": "The ANOVA table\n\n\n\nSource of variationdfSSMSF ratioBlockdfb =r - 1 =4 - 1 = 3SSbK ratedfk =k - 1 =3 - 1 = 2SSkMSk =SSk / dfkMSk / MSwpeWP error (K x Block)dfwpe = (k - 1) x (r - 1) =(3 - 1) x (4 - 1) = 6SSwpeMSwpe =SSwpe / dfwpeN ratedfn =n - 1 =3 - 1 = 2SSnMSn =SSn / dfn MSn / MSspeN x Kdfnk =(n - 1) x (k - 1) =(3-1) x (3-1) = 4SSnkMSnk =SSnk / dfnkMSnk / MSspeSP errordfspe =k(r - 1) x (n - 1) =3(4 - 1) x (3 - 1) =9 x 2 = 18SSspeMSspe =SSspe / dfspeTOTALdft =N -1 = 35SSt\n\n\n\n\nNotice how we have 2 error sources: the WP and the SP.\nWhat would happen if we ran this mistakenly as full RCBD with a single EU size?"
   },
   {
     "objectID": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#anova-table---motivational-example",
     "href": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#anova-table---motivational-example",
     "title": "Bastos Lab",
     "section": "ANOVA table - motivational example",
-    "text": "ANOVA table - motivational example\n\n\n\nSource of variationSum SqDfF valuePr(&gt;F)(Intercept)836,829,184.012,223.1503963&lt;0.001rep2,747,393.132.43294100.09nrate_kgha1,491,078.221.98062580.16krate_kgha470,445.520.62490120.544nrate_kgha:krate_kgha11,107,585.347.3772023&lt;0.001Residuals9,033,981.924\n\n\n\nWhat is significant here (say at \\(\\alpha = 0.05\\))?\nWhat can we say about the rep/block effect?"
+    "text": "ANOVA table - motivational example\n\n\n\nSource of variationChisqDfPr(&gt;Chisq)(Intercept)913.76600831&lt;0.001krate_kgha0.918370720.632nrate_kgha4.502946020.105krate_kgha:nrate_kgha33.54408804&lt;0.001\n\n\n\nWhat is significant here (say at \\(\\alpha = 0.05\\))?\n\nANOVA table only provides numerator df! Denominator df is important to know as well to check that proper errors are being used to test different effects."
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#the-split-plot-trade-off",
+    "href": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#the-split-plot-trade-off",
+    "title": "Bastos Lab",
+    "section": "The split-plot trade-off",
+    "text": "The split-plot trade-off\nCompared to a RCBD where each of the 3 N x 3 K combinations would have been randomly assigned to same-sized EUs:\n\nThe whole-plot treatment factor has power decreased\n\nThe split-plot treatment factor has power increased\n\nOverall, split-plot designs have relatively lower power than their same-sized EU counterpart"
   },
   {
     "objectID": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#summary",
     "href": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#summary",
     "title": "Bastos Lab",
     "section": "Summary",
-    "text": "Summary\n\nRCBD is randomized with one restriction (each block separately)\n\nEach term of the effects model has a row in the ANOVA table\n\nBy including the block in the model, it consumed dfs from error\n\nIn a properly conducted RCBD, we would hope that the amount of SS explained by block is relatively greater than the consequence of consuming 3 df from the error to calculate the block effect.\n\n\nhttps://catalog.data.gov/dataset/?collection_package_id=51f2e40a-1702-43af-9a7b-ff868cab0b16\nBamyan main effects significant Treatments included 4 levels of P2O5 (0, 50, 70, 90 kg/ha) and 4 levels of nitrogen (0, 65, 95, 120 kg/ha), with three replications. Total plots = 4 x 4 x 3 = 48; the size of the harvested plot was 4 m2. An RCB design was used\nBalkh The protocol document for this trial indicates that the treatments included 4 levels of P2O5 (0, 50, 70, 90 kg/ha) and 4 levels of nitrogen (0, 65, 95,120 kg/ha), with three replications. Total plots = 4 x 4 x 3 = 48;"
+    "text": "Summary\n\nSplit-plot designs are used when different treatment factors require a different size/amount of experimental material\nSplit-plots have one treatment factor allocated to the whole-plot experimental units (larger), and another treatment factor allocated to the split-plot experimental units (smaller)"
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#summary-1",
+    "href": "teaching/2024-dsa/slides/lec09-spp/lec09-spp.html#summary-1",
+    "title": "Bastos Lab",
+    "section": "Summary",
+    "text": "Summary\n\nDue to randomization happening at two different levels, that creates 2 different experimental errors, one for each experimental unit size. Need to ensure that proper model is specified so proper errors are used.\nAlthough split-plot treatment factor has increased power, overall split-plot designs have less power compared to their one-EU-size counterpart.\n\n\nhttps://catalog.data.gov/dataset/?collection_package_id=51f2e40a-1702-43af-9a7b-ff868cab0b16\nBamyan main effects significant Treatments included 4 levels of P2O5 (0, 50, 70, 90 kg/ha) and 4 levels of nitrogen (0, 65, 95, 120 kg/ha), with three replications. Total plots = 4 x 4 x 3 = 48; the size of the harvested plot was 4 m2. An RCB design was used\nBalkh The protocol document for this trial indicates that the treatments included 4 levels of P2O5 (0, 50, 70, 90 kg/ha) and 4 levels of nitrogen (0, 65, 95,120 kg/ha), with three replications. Total plots = 4 x 4 x 3 = 48;"
   },
   {
     "objectID": "teaching/2024-dsa/slides/lec04-github/lec04-github.html#todays-goals",
