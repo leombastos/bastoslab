@@ -634,35 +634,84 @@
     "href": "teaching/2024-dsa/slides/lec11-reg/lec11-reg.html#todays-goals",
     "title": "Bastos Lab",
     "section": "Today’s goals",
-    "text": "Today’s goals"
+    "text": "Today’s goals\nExplore\n\nthe mathematical formula,\n\nimplementation, and\n\ninterpretation\n\n\nof linear and non-linear regression models applied for optimum-finding in agriculture."
   },
   {
     "objectID": "teaching/2024-dsa/slides/lec11-reg/lec11-reg.html#regression",
     "href": "teaching/2024-dsa/slides/lec11-reg/lec11-reg.html#regression",
     "title": "Bastos Lab",
     "section": "Regression",
-    "text": "Regression\nLinear regression is the statistical method for fitting a line to data where the relationship between two variables, x and y , can be modeled by a straight line with some error:\nRegression is the statistical method for fitting a line to data where the relationship between two variables, a quantitative outcome (\\(Y\\)) and a quantitative predictor (\\(X\\)), can be modeled by a straight line with some error: \\[\\Large{Y = b_0 + b_1 X + \\epsilon}\\]\n\n\n\\(b_1\\): estimated slope of the relationship between \\(X\\) and \\(Y\\)\n\\(b_0\\): estimated intercept of the relationship between \\(X\\) and \\(Y\\)\n\\(\\epsilon\\): Error (residual)"
+    "text": "Regression\nStatistical method for fitting a line to data where the relationship between two variables, a quantitative outcome (\\(Y\\)) and a quantitative predictor (\\(X\\)), are of interest."
   },
   {
-    "objectID": "teaching/2024-dsa/slides/lec11-reg/lec11-reg.html#choosing-values-for-b_1-and-b_0",
-    "href": "teaching/2024-dsa/slides/lec11-reg/lec11-reg.html#choosing-values-for-b_1-and-b_0",
+    "objectID": "teaching/2024-dsa/slides/lec11-reg/lec11-reg.html#regression-1",
+    "href": "teaching/2024-dsa/slides/lec11-reg/lec11-reg.html#regression-1",
     "title": "Bastos Lab",
-    "section": "Choosing values for \\(b_1\\) and \\(b_0\\)",
-    "text": "Choosing values for \\(b_1\\) and \\(b_0\\)"
+    "section": "Regression",
+    "text": "Regression\nThe quantitative predictor of the regression model can take different forms, including:\n\nLet’s explore each of them next."
   },
   {
-    "objectID": "teaching/2024-dsa/slides/lec11-reg/lec11-reg.html#motivational-examples",
-    "href": "teaching/2024-dsa/slides/lec11-reg/lec11-reg.html#motivational-examples",
+    "objectID": "teaching/2024-dsa/slides/lec11-reg/lec11-reg.html#model-1---intercept-1",
+    "href": "teaching/2024-dsa/slides/lec11-reg/lec11-reg.html#model-1---intercept-1",
     "title": "Bastos Lab",
-    "section": "Motivational examples",
-    "text": "Motivational examples"
+    "section": "Model 1 - Intercept",
+    "text": "Model 1 - Intercept\nThe intercept-only model only contains one fixed-effect parameter:\n\\[\\Large{Y = \\color{blue}{b_0} + \\epsilon}\\]\n\n\n\nintercept, \\(b_0\\) (aka overall mean of the response variable)"
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec11-reg/lec11-reg.html#model-1---intercept-2",
+    "href": "teaching/2024-dsa/slides/lec11-reg/lec11-reg.html#model-1---intercept-2",
+    "title": "Bastos Lab",
+    "section": "Model 1 - Intercept",
+    "text": "Model 1 - Intercept\n\n\n\n\n\n# A tibble: 1 × 3\n  term        estimate p.value\n  &lt;chr&gt;          &lt;dbl&gt;   &lt;dbl&gt;\n1 (Intercept)     12.2  0.0002\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYield is 12.2 Mg/ha regardless of seeding rate."
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec11-reg/lec11-reg.html#model-2---linear-1",
+    "href": "teaching/2024-dsa/slides/lec11-reg/lec11-reg.html#model-2---linear-1",
+    "title": "Bastos Lab",
+    "section": "Model 2 - Linear",
+    "text": "Model 2 - Linear\nThe linear (intercept + slope) model contains two fixed-effect parameters:\n\\[\\Large{Y = \\color{blue}{b_0} + \\color{purple}{b_1} X + \\epsilon}\\]\n\n\n\n\nintercept, \\(b_0\\) (where line cuts the y-axis when x = 0)\n\nslope, \\(b_1\\) (change in y for each unit change on x)"
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec11-reg/lec11-reg.html#model-2---linear-2",
+    "href": "teaching/2024-dsa/slides/lec11-reg/lec11-reg.html#model-2---linear-2",
+    "title": "Bastos Lab",
+    "section": "Model 2 - Linear",
+    "text": "Model 2 - Linear\n\n\n\n\n\n# A tibble: 2 × 3\n  term        estimate p.value\n  &lt;chr&gt;          &lt;dbl&gt;   &lt;dbl&gt;\n1 (Intercept)   8.02    0     \n2 sr_ksha       0.0520  0.0001\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFor each 1-unit increase in seeding rate, yield increases 0.052 Mg/ha."
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec11-reg/lec11-reg.html#model-3---quadratic-1",
+    "href": "teaching/2024-dsa/slides/lec11-reg/lec11-reg.html#model-3---quadratic-1",
+    "title": "Bastos Lab",
+    "section": "Model 3 - Quadratic",
+    "text": "Model 3 - Quadratic\nThe quadratic model contains three fixed-effect parameters:\n\\[\\Large{Y = \\color{blue}{b_0} + \\color{purple}{b_1} X + \\color{forestgreen}{b_2} X^2 +\\epsilon}\\]\n\n\n\n\n\nintercept, \\(b_0\\) (where line cuts the y-axis when x = 0)\n\n\\(b_1\\) and \\(b_2\\)\n\nwhere \\(b_1 + 2b_2\\) is the change in y for each unit change in x"
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec11-reg/lec11-reg.html#model-3---quadratic-2",
+    "href": "teaching/2024-dsa/slides/lec11-reg/lec11-reg.html#model-3---quadratic-2",
+    "title": "Bastos Lab",
+    "section": "Model 3 - Quadratic",
+    "text": "Model 3 - Quadratic\n\n\n\n\n\n# A tibble: 3 × 3\n  term         estimate p.value\n  &lt;chr&gt;           &lt;dbl&gt;   &lt;dbl&gt;\n1 (Intercept)  -0.976     0.275\n2 sr_ksha       0.309     0    \n3 I(sr_ksha^2) -0.00161   0    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYield is positively related to seeding rate (b1 &gt; 0) with a point of maximum (b2 &lt; 0) near 90,000 seeds/ha."
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec11-reg/lec11-reg.html#model-4---linear-plateau-1",
+    "href": "teaching/2024-dsa/slides/lec11-reg/lec11-reg.html#model-4---linear-plateau-1",
+    "title": "Bastos Lab",
+    "section": "Model 4 - Linear-plateau",
+    "text": "Model 4 - Linear-plateau\nThe linear-plateau model contains three fixed-effect parameters:\n\\[\n\\begin{cases}\nx &lt; \\color{red}{xs},\\ Y = \\color{blue}{b_0} + \\color{purple}{b_1} X \\\\\nx &gt; \\color{red}{xs},\\ Y = \\color{blue}{b_0} + \\color{purple}{b_1} \\color{red}{xs}\n\\end{cases}\n\\]\n\n\n\n\n\nintercept, \\(b_0\\) (where line cuts the y-axis when x = 0)\n\nslope, \\(b_1\\) (change in y for each unit change on x until xs)\n\nbreak-point, \\(xs\\) (x axis value where y is optimized)"
+  },
+  {
+    "objectID": "teaching/2024-dsa/slides/lec11-reg/lec11-reg.html#model-4---linear-plateau-2",
+    "href": "teaching/2024-dsa/slides/lec11-reg/lec11-reg.html#model-4---linear-plateau-2",
+    "title": "Bastos Lab",
+    "section": "Model 4 - Linear-plateau",
+    "text": "Model 4 - Linear-plateau\n\n\n\n\n\n# A tibble: 3 × 3\n  term  estimate p.value\n  &lt;chr&gt;    &lt;dbl&gt;   &lt;dbl&gt;\n1 a        3.46   0.0075\n2 b        0.136  0     \n3 xs      73.5    0     \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYield increases linearly as seeding rate increases (b1 &gt; 0) until a threshold (xs = 73.5 k seeds/ha), after which point yield remains constant."
   },
   {
     "objectID": "teaching/2024-dsa/slides/lec11-reg/lec11-reg.html#summary",
     "href": "teaching/2024-dsa/slides/lec11-reg/lec11-reg.html#summary",
     "title": "Bastos Lab",
     "section": "Summary",
-    "text": "Summary\n\nWhen having time or space as part of the treatment structure, then observations and residuals are not assumed to be independent.\nWe allow the error correlation matrix to estimate different correlation estimates\nWe then select the model with the best fit and that has addressed the potential correlation issue\nWe use the selected model for inference"
+    "text": "Summary\nWe covered the mathematical formula, implementation, and interpretation of the different regression models, including linear and non-linear."
   },
   {
     "objectID": "teaching/2024-dsa/slides/lab01-prep.html",
