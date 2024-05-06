@@ -1806,6 +1806,20 @@
     "text": "Disability statement\nIf you plan to request accommodations for a disability, please register with the Disability Resource Center. They can be reached by visiting Clark Howell Hall, calling 706-542-8719 (voice) or 706-542-8778 (TTY), or by visiting https://sitedrc.uga.edu"
   },
   {
+    "objectID": "teaching/2024-acs/2024-acs-Bastos.html",
+    "href": "teaching/2024-acs/2024-acs-Bastos.html",
+    "title": "2024 ACS Workshop - Designing and Analyzing Agricltural Studies: intro and example in R",
+    "section": "",
+    "text": "Hey there!\nThis is the prep page for the 2024 Agronomy, Crop, and Soils Graduate Student Committee Workshop - Designing and Analyzing Agricltural Studies: intro and example in R, taught by @leombastos.\nThe workshop was presented on May 10th 2024 for ~1 hour where we covered:"
+  },
+  {
+    "objectID": "teaching/2024-acs/2024-acs-Bastos.html#interested-in-attending-the-workshop",
+    "href": "teaching/2024-acs/2024-acs-Bastos.html#interested-in-attending-the-workshop",
+    "title": "2024 ACS Workshop - Designing and Analyzing Agricltural Studies: intro and example in R",
+    "section": "Interested in “attending” the workshop?",
+    "text": "Interested in “attending” the workshop?\n\nFollow the slide deck here\nNew to R and/or RStudio? Follow steps 1 and 2 of these instructions to install them before the workshop (if you want to be able to follow along).\nGo to this GitHub repository and download it to your computer (click on the green “Code” button above and select “Download ZIP”).\nUnzip the repository.\nGo on the subfolder code and double-click on the file 2024-acsworkshop-rcbd-Bastos.qmd to launch in an RStudio window."
+  },
+  {
     "objectID": "teaching/2023-aghack-vwc/2023-aghack-vwc.html",
     "href": "teaching/2023-aghack-vwc/2023-aghack-vwc.html",
     "title": "2023 ASA AgHackathon - Soil Volumetric Water Content",
@@ -2608,14 +2622,14 @@
     "href": "teaching/teaching.html#workshops",
     "title": "Teaching",
     "section": "Workshops 💻",
-    "text": "Workshops 💻\nASA AgHackathon: SMAP soil VWC data Regression for optimum and prediction\nData wrangling and iteration\nMultivariate analysis\nAgronomy Society R beginner bootcamp\nExperimental Design, ANOVA, and Regression\nIntro to R"
+    "text": "Workshops 💻\n\nACS Grad Committee: Design and analysis of ag design in R\n\nASA AgHackathon: SMAP soil VWC data\nRegression for optimum and prediction\n\nData wrangling and iteration\n\nMultivariate analysis\n\nAgronomy Society R beginner bootcamp\n\nExperimental Design, ANOVA, and Regression\n\nIntro to R"
   },
   {
     "objectID": "teaching/teaching.html#courses",
     "href": "teaching/teaching.html#courses",
     "title": "Teaching",
     "section": "Courses 👨‍🏫",
-    "text": "Courses 👨‍🏫\n2024 Advanced Topics in Precision Ag\n2024 Data Science and Statistical Programing Applied to Ag\n2023 Advanced Topics in Precision Ag\n2022 Advanced Topics in Precision Ag"
+    "text": "Courses 👨‍🏫\n\n2024 Advanced Topics in Precision Ag\n\n2024 Data Science and Statistical Programing Applied to Ag\n\n2023 Advanced Topics in Precision Ag\n\n2022 Advanced Topics in Precision Ag"
   },
   {
     "objectID": "teaching/2019-introtoR.html",
@@ -2665,6 +2679,160 @@
     "title": "ASA Ag Hackathon Workshop Series:\nVolumetric Water Content",
     "section": "SMAP validation",
     "text": "SMAP validation\nSMAP-derived data is validated through a network of soil moisture sensing stations across the USA.\n\n\nFor more information on how SMAP products are derived and how they are validated, check the full paper here."
+  },
+  {
+    "objectID": "teaching/2024-acs/2024-acs-deck.html#todays-goals",
+    "href": "teaching/2024-acs/2024-acs-deck.html#todays-goals",
+    "title": "Designing and analyzing ag studies: intro and R example",
+    "section": "Today’s goals",
+    "text": "Today’s goals\nExplore key concepts in experimentation:\n\nExperimentation planning workflow\nHypothesis setting\nStudy design = treatment + experimental design\n\nCRD vs. RCBD\n\nResources\n\nR code"
+  },
+  {
+    "objectID": "teaching/2024-acs/2024-acs-deck.html#experimentation-planning-workflow",
+    "href": "teaching/2024-acs/2024-acs-deck.html#experimentation-planning-workflow",
+    "title": "Designing and analyzing ag studies: intro and R example",
+    "section": "Experimentation planning workflow",
+    "text": "Experimentation planning workflow"
+  },
+  {
+    "objectID": "teaching/2024-acs/2024-acs-deck.html#working-example---fertilizer-rate-study",
+    "href": "teaching/2024-acs/2024-acs-deck.html#working-example---fertilizer-rate-study",
+    "title": "Designing and analyzing ag studies: intro and R example",
+    "section": "Working example - Fertilizer rate study",
+    "text": "Working example - Fertilizer rate study\nA study was conducted to assess the effect of nitrogen (N) and potassium (K) fertilizer rates on crop yield."
+  },
+  {
+    "objectID": "teaching/2024-acs/2024-acs-deck.html#hypothesis-and-objectives",
+    "href": "teaching/2024-acs/2024-acs-deck.html#hypothesis-and-objectives",
+    "title": "Designing and analyzing ag studies: intro and R example",
+    "section": "Hypothesis and Objectives",
+    "text": "Hypothesis and Objectives\nYour objectives should stem directly from your hypothesis:\n\nHypothesis: We hypothesize that increasing N and K fertilizer rates will increase crop grain yield.\n\n\n\nObjectives: Our objective is to assess the effect of different N and K fertilizer rates on crop grain yield."
+  },
+  {
+    "objectID": "teaching/2024-acs/2024-acs-deck.html#study-design",
+    "href": "teaching/2024-acs/2024-acs-deck.html#study-design",
+    "title": "Designing and analyzing ag studies: intro and R example",
+    "section": "Study design",
+    "text": "Study design\nA study design is comprised of two components:\nTreatment design + Experimental design"
+  },
+  {
+    "objectID": "teaching/2024-acs/2024-acs-deck.html#treatment-design",
+    "href": "teaching/2024-acs/2024-acs-deck.html#treatment-design",
+    "title": "Designing and analyzing ag studies: intro and R example",
+    "section": "Treatment design",
+    "text": "Treatment design\nTreatment design is the part of the study design related to what treatments you need to answer your hypothesis/objectives, and how they are related to one another.\n\n\n\n\n\n\nNote\n\n\nOur goal is to select a treatment design that contains the treatment factors and their respective levels necessary to properly address the research question(s).\n\n\n\nLet’s pick 3 levels for each of our factors:\n\nN fertilizer: 0, 100, 200 kg N/ha\nK fertilizer: 0, 30, 60 kg K/ha"
+  },
+  {
+    "objectID": "teaching/2024-acs/2024-acs-deck.html#treatment-design---all-levels",
+    "href": "teaching/2024-acs/2024-acs-deck.html#treatment-design---all-levels",
+    "title": "Designing and analyzing ag studies: intro and R example",
+    "section": "Treatment design - all levels",
+    "text": "Treatment design - all levels\n\nSince we are interested in how N and K interact, we need to have in our treatment design all the combinations between N and K fertilizer levels.\nThat leaves us with 3 N levels x 3 K levels = 9 total treatment combinations.\nIn other words, we need all the above 9 treatments to find the joint optimum N and K fertilizer rates that optimize crop yield.\nThis is called a crossed 2-way factorial treatment design, or, more informative, crossed 3 N rate x 3 K rate factorial treatment design."
+  },
+  {
+    "objectID": "teaching/2024-acs/2024-acs-deck.html#treatment-design---final-thoughts",
+    "href": "teaching/2024-acs/2024-acs-deck.html#treatment-design---final-thoughts",
+    "title": "Designing and analyzing ag studies: intro and R example",
+    "section": "Treatment design - final thoughts",
+    "text": "Treatment design - final thoughts\nNow, notice that the treatment design has only addressed our objectives.\nSo what is the use of the experimental design?"
+  },
+  {
+    "objectID": "teaching/2024-acs/2024-acs-deck.html#experimental-design",
+    "href": "teaching/2024-acs/2024-acs-deck.html#experimental-design",
+    "title": "Designing and analyzing ag studies: intro and R example",
+    "section": "Experimental design",
+    "text": "Experimental design\nExperimental design is the part of the study design related to how your treatments are assigned to the experimental units.\nThe decision of which experimental design to use should be guided by two factors:\n\nHomogeneity of experimental material\n\nLimitations such as funds, space in an incubator, size of the benches, size of a field."
+  },
+  {
+    "objectID": "teaching/2024-acs/2024-acs-deck.html#experimental-design-1",
+    "href": "teaching/2024-acs/2024-acs-deck.html#experimental-design-1",
+    "title": "Designing and analyzing ag studies: intro and R example",
+    "section": "Experimental design",
+    "text": "Experimental design\nOur goal is to use the simplest experimental design that accommodates all our treatments and their replications in homogeneous experimental units."
+  },
+  {
+    "objectID": "teaching/2024-acs/2024-acs-deck.html#experimental-design---eu",
+    "href": "teaching/2024-acs/2024-acs-deck.html#experimental-design---eu",
+    "title": "Designing and analyzing ag studies: intro and R example",
+    "section": "Experimental design - EU",
+    "text": "Experimental design - EU\n\n\nExperimental unit (EU): the smallest unit in an experiment that is randomly and independently assigned to a treatment, normally is a plot in field research context. Unit of true replication."
+  },
+  {
+    "objectID": "teaching/2024-acs/2024-acs-deck.html#experimental-design---some-concepts",
+    "href": "teaching/2024-acs/2024-acs-deck.html#experimental-design---some-concepts",
+    "title": "Designing and analyzing ag studies: intro and R example",
+    "section": "Experimental design - some concepts",
+    "text": "Experimental design - some concepts\n\n\nReplicate: different experimental units receiving the same treatment. Replicates exist in most designs.\n\nBlock: a set of experimental units grouped into homogeneous conditions where each EU is randomly assigned to a different treatment, and randomization happens independently for each block."
+  },
+  {
+    "objectID": "teaching/2024-acs/2024-acs-deck.html#experimental-design---some-concepts-1",
+    "href": "teaching/2024-acs/2024-acs-deck.html#experimental-design---some-concepts-1",
+    "title": "Designing and analyzing ag studies: intro and R example",
+    "section": "Experimental design - some concepts",
+    "text": "Experimental design - some concepts"
+  },
+  {
+    "objectID": "teaching/2024-acs/2024-acs-deck.html#experimental-design-2",
+    "href": "teaching/2024-acs/2024-acs-deck.html#experimental-design-2",
+    "title": "Designing and analyzing ag studies: intro and R example",
+    "section": "Experimental design",
+    "text": "Experimental design\nContinuing with our example of N and K levels, let’s assume that we would like to have 4 replications.\nThat brings us to 9 treatments x 4 replications = 36 experimental units.\nThe question that follows then is\n\n\n“Do I have enough homogeneous experimental material to accommodate all 36 experimental units?”."
+  },
+  {
+    "objectID": "teaching/2024-acs/2024-acs-deck.html#experimental-design---some-examples",
+    "href": "teaching/2024-acs/2024-acs-deck.html#experimental-design---some-examples",
+    "title": "Designing and analyzing ag studies: intro and R example",
+    "section": "Experimental design - some examples",
+    "text": "Experimental design - some examples\nTwo of the most common experimental designs in agriculture are:\n\nCompletely randomized design (CRD)\n\nRandomized complete-block design (RCBD)"
+  },
+  {
+    "objectID": "teaching/2024-acs/2024-acs-deck.html#homogeneous-experimental-material---crd",
+    "href": "teaching/2024-acs/2024-acs-deck.html#homogeneous-experimental-material---crd",
+    "title": "Designing and analyzing ag studies: intro and R example",
+    "section": "Homogeneous Experimental Material - CRD ✅",
+    "text": "Homogeneous Experimental Material - CRD ✅\n\n“Do I have enough homogeneous experimental material to accommodate all 36 experimental units?”.\n\nIf the answer is Yes, then you can use CRD as the experimental design, and treatments will be randomized to the entire area (no restrictions in randomization)."
+  },
+  {
+    "objectID": "teaching/2024-acs/2024-acs-deck.html#heterogeneous-experimental-material---crd",
+    "href": "teaching/2024-acs/2024-acs-deck.html#heterogeneous-experimental-material---crd",
+    "title": "Designing and analyzing ag studies: intro and R example",
+    "section": "Heterogeneous Experimental Material - CRD ❌",
+    "text": "Heterogeneous Experimental Material - CRD ❌\n\n“Do I have enough homogeneous experimental material to accommodate all 36 experimental units?”.\n\nIf the answer is No, then you should consider what types of limitation you have and which experimental design can be used.\n\nLet’s say we answered No in our example. We have enough area to allocate 36 plots on the field, but we know that the area has heterogeneity in soil texture, a feature that likely impacts crop yield."
+  },
+  {
+    "objectID": "teaching/2024-acs/2024-acs-deck.html#heterogeneous-experimental-material---rcbd",
+    "href": "teaching/2024-acs/2024-acs-deck.html#heterogeneous-experimental-material---rcbd",
+    "title": "Designing and analyzing ag studies: intro and R example",
+    "section": "Heterogeneous Experimental Material - RCBD ✅",
+    "text": "Heterogeneous Experimental Material - RCBD ✅\n\nWe can acoomodate this by choosing an appropriate experimental design!\nFor that, we could use an RCBD, where blocks will be entirely confined within a given soil texture class.\n\n\n\n\n\n\n\n\nNote\n\n\nWith RCBDs, each treatment appears once per block, and a set of 9 different treatments are randomized and assigned to each individual block separately."
+  },
+  {
+    "objectID": "teaching/2024-acs/2024-acs-deck.html#heterogeneous-experimental-material---rcbd-1",
+    "href": "teaching/2024-acs/2024-acs-deck.html#heterogeneous-experimental-material---rcbd-1",
+    "title": "Designing and analyzing ag studies: intro and R example",
+    "section": "Heterogeneous Experimental Material - RCBD ✅",
+    "text": "Heterogeneous Experimental Material - RCBD ✅\n\n\n\n\n\n\n\n\n\nNote how each treatment appears once and only once in every block.\nThe increased variability in crop yield caused by soil texture will be confined to the block effect, and can be properly dissected and not affect our inference on the treatment design variables."
+  },
+  {
+    "objectID": "teaching/2024-acs/2024-acs-deck.html#summary",
+    "href": "teaching/2024-acs/2024-acs-deck.html#summary",
+    "title": "Designing and analyzing ag studies: intro and R example",
+    "section": "Summary",
+    "text": "Summary\n\nTreatment design: addresses research question(s).\nExperimental design: addresses lack of homogeneity and/or limitations (funds, size, etc.) of experimental material.\nThe proper choice of experimental design will allow for unbiased and accurate treatment comparisons."
+  },
+  {
+    "objectID": "teaching/2024-acs/2024-acs-deck.html#resources",
+    "href": "teaching/2024-acs/2024-acs-deck.html#resources",
+    "title": "Designing and analyzing ag studies: intro and R example",
+    "section": "Resources",
+    "text": "Resources\nWant to learn more?\nI teach a class at the University of Georgia:\n\nData Science Applied to Ag Schedule with links\n\n28 videos, 17 R scripts, 12 slide decks, including\n\n\n\n\nIntro to R\n\nCRD\n\nRCBD\n\nSplit-plot\n\nRepeated Measure\n\n\n\ngit/GitHub\n\nOpen-source data\n\nMultivariate models\n\nMachine learning"
+  },
+  {
+    "objectID": "teaching/2024-acs/2024-acs-deck.html#lets-code",
+    "href": "teaching/2024-acs/2024-acs-deck.html#lets-code",
+    "title": "Designing and analyzing ag studies: intro and R example",
+    "section": "Let’s code",
+    "text": "Let’s code\nNow, let’s analyze data from 3 N rate x 3 K rate in a randomized complete block design that assessed fertilizer rate effect on crop yield."
   },
   {
     "objectID": "teaching/2024-dsa/slides/lec08-fixedrand/lec08-fixedrand.html#todays-goals",
