@@ -1817,7 +1817,7 @@
     "href": "teaching/2024-acs/2024-acs-Bastos.html#interested-in-attending-the-workshop",
     "title": "2024 ACS Workshop - Designing and Analyzing Agricltural Studies: intro and example in R",
     "section": "Interested in “attending” the workshop?",
-    "text": "Interested in “attending” the workshop?\n\nFollow the slide deck here\nFollow the rendered script here\n\nWant to code along?\n\nNew to R and/or RStudio? Follow steps 1 and 2 of these instructions to install them before the workshop (if you want to be able to follow along).\nGo to this GitHub repository and download it to your computer (click on the green “Code” button above and select “Download ZIP”).\nUnzip the repository.\nGo on the subfolder code and double-click on the file 2024-acsworkshop-rcbd-Bastos.qmd to launch in an RStudio window."
+    "text": "Interested in “attending” the workshop?\n\nFollow the slide deck here\nFollow the rendered script here\nFollow the recording here.\n\nWant to code along?\n\nNew to R and/or RStudio? Follow steps 1 and 2 of these instructions to install them before the workshop (if you want to be able to follow along).\nGo to this GitHub repository and download it to your computer (click on the green “Code” button above and select “Download ZIP”).\nUnzip the repository.\nGo on the subfolder code and double-click on the file 2024-acsworkshop-rcbd-Bastos.qmd to launch in an RStudio window."
   },
   {
     "objectID": "teaching/2023-aghack-vwc/2023-aghack-vwc.html",
