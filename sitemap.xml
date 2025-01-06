@@ -2,306 +2,422 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://leombastos.github.io/bastoslab/reports/2022-12-01_JD/report.html</loc>
-    <lastmod>2024-05-10T15:55:01.332Z</lastmod>
+    <lastmod>2025-01-06T03:06:09.387Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/protocols/protocols.html</loc>
-    <lastmod>2024-05-10T15:55:00.536Z</lastmod>
+    <lastmod>2025-01-06T03:06:08.607Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/protocols/plant_count.html</loc>
-    <lastmod>2024-05-10T15:54:58.092Z</lastmod>
+    <lastmod>2025-01-06T03:06:06.315Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/teaching/2025-ppa/schedule.html</loc>
+    <lastmod>2025-01-06T03:06:02.556Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/teaching/2025-ppa/slides/lab01-prep.html</loc>
+    <lastmod>2025-01-06T03:05:59.356Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/teaching/2025-ppa/slides/lec12-digitizing/lec12-digitizing.html</loc>
+    <lastmod>2025-01-06T03:05:55.912Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/teaching/2025-ppa/slides/lec22-soileca.html</loc>
+    <lastmod>2025-01-06T03:05:51.420Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/teaching/2025-ppa/slides/lec04-crs/lec04-crs.html</loc>
+    <lastmod>2025-01-06T03:05:43.319Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/teaching/2025-ppa/notes.html</loc>
+    <lastmod>2025-01-06T03:05:38.652Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/teaching/2022-reg.html</loc>
-    <lastmod>2024-05-10T15:54:53.512Z</lastmod>
+    <lastmod>2025-01-06T03:05:37.933Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/teaching/2024-ppa/schedule.html</loc>
-    <lastmod>2024-05-10T15:54:52.784Z</lastmod>
+    <lastmod>2025-01-06T03:05:37.223Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/teaching/2024-ppa/slides/lec08-nass.html</loc>
-    <lastmod>2024-05-10T15:54:51.642Z</lastmod>
+    <lastmod>2025-01-06T03:05:36.093Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/teaching/2024-ppa/slides/lec11-miniproject.html</loc>
-    <lastmod>2024-05-10T15:54:45.195Z</lastmod>
+    <lastmod>2025-01-06T03:05:29.713Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/teaching/2024-ppa/slides/lec01.html</loc>
-    <lastmod>2024-05-10T15:54:38.841Z</lastmod>
+    <lastmod>2025-01-06T03:05:24.310Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/teaching/2024-ppa/2024-ppa.html</loc>
-    <lastmod>2024-05-10T15:54:29.861Z</lastmod>
+    <lastmod>2025-01-06T03:05:17.500Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/teaching/2021-wrangit.html</loc>
-    <lastmod>2024-05-10T15:54:27.324Z</lastmod>
+    <lastmod>2025-01-06T03:05:14.989Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/teaching/2023-apa/slides/lab01-prep.html</loc>
-    <lastmod>2024-05-10T15:54:26.400Z</lastmod>
+    <lastmod>2025-01-06T03:05:14.048Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/teaching/2023-apa/slides/lec11-miniproject.html</loc>
-    <lastmod>2024-05-10T15:54:23.303Z</lastmod>
+    <lastmod>2025-01-06T03:05:11.313Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/teaching/2023-apa/slides/lec01.html</loc>
-    <lastmod>2024-05-10T15:54:13.783Z</lastmod>
+    <lastmod>2025-01-06T03:05:04.624Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/teaching/2023-apa/notes.html</loc>
-    <lastmod>2024-05-10T15:54:08.850Z</lastmod>
+    <lastmod>2025-01-06T03:04:59.989Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/teaching/2021-multivar.html</loc>
-    <lastmod>2024-05-10T15:54:08.131Z</lastmod>
+    <lastmod>2025-01-06T03:04:59.295Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/teaching/2024-dsa/schedule.html</loc>
-    <lastmod>2024-05-10T15:54:07.108Z</lastmod>
+    <lastmod>2025-01-06T03:04:58.300Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/teaching/2024-dsa/slides/lec12-ml/lec12-ml.html</loc>
-    <lastmod>2024-05-10T15:54:01.303Z</lastmod>
+    <lastmod>2025-01-06T03:04:53.305Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/teaching/2024-dsa/slides/lec06-crd/lec06-crd.html</loc>
-    <lastmod>2024-05-10T15:53:54.220Z</lastmod>
+    <lastmod>2025-01-06T03:04:46.358Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/teaching/2024-dsa/slides/lec05-experiment/lec05-experiment.html</loc>
-    <lastmod>2024-05-10T15:53:49.908Z</lastmod>
+    <lastmod>2025-01-06T03:04:42.029Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/teaching/2024-dsa/slides/lab03-prep.html</loc>
-    <lastmod>2024-05-10T15:53:42.413Z</lastmod>
+    <lastmod>2025-01-06T03:04:34.213Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/teaching/2024-dsa/slides/lec04-github/lec04-github.html</loc>
-    <lastmod>2024-05-10T15:53:36.844Z</lastmod>
+    <lastmod>2025-01-06T03:04:29.547Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/teaching/2024-dsa/slides/lec09-spp/lec09-spp.html</loc>
-    <lastmod>2024-05-10T15:53:29.033Z</lastmod>
+    <lastmod>2025-01-06T03:04:20.829Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/teaching/2024-dsa/slides/lec03-git/lec03-git.html</loc>
-    <lastmod>2024-05-10T15:53:21.827Z</lastmod>
+    <lastmod>2025-01-06T03:04:13.462Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/teaching/2024-dsa/2024-dsa.html</loc>
-    <lastmod>2024-05-10T15:53:12.759Z</lastmod>
+    <lastmod>2025-01-06T03:04:06.084Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/teaching/2024-dsa/whiteboard.html</loc>
-    <lastmod>2024-05-10T15:53:10.826Z</lastmod>
+    <lastmod>2025-01-06T03:04:04.290Z</lastmod>
   </url>
   <url>
-    <loc>https://leombastos.github.io/bastoslab/teaching/2024-acs/2024-acs-Bastos.html</loc>
-    <lastmod>2024-05-10T15:53:07.509Z</lastmod>
+    <loc>https://leombastos.github.io/bastoslab/teaching/2025-dsa/slides/lec12-ml/lec12-ml.html</loc>
+    <lastmod>2025-01-06T03:03:54.609Z</lastmod>
   </url>
   <url>
-    <loc>https://leombastos.github.io/bastoslab/teaching/2023-aghack-vwc/2023-aghack-vwc.html</loc>
-    <lastmod>2024-05-10T15:53:06.561Z</lastmod>
+    <loc>https://leombastos.github.io/bastoslab/teaching/2025-dsa/slides/lec06-crd/lec06-crd.html</loc>
+    <lastmod>2025-01-06T03:03:46.871Z</lastmod>
   </url>
   <url>
-    <loc>https://leombastos.github.io/bastoslab/teaching/2022-apa.html</loc>
-    <lastmod>2024-05-10T15:53:05.835Z</lastmod>
+    <loc>https://leombastos.github.io/bastoslab/teaching/2025-dsa/slides/lec05-experiment/lec05-experiment.html</loc>
+    <lastmod>2025-01-06T03:03:41.994Z</lastmod>
   </url>
   <url>
-    <loc>https://leombastos.github.io/bastoslab/extra/2022_pasture/2022_pasture.html</loc>
-    <lastmod>2024-05-10T15:53:04.839Z</lastmod>
+    <loc>https://leombastos.github.io/bastoslab/teaching/2025-dsa/slides/lab03-prep.html</loc>
+    <lastmod>2025-01-06T03:03:33.797Z</lastmod>
   </url>
   <url>
-    <loc>https://leombastos.github.io/bastoslab/extra/2022_scout_fert/2022_scout_fert.html</loc>
-    <lastmod>2024-05-10T15:53:04.180Z</lastmod>
+    <loc>https://leombastos.github.io/bastoslab/teaching/2025-dsa/slides/lec04-github/lec04-github.html</loc>
+    <lastmod>2025-01-06T03:03:28.213Z</lastmod>
   </url>
   <url>
-    <loc>https://leombastos.github.io/bastoslab/team/team_backupcode.html</loc>
-    <lastmod>2024-05-10T15:53:03.562Z</lastmod>
+    <loc>https://leombastos.github.io/bastoslab/teaching/2025-dsa/slides/lec09-spp/lec09-spp.html</loc>
+    <lastmod>2025-01-06T03:03:21.194Z</lastmod>
   </url>
   <url>
-    <loc>https://leombastos.github.io/bastoslab/index.html</loc>
-    <lastmod>2024-05-10T15:53:02.825Z</lastmod>
+    <loc>https://leombastos.github.io/bastoslab/teaching/2025-dsa/slides/lec03-git/lec03-git.html</loc>
+    <lastmod>2025-01-06T03:03:11.811Z</lastmod>
   </url>
   <url>
-    <loc>https://leombastos.github.io/bastoslab/talks/2022_uga-plantpath/index.html</loc>
-    <lastmod>2024-05-10T15:53:01.168Z</lastmod>
-  </url>
-  <url>
-    <loc>https://leombastos.github.io/bastoslab/talks/2023_dssem-reptools/index.html</loc>
-    <lastmod>2024-05-10T15:52:54.176Z</lastmod>
-  </url>
-  <url>
-    <loc>https://leombastos.github.io/bastoslab/talks/talks.html</loc>
-    <lastmod>2024-05-10T15:52:53.540Z</lastmod>
-  </url>
-  <url>
-    <loc>https://leombastos.github.io/bastoslab/talks/2022_uiuc-reptools/index.html</loc>
-    <lastmod>2024-05-10T15:52:50.584Z</lastmod>
-  </url>
-  <url>
-    <loc>https://leombastos.github.io/bastoslab/projects/02-cottonqualpred/index.html</loc>
-    <lastmod>2024-05-10T15:52:49.916Z</lastmod>
-  </url>
-  <url>
-    <loc>https://leombastos.github.io/bastoslab/projects/01-cottongem/index.html</loc>
-    <lastmod>2024-05-10T15:52:49.049Z</lastmod>
-  </url>
-  <url>
-    <loc>https://leombastos.github.io/bastoslab/projects/04-cornvrn/index.html</loc>
-    <lastmod>2024-05-10T15:52:48.677Z</lastmod>
-  </url>
-  <url>
-    <loc>https://leombastos.github.io/bastoslab/projects/projects.html</loc>
-    <lastmod>2024-05-10T15:52:49.525Z</lastmod>
-  </url>
-  <url>
-    <loc>https://leombastos.github.io/bastoslab/projects/03-cottonvr/index.html</loc>
-    <lastmod>2024-05-10T15:52:50.279Z</lastmod>
-  </url>
-  <url>
-    <loc>https://leombastos.github.io/bastoslab/talks/2022_uiuc-reptools/deck/index.html</loc>
-    <lastmod>2024-05-10T15:52:52.952Z</lastmod>
-  </url>
-  <url>
-    <loc>https://leombastos.github.io/bastoslab/talks/2023_serfvc-imagery/index.html</loc>
-    <lastmod>2024-05-10T15:52:53.852Z</lastmod>
-  </url>
-  <url>
-    <loc>https://leombastos.github.io/bastoslab/talks/2023_dssem-reptools/deck/index.html</loc>
-    <lastmod>2024-05-10T15:53:00.718Z</lastmod>
-  </url>
-  <url>
-    <loc>https://leombastos.github.io/bastoslab/talks/2022_uga-plantpath/deck/index.html</loc>
-    <lastmod>2024-05-10T15:53:02.129Z</lastmod>
-  </url>
-  <url>
-    <loc>https://leombastos.github.io/bastoslab/team/team.html</loc>
-    <lastmod>2024-05-10T15:53:03.213Z</lastmod>
-  </url>
-  <url>
-    <loc>https://leombastos.github.io/bastoslab/extra/2019_scout_unknown/2019_scout_unknown.html</loc>
-    <lastmod>2024-05-10T15:53:03.870Z</lastmod>
-  </url>
-  <url>
-    <loc>https://leombastos.github.io/bastoslab/extra/2022_scout_nematode/2022_scout_nematode.html</loc>
-    <lastmod>2024-05-10T15:53:04.488Z</lastmod>
-  </url>
-  <url>
-    <loc>https://leombastos.github.io/bastoslab/teaching/teaching.html</loc>
-    <lastmod>2024-05-10T15:53:05.185Z</lastmod>
-  </url>
-  <url>
-    <loc>https://leombastos.github.io/bastoslab/teaching/2019-introtoR.html</loc>
-    <lastmod>2024-05-10T15:53:06.220Z</lastmod>
-  </url>
-  <url>
-    <loc>https://leombastos.github.io/bastoslab/teaching/2023-aghack-vwc/2023-aghack-vwc-pres.html</loc>
-    <lastmod>2024-05-10T15:53:07.163Z</lastmod>
+    <loc>https://leombastos.github.io/bastoslab/teaching/2025-dsa/2025-dsa.html</loc>
+    <lastmod>2025-01-06T03:03:04.189Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/teaching/2024-acs/2024-acs-deck.html</loc>
-    <lastmod>2024-05-10T15:53:10.244Z</lastmod>
+    <lastmod>2025-01-06T03:03:02.520Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/teaching/2023-aghack-vwc/2023-aghack-vwc-pres.html</loc>
+    <lastmod>2025-01-06T03:02:59.660Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/teaching/2019-introtoR.html</loc>
+    <lastmod>2025-01-06T03:02:57.741Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/teaching/teaching.html</loc>
+    <lastmod>2025-01-06T03:02:56.720Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/extra/2022_scout_nematode/2022_scout_nematode.html</loc>
+    <lastmod>2025-01-06T03:02:56.003Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/extra/2019_scout_unknown/2019_scout_unknown.html</loc>
+    <lastmod>2025-01-06T03:02:55.369Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/team/team.html</loc>
+    <lastmod>2025-01-06T03:02:54.675Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/talks/2022_uga-plantpath/deck/index.html</loc>
+    <lastmod>2025-01-06T03:02:53.563Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/talks/2023_dssem-reptools/deck/index.html</loc>
+    <lastmod>2025-01-06T03:02:52.047Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/talks/2023_serfvc-imagery/index.html</loc>
+    <lastmod>2025-01-06T03:02:46.044Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/talks/2022_uiuc-reptools/deck/index.html</loc>
+    <lastmod>2025-01-06T03:02:45.145Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/projects/03-cottonvr/index.html</loc>
+    <lastmod>2025-01-06T03:02:42.547Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/projects/projects.html</loc>
+    <lastmod>2025-01-06T03:02:41.807Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/projects/04-cornvrn/index.html</loc>
+    <lastmod>2025-01-06T03:02:41.002Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/projects/01-cottongem/index.html</loc>
+    <lastmod>2025-01-06T03:02:41.365Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/projects/02-cottonqualpred/index.html</loc>
+    <lastmod>2025-01-06T03:02:42.181Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/talks/2022_uiuc-reptools/index.html</loc>
+    <lastmod>2025-01-06T03:02:42.859Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/talks/talks.html</loc>
+    <lastmod>2025-01-06T03:02:45.732Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/talks/2023_dssem-reptools/index.html</loc>
+    <lastmod>2025-01-06T03:02:46.365Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/talks/2022_uga-plantpath/index.html</loc>
+    <lastmod>2025-01-06T03:02:52.520Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/index.html</loc>
+    <lastmod>2025-01-06T03:02:54.272Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/team/team_backupcode.html</loc>
+    <lastmod>2025-01-06T03:02:55.042Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/extra/2022_scout_fert/2022_scout_fert.html</loc>
+    <lastmod>2025-01-06T03:02:55.689Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/extra/2022_pasture/2022_pasture.html</loc>
+    <lastmod>2025-01-06T03:02:56.351Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/teaching/2022-apa.html</loc>
+    <lastmod>2025-01-06T03:02:57.373Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/teaching/2023-aghack-vwc/2023-aghack-vwc.html</loc>
+    <lastmod>2025-01-06T03:02:58.080Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/teaching/2024-acs/2024-acs-Bastos.html</loc>
+    <lastmod>2025-01-06T03:02:59.998Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/teaching/2025-dsa/whiteboard.html</loc>
+    <lastmod>2025-01-06T03:03:03.093Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/teaching/2025-dsa/slides/lec08-fixedrand/lec08-fixedrand.html</loc>
+    <lastmod>2025-01-06T03:03:07.966Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/teaching/2025-dsa/slides/lec07-rcbd/lec07-rcbd.html</loc>
+    <lastmod>2025-01-06T03:03:16.796Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/teaching/2025-dsa/slides/lec01.html</loc>
+    <lastmod>2025-01-06T03:03:24.127Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/teaching/2025-dsa/slides/lec02-repsci/index.html</loc>
+    <lastmod>2025-01-06T03:03:33.267Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/teaching/2025-dsa/slides/lec10-rm/lec10-rm.html</loc>
+    <lastmod>2025-01-06T03:03:37.917Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/teaching/2025-dsa/slides/lab01-prep.html</loc>
+    <lastmod>2025-01-06T03:03:42.671Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/teaching/2025-dsa/slides/lec11-reg/lec11-reg.html</loc>
+    <lastmod>2025-01-06T03:03:50.743Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/teaching/2025-dsa/slides/lec0x-design/index.html</loc>
+    <lastmod>2025-01-06T03:03:58.270Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/teaching/2025-dsa/schedule.html</loc>
+    <lastmod>2025-01-06T03:04:02.872Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/teaching/2024-dsa/slides/lec08-fixedrand/lec08-fixedrand.html</loc>
-    <lastmod>2024-05-10T15:53:17.377Z</lastmod>
+    <lastmod>2025-01-06T03:04:09.855Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/teaching/2024-dsa/slides/lec07-rcbd/lec07-rcbd.html</loc>
-    <lastmod>2024-05-10T15:53:25.375Z</lastmod>
+    <lastmod>2025-01-06T03:04:17.050Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/teaching/2024-dsa/slides/lec01.html</loc>
-    <lastmod>2024-05-10T15:53:31.884Z</lastmod>
+    <lastmod>2025-01-06T03:04:24.551Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/teaching/2024-dsa/slides/lec02-repsci/index.html</loc>
-    <lastmod>2024-05-10T15:53:41.870Z</lastmod>
+    <lastmod>2025-01-06T03:04:33.642Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/teaching/2024-dsa/slides/lec10-rm/lec10-rm.html</loc>
-    <lastmod>2024-05-10T15:53:46.024Z</lastmod>
+    <lastmod>2025-01-06T03:04:38.042Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/teaching/2024-dsa/slides/lab01-prep.html</loc>
-    <lastmod>2024-05-10T15:53:50.567Z</lastmod>
+    <lastmod>2025-01-06T03:04:42.745Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/teaching/2024-dsa/slides/lec11-reg/lec11-reg.html</loc>
-    <lastmod>2024-05-10T15:53:57.657Z</lastmod>
+    <lastmod>2025-01-06T03:04:49.762Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/teaching/2024-dsa/slides/lec0x-design/index.html</loc>
-    <lastmod>2024-05-10T15:54:06.439Z</lastmod>
+    <lastmod>2025-01-06T03:04:57.520Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/teaching/2021-asaboot.html</loc>
-    <lastmod>2024-05-10T15:54:07.772Z</lastmod>
+    <lastmod>2025-01-06T03:04:58.957Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/teaching/2023-apa/whiteboard.html</loc>
-    <lastmod>2024-05-10T15:54:08.548Z</lastmod>
+    <lastmod>2025-01-06T03:04:59.679Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/teaching/2023-apa/2023-apa.html</loc>
-    <lastmod>2024-05-10T15:54:10.930Z</lastmod>
+    <lastmod>2025-01-06T03:05:02.058Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/teaching/2023-apa/slides/lec22-soileca.html</loc>
-    <lastmod>2024-05-10T15:54:22.782Z</lastmod>
+    <lastmod>2025-01-06T03:05:10.708Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/teaching/2023-apa/slides/lec08-nass.html</loc>
-    <lastmod>2024-05-10T15:54:25.931Z</lastmod>
+    <lastmod>2025-01-06T03:05:13.547Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/teaching/2023-apa/schedule.html</loc>
-    <lastmod>2024-05-10T15:54:26.968Z</lastmod>
+    <lastmod>2025-01-06T03:05:14.646Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/teaching/2024-ppa/whiteboard.html</loc>
-    <lastmod>2024-05-10T15:54:27.726Z</lastmod>
+    <lastmod>2025-01-06T03:05:15.421Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/teaching/2024-ppa/notes.html</loc>
-    <lastmod>2024-05-10T15:54:28.668Z</lastmod>
+    <lastmod>2025-01-06T03:05:16.327Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/teaching/2024-ppa/slides/lec04-crs/lec04-crs.html</loc>
-    <lastmod>2024-05-10T15:54:36.066Z</lastmod>
+    <lastmod>2025-01-06T03:05:21.463Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/teaching/2024-ppa/slides/lec22-soileca.html</loc>
-    <lastmod>2024-05-10T15:54:44.813Z</lastmod>
+    <lastmod>2025-01-06T03:05:29.340Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/teaching/2024-ppa/slides/lec12-digitizing/lec12-digitizing.html</loc>
-    <lastmod>2024-05-10T15:54:48.938Z</lastmod>
+    <lastmod>2025-01-06T03:05:33.414Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/teaching/2024-ppa/slides/lab01-prep.html</loc>
-    <lastmod>2024-05-10T15:54:52.231Z</lastmod>
+    <lastmod>2025-01-06T03:05:36.709Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/teaching/2020-designanovareg.html</loc>
-    <lastmod>2024-05-10T15:54:53.143Z</lastmod>
+    <lastmod>2025-01-06T03:05:37.584Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/teaching/2025-ppa/whiteboard.html</loc>
+    <lastmod>2025-01-06T03:05:38.353Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/teaching/2025-ppa/2025-ppa.html</loc>
+    <lastmod>2025-01-06T03:05:39.616Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/teaching/2025-ppa/slides/lec01.html</loc>
+    <lastmod>2025-01-06T03:05:46.036Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/teaching/2025-ppa/slides/lec11-miniproject.html</loc>
+    <lastmod>2025-01-06T03:05:51.946Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leombastos.github.io/bastoslab/teaching/2025-ppa/slides/lec08-nass.html</loc>
+    <lastmod>2025-01-06T03:05:58.732Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/protocols/soil_sampling.html</loc>
-    <lastmod>2024-05-10T15:54:55.203Z</lastmod>
+    <lastmod>2025-01-06T03:06:04.330Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/protocols/drone_flight_checklist.html</loc>
-    <lastmod>2024-05-10T15:55:00.147Z</lastmod>
+    <lastmod>2025-01-06T03:06:08.177Z</lastmod>
   </url>
   <url>
     <loc>https://leombastos.github.io/bastoslab/culture/culture.html</loc>
-    <lastmod>2024-05-10T15:55:00.942Z</lastmod>
+    <lastmod>2025-01-06T03:06:09.004Z</lastmod>
   </url>
 </urlset>
