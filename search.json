@@ -3273,7 +3273,7 @@
     "href": "teaching/2025-dsa/2025-dsa.html#office-hours",
     "title": "CRSS 8030\nData Science and Statistical Programming Applied to Ag.\n(UGA Spring 2025)",
     "section": "Office hours",
-    "text": "Office hours\nPlease make an appointment if you would like a face-to-face meeting with the instructor or TA. Otherwise, I am always available by email."
+    "text": "Office hours\nThe TA office hours are Monday and Thursday from 2 to 4 pm, upon appointment. Please email Amrinder if you need help to get a time scheduled within the windows above."
   },
   {
     "objectID": "teaching/2025-dsa/2025-dsa.html#description",
@@ -4634,193 +4634,214 @@
     "text": "Summary\n\nRCBD is randomized with one restriction (each block separately)\n\nEach term of the effects model has a row in the ANOVA table\n\nBy including the block in the model, it consumed dfs from error\n\nIn a properly conducted RCBD, we would hope that the amount of SS explained by block is relatively greater than the consequence of consuming 3 df from the error to calculate the block effect.\n\n\nhttps://catalog.data.gov/dataset/?collection_package_id=51f2e40a-1702-43af-9a7b-ff868cab0b16\nBamyan main effects significant Treatments included 4 levels of P2O5 (0, 50, 70, 90 kg/ha) and 4 levels of nitrogen (0, 65, 95, 120 kg/ha), with three replications. Total plots = 4 x 4 x 3 = 48; the size of the harvested plot was 4 m2. An RCB design was used\nBalkh The protocol document for this trial indicates that the treatments included 4 levels of P2O5 (0, 50, 70, 90 kg/ha) and 4 levels of nitrogen (0, 65, 95,120 kg/ha), with three replications. Total plots = 4 x 4 x 3 = 48;"
   },
   {
-    "objectID": "teaching/2025-dsa/slides/lec01.html#meet-the-professor",
-    "href": "teaching/2025-dsa/slides/lec01.html#meet-the-professor",
-    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
-    "section": "Meet the professor",
-    "text": "Meet the professor\n\n\n\n\n\nDr. Leonardo M. Bastos\n\n\n\nAssistant Professor\n4101 Miller Plant Sciences Building\nUGA-Athens Campus\nEmail: lmbastos@uga.edu"
+    "objectID": "teaching/2025-dsa/slides/lec01.html#teaching-team",
+    "href": "teaching/2025-dsa/slides/lec01.html#teaching-team",
+    "title": "Welcome to CRSS 8030\nData Science Applied to Ag!",
+    "section": "Teaching team",
+    "text": "Teaching team\n\n\n\n\n\nDr. Leonardo M. Bastos\n\n\n\nAssistant Professor\n4101 Miller Plant Sciences Building\nUGA-Athens Campus\nEmail: lmbastos@uga.edu\n\n\n\n\n\n\n\nAmrinder Jakhar\n\n\n\nPhD student\nMiller Plant Sciences Building\nUGA-Athens Campus\nEmail: Amrinderjakhar@uga.edu"
+  },
+  {
+    "objectID": "teaching/2025-dsa/slides/lec01.html#office-hours",
+    "href": "teaching/2025-dsa/slides/lec01.html#office-hours",
+    "title": "Welcome to CRSS 8030\nData Science Applied to Ag!",
+    "section": "Office hours",
+    "text": "Office hours\n\nThe TA office hours are Monday and Thursday from 2 to 4 pm, upon appointment.\nIf you need assistance, please email Amrinder to get a time scheduled within the windows above.\nAlways start seeking help by posting on GitHub (more on this later), and only then reach out to Amrinder."
   },
   {
     "objectID": "teaching/2025-dsa/slides/lec01.html#meeting-times-and-locations",
     "href": "teaching/2025-dsa/slides/lec01.html#meeting-times-and-locations",
-    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
+    "title": "Welcome to CRSS 8030\nData Science Applied to Ag!",
     "section": "Meeting times and locations",
     "text": "Meeting times and locations\n\n\nTime:\n\nLectures: Tuesdays at 09:30-11:10\nLabs: Thursdays at 09:30-11:30\n\n\nLocation:\n\nAthens campus: in person at 1203 Miller\n\nTifton campus: in person at 601 NESPAL South OR remote\n\nGriffin campus: in person at SLC UGA Computer lab OR remote\n\n\n\n\nZoom credentials shared via email."
   },
   {
     "objectID": "teaching/2025-dsa/slides/lec01.html#course-objectives",
     "href": "teaching/2025-dsa/slides/lec01.html#course-objectives",
-    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
+    "title": "Welcome to CRSS 8030\nData Science Applied to Ag!",
     "section": "Course objectives",
     "text": "Course objectives\n\nLearning and applying analytical workflows that involve importing data, processing, analyzing, assessing model fit, extracting model information and producing publication-ready figures for different analysis including ANOVAs and regression"
   },
   {
     "objectID": "teaching/2025-dsa/slides/lec01.html#course-objectives-1",
     "href": "teaching/2025-dsa/slides/lec01.html#course-objectives-1",
-    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
+    "title": "Welcome to CRSS 8030\nData Science Applied to Ag!",
     "section": "Course objectives",
     "text": "Course objectives\n\nConducting analysis of variance workflows for the most commonly used agricultural designed studies (completely randomized design, randomized complete block design, split-plot design)"
   },
   {
     "objectID": "teaching/2025-dsa/slides/lec01.html#course-objectives-2",
     "href": "teaching/2025-dsa/slides/lec01.html#course-objectives-2",
-    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
+    "title": "Welcome to CRSS 8030\nData Science Applied to Ag!",
     "section": "Course objectives",
     "text": "Course objectives\n\nConducting linear and non-linear regression workflows"
   },
   {
     "objectID": "teaching/2025-dsa/slides/lec01.html#course-objectives-3",
     "href": "teaching/2025-dsa/slides/lec01.html#course-objectives-3",
-    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
+    "title": "Welcome to CRSS 8030\nData Science Applied to Ag!",
     "section": "Course objectives",
     "text": "Course objectives\n\nLearning and applying machine learning concepts (bias-variance trade-off, data split, hyper-parameter optimization, predictive metrics) and algorithms to agricultural observational data (soils, weather, yield)"
   },
   {
     "objectID": "teaching/2025-dsa/slides/lec01.html#course-objectives-4",
     "href": "teaching/2025-dsa/slides/lec01.html#course-objectives-4",
-    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
+    "title": "Welcome to CRSS 8030\nData Science Applied to Ag!",
     "section": "Course objectives",
     "text": "Course objectives\n\nLearning and applying machine learning concepts (bias-variance trade-off, data split, hyper-parameter optimization, predictive metrics) and algorithms to agricultural observational data (soils, weather, yield)"
   },
   {
     "objectID": "teaching/2025-dsa/slides/lec01.html#course-objectives-5",
     "href": "teaching/2025-dsa/slides/lec01.html#course-objectives-5",
-    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
+    "title": "Welcome to CRSS 8030\nData Science Applied to Ag!",
     "section": "Course objectives",
     "text": "Course objectives\n\nDoing all the above while learning and using data science tools for reproducibility like version control, statistical programming, APIs to publicly available data sets, task automation, and creating online interactive dashboards."
   },
   {
     "objectID": "teaching/2025-dsa/slides/lec01.html#course-objectives-6",
     "href": "teaching/2025-dsa/slides/lec01.html#course-objectives-6",
-    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
+    "title": "Welcome to CRSS 8030\nData Science Applied to Ag!",
     "section": "Course objectives",
     "text": "Course objectives\n\nAll steps will be conducted utilizing the R statistical language to create modern, well documented and reproducible analytical workflows. No previous knowledge in R is required."
   },
   {
     "objectID": "teaching/2025-dsa/slides/lec01.html#course-objectives-7",
     "href": "teaching/2025-dsa/slides/lec01.html#course-objectives-7",
-    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
+    "title": "Welcome to CRSS 8030\nData Science Applied to Ag!",
     "section": "Course objectives",
     "text": "Course objectives\nFor example, predicting cotton yield across the cotton belt using open-source weather data"
   },
   {
     "objectID": "teaching/2025-dsa/slides/lec01.html#course-topics",
     "href": "teaching/2025-dsa/slides/lec01.html#course-topics",
-    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
+    "title": "Welcome to CRSS 8030\nData Science Applied to Ag!",
     "section": "Course topics",
     "text": "Course topics\nThis course will be split into two main parts:\n\nPlaning, designing, and analysis of experimental designs\n\nData scraping and feature engineering for machine learning\n\n\nAll intertwined with data science concepts with a focus on agricultural case studies"
   },
   {
     "objectID": "teaching/2025-dsa/slides/lec01.html#course-topics---experimental-design",
     "href": "teaching/2025-dsa/slides/lec01.html#course-topics---experimental-design",
-    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
+    "title": "Welcome to CRSS 8030\nData Science Applied to Ag!",
     "section": "Course topics - Experimental design",
     "text": "Course topics - Experimental design\n\n\n\nIntro to R and RStudio\ngit and GitHub\n\nR APIs to open data (USDA NASS, weather, soil)\n\nData wrangling with dplyr, tidyr, pipe operator\n\nData visualization with ggplot2, gganimate\n\n\n\n\nExperimental unit, randomization, and replication\n\nExp. and trt. designs and ANOVAs\nFixed vs. Random effects\nRepeated measures\nAutomating repetitive tasks through iteration with purrr"
   },
   {
     "objectID": "teaching/2025-dsa/slides/lec01.html#course-topics---machine-learning",
     "href": "teaching/2025-dsa/slides/lec01.html#course-topics---machine-learning",
-    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
+    "title": "Welcome to CRSS 8030\nData Science Applied to Ag!",
     "section": "Course topics - Machine learning",
     "text": "Course topics - Machine learning\n\n\n\nLinear regression\nNon-linear regression\nRegression for finding optimum\nDimensionality reduction\n\nMachine learning concepts\n\nBias-variance trade-off\nData split\nHyperparameter opt.\nPredictive assessment\n\n\n\n\nMachine learning models\n\nK-means (unsupervised)\nTree models (RF, CIT)\nXGboost\n\nDashboards\n\nCreating a simple dashboard with shiny apps\nPublishing a dashboard online"
   },
   {
     "objectID": "teaching/2025-dsa/slides/lec01.html#section",
     "href": "teaching/2025-dsa/slides/lec01.html#section",
-    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
+    "title": "Welcome to CRSS 8030\nData Science Applied to Ag!",
     "section": "",
     "text": "All classes will be recorded and further posted on the class YouTube channel.\n\nThis should be used as a supporting study tool and make-up for content from missed classes. Recordings do not replace in-person/remote attendance."
   },
   {
     "objectID": "teaching/2025-dsa/slides/lec01.html#assessment-and-grading",
     "href": "teaching/2025-dsa/slides/lec01.html#assessment-and-grading",
-    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
+    "title": "Welcome to CRSS 8030\nData Science Applied to Ag!",
     "section": "Assessment and Grading",
     "text": "Assessment and Grading\n\n\n\n\n\n\n  \n    \n    \n      Activity\n      Grade\n    \n  \n  \n    Mid-term project: Experimental data analysis\n\n10%\n\n    Mid-term exam\n\n10%\n\n    Homework assignments\n\n35%\n\n    In-class quizzes\n\n15%\n\n    Final project:\nMachine learning\n\n20%\n\n    Class participation\n\n10%"
   },
   {
     "objectID": "teaching/2025-dsa/slides/lec01.html#course-website",
     "href": "teaching/2025-dsa/slides/lec01.html#course-website",
-    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
+    "title": "Welcome to CRSS 8030\nData Science Applied to Ag!",
     "section": "Course website",
     "text": "Course website\nImportant links related to this course:\n\nCourse website\n\nCourse GitHub repository\n\nCourse YouTube channel"
   },
   {
     "objectID": "teaching/2025-dsa/slides/lec01.html#course-website---downloading-slides",
     "href": "teaching/2025-dsa/slides/lec01.html#course-website---downloading-slides",
-    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
+    "title": "Welcome to CRSS 8030\nData Science Applied to Ag!",
     "section": "Course website - downloading slides",
     "text": "Course website - downloading slides\n\nWith the slides page open on your browser, push e on your keyboard.\nOn your browser, go to File &gt; Print.\nAdjust orientation and pages per sheet if desired.\nSave as PDF."
   },
   {
     "objectID": "teaching/2025-dsa/slides/lec01.html#course-website---asking-questions",
     "href": "teaching/2025-dsa/slides/lec01.html#course-website---asking-questions",
-    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
+    "title": "Welcome to CRSS 8030\nData Science Applied to Ag!",
     "section": "Course website - asking questions",
-    "text": "Course website - asking questions\n\nIf your question is related to difficulties with material/code/assignments, then post it on our class GitHub page on the Issues tab.\nGo to the class GitHub repository &gt; Click on Issues (near top left) &gt; Click on New issue (green button) &gt; Give it a descriptive title, leave your comment &gt; Click on Submit new issue.\nLet’s try it out: introductions (may need to sign up to GitHub)"
+    "text": "Course website - asking questions\n\nIf your question is related to difficulties with material/code/assignments, then post it on our class GitHub page on the Issues tab.\nGo to the class GitHub repository &gt; Click on Issues (near top left) &gt; Click on New issue (green button) &gt; Give it a descriptive title, leave your comment &gt; Click on Submit new issue."
   },
   {
     "objectID": "teaching/2025-dsa/slides/lec01.html#course-website---asking-questions-1",
     "href": "teaching/2025-dsa/slides/lec01.html#course-website---asking-questions-1",
-    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
+    "title": "Welcome to CRSS 8030\nData Science Applied to Ag!",
     "section": "Course website - asking questions",
     "text": "Course website - asking questions\n\n\n\n\n\n\n\n\n\nBy asking questions on GitHub, other students may be able to help you besides only instructor.\nHelping others on GitHub will count as participation!"
   },
   {
+    "objectID": "teaching/2025-dsa/slides/lec01.html#course-website---asking-questions-2",
+    "href": "teaching/2025-dsa/slides/lec01.html#course-website---asking-questions-2",
+    "title": "Welcome to CRSS 8030\nData Science Applied to Ag!",
+    "section": "Course website - asking questions",
+    "text": "Course website - asking questions\n\nLet’s try it out: introductions (may need to sign up to GitHub)\n\nFirst and last name\n\nDepartment\n\nDegree (MS or PhD)\n\nArea of research"
+  },
+  {
     "objectID": "teaching/2025-dsa/slides/lec01.html#attendance-policy",
     "href": "teaching/2025-dsa/slides/lec01.html#attendance-policy",
-    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
+    "title": "Welcome to CRSS 8030\nData Science Applied to Ag!",
     "section": "Attendance policy",
     "text": "Attendance policy\nStudents are expected to attend every class period.\n\nStudents on the Athens campus must attend class in-person.\n\nIf a special circumstance arise (illness, travel, etc.), student absence or remote attendance must be informed to instructors prior to that class period."
   },
   {
     "objectID": "teaching/2025-dsa/slides/lec01.html#attendance-policy-1",
     "href": "teaching/2025-dsa/slides/lec01.html#attendance-policy-1",
-    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
+    "title": "Welcome to CRSS 8030\nData Science Applied to Ag!",
     "section": "Attendance policy",
     "text": "Attendance policy\nStudents are expected to attend every class period.\n\nStudents on the Tifton and Griffin campuses may attend class in-person on their campuses or remote using the zoom link information.\n\nStudent absence must be informed to instructors prior to that class period to be excused."
   },
   {
     "objectID": "teaching/2025-dsa/slides/lec01.html#attendance-policy-2",
     "href": "teaching/2025-dsa/slides/lec01.html#attendance-policy-2",
-    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
+    "title": "Welcome to CRSS 8030\nData Science Applied to Ag!",
     "section": "Attendance policy",
-    "text": "Attendance policy\nStudents are expected to attend every class period.\n\nPer Board of Regents policy, I reserve the right to drop students from the class roll who miss more than 5 class periods. Such students will be given a WF grade."
+    "text": "Attendance policy\nStudents are expected to attend every class period.\n\nPuncuality is important!\nStudents &gt;3 min late will be asked to leave and recorded as a missed class.\nIf special circumstances arise, please reach out to me in advance to accommodate for it."
   },
   {
     "objectID": "teaching/2025-dsa/slides/lec01.html#attendance-policy-3",
     "href": "teaching/2025-dsa/slides/lec01.html#attendance-policy-3",
-    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
+    "title": "Welcome to CRSS 8030\nData Science Applied to Ag!",
+    "section": "Attendance policy",
+    "text": "Attendance policy\nStudents are expected to attend every class period.\n\nPer Board of Regents policy, I reserve the right to drop students from the class roll who miss more than 5 class periods. Such students will be given a WF grade."
+  },
+  {
+    "objectID": "teaching/2025-dsa/slides/lec01.html#attendance-policy-4",
+    "href": "teaching/2025-dsa/slides/lec01.html#attendance-policy-4",
+    "title": "Welcome to CRSS 8030\nData Science Applied to Ag!",
     "section": "Attendance policy",
     "text": "Attendance policy\n\n\n\n\n\n\n\n\n\nWhen attending a class remotely via zoom, students are expected to have cameras on at all times."
   },
   {
     "objectID": "teaching/2025-dsa/slides/lec01.html#technology-and-software-requirements",
     "href": "teaching/2025-dsa/slides/lec01.html#technology-and-software-requirements",
-    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
+    "title": "Welcome to CRSS 8030\nData Science Applied to Ag!",
     "section": "Technology and software requirements",
     "text": "Technology and software requirements\nStudents will need to have access to:\n\nA computer 💻 (to install software, code along with instructors)\n\nA second screen 📺 (main screen to code along, second screen to watch class if not in person)\n\n\nIf a student does not have access to these resources (personal laptop/desktop and a second screen), please let instructors know to ensure proper accommodations can be made."
   },
   {
     "objectID": "teaching/2025-dsa/slides/lec01.html#ai-llms-and-plagiarism",
     "href": "teaching/2025-dsa/slides/lec01.html#ai-llms-and-plagiarism",
-    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
+    "title": "Welcome to CRSS 8030\nData Science Applied to Ag!",
     "section": "AI, LLMs, and plagiarism",
     "text": "AI, LLMs, and plagiarism\nYou are allowed to use LLMs like ChatGPT on your coding assignments, as long as\n\nyou use it to learn, not to simply copy/paste\n\nyou give appropriate credit\n\n\nPlagiarism, both from your classmates AND LLMs, is a serious violation of code of conduct and will be reported to university officials"
   },
   {
     "objectID": "teaching/2025-dsa/slides/lec01.html#survey",
     "href": "teaching/2025-dsa/slides/lec01.html#survey",
-    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
+    "title": "Welcome to CRSS 8030\nData Science Applied to Ag!",
     "section": "Survey",
-    "text": "Survey\nPlease go to the link below and fill this survey:\nhttps://forms.gle/qHCHdQd2ZmAVT2Eb9\nTake 5 minutes to answer it."
+    "text": "Survey\nPlease go to the link below and fill this survey:\nhttps://forms.gle/NtTVZN5SGAHFyALL7\nTake 5 minutes to answer it."
   },
   {
     "objectID": "teaching/2025-dsa/slides/lec01.html#getting-ready-for-next-class",
     "href": "teaching/2025-dsa/slides/lec01.html#getting-ready-for-next-class",
-    "title": "Welcome to CRSS 8220\nData Science Applied to Ag!",
+    "title": "Welcome to CRSS 8030\nData Science Applied to Ag!",
     "section": "Getting ready for next class",
-    "text": "Getting ready for next class\nTo be ready for next class (Intro to R), please go to the course main page and follow the link to the Lab 01 prep page.\n\nIf you have questions or issues, email me before class.\nWe will have limited time to troubleshoot technical problems during next period."
+    "text": "Getting ready for next class\nTo be ready for next class (Intro to R), please go to the course main page and follow the link to the Lab 01 prep page.\n\nIf you have questions or issues, email the TA and cc me before class.\nWe will have limited time to troubleshoot technical problems during next period."
   },
   {
     "objectID": "teaching/2025-dsa/slides/lec02-repsci/index.html#from-zero-to-hero-a-researchers-path-through-data-science-tools-for-reproducibility",
@@ -7347,7 +7368,7 @@
     "href": "teaching/2025-ppa/2025-ppa.html#instructors-information",
     "title": "CRSS 4280/6280\nProgramming Precision Ag.\n(UGA Spring 2025)",
     "section": "Instructors information",
-    "text": "Instructors information\n\nGeneral information\nDr. Leonardo M. Bastos, Assistant Professor\nCrop & Soil Sciences Dept.\n4101 Miller Plant Sciences Building, Athens Campus\nUniversity of Georgia\nEmail: lmbastos@uga.edu\nURL: leombastos.github.io/bastoslab/\nNushrat Niva, PhD student\nDepartment of Crop & Soil Sciences\nMiller Plant Sciences Building, Athens Campus\nUniversity of Georgia\nEmail: Nushrat.Niva@uga.edu\n\n\nOffice hours\nPlease make an appointment if you would like a face-to-face meeting with the TA or instructor."
+    "text": "Instructors information\n\nGeneral information\nDr. Leonardo M. Bastos, Assistant Professor\nCrop & Soil Sciences Dept.\n4101 Miller Plant Sciences Building, Athens Campus\nUniversity of Georgia\nEmail: lmbastos@uga.edu\nURL: leombastos.github.io/bastoslab/\nNushrat Niva, PhD student\nDepartment of Crop & Soil Sciences\nMiller Plant Sciences Building, Athens Campus\nUniversity of Georgia\nEmail: Nushrat.Niva@uga.edu\n\n\nOffice hours\nThe TA office hours are Monday and Thursday from 9 to 11 am, upon appointment. Please email Niva if you need help to get a time scheduled within the windows above."
   },
   {
     "objectID": "teaching/2025-ppa/2025-ppa.html#course-description-and-details",
@@ -7378,156 +7399,177 @@
     "text": "Course statements and policies\n\nAcademic honesty\nUGA Student Honor Code: “I will be academically honest in all of my academic work and will not tolerate academic dishonesty of others.” A Culture of Honesty, the University’s policy and procedures for handling cases of suspected dishonesty, can be found at www.uga.edu/ovpi.\nFor this course, all lab reports, projects, and other assignments can be discussed with your classmates but any work you turn in must be your own.\nStudents can work together through coding exercises, but direct copying and pasting from a colleague will be considered plagiarism.\nIf using code from an online source, it is ok to copy and paste IF proper credit is given (e.g., showing the website source from where the code was obtained).\nUnless explicitly stated, artificial intelligence-based technologies, such as ChatGPT, must not be used to generate responses for student assignments.\n\n\nAttendance policy\nStudents are expected to attend every class period.\nStudents on the Athens campus must attend class in-person. If a special circumstance arise (illness, travel, etc.), student absence or remote attendance must be informed to instructors prior to that class period.\nStudents on the Tifton and Griffin campuses may attend class in-person on their campuses or remote using the zoom link information. Student absence must be informed to instructors prior to that class period.\nPer Board of Regents policy, I reserve the right to drop students from the class roll who miss more than 5 class periods unexcused. Such students will be given a WF grade.\n\n\nDisclaimer\nThe course syllabus is a general plan for the course; deviations announced to the class by the instructor may be necessary.\n\n\nMake-up procedures\n\nThere will be no make-ups for missed quizzes. Any missed quiz will be recorded as a zero\n\nExams can be made up only with a note from a doctor or if you can document extenuating circumstances. Any unexcused missed exam will be recorded as a zero\n\nHomework assignments will be accepted up to one week beyond the due date. The penalty for submitting a late assignment is one letter grade\n\nHomework assignments may be submitted late without penalty in case of illness, extenuating circumstances, or if prior arrangements are made with the instructors. All late assignments are due within a week of the original due date or within a week of when a student returns from an illness\n\n\n\nMental Health and Wellness Resources\n\nIf you or someone you know needs assistance, you are encouraged to contact Student Care and Outreach in the Division of Student Affairs at 706-542-7774 or visit https://sco.uga.edu/. They will help you navigate any difficult circumstances you may be facing by connecting you with the appropriate resources or services.\n\nUGA has several resources for a student seeking mental health services (https://www.uhs.uga.edu/bewelluga/bewelluga) or crisis support (https://www.uhs.uga.edu/info/emergencies).\n\nIf you need help managing stress anxiety, relationships, etc., please visit BeWellUGA (https://www.uhs.uga.edu/bewelluga/bewelluga) for a list of FREE workshops, classes, mentoring, and health coaching led by licensed clinicians and health educators in the University Health Center.\n\nAdditional resources can be accessed through the UGA App.\n\n\n\nDisability statement\nIf you plan to request accommodations for a disability, please register with the Disability Resource Center. They can be reached by visiting Clark Howell Hall, calling 706-542-8719 (voice) or 706-542-8778 (TTY), or by visiting https://sitedrc.uga.edu"
   },
   {
-    "objectID": "teaching/2025-ppa/slides/lec01.html#meet-the-professor",
-    "href": "teaching/2025-ppa/slides/lec01.html#meet-the-professor",
-    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
-    "section": "Meet the professor",
-    "text": "Meet the professor\n\n\n\n\n\nDr. Leonardo M. Bastos\n\n\n\nAssistant Professor\n4101 Miller Plant Sciences Building\nUGA-Athens Campus\nEmail: lmbastos@uga.edu"
+    "objectID": "teaching/2025-ppa/slides/lec01.html#teaching-team",
+    "href": "teaching/2025-ppa/slides/lec01.html#teaching-team",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
+    "section": "Teaching team",
+    "text": "Teaching team\n\n\n\n\n\nDr. Leonardo M. Bastos\n\n\n\nAssistant Professor\n4101 Miller Plant Sciences Building\nUGA-Athens Campus\nEmail: lmbastos@uga.edu\n\n\n\n\n\n\n\nNushrat Niva\n\n\n\nPhD student\nMiller Plant Sciences Building\nUGA-Athens Campus\nEmail: Nushrat.Niva@uga.edu"
+  },
+  {
+    "objectID": "teaching/2025-ppa/slides/lec01.html#office-hours",
+    "href": "teaching/2025-ppa/slides/lec01.html#office-hours",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
+    "section": "Office hours",
+    "text": "Office hours\n\nThe TA office hours are Monday and Thursday from 9 to 11 am, upon appointment.\nIf you need assistance, please email Niva to get a time scheduled within the windows above.\nAlways start seeking help by posting on GitHub (more on this later), and only then reach out to Niva."
   },
   {
     "objectID": "teaching/2025-ppa/slides/lec01.html#meeting-times-and-locations",
     "href": "teaching/2025-ppa/slides/lec01.html#meeting-times-and-locations",
-    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
     "section": "Meeting times and locations",
-    "text": "Meeting times and locations\n\n\nTime:\n\nLectures: Monday and Friday at 09:10-10:00\nLabs: Wednesday at 09:10-11:10\n\n\nLocation:\n\nAthens campus: in person at 1203 Miller\n\nTifton campus: in person at 601 NESPAL South OR remote\n\nGriffin campus: in person at SLC UGA Computer lab OR remote\n\n\n\n\nZoom credentials shared via email."
+    "text": "Meeting times and locations\n\n\nTime:\n\nLectures: Tuesdays at 02:20-04:00 pm\n\nLabs: Thursdays at 02:20-04:20 pm\n\n\n\nLocation:\n\nAthens campus: in person at 1203 Miller\n\nTifton campus: in person at 601 NESPAL South OR remote\n\nGriffin campus: in person at 107 SLC UGA Computer lab OR remote\n\n\n\n\nZoom credentials shared via email."
   },
   {
     "objectID": "teaching/2025-ppa/slides/lec01.html#course-objectives",
     "href": "teaching/2025-ppa/slides/lec01.html#course-objectives",
-    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
     "section": "Course objectives",
     "text": "Course objectives\n\nObtain, process, and use various agricultural geospatial data layers for decision making related to precision agriculture."
   },
   {
     "objectID": "teaching/2025-ppa/slides/lec01.html#course-objectives-1",
     "href": "teaching/2025-ppa/slides/lec01.html#course-objectives-1",
-    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
     "section": "Course objectives",
     "text": "Course objectives\n\nData types include publicly available (weather, soils, and satellite remote sensing), and private data like yield monitor, soil, and UAV remote sensing)."
   },
   {
     "objectID": "teaching/2025-ppa/slides/lec01.html#course-objectives-2",
     "href": "teaching/2025-ppa/slides/lec01.html#course-objectives-2",
-    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
     "section": "Course objectives",
     "text": "Course objectives\n\nAnalytical techniques include creation of management zones, zone-based and imagery-based variable rate prescription, profitability maps, and use of satellite remote sensing for crop scouting."
   },
   {
     "objectID": "teaching/2025-ppa/slides/lec01.html#course-objectives-3",
     "href": "teaching/2025-ppa/slides/lec01.html#course-objectives-3",
-    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
     "section": "Course objectives",
     "text": "Course objectives\n\nAll steps will be conducted utilizing the R statistical language to create modern, well documented and reproducible precision agriculture analytical workflows. No previous knowledge in R is required."
   },
   {
     "objectID": "teaching/2025-ppa/slides/lec01.html#course-objectives-4",
     "href": "teaching/2025-ppa/slides/lec01.html#course-objectives-4",
-    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
     "section": "Course objectives",
     "text": "Course objectives\nFor example, from raw yield data to management zone creation"
   },
   {
     "objectID": "teaching/2025-ppa/slides/lec01.html#course-topics",
     "href": "teaching/2025-ppa/slides/lec01.html#course-topics",
-    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
     "section": "Course topics",
     "text": "Course topics\n\n\n\nIntro to R\n\nUsing R as a GIS\n\nAccessing publicly available geospatial data through R\n\nCreating grids for soil sampling\n\nInterpolation\n\n\n\n\nYield monitor data processing\n\nTerrain data processing\n\nManagement zones\n\nUAV remote sensing\n\nVariable rate prescription\n\nProfitability maps\n\nSatellite remote sensing for crop scouting"
   },
   {
     "objectID": "teaching/2025-ppa/slides/lec01.html#section",
     "href": "teaching/2025-ppa/slides/lec01.html#section",
-    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
     "section": "",
     "text": "All classes will be recorded and further posted on the class YouTube channel.\n\nThis should be used as a supporting study tool and make-up for content from missed classes. Recordings do not replace in-person/remote attendance."
   },
   {
     "objectID": "teaching/2025-ppa/slides/lec01.html#assessment-and-grading",
     "href": "teaching/2025-ppa/slides/lec01.html#assessment-and-grading",
-    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
     "section": "Assessment and Grading",
     "text": "Assessment and Grading\n\n\n\n\n\n\n  \n    \n    \n      Activity\n      Grade\n    \n  \n  \n    Mini-project: USDA NASS data\n\n10%\n\n    Mid-term exam\n\n10%\n\n    Homework assignments\n\n35%\n\n    In-class quizzes\n\n15%\n\n    Final project:\nfrom raw data to zone-based variable rate\n\n20%\n\n    Class participation\n\n10%"
   },
   {
     "objectID": "teaching/2025-ppa/slides/lec01.html#course-website",
     "href": "teaching/2025-ppa/slides/lec01.html#course-website",
-    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
     "section": "Course website",
     "text": "Course website\nImportant links related to this course:\n\nCourse website\n\nCourse GitHub repository\n\nCourse YouTube channel"
   },
   {
     "objectID": "teaching/2025-ppa/slides/lec01.html#course-website---downloading-slides",
     "href": "teaching/2025-ppa/slides/lec01.html#course-website---downloading-slides",
-    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
     "section": "Course website - downloading slides",
     "text": "Course website - downloading slides\n\nWith the slides page open on your browser, push e on your keyboard.\nOn your browser, go to File &gt; Print.\nAdjust orientation and pages per sheet if desired.\nSave as PDF."
   },
   {
     "objectID": "teaching/2025-ppa/slides/lec01.html#course-website---asking-questions",
     "href": "teaching/2025-ppa/slides/lec01.html#course-website---asking-questions",
-    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
     "section": "Course website - asking questions",
-    "text": "Course website - asking questions\n\nIf your question is related to difficulties with material/code/assignments, then post it on our class GitHub page on the Issues tab.\nGo to the class GitHub repository &gt; Click on Issues (near top left) &gt; Click on New issue (green button) &gt; Give it a descriptive title, leave your comment &gt; Click on Submit new issue.\nLet’s try it out: introductions (may need to sign up to GitHub)"
+    "text": "Course website - asking questions\n\nIf your question is related to difficulties with material/code/assignments, then post it on our class GitHub page on the Issues tab.\nGo to the class GitHub repository &gt; Click on Issues (near top left) &gt; Click on New issue (green button) &gt; Give it a descriptive title, leave your comment &gt; Click on Submit new issue."
   },
   {
     "objectID": "teaching/2025-ppa/slides/lec01.html#course-website---asking-questions-1",
     "href": "teaching/2025-ppa/slides/lec01.html#course-website---asking-questions-1",
-    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
     "section": "Course website - asking questions",
     "text": "Course website - asking questions\n\n\n\n\n\n\n\n\n\nBy asking questions on GitHub, other students may be able to help you besides only instructor.\nHelping others on GitHub will count as participation!"
   },
   {
+    "objectID": "teaching/2025-ppa/slides/lec01.html#course-website---asking-questions-2",
+    "href": "teaching/2025-ppa/slides/lec01.html#course-website---asking-questions-2",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
+    "section": "Course website - asking questions",
+    "text": "Course website - asking questions\n\nLet’s try it out: introductions (may need to sign up to GitHub)\n\nFirst and last name\n\nDepartment\n\nDegree (MS or PhD)\n\nArea of research"
+  },
+  {
     "objectID": "teaching/2025-ppa/slides/lec01.html#attendance-policy",
     "href": "teaching/2025-ppa/slides/lec01.html#attendance-policy",
-    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
     "section": "Attendance policy",
     "text": "Attendance policy\nStudents are expected to attend every class period.\n\nStudents on the Athens campus must attend class in-person.\n\nIf a special circumstance arise (illness, travel, etc.), student absence or remote attendance must be informed to instructors prior to that class period."
   },
   {
     "objectID": "teaching/2025-ppa/slides/lec01.html#attendance-policy-1",
     "href": "teaching/2025-ppa/slides/lec01.html#attendance-policy-1",
-    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
     "section": "Attendance policy",
     "text": "Attendance policy\nStudents are expected to attend every class period.\n\nStudents on the Tifton and Griffin campuses may attend class in-person on their campuses or remote using the zoom link information.\n\nStudent absence must be informed to instructors prior to that class period to be excused."
   },
   {
     "objectID": "teaching/2025-ppa/slides/lec01.html#attendance-policy-2",
     "href": "teaching/2025-ppa/slides/lec01.html#attendance-policy-2",
-    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
     "section": "Attendance policy",
-    "text": "Attendance policy\nStudents are expected to attend every class period.\n\nPer Board of Regents policy, I reserve the right to drop students from the class roll who miss more than 5 class periods. Such students will be given a WF grade."
+    "text": "Attendance policy\nStudents are expected to attend every class period.\n\nPuncuality is important!\nStudents &gt;3 min late will be asked to leave and recorded as a missed class.\nIf special circumstances arise, please reach out to me in advance to accommodate for it."
   },
   {
     "objectID": "teaching/2025-ppa/slides/lec01.html#attendance-policy-3",
     "href": "teaching/2025-ppa/slides/lec01.html#attendance-policy-3",
-    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
+    "section": "Attendance policy",
+    "text": "Attendance policy\nStudents are expected to attend every class period.\n\nPer Board of Regents policy, I reserve the right to drop students from the class roll who miss more than 5 class periods. Such students will be given a WF grade."
+  },
+  {
+    "objectID": "teaching/2025-ppa/slides/lec01.html#attendance-policy-4",
+    "href": "teaching/2025-ppa/slides/lec01.html#attendance-policy-4",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
     "section": "Attendance policy",
     "text": "Attendance policy\n\n\n\n\n\n\n\n\n\nWhen attending a class remotely via zoom, students are expected to have cameras on at all times."
   },
   {
     "objectID": "teaching/2025-ppa/slides/lec01.html#technology-and-software-requirements",
     "href": "teaching/2025-ppa/slides/lec01.html#technology-and-software-requirements",
-    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
     "section": "Technology and software requirements",
     "text": "Technology and software requirements\nStudents will need to have access to:\n\nA computer 💻 (to install software, code along with instructors)\n\nA second screen 📺 (main screen to code along, second screen to watch class if not in person)\n\n\nIf a student does not have access to these resources (personal laptop/desktop and a second screen), please let instructors know to ensure proper accommodations can be made."
   },
   {
     "objectID": "teaching/2025-ppa/slides/lec01.html#ai-llms-and-plagiarism",
     "href": "teaching/2025-ppa/slides/lec01.html#ai-llms-and-plagiarism",
-    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
     "section": "AI, LLMs, and plagiarism",
     "text": "AI, LLMs, and plagiarism\nYou are allowed to use LLMs like ChatGPT on your coding assignments, as long as\n\nyou use it to learn, not to simply copy/paste\n\nyou give appropriate credit\n\n\nPlagiarism, both from your classmates AND LLMs, is a serious violation of code of conduct and will be reported to university officials"
   },
   {
     "objectID": "teaching/2025-ppa/slides/lec01.html#survey",
     "href": "teaching/2025-ppa/slides/lec01.html#survey",
-    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
     "section": "Survey",
-    "text": "Survey\nPlease go to the link below and fill this survey:\nhttps://forms.gle/T3qYT1zyHno1VyuJ6\nTake 5 minutes to answer it."
+    "text": "Survey\nPlease go to the link below and fill this survey:\nhttps://forms.gle/K3fqJYDCwVHbUDBK9\nTake 5 minutes to answer it."
   },
   {
     "objectID": "teaching/2025-ppa/slides/lec01.html#getting-ready-for-next-class",
     "href": "teaching/2025-ppa/slides/lec01.html#getting-ready-for-next-class",
-    "title": "Welcome to CRSS 4060/6060\nAdvanced Topics in Precision Ag!",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
     "section": "Getting ready for next class",
     "text": "Getting ready for next class\nTo be ready for next class (Intro to R), please go to the course main page and follow the link to the Lab 01 prep page.\n\nIf you have questions or issues, email me before class.\nWe will have limited time to troubleshoot technical problems during next period."
   },
