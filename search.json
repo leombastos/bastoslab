@@ -2909,14 +2909,14 @@
     "href": "teaching/2025-dsa/slides/lec04-github/lec04-github.html#workflow",
     "title": "Bastos Lab",
     "section": "Workflow",
-    "text": "Workflow\nThe workflow presented next is what you will always do when starting a new exercise (I’ll let you know when that happens). I’ll tell you\n\n“Create a GitHub workflow for an exercise called 03_crd”\n\n\nLet’s walk through what I’ll expect you to do:"
+    "text": "Workflow\nThe workflow presented next is what you will always do when starting a new exercise (I’ll let you know when that happens). I’ll tell you\n\n“Create a GitHub workflow for an exercise called 04_rcbd”\n\n\nLet’s walk through what I’ll expect you to do:"
   },
   {
     "objectID": "teaching/2025-dsa/slides/lec04-github/lec04-github.html#can-you-hear-me",
     "href": "teaching/2025-dsa/slides/lec04-github/lec04-github.html#can-you-hear-me",
     "title": "Bastos Lab",
     "section": "Can you hear me?",
-    "text": "Can you hear me?\nThese steps were outlined on chapter 12: Connect Rstudio to Git and Github:\n\nMake a repo on Github\n\nName: 03_crd\nDescription: no description\nMake it public\n\nCheck the box for Add a README file (always recommended)\n\nAdd a .gitignore: select R\nCreate repository"
+    "text": "Can you hear me?\nThese steps were outlined on chapter 12: Connect Rstudio to Git and Github:\n\nMake a repo on Github\n\nName: 04_rcbd\nDescription: no description\nMake it public\n\nCheck the box for Add a README file (always recommended)\n\nAdd a .gitignore: select R\nCreate repository"
   },
   {
     "objectID": "teaching/2025-dsa/slides/lec04-github/lec04-github.html#can-you-hear-me-1",
@@ -2930,7 +2930,7 @@
     "href": "teaching/2025-dsa/slides/lec04-github/lec04-github.html#can-you-hear-me-2",
     "title": "Bastos Lab",
     "section": "Can you hear me?",
-    "text": "Can you hear me?\n\nRStudio Project\n\nLaunch RStudio\n\nFile &gt; New Project &gt; Version Control &gt; Git\n\nRepository URL: Paste GitHub URL\n\nProject directory name: leave blank\n\nCreate project as subdirectory of: browse to this course main folder in your computer (where you see other project folders like 01 intro)\n\nCreate Project"
+    "text": "Can you hear me?\n\nRStudio Project\n\nLaunch RStudio\n\nFile &gt; New Project &gt; Version Control &gt; Git\n\nRepository URL: Paste GitHub URL\n\nProject directory name: leave blank\n\nCreate project as subdirectory of: browse to this course main folder in your computer (where you see other project folders like 01_intro)\n\nCreate Project"
   },
   {
     "objectID": "teaching/2025-dsa/slides/lec04-github/lec04-github.html#can-you-hear-me-3",
@@ -2954,32 +2954,32 @@
     "text": "Did you hear me?\nDid it all work? If yes, then you are all set to use git and GitHub! 🥳\nIf not, then we’ll need to troubleshoot it."
   },
   {
-    "objectID": "teaching/2025-dsa/slides/lec04-github/lec04-github.html#forking-the-class-2024_dsa-repo",
-    "href": "teaching/2025-dsa/slides/lec04-github/lec04-github.html#forking-the-class-2024_dsa-repo",
+    "objectID": "teaching/2025-dsa/slides/lec04-github/lec04-github.html#forking-the-class-2025_dsa-repo",
+    "href": "teaching/2025-dsa/slides/lec04-github/lec04-github.html#forking-the-class-2025_dsa-repo",
     "title": "Bastos Lab",
-    "section": "Forking the class 2024_dsa repo",
-    "text": "Forking the class 2024_dsa repo\nNext, let’s Fork and Clone the class repo, so you won’t need to do manual downloads anymore.\nDetailed instructions found here"
+    "section": "Forking the class 2025_dsa repo",
+    "text": "Forking the class 2025_dsa repo\nNext, let’s Fork and Clone the class repo, so you won’t need to do manual downloads anymore.\nDetailed instructions found here"
   },
   {
-    "objectID": "teaching/2025-dsa/slides/lec04-github/lec04-github.html#forking-the-class-2024_dsa-repo-1",
-    "href": "teaching/2025-dsa/slides/lec04-github/lec04-github.html#forking-the-class-2024_dsa-repo-1",
+    "objectID": "teaching/2025-dsa/slides/lec04-github/lec04-github.html#forking-the-class-2025_dsa-repo-1",
+    "href": "teaching/2025-dsa/slides/lec04-github/lec04-github.html#forking-the-class-2025_dsa-repo-1",
     "title": "Bastos Lab",
-    "section": "Forking the class 2024_dsa repo",
-    "text": "Forking the class 2024_dsa repo\n\nCopying the URL\n\nGo to the class repo https://github.com/leombastos/2024_dsa\n\nClick on the &lt;&gt; Code button\nChoose HTTPS\nCopy the path"
+    "section": "Forking the class 2025_dsa repo",
+    "text": "Forking the class 2025_dsa repo\n\nCopying the URL\n\nGo to the class repo https://github.com/leombastos/2025_dsa\n\nClick on the &lt;&gt; Code button\nChoose HTTPS\nCopy the path"
   },
   {
-    "objectID": "teaching/2025-dsa/slides/lec04-github/lec04-github.html#forking-the-class-2024_dsa-repo-2",
-    "href": "teaching/2025-dsa/slides/lec04-github/lec04-github.html#forking-the-class-2024_dsa-repo-2",
+    "objectID": "teaching/2025-dsa/slides/lec04-github/lec04-github.html#forking-the-class-2025_dsa-repo-2",
+    "href": "teaching/2025-dsa/slides/lec04-github/lec04-github.html#forking-the-class-2025_dsa-repo-2",
     "title": "Bastos Lab",
-    "section": "Forking the class 2024_dsa repo",
-    "text": "Forking the class 2024_dsa repo\n\nForking and cloning with {usethis}\n\n\n\nOpen any RStudio window\n\nOn the console, copy the code below (copy button on top right corner), edit destdir and run in the console:\n\n\n\nusethis::create_from_github(\n  \"https://github.com/leombastos/2024_dsa.git\",\n  destdir = \"~/path/to/where/you/want/the/local/repo/\",\n  fork = TRUE)"
+    "section": "Forking the class 2025_dsa repo",
+    "text": "Forking the class 2025_dsa repo\n\nForking and cloning with {usethis}\n\n\n\nOpen any RStudio window\n\nOn the console, copy the code below (copy button on top right corner), edit destdir and run in the console:\n\n\n\nusethis::create_from_github(\n  \"https://github.com/leombastos/2025_dsa.git\",\n  destdir = \"~/path/to/where/you/want/the/local/repo/\",\n  fork = TRUE)"
   },
   {
-    "objectID": "teaching/2025-dsa/slides/lec04-github/lec04-github.html#forking-the-class-2024_dsa-repo-3",
-    "href": "teaching/2025-dsa/slides/lec04-github/lec04-github.html#forking-the-class-2024_dsa-repo-3",
+    "objectID": "teaching/2025-dsa/slides/lec04-github/lec04-github.html#forking-the-class-2025_dsa-repo-3",
+    "href": "teaching/2025-dsa/slides/lec04-github/lec04-github.html#forking-the-class-2025_dsa-repo-3",
     "title": "Bastos Lab",
-    "section": "Forking the class 2024_dsa repo",
-    "text": "Forking the class 2024_dsa repo\nNow, anytime I have new code or data files, all you need to do is:\n\nLaunch that RStudio Project\n\nOn the Git pane, click on the green down arrow to pull the updates\n\nMove your local copies of the new files into your own project folder and appropriate sub-folders"
+    "section": "Forking the class 2025_dsa repo",
+    "text": "Forking the class 2025_dsa repo\nNow, anytime I have new code or data files, all you need to do is:\n\nLaunch that RStudio Project\n\nOn the Git pane, click on the green down arrow to pull the updates\n\nMove your local copies of the new files into your own project folder and appropriate sub-folders"
   },
   {
     "objectID": "teaching/2025-dsa/slides/lec09-spp/lec09-spp.html#todays-goals",
