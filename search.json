@@ -7704,7 +7704,7 @@
     "href": "teaching/2025-ppa/slides/lec08-nass.html#after-downloading",
     "title": "Geospatial data types,\nCRS, and\nNASS",
     "section": "After downloading…",
-    "text": "After downloading…\nRename file to soybeans_nass.csv\nIn your course folder, create “02 NASS” folder\nInside it, create data, code, output\nMove soybeans_nass.csv into data\nLaunch RStudio, create a new project at the 02 NASS folder level\nCreate a new script file (quarto)\nLet’s explore this data set"
+    "text": "After downloading…\nRename file to soybeans_nass.csv\nIn your course folder, create “03_NASS” folder\nInside it, create data, code, output\nMove soybeans_nass.csv into data\nLaunch RStudio, create a new project at the 03_NASS folder level\nCreate a new script file (quarto)\nLet’s explore this data set"
   },
   {
     "objectID": "protocols/soil_sampling.html",
