@@ -5079,7 +5079,7 @@
     "href": "teaching/2025-dsa/slides/lec10-rm/lec10-rm.html#the-independence-assumption-1",
     "title": "Bastos Lab",
     "section": "The independence assumption",
-    "text": "The independence assumption\nThe example below shows the correlation matrix structure for the 4 yield measurements for the first plot in the study:\n\ncorCompSymm(value = 0, form = ~ 1 | splot ) %&gt;%\n  Initialize(data = rm_rcbd_df) %&gt;%\n  corMatrix() %&gt;%\n  .[[1]]\n\n     [,1] [,2] [,3] [,4]\n[1,]    1    0    0    0\n[2,]    0    1    0    0\n[3,]    0    0    1    0\n[4,]    0    0    0    1\n\n\n\nThe diagonal values represent a shared common variance, and the off-diagonal values represent a shared common correlation of zero."
+    "text": "The independence assumption\nThe example below shows the correlation matrix structure for the 4 yield measurements for the first plot in the study:\n\n\n     [,1] [,2] [,3] [,4]\n[1,]    1    0    0    0\n[2,]    0    1    0    0\n[3,]    0    0    1    0\n[4,]    0    0    0    1\n\n\n\nThe diagonal values represent a shared common variance, and the off-diagonal values represent a shared common correlation of zero."
   },
   {
     "objectID": "teaching/2025-dsa/slides/lec10-rm/lec10-rm.html#the-independence-assumption-2",
@@ -5121,14 +5121,14 @@
     "href": "teaching/2025-dsa/slides/lec10-rm/lec10-rm.html#serial---compound-symmetry",
     "title": "Bastos Lab",
     "section": "Serial - Compound symmetry",
-    "text": "Serial - Compound symmetry\n\n\nSimplest\n\nAssumes equal correlation among errors of the same group\n\nNo. of parameters estimated: one (\\(\\rho\\))\nToo simplistic for time-series, as it is common that correlation decreases as time interval increases (not a single fixed correlation)\nCorrelation matrix structure for the 4 yield measurements for the first plot in the study with a CS correlation value of 0.3:\n\n\n\ncorCompSymm(value = 0.3, form = ~ 1 | splot ) %&gt;%\n  Initialize(data = rm_rcbd_df) %&gt;%\n  corMatrix() %&gt;%\n  .[[1]]\n\n     [,1] [,2] [,3] [,4]\n[1,]  1.0  0.3  0.3  0.3\n[2,]  0.3  1.0  0.3  0.3\n[3,]  0.3  0.3  1.0  0.3\n[4,]  0.3  0.3  0.3  1.0"
+    "text": "Serial - Compound symmetry\n\n\nSimplest\n\nAssumes equal correlation among errors of the same group\n\nNo. of parameters estimated: one (\\(\\rho\\))\nToo simplistic for time-series, as it is common that correlation decreases as time interval increases (not a single fixed correlation)\nCorrelation matrix structure for the 4 yield measurements for the first plot in the study with a CS correlation value of 0.3:\n\n\n\n\n     [,1] [,2] [,3] [,4]\n[1,]  1.0  0.3  0.3  0.3\n[2,]  0.3  1.0  0.3  0.3\n[3,]  0.3  0.3  1.0  0.3\n[4,]  0.3  0.3  0.3  1.0"
   },
   {
     "objectID": "teaching/2025-dsa/slides/lec10-rm/lec10-rm.html#serial---general",
     "href": "teaching/2025-dsa/slides/lec10-rm/lec10-rm.html#serial---general",
     "title": "Bastos Lab",
     "section": "Serial - General",
-    "text": "Serial - General\n\n\nMost complex!\n\nEach correlation in data is represented by a different parameter\n\nNumber of parameters increases quadratically with the maximum number of observations within a group\n\nOften lead to overparameterized models\n\nCorrelation matrix structure for the 4 yield measurements for the first plot in the study with general correlation:\n\n\n\ncorSymm(value = c(0.2, 0.1, -0.1, 0, 0.2, 0),\n        form = ~ 1 | splot ) %&gt;%  \n  Initialize(data = rm_rcbd_df) %&gt;%\n  corMatrix() %&gt;%\n  .[[1]] %&gt;%\n  round(2)\n\n     [,1] [,2] [,3] [,4]\n[1,]  1.0  0.2  0.1 -0.1\n[2,]  0.2  1.0  0.0  0.2\n[3,]  0.1  0.0  1.0  0.0\n[4,] -0.1  0.2  0.0  1.0"
+    "text": "Serial - General\n\n\nMost complex!\n\nEach correlation in data is represented by a different parameter\n\nNumber of parameters increases quadratically with the maximum number of observations within a group\n\nOften lead to overparameterized models\n\nCorrelation matrix structure for the 4 yield measurements for the first plot in the study with general correlation:\n\n\n\n\n     [,1] [,2] [,3] [,4]\n[1,]  1.0  0.2  0.1 -0.1\n[2,]  0.2  1.0  0.0  0.2\n[3,]  0.1  0.0  1.0  0.0\n[4,] -0.1  0.2  0.0  1.0"
   },
   {
     "objectID": "teaching/2025-dsa/slides/lec10-rm/lec10-rm.html#serial---autoregressive-moving-average",
@@ -5142,7 +5142,7 @@
     "href": "teaching/2025-dsa/slides/lec10-rm/lec10-rm.html#serial---autoregressive-moving-average-1",
     "title": "Bastos Lab",
     "section": "Serial - Autoregressive-moving average",
-    "text": "Serial - Autoregressive-moving average\n\nThe AR(1) model is one of the few serial correlation structures that can be generalized to continuous, non-equally-spaced time measurements\n\nCorrelation matrix structure for the 4 yield measurements for the first plot in the study with a AR1 correlation structure and correlation value of 0.8:\n\n\ncorAR1(value = 0.8, form = ~ 1 | splot ) %&gt;%  \n  Initialize(data = rm_rcbd_df) %&gt;%\n  corMatrix() %&gt;%\n  .[[1]]\n\n      [,1] [,2] [,3]  [,4]\n[1,] 1.000 0.80 0.64 0.512\n[2,] 0.800 1.00 0.80 0.640\n[3,] 0.640 0.80 1.00 0.800\n[4,] 0.512 0.64 0.80 1.000"
+    "text": "Serial - Autoregressive-moving average\n\nThe AR(1) model is one of the few serial correlation structures that can be generalized to continuous, non-equally-spaced time measurements\n\nCorrelation matrix structure for the 4 yield measurements for the first plot in the study with a AR1 correlation structure and correlation value of 0.8:\n\n\n\n      [,1] [,2] [,3]  [,4]\n[1,] 1.000 0.80 0.64 0.512\n[2,] 0.800 1.00 0.80 0.640\n[3,] 0.640 0.80 1.00 0.800\n[4,] 0.512 0.64 0.80 1.000"
   },
   {
     "objectID": "teaching/2025-dsa/slides/lec10-rm/lec10-rm.html#serial---autoregressive-moving-average-2",
