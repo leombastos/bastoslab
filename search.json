@@ -2219,6 +2219,13 @@
     "text": "Disability statement\nIf you plan to request accommodations for a disability, please register with the Disability Resource Center. They can be reached by visiting Clark Howell Hall, calling 706-542-8719 (voice) or 706-542-8778 (TTY), or by visiting https://sitedrc.uga.edu"
   },
   {
+    "objectID": "teaching/2025-dsa/slides/lec12-ml/lec12-ml.html#resources",
+    "href": "teaching/2025-dsa/slides/lec12-ml/lec12-ml.html#resources",
+    "title": "Bastos Lab",
+    "section": "Resources",
+    "text": "Resources\nA LOT of the content of this lecture (and labs to follow) are based on two open-source e-books:\n\nTidy modeling with R\n\nHands-on ML with R"
+  },
+  {
     "objectID": "teaching/2025-dsa/slides/lec12-ml/lec12-ml.html#todays-goals",
     "href": "teaching/2025-dsa/slides/lec12-ml/lec12-ml.html#todays-goals",
     "title": "Bastos Lab",
@@ -2282,11 +2289,25 @@
     "text": "1. Pre-processing: data split\nThe two most common ways of splitting data include simple random sampling and stratified sampling.\n\n\n\n\n\n\nWe want our train and test sets to be similar in data distribution, as seen on the left.\nIf they are not, we can use stratified sampling to ensure the same proportions of the predicted variable fall in both training and test sets.\nThis is important to avoid data shift!"
   },
   {
+    "objectID": "teaching/2025-dsa/slides/lec12-ml/lec12-ml.html#pre-processing-data-processing",
+    "href": "teaching/2025-dsa/slides/lec12-ml/lec12-ml.html#pre-processing-data-processing",
+    "title": "Bastos Lab",
+    "section": "1. Pre-processing: data processing",
+    "text": "1. Pre-processing: data processing\nDifferent models require different pre-processing steps.\nHow to know what pre-processing steps are required for different models?\nCheck this guide from tidymodels"
+  },
+  {
+    "objectID": "teaching/2025-dsa/slides/lec12-ml/lec12-ml.html#pre-processing-data-processing-1",
+    "href": "teaching/2025-dsa/slides/lec12-ml/lec12-ml.html#pre-processing-data-processing-1",
+    "title": "Bastos Lab",
+    "section": "1. Pre-processing: data processing",
+    "text": "1. Pre-processing: data processing\nSome common pre-processing steps:\n\nImputing NA values\n\nHandling factor levels\n\nIndividual transformations for skewness\n\nDiscretizing (if needed and if you have no other choice)\n\nCreating dummy variables/one-hot encoding\n\nCreating interactions\n\nNormalization steps (center, scale, range, etc)\n\nMultivariate transformation (e.g. PCA)"
+  },
+  {
     "objectID": "teaching/2025-dsa/slides/lec12-ml/lec12-ml.html#training-hyperparameters",
     "href": "teaching/2025-dsa/slides/lec12-ml/lec12-ml.html#training-hyperparameters",
     "title": "Bastos Lab",
     "section": "2. Training: hyperparameters",
-    "text": "2. Training: hyperparameters\n\nNow that our data has been split, we can choose a model type (e.g., random forest), and start the training process.\nThe training process will involve selecting the best hyperparameter values that optimize model performance.\nHyperparameters are parameters in a machine learning model that control how simple or complex the model is allowed to be."
+    "text": "2. Training: hyperparameters\n\nNow that our data has been split and pre-processed, we can choose a model type (e.g., random forest), and start the training process.\nThe training process will involve selecting the best hyperparameter values that optimize model performance.\nHyperparameters are parameters in a machine learning model that control how simple or complex the model is allowed to be."
   },
   {
     "objectID": "teaching/2025-dsa/slides/lec12-ml/lec12-ml.html#training-hyperparameters-1",
@@ -2433,7 +2454,35 @@
     "href": "teaching/2025-dsa/slides/lec12-ml/lec12-ml.html#training-selecting-best-hyperp.-1",
     "title": "Bastos Lab",
     "section": "2. Training: selecting best hyperp.",
-    "text": "2. Training: selecting best hyperp.\nSome metrics we can use to select the best model are:\n\nR2: the proportion of the variance in the dependent variable that is predictable from the independent variable(s), larger is better.\nMSE: average of the squared error, smaller is better.\nRMSE: the square root of the MSE metric so that your error is in the same units as your response variable, smaller is better."
+    "text": "2. Training: selecting best hyperp.\nThe metrics we use will depend on the type of the predicted variable.\nIf numerical, then the model is of type regression, and some metrics are:\n\nR2: the proportion of the variance in the dependent variable that is predictable from the independent variable(s), larger is better.\nMSE: average of the squared error, smaller is better.\nRMSE: the square root of the MSE metric so that your error is in the same units as your response variable, smaller is better."
+  },
+  {
+    "objectID": "teaching/2025-dsa/slides/lec12-ml/lec12-ml.html#training-selecting-best-hyperp.-2",
+    "href": "teaching/2025-dsa/slides/lec12-ml/lec12-ml.html#training-selecting-best-hyperp.-2",
+    "title": "Bastos Lab",
+    "section": "2. Training: selecting best hyperp.",
+    "text": "2. Training: selecting best hyperp.\nThe metrics we use will depend on the type of the predicted variable.\nIf categorical, then the model is of type classification, and some metrics are:\n\nAccuracy: proportion of correctly classified (both positive and negative)\nPrecision: proportion of predicted positive cases that are actually positive.\n\\[ \\text{Precision} = \\frac{\\text{True Positives}}{\\text{True Positives + False Positives}} \\]"
+  },
+  {
+    "objectID": "teaching/2025-dsa/slides/lec12-ml/lec12-ml.html#training-selecting-best-hyperp.-3",
+    "href": "teaching/2025-dsa/slides/lec12-ml/lec12-ml.html#training-selecting-best-hyperp.-3",
+    "title": "Bastos Lab",
+    "section": "2. Training: selecting best hyperp.",
+    "text": "2. Training: selecting best hyperp.\nThe metrics we use will depend on the type of the predicted variable.\nIf categorical, then the model is of type classification, and some metrics are:\n\nSensitivity (recall, true positive rate): proportion of actual positive cases that the model identifies correctly. \\[ \\text{Recall} = \\frac{\\text{True Positives}}{\\text{True Positives + False Negatives}} \\]"
+  },
+  {
+    "objectID": "teaching/2025-dsa/slides/lec12-ml/lec12-ml.html#training-selecting-best-hyperp.-4",
+    "href": "teaching/2025-dsa/slides/lec12-ml/lec12-ml.html#training-selecting-best-hyperp.-4",
+    "title": "Bastos Lab",
+    "section": "2. Training: selecting best hyperp.",
+    "text": "2. Training: selecting best hyperp.\nThe metrics we use will depend on the type of the predicted variable.\nIf categorical, then the model is of type classification, and some metrics are:\n\nSpecificity: proportion of actual negative cases that the model identifies correctly.\n\n\\[ \\text{Specificity} = \\frac{\\text{True Negatives}}{\\text{True Negatives + False Positives}} \\]"
+  },
+  {
+    "objectID": "teaching/2025-dsa/slides/lec12-ml/lec12-ml.html#training-selecting-best-hyperp.-5",
+    "href": "teaching/2025-dsa/slides/lec12-ml/lec12-ml.html#training-selecting-best-hyperp.-5",
+    "title": "Bastos Lab",
+    "section": "2. Training: selecting best hyperp.",
+    "text": "2. Training: selecting best hyperp.\nThe metrics we use will depend on the type of the predicted variable.\nIf categorical, then the model is of type classification, and some metrics are:\n\nArea under the receiver operating curve (AUC-ROC): Measures how well the model distinguishes between classes. The curve plots the true positive rate (recall) against the false positive rate (1 - specificity)."
   },
   {
     "objectID": "teaching/2025-dsa/slides/lec12-ml/lec12-ml.html#validation-predictive-assessment",
