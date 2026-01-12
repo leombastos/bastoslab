@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Bastos Lab - Teaching</title>
+<title>Bastos Lab - Schedule</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,27 +20,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -63,12 +97,10 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="Bastos Lab - Teaching">
-<meta property="og:description" content="">
+<link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="Bastos Lab - Schedule">
 <meta property="og:site-name" content="Bastos Lab">
-<meta name="twitter:title" content="Bastos Lab - Teaching">
-<meta name="twitter:description" content="">
+<meta name="twitter:title" content="Bastos Lab - Schedule">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -79,8 +111,8 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../images/logo.png" alt="" class="navbar-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/logo.png" alt="" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -90,31 +122,31 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html" rel="" target="">
+    <a class="nav-link" href="../../index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../team/team.html" rel="" target="">
+    <a class="nav-link" href="../../team/team.html" rel="" target="">
  <span class="menu-text">Team</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../projects/projects.html" rel="" target="">
+    <a class="nav-link" href="../../projects/projects.html" rel="" target="">
  <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../talks/talks.html" rel="" target="">
+    <a class="nav-link" href="../../talks/talks.html" rel="" target="">
  <span class="menu-text">Talks</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../teaching/teaching.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="../../teaching/teaching.html" rel="" target="">
  <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../culture/culture.html" rel="" target="">
+    <a class="nav-link" href="../../culture/culture.html" rel="" target="">
  <span class="menu-text">Lab manual</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../protocols/protocols.html" rel="" target="">
+    <a class="nav-link" href="../../protocols/protocols.html" rel="" target="">
  <span class="menu-text">Protocols</span></a>
   </li>  
   <li class="nav-item compact">
@@ -134,7 +166,14 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
-    
+    <nav id="TOC" role="doc-toc" class="toc-active">
+   
+  <ul>
+  <li><a href="#setup." id="toc-setup." class="nav-link active" data-scroll-target="#setup.">Setup.</a></li>
+  <li><a href="#wrangling" id="toc-wrangling" class="nav-link" data-scroll-target="#wrangling">Wrangling</a></li>
+  <li><a href="#exporting" id="toc-exporting" class="nav-link" data-scroll-target="#exporting">Exporting</a></li>
+  </ul>
+</nav>
 </nav>
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
@@ -145,7 +184,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Teaching</h1>
+<h1 class="title">Schedule</h1>
 </div>
 
 
@@ -160,56 +199,128 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Here I share links to my teaching material, including <strong>workshops</strong> and full <strong>courses</strong>. Materials normally include</p>
-<ul>
-<li><p>Recordings of the live sessions (on YouTube)</p></li>
-<li><p>Partial code to follow along with the videos (on GitHub)</p></li>
-<li><p>Complete code (on GitHub)</p></li>
-</ul>
-<p>Click the links below to explore them.</p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<section id="workshops" class="level2">
-<h2 class="anchored" data-anchor-id="workshops">Workshops 💻</h2>
-<ul>
-<li><a href="../teaching/2024-acs/2024-acs-Bastos.html">ACS Grad Committee: Design and analysis of ag design in R</a><br>
-</li>
-<li><a href="../teaching/2023-aghack-vwc/2023-aghack-vwc.html">ASA AgHackathon: SMAP soil VWC data</a></li>
-<li><a href="../teaching/2022-reg.html">Regression for optimum and prediction</a><br>
-</li>
-<li><a href="../teaching/2021-wrangit.html">Data wrangling and iteration</a><br>
-</li>
-<li><a href="../teaching/2021-multivar.html">Multivariate analysis</a><br>
-</li>
-<li><a href="../teaching/2021-asaboot.html">Agronomy Society R beginner bootcamp</a><br>
-</li>
-<li><a href="../teaching/2020-designanovareg.html">Experimental Design, ANOVA, and Regression</a><br>
-</li>
-<li><a href="../teaching/2019-introtoR.html">Intro to R</a></li>
-</ul>
-</section>
-</div><div class="column" style="width:50%;">
-<section id="courses" class="level2">
-<h2 class="anchored" data-anchor-id="courses">Courses 👨‍🏫</h2>
-<ul>
-<li><a href="../teaching/2026-dsa/2026-dsa.html">2026 Data Science Applied to Ag</a><br>
-</li>
-<li><a href="../teaching/2026-ppa/2026-ppa.html">2026 Programming Precision Ag</a><br>
-</li>
-<li>2025 Data Science Applied to Ag</li>
-<li>2025 Programming Precision Ag<br>
-</li>
-<li>2024 Advanced Topics in Precision Ag</li>
-<li>2024 Data Science and Statistical Programing Applied to Ag</li>
-<li>2023 Advanced Topics in Precision Ag<br>
-</li>
-<li>2022 Advanced Topics in Precision Ag</li>
-</ul>
-</section>
+<section id="setup." class="level1">
+<h1>Setup.</h1>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lubridate)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>begin <span class="ot">&lt;-</span> <span class="fu">as.Date</span>(<span class="st">"2026-01-12"</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>end <span class="ot">&lt;-</span> <span class="fu">as.Date</span>(<span class="st">"2026-04-27"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>dates <span class="ot">&lt;-</span> <span class="fu">seq.Date</span>(<span class="at">from =</span> begin, </span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>                  <span class="at">to =</span> end, </span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>                  <span class="at">by =</span> <span class="dv">1</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>dates</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  [1] "2026-01-12" "2026-01-13" "2026-01-14" "2026-01-15" "2026-01-16"
+  [6] "2026-01-17" "2026-01-18" "2026-01-19" "2026-01-20" "2026-01-21"
+ [11] "2026-01-22" "2026-01-23" "2026-01-24" "2026-01-25" "2026-01-26"
+ [16] "2026-01-27" "2026-01-28" "2026-01-29" "2026-01-30" "2026-01-31"
+ [21] "2026-02-01" "2026-02-02" "2026-02-03" "2026-02-04" "2026-02-05"
+ [26] "2026-02-06" "2026-02-07" "2026-02-08" "2026-02-09" "2026-02-10"
+ [31] "2026-02-11" "2026-02-12" "2026-02-13" "2026-02-14" "2026-02-15"
+ [36] "2026-02-16" "2026-02-17" "2026-02-18" "2026-02-19" "2026-02-20"
+ [41] "2026-02-21" "2026-02-22" "2026-02-23" "2026-02-24" "2026-02-25"
+ [46] "2026-02-26" "2026-02-27" "2026-02-28" "2026-03-01" "2026-03-02"
+ [51] "2026-03-03" "2026-03-04" "2026-03-05" "2026-03-06" "2026-03-07"
+ [56] "2026-03-08" "2026-03-09" "2026-03-10" "2026-03-11" "2026-03-12"
+ [61] "2026-03-13" "2026-03-14" "2026-03-15" "2026-03-16" "2026-03-17"
+ [66] "2026-03-18" "2026-03-19" "2026-03-20" "2026-03-21" "2026-03-22"
+ [71] "2026-03-23" "2026-03-24" "2026-03-25" "2026-03-26" "2026-03-27"
+ [76] "2026-03-28" "2026-03-29" "2026-03-30" "2026-03-31" "2026-04-01"
+ [81] "2026-04-02" "2026-04-03" "2026-04-04" "2026-04-05" "2026-04-06"
+ [86] "2026-04-07" "2026-04-08" "2026-04-09" "2026-04-10" "2026-04-11"
+ [91] "2026-04-12" "2026-04-13" "2026-04-14" "2026-04-15" "2026-04-16"
+ [96] "2026-04-17" "2026-04-18" "2026-04-19" "2026-04-20" "2026-04-21"
+[101] "2026-04-22" "2026-04-23" "2026-04-24" "2026-04-25" "2026-04-26"
+[106] "2026-04-27"</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>hd <span class="ot">&lt;-</span> <span class="fu">seq.Date</span>(<span class="at">from =</span> <span class="fu">as.Date</span>(<span class="st">"2026-03-09"</span>), </span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>                  <span class="at">to =</span> <span class="fu">as.Date</span>(<span class="st">"2026-03-13"</span>), </span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>                  <span class="at">by =</span> <span class="dv">1</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as.data.frame</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">date=</span><span class="st">"."</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">holiday=</span><span class="st">"Spring Break"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_rows</span>(<span class="fu">data.frame</span>(<span class="at">date=</span><span class="fu">as.Date</span>(<span class="st">"2026-01-19"</span>),</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>                       <span class="at">holiday=</span><span class="st">"MLK"</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>                       ))</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>hd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>        date      holiday
+1 2026-03-09 Spring Break
+2 2026-03-10 Spring Break
+3 2026-03-11 Spring Break
+4 2026-03-12 Spring Break
+5 2026-03-13 Spring Break
+6 2026-01-19          MLK</code></pre>
+</div>
+</div>
+</section>
+<section id="wrangling" class="level1">
+<h1>Wrangling</h1>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>dates_w <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">date=</span>dates) <span class="sc">%&gt;%</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">dow=</span><span class="fu">wday</span>(date, <span class="at">label =</span> T)) <span class="sc">%&gt;%</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(dow <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Tue"</span>, <span class="st">"Thu"</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">time=</span><span class="fu">case_when</span>(</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    dow <span class="sc">==</span> <span class="st">"Tue"</span> <span class="sc">~</span> <span class="st">"2:55 to 5:05"</span>,</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    T <span class="sc">~</span> <span class="st">"2:55 to 5:05"</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>  )) <span class="sc">%&gt;%</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(hd) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Joining with `by = join_by(date)`</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>dates_w</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>         date dow         time      holiday
+1  2026-01-13 Tue 2:55 to 5:05         &lt;NA&gt;
+2  2026-01-15 Thu 2:55 to 5:05         &lt;NA&gt;
+3  2026-01-20 Tue 2:55 to 5:05         &lt;NA&gt;
+4  2026-01-22 Thu 2:55 to 5:05         &lt;NA&gt;
+5  2026-01-27 Tue 2:55 to 5:05         &lt;NA&gt;
+6  2026-01-29 Thu 2:55 to 5:05         &lt;NA&gt;
+7  2026-02-03 Tue 2:55 to 5:05         &lt;NA&gt;
+8  2026-02-05 Thu 2:55 to 5:05         &lt;NA&gt;
+9  2026-02-10 Tue 2:55 to 5:05         &lt;NA&gt;
+10 2026-02-12 Thu 2:55 to 5:05         &lt;NA&gt;
+11 2026-02-17 Tue 2:55 to 5:05         &lt;NA&gt;
+12 2026-02-19 Thu 2:55 to 5:05         &lt;NA&gt;
+13 2026-02-24 Tue 2:55 to 5:05         &lt;NA&gt;
+14 2026-02-26 Thu 2:55 to 5:05         &lt;NA&gt;
+15 2026-03-03 Tue 2:55 to 5:05         &lt;NA&gt;
+16 2026-03-05 Thu 2:55 to 5:05         &lt;NA&gt;
+17 2026-03-10 Tue 2:55 to 5:05 Spring Break
+18 2026-03-12 Thu 2:55 to 5:05 Spring Break
+19 2026-03-17 Tue 2:55 to 5:05         &lt;NA&gt;
+20 2026-03-19 Thu 2:55 to 5:05         &lt;NA&gt;
+21 2026-03-24 Tue 2:55 to 5:05         &lt;NA&gt;
+22 2026-03-26 Thu 2:55 to 5:05         &lt;NA&gt;
+23 2026-03-31 Tue 2:55 to 5:05         &lt;NA&gt;
+24 2026-04-02 Thu 2:55 to 5:05         &lt;NA&gt;
+25 2026-04-07 Tue 2:55 to 5:05         &lt;NA&gt;
+26 2026-04-09 Thu 2:55 to 5:05         &lt;NA&gt;
+27 2026-04-14 Tue 2:55 to 5:05         &lt;NA&gt;
+28 2026-04-16 Thu 2:55 to 5:05         &lt;NA&gt;
+29 2026-04-21 Tue 2:55 to 5:05         &lt;NA&gt;
+30 2026-04-23 Thu 2:55 to 5:05         &lt;NA&gt;</code></pre>
+</div>
+</div>
+</section>
+<section id="exporting" class="level1">
+<h1>Exporting</h1>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(dates_w, <span class="st">"dates.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -567,7 +678,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-center">
       &nbsp;
     </div>
-    <div class="nav-footer-right"><img src="../images/UGA-logo.png" style="float:right;height:60px"></div>
+    <div class="nav-footer-right"><img src="../../images/UGA-logo.png" style="float:right;height:60px"></div>
   </div>
 </footer>
 

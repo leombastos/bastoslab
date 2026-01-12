@@ -805,6 +805,461 @@
     "text": "Course statements and policies\n\nAcademic honesty\nUGA Student Honor Code: “I will be academically honest in all of my academic work and will not tolerate academic dishonesty of others.” A Culture of Honesty, the University’s policy and procedures for handling cases of suspected dishonesty, can be found at www.uga.edu/ovpi.\nFor this course, all lab reports, projects, and other assignments can be discussed with your classmates but any work you turn in must be your own.\nStudents can work together through coding exercises, but direct copying and pasting from a colleague will be considered plagiarism.\nIf using code from an online source, it is ok to copy and paste IF proper credit is given (e.g., showing the website source from where the code was obtained).\nUnless explicitly stated, artificial intelligence-based technologies, such as ChatGPT, must not be used to generate responses for student assignments.\n\n\nAttendance policy\nStudents are expected to attend every class period.\nStudents on the Athens campus must attend class in-person. If a special circumstance arise (illness, travel, etc.), student absence or remote attendance must be informed to instructors prior to that class period.\nStudents on the Tifton and Griffin campuses may attend class in-person on their campuses or remote using the zoom link information. Student absence must be informed to instructors prior to that class period.\nPer Board of Regents policy, I reserve the right to drop students from the class roll who miss more than 5 class periods unexcused. Such students will be given a WF grade.\n\n\nDisclaimer\nThe course syllabus is a general plan for the course; deviations announced to the class by the instructor may be necessary.\n\n\nMake-up procedures\n\nThere will be no make-ups for missed quizzes. Any missed quiz will be recorded as a zero\n\nExams can be made up only with a note from a doctor or if you can document extenuating circumstances. Any unexcused missed exam will be recorded as a zero\n\nHomework assignments will be accepted up to one week beyond the due date. The penalty for submitting a late assignment is one letter grade\n\nHomework assignments may be submitted late without penalty in case of illness, extenuating circumstances, or if prior arrangements are made with the instructors. All late assignments are due within a week of the original due date or within a week of when a student returns from an illness\n\n\n\nMental Health and Wellness Resources\n\nIf you or someone you know needs assistance, you are encouraged to contact Student Care and Outreach in the Division of Student Affairs at 706-542-7774 or visit https://sco.uga.edu/. They will help you navigate any difficult circumstances you may be facing by connecting you with the appropriate resources or services.\n\nUGA has several resources for a student seeking mental health services (https://www.uhs.uga.edu/bewelluga/bewelluga) or crisis support (https://www.uhs.uga.edu/info/emergencies).\n\nIf you need help managing stress anxiety, relationships, etc., please visit BeWellUGA (https://www.uhs.uga.edu/bewelluga/bewelluga) for a list of FREE workshops, classes, mentoring, and health coaching led by licensed clinicians and health educators in the University Health Center.\n\nAdditional resources can be accessed through the UGA App.\n\n\n\nDisability statement\nIf you plan to request accommodations for a disability, please register with the Disability Resource Center. They can be reached by visiting Clark Howell Hall, calling 706-542-8719 (voice) or 706-542-8778 (TTY), or by visiting https://sitedrc.uga.edu"
   },
   {
+    "objectID": "teaching/2026-ppa/schedule.html",
+    "href": "teaching/2026-ppa/schedule.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "Setup.\n\nlibrary(lubridate)\nlibrary(tidyverse)\n\n\nbegin &lt;- as.Date(\"2026-01-12\")\nend &lt;- as.Date(\"2026-04-27\")\n\n\ndates &lt;- seq.Date(from = begin, \n                  to = end, \n                  by = 1)\n\ndates\n\n  [1] \"2026-01-12\" \"2026-01-13\" \"2026-01-14\" \"2026-01-15\" \"2026-01-16\"\n  [6] \"2026-01-17\" \"2026-01-18\" \"2026-01-19\" \"2026-01-20\" \"2026-01-21\"\n [11] \"2026-01-22\" \"2026-01-23\" \"2026-01-24\" \"2026-01-25\" \"2026-01-26\"\n [16] \"2026-01-27\" \"2026-01-28\" \"2026-01-29\" \"2026-01-30\" \"2026-01-31\"\n [21] \"2026-02-01\" \"2026-02-02\" \"2026-02-03\" \"2026-02-04\" \"2026-02-05\"\n [26] \"2026-02-06\" \"2026-02-07\" \"2026-02-08\" \"2026-02-09\" \"2026-02-10\"\n [31] \"2026-02-11\" \"2026-02-12\" \"2026-02-13\" \"2026-02-14\" \"2026-02-15\"\n [36] \"2026-02-16\" \"2026-02-17\" \"2026-02-18\" \"2026-02-19\" \"2026-02-20\"\n [41] \"2026-02-21\" \"2026-02-22\" \"2026-02-23\" \"2026-02-24\" \"2026-02-25\"\n [46] \"2026-02-26\" \"2026-02-27\" \"2026-02-28\" \"2026-03-01\" \"2026-03-02\"\n [51] \"2026-03-03\" \"2026-03-04\" \"2026-03-05\" \"2026-03-06\" \"2026-03-07\"\n [56] \"2026-03-08\" \"2026-03-09\" \"2026-03-10\" \"2026-03-11\" \"2026-03-12\"\n [61] \"2026-03-13\" \"2026-03-14\" \"2026-03-15\" \"2026-03-16\" \"2026-03-17\"\n [66] \"2026-03-18\" \"2026-03-19\" \"2026-03-20\" \"2026-03-21\" \"2026-03-22\"\n [71] \"2026-03-23\" \"2026-03-24\" \"2026-03-25\" \"2026-03-26\" \"2026-03-27\"\n [76] \"2026-03-28\" \"2026-03-29\" \"2026-03-30\" \"2026-03-31\" \"2026-04-01\"\n [81] \"2026-04-02\" \"2026-04-03\" \"2026-04-04\" \"2026-04-05\" \"2026-04-06\"\n [86] \"2026-04-07\" \"2026-04-08\" \"2026-04-09\" \"2026-04-10\" \"2026-04-11\"\n [91] \"2026-04-12\" \"2026-04-13\" \"2026-04-14\" \"2026-04-15\" \"2026-04-16\"\n [96] \"2026-04-17\" \"2026-04-18\" \"2026-04-19\" \"2026-04-20\" \"2026-04-21\"\n[101] \"2026-04-22\" \"2026-04-23\" \"2026-04-24\" \"2026-04-25\" \"2026-04-26\"\n[106] \"2026-04-27\"\n\n\n\nhd &lt;- seq.Date(from = as.Date(\"2026-03-09\"), \n                  to = as.Date(\"2026-03-13\"), \n                  by = 1) %&gt;%\n  as.data.frame() %&gt;%\n  rename(date=\".\") %&gt;%\n  mutate(holiday=\"Spring Break\") %&gt;%\n  bind_rows(data.frame(date=as.Date(\"2026-01-19\"),\n                       holiday=\"MLK\"\n                       ))\n\nhd\n\n        date      holiday\n1 2026-03-09 Spring Break\n2 2026-03-10 Spring Break\n3 2026-03-11 Spring Break\n4 2026-03-12 Spring Break\n5 2026-03-13 Spring Break\n6 2026-01-19          MLK\n\n\n\n\nWrangling\n\ndates_w &lt;- data.frame(date=dates) %&gt;%\n  mutate(dow=wday(date, label = T)) %&gt;%\n  filter(dow %in% c(\"Tue\", \"Thu\")) %&gt;%\n  mutate(time=case_when(\n    dow == \"Tue\" ~ \"2:55 to 5:05\",\n    T ~ \"2:55 to 5:05\"\n  )) %&gt;%\n  left_join(hd) \n\nJoining with `by = join_by(date)`\n\ndates_w\n\n         date dow         time      holiday\n1  2026-01-13 Tue 2:55 to 5:05         &lt;NA&gt;\n2  2026-01-15 Thu 2:55 to 5:05         &lt;NA&gt;\n3  2026-01-20 Tue 2:55 to 5:05         &lt;NA&gt;\n4  2026-01-22 Thu 2:55 to 5:05         &lt;NA&gt;\n5  2026-01-27 Tue 2:55 to 5:05         &lt;NA&gt;\n6  2026-01-29 Thu 2:55 to 5:05         &lt;NA&gt;\n7  2026-02-03 Tue 2:55 to 5:05         &lt;NA&gt;\n8  2026-02-05 Thu 2:55 to 5:05         &lt;NA&gt;\n9  2026-02-10 Tue 2:55 to 5:05         &lt;NA&gt;\n10 2026-02-12 Thu 2:55 to 5:05         &lt;NA&gt;\n11 2026-02-17 Tue 2:55 to 5:05         &lt;NA&gt;\n12 2026-02-19 Thu 2:55 to 5:05         &lt;NA&gt;\n13 2026-02-24 Tue 2:55 to 5:05         &lt;NA&gt;\n14 2026-02-26 Thu 2:55 to 5:05         &lt;NA&gt;\n15 2026-03-03 Tue 2:55 to 5:05         &lt;NA&gt;\n16 2026-03-05 Thu 2:55 to 5:05         &lt;NA&gt;\n17 2026-03-10 Tue 2:55 to 5:05 Spring Break\n18 2026-03-12 Thu 2:55 to 5:05 Spring Break\n19 2026-03-17 Tue 2:55 to 5:05         &lt;NA&gt;\n20 2026-03-19 Thu 2:55 to 5:05         &lt;NA&gt;\n21 2026-03-24 Tue 2:55 to 5:05         &lt;NA&gt;\n22 2026-03-26 Thu 2:55 to 5:05         &lt;NA&gt;\n23 2026-03-31 Tue 2:55 to 5:05         &lt;NA&gt;\n24 2026-04-02 Thu 2:55 to 5:05         &lt;NA&gt;\n25 2026-04-07 Tue 2:55 to 5:05         &lt;NA&gt;\n26 2026-04-09 Thu 2:55 to 5:05         &lt;NA&gt;\n27 2026-04-14 Tue 2:55 to 5:05         &lt;NA&gt;\n28 2026-04-16 Thu 2:55 to 5:05         &lt;NA&gt;\n29 2026-04-21 Tue 2:55 to 5:05         &lt;NA&gt;\n30 2026-04-23 Thu 2:55 to 5:05         &lt;NA&gt;\n\n\n\n\nExporting\n\nwrite_csv(dates_w, \"dates.csv\")"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lab01-prep.html",
+    "href": "teaching/2026-ppa/slides/lab01-prep.html",
+    "title": "Intro to R prep - Software requirements",
+    "section": "",
+    "text": "Before our first lab (Thursday, Jan 13), you will need to:"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lab01-prep.html#install-r",
+    "href": "teaching/2026-ppa/slides/lab01-prep.html#install-r",
+    "title": "Intro to R prep - Software requirements",
+    "section": "1. Install R  ",
+    "text": "1. Install R  \nFollow this link, and download it for your appropriate operating system (Linux, MacOS, or Windows).\nOnce downloaded, install R on your laptop."
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lab01-prep.html#install-rstudio",
+    "href": "teaching/2026-ppa/slides/lab01-prep.html#install-rstudio",
+    "title": "Intro to R prep - Software requirements",
+    "section": "2. Install RStudio  ",
+    "text": "2. Install RStudio  \nOnce you have already installed R, follow this link, and download RStudio for your appropriate operating system.\nIf multiple download options appear, select “Free RStudio Desktop”.\nOnce downloaded, install RStudio on your laptop.\n\n\n\n\n\n\nNote\n\n\n\nYou can run R without RStudio, but you cannot run RStudio without R.\nR is the main software, RStudio is an extra software that makes our lives easier when working with R by providing an integrated development environment."
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lab01-prep.html#download-material-from-github",
+    "href": "teaching/2026-ppa/slides/lab01-prep.html#download-material-from-github",
+    "title": "Intro to R prep - Software requirements",
+    "section": "3. Download material from GitHub  ",
+    "text": "3. Download material from GitHub  \nWe will use live coding for our meetings, meaning that we will develop the scripts together.\nAll materials, including\n\npackage installation script\n\ninitial partially-filled scripts (to use during a class period)\n\ndata sets\n\ncompletely-filled scripts (only after a class period)\n\nwill be hosted on this GitHub repository.\nTo download the materials, click on the link above and follow the instructions."
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lab01-prep.html#install-packages",
+    "href": "teaching/2026-ppa/slides/lab01-prep.html#install-packages",
+    "title": "Intro to R prep - Software requirements",
+    "section": "4. Install packages  ",
+    "text": "4. Install packages  \nIf you are not familiar with R lingo, you can think of a package as an app on your phone: a package will extend R functionality by making available to you extra software options that do not come pre-installed with R.\nWe will be using multiple packages that need to be installed, and doing so before the first lab period (Jan 9) will ensure that no one gets behind.\nAfter installing R and RStudio, and downloading the material from GitHub, follow these steps:\n\nUnzip the file downloaded from GitHub, move the unzipped folder to your desktop.\nOpen the main folder “2026_ppa”, and then open the sub-folder “01_packages”.\nDouble-click the R script file “before_installpackages.R” (this will open it in RStudio).\nOn the same RStudio window that just opened, install each package at a time by placing your cursor on the first script line and hitting Ctrl + return (Windows) or Command + return (Mac)\nSome text will start appearing on the console as the packages get installed. If successfully installed, you should see a message similar to this:\n\n\n“The downloaded binary packages are in /var/folders/88/ldswt2_n3lj26hwzphp9fmj00000gn/T//RtmpeRvdJ7/downloaded_packages”.\n\n\nKeep running each line as described above until you reach the last package installation (script line 13)\n\nTo ensure that each package was installed, run the code starting with library(\"ggplot2\"), line by line (from script lines 17 to 27).\nIf after running the library() function you get an error message like\n\n\n\n\n\n\nWarning\n\n\n\nError in library(“packagename”) :**\n**there is no package called packagename\n\n\nThis means the package was not properly installed and you may need help."
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lab01-prep.html#sign-up-for-a-free-github-account",
+    "href": "teaching/2026-ppa/slides/lab01-prep.html#sign-up-for-a-free-github-account",
+    "title": "Intro to R prep - Software requirements",
+    "section": "5. Sign-up for a free GitHub account  ",
+    "text": "5. Sign-up for a free GitHub account  \nIf you haven’t yet, please go to GitHub and sign-up for an account.\n\nOnce you have\n\nDownloaded and installed R\n\nDownloaded and installed RStudio\n\nDownloaded material from GitHub\n\nInstalled needed R packages\n\nSigned up for a GitHub account\n\nThen you are ready for the class!\n\n\n\n\n\n\nWarning\n\n\n\nIf you run into issues at any of the steps above, let me know, preferably before our class period.\nWe need to make sure everyone is ready to go at 2:20 pm, we will have very limited time for troubleshooting technical issues during the class!"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec12-digitizing/lec12-digitizing.html#acknowledgments",
+    "href": "teaching/2026-ppa/slides/lec12-digitizing/lec12-digitizing.html#acknowledgments",
+    "title": "Bastos Lab",
+    "section": "Acknowledgments",
+    "text": "Acknowledgments\nThis lecture was based on materials from Dr. George Vellidis, Geocomputation with R e-book and Intro to spatial data programmin with R e-book"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec12-digitizing/lec12-digitizing.html#learning-outcomes",
+    "href": "teaching/2026-ppa/slides/lec12-digitizing/lec12-digitizing.html#learning-outcomes",
+    "title": "Bastos Lab",
+    "section": "Learning outcomes",
+    "text": "Learning outcomes\n\nWhat is a coordinate reference system (CRS)?\n\nGeographic vs. Projected CRS\n\nWhy should you care?\n\nWhat are some of the most common CRSs used?\n\nEPSG codes"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec12-digitizing/lec12-digitizing.html#what-is-a-coordinate-reference-system-crs",
+    "href": "teaching/2026-ppa/slides/lec12-digitizing/lec12-digitizing.html#what-is-a-coordinate-reference-system-crs",
+    "title": "Bastos Lab",
+    "section": "What is a coordinate reference system (CRS)?",
+    "text": "What is a coordinate reference system (CRS)?\n\nGeospatial data like vector and raster layers require a CRS to be correctly placed in space.\nA CRS defines how the spatial elements of the data relate to the surface of the Earth (or other bodies)\nCRSs are either geographic or projected\nCRSs rely on a datum"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec12-digitizing/lec12-digitizing.html#datum",
+    "href": "teaching/2026-ppa/slides/lec12-digitizing/lec12-digitizing.html#datum",
+    "title": "Bastos Lab",
+    "section": "Datum",
+    "text": "Datum\n\nContains information on what ellipsoid to use and the precise relationship between the coordinates and location on the Earth’s surface\nTwo types of datum: geocentric and local"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec12-digitizing/lec12-digitizing.html#geographic-crs",
+    "href": "teaching/2026-ppa/slides/lec12-digitizing/lec12-digitizing.html#geographic-crs",
+    "title": "Bastos Lab",
+    "section": "Geographic CRS",
+    "text": "Geographic CRS\n\nNormally uses a geocentric datum\nUses angular measurement units (e.g., degrees of longitude and latitude) to locate something in space\nLongitude: location in the East-West direction\nLatitude: location in the North-South direction\nPopular example: WGS84"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec12-digitizing/lec12-digitizing.html#projected-crs",
+    "href": "teaching/2026-ppa/slides/lec12-digitizing/lec12-digitizing.html#projected-crs",
+    "title": "Bastos Lab",
+    "section": "Projected CRS",
+    "text": "Projected CRS\n\nNormally uses a local datum\nConvert the three-dimensional surface of the Earth into Easting and Northing (x and y)\nUses linear measurement units, as for ex., meters\nPopular example: Universal Transverse Mercator (UTM)"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec12-digitizing/lec12-digitizing.html#projected-crs-utm",
+    "href": "teaching/2026-ppa/slides/lec12-digitizing/lec12-digitizing.html#projected-crs-utm",
+    "title": "Bastos Lab",
+    "section": "Projected CRS: UTM",
+    "text": "Projected CRS: UTM\n\nDivides the Earth into 60 zones, each 6° of longitude in width.\nEach zone uses a transverse Mercator projection that maps a region of large north-south extent with low distortion.\nEach partition has a numerical code followed by the N-S hemisphere"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec12-digitizing/lec12-digitizing.html#projected-crs-utm-1",
+    "href": "teaching/2026-ppa/slides/lec12-digitizing/lec12-digitizing.html#projected-crs-utm-1",
+    "title": "Bastos Lab",
+    "section": "Projected CRS: UTM",
+    "text": "Projected CRS: UTM"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec12-digitizing/lec12-digitizing.html#projected-crs-utm-in-the-usa",
+    "href": "teaching/2026-ppa/slides/lec12-digitizing/lec12-digitizing.html#projected-crs-utm-in-the-usa",
+    "title": "Bastos Lab",
+    "section": "Projected CRS: UTM in the USA",
+    "text": "Projected CRS: UTM in the USA\n\n\nGeorgia is within zones 16 and 17 North"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec12-digitizing/lec12-digitizing.html#geographic-vs.-projected-crs",
+    "href": "teaching/2026-ppa/slides/lec12-digitizing/lec12-digitizing.html#geographic-vs.-projected-crs",
+    "title": "Bastos Lab",
+    "section": "Geographic vs. Projected CRS",
+    "text": "Geographic vs. Projected CRS\n - Can you spot the difference(s)? Which is which?"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec12-digitizing/lec12-digitizing.html#geographic-vs.-projected-crs-1",
+    "href": "teaching/2026-ppa/slides/lec12-digitizing/lec12-digitizing.html#geographic-vs.-projected-crs-1",
+    "title": "Bastos Lab",
+    "section": "Geographic vs. Projected CRS",
+    "text": "Geographic vs. Projected CRS\n - What about now?"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec12-digitizing/lec12-digitizing.html#how-to-refer-to-a-crs",
+    "href": "teaching/2026-ppa/slides/lec12-digitizing/lec12-digitizing.html#how-to-refer-to-a-crs",
+    "title": "Bastos Lab",
+    "section": "How to refer to a CRS?",
+    "text": "How to refer to a CRS?\nCRSs can be described in many ways, including:\n\nSimple and ambiguous statements like “it’s in lon/lat coordinates”\nFormalized yet now outdated ‘proj4 strings’ (also known as ‘proj-string’) such as +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs\nWith an identifying ‘authority:code’ text string such as EPSG:4326 (preferable)\nWith a WKT description (most thorough, though long)"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec12-digitizing/lec12-digitizing.html#why-is-epsg-preferable",
+    "href": "teaching/2026-ppa/slides/lec12-digitizing/lec12-digitizing.html#why-is-epsg-preferable",
+    "title": "Bastos Lab",
+    "section": "Why is EPSG preferable?",
+    "text": "Why is EPSG preferable?\n\nMachine readable\n\nShort and easy to remember and reference to\n\nEasily findable online on EPSG website"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec12-digitizing/lec12-digitizing.html#why-should-i-care-about-crs",
+    "href": "teaching/2026-ppa/slides/lec12-digitizing/lec12-digitizing.html#why-should-i-care-about-crs",
+    "title": "Bastos Lab",
+    "section": "Why should I care about CRS?",
+    "text": "Why should I care about CRS?\n\n\nWhen working with multiple geospatial layers, it is important to have them on the same CRS so layering operations can work properly."
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec12-digitizing/lec12-digitizing.html#why-should-i-care-about-geographic-vs.-projected-crs",
+    "href": "teaching/2026-ppa/slides/lec12-digitizing/lec12-digitizing.html#why-should-i-care-about-geographic-vs.-projected-crs",
+    "title": "Bastos Lab",
+    "section": "Why should I care about geographic vs. projected CRS?",
+    "text": "Why should I care about geographic vs. projected CRS?\n\nKnowing which CRS your data is in, and whether it is in geographic (lon/lat) or projected (typically meters), is important and has consequences for how R handles spatial and geometry operations\nR has become better to project on-the-fly geographic CRSs for distance-based operations like buffering, clipping, etc.\nHowever, still not fool proof:"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec12-digitizing/lec12-digitizing.html#why-should-i-care-about-geographic-vs.-projected-crs-1",
+    "href": "teaching/2026-ppa/slides/lec12-digitizing/lec12-digitizing.html#why-should-i-care-about-geographic-vs.-projected-crs-1",
+    "title": "Bastos Lab",
+    "section": "Why should I care about geographic vs. projected CRS?",
+    "text": "Why should I care about geographic vs. projected CRS?"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec12-digitizing/lec12-digitizing.html#bottom-line-is",
+    "href": "teaching/2026-ppa/slides/lec12-digitizing/lec12-digitizing.html#bottom-line-is",
+    "title": "Bastos Lab",
+    "section": "Bottom line is…",
+    "text": "Bottom line is…\n\nNeed to have geospatial layers within a project containing the same CRS\nIf CRS is absent, need to set the original CRS of that object\nIf CRS is present but different, need to transform it to a common one\nIf conducting distance-based operations, preferable to have layers in a projected CRS"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec12-digitizing/lec12-digitizing.html#recapping",
+    "href": "teaching/2026-ppa/slides/lec12-digitizing/lec12-digitizing.html#recapping",
+    "title": "Bastos Lab",
+    "section": "Recapping",
+    "text": "Recapping\n\nCRS sets the spatial location of an object\n\nGeographic vs. projected CRS\n\nNeed to have layers in a project under same CRS\n\nPrefer projected CRS when performing distance-based operations"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec12-digitizing/lec12-digitizing.html#some-common-crs-and-their-epsg-codes-for-this-class",
+    "href": "teaching/2026-ppa/slides/lec12-digitizing/lec12-digitizing.html#some-common-crs-and-their-epsg-codes-for-this-class",
+    "title": "Bastos Lab",
+    "section": "Some common CRS and their EPSG codes for this class",
+    "text": "Some common CRS and their EPSG codes for this class\n\nGeographic: WGS84 is EPSG:4326\nProjected: UTM Zone 17N is EPSG:32617"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec22-soileca.html#what-is-electrical-conductivity-ec",
+    "href": "teaching/2026-ppa/slides/lec22-soileca.html#what-is-electrical-conductivity-ec",
+    "title": "Soil apparent electrical conductivity (ECa)",
+    "section": "What is electrical conductivity (EC)?",
+    "text": "What is electrical conductivity (EC)?\n\nMeasure of how much electrical current is conducted through a medium, measured in Siemens or milliSiemens/meter (S or mS/m)\nRelates to level of ionic charges able to conduct electrical current\nInitially developed to measure salt concentration in soil water and relate it back to crop growing suitability (saline/sodic soils)"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec22-soileca.html#how-has-it-been-traditionally-measured-in-soils",
+    "href": "teaching/2026-ppa/slides/lec22-soileca.html#how-has-it-been-traditionally-measured-in-soils",
+    "title": "Soil apparent electrical conductivity (ECa)",
+    "section": "How has it been traditionally measured in soils?",
+    "text": "How has it been traditionally measured in soils?\n\nSoil sample is collected on the field, brought to a laboratory, saturated with water, and its extractant measured for electrical conductivity (ECe) between two electrodes.\nTime-consuming and labor-intensive, not feasible for PA applications."
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec22-soileca.html#what-is-bulk-soil-apparent-electrical-conductivity-eca",
+    "href": "teaching/2026-ppa/slides/lec22-soileca.html#what-is-bulk-soil-apparent-electrical-conductivity-eca",
+    "title": "Soil apparent electrical conductivity (ECa)",
+    "section": "What is bulk soil apparent electrical conductivity (ECa)?",
+    "text": "What is bulk soil apparent electrical conductivity (ECa)?\nBulk soil apparent electrical conductivity measures EC of bulk soil (liquid and solid phases)."
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec22-soileca.html#how-can-soil-eca-be-measured-in-situ",
+    "href": "teaching/2026-ppa/slides/lec22-soileca.html#how-can-soil-eca-be-measured-in-situ",
+    "title": "Soil apparent electrical conductivity (ECa)",
+    "section": "How can soil ECa be measured in-situ?",
+    "text": "How can soil ECa be measured in-situ?\nThree methods exist to measure in-situ bulk soil ECa:\n\nElectrical resistivity\n\nElectromagnetic induction\n\nTime-domain reflectometry (TDR)"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec22-soileca.html#electrical-resistivity",
+    "href": "teaching/2026-ppa/slides/lec22-soileca.html#electrical-resistivity",
+    "title": "Soil apparent electrical conductivity (ECa)",
+    "section": "1. Electrical resistivity",
+    "text": "1. Electrical resistivity\n\nCommercial example: Veris 3100\n\n\n\n\n\n\n\n\n\nDifferent disk distances relate to different soil depths."
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec22-soileca.html#electromagnetic-induction",
+    "href": "teaching/2026-ppa/slides/lec22-soileca.html#electromagnetic-induction",
+    "title": "Soil apparent electrical conductivity (ECa)",
+    "section": "2. Electromagnetic induction",
+    "text": "2. Electromagnetic induction\n\nCommercial example: Geonics EM38\n\n\n\n\n\n\n\n\n\nFixed depth, no flexibility to change it."
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec22-soileca.html#time-domain-reflectometry-tdr",
+    "href": "teaching/2026-ppa/slides/lec22-soileca.html#time-domain-reflectometry-tdr",
+    "title": "Soil apparent electrical conductivity (ECa)",
+    "section": "3. Time-domain reflectometry (TDR)",
+    "text": "3. Time-domain reflectometry (TDR)\n\n\n\n\n\n\n\n\nLeast scalable among the in-situ methods."
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec22-soileca.html#what-affects-soil-eca",
+    "href": "teaching/2026-ppa/slides/lec22-soileca.html#what-affects-soil-eca",
+    "title": "Soil apparent electrical conductivity (ECa)",
+    "section": "What affects soil ECa?",
+    "text": "What affects soil ECa?\n\nSoil salinity\n\nSoil water content\nSoil texture\n\nSoil temperature\n\nSoil organic matter content\n\nSoil bulk density/porosity\n\n\n\n\n\n\n\n\n\n\n\nBecause it is affected by so many factors, soil ECa data can only be interpreted within the context of a given field, and not used to compare across fields."
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec22-soileca.html#soil-salinity-vs.-soil-eca",
+    "href": "teaching/2026-ppa/slides/lec22-soileca.html#soil-salinity-vs.-soil-eca",
+    "title": "Soil apparent electrical conductivity (ECa)",
+    "section": "soil salinity vs. soil ECa",
+    "text": "soil salinity vs. soil ECa\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAs solution salinity (ECe) increases, bulk soil conductivity (ECa) also increases\nDifferent lines are different soils"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec22-soileca.html#soil-water-content-vs.-soil-eca",
+    "href": "teaching/2026-ppa/slides/lec22-soileca.html#soil-water-content-vs.-soil-eca",
+    "title": "Soil apparent electrical conductivity (ECa)",
+    "section": "soil water content vs. soil ECa",
+    "text": "soil water content vs. soil ECa\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAs soil volumetric water content (\\(\\theta\\)) increases, bulk soil conductivity (ECa = \\(\\sigma_a\\)) increases, modulated by solution salinity (ECe = \\(\\sigma_w\\))\nImportant when taking EC data, need similar levels of soil moisture across a field for quality EC data"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec22-soileca.html#soil-texture-vs.-soil-eca",
+    "href": "teaching/2026-ppa/slides/lec22-soileca.html#soil-texture-vs.-soil-eca",
+    "title": "Soil apparent electrical conductivity (ECa)",
+    "section": "soil texture vs. soil ECa",
+    "text": "soil texture vs. soil ECa"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec22-soileca.html#why-is-soil-eca-important-in-pa",
+    "href": "teaching/2026-ppa/slides/lec22-soileca.html#why-is-soil-eca-important-in-pa",
+    "title": "Soil apparent electrical conductivity (ECa)",
+    "section": "Why is soil ECa important in PA?",
+    "text": "Why is soil ECa important in PA?\n\n\n\nWhen soil ECa is mostly controlled by texture, it can be used to create texture-based zones.\n\n\n\nImportant in PA as texture can be correlated with yield limiting factors like water/nutrient availability and CEC."
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec22-soileca.html#quiz",
+    "href": "teaching/2026-ppa/slides/lec22-soileca.html#quiz",
+    "title": "Soil apparent electrical conductivity (ECa)",
+    "section": "Quiz",
+    "text": "Quiz\nGo to eLC…"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec04-crs/lec04-crs.html#acknowledgments",
+    "href": "teaching/2026-ppa/slides/lec04-crs/lec04-crs.html#acknowledgments",
+    "title": "Bastos Lab",
+    "section": "Acknowledgments",
+    "text": "Acknowledgments\nThis lecture was based on materials from Dr. George Vellidis, Geocomputation with R e-book and Intro to spatial data programmin with R e-book"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec04-crs/lec04-crs.html#learning-outcomes",
+    "href": "teaching/2026-ppa/slides/lec04-crs/lec04-crs.html#learning-outcomes",
+    "title": "Bastos Lab",
+    "section": "Learning outcomes",
+    "text": "Learning outcomes\n\nWhat is a coordinate reference system (CRS)?\n\nGeographic vs. Projected CRS\n\nWhy should you care?\n\nWhat are some of the most common CRSs used?\n\nEPSG codes"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec04-crs/lec04-crs.html#what-is-a-coordinate-reference-system-crs",
+    "href": "teaching/2026-ppa/slides/lec04-crs/lec04-crs.html#what-is-a-coordinate-reference-system-crs",
+    "title": "Bastos Lab",
+    "section": "What is a coordinate reference system (CRS)?",
+    "text": "What is a coordinate reference system (CRS)?\n\nGeospatial data like vector and raster layers require a CRS to be correctly placed in space.\nA CRS defines how the spatial elements of the data relate to the surface of the Earth (or other bodies)\nCRSs are either geographic or projected\nCRSs rely on a datum"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec04-crs/lec04-crs.html#datum",
+    "href": "teaching/2026-ppa/slides/lec04-crs/lec04-crs.html#datum",
+    "title": "Bastos Lab",
+    "section": "Datum",
+    "text": "Datum\n\nContains information on what ellipsoid to use and the precise relationship between the coordinates and location on the Earth’s surface\nTwo types of datum: geocentric and local"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec04-crs/lec04-crs.html#geographic-crs",
+    "href": "teaching/2026-ppa/slides/lec04-crs/lec04-crs.html#geographic-crs",
+    "title": "Bastos Lab",
+    "section": "Geographic CRS",
+    "text": "Geographic CRS\n\nNormally uses a geocentric datum\nUses angular measurement units (e.g., degrees of longitude and latitude) to locate something in space\nLongitude: location in the East-West direction\nLatitude: location in the North-South direction\nPopular example: WGS84"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec04-crs/lec04-crs.html#projected-crs",
+    "href": "teaching/2026-ppa/slides/lec04-crs/lec04-crs.html#projected-crs",
+    "title": "Bastos Lab",
+    "section": "Projected CRS",
+    "text": "Projected CRS\n\nNormally uses a local datum\nConvert the three-dimensional surface of the Earth into Easting and Northing (x and y)\nUses linear measurement units, as for ex., meters\nPopular example: Universal Transverse Mercator (UTM)"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec04-crs/lec04-crs.html#projected-crs-utm",
+    "href": "teaching/2026-ppa/slides/lec04-crs/lec04-crs.html#projected-crs-utm",
+    "title": "Bastos Lab",
+    "section": "Projected CRS: UTM",
+    "text": "Projected CRS: UTM\n\nDivides the Earth into 60 zones, each 6° of longitude in width.\nEach zone uses a transverse Mercator projection that maps a region of large north-south extent with low distortion.\nEach partition has a numerical code followed by the N-S hemisphere"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec04-crs/lec04-crs.html#projected-crs-utm-1",
+    "href": "teaching/2026-ppa/slides/lec04-crs/lec04-crs.html#projected-crs-utm-1",
+    "title": "Bastos Lab",
+    "section": "Projected CRS: UTM",
+    "text": "Projected CRS: UTM"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec04-crs/lec04-crs.html#projected-crs-utm-in-the-usa",
+    "href": "teaching/2026-ppa/slides/lec04-crs/lec04-crs.html#projected-crs-utm-in-the-usa",
+    "title": "Bastos Lab",
+    "section": "Projected CRS: UTM in the USA",
+    "text": "Projected CRS: UTM in the USA\n\n\nGeorgia is within zones 16 and 17 North"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec04-crs/lec04-crs.html#geographic-vs.-projected-crs",
+    "href": "teaching/2026-ppa/slides/lec04-crs/lec04-crs.html#geographic-vs.-projected-crs",
+    "title": "Bastos Lab",
+    "section": "Geographic vs. Projected CRS",
+    "text": "Geographic vs. Projected CRS\n - Can you spot the difference(s)? Which is which?"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec04-crs/lec04-crs.html#geographic-vs.-projected-crs-1",
+    "href": "teaching/2026-ppa/slides/lec04-crs/lec04-crs.html#geographic-vs.-projected-crs-1",
+    "title": "Bastos Lab",
+    "section": "Geographic vs. Projected CRS",
+    "text": "Geographic vs. Projected CRS\n - What about now?"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec04-crs/lec04-crs.html#how-to-refer-to-a-crs",
+    "href": "teaching/2026-ppa/slides/lec04-crs/lec04-crs.html#how-to-refer-to-a-crs",
+    "title": "Bastos Lab",
+    "section": "How to refer to a CRS?",
+    "text": "How to refer to a CRS?\nCRSs can be described in many ways, including:\n\nSimple and ambiguous statements like “it’s in lon/lat coordinates”\nFormalized yet now outdated ‘proj4 strings’ (also known as ‘proj-string’) such as +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs\nWith an identifying ‘authority:code’ text string such as EPSG:4326 (preferable)\nWith a WKT description (most thorough, though long)"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec04-crs/lec04-crs.html#why-is-epsg-preferable",
+    "href": "teaching/2026-ppa/slides/lec04-crs/lec04-crs.html#why-is-epsg-preferable",
+    "title": "Bastos Lab",
+    "section": "Why is EPSG preferable?",
+    "text": "Why is EPSG preferable?\n\nMachine readable\n\nShort and easy to remember and reference to\n\nEasily findable online on EPSG website"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec04-crs/lec04-crs.html#why-should-i-care-about-crs",
+    "href": "teaching/2026-ppa/slides/lec04-crs/lec04-crs.html#why-should-i-care-about-crs",
+    "title": "Bastos Lab",
+    "section": "Why should I care about CRS?",
+    "text": "Why should I care about CRS?\n\n\nWhen working with multiple geospatial layers, it is important to have them on the same CRS so layering operations can work properly."
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec04-crs/lec04-crs.html#why-should-i-care-about-geographic-vs.-projected-crs",
+    "href": "teaching/2026-ppa/slides/lec04-crs/lec04-crs.html#why-should-i-care-about-geographic-vs.-projected-crs",
+    "title": "Bastos Lab",
+    "section": "Why should I care about geographic vs. projected CRS?",
+    "text": "Why should I care about geographic vs. projected CRS?\n\nKnowing which CRS your data is in, and whether it is in geographic (lon/lat) or projected (typically meters), is important and has consequences for how R handles spatial and geometry operations\nR has become better to project on-the-fly geographic CRSs for distance-based operations like buffering, clipping, etc.\nHowever, still not fool proof:"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec04-crs/lec04-crs.html#why-should-i-care-about-geographic-vs.-projected-crs-1",
+    "href": "teaching/2026-ppa/slides/lec04-crs/lec04-crs.html#why-should-i-care-about-geographic-vs.-projected-crs-1",
+    "title": "Bastos Lab",
+    "section": "Why should I care about geographic vs. projected CRS?",
+    "text": "Why should I care about geographic vs. projected CRS?"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec04-crs/lec04-crs.html#bottom-line-is",
+    "href": "teaching/2026-ppa/slides/lec04-crs/lec04-crs.html#bottom-line-is",
+    "title": "Bastos Lab",
+    "section": "Bottom line is…",
+    "text": "Bottom line is…\n\nNeed to have geospatial layers within a project containing the same CRS\nIf CRS is absent, need to set the original CRS of that object\nIf CRS is present but different, need to transform it to a common one\nIf conducting distance-based operations, preferable to have layers in a projected CRS"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec04-crs/lec04-crs.html#recapping",
+    "href": "teaching/2026-ppa/slides/lec04-crs/lec04-crs.html#recapping",
+    "title": "Bastos Lab",
+    "section": "Recapping",
+    "text": "Recapping\n\nCRS sets the spatial location of an object\n\nGeographic vs. projected CRS\n\nNeed to have layers in a project under same CRS\n\nPrefer projected CRS when performing distance-based operations"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec04-crs/lec04-crs.html#some-common-crs-and-their-epsg-codes-for-this-class",
+    "href": "teaching/2026-ppa/slides/lec04-crs/lec04-crs.html#some-common-crs-and-their-epsg-codes-for-this-class",
+    "title": "Bastos Lab",
+    "section": "Some common CRS and their EPSG codes for this class",
+    "text": "Some common CRS and their EPSG codes for this class\n\nGeographic: WGS84 is EPSG:4326\nProjected: UTM Zone 17N is EPSG:32617"
+  },
+  {
+    "objectID": "teaching/2026-ppa/2026-ppa.html",
+    "href": "teaching/2026-ppa/2026-ppa.html",
+    "title": "CRSS 4280/6280\nProgramming Precision Ag.\n(UGA Spring 2026)",
+    "section": "",
+    "text": "Hi there!\nThis is the welcome page for the 2026 CRSS 4280/6280 Programming Precision Ag taught by Dr. Leo Bastos.\nBelow you will find:"
+  },
+  {
+    "objectID": "teaching/2026-ppa/2026-ppa.html#course-information",
+    "href": "teaching/2026-ppa/2026-ppa.html#course-information",
+    "title": "CRSS 4280/6280\nProgramming Precision Ag.\n(UGA Spring 2026)",
+    "section": "Course information",
+    "text": "Course information\n\nGeneral information\n\nCRSS 4280/6280 - Programming Precision Agriculture\n\nSpring Semester 2026\n\n3 credit hours\n\n\n\nMeeting times and locations\n\nLectures: Tuesdays at 02:55 - 05:05 pm\n\nLabs: Thursdays at 02:55 - 05:05 pm\n\nLocation:\n\nAthens campus: in person at 1203 Miller Plant Sciences\n\nTifton campus: in person at 601 NESPAL South OR remote\n\nGriffin campus: in person at 107 SLC OR remote\n\n\n\n\nPrerequisites\nCRSS 3030 – Principles of Precision Agriculture\n\n\nCo-requisites\nCRSS 4050 / 6050 – Improving Nutrient and Energy Efficiency with Geographic Information Systems or equivalent GIS course."
+  },
+  {
+    "objectID": "teaching/2026-ppa/2026-ppa.html#instructors-information",
+    "href": "teaching/2026-ppa/2026-ppa.html#instructors-information",
+    "title": "CRSS 4280/6280\nProgramming Precision Ag.\n(UGA Spring 2026)",
+    "section": "Instructors information",
+    "text": "Instructors information\n\nGeneral information\nDr. Leonardo M. Bastos, Assistant Professor\nCrop & Soil Sciences Dept.\n4101 Miller Plant Sciences Building, Athens Campus\nUniversity of Georgia\nEmail: lmbastos@uga.edu\nURL: leombastos.github.io/bastoslab/\n\n\nOffice hours\nNo specific office hours. Please email instructor to arrange a time to meet."
+  },
+  {
+    "objectID": "teaching/2026-ppa/2026-ppa.html#course-description-and-details",
+    "href": "teaching/2026-ppa/2026-ppa.html#course-description-and-details",
+    "title": "CRSS 4280/6280\nProgramming Precision Ag.\n(UGA Spring 2026)",
+    "section": "Course description and details",
+    "text": "Course description and details\n\nDescription\nThe course will emphasize sampling plan, obtaining and processing, and using various agricultural geospatial data layers for decision making related to precision agriculture. Data types used in the course include publicly available like weather, soils, and satellite remote sensing, and private data like yield monitor, Veris-derived soil electrical conductivity and elevation, and drone remote sensing. Data processing steps include cleaning, removal of outliers, normalization, interpolation, and drone imagery processing. Analytical techniques include clustering for creation of management zones, zone-based and imagery-based variable rate prescription, profitability maps, and use of satellite remote sensing for crop scouting. All steps will be conducted utilizing the R statistical language to create well documented and reproducible precision agriculture analytical workflows. No previous knowledge in R is required.\n\n\nCourse learning outcomes\nProvide students with a good understanding of the emerging areas in precision agriculture, the ability to find, analyze and evaluate spatially distributed data sets, and the experience to use key precision agriculture tools and technologies. Additional goals are to:\n\nextend critical thinking and problem solving abilities\n\nimprove written and oral communication skills\n\nlearn how to create, present, and interpret maps\n\ncreate reproducible analytical workflows using R\n\n\n\nTopical Outline\n\nIntro to R\n\nUsing R as a geographic information system (GIS)\n\nAccessing publicly available geospatial data through R\n\nCrop statistics from USDA NASS\n\nSoils data from SSURGO\n\nWeather and satellite remote sensing\n\nState and county boundaries\n\n\nDigitizing field boundaries\n\nCreating grids for soil sampling\n\nGeostatistics for point-data interpolation Inverse distance weighting\n\nYield monitor data processing\n\nUnderstand the sources of error\n\nCleaning and removal of erroneous data points\n\nSpatial and temporal yield variability analysis\n\n\nTerrain data processing\n\nElevation\n\nAspect\n\nSlope\n\n\nManagement zones\n\nCombining yield and soils data\n\nCreating management zones with cluster analysis\n\nValidating management zones\n\n\nVariable rate prescription\n\nZone-based variable rate prescription\n\nImagery-based variable rate prescription\n\n\nProfitability maps\n\nSatellite remote sensing for crop scouting\n\nCourse final project\n\nThe topical outline is a general plan for the course; deviations announced to the class by the instructor may be necessary."
+  },
+  {
+    "objectID": "teaching/2026-ppa/2026-ppa.html#course-materials",
+    "href": "teaching/2026-ppa/2026-ppa.html#course-materials",
+    "title": "CRSS 4280/6280\nProgramming Precision Ag.\n(UGA Spring 2026)",
+    "section": "Course materials",
+    "text": "Course materials\n\nTextbook\nA textbook is not required. Reading materials will be supplied by instructor and will include benchmark research articles, manuals, and other materials.\n\n\nTechnology and software requirements\nStudents will need to have access to:\n\nA computer (to install software, code along with instructors)\n\nA second screen (main screen to code along, second screen to watch class if not in person)\n\nIf a student does not have access to these resources (personal laptop/desktop and a second screen), please let instructors know to ensure proper accommodations can be made.\n\n\nCourse website\nImportant links related to this course:\n\nCourse website\n\nCourse GitHub repository\n\nCourse YouTube channel"
+  },
+  {
+    "objectID": "teaching/2026-ppa/2026-ppa.html#assessment-and-grading",
+    "href": "teaching/2026-ppa/2026-ppa.html#assessment-and-grading",
+    "title": "CRSS 4280/6280\nProgramming Precision Ag.\n(UGA Spring 2026)",
+    "section": "Assessment and Grading",
+    "text": "Assessment and Grading\n\nGrading categories\nThe grade you receive in this course will be determined from your performance on a mini-project, one mid-term exam, periodic quizzes, homework assignments and lab reports, a final project, and class participation. These factors will be weighted as follows:\n\n\n\n\n\n\n  \n    \n      Activity\n      Grade\n    \n  \n  \n    Mini-project: USDA NASS data\n10%\n    Mid-term exam\n10%\n    Homework assignments\n35%\n    In-class quizzes\n15%\n    Final project:\nfrom raw data to zone-based variable rate\n20%\n    Class participation\n10%\n  \n  \n\n\n\n\n\n\nWritten assignment quality\nUp to thirty percent of the grade on written assignments (mini-project, homework, final project) will be based on quality of communication.\nSpelling, grammar, punctuation, and clarity of writing are evidence of written communication quality.\n\n\nClass participation\nActive class participation is important for you to achieve the learning goals of the class. To receive maximum credit for class participation you must\n\nattend every class period (lecture or laboratory)\n\narrive on time and remain for the entire class period\n\nyou are actively engaged and attentive throughout the class period\n\nparticipate in the class discussion and ask and answer questions\n\n\n\nGrading scale\nFinal grades will be assigned as follows:\n\n\n\n\n\n\n  \n    \n      Letter\n      Grade\n    \n  \n  \n    A\n93 and above\n    A-\n90-92\n    B+\n87-89\n    B\n83-86\n    B-\n80-82\n    C+\n77-79\n    C\n73-76\n    C-\n70-72\n    D+\n67-69\n    D\n63-66\n    D-\n60-62\n    F\n59 and below\n  \n  \n\n\n\n\n\n\nExtra credit opportunities\nExtra credit opportunities may be made available during projects, homework assignments, and exams, at the discretion of the instructor."
+  },
+  {
+    "objectID": "teaching/2026-ppa/2026-ppa.html#course-statements-and-policies",
+    "href": "teaching/2026-ppa/2026-ppa.html#course-statements-and-policies",
+    "title": "CRSS 4280/6280\nProgramming Precision Ag.\n(UGA Spring 2026)",
+    "section": "Course statements and policies",
+    "text": "Course statements and policies\n\nAcademic honesty\nUGA Student Honor Code: “I will be academically honest in all of my academic work and will not tolerate academic dishonesty of others.” A Culture of Honesty, the University’s policy and procedures for handling cases of suspected dishonesty, can be found at www.uga.edu/ovpi.\nFor this course, all lab reports, projects, and other assignments can be discussed with your classmates but any work you turn in must be your own.\nStudents can work together through coding exercises, but direct copying and pasting from a colleague will be considered plagiarism.\nIf using code from an online source, it is ok to copy and paste IF proper credit is given (e.g., showing the website source from where the code was obtained).\nUnless explicitly stated, artificial intelligence-based technologies, such as ChatGPT, must not be used to generate responses for student assignments.\n\n\nAttendance policy\nStudents are expected to attend every class period.\nStudents on the Athens campus must attend class in-person. If a special circumstance arise (illness, travel, etc.), student absence or remote attendance must be informed to instructors prior to that class period.\nStudents on the Tifton and Griffin campuses may attend class in-person on their campuses or remote using the zoom link information. Student absence must be informed to instructors prior to that class period.\nPer Board of Regents policy, I reserve the right to drop students from the class roll who miss more than 5 class periods unexcused. Such students will be given a WF grade.\n\n\nDisclaimer\nThe course syllabus is a general plan for the course; deviations announced to the class by the instructor may be necessary.\n\n\nMake-up procedures\n\nThere will be no make-ups for missed quizzes. Any missed quiz will be recorded as a zero\n\nExams can be made up only with a note from a doctor or if you can document extenuating circumstances. Any unexcused missed exam will be recorded as a zero\n\nHomework assignments will be accepted up to one week beyond the due date. The penalty for submitting a late assignment is one letter grade\n\nHomework assignments may be submitted late without penalty in case of illness, extenuating circumstances, or if prior arrangements are made with the instructors. All late assignments are due within a week of the original due date or within a week of when a student returns from an illness\n\n\n\nMental Health and Wellness Resources\n\nIf you or someone you know needs assistance, you are encouraged to contact Student Care and Outreach in the Division of Student Affairs at 706-542-7774 or visit https://sco.uga.edu/. They will help you navigate any difficult circumstances you may be facing by connecting you with the appropriate resources or services.\n\nUGA has several resources for a student seeking mental health services (https://www.uhs.uga.edu/bewelluga/bewelluga) or crisis support (https://www.uhs.uga.edu/info/emergencies).\n\nIf you need help managing stress anxiety, relationships, etc., please visit BeWellUGA (https://www.uhs.uga.edu/bewelluga/bewelluga) for a list of FREE workshops, classes, mentoring, and health coaching led by licensed clinicians and health educators in the University Health Center.\n\nAdditional resources can be accessed through the UGA App.\n\n\n\nDisability statement\nIf you plan to request accommodations for a disability, please register with the Disability Resource Center. They can be reached by visiting Clark Howell Hall, calling 706-542-8719 (voice) or 706-542-8778 (TTY), or by visiting https://sitedrc.uga.edu"
+  },
+  {
     "objectID": "teaching/2021-wrangit.html",
     "href": "teaching/2021-wrangit.html",
     "title": "Data Wrangling and Iteration Workshop",
@@ -3854,7 +4309,7 @@
     "href": "teaching/2026-dsa/slides/lec01.html#office-hours",
     "title": "Welcome to CRSS 8030\nData Science Applied to Ag!",
     "section": "Office hours",
-    "text": "Office hours\n\nThe TA office hours are Monday and Thursday from 2 to 4 pm, upon appointment.\nIf you need assistance, please email Anish to get a time scheduled within the windows above.\nAlways start seeking help by posting on GitHub (more on this later), and only then reach out to Anish."
+    "text": "Office hours\n\nThe TA office hours are Thursday from 1 to 3 pm, upon appointment.\nIf you need assistance, please email Anish to get a time scheduled within the windows above.\nAlways start seeking help by posting on GitHub (more on this later), and only then reach out to Anish."
   },
   {
     "objectID": "teaching/2026-dsa/slides/lec01.html#meeting-times-and-locations",
@@ -4081,11 +4536,11 @@
     "text": "General information\nDr. Leonardo M. Bastos, Assistant Professor\nCrop & Soil Sciences Dept.\n4101 Miller Plant Sciences Building, Athens Campus\nUniversity of Georgia\nEmail: lmbastos@uga.edu\nURL: leombastos.github.io/bastoslab/\nAnish Bhattarai, PhD student\nDepartment of Crop & Soil Sciences\nMiller Plant Sciences Building, Athens Campus\nUniversity of Georgia\nEmail: ab68010@uga.edu"
   },
   {
-    "objectID": "teaching/2026-dsa/2026-dsa.html#office-hours-need-to-check-with-anish",
-    "href": "teaching/2026-dsa/2026-dsa.html#office-hours-need-to-check-with-anish",
+    "objectID": "teaching/2026-dsa/2026-dsa.html#office-hours",
+    "href": "teaching/2026-dsa/2026-dsa.html#office-hours",
     "title": "CRSS 8030\nData Science and Statistical Programming Applied to Ag.\n(UGA Spring 2026)",
-    "section": "Office hours NEED TO CHECK WITH ANISH!",
-    "text": "Office hours NEED TO CHECK WITH ANISH!\nThe TA office hours are Monday and Thursday from 2 to 4 pm, upon appointment. Please email Anish if you need help to get a time scheduled within the windows above."
+    "section": "Office hours",
+    "text": "Office hours\nThe TA office hours are Thursday from 1 to 3 pm, upon appointment. Please email Anish if you need help to get a time scheduled within the windows above."
   },
   {
     "objectID": "teaching/2026-dsa/2026-dsa.html#description",
@@ -8482,6 +8937,321 @@
     "title": "Schedule",
     "section": "",
     "text": "Setup.\n\nlibrary(lubridate)\nlibrary(tidyverse)\n\n\nbegin &lt;- as.Date(\"2023-01-09\")\nend &lt;- as.Date(\"2023-05-09\")\n\n\ndates &lt;- seq.Date(from = begin, \n                  to = end, \n                  by = 1)\n\ndates\n\n  [1] \"2023-01-09\" \"2023-01-10\" \"2023-01-11\" \"2023-01-12\" \"2023-01-13\"\n  [6] \"2023-01-14\" \"2023-01-15\" \"2023-01-16\" \"2023-01-17\" \"2023-01-18\"\n [11] \"2023-01-19\" \"2023-01-20\" \"2023-01-21\" \"2023-01-22\" \"2023-01-23\"\n [16] \"2023-01-24\" \"2023-01-25\" \"2023-01-26\" \"2023-01-27\" \"2023-01-28\"\n [21] \"2023-01-29\" \"2023-01-30\" \"2023-01-31\" \"2023-02-01\" \"2023-02-02\"\n [26] \"2023-02-03\" \"2023-02-04\" \"2023-02-05\" \"2023-02-06\" \"2023-02-07\"\n [31] \"2023-02-08\" \"2023-02-09\" \"2023-02-10\" \"2023-02-11\" \"2023-02-12\"\n [36] \"2023-02-13\" \"2023-02-14\" \"2023-02-15\" \"2023-02-16\" \"2023-02-17\"\n [41] \"2023-02-18\" \"2023-02-19\" \"2023-02-20\" \"2023-02-21\" \"2023-02-22\"\n [46] \"2023-02-23\" \"2023-02-24\" \"2023-02-25\" \"2023-02-26\" \"2023-02-27\"\n [51] \"2023-02-28\" \"2023-03-01\" \"2023-03-02\" \"2023-03-03\" \"2023-03-04\"\n [56] \"2023-03-05\" \"2023-03-06\" \"2023-03-07\" \"2023-03-08\" \"2023-03-09\"\n [61] \"2023-03-10\" \"2023-03-11\" \"2023-03-12\" \"2023-03-13\" \"2023-03-14\"\n [66] \"2023-03-15\" \"2023-03-16\" \"2023-03-17\" \"2023-03-18\" \"2023-03-19\"\n [71] \"2023-03-20\" \"2023-03-21\" \"2023-03-22\" \"2023-03-23\" \"2023-03-24\"\n [76] \"2023-03-25\" \"2023-03-26\" \"2023-03-27\" \"2023-03-28\" \"2023-03-29\"\n [81] \"2023-03-30\" \"2023-03-31\" \"2023-04-01\" \"2023-04-02\" \"2023-04-03\"\n [86] \"2023-04-04\" \"2023-04-05\" \"2023-04-06\" \"2023-04-07\" \"2023-04-08\"\n [91] \"2023-04-09\" \"2023-04-10\" \"2023-04-11\" \"2023-04-12\" \"2023-04-13\"\n [96] \"2023-04-14\" \"2023-04-15\" \"2023-04-16\" \"2023-04-17\" \"2023-04-18\"\n[101] \"2023-04-19\" \"2023-04-20\" \"2023-04-21\" \"2023-04-22\" \"2023-04-23\"\n[106] \"2023-04-24\" \"2023-04-25\" \"2023-04-26\" \"2023-04-27\" \"2023-04-28\"\n[111] \"2023-04-29\" \"2023-04-30\" \"2023-05-01\" \"2023-05-02\" \"2023-05-03\"\n[116] \"2023-05-04\" \"2023-05-05\" \"2023-05-06\" \"2023-05-07\" \"2023-05-08\"\n[121] \"2023-05-09\"\n\n\n\nhd &lt;- seq.Date(from = as.Date(\"2023-03-06\"), \n                  to = as.Date(\"2023-03-10\"), \n                  by = 1) %&gt;%\n  as.data.frame() %&gt;%\n  rename(date=\".\") %&gt;%\n  mutate(holiday=\"Spring Break\") %&gt;%\n  bind_rows(data.frame(date=as.Date(\"2023-01-16\"),\n                       holiday=\"MLK\"\n                       ))\n\nhd\n\n        date      holiday\n1 2023-03-06 Spring Break\n2 2023-03-07 Spring Break\n3 2023-03-08 Spring Break\n4 2023-03-09 Spring Break\n5 2023-03-10 Spring Break\n6 2023-01-16          MLK\n\n\n\n\nWrangling\n\ndates_w &lt;- data.frame(date=dates) %&gt;%\n  mutate(dow=wday(date, label = T)) %&gt;%\n  filter(dow %in% c(\"Mon\", \"Wed\", \"Fri\")) %&gt;%\n  mutate(time=case_when(\n    dow %in% c(\"Mon\",\"Fri\") ~ \"9:10 to 10:00\",\n    T ~ \"9:10 to 11:10\"\n  )) %&gt;%\n  left_join(hd) \n\nJoining, by = \"date\"\n\ndates_w\n\n         date dow          time      holiday\n1  2023-01-09 Mon 9:10 to 10:00         &lt;NA&gt;\n2  2023-01-11 Wed 9:10 to 11:10         &lt;NA&gt;\n3  2023-01-13 Fri 9:10 to 10:00         &lt;NA&gt;\n4  2023-01-16 Mon 9:10 to 10:00          MLK\n5  2023-01-18 Wed 9:10 to 11:10         &lt;NA&gt;\n6  2023-01-20 Fri 9:10 to 10:00         &lt;NA&gt;\n7  2023-01-23 Mon 9:10 to 10:00         &lt;NA&gt;\n8  2023-01-25 Wed 9:10 to 11:10         &lt;NA&gt;\n9  2023-01-27 Fri 9:10 to 10:00         &lt;NA&gt;\n10 2023-01-30 Mon 9:10 to 10:00         &lt;NA&gt;\n11 2023-02-01 Wed 9:10 to 11:10         &lt;NA&gt;\n12 2023-02-03 Fri 9:10 to 10:00         &lt;NA&gt;\n13 2023-02-06 Mon 9:10 to 10:00         &lt;NA&gt;\n14 2023-02-08 Wed 9:10 to 11:10         &lt;NA&gt;\n15 2023-02-10 Fri 9:10 to 10:00         &lt;NA&gt;\n16 2023-02-13 Mon 9:10 to 10:00         &lt;NA&gt;\n17 2023-02-15 Wed 9:10 to 11:10         &lt;NA&gt;\n18 2023-02-17 Fri 9:10 to 10:00         &lt;NA&gt;\n19 2023-02-20 Mon 9:10 to 10:00         &lt;NA&gt;\n20 2023-02-22 Wed 9:10 to 11:10         &lt;NA&gt;\n21 2023-02-24 Fri 9:10 to 10:00         &lt;NA&gt;\n22 2023-02-27 Mon 9:10 to 10:00         &lt;NA&gt;\n23 2023-03-01 Wed 9:10 to 11:10         &lt;NA&gt;\n24 2023-03-03 Fri 9:10 to 10:00         &lt;NA&gt;\n25 2023-03-06 Mon 9:10 to 10:00 Spring Break\n26 2023-03-08 Wed 9:10 to 11:10 Spring Break\n27 2023-03-10 Fri 9:10 to 10:00 Spring Break\n28 2023-03-13 Mon 9:10 to 10:00         &lt;NA&gt;\n29 2023-03-15 Wed 9:10 to 11:10         &lt;NA&gt;\n30 2023-03-17 Fri 9:10 to 10:00         &lt;NA&gt;\n31 2023-03-20 Mon 9:10 to 10:00         &lt;NA&gt;\n32 2023-03-22 Wed 9:10 to 11:10         &lt;NA&gt;\n33 2023-03-24 Fri 9:10 to 10:00         &lt;NA&gt;\n34 2023-03-27 Mon 9:10 to 10:00         &lt;NA&gt;\n35 2023-03-29 Wed 9:10 to 11:10         &lt;NA&gt;\n36 2023-03-31 Fri 9:10 to 10:00         &lt;NA&gt;\n37 2023-04-03 Mon 9:10 to 10:00         &lt;NA&gt;\n38 2023-04-05 Wed 9:10 to 11:10         &lt;NA&gt;\n39 2023-04-07 Fri 9:10 to 10:00         &lt;NA&gt;\n40 2023-04-10 Mon 9:10 to 10:00         &lt;NA&gt;\n41 2023-04-12 Wed 9:10 to 11:10         &lt;NA&gt;\n42 2023-04-14 Fri 9:10 to 10:00         &lt;NA&gt;\n43 2023-04-17 Mon 9:10 to 10:00         &lt;NA&gt;\n44 2023-04-19 Wed 9:10 to 11:10         &lt;NA&gt;\n45 2023-04-21 Fri 9:10 to 10:00         &lt;NA&gt;\n46 2023-04-24 Mon 9:10 to 10:00         &lt;NA&gt;\n47 2023-04-26 Wed 9:10 to 11:10         &lt;NA&gt;\n48 2023-04-28 Fri 9:10 to 10:00         &lt;NA&gt;\n49 2023-05-01 Mon 9:10 to 10:00         &lt;NA&gt;\n50 2023-05-03 Wed 9:10 to 11:10         &lt;NA&gt;\n51 2023-05-05 Fri 9:10 to 10:00         &lt;NA&gt;\n52 2023-05-08 Mon 9:10 to 10:00         &lt;NA&gt;\n\n\n\n\nExporting\n\nwrite_csv(dates_w, \"dates.csv\")"
+  },
+  {
+    "objectID": "teaching/2026-ppa/notes.html",
+    "href": "teaching/2026-ppa/notes.html",
+    "title": "Notes",
+    "section": "",
+    "text": "1 - Assignment #2 submission\nWhat: assignment #2 where students need to do data wrangling and submit.\nHow it was: asking them to just copy and paste the table (which is difficult because it is printed as tibble with only 10 rows.)\nHow it could be next time: ask them to send a screen shot of code, export output, and send output csv."
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec01.html#teaching-team",
+    "href": "teaching/2026-ppa/slides/lec01.html#teaching-team",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
+    "section": "Teaching team",
+    "text": "Teaching team\n\n\n\n\n\nDr. Leonardo M. Bastos\n\n\n\nAssistant Professor\n4101 Miller Plant Sciences Building\nUGA-Athens Campus\nEmail: lmbastos@uga.edu"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec01.html#office-hours",
+    "href": "teaching/2026-ppa/slides/lec01.html#office-hours",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
+    "section": "Office hours",
+    "text": "Office hours\n\nNo fixed office hours. If you need assistance, please email me to schedule a meeting time.\nAlways start seeking help by posting on GitHub (more on this later), and only then reach out to me."
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec01.html#meeting-times-and-locations",
+    "href": "teaching/2026-ppa/slides/lec01.html#meeting-times-and-locations",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
+    "section": "Meeting times and locations",
+    "text": "Meeting times and locations\n\n\nTime:\n\nLectures: Tuesdays at 02:55 - 05:05 pm\n\nLabs: Thursdays at 02:55 - 05:05 pm\n\n\n\nLocation:\n\nAthens campus: in person at 1203 Miller\n\nTifton campus: in person at 601 NESPAL South OR remote\n\nGriffin campus: in person at 107 SLC UGA Computer lab OR remote\n\n\n\n\nZoom credentials shared via email."
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec01.html#course-objectives",
+    "href": "teaching/2026-ppa/slides/lec01.html#course-objectives",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
+    "section": "Course objectives",
+    "text": "Course objectives\n\nObtain, process, and use various agricultural geospatial data layers for decision making related to precision agriculture."
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec01.html#course-objectives-1",
+    "href": "teaching/2026-ppa/slides/lec01.html#course-objectives-1",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
+    "section": "Course objectives",
+    "text": "Course objectives\n\nData types include publicly available (weather, soils, and satellite remote sensing), and private data like yield monitor, soil, and UAV remote sensing)."
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec01.html#course-objectives-2",
+    "href": "teaching/2026-ppa/slides/lec01.html#course-objectives-2",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
+    "section": "Course objectives",
+    "text": "Course objectives\n\nAnalytical techniques include creation of management zones, zone-based and imagery-based variable rate prescription, profitability maps, and use of satellite remote sensing for crop scouting."
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec01.html#course-objectives-3",
+    "href": "teaching/2026-ppa/slides/lec01.html#course-objectives-3",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
+    "section": "Course objectives",
+    "text": "Course objectives\n\nAll steps will be conducted utilizing the R statistical language to create modern, well documented and reproducible precision agriculture analytical workflows. No previous knowledge in R is required."
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec01.html#course-objectives-4",
+    "href": "teaching/2026-ppa/slides/lec01.html#course-objectives-4",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
+    "section": "Course objectives",
+    "text": "Course objectives\nFor example, from raw yield data to management zone creation"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec01.html#course-topics",
+    "href": "teaching/2026-ppa/slides/lec01.html#course-topics",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
+    "section": "Course topics",
+    "text": "Course topics\n\n\n\nIntro to R\n\nUsing R as a GIS\n\nAccessing publicly available geospatial data through R\n\nCreating grids for soil sampling\n\nInterpolation\n\n\n\n\nYield monitor data processing\n\nTerrain data processing\n\nManagement zones\n\nUAV remote sensing\n\nVariable rate prescription\n\nProfitability maps\n\nSatellite remote sensing for crop scouting"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec01.html#section",
+    "href": "teaching/2026-ppa/slides/lec01.html#section",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
+    "section": "",
+    "text": "All classes will be recorded and further posted on the class YouTube channel.\n\nThis should be used as a supporting study tool and make-up for content from missed classes. Recordings do not replace in-person/remote attendance."
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec01.html#assessment-and-grading",
+    "href": "teaching/2026-ppa/slides/lec01.html#assessment-and-grading",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
+    "section": "Assessment and Grading",
+    "text": "Assessment and Grading\n\n\n\n\n\n\n  \n    \n      Activity\n      Grade\n    \n  \n  \n    Mini-project: USDA NASS data\n10%\n    Mid-term exam\n10%\n    Homework assignments\n35%\n    In-class quizzes\n15%\n    Final project:\nfrom raw data to zone-based variable rate\n20%\n    Class participation\n10%"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec01.html#course-website",
+    "href": "teaching/2026-ppa/slides/lec01.html#course-website",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
+    "section": "Course website",
+    "text": "Course website\nImportant links related to this course:\n\nCourse website\n\nCourse GitHub repository\n\nCourse YouTube channel"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec01.html#course-website---downloading-slides",
+    "href": "teaching/2026-ppa/slides/lec01.html#course-website---downloading-slides",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
+    "section": "Course website - downloading slides",
+    "text": "Course website - downloading slides\n\nWith the slides page open on your browser, push e on your keyboard.\nOn your browser, go to File &gt; Print.\nAdjust orientation and pages per sheet if desired.\nSave as PDF."
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec01.html#course-website---asking-questions",
+    "href": "teaching/2026-ppa/slides/lec01.html#course-website---asking-questions",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
+    "section": "Course website - asking questions",
+    "text": "Course website - asking questions\n\nIf your question is related to difficulties with material/code/assignments, then post it on our class GitHub page on the Issues tab.\nGo to the class GitHub repository &gt; Click on Issues (near top left) &gt; Click on New issue (green button) &gt; Give it a descriptive title, leave your comment &gt; Click on Submit new issue."
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec01.html#course-website---asking-questions-1",
+    "href": "teaching/2026-ppa/slides/lec01.html#course-website---asking-questions-1",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
+    "section": "Course website - asking questions",
+    "text": "Course website - asking questions\n\n\n\n\n\n\n\n\n\nBy asking questions on GitHub, other students may be able to help you besides only instructor.\nHelping others on GitHub will count as participation!"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec01.html#course-website---asking-questions-2",
+    "href": "teaching/2026-ppa/slides/lec01.html#course-website---asking-questions-2",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
+    "section": "Course website - asking questions",
+    "text": "Course website - asking questions\n\nLet’s try it out: introductions (may need to sign up to GitHub)\n\nFirst and last name\n\nDepartment\n\nDegree (MS or PhD)\n\nArea of research"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec01.html#attendance-policy",
+    "href": "teaching/2026-ppa/slides/lec01.html#attendance-policy",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
+    "section": "Attendance policy",
+    "text": "Attendance policy\nStudents are expected to attend every class period.\n\nStudents on the Athens campus must attend class in-person.\n\nIf a special circumstance arise (illness, travel, etc.), student absence or remote attendance must be informed to instructors prior to that class period."
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec01.html#attendance-policy-1",
+    "href": "teaching/2026-ppa/slides/lec01.html#attendance-policy-1",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
+    "section": "Attendance policy",
+    "text": "Attendance policy\nStudents are expected to attend every class period.\n\nStudents on the Tifton and Griffin campuses may attend class in-person on their campuses or remote using the zoom link information.\n\nStudent absence must be informed to instructors prior to that class period to be excused."
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec01.html#attendance-policy-2",
+    "href": "teaching/2026-ppa/slides/lec01.html#attendance-policy-2",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
+    "section": "Attendance policy",
+    "text": "Attendance policy\nStudents are expected to attend every class period.\n\nPuncuality is important!\nStudents &gt;3 min late will be asked to leave and recorded as a missed class.\nIf special circumstances arise, please reach out to me in advance to accommodate for it."
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec01.html#attendance-policy-3",
+    "href": "teaching/2026-ppa/slides/lec01.html#attendance-policy-3",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
+    "section": "Attendance policy",
+    "text": "Attendance policy\nStudents are expected to attend every class period.\n\nPer Board of Regents policy, I reserve the right to drop students from the class roll who miss more than 5 class periods. Such students will be given a WF grade."
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec01.html#attendance-policy-4",
+    "href": "teaching/2026-ppa/slides/lec01.html#attendance-policy-4",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
+    "section": "Attendance policy",
+    "text": "Attendance policy\n\n\n\n\n\n\n\n\n\nWhen attending a class remotely via zoom, students are expected to have cameras on at all times."
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec01.html#technology-and-software-requirements",
+    "href": "teaching/2026-ppa/slides/lec01.html#technology-and-software-requirements",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
+    "section": "Technology and software requirements",
+    "text": "Technology and software requirements\nStudents will need to have access to:\n\nA computer 💻 (to install software, code along with instructors)\n\nA second screen 📺 (main screen to code along, second screen to watch class if not in person)\n\n\nIf a student does not have access to these resources (personal laptop/desktop and a second screen), please let instructors know to ensure proper accommodations can be made."
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec01.html#ai-llms-and-plagiarism",
+    "href": "teaching/2026-ppa/slides/lec01.html#ai-llms-and-plagiarism",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
+    "section": "AI, LLMs, and plagiarism",
+    "text": "AI, LLMs, and plagiarism\nYou are allowed to use LLMs like ChatGPT on your coding assignments, as long as\n\nyou use it to learn, not to simply copy/paste\n\nyou give appropriate credit\n\n\nPlagiarism, both from your classmates AND LLMs, is a serious violation of code of conduct and will be reported to university officials"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec01.html#survey",
+    "href": "teaching/2026-ppa/slides/lec01.html#survey",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
+    "section": "Survey",
+    "text": "Survey\nPlease go to the link below and fill this survey:\nhttps://forms.gle/dqjVcSAQYjhnnmWt9\nTake 5 minutes to answer it."
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec01.html#getting-ready-for-next-class",
+    "href": "teaching/2026-ppa/slides/lec01.html#getting-ready-for-next-class",
+    "title": "Welcome to CRSS 4280/6280\nProgramming Precision Ag!",
+    "section": "Getting ready for next class",
+    "text": "Getting ready for next class\nTo be ready for next class (Intro to R), please go to the course main page and follow the link to the Lab 01 prep page.\n\nIf you have questions or issues, email me before class.\nWe will have limited time to troubleshoot technical problems during next period."
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec11-miniproject.html",
+    "href": "teaching/2026-ppa/slides/lec11-miniproject.html",
+    "title": "Mini-project assignments",
+    "section": "",
+    "text": "Here is the table with the mini-project commodity and category assignment:\n\n\n\n\n\n\n  \n    \n      name\n      commodity\n      category\n    \n  \n  \n    Dhaliwal\nCotton\nYield\n    Sykes\nCorn\nHarvested Area\n    Mizero\nCorn\nYield\n    Torresan\nPeanuts\nHarvested Area\n    Madduru\nPecan\nAcres bearing\n    Poles\nPeanuts\nYield\n    Kumar\nCotton\nHarvested Area"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec08-nass.html#main-geospatial-data-types",
+    "href": "teaching/2026-ppa/slides/lec08-nass.html#main-geospatial-data-types",
+    "title": "Geospatial data types,\nCRS, and\nNASS",
+    "section": "2 main geospatial data types",
+    "text": "2 main geospatial data types\n\nVector\nRaster"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec08-nass.html#vector-formats",
+    "href": "teaching/2026-ppa/slides/lec08-nass.html#vector-formats",
+    "title": "Geospatial data types,\nCRS, and\nNASS",
+    "section": "Vector formats",
+    "text": "Vector formats\nCommonly known as shapefiles (ESRI nomenclature)\n\n\n\n\n\n\n\n  \n    \n      Format\n      Extension\n    \n  \n  \n    ESRI shapefile\n.shp, .shx, .dbf., .prj\n    GeoJSON\n.json, .geojson\n    KML\n.kml, .kmz"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec08-nass.html#vector-types",
+    "href": "teaching/2026-ppa/slides/lec08-nass.html#vector-types",
+    "title": "Geospatial data types,\nCRS, and\nNASS",
+    "section": "Vector types",
+    "text": "Vector types\nVector data comprises points, lines, polygons, and their combinations."
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec08-nass.html#vector-data-in-r",
+    "href": "teaching/2026-ppa/slides/lec08-nass.html#vector-data-in-r",
+    "title": "Geospatial data types,\nCRS, and\nNASS",
+    "section": "Vector data in R",
+    "text": "Vector data in R\n\n\n\npackage sp:\n\nfirst to be created\ncomplicated file structure (data + spatial info)\n\ndifficult to manipulate data frame\n\nnot pipeable\n\n\n\n\n\npackage sf:\n\nnewer than sp\n\naddresses sp shortcomings\n\nthis is what we will use"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec08-nass.html#raster-formats",
+    "href": "teaching/2026-ppa/slides/lec08-nass.html#raster-formats",
+    "title": "Geospatial data types,\nCRS, and\nNASS",
+    "section": "Raster formats",
+    "text": "Raster formats\nMost common in ag is .tif.\n\n\n\n\n\n\n\n  \n    \n      Format\n      Extension\n    \n  \n  \n    TIFF/COG\n.tiff, .tif, .tff\n    ASCII Grid\n.asc\n    Bitmap\n.bmp\n  \n  \n\n\n\n\nFull list here"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec08-nass.html#raster-types",
+    "href": "teaching/2026-ppa/slides/lec08-nass.html#raster-types",
+    "title": "Geospatial data types,\nCRS, and\nNASS",
+    "section": "Raster types",
+    "text": "Raster types\nRaster data is normally originated from an imagery source OR point-based interpolated map/grid (continuous coverage)."
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec08-nass.html#raster-data-in-r",
+    "href": "teaching/2026-ppa/slides/lec08-nass.html#raster-data-in-r",
+    "title": "Geospatial data types,\nCRS, and\nNASS",
+    "section": "Raster data in R",
+    "text": "Raster data in R\n\n\n\npackages raster and terra:\n\nraster was first in R\n\nterra newer, faster, not pipeable\n\n\n\n\n\npackage stars:\n\nnewer than raster\n\npipeable\n\nshares concepts with sf\n\nthis is what we will use (for the most part)"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec08-nass.html#vector-vs.-raster",
+    "href": "teaching/2026-ppa/slides/lec08-nass.html#vector-vs.-raster",
+    "title": "Geospatial data types,\nCRS, and\nNASS",
+    "section": "Vector vs. Raster",
+    "text": "Vector vs. Raster"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec08-nass.html#geographic-coordinate-systems",
+    "href": "teaching/2026-ppa/slides/lec08-nass.html#geographic-coordinate-systems",
+    "title": "Geospatial data types,\nCRS, and\nNASS",
+    "section": "Geographic coordinate systems",
+    "text": "Geographic coordinate systems\n\nLat/Long (WGS84) most common"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec08-nass.html#projected-coordinate-system",
+    "href": "teaching/2026-ppa/slides/lec08-nass.html#projected-coordinate-system",
+    "title": "Geospatial data types,\nCRS, and\nNASS",
+    "section": "Projected coordinate system",
+    "text": "Projected coordinate system\n\nUniversal Transverse Mercator (UTM) most common\n\nUTM has zones\n\nIn GA, 2 zones (16N, 17N)"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec08-nass.html#geographic-vs.-projected-m",
+    "href": "teaching/2026-ppa/slides/lec08-nass.html#geographic-vs.-projected-m",
+    "title": "Geospatial data types,\nCRS, and\nNASS",
+    "section": "Geographic (°) vs. Projected (m)",
+    "text": "Geographic (°) vs. Projected (m)"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec08-nass.html#quick-reference-for-different-crss",
+    "href": "teaching/2026-ppa/slides/lec08-nass.html#quick-reference-for-different-crss",
+    "title": "Geospatial data types,\nCRS, and\nNASS",
+    "section": "Quick reference for different CRSs",
+    "text": "Quick reference for different CRSs\n\nEPSG code\n\nWGS84: EPSG = 4326\nUTM NAD83 Zone 17N: EPSG = 6346"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec08-nass.html#geospatial-data-types-quiz",
+    "href": "teaching/2026-ppa/slides/lec08-nass.html#geospatial-data-types-quiz",
+    "title": "Geospatial data types,\nCRS, and\nNASS",
+    "section": "Geospatial data types quiz",
+    "text": "Geospatial data types quiz\nGo on eLC.\nList each geospatial data layer in the map below (give a descriptive name), and tell me if it is vector or raster. Tip: look closely, there are more than 2.\n\nYou have 5 min."
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec08-nass.html#usda-nass",
+    "href": "teaching/2026-ppa/slides/lec08-nass.html#usda-nass",
+    "title": "Geospatial data types,\nCRS, and\nNASS",
+    "section": "USDA NASS",
+    "text": "USDA NASS\n\nLOTS of information about US agriculture\n\nSome examples:\n\nplanted and harvested area time series\nyield time series\n\nproduction time series\n\nFor lots of different crops, and different geographic levels (from county to nation)"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec08-nass.html#usda-nass-quickstats-portal",
+    "href": "teaching/2026-ppa/slides/lec08-nass.html#usda-nass-quickstats-portal",
+    "title": "Geospatial data types,\nCRS, and\nNASS",
+    "section": "USDA NASS QuickStats portal",
+    "text": "USDA NASS QuickStats portal\n\nUSDA portal to query and download NASS data\n\nFree, open source data\n\nFeel free to explore following this link"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec08-nass.html#advanced-pa-and-nass",
+    "href": "teaching/2026-ppa/slides/lec08-nass.html#advanced-pa-and-nass",
+    "title": "Geospatial data types,\nCRS, and\nNASS",
+    "section": "Advanced PA and NASS",
+    "text": "Advanced PA and NASS\nLet’s download some data and bring into R\n\nGo to the portal\n\nLet’s query and download data for soybeans production in bushels in GA at the county level for all years available\n\nwent to browser…"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec08-nass.html#query-selections",
+    "href": "teaching/2026-ppa/slides/lec08-nass.html#query-selections",
+    "title": "Geospatial data types,\nCRS, and\nNASS",
+    "section": "Query selections",
+    "text": "Query selections\nSector: CROPS\nGroup: FIELD CROPS\nCommodity: SOYBEANS\nCategory: PRODUCTION\nData item: PRODUCTION MEASURED IN BU\nGeographic level: COUNTY\nState: GEORGIA\nYear: select all\nClick “Get data”\nClick “Spreadsheet”"
+  },
+  {
+    "objectID": "teaching/2026-ppa/slides/lec08-nass.html#after-downloading",
+    "href": "teaching/2026-ppa/slides/lec08-nass.html#after-downloading",
+    "title": "Geospatial data types,\nCRS, and\nNASS",
+    "section": "After downloading…",
+    "text": "After downloading…\nRename file to soybeans_nass.csv\nIn your course folder, create “03_NASS” folder\nInside it, create data, code, output\nMove soybeans_nass.csv into data\nLaunch RStudio, create a new project at the 03_NASS folder level\nCreate a new script file (quarto)\nLet’s explore this data set"
   },
   {
     "objectID": "teaching/2024-ppa/notes.html",
