@@ -5656,32 +5656,32 @@
     "text": "Did you hear me?\nDid it all work? If yes, then you are all set to use git and GitHub! 🥳\nIf not, then we’ll need to troubleshoot it."
   },
   {
-    "objectID": "teaching/2026-dsa/slides/lec04-github/lec04-github.html#forking-the-class-2025_dsa-repo",
-    "href": "teaching/2026-dsa/slides/lec04-github/lec04-github.html#forking-the-class-2025_dsa-repo",
+    "objectID": "teaching/2026-dsa/slides/lec04-github/lec04-github.html#forking-the-class-2026_dsa-repo",
+    "href": "teaching/2026-dsa/slides/lec04-github/lec04-github.html#forking-the-class-2026_dsa-repo",
     "title": "Bastos Lab",
-    "section": "Forking the class 2025_dsa repo",
-    "text": "Forking the class 2025_dsa repo\nNext, let’s Fork and Clone the class repo, so you won’t need to do manual downloads anymore.\nDetailed instructions found here"
+    "section": "Forking the class 2026_dsa repo",
+    "text": "Forking the class 2026_dsa repo\nNext, let’s Fork and Clone the class repo, so you won’t need to do manual downloads anymore.\nDetailed instructions found here"
   },
   {
-    "objectID": "teaching/2026-dsa/slides/lec04-github/lec04-github.html#forking-the-class-2025_dsa-repo-1",
-    "href": "teaching/2026-dsa/slides/lec04-github/lec04-github.html#forking-the-class-2025_dsa-repo-1",
+    "objectID": "teaching/2026-dsa/slides/lec04-github/lec04-github.html#forking-the-class-2026_dsa-repo-1",
+    "href": "teaching/2026-dsa/slides/lec04-github/lec04-github.html#forking-the-class-2026_dsa-repo-1",
     "title": "Bastos Lab",
-    "section": "Forking the class 2025_dsa repo",
-    "text": "Forking the class 2025_dsa repo\n\nCopying the URL\n\nGo to the class repo https://github.com/leombastos/2025_dsa\n\nClick on the &lt;&gt; Code button\nChoose HTTPS\nCopy the path"
+    "section": "Forking the class 2026_dsa repo",
+    "text": "Forking the class 2026_dsa repo\n\nCopying the URL\n\nGo to the class repo https://github.com/leombastos/2026_dsa\n\nClick on the &lt;&gt; Code button\nChoose HTTPS\nCopy the path"
   },
   {
-    "objectID": "teaching/2026-dsa/slides/lec04-github/lec04-github.html#forking-the-class-2025_dsa-repo-2",
-    "href": "teaching/2026-dsa/slides/lec04-github/lec04-github.html#forking-the-class-2025_dsa-repo-2",
+    "objectID": "teaching/2026-dsa/slides/lec04-github/lec04-github.html#forking-the-class-2026_dsa-repo-2",
+    "href": "teaching/2026-dsa/slides/lec04-github/lec04-github.html#forking-the-class-2026_dsa-repo-2",
     "title": "Bastos Lab",
-    "section": "Forking the class 2025_dsa repo",
-    "text": "Forking the class 2025_dsa repo\n\nForking and cloning with {usethis}\n\n\n\nOpen any RStudio window\n\nOn the console, copy the code below (copy button on top right corner), edit destdir and run in the console:\n\n\n\nusethis::create_from_github(\n  \"https://github.com/leombastos/2025_dsa.git\",\n  destdir = \"~/path/to/where/you/want/the/local/repo/\",\n  fork = TRUE)"
+    "section": "Forking the class 2026_dsa repo",
+    "text": "Forking the class 2026_dsa repo\n\nForking and cloning with {usethis}\n\n\n\nOpen any RStudio window\n\nOn the console, copy the code below (copy button on top right corner), edit destdir and run in the console:\n\n\n\nusethis::create_from_github(\n  \"https://github.com/leombastos/2026_dsa.git\",\n  destdir = \"~/path/to/where/you/want/the/local/repo/\",\n  fork = TRUE)"
   },
   {
-    "objectID": "teaching/2026-dsa/slides/lec04-github/lec04-github.html#forking-the-class-2025_dsa-repo-3",
-    "href": "teaching/2026-dsa/slides/lec04-github/lec04-github.html#forking-the-class-2025_dsa-repo-3",
+    "objectID": "teaching/2026-dsa/slides/lec04-github/lec04-github.html#forking-the-class-2026_dsa-repo-3",
+    "href": "teaching/2026-dsa/slides/lec04-github/lec04-github.html#forking-the-class-2026_dsa-repo-3",
     "title": "Bastos Lab",
-    "section": "Forking the class 2025_dsa repo",
-    "text": "Forking the class 2025_dsa repo\nNow, anytime I have new code or data files, all you need to do is:\n\nLaunch that RStudio Project\n\nOn the Git pane, click on the green down arrow to pull the updates\n\nMove your local copies of the new files into your own project folder and appropriate sub-folders"
+    "section": "Forking the class 2026_dsa repo",
+    "text": "Forking the class 2026_dsa repo\nNow, anytime I have new code or data files, all you need to do is:\n\nLaunch that RStudio Project\n\nOn the Git pane, click on the green down arrow to pull the updates\n\nMove your local copies of the new files into your own project folder and appropriate sub-folders"
   },
   {
     "objectID": "teaching/2026-dsa/slides/lab03-prep.html",
