@@ -6024,7 +6024,7 @@
     "href": "teaching/2026-dsa/slides/lec12-ml/lec12-ml.html#training-v-fold-cross-validation-1",
     "title": "Bastos Lab",
     "section": "2. Training: v-fold cross-validation",
-    "text": "2. Training: v-fold cross-validation\nFor each resampling, 2 folds are used for training the model. and 1 fold is used to estimate model performance:\n\n\nIn practice, values of V are most often 5 or 10 (10 preferred because it is large enough for good results in most situations.)."
+    "text": "2. Training: v-fold cross-validation\nFor example, when V = 3, for each resampling step, 2 folds are used for training the model, and 1 fold is used to estimate model performance:\n\n\nIn practice, values of V are most often 5 or 10 (10 preferred because it is large enough for good results in most situations.)."
   },
   {
     "objectID": "teaching/2026-dsa/slides/lec12-ml/lec12-ml.html#training-leave-one-out-cross-validation",
@@ -6038,7 +6038,7 @@
     "href": "teaching/2026-dsa/slides/lec12-ml/lec12-ml.html#training-hyperp.-optimiziation",
     "title": "Bastos Lab",
     "section": "2. Training: hyperp. optimiziation",
-    "text": "2. Training: hyperp. optimiziation\nNow that we determined the appropriate date splits to perform hyperparameter optimization, we also need to determine\n\nwhich hyperparameters will be optimized\n\nwhat levels\n\nusing which optimization algorithm"
+    "text": "2. Training: hyperp. optimiziation\nNow that we determined the appropriate data splits to perform hyperparameter optimization, we also need to determine\n\nwhich hyperparameters will be optimized\n\nwhat levels will be tested\n\nusing which optimization algorithm"
   },
   {
     "objectID": "teaching/2026-dsa/slides/lec12-ml/lec12-ml.html#training-hyperp.-optimiziation-1",
@@ -6052,14 +6052,14 @@
     "href": "teaching/2026-dsa/slides/lec12-ml/lec12-ml.html#training-hyperp.-optimiziation-2",
     "title": "Bastos Lab",
     "section": "2. Training: hyperp. optimiziation",
-    "text": "2. Training: hyperp. optimiziation\n\nThere exist two general classes of hyperparameter optimization algorithms:\n\nGrid search\n\nIterative search"
+    "text": "2. Training: hyperp. optimiziation\n\nThere exist two general classes of hyperparameter optimization algorithms:\n\nSpace-filling grid search\n\nIterative global search"
   },
   {
-    "objectID": "teaching/2026-dsa/slides/lec12-ml/lec12-ml.html#training-grid-search",
-    "href": "teaching/2026-dsa/slides/lec12-ml/lec12-ml.html#training-grid-search",
+    "objectID": "teaching/2026-dsa/slides/lec12-ml/lec12-ml.html#training-space-filling-grid-search",
+    "href": "teaching/2026-dsa/slides/lec12-ml/lec12-ml.html#training-space-filling-grid-search",
     "title": "Bastos Lab",
-    "section": "2. Training: grid search",
-    "text": "2. Training: grid search\n\n\n\n\n\n\n\n\n\nPredefined a set of parameter values to evaluate.\nInefficient since the number of grid points required to cover the parameter space can become unmanageable with the curse of dimensionality."
+    "section": "2. Training: space-filling grid search",
+    "text": "2. Training: space-filling grid search\n\n\n\n\n\n\n\n\n\nPredefine a set of parameter values to evaluate.\nInefficient since the number of grid points required to cover the parameter space can become unmanageable with the curse of dimensionality."
   },
   {
     "objectID": "teaching/2026-dsa/slides/lec12-ml/lec12-ml.html#training-iterative-search",
@@ -6101,7 +6101,7 @@
     "href": "teaching/2026-dsa/slides/lec12-ml/lec12-ml.html#training-selecting-best-hyperp.-4",
     "title": "Bastos Lab",
     "section": "2. Training: selecting best hyperp.",
-    "text": "2. Training: selecting best hyperp.\nThe metrics we use will depend on the type of the predicted variable.\nIf categorical, then the model is of type classification, and some metrics are:\n\nSpecificity: proportion of actual negative cases that the model identifies correctly.\n\n\\[ \\text{Specificity} = \\frac{\\text{True Negatives}}{\\text{True Negatives + False Positives}} \\]"
+    "text": "2. Training: selecting best hyperp.\nThe metrics we use will depend on the type of the predicted variable.\nIf categorical, then the model is of type classification, and some metrics are:\n\nSpecificity: proportion of actual negative cases that the model identifies correctly.\n\\[ \\text{Specificity} = \\frac{\\text{True Negatives}}{\\text{True Negatives + False Positives}} \\]"
   },
   {
     "objectID": "teaching/2026-dsa/slides/lec12-ml/lec12-ml.html#training-selecting-best-hyperp.-5",

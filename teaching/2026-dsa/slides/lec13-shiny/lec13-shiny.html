@@ -1206,16 +1206,6 @@ margin-right: 0; }
     <div class="slides">
 
 
-<section class="slide level2">
-
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">library</span>(tidyverse) <span class="co"># for data wrangling and plotting</span></span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="fu">library</span>(knitr) <span class="co"># for figure displaying</span></span>
-<span id="cb1-3"><a href="#cb1-3"></a><span class="fu">library</span>(shiny)</span>
-<span id="cb1-4"><a href="#cb1-4"></a></span>
-<span id="cb1-5"><a href="#cb1-5"></a><span class="fu">options</span>(<span class="at">digits=</span><span class="dv">3</span>, <span class="at">scipen=</span><span class="dv">999</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
 <section>
 <section id="shiny-apps" class="title-slide slide level1 center" style="text-align: center">
 <h1>Shiny apps</h1>
@@ -1278,18 +1268,18 @@ margin-right: 0; }
 </ol>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="co"># Define UI ----</span></span>
-<span id="cb2-2"><a href="#cb2-2"></a>ui <span class="ot">&lt;-</span> <span class="fu">page_sidebar</span>(</span>
-<span id="cb2-3"><a href="#cb2-3"></a> </span>
-<span id="cb2-4"><a href="#cb2-4"></a>)</span>
-<span id="cb2-5"><a href="#cb2-5"></a></span>
-<span id="cb2-6"><a href="#cb2-6"></a><span class="co"># Define server logic ----</span></span>
-<span id="cb2-7"><a href="#cb2-7"></a>server <span class="ot">&lt;-</span> <span class="cf">function</span>(input, output) {</span>
-<span id="cb2-8"><a href="#cb2-8"></a></span>
-<span id="cb2-9"><a href="#cb2-9"></a>}</span>
-<span id="cb2-10"><a href="#cb2-10"></a></span>
-<span id="cb2-11"><a href="#cb2-11"></a><span class="co"># Run the app ----</span></span>
-<span id="cb2-12"><a href="#cb2-12"></a><span class="fu">shinyApp</span>(<span class="at">ui =</span> ui, <span class="at">server =</span> server)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="co"># Define UI ----</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a>ui <span class="ot">&lt;-</span> <span class="fu">page_sidebar</span>(</span>
+<span id="cb1-3"><a href="#cb1-3"></a> </span>
+<span id="cb1-4"><a href="#cb1-4"></a>)</span>
+<span id="cb1-5"><a href="#cb1-5"></a></span>
+<span id="cb1-6"><a href="#cb1-6"></a><span class="co"># Define server logic ----</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a>server <span class="ot">&lt;-</span> <span class="cf">function</span>(input, output) {</span>
+<span id="cb1-8"><a href="#cb1-8"></a></span>
+<span id="cb1-9"><a href="#cb1-9"></a>}</span>
+<span id="cb1-10"><a href="#cb1-10"></a></span>
+<span id="cb1-11"><a href="#cb1-11"></a><span class="co"># Run the app ----</span></span>
+<span id="cb1-12"><a href="#cb1-12"></a><span class="fu">shinyApp</span>(<span class="at">ui =</span> ui, <span class="at">server =</span> server)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
@@ -1299,12 +1289,12 @@ margin-right: 0; }
 <div class="columns">
 <div class="column" style="width:50%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>ui <span class="ot">&lt;-</span> <span class="fu">page_fluid</span>(</span>
-<span id="cb3-2"><a href="#cb3-2"></a>  <span class="fu">layout_sidebar</span>(</span>
-<span id="cb3-3"><a href="#cb3-3"></a>    <span class="at">sidebar =</span> <span class="fu">sidebar</span>(<span class="st">&quot;Sidebar&quot;</span>),</span>
-<span id="cb3-4"><a href="#cb3-4"></a>    <span class="st">&quot;Main contents&quot;</span></span>
-<span id="cb3-5"><a href="#cb3-5"></a>  )   </span>
-<span id="cb3-6"><a href="#cb3-6"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>ui <span class="ot">&lt;-</span> <span class="fu">page_fluid</span>(</span>
+<span id="cb2-2"><a href="#cb2-2"></a>  <span class="fu">layout_sidebar</span>(</span>
+<span id="cb2-3"><a href="#cb2-3"></a>    <span class="at">sidebar =</span> <span class="fu">sidebar</span>(<span class="st">&quot;Sidebar&quot;</span>),</span>
+<span id="cb2-4"><a href="#cb2-4"></a>    <span class="st">&quot;Main contents&quot;</span></span>
+<span id="cb2-5"><a href="#cb2-5"></a>  )   </span>
+<span id="cb2-6"><a href="#cb2-6"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div><div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
@@ -1321,11 +1311,11 @@ margin-right: 0; }
 <div class="columns">
 <div class="column" style="width:50%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>ui <span class="ot">&lt;-</span> <span class="fu">page_sidebar</span>(</span>
-<span id="cb4-2"><a href="#cb4-2"></a>  <span class="at">title =</span> <span class="st">&quot;title panel&quot;</span>,</span>
-<span id="cb4-3"><a href="#cb4-3"></a>  <span class="at">sidebar =</span> <span class="fu">sidebar</span>(<span class="st">&quot;Sidebar&quot;</span>),</span>
-<span id="cb4-4"><a href="#cb4-4"></a>  <span class="fu">card</span>()</span>
-<span id="cb4-5"><a href="#cb4-5"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>ui <span class="ot">&lt;-</span> <span class="fu">page_sidebar</span>(</span>
+<span id="cb3-2"><a href="#cb3-2"></a>  <span class="at">title =</span> <span class="st">&quot;title panel&quot;</span>,</span>
+<span id="cb3-3"><a href="#cb3-3"></a>  <span class="at">sidebar =</span> <span class="fu">sidebar</span>(<span class="st">&quot;Sidebar&quot;</span>),</span>
+<span id="cb3-4"><a href="#cb3-4"></a>  <span class="fu">card</span>()</span>
+<span id="cb3-5"><a href="#cb3-5"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div><div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
@@ -1342,14 +1332,14 @@ margin-right: 0; }
 <div class="columns">
 <div class="column" style="width:50%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>ui <span class="ot">&lt;-</span> <span class="fu">page_sidebar</span>(</span>
-<span id="cb5-2"><a href="#cb5-2"></a>  <span class="at">title =</span> <span class="st">&quot;title panel&quot;</span>,</span>
-<span id="cb5-3"><a href="#cb5-3"></a>  <span class="at">sidebar =</span> <span class="fu">sidebar</span>(<span class="st">&quot;Sidebar&quot;</span>),</span>
-<span id="cb5-4"><a href="#cb5-4"></a>  <span class="fu">card</span>(</span>
-<span id="cb5-5"><a href="#cb5-5"></a>    <span class="fu">card_header</span>(<span class="st">&quot;Card header&quot;</span>),</span>
-<span id="cb5-6"><a href="#cb5-6"></a>    <span class="st">&quot;Card body&quot;</span></span>
-<span id="cb5-7"><a href="#cb5-7"></a>  )</span>
-<span id="cb5-8"><a href="#cb5-8"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>ui <span class="ot">&lt;-</span> <span class="fu">page_sidebar</span>(</span>
+<span id="cb4-2"><a href="#cb4-2"></a>  <span class="at">title =</span> <span class="st">&quot;title panel&quot;</span>,</span>
+<span id="cb4-3"><a href="#cb4-3"></a>  <span class="at">sidebar =</span> <span class="fu">sidebar</span>(<span class="st">&quot;Sidebar&quot;</span>),</span>
+<span id="cb4-4"><a href="#cb4-4"></a>  <span class="fu">card</span>(</span>
+<span id="cb4-5"><a href="#cb4-5"></a>    <span class="fu">card_header</span>(<span class="st">&quot;Card header&quot;</span>),</span>
+<span id="cb4-6"><a href="#cb4-6"></a>    <span class="st">&quot;Card body&quot;</span></span>
+<span id="cb4-7"><a href="#cb4-7"></a>  )</span>
+<span id="cb4-8"><a href="#cb4-8"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div><div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
@@ -1365,13 +1355,13 @@ margin-right: 0; }
 <p>The server function contains the instructions that your computer needs to build your app.</p>
 <p>This is where we add reactive outputs, and will contain parts of R code we are familiar with, like ggplots.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a>server <span class="ot">&lt;-</span> <span class="cf">function</span>(input, output) {</span>
-<span id="cb6-2"><a href="#cb6-2"></a></span>
-<span id="cb6-3"><a href="#cb6-3"></a>  output<span class="sc">$</span>selected_var <span class="ot">&lt;-</span> <span class="fu">renderText</span>({</span>
-<span id="cb6-4"><a href="#cb6-4"></a>    <span class="st">&quot;You have selected this&quot;</span></span>
-<span id="cb6-5"><a href="#cb6-5"></a>  })</span>
-<span id="cb6-6"><a href="#cb6-6"></a></span>
-<span id="cb6-7"><a href="#cb6-7"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>server <span class="ot">&lt;-</span> <span class="cf">function</span>(input, output) {</span>
+<span id="cb5-2"><a href="#cb5-2"></a></span>
+<span id="cb5-3"><a href="#cb5-3"></a>  output<span class="sc">$</span>selected_var <span class="ot">&lt;-</span> <span class="fu">renderText</span>({</span>
+<span id="cb5-4"><a href="#cb5-4"></a>    <span class="st">&quot;You have selected this&quot;</span></span>
+<span id="cb5-5"><a href="#cb5-5"></a>  })</span>
+<span id="cb5-6"><a href="#cb5-6"></a></span>
+<span id="cb5-7"><a href="#cb5-7"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="widgets-and-reactivity" class="slide level2">
@@ -1418,45 +1408,45 @@ margin-right: 0; }
 <h2>Widgets and reactivity example</h2>
 <p>On the <code>ui</code> side, we use <strong>widgets</strong> (to allow user to interact with options) and <strong>output functions</strong> (to create a ui output into the server based on the widget selection).</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a>ui <span class="ot">&lt;-</span> <span class="fu">page_sidebar</span>(</span>
-<span id="cb7-2"><a href="#cb7-2"></a>  <span class="at">title =</span> <span class="st">&quot;censusVis&quot;</span>,</span>
-<span id="cb7-3"><a href="#cb7-3"></a>  <span class="at">sidebar =</span> <span class="fu">sidebar</span>(</span>
-<span id="cb7-4"><a href="#cb7-4"></a>    <span class="fu">helpText</span>(</span>
-<span id="cb7-5"><a href="#cb7-5"></a>      <span class="st">&quot;Create demographic maps with information from the 2010 US Census.&quot;</span></span>
-<span id="cb7-6"><a href="#cb7-6"></a>    ),</span>
-<span id="cb7-7"><a href="#cb7-7"></a>    <span class="fu">selectInput</span>(</span>
-<span id="cb7-8"><a href="#cb7-8"></a>      <span class="st">&quot;var&quot;</span>,</span>
-<span id="cb7-9"><a href="#cb7-9"></a>      <span class="at">label =</span> <span class="st">&quot;Choose a variable to display&quot;</span>,</span>
-<span id="cb7-10"><a href="#cb7-10"></a>      <span class="at">choices =</span> </span>
-<span id="cb7-11"><a href="#cb7-11"></a>        <span class="fu">c</span>(<span class="st">&quot;Percent White&quot;</span>,</span>
-<span id="cb7-12"><a href="#cb7-12"></a>          <span class="st">&quot;Percent Black&quot;</span>,</span>
-<span id="cb7-13"><a href="#cb7-13"></a>          <span class="st">&quot;Percent Hispanic&quot;</span>,</span>
-<span id="cb7-14"><a href="#cb7-14"></a>          <span class="st">&quot;Percent Asian&quot;</span>),</span>
-<span id="cb7-15"><a href="#cb7-15"></a>      <span class="at">selected =</span> <span class="st">&quot;Percent White&quot;</span></span>
-<span id="cb7-16"><a href="#cb7-16"></a>    ),</span>
-<span id="cb7-17"><a href="#cb7-17"></a>    <span class="fu">sliderInput</span>(</span>
-<span id="cb7-18"><a href="#cb7-18"></a>      <span class="st">&quot;range&quot;</span>,</span>
-<span id="cb7-19"><a href="#cb7-19"></a>      <span class="at">label =</span> <span class="st">&quot;Range of interest:&quot;</span>,</span>
-<span id="cb7-20"><a href="#cb7-20"></a>      <span class="at">min =</span> <span class="dv">0</span>, </span>
-<span id="cb7-21"><a href="#cb7-21"></a>      <span class="at">max =</span> <span class="dv">100</span>, </span>
-<span id="cb7-22"><a href="#cb7-22"></a>      <span class="at">value =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">100</span>)</span>
-<span id="cb7-23"><a href="#cb7-23"></a>    )</span>
-<span id="cb7-24"><a href="#cb7-24"></a>  ),</span>
-<span id="cb7-25"><a href="#cb7-25"></a>  <span class="fu">textOutput</span>(<span class="st">&quot;selected_var&quot;</span>)</span>
-<span id="cb7-26"><a href="#cb7-26"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a>ui <span class="ot">&lt;-</span> <span class="fu">page_sidebar</span>(</span>
+<span id="cb6-2"><a href="#cb6-2"></a>  <span class="at">title =</span> <span class="st">&quot;censusVis&quot;</span>,</span>
+<span id="cb6-3"><a href="#cb6-3"></a>  <span class="at">sidebar =</span> <span class="fu">sidebar</span>(</span>
+<span id="cb6-4"><a href="#cb6-4"></a>    <span class="fu">helpText</span>(</span>
+<span id="cb6-5"><a href="#cb6-5"></a>      <span class="st">&quot;Create demographic maps with information from the 2010 US Census.&quot;</span></span>
+<span id="cb6-6"><a href="#cb6-6"></a>    ),</span>
+<span id="cb6-7"><a href="#cb6-7"></a>    <span class="fu">selectInput</span>(</span>
+<span id="cb6-8"><a href="#cb6-8"></a>      <span class="st">&quot;var&quot;</span>,</span>
+<span id="cb6-9"><a href="#cb6-9"></a>      <span class="at">label =</span> <span class="st">&quot;Choose a variable to display&quot;</span>,</span>
+<span id="cb6-10"><a href="#cb6-10"></a>      <span class="at">choices =</span> </span>
+<span id="cb6-11"><a href="#cb6-11"></a>        <span class="fu">c</span>(<span class="st">&quot;Percent White&quot;</span>,</span>
+<span id="cb6-12"><a href="#cb6-12"></a>          <span class="st">&quot;Percent Black&quot;</span>,</span>
+<span id="cb6-13"><a href="#cb6-13"></a>          <span class="st">&quot;Percent Hispanic&quot;</span>,</span>
+<span id="cb6-14"><a href="#cb6-14"></a>          <span class="st">&quot;Percent Asian&quot;</span>),</span>
+<span id="cb6-15"><a href="#cb6-15"></a>      <span class="at">selected =</span> <span class="st">&quot;Percent White&quot;</span></span>
+<span id="cb6-16"><a href="#cb6-16"></a>    ),</span>
+<span id="cb6-17"><a href="#cb6-17"></a>    <span class="fu">sliderInput</span>(</span>
+<span id="cb6-18"><a href="#cb6-18"></a>      <span class="st">&quot;range&quot;</span>,</span>
+<span id="cb6-19"><a href="#cb6-19"></a>      <span class="at">label =</span> <span class="st">&quot;Range of interest:&quot;</span>,</span>
+<span id="cb6-20"><a href="#cb6-20"></a>      <span class="at">min =</span> <span class="dv">0</span>, </span>
+<span id="cb6-21"><a href="#cb6-21"></a>      <span class="at">max =</span> <span class="dv">100</span>, </span>
+<span id="cb6-22"><a href="#cb6-22"></a>      <span class="at">value =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">100</span>)</span>
+<span id="cb6-23"><a href="#cb6-23"></a>    )</span>
+<span id="cb6-24"><a href="#cb6-24"></a>  ),</span>
+<span id="cb6-25"><a href="#cb6-25"></a>  <span class="fu">textOutput</span>(<span class="st">&quot;selected_var&quot;</span>)</span>
+<span id="cb6-26"><a href="#cb6-26"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="widgets-and-reactivity-example-1" class="slide level2">
 <h2>Widgets and reactivity example</h2>
 <p>On the server side, we use render functions.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a>server <span class="ot">&lt;-</span> <span class="cf">function</span>(input, output) {</span>
-<span id="cb8-2"><a href="#cb8-2"></a></span>
-<span id="cb8-3"><a href="#cb8-3"></a>  output<span class="sc">$</span>selected_var <span class="ot">&lt;-</span> <span class="fu">renderText</span>({</span>
-<span id="cb8-4"><a href="#cb8-4"></a>    <span class="fu">paste</span>(<span class="st">&quot;You have selected&quot;</span>, input<span class="sc">$</span>var)</span>
-<span id="cb8-5"><a href="#cb8-5"></a>  })</span>
-<span id="cb8-6"><a href="#cb8-6"></a></span>
-<span id="cb8-7"><a href="#cb8-7"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a>server <span class="ot">&lt;-</span> <span class="cf">function</span>(input, output) {</span>
+<span id="cb7-2"><a href="#cb7-2"></a></span>
+<span id="cb7-3"><a href="#cb7-3"></a>  output<span class="sc">$</span>selected_var <span class="ot">&lt;-</span> <span class="fu">renderText</span>({</span>
+<span id="cb7-4"><a href="#cb7-4"></a>    <span class="fu">paste</span>(<span class="st">&quot;You have selected&quot;</span>, input<span class="sc">$</span>var)</span>
+<span id="cb7-5"><a href="#cb7-5"></a>  })</span>
+<span id="cb7-6"><a href="#cb7-6"></a></span>
+<span id="cb7-7"><a href="#cb7-7"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="making-your-first-shiny-app" class="slide level2">
@@ -2543,6 +2533,44 @@ window.QuartoSupport = function () {
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
