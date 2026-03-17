@@ -6052,7 +6052,7 @@
     "href": "teaching/2026-dsa/slides/lec12-ml/lec12-ml.html#training-hyperp.-optimiziation-2",
     "title": "Bastos Lab",
     "section": "2. Training: hyperp. optimiziation",
-    "text": "2. Training: hyperp. optimiziation\n\nThere exist two general classes of hyperparameter optimization algorithms:\n\nSpace-filling grid search\n\nIterative global search"
+    "text": "2. Training: hyperp. optimiziation\n\nThere exist two general classes of hyperparameter optimization algorithms:\n\nGrid search\n\nIterative search"
   },
   {
     "objectID": "teaching/2026-dsa/slides/lec12-ml/lec12-ml.html#training-space-filling-grid-search",
